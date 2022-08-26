@@ -1,5 +1,5 @@
 <h1 align="center"> 🖥️ Ingenieria de Software 1</h1>
- <p><img width="250" align='right' src="Img/2.png"></p>
+ <p><img width="250" align='right' src="Img/1.png"></p>
 
 
 ### 📚 Teoria
