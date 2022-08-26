@@ -1,8 +1,8 @@
 <h1 align="center"> 🖥️ Ingenieria de Software 1</h1>
- <p><img width="250" align='right' src="Img/1.png"></p>
+<p><img width="250" align='right' src="Img/1.png"></p>
 
 
-### 📚 Teoria
+## 📚 Teoria
 
 
 - [Conceptos de Ingenieria de software](/Documentos/Conceptos.md)
@@ -14,7 +14,7 @@
   - [Video 2](https://www.youtube.com/watch?v=l9eGBnooMcA)
   - [Video 3](https://www.youtube.com/watch?v=13hLavqMmxk)
 
-### 🔨 Practicas
+## 🔨 Practicas
 
 - [Practica 1](/Documentos/Practica1.md)
 
