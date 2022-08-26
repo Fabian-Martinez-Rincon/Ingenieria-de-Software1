@@ -3,6 +3,13 @@
 - [Naturaleza](#naturaleza)
 - [Software](#software)
 - [Caracteristicas](#caracteristicas)
+- [Tipos de Producto](#tipos-de-producto)
+- [Clasificación](#clasificación)
+- [Retos](#retos)
+- [Ingeniería de software](#ingeniería-de-software)
+- [Participantes](#participantes)
+- [Conocimientos que se deben tener](#conocimientos-que-se-deben-tener)
+- [Responsabilidad](#responsabilidad)
 
 ### Naturaleza
 
@@ -21,3 +28,20 @@ Intrucciones (Programas de cómputo), prodecimientos, reglas, documentación y d
   Representa el conjunto de elementos Lógicos necesarios para que se puedan realizar las tareas encomendadas al computador, es decir, dota al equipo para realizar cualquier tipo de trabajos
 - Se desarrola, no se fabrica 
 - No se desgasta
+  
+### Tipos de Producto
+
+### Clasificación
+
+### Retos
+
+### Ingeniería de software
+
+### Participantes
+
+### Conocimientos que se deben tener
+
+### Responsabilidad
+
+## Tecnicas de comunicación
+
