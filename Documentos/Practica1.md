@@ -99,3 +99,13 @@ CookBooks es un negocio pequeño manejado por una pareja jubilada. Hasta este mo
 Los visitantes podrán hojear diferentes libros de cocina, pero tendrán que crear una cuenta del cliente antes de poder hacer una compra. Los pagos se aceptarán sólo en línea con una tarjeta de crédito reconocida
 
 ---
+
+## `Cuestionarios`
+
+### **Parte I Definiciones**
+
+- `1)` Describa qué tipo de información se busca mediante la aplicación de cuestionarios.
+- `2)` Describa bajo qué circunstancia considera apropiado utilizar cuestionarios.
+- `3)` Describa los dos tipos de cuestionarios.
+
+### **Parte I Definiciones**
