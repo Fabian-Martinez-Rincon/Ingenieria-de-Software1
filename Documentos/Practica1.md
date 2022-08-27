@@ -157,3 +157,8 @@ nadie la usó? ¿De que se trató?___________________________
 hacerlo?_________________________________________________
 
 </td></table>
+
+- `a)` Reformule o elimine las preguntas que considere inapropiadas.
+- `b)` Realice una crítica sobre el diseño y el estilo en cuanto a espacio en blanco, espacio para las respuestas, facilidad para responder, etc.
+- `c)` Escriba el cuestionario nuevamente, teniendo en cuenta lo respondido en los puntos a y b.
+UNLP – Facultad de Informática
