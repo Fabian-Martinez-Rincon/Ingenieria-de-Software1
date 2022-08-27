@@ -108,4 +108,52 @@ Los visitantes podrán hojear diferentes libros de cocina, pero tendrán que cre
 - `2)` Describa bajo qué circunstancia considera apropiado utilizar cuestionarios.
 - `3)` Describa los dos tipos de cuestionarios.
 
-### **Parte I Definiciones**
+### **Parte II Definiciones**
+
+### *Solución 1*
+
+Alguien nuevo en el centro de cómputo de un gimnasio que tiene varias sucursales, viene con muchas ganas de
+mejorar las cosas que ve dentro del mismo. Dicho centro está desarrollando un sistema en red que usarán todas las
+sucursales.\
+Dado el siguiente cuestionario verifique si es necesario reescribir las preguntas, justifique.
+
+<table>
+
+<td>
+
+### Cuestionario 1
+
+¡Urgente! Complételo y devuélvalo de manera inmediata, sino su cheque de pago será retenido
+hasta que devuelva el presente.
+- `1)` En pocas palabras indique qué problemas ha tenido el actual centro de cómputo.
+- `2)` ¿Habrá alguien que piense de la misma manera que usted? Enumere sus nombres.
+- `3)` ¿Cuántas PC fallaron en estos últimos 6 meses?
+- `4)` ¿Cuál es el problema más grande que enfrenta al comunicar sus problemas al centro de
+cómputo?
+
+</td>
+</table>
+
+### *Solución 2*
+
+El siguiente es un cuestionario diseñado por un empleado de una empresa textil que se especializa en fabricar medias para hombres. Este empleado lo escribió en calidad de gerente de la oficina que tiene a cargo la propuesta de compra / implementación de un nuevo sistema de cómputos.
+
+<table><td>
+
+¡Hola a todos los empleados!
+Según los rumores, estamos tras una nueva computadora. Aquí hay algunas preguntas para que reflexionen.
+
+- `a)` ¿Cuánto tiempo ha usado la computadora vieja?_______________________
+- `b)` ¿Con que frecuencia se descompone?_______________________________
+- `c)` ¿Quién la repara?________________________________________________
+- `d)` ¿Cuándo fue la ultima vez que usted sugirió una mejora al sistema de cómputos y esta
+se puso en práctica? ¿De qué se trató?________________
+- `e)` ¿Cuándo fue la última vez que usted sugirió una mejora al sistema de cómputos y
+nadie la usó? ¿De que se trató?___________________________
+- `f)` ¿Usted utiliza una pantalla o una impresora, o ambas?___________________
+- `g)` ¿Qué tan rápido escribe en la computadora?___________________________
+- `h)` ¿Cuántas personas necesitan acceder a la base de datos regularmente en su sucursal?
+¿Hay alguien que actualmente no utilice la computadora y que le gustaría
+hacerlo?_________________________________________________
+
+</td></table>
