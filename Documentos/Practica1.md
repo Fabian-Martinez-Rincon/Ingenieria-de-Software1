@@ -5,6 +5,7 @@
 ### *Parte I Definiciones*
 
 - `1)` Definir brevemente que es un requerimiento
+  Es una cara
 - `2)` Defina requerimientos funcionales y no funcionales.
 - `3)` Defina que es un **stakeholder**.
 - `4)` Defina las fuentes más importantes para la obtención de información.
