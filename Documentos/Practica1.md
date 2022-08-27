@@ -2,7 +2,7 @@
 
 ## `Obtención de los requerimientos`
 
-### **Parte I Definiciones**
+### *Parte I Definiciones*
 
 - `1)` Definir brevemente que es un requerimiento
 - `2)` Defina requerimientos funcionales y no funcionales.
@@ -11,7 +11,7 @@
 - `5)` Indique los puntos de vista (de manera genérica) que se pueden reconocer en un proyecto de software.
 - `6)` Enumere tres problemas de comunicación que pueden existir en la elicitación de requisitos.
 
-### **Parte II Definiciones**
+### *Parte II Definiciones*
 
 **a) Indicar para cada problema quienes podrían ser los Stakeholders, los puntos de vista y las fuentes de información.**
 
@@ -50,7 +50,7 @@ provincia de Bs As.
 
 ### Parte II Definiciones
 
-### **Situación 1**
+### *Situación 1*
 
 Tiene una entrevista con el gerente de ventas de una empresa el cual desea informatizar dicho sector pero no tuvo tiempo de preparar las preguntas por lo que le pidió a un nuevo empleado que le prepare algunas. Cuando las lee, se da cuenta que son inadecuadas. \
 Lea las preguntas y vuelva a redactarlas de una manera más apropiada. Especifique por qué le parece inadecuada cada una de ellas.
@@ -61,7 +61,7 @@ Lea las preguntas y vuelva a redactarlas de una manera más apropiada. Especifiq
 - `d)` ¿No habrá una mejor manera de hacer proyecciones de sus ventas, que ese procedimiento anticuado que usted utiliza?
 
 
-### **Situación 2**
+### *Situación 2*
 
 Apenas ha entrado a la oficina de su entrevistado se da cuenta que él no ha dejado de revisar papeles, mirar el reloj y hacer llamadas telefónicas. Usted supone que se siente nervioso porque está atrasado con otro trabajo que tiene que terminar.
 
@@ -69,7 +69,7 @@ Apenas ha entrado a la oficina de su entrevistado se da cuenta que él no ha dej
 - `b)` Qué opciones propone para el caso en que la entrevista no pueda reprogramarse.
 
  
-### **Situación 3**
+### *Situación 3*
 
 El siguiente es el primer informe de una entrevista realizada por uno de los miembros de su equipo de análisis de sistemas:
 
@@ -84,15 +84,15 @@ nuevamente para terminar la entrevista, pues, no tuvimos tiempo para analizar la
 
 ---
 
-### **Parte II Problemas**
+### *Parte II Problemas*
 
-### **Problema 1**
+### *Problema 1*
 
 Preparar una entrevista para obtener los requerimientos del siguiente problema:
 
 Se desea desarrollar un sistema que permita compartir un vehículo para un viaje. La idea es que cuando una persona tiene que realizar un viaje lo publique en la aplicación. Luego el resto de los usuarios se postulan para acompañarla y el chofer podrá seleccionar quienes viajan. El objetivo es abaratar costos y evitar congestiones en el tránsito.
 
-### **Problema 2**
+### *Problema 2*
 
 Preparar una entrevista para obtener los requerimientos del siguiente problema:\
 CookBooks es un negocio pequeño manejado por una pareja jubilada. Hasta este momento, Cookbooks ha vendido sus libros sólo a través de pedidos por correo. Los dueños ahora quieren desarrollar un sistema en línea para vender libros de cocina difíciles de conseguir y agotados a través de internet.\
@@ -102,13 +102,13 @@ Los visitantes podrán hojear diferentes libros de cocina, pero tendrán que cre
 
 ## `Cuestionarios`
 
-### **Parte I Definiciones**
+### *Parte I Definiciones*
 
 - `1)` Describa qué tipo de información se busca mediante la aplicación de cuestionarios.
 - `2)` Describa bajo qué circunstancia considera apropiado utilizar cuestionarios.
 - `3)` Describa los dos tipos de cuestionarios.
 
-### **Parte II Definiciones**
+### *Parte II Definiciones*
 
 ### *Solución 1*
 
@@ -161,4 +161,4 @@ hacerlo?_________________________________________________
 - `a)` Reformule o elimine las preguntas que considere inapropiadas.
 - `b)` Realice una crítica sobre el diseño y el estilo en cuanto a espacio en blanco, espacio para las respuestas, facilidad para responder, etc.
 - `c)` Escriba el cuestionario nuevamente, teniendo en cuenta lo respondido en los puntos a y b.
-UNLP – Facultad de Informática
+UNLP – Facultad de Informática'
