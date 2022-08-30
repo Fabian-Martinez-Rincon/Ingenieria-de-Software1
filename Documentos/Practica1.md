@@ -21,6 +21,12 @@ Es una característica del sistema o una descripción de algo que el sistema es 
 *No Funcionales:*
 
 - Describen una restricción sobre el sistema que limita nuestras elecciones en la construcción de una solución al problema
+- Requerimientos de producto:
+  Especifican el comportamiento del producto(usabilidad, eficiencia, rendimiento, espacio, fiabilidad, portabilidad)
+- Requerimientos organizacionales
+  Se derivan de las políticas y procedimientos existentes en la organización del cliente y en la del desarrollador (entrega, implementación, estándares)
+- Requerimientos externos 
+  Interoperabilidad, legales, privacidad, seguridad, éticos
 
 `3)` Defina que es un **stakeholder**.
 `4)` Defina las fuentes más importantes para la obtención de información.
