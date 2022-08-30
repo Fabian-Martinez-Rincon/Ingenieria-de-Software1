@@ -4,13 +4,28 @@
 
 ### *Parte I Definiciones*
 
-- `1)` Definir brevemente que es un requerimiento
-  Es una cara
-- `2)` Defina requerimientos funcionales y no funcionales.
-- `3)` Defina que es un **stakeholder**.
-- `4)` Defina las fuentes más importantes para la obtención de información.
-- `5)` Indique los puntos de vista (de manera genérica) que se pueden reconocer en un proyecto de software.
-- `6)` Enumere tres problemas de comunicación que pueden existir en la elicitación de requisitos.
+`1)` Definir brevemente que es un requerimiento
+
+Es una característica del sistema o una descripción de algo que el sistema es capaz de hacer con el objetivo de satisfacer el propósito del sistema 
+
+`2)` Defina requerimientos funcionales y no funcionales.
+
+*Funcionales:*
+
+- Describen una interacción entre el sistema y su ambiente. Cómo debe comportarse el sistema ante determinado estímulo.
+- Describen lo que el sistema debe hacer o incluso cómo NO debe comportarse.
+- Describen con detalle la funcionalidad del mismo
+- Son independientes de la implementación de la solución
+- Se pueden expresar de distintas formas
+  
+*No Funcionales:*
+
+- Describen una restricción sobre el sistema que limita nuestras elecciones en la construcción de una solución al problema
+
+`3)` Defina que es un **stakeholder**.
+`4)` Defina las fuentes más importantes para la obtención de información.
+`5)` Indique los puntos de vista (de manera genérica) que se pueden reconocer en un proyecto de software.
+`6)` Enumere tres problemas de comunicación que pueden existir en la elicitación de requisitos.
 
 ### *Parte II Definiciones*
 
