@@ -29,8 +29,38 @@ Es una característica del sistema o una descripción de algo que el sistema es 
   Interoperabilidad, legales, privacidad, seguridad, éticos
 
 `3)` Defina que es un **stakeholder**.
+
+El termino *stakeholder* se utiliza para referirse a cualquier persona o grupo que se verá afectado por el sistema, directa o indirectamente.
+
+**Entre estos se encuentra**
+
+- Usuarios finales
+- Ingenieros
+- Gerentes
+- Expertos del dominio
+- Diferentes versiones....
+
+
 `4)` Defina las fuentes más importantes para la obtención de información.
+
+Los métodos discretos son menos perturbadores que otras formas de averiguar los requerimientos.
+
+Se consideran insuficientes para recopilar información cuando se utilizan por sí solos, por lo que deben utilizarse junto con uno o varios de los métodos.
+
+Utilizar diferentes métodos para acercarse a la organización es una practica inteligente mediante la cual podrá formarse un panorama más completo de los requerimientos.
+
+- Muestreo de la documentación, los formularios y los datos existentes
+- Investigación y visitas al sitio
+- Observación del ambiente de trabajo
+
 `5)` Indique los puntos de vista (de manera genérica) que se pueden reconocer en un proyecto de software.
+
+Existen tres tipos genéricos de puntos de vista:
+- `Interactuadores`: Representan a las personas u otros sistemas que interactúan directamente con el sistema. Pueden influir en los requerimientos del siste de alguún modo.
+- `Indirecto:` Representan a los stakeholders que no utilizan el sistema ellos mismos pero que influyen en los requerimientos de algún modo.
+- `Dominio:` Representan las características y restricciones del dominio que influuem en los requerimientos del sistema.
+
+
 `6)` Enumere tres problemas de comunicación que pueden existir en la elicitación de requisitos.
 
 ### *Parte II Definiciones*
