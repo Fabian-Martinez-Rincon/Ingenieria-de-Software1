@@ -1,4 +1,5 @@
-# Practica 1
+<h1 align="center">  Practica 1</h1>
+<p><img width="270" align='right' src="https://media.giphy.com/media/ycNkwiWl7Ralq/giphy.gif"></p>
 
 - [Obtención de los requerimientos](#obtención-de-los-requerimientos)
   - [Parte I Definiciones](#Parte-I-Definiciones-Requerimientos)
