@@ -57,8 +57,6 @@ El termino *stakeholder* se utiliza para referirse a cualquier persona o grupo q
 
 `4)` Defina las fuentes más importantes para la obtención de información.
 
-Recopilación de información:
-
 **Métodos discretos**
 
 - Muestreo de la documentación, los formularios y los datos existentes
@@ -83,12 +81,32 @@ Hay métodos interactivos que pueden usarse para obtener los requerimientos de l
 `5)` Indique los puntos de vista (de manera genérica) que se pueden reconocer en un proyecto de software.
 
 Existen tres tipos genéricos de puntos de vista:
-- `Interactuadores`: Representan a las personas u otros sistemas que interactúan directamente con el sistema. Pueden influir en los requerimientos del siste de alguún modo.
+- `Interactuadores`: Representan a las personas u otros sistemas que interactúan directamente con el sistema. Pueden influir en los requerimientos del sistema de algún modo.
 - `Indirecto:` Representan a los stakeholders que no utilizan el sistema ellos mismos pero que influyen en los requerimientos de algún modo.
-- `Dominio:` Representan las características y restricciones del dominio que influuem en los requerimientos del sistema.
+- `Dominio:` Representan las características y restricciones del dominio que influyen en los requerimientos del sistema.
 
 
 `6)` Enumere tres problemas de comunicación que pueden existir en la elicitación de requisitos.
+
+**Limitaciones cognitivas (del desarrollador)**
+- No conocer el dominio del problema.
+- Hacer suposiciones sobre el dominio del problema.
+- Hacer suposiciones sobre aspectos tecnológicos.
+- Hacer simplificaciones excesivas.
+
+**Conducta humana**
+
+- Conflictos y ambigüedades en los roles de los participantes.
+- Pasividad de clientes, usuarios o ingenieros de requisitos.
+- Temor a que el nuevo sistema lo deje sin trabajo.
+
+**Técnicos**
+
+- Complejidad del dominio del problema.
+- Complejidad de los requisitos.
+- Múltiples fuentes de requisitos.
+- Fuentes de información poco claras.
+
 
 ---
 
@@ -104,6 +122,10 @@ materia podrá consultar y listar el estado de cada alumno perteneciente a su c�
 utilizará en el ámbito de la facultad de Informática y deberá adecuarse a la reglamentación sobre privacidad
 de los datos en el ámbito de la misma.
 
+`StakeHolders`: Estudiantes de la catedra de Ingenieria 1, el profesor a cargo.\
+`Fuentes de información`: Listado otorgado por la oficina de alumnos de la facultad.\
+`Puntos de vista`: Jefe de Trabajos Prácticos, reglamentación sobre privacidad de los datos.
+
 - `2)` Se desea desarrollar un sistema para gestionar y administrar la atención de pacientes en una clínica privada
 especializada en tratamientos alérgicos. Cuando un paciente nuevo es ingresado a la clínica el empleado
 registra todos sus datos personales, posteriormente un enfermero registra los controles y realiza las
@@ -113,6 +135,10 @@ se encarga de registrar si el paciente debe quedar internado y debe mantener su 
 período que dure el tratamiento. Se sabe que el director de la clínica puede consultar las historias clínicas de
 todos los pacientes. El sistema debe adecuarse a las normativas impuestas por el ministerio de salud de la
 provincia de Bs As.
+
+`StakeHolders`: Empleado, Enfermero, Paciente\
+`Fuentes de información`: Datos personales registrados por un empleado.\
+`Puntos de vista`: Director, normativas impuestas por el ministerio de salud de la provincia de Bs As.\
 
 **b) Habiendo resuelto los problemas presentados, ¿por qué considera que los requerimientos de los distintos stakeholders podrían entrar en conflicto? UNLP – Facultad de Informática**
 
@@ -185,7 +211,7 @@ Los visitantes podrán hojear diferentes libros de cocina, pero tendrán que cre
 
 # `Cuestionarios`
 
-## Parte I Definiciones Cuestionarios 
+## Parte I Definiciones Cuestionarios
 
 - `1)` Describa qué tipo de información se busca mediante la aplicación de cuestionarios.
 - `2)` Describa bajo qué circunstancia considera apropiado utilizar cuestionarios.
