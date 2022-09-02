@@ -7,10 +7,10 @@
 - [Entrevistas](#Entrevistas)
   - [Parte I Definiciones](#Parte-I-Definiciones-Entrevistas)
   - [Parte II Situaciones](#Parte-II-Situaciones-Entrevistas)
-  - [Parte III Problemas](#Parte-III-Problemas-Entrevista)
+  - [Parte III Problemas](#Parte-III-Problemas-Entrevistas)
 - [Cuestionarios](#Cuestionarios)
   - [Parte I Definiciones](#Parte-I-Definiciones-Cuestionarios)
-  - [Parte II Situaciones](#Parte-II-Situaciones-Cuestionarios)
+  - [Parte II Soluciones](#Parte-II-Soluciones-Cuestionarios)
 
 # `Obtención de los requerimientos`
 
@@ -92,7 +92,7 @@ Existen tres tipos genéricos de puntos de vista:
 
 ---
 
-## *Parte II Definiciones Requerimientos*
+## *Parte II Problemas Requerimientos*
 
 **a) Indicar para cada problema quienes podrían ser los Stakeholders, los puntos de vista y las fuentes de información.**
 
