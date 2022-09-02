@@ -4,15 +4,7 @@
 
 ## 📚 Teoria
 
-
 - [Conceptos de Ingenieria de software](/Documentos/Conceptos.md)
-- [Requerimientos](/Documentos/Requerimientos.md)
-- [Modelos de proceso](/Documentos/Modelos_de_proceso.md)
-- [Calidad de software](/Documentos/Calidad_de_software.md)
-- Clases
-  - [Video 1](https://www.youtube.com/watch?v=NK-VB6cw8Cs)
-  - [Video 2](https://www.youtube.com/watch?v=l9eGBnooMcA)
-  - [Video 3](https://www.youtube.com/watch?v=13hLavqMmxk)
 
 ## 🔨 Practicas
 
