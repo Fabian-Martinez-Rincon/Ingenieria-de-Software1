@@ -11,9 +11,11 @@
   - [Parte I Definiciones](#Parte-I-Definiciones-Cuestionarios)
   - [Parte II Situaciones](#Parte-II-Situaciones-Cuestionarios)
 
-## `Obtención de los requerimientos`
+# `Obtención de los requerimientos`
 
-### *Parte I Definiciones*
+---
+
+## *Parte I Definiciones Requerimientos*
 
 `1)` Definir brevemente que es un requerimiento
 
@@ -87,7 +89,9 @@ Existen tres tipos genéricos de puntos de vista:
 
 `6)` Enumere tres problemas de comunicación que pueden existir en la elicitación de requisitos.
 
-### *Parte II Definiciones*
+---
+
+## *Parte II Definiciones Requerimientos*
 
 **a) Indicar para cada problema quienes podrían ser los Stakeholders, los puntos de vista y las fuentes de información.**
 
@@ -111,9 +115,11 @@ provincia de Bs As.
 
 **b) Habiendo resuelto los problemas presentados, ¿por qué considera que los requerimientos de los distintos stakeholders podrían entrar en conflicto? UNLP – Facultad de Informática**
 
-## `Entrevistas`
+---
 
-### Parte I Definiciones
+# `Entrevistas`
+
+## Parte I Definiciones Entrevistas
 
 - `1)` Describa qué tipo de información puede obtenerse en una entrevista.
 - `2)` Enumere y describa brevemente las etapas de la preparación de una entrevista.
@@ -124,7 +130,7 @@ provincia de Bs As.
 
 ---
 
-### Parte II Definiciones
+## Parte II Situaciones Entrevistas
 
 ### *Situación 1*
 
@@ -160,7 +166,7 @@ nuevamente para terminar la entrevista, pues, no tuvimos tiempo para analizar la
 
 ---
 
-### *Parte II Problemas*
+### Parte III Problemas Entrevistas
 
 ### *Problema 1*
 
@@ -176,15 +182,15 @@ Los visitantes podrán hojear diferentes libros de cocina, pero tendrán que cre
 
 ---
 
-## `Cuestionarios`
+# `Cuestionarios`
 
-### *Parte I Definiciones*
+## Parte I Definiciones Cuestionarios 
 
 - `1)` Describa qué tipo de información se busca mediante la aplicación de cuestionarios.
 - `2)` Describa bajo qué circunstancia considera apropiado utilizar cuestionarios.
 - `3)` Describa los dos tipos de cuestionarios.
 
-### *Parte II Definiciones*
+## Parte II Soluciones Cuestionarios
 
 ### *Solución 1*
 
