@@ -18,94 +18,94 @@
 
 ## *Parte I Definiciones Requerimientos*
 
-`1)` Definir brevemente que es un requerimiento
+- `1)` Definir brevemente que es un requerimiento
 
-Es una característica del sistema o una descripción de algo que el sistema es capaz de hacer con el objetivo de satisfacer el propósito del sistema.
+  Es una característica del sistema o una descripción de algo que el sistema es capaz de hacer con el objetivo de satisfacer el propósito del sistema.
 
-`2)` Defina requerimientos funcionales y no funcionales.
+- `2)` Defina requerimientos funcionales y no funcionales.
 
-*Funcionales:*
+  *Funcionales:*
 
-- Describen una interacción entre el sistema y su ambiente. Cómo debe comportarse el sistema ante determinado estímulo.
-- Describen lo que el sistema debe hacer o incluso cómo NO debe comportarse.
-- Describen con detalle la funcionalidad del mismo
-- Son independientes de la implementación de la solución
-- Se pueden expresar de distintas formas
-  
-*No Funcionales:*
+  - Describen una interacción entre el sistema y su ambiente. Cómo debe comportarse el sistema ante determinado estímulo.
+  - Describen lo que el sistema debe hacer o incluso cómo NO debe comportarse.
+  - Describen con detalle la funcionalidad del mismo
+  - Son independientes de la implementación de la solución
+  - Se pueden expresar de distintas formas
+    
+  *No Funcionales:*
 
-- Describen una restricción sobre el sistema que limita nuestras elecciones en la construcción de una solución al problema
-- Requerimientos de producto:
-  Especifican el comportamiento del producto(usabilidad, eficiencia, rendimiento, espacio, fiabilidad, portabilidad)
-- Requerimientos organizacionales
-  Se derivan de las políticas y procedimientos existentes en la organización del cliente y en la del desarrollador (entrega, implementación, estándares)
-- Requerimientos externos 
-  Interoperabilidad, legales, privacidad, seguridad, éticos
+  - Describen una restricción sobre el sistema que limita nuestras elecciones en la construcción de una solución al problema
+  - Requerimientos de producto:
+    Especifican el comportamiento del producto(usabilidad, eficiencia, rendimiento, espacio, fiabilidad, portabilidad)
+  - Requerimientos organizacionales
+    Se derivan de las políticas y procedimientos existentes en la organización del cliente y en la del desarrollador (entrega, implementación, estándares)
+  - Requerimientos externos 
+    Interoperabilidad, legales, privacidad, seguridad, éticos
 
-`3)` Defina que es un **stakeholder**.
+- `3)` Defina que es un **stakeholder**.
 
-El termino *stakeholder* se utiliza para referirse a cualquier persona o grupo que se verá afectado por el sistema, directa o indirectamente.
+  El termino *stakeholder* se utiliza para referirse a cualquier persona o grupo que se verá afectado por el sistema, directa o indirectamente.
 
-**Entre estos se encuentra**
+  **Entre estos se encuentra**
 
-- Usuarios finales
-- Ingenieros
-- Gerentes
-- Expertos del dominio
-- Diferentes versiones....
-
-
-`4)` Defina las fuentes más importantes para la obtención de información.
-
-**Métodos discretos**
-
-- Muestreo de la documentación, los formularios y los datos existentes
-- Investigación y visitas al sitio
-- Observación del ambiente de trabajo
-
-Los métodos discretos son menos perturbadores que otras formas de averiguar los requerimientos. \
-Se consideran insuficientes para recopilar información cuando se utilizan por sí solos, por lo que deben utilizarse junto con uno o varios de los métodos.\
-Utilizar diferentes métodos para acercarse a la organización es una práctica inteligente mediante la cual podrá formarse un panorama más completo de los requerimientos.
+  - Usuarios finales
+  - Ingenieros
+  - Gerentes
+  - Expertos del dominio
+  - Diferentes versiones....
 
 
-**Métodos iteractivos**
+- `4)` Defina las fuentes más importantes para la obtención de información.
 
-- Cuestionarios
-- Entrevistas
-- Planeación conjunta de Requerimientos (JRP o JAD)
-- Lluvia de ideas
+  **Métodos discretos**
 
-Hay métodos interactivos que pueden usarse para obtener los requerimientos de los miembros de la organización Aunque son distintos en su implementación, estos métodos tienen muchas cosas en común. La base es hablar con las personas en la organización y escuchar para comprender.
+  - Muestreo de la documentación, los formularios y los datos existentes
+  - Investigación y visitas al sitio
+  - Observación del ambiente de trabajo
 
-
-`5)` Indique los puntos de vista (de manera genérica) que se pueden reconocer en un proyecto de software.
-
-Existen tres tipos genéricos de puntos de vista:
-- `Interactuadores`: Representan a las personas u otros sistemas que interactúan directamente con el sistema. Pueden influir en los requerimientos del sistema de algún modo.
-- `Indirecto:` Representan a los stakeholders que no utilizan el sistema ellos mismos pero que influyen en los requerimientos de algún modo.
-- `Dominio:` Representan las características y restricciones del dominio que influyen en los requerimientos del sistema.
+  Los métodos discretos son menos perturbadores que otras formas de averiguar los requerimientos. \
+  Se consideran insuficientes para recopilar información cuando se utilizan por sí solos, por lo que deben utilizarse junto con uno o varios de los métodos.\
+  Utilizar diferentes métodos para acercarse a la organización es una práctica inteligente mediante la cual podrá formarse un panorama más completo de los requerimientos.
 
 
-`6)` Enumere tres problemas de comunicación que pueden existir en la elicitación de requisitos.
+  **Métodos iteractivos**
 
-**Limitaciones cognitivas (del desarrollador)**
-- No conocer el dominio del problema.
-- Hacer suposiciones sobre el dominio del problema.
-- Hacer suposiciones sobre aspectos tecnológicos.
-- Hacer simplificaciones excesivas.
+  - Cuestionarios
+  - Entrevistas
+  - Planeación conjunta de Requerimientos (JRP o JAD)
+  - Lluvia de ideas
 
-**Conducta humana**
+  Hay métodos interactivos que pueden usarse para obtener los requerimientos de los miembros de la organización Aunque son distintos en su implementación, estos métodos tienen muchas cosas en común. La base es hablar con las personas en la organización y escuchar para comprender.
 
-- Conflictos y ambigüedades en los roles de los participantes.
-- Pasividad de clientes, usuarios o ingenieros de requisitos.
-- Temor a que el nuevo sistema lo deje sin trabajo.
 
-**Técnicos**
+- `5)` Indique los puntos de vista (de manera genérica) que se pueden reconocer en un proyecto de software.
 
-- Complejidad del dominio del problema.
-- Complejidad de los requisitos.
-- Múltiples fuentes de requisitos.
-- Fuentes de información poco claras.
+  Existen tres tipos genéricos de puntos de vista:
+  - `Interactuadores`: Representan a las personas u otros sistemas que interactúan directamente con el sistema. Pueden influir en los requerimientos del sistema de algún modo.
+  - `Indirecto:` Representan a los stakeholders que no utilizan el sistema ellos mismos pero que influyen en los requerimientos de algún modo.
+  - `Dominio:` Representan las características y restricciones del dominio que influyen en los requerimientos del sistema.
+
+
+- `6)` Enumere tres problemas de comunicación que pueden existir en la elicitación de requisitos.
+
+  **Limitaciones cognitivas (del desarrollador)**
+  - No conocer el dominio del problema.
+  - Hacer suposiciones sobre el dominio del problema.
+  - Hacer suposiciones sobre aspectos tecnológicos.
+  - Hacer simplificaciones excesivas.
+
+  **Conducta humana**
+
+  - Conflictos y ambigüedades en los roles de los participantes.
+  - Pasividad de clientes, usuarios o ingenieros de requisitos.
+  - Temor a que el nuevo sistema lo deje sin trabajo.
+
+  **Técnicos**
+
+  - Complejidad del dominio del problema.
+  - Complejidad de los requisitos.
+  - Múltiples fuentes de requisitos.
+  - Fuentes de información poco claras.
 
 
 ---
@@ -122,9 +122,9 @@ materia podrá consultar y listar el estado de cada alumno perteneciente a su c�
 utilizará en el ámbito de la facultad de Informática y deberá adecuarse a la reglamentación sobre privacidad
 de los datos en el ámbito de la misma.
 
-`StakeHolders`: Estudiantes de la catedra de Ingenieria 1, el profesor a cargo.\
-`Fuentes de información`: Listado otorgado por la oficina de alumnos de la facultad.\
-`Puntos de vista`: Jefe de Trabajos Prácticos, reglamentación sobre privacidad de los datos.
+  `StakeHolders`: Estudiantes de la catedra de Ingenieria 1, el profesor a cargo.\
+  `Fuentes de información`: Listado otorgado por la oficina de alumnos de la facultad.\
+  `Puntos de vista`: Jefe de Trabajos Prácticos, reglamentación sobre privacidad de los datos.
 
 - `2)` Se desea desarrollar un sistema para gestionar y administrar la atención de pacientes en una clínica privada
 especializada en tratamientos alérgicos. Cuando un paciente nuevo es ingresado a la clínica el empleado
@@ -136,9 +136,9 @@ período que dure el tratamiento. Se sabe que el director de la clínica puede c
 todos los pacientes. El sistema debe adecuarse a las normativas impuestas por el ministerio de salud de la
 provincia de Bs As.
 
-`StakeHolders`: Empleado, Enfermero, Paciente\
-`Fuentes de información`: Datos personales registrados por un empleado.\
-`Puntos de vista`: Director, normativas impuestas por el ministerio de salud de la provincia de Bs As.\
+  `StakeHolders`: Empleado, Enfermero, Paciente\
+  `Fuentes de información`: Datos personales registrados por un empleado.\
+  `Puntos de vista`: Director, normativas impuestas por el ministerio de salud de la provincia de Bs As.
 
 **b) Habiendo resuelto los problemas presentados, ¿por qué considera que los requerimientos de los distintos stakeholders podrían entrar en conflicto? UNLP – Facultad de Informática**
 
@@ -214,8 +214,32 @@ Los visitantes podrán hojear diferentes libros de cocina, pero tendrán que cre
 ## Parte I Definiciones Cuestionarios
 
 - `1)` Describa qué tipo de información se busca mediante la aplicación de cuestionarios.
+
+  Se busca informacion sobre sentimientos generales, problemas entre usuarios, tambien buscar hechos de un gran numero de personas y cuantificar respuestas.
+
+  **Tipo de informacion obtenida:** \
+  Actitud: lo que las personas dicen que quieren.\
+  Creencias: Lo que las personas creen que es verdad.\
+  Comportamiento: Lo que realmente hacen.\
+  Características: De las personas o cosas.
+
+
 - `2)` Describa bajo qué circunstancia considera apropiado utilizar cuestionarios.
+
+  Se considera apropiado usar cuestionarios cuando las personas están dispersas geográficamente (Diferentes oficinas o ciudades), cuando tenemos a muchas personas involucradas (clientes o usuarios), cuando queremos obtener opiniones o identificar problemas generales.
+
+
 - `3)` Describa los dos tipos de cuestionarios.
+
+  **Cuestionarios con Preguntas Abiertas**
+
+  Son las que dejan abiertas todas las posibles opciones de respuesta. Como por ejemplo:\
+  Describa los problemas que experimenta en la actualidad con los informes de las salidas. (Es basicamente su opinion)
+
+  **Cuestionarios con Preguntas Cerradas**
+
+  Limitan o cierran las opciones de respuesta disponibles. Por ejemplo:\
+  ¿Es útil el reporte que utiliza actualmente? SI o NO.
 
 ## Parte II Soluciones Cuestionarios
 
