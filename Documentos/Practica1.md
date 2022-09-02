@@ -1,12 +1,23 @@
 # Practica 1
 
+- [Obtención de los requerimientos](#obtención-de-los-requerimientos)
+  - [Parte I Definiciones](#Parte-I-Definiciones-Requerimientos)
+  - [Parte II Problemas](#Parte-II-Problemas-Requerimientos)
+- [Entrevistas](#Entrevistas)
+  - [Parte I Definiciones](#Parte-I-Definiciones-Entrevistas)
+  - [Parte II Situaciones](#Parte-II-Situaciones-Entrevistas)
+  - [Parte III Problemas](#Parte-III-Problemas-Entrevista)
+- [Cuestionarios](#Cuestionarios)
+  - [Parte I Definiciones](#Parte-I-Definiciones-Cuestionarios)
+  - [Parte II Situaciones](#Parte-II-Situaciones-Cuestionarios)
+
 ## `Obtención de los requerimientos`
 
 ### *Parte I Definiciones*
 
 `1)` Definir brevemente que es un requerimiento
 
-Es una característica del sistema o una descripción de algo que el sistema es capaz de hacer con el objetivo de satisfacer el propósito del sistema 
+Es una característica del sistema o una descripción de algo que el sistema es capaz de hacer con el objetivo de satisfacer el propósito del sistema.
 
 `2)` Defina requerimientos funcionales y no funcionales.
 
@@ -43,15 +54,28 @@ El termino *stakeholder* se utiliza para referirse a cualquier persona o grupo q
 
 `4)` Defina las fuentes más importantes para la obtención de información.
 
-Los métodos discretos son menos perturbadores que otras formas de averiguar los requerimientos.
+Recopilación de información:
 
-Se consideran insuficientes para recopilar información cuando se utilizan por sí solos, por lo que deben utilizarse junto con uno o varios de los métodos.
-
-Utilizar diferentes métodos para acercarse a la organización es una practica inteligente mediante la cual podrá formarse un panorama más completo de los requerimientos.
+**Métodos discretos**
 
 - Muestreo de la documentación, los formularios y los datos existentes
 - Investigación y visitas al sitio
 - Observación del ambiente de trabajo
+
+Los métodos discretos son menos perturbadores que otras formas de averiguar los requerimientos. \
+Se consideran insuficientes para recopilar información cuando se utilizan por sí solos, por lo que deben utilizarse junto con uno o varios de los métodos.\
+Utilizar diferentes métodos para acercarse a la organización es una práctica inteligente mediante la cual podrá formarse un panorama más completo de los requerimientos.
+
+
+**Métodos iteractivos**
+
+- Cuestionarios
+- Entrevistas
+- Planeación conjunta de Requerimientos (JRP o JAD)
+- Lluvia de ideas
+
+Hay métodos interactivos que pueden usarse para obtener los requerimientos de los miembros de la organización Aunque son distintos en su implementación, estos métodos tienen muchas cosas en común. La base es hablar con las personas en la organización y escuchar para comprender.
+
 
 `5)` Indique los puntos de vista (de manera genérica) que se pueden reconocer en un proyecto de software.
 
