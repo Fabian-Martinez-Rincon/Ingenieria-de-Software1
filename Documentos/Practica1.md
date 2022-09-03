@@ -149,9 +149,48 @@ provincia de Bs As.
 ## Parte I Definiciones Entrevistas
 
 - `1)` Describa qué tipo de información puede obtenerse en una entrevista.
+
+Se pueden obtener opiniones, objetivos o sentimientos sobre los temas planteados
+
 - `2)` Enumere y describa brevemente las etapas de la preparación de una entrevista.
+
+  1) Leer los antecedentes.
+  2) Establecer los objetivos de la entrevista.
+  3) Seleccionar los entrevistados.
+  4) Planificación de la entrevista y preparación del entrevistado.
+  5) Selección del tipo de preguntas a usar y su estructura.
+
 - `3)` Enumere y describa brevemente qué tipos de preguntas puede contener una entrevista. Detalle ventajas y desventajas de cada una.
-- `4)` Enumere y describa brevemente qué tipo de estructuras y organización existen para el armado de una entrevista
+
+  **Tipos de preguntas**
+  - `Abiertas`: Permite al encuestado responder de cualquier manera.\
+    **Ventajas**
+      - Revelan nueva línea de preguntas.
+      - Hacen más interesante la entrevista.
+      - Permiten espontaneidad.
+
+    **Desventajas**
+      - Pueden dar muchos detalles irrelevantes.
+      - Se puede perder el control de la entrevista.
+      - Parece que el entrevistado no tiene los objetivos claros
+
+  - `Cerradas`: Las respuestas son directas, cortas o de selección específica.\
+    **Ventajas**
+      - Ahorran tiempo.
+      - Se mantiene más fácil el control de la entrevista.
+      - Se consiguen datos relevantes.
+
+    **Desventajas**
+      - Pueden abirrir al encuestado.
+      - No se obtienen detalles.
+  - `Sondeo`: Permite obtener más detalles sobre un tema puntual.
+
+- `4)` Enumere y describa brevemente qué tipo de estructuras y organización existen para el armado de una entrevista.
+
+  - Piramidal (Inductivo): Empezamos desde las preguntas cerradas y poco a poco, vamos hacia las preguntas abiertas.
+  - Embudo (Deductivo): Lo contrario que la piramidal
+  - Diamante (Comb de las anteriores): Empezamos por las preguntas cerradas, despues las abiertas y terminamos con las cerradas.
+
 - `5)` Analice un formato de la planilla adecuado al momento de armar una entrevista.
 - `6)` Analice un formato de la planilla adecuado al momento de terminar una entrevista.
 
@@ -164,19 +203,24 @@ provincia de Bs As.
 Tiene una entrevista con el gerente de ventas de una empresa el cual desea informatizar dicho sector pero no tuvo tiempo de preparar las preguntas por lo que le pidió a un nuevo empleado que le prepare algunas. Cuando las lee, se da cuenta que son inadecuadas. \
 Lea las preguntas y vuelva a redactarlas de una manera más apropiada. Especifique por qué le parece inadecuada cada una de ellas.
 
-- `a)` Sus subordinados me dijeron que la empresa no anda bien. ¿Es cierto?
-- `b)` Soy nuevo en esto. ¿Qué he dejado afuera?
-- `c)` ¿Estará usted de acuerdo con los demás gerentes de ventas, respecto a que computarizar las ventas mensuales y luego realizar un análisis de la tendencia tendría usted grandes mejoras?
-- `d)` ¿No habrá una mejor manera de hacer proyecciones de sus ventas, que ese procedimiento anticuado que usted utiliza?
+- `a)` Sus subordinados me dijeron que la empresa no anda bien. ¿Es cierto?\
+    Sus empleados me comentaron que la empresa no se encuentra en su mejor momento, queria preguntar, si esto es cierto y si sabe a que se debe.
+- `b)` Soy nuevo en esto. ¿Qué he dejado afuera?\
+  No tengo mucha experiencia en ente campo, que puedo corregir?
+- `c)` ¿Estará usted de acuerdo con los demás gerentes de ventas, respecto a que computarizar las ventas mensuales y luego realizar un análisis de la tendencia tendría usted grandes mejoras?\
+    ¿Usted le gusta la idea de computarizar las ventas mensuales para luego realizar un analisis de tendencia?
+- `d)` ¿No habrá una mejor manera de hacer proyecciones de sus ventas, que ese procedimiento anticuado que usted utiliza?\
+   En cuanto a las proyeciones de las ventas, tengo un procedimiento que a mi parecer es mas actualizado.
 
 
 ### *Situación 2*
 
 Apenas ha entrado a la oficina de su entrevistado se da cuenta que él no ha dejado de revisar papeles, mirar el reloj y hacer llamadas telefónicas. Usted supone que se siente nervioso porque está atrasado con otro trabajo que tiene que terminar.
 
-- `a)` Explique brevemente cómo resolvería tal situación.
+- `a)` Explique brevemente cómo resolvería tal situación.\
+    Primero le diria que la entrevista no va a tardar mucho y que no tiene de que preocuparse. Y creo que solo diria eso ya que ni yo se como controlar mis nervios :D
 - `b)` Qué opciones propone para el caso en que la entrevista no pueda reprogramarse.
-
+    Yo propondria tener una charla telefonica.
  
 ### *Situación 3*
 
@@ -187,10 +231,14 @@ hora y media. Me relató toda la historia del negocio, que fue muy interesante. 
 han cambiado desde que él ha estado en la empresa, hace aproximadamente 16 años. En breve nos reuniremos
 nuevamente para terminar la entrevista, pues, no tuvimos tiempo para analizar las preguntas que preparé “.
 
-- `a)` Lea atentamente el informe de la entrevista y explique qué sensación le deja dicho informe.
-- `b)` Indique si existe información que es irrelevante en el informe.
+- `a)` Lea atentamente el informe de la entrevista y explique qué sensación le deja dicho informe.\
+  Me dejo la sensación de que el entrevistador, estaba tan apurado en querer mostrar todo lo que hizo su empresa, que no se le paso por la mente, lo mas importante, que es el entrevistado, ya que si este quiere saber mas sobre la empresa (si es una buena/conocida empresa) tranquilamente podria buscarla por internet. 
+- `b)` Indique si existe información que es irrelevante en el informe.\
+    Toda la informacion sobre la historia de la empresa y que vienen haciendo lo mismo desde hace años, es completamente irrelevante para el entrevistado 
 - `c)` Mencione tres sugerencias que le haría a su compañero de equipo para que realizara una mejor entrevista la próxima vez.
-
+    - Que deje de hablar y escuche mas
+    - Que omita datos irrelevantes
+    - Y que la entrevista no dure mas de 30 minutos porque ya gente tiene cosas que hacer.
 ---
 
 ### Parte III Problemas Entrevistas
