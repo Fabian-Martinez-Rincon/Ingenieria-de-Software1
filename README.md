@@ -9,6 +9,7 @@
 ## 🔨 Practicas
 
 - [Practica 1](/Documentos/Practica1.md)
+- [Practica 2](/Documentos/Practica2.md)
 
 ### 📝 Condiciones de aprobacion
 
