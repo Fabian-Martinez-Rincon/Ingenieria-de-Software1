@@ -20,6 +20,19 @@ El formato es el siguiente:
 Cuando \<ocurre un evento>,
 Entonces <garantiza uno o más resultados>
 
+<br>
+
+- **Escenario 2:** título del criterio.\
+    Dato \<un contexto inicial>
+Cuando \<ocurre un evento>,
+Entonces <garantiza uno o más resultados>
+
+<br>
+
+- **Escenario N:** título del criterio.\
+    Dato \<un contexto inicial>
+Cuando \<ocurre un evento>,
+Entonces <garantiza uno o más resultados>
 ...
 
 
