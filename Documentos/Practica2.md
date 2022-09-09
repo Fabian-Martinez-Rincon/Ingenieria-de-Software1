@@ -1,6 +1,5 @@
 <h1 align="center">  Practica 2</h1>
 
-<p><img width="270" align='right' src="https://media.giphy.com/media/3o85xzkvl1siB2rHSo/giphy.gif"></p>
 
 - [Problema 1 Alquiler de mobiliario](#problema-1-alquiler-de-mobiliario)
 - [Problema 2 Posgrado](#problema-2-posgrado)
