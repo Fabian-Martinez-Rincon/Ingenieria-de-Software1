@@ -1,4 +1,5 @@
-<h1 align="center">  Practica 2</h1>
+<h2 align="center">  Ingeniería de Software I
+Práctica 2 – Historias de Usuario</h2>
 
 
 - [Problema 1 Alquiler de mobiliario](#problema-1-alquiler-de-mobiliario)
@@ -18,19 +19,28 @@
 - [Problema 13 Manejo de canchas de tenis](#problema-13-manejo-de-canchas-de-tenis)
 - [Problema 14 Procesamiento de imágenes](#problema-14-procesamiento-de-imágenes)
 
-# Problema 1 Alquiler de mobiliario
-# Problema 2 Posgrado
-# Problema 3 Contratos
-# Problema 4 Venta de bebidas
-# Problema 5 Casa de fotografía
-# Problema 6 Biblioteca
-# Problema 7 Mutual
-# Problema 8 Teatro
-# Problema 9 Pago Electrónico
-# Problema 10 Un Aventón
-# Problema 11 Concursos
-# Problema 12 Créditos bancarios
-# Problema 12 Venta de libros
-# Problema 13 Manejo de tarjetas de crédito
-# Problema 13 Manejo de canchas de tenis
-# Problema 14 Procesamiento de imágenes
+<table><tr><td> Carga Total </td> </tr>
+<tr><td>
+
+dsadasdsa
+ 
+</td></tr></table>
+
+
+## Problema 1 Alquiler de mobiliario
+## Problema 2 Posgrado
+## Problema 3 Contratos
+## Problema 4 Venta de bebidas
+## Problema 5 Casa de fotografía
+## Problema 6 Biblioteca
+## Problema 7 Mutual
+## Problema 8 Teatro
+## Problema 9 Pago Electrónico
+## Problema 10 Un Aventón
+## Problema 11 Concursos
+## Problema 12 Créditos bancarios
+## Problema 12 Venta de libros
+## Problema 13 Manejo de tarjetas de crédito
+## Problema 13 Manejo de canchas de tenis
+## Problema 14 Procesamiento de imágenes
+
