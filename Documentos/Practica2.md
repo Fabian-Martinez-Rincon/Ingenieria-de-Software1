@@ -6,11 +6,22 @@ Para cada Historia de Usuario se deben indicar los siguientes ítems:
 <table><tr><td> Formato </td> </tr>
 <tr><td>
 
-**ID:** Identificador unívoco de la historia expresado como texto generalmente de la forma <verbo> <sustantivo>
+**ID:** Identificador unívoco de la historia expresado como texto generalmente de la forma \<verbo> \<sustantivo>
  
-**TÍTULO:** Descripción de la historia de la forma: **Como** <rol> **quiero** <algo> **para poder** <beneficio>
+**TÍTULO:** Descripción de la historia de la forma: **Como** \<rol> **quiero** \<algo> **para poder** \<beneficio>
 
 **REGLAS DE NEGOCIO:** Conjunto de reglas, normas, políticas, leyes, etc. que condicionan el modo de operación (Requisitos no funcionales)
+
+**CRITERIOS DE ACEPTACIÓN:** Criterios por los cuales una historia cumple con las expectativas del cliente.\
+El formato es el siguiente:
+
+- **Escenario 1:** título del criterio.\
+    Dato \<un contexto inicial>
+Cuando \<ocurre un evento>,
+Entonces <garantiza uno o más resultados>
+
+...
+
 
 </td></tr></table>
 
