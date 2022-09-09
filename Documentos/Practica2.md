@@ -1,6 +1,18 @@
 <h2 align="center">  Ingeniería de Software I
 Práctica 2 – Historias de Usuario</h2>
 
+Para cada Historia de Usuario se deben indicar los siguientes ítems:
+
+<table><tr><td> Formato </td> </tr>
+<tr><td>
+
+**ID:** Identificador unívoco de la historia expresado como texto generalmente de la forma <verbo> <sustantivo>
+ 
+**TÍTULO:** Descripción de la historia de la forma: **Como** <rol> **quiero** <algo> **para poder** <beneficio>
+
+**REGLAS DE NEGOCIO:** Conjunto de reglas, normas, políticas, leyes, etc. que condicionan el modo de operación (Requisitos no funcionales)
+
+</td></tr></table>
 
 - [Problema 1 Alquiler de mobiliario](#problema-1-alquiler-de-mobiliario)
 - [Problema 2 Posgrado](#problema-2-posgrado)
@@ -19,12 +31,7 @@ Práctica 2 – Historias de Usuario</h2>
 - [Problema 13 Manejo de canchas de tenis](#problema-13-manejo-de-canchas-de-tenis)
 - [Problema 14 Procesamiento de imágenes](#problema-14-procesamiento-de-imágenes)
 
-<table><tr><td> Carga Total </td> </tr>
-<tr><td>
 
-dsadasdsa
- 
-</td></tr></table>
 
 
 ## Problema 1 Alquiler de mobiliario
