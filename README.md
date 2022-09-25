@@ -34,7 +34,7 @@
 - [Especificacion de Requerimientos](#especificacion-de-requerimientos)
 - [Validacion de requerimientos](#validacion-de-requerimientos)
 - [Tecnicas de Especificacion de Requerimientos](#tecnicas-de-especificacion-de-requerimientos)
-- [Historias de usuario]()
+- [Historias de usuario](#historias-de-usuario)
 
 ---
 
@@ -813,3 +813,53 @@ Si bien el estilo puede ser libre, la historia de usuario debe responder a tres 
 - **Que se quiere?**
 - **Cual es el beneficio?**
 
+Esquema
+
+- Como (**rol**) quiero (**algo**) para poder (**beneficio**)
+
+Ejemplos
+- Como **`usuario registrado`** deseo loguearme para poder **`empezar a utilizar la aplicacion`**
+- Como **`secretaria`** quiero poder imprimir el listado de turnos asignados en una fecha determinada y **`guardar la informacion de los mismos`**
+- Como `Cliente`, quiero `suscribirme por medio del sitio web` y `obtener un nuevo plan de TV por clable`
+- Como `Vendedor`, quiero `registrar los productos y cantidades que me solicita un cliente` para `crear un pedido de venta`
+- Como `Analista de compras`, quiero `que el sistema notifique via correo electronico a los preveedores` para `avisar que se ha desviado una cotizacion de licitacion`
+
+
+### Caracteristicas
+- **Independientes unas de otras:** De ser necesario, combinar las historias dependientes o buscar otra forma de dividir las historias de manera que resulten independientes.
+- **Negociables:** La historia en si misma no es lo suficientemente explicita como para considerarse un contrato, la discusion con los usuarios debe permitir esclarecer su alcance y este debe dejarse explicito bajo la forma de pruebas de validacion.
+- **Valoradas por los clientes o usuarios:** Los intereses de los clientes y de los usuarios no siempre coinciden, pero en todo caso, cada historia debe ser importante para alguno de ellos mas que para el desarrollador.
+- **Estimables:** Un resultado de la discusion de una historia de usuario es la estimacion del tiempo que tomara completarla. Esto permite estimar el tiempo total del proyecto.
+- **Pequenias:** Las historias muy largas son dificiles de estimar e imponen restricciones sobre la planificacion de un desarrollo iteractivo. Generalmente se recomienda la consolidacion de historias muy cortas en una sola historia
+- **Verificables:** Las historias de usuario cubren requerimientos funcionales, por lo que generalmente son verificables. Cuando sea posible, la verificacion debe automatizarse, de manera que pueda ser verificada en cada entrega del proyecto
+
+Un criterio de aceptacion es el criterio por el cual se define si una historia de usuario fue desarrollada segun la expectativa del Product Manager (Como representante de los criterios del cliente) y se si puede dar como hecha.
+
+Deben ser definidos durante la etapa inicial antes de la codificacion, acompanian a la historia de usuario, porque complementan la historia de usuario y ayudan al equipo de desarrollo a entender mejor como se espera que el producto se comporte.
+
+Los criterios de aceptacion son utilizados para expresar el resultado de las conversaciones del cliente con el desarrollador. El cliente deberia ser quien las escriba mas que el desarrollador.
+
+Representan el inicio de la definicion del como. No estan diseniados para ser tan detallados como una especificacion de disenio tradicional.
+
+Si una historia de usuario tiene mas de 4 criterios de acecptacion, debe evaluarse subdividir la historia.
+
+Puede aniadirse un numero de escenario para identificar al criterio, asociado a la historia de usuario en cuestion.
+
+### Beneficios
+- Al ser muy corta, esta representa requisitos del modelo de negocio que pueden implementarse rapidamente (dias o semanas)
+- Necesitan poco mantenimiento
+- Mantienen una relacion cercana con el cliente
+- Permiten divir los proyectos en pequenias entregas
+- Permite estimar facilmente el esfuerzo de desarrollo
+- Es ideal para proyectos con requisitos volatiles o no muy claros.
+
+### Limitadores
+
+- Sin criterios de aceptacion pueden quedar abiertas a distintas interpretaciones haciendo dificil utilizarlas como base para un contrato
+- Se requiere un contacto permanten con el cliente durante el proyecto lo cual puede ser dificil o costoso
+- Podria resultar dificil escalar a proyectos grandes
+- Requiere desarrolladores muy competentes
+
+### Epicas
+
+Se denomina Epica a un conjunto de Historias de usuario que se agrupan por algun denominador comun
