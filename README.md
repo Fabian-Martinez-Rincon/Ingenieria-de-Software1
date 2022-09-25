@@ -33,8 +33,8 @@
 - [Estudio de Viabilidad](#estudio-de-viabilidad)
 - [Especificacion de Requerimientos](#especificacion-de-requerimientos)
 - [Validacion de requerimientos](#validacion-de-requerimientos)
-
-
+- [Tecnicas de Especificacion de Requerimientos](#tecnicas-de-especificacion-de-requerimientos)
+- [Historias de usuario]()
 
 ---
 
@@ -739,4 +739,77 @@ Sobre estas definiciones
 - Validacion: hacer el software correcto
 - Verificacion: hacer el software correctamente
 
-****
+**Es suficiente validar despues del desarrollo de software?**
+- La evidencia estadistica dice que NO
+- Cuanto mas tarde se detecta, mas cuesta corregir (Boehm)
+- Bola de nieve de defectos
+- Validar en la fase de especificacion de requerimientos puede ayudar a evitar costosas correcciones despues del desarrollo
+
+**Contra que se verifican los requerimientos?**
+- No existen 'los requerimientos de los requerimientos'
+- No puede probarse formalmente que un Modelo de Requerimientos es correcto. Puede alcanzarse una conviccion de que la solucion especificada en el modelo de requerimientos es el correcto para el usuario.
+
+Comprenden
+- Verificaciones de validez (para todos los usuarios)
+- Verificaciones de consistencia (sin contradicciones)
+- Verificaciones de completitud (todos los requerimientos`)
+- Verificaciones de realismo (se pueden implementar)
+- Verificaciones (se puede diseniar conjunto de pruebas)
+
+### Tecnicas de Validacion
+
+Pueden ser manuales o automatizadas
+- Revisiones de requerimientos (formales o informales)
+    - Informales: Los desarrolladores deben tratar los requerimientos con tantos stakeholders como sea posible`
+    - Formal: El equipo de desarrollo debe conducir al cliente, explicandole las explicaciones de cada requerimiento
+- Antes de una revision formal, es conveniente realizar una revision informal
+- Contruccion de prototipos
+- Generacion de casos de prueba
+
+
+## Tecnicas de Especificacion de Requerimientos
+
+**Estaticas**
+
+Se describe el sistema a traves de las entidades u objetos, sus atributos y sus relaciones con otros. No describe como las relaciones cambian con el tiempo. 
+Cuando el tiempo no es un factor mayor en la operacion del sistema, es una descripcion util adecuada.
+
+Ejemplos: Referencia indirecta, Relaciones de recurrencia, Definicion axiomatica, Expresiones regulares, Abstracciones de datos, entre otras.
+
+**Dinamica**
+
+Se considera un sistema en funcion de los cambios que ocurren a lo largo del tiempo.
+
+Se considera que el sistema esta en un estado particular hasta que un estimulo lo obliga a cambiar su estado.
+
+Ejemplos: Tablas de decision, Diagramas de transicion de estados, Tablas de transicion de estados, Diagramas de persianas, Diagramas de transicion extendidos, Redes de Petri, entre otras.
+
+## Historias de usuario
+
+Son utilizadas en las metodologias de desarrollo agiles (XP, SCRUM, etc) para las especificaciones de requerimientos
+
+Acompaniadas de las discusiones con los usuarios y las pruebas de validacion
+
+```
+Una historia de usuario es una representacion de un requerimiento de 
+software escrito en una o dos frases utilizando el lenguaje comun del usuario 
+```
+
+
+**Debe ser limitada,** esta deberia poder escribirse sobre una nota adhesiva pequenia
+
+Son **una forma rapida de administrar los requisitos** de los usuarios sin tener que elaborar gran cantidad de documentos formales y sin requerir de mucho tiempo para administrarlo
+
+Permiten **responder rapidamente a los requisitos cambiantes**
+
+Al momento de implementar las historias, los desarrolladores deben tener la posibilidad de **discutirlas con los clientes.**
+
+Generalmente se espera que la **estimacion de tiempo** de cada historia de usuario se situe entre unas **10 horas y un par de semanas**
+
+Estimaciones **mayores a dos semanas** son indicativo de que la historia es muy compleja y debe ser **dividida en varias historias**
+
+Si bien el estilo puede ser libre, la historia de usuario debe responder a tres preguntas:
+- **Quien se beneficia?**
+- **Que se quiere?**
+- **Cual es el beneficio?**
+
