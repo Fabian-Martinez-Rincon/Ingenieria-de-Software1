@@ -130,10 +130,45 @@
 - Conexión central de cobro
 
 
-### Ejercicio 10)
-### Ejercicio 11)
-### Ejercicio 12)
-### Ejercicio 13)
+### Ejercicio 10) Un Aventón
+- Registra Persona
+    - Mail Unico
+- Iniciar Sesion
+- Cerrar Sesion
+- Publicar Viaje
+- Aceptar candidato
+- Calificar Usuario
+
+### Ejercicio 11) Concursos
+- Registrar Persona
+    - Mail Unico
+    - Dni menor a 55M y mayor a 12M
+- Iniciar Sesión
+- Cerrar Sesion
+- Inscribir Usuario
+    - Docente no puede inscribirse en más de 3 cursos
+- Listar inscriptos
+
+
+### Ejercicio 12) Creditos Bancarios
+- Iniciar Tramite
+- Consultar estado
+    - Si el cliente ingresa 3 veces un codigo inexistente el sistema bloquea la ip
+- Listar créditos
+
+
+### Ejercicio 13) Venta de libros
+- Registrar usuario
+    - El correo electronico único
+    - Clave de 6 caracteres
+- Confirmar Usuario
+    - Codigo de 16 digitos valido
+- Iniciar Sesion
+- Cerrar Sesión
+- Ingresar ISBN
+- Comprar Libro
+    - Tarjeta valida
+- Pagar compra
 ### Ejercicio 14)
 ### Ejercicio 15)
 ### Ejercicio 16)
