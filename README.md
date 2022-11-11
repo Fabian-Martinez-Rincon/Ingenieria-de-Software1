@@ -169,6 +169,37 @@
 - Comprar Libro
     - Tarjeta valida
 - Pagar compra
-### Ejercicio 14)
+### Ejercicio 14) 
+- Autenticar Usuario
+    - Credenciales correctas
+    - Conexión sistema del Banco Central
+- Alta tarjeta
+    - Persona que quiere la tarjeta debe ser cliente del banco
+    - Conexion exitosa con el sistema SIVA
+- Baja tarjeta
+- Listar operaciones
+    - No pueden ingresarse fechas futuras al presente
+    - La fecha de inicio no puede ser mayor a la de fin
+
 ### Ejercicio 15)
+- Registrar Persona
+    - Mail Unico
+    - Edad mayor a 18 años
+- Iniciar Sesión
+    - Si un usuario falla 3 veces su cuenta es bloqueada
+- Cerrar sesión
+- Solicitar turno
+    - Turno registrado con 2 o más dias de la fecha en que se solicita
+
 ### Ejercicio 16)
+- Autenticar usuario
+    - Conexión con el sistemas general del observatorio
+- Cerrar Sesión
+- Cargar Imagen
+    - Solo se pueden cargar imágenes mayores o iguales a 2 Megapixeles
+- Recortar área de interes
+    - No se pueden superponer con otra del sistema
+    - No se podrán recortar mas de 4 áreas
+- Listar Imagenes
+    - Nose puede mostrar mas de 20 imagenes a la vez
+    
