@@ -1,6 +1,7 @@
 <h1 align="center"> 🖥️ Ingenieria de Software 1</h1>
 
-- [Aprovanto historias de usuario](#aprobar-historias-de-usuario)
+- [Aprobanto historias de usuario](#aprobar-historias-de-usuario)
+- [Aprobanto Casos de Uso](#aprobar-historias-de-usuario)
 
 ## Aprobar Historias de Usuario
 
@@ -171,7 +172,7 @@
 - Comprar Libro
     - Tarjeta valida
 - Pagar compra
-### Ejercicio 14) 
+### Ejercicio 14) Manejo de tarjetas de creditos
 - Autenticar Usuario
     - Credenciales correctas
     - Conexión sistema del Banco Central
@@ -183,7 +184,7 @@
     - No pueden ingresarse fechas futuras al presente
     - La fecha de inicio no puede ser mayor a la de fin
 
-### Ejercicio 15)
+### Ejercicio 15) Manejo de canchas de tenis
 - Registrar Persona
     - Mail Unico
     - Edad mayor a 18 años
@@ -193,7 +194,7 @@
 - Solicitar turno
     - Turno registrado con 2 o más dias de la fecha en que se solicita
 
-### Ejercicio 16)
+### Ejercicio 16) Procesamiento de imágenes
 - Autenticar usuario
     - Conexión con el sistemas general del observatorio
 - Cerrar Sesión
@@ -204,4 +205,17 @@
     - No se podrán recortar mas de 4 áreas
 - Listar Imagenes
     - Nose puede mostrar mas de 20 imagenes a la vez
-    
+
+## Aprobar Casos de uso
+
+### Ejercicio 1)
+### Ejercicio 2)
+### Ejercicio 3)
+### Ejercicio 4)
+### Ejercicio 5)
+### Ejercicio 6)
+### Ejercicio 7)
+### Ejercicio 8)
+### Ejercicio 9)
+### Ejercicio 10)
+### Ejercicio 11)
