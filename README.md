@@ -1,5 +1,7 @@
 <h1 align="center"> 🖥️ Ingenieria de Software 1</h1>
 
+- [Aprovanto historias de usuario](#aprobar-historias-de-usuario)
+
 ## Aprobar Historias de Usuario
 
 ### Ejercicio 1) Alquiler de mobiliario
