@@ -169,6 +169,7 @@ provincia de Bs As.
 - [Analisis al armarla](#5-analice-un-formato-de-la-planilla-adecuado-al-momento-de-armar-una-entrevista)
 - [Analisis al terminarla](#6-analice-un-formato-de-la-planilla-adecuado-al-momento-de-terminar-una-entrevista)
 
+---
 
 #### `1)` Describa qué tipo de información puede obtenerse en una entrevista.
 
@@ -286,9 +287,11 @@ Los visitantes podrán hojear diferentes libros de cocina, pero tendrán que cre
 
 ## Parte I Definiciones Cuestionarios
 
-- [Información a obtener]()
-- [En que circunstancia se utilizan]()
-- [Tipos de Cuestionarios]()
+- [Información a obtener](#1-describa-qué-tipo-de-información-se-busca-mediante-la-aplicación-de-cuestionarios)
+- [En que circunstancia se utilizan](#2-describa-bajo-qué-circunstancia-considera-apropiado-utilizar-cuestionarios)
+- [Tipos de Cuestionarios](#3-describa-los-dos-tipos-de-cuestionarios)
+
+---
 
 #### `1)` Describa qué tipo de información se busca mediante la aplicación de cuestionarios.
 
