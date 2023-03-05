@@ -1,5 +1,29 @@
-<h2 align="center">  Ingeniería de Software I
-Práctica 2 – Historias de Usuario</h2>
+<h1 align="center"> 👤 Practica 2</h1>
+<div align="center">
+  <img src="https://media.giphy.com/media/11ikeVaUfcXLWM/giphy.gif"/>
+ </div>
+
+---
+
+- [1) Alquiler de mobiliario](#problema-1-alquiler-de-mobiliario)
+- [2) Posgrado](#problema-2-posgrado)
+- [3) Contratos](#problema-3-contratos)
+- [4) Venta de bebidas](#problema-4-venta-de-bebidas)
+- [5) Casa de fotografía](#problema-5-casa-de-fotografía)
+- [6) Biblioteca](#problema-6-biblioteca)
+- [7) Mutual](#problema-7-mutual)
+- [8) Teatro](#problema-8-teatro)
+- [9) Pago Electrónico](#problema-9-pago-electrónico)
+- [10) Un Aventón](#problema-10-un-aventón)
+- [11) Concursos](#problema-11-concursos)
+- [12) Créditos bancarios](#problema-12-créditos-bancarios)
+- [12) Venta de libros](#problema-12-venta-de-libros)
+- [13) Manejo de tarjetas de crédito](#problema-13-manejo-de-tarjetas-de-crédito)
+- [13) Manejo de canchas de tenis](#problema-13-manejo-de-canchas-de-tenis)
+- [14) Procesamiento de imágenes](#problema-14-procesamiento-de-imágenes)
+
+
+---
 
 Para cada Historia de Usuario se deben indicar los siguientes ítems:
 
@@ -29,25 +53,10 @@ Cuando \<ocurre un evento>,
 Entonces <garantiza uno o más resultados>
 ...
 
-
 </td></tr></table>
 
-- [1) Alquiler de mobiliario](#problema-1-alquiler-de-mobiliario)
-- [2) Posgrado](#problema-2-posgrado)
-- [3) Contratos](#problema-3-contratos)
-- [4) Venta de bebidas](#problema-4-venta-de-bebidas)
-- [5) Casa de fotografía](#problema-5-casa-de-fotografía)
-- [6) Biblioteca](#problema-6-biblioteca)
-- [7) Mutual](#problema-7-mutual)
-- [8) Teatro](#problema-8-teatro)
-- [9) Pago Electrónico](#problema-9-pago-electrónico)
-- [10) Un Aventón](#problema-10-un-aventón)
-- [11) Concursos](#problema-11-concursos)
-- [12) Créditos bancarios](#problema-12-créditos-bancarios)
-- [12) Venta de libros](#problema-12-venta-de-libros)
-- [13) Manejo de tarjetas de crédito](#problema-13-manejo-de-tarjetas-de-crédito)
-- [13) Manejo de canchas de tenis](#problema-13-manejo-de-canchas-de-tenis)
-- [14) Procesamiento de imágenes](#problema-14-procesamiento-de-imágenes)
+---
+
 
 **Para cada problema planteado realice las tarjetas completas de todas las historias de usuario identificadas**
 
