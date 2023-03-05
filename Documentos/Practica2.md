@@ -77,146 +77,102 @@ cliente para hacer efectivo el alquiler.
 
 ## `Problema 2` Posgrado
 
-Suponga que trabaja en el área de sistemas de la Facultad de Informática y se le solicitó la automatización del pago de carreras de posgrado. Inicialmente se coordinó una reunión con el director del posgrado y se obtuvo la siguiente
-información:
-Ya que no se desea seguir cobrando el dinero en la secretaría, es necesario que los alumnos puedan pagar las carreras vía
-web. Como el director de posgrado no realiza tareas administrativas nos recomendó hablar con el secretario académico.
-De la entrevista con el secretario académico se obtuvo la siguiente información:
-Es necesario cargar las carreras a un sistema. En esta primera versión del sistema sólo se nos pidió esta funcionalidad, sin
-la modificación ni eliminación. De cada carrera se conoce: nombre de la carrera (no puede repetirse), duración en años (a
-partir de la consulta del estatuto de posgrado se obtuvo que como máximo son 5 años), costo y cantidad máxima de cuotas
-para el pago. La carga de las carreras no la realiza el secretario académico sino un empleado administrativo.
-Al preguntarle por la dinámica del sistema, el secretario académico nos derivó con el jefe del área administrativa, con el
-cual hicimos otra entrevista y pudimos obtener la siguiente información:
-El requerimiento fue que el alumno ingrese a la web de posgrado y pueda registrarse ingresando: nombre, apellido,
-nombre de usuario (único) y contraseña (más de 6 dígitos). Cualquier alumno previamente registrado, puede iniciar sesión con su nombre de usuario y contraseña, habilitándose la inscripción a alguna de las carreras. Para ejemplificar esta
-funcionalidad nos otorgaron acceso al sistema SIGEF, el cual realiza funcionalidades similares para las carreras de grado.
-Para inscribirse, el alumno deberá seleccionar la carrera, ingresar la cantidad de cuotas a pagar, ingresar el número de
-tarjeta y, en caso de que la tarjeta sea válida y tenga fondos, se hará efectivo el cobro y la inscripción. La tarjeta de crédito
-se valida a través de un servicio del banco con el cual la universidad tiene convenio. Luego de efectuado el cobro, el
-sistema debe imprimir dos comprobantes, uno de inscripción y otro de pago. La única forma que tiene el alumno de pagar
-es con tarjeta de crédito
+Suponga que trabaja en el área de sistemas de la Facultad de Informática y se le solicitó la automatización del pago de carreras de posgrado. Inicialmente se coordinó una reunión con el director del posgrado y se obtuvo la siguiente información:
+
+Ya que no se desea seguir cobrando el dinero en la secretaría, es necesario que los alumnos puedan pagar las carreras vía web. Como el director de posgrado no realiza tareas administrativas nos recomendó hablar con el secretario académico. De la entrevista con el secretario académico se obtuvo la siguiente información:
+
+Es necesario cargar las carreras a un sistema. En esta primera versión del sistema sólo se nos pidió esta funcionalidad, sin la modificación ni eliminación. De cada carrera se conoce: nombre de la carrera (no puede repetirse), duración en años (a partir de la consulta del estatuto de posgrado se obtuvo que como máximo son 5 años), costo y cantidad máxima de cuotas para el pago. La carga de las carreras no la realiza el secretario académico sino un empleado administrativo.
+
+Al preguntarle por la dinámica del sistema, el secretario académico nos derivó con el jefe del área administrativa, con el cual hicimos otra entrevista y pudimos obtener la siguiente información:
+
+El requerimiento fue que el alumno ingrese a la web de posgrado y pueda registrarse ingresando: nombre, apellido, nombre de usuario (único) y contraseña (más de 6 dígitos). Cualquier alumno previamente registrado, puede iniciar sesión con su nombre de usuario y contraseña, habilitándose la inscripción a alguna de las carreras. Para ejemplificar esta
+funcionalidad nos otorgaron acceso al sistema SIGEF, el cual realiza funcionalidades similares para las carreras de grado. 
+
+Para inscribirse, el alumno deberá seleccionar la carrera, ingresar la cantidad de cuotas a pagar, ingresar el número de tarjeta y, en caso de que la tarjeta sea válida y tenga fondos, se hará efectivo el cobro y la inscripción. La tarjeta de crédito se valida a través de un servicio del banco con el cual la universidad tiene convenio. Luego de efectuado el cobro, el sistema debe imprimir dos comprobantes, uno de inscripción y otro de pago. La única forma que tiene el alumno de pagar es con tarjeta de crédito
 
 ---
 
 ## `Problema 3` Contratos
 
-Suponga que trabaja en un grupo en el área de sistemas de una organización y está por comenzar un nuevo proyecto para
-desarrollar un sistema que depende del departamento contable.
-El sistema deberá administrar los contratos realizado con terceros. En una de las reuniones con el jefe de departamento
-nos dijo que él no usará el sistema pero que recibirá listados del personal contratado ya que deberá firmarlos para
-elevarlos a las autoridades.
-Para obtener más información generamos una reunión con el empleado de mesa de entradas. Nos contó que el problema
-que tienen actualmente es que realizan todas las minutas a mano por lo cual desean automatizar esta tarea. Las minutas
-son el paso previo a un contrato. Para confeccionar una minuta, el empleado de mesa de entradas debe ingresar nombre y
-número de CUIT de una persona a contratar, tipo de contrato, fecha de comienzo, duración y monto, a lo que el sistema le
-asociará un número de minuta automáticamente. Nos recomendó leer la reglamentación vigente acerca de contratos de la
-que obtuvimos que los montos de los mismos no pueden superar los $25.000 y que la duración debe ser como máximo de
-6 meses.
-Una vez confeccionada la minuta por parte del empleado de mesa de entradas, la misma queda pendiente de aprobación.
-El que puede aprobar una minuta es el empleado de rendiciones. Realizamos una reunión con él y nos contó que su tarea
-consiste en evaluar las minutas para determinar su aprobación. También nos dijo que en otro trabajo que tiene usan un
-sistema llamado MiMiNuTa al que nos puede dar acceso para ver como hacen esa tarea. Después del análisis de este
-sistema, se concluyó que para aprobar una minuta necesitaría ingresar un número de minuta y que el sistema muestre los
-datos de la misma para poder aprobarla. Nos dijo que no puede aprobar la minuta si la persona a contratar tiene 3 contratos
-vigentes (minutas aprobadas) ni tampoco si el CUIT de la persona a contratar está inhabilitado por la AFIP. Actualmente
-se comunica telefónicamente con la AFIP para realizar esta verificación, pero sabe que ésta provee un servicio para
-aplicaciones que permite hacer la verificación en línea. Esto último nos obligó a generar una reunión con el administrador
-de servidores de la AFIP. Nos dijo que para poder conectarnos con un servidor de la AFIP, el sistema debe mandar un
-token (código que identificará de manera única a nuestra aplicación) y CUIT, si el token es correcto, el servidor responde
-si el CUIT está habilitado o no.
-Por último el empleado de rendiciones será el responsable de imprimir los listados con las minutas aprobadas, es decir, un
-listado con el personal contratado para poder dárselo al jefe de departamento para que lo firme.
+Suponga que trabaja en un grupo en el área de sistemas de una organización y está por comenzar un nuevo proyecto para desarrollar un sistema que depende del departamento contable.
+
+El sistema deberá administrar los contratos realizado con terceros. En una de las reuniones con el jefe de departamento nos dijo que él no usará el sistema pero que recibirá listados del personal contratado ya que deberá firmarlos para elevarlos a las autoridades.
+
+Para obtener más información generamos una reunión con el empleado de mesa de entradas. Nos contó que el problema que tienen actualmente es que realizan todas las minutas a mano por lo cual desean automatizar esta tarea. Las minutas son el paso previo a un contrato. Para confeccionar una minuta, el empleado de mesa de entradas debe ingresar nombre y número de CUIT de una persona a contratar, tipo de contrato, fecha de comienzo, duración y monto, a lo que el sistema le asociará un número de minuta automáticamente. Nos recomendó leer la reglamentación vigente acerca de contratos de la que obtuvimos que los montos de los mismos no pueden superar los $25.000 y que la duración debe ser como máximo de 6 meses.
+
+Una vez confeccionada la minuta por parte del empleado de mesa de entradas, la misma queda pendiente de aprobación. El que puede aprobar una minuta es el empleado de rendiciones. Realizamos una reunión con él y nos contó que su tarea consiste en evaluar las minutas para determinar su aprobación. También nos dijo que en otro trabajo que tiene usan un sistema llamado MiMiNuTa al que nos puede dar acceso para ver como hacen esa tarea. Después del análisis de este sistema, se concluyó que para aprobar una minuta necesitaría ingresar un número de minuta y que el sistema muestre los datos de la misma para poder aprobarla. Nos dijo que no puede aprobar la minuta si la persona a contratar tiene 3 contratos vigentes (minutas aprobadas) ni tampoco si el CUIT de la persona a contratar está inhabilitado por la AFIP. Actualmente se comunica telefónicamente con la AFIP para realizar esta verificación, pero sabe que ésta provee un servicio para aplicaciones que permite hacer la verificación en línea. Esto último nos obligó a generar una reunión con el administrador de servidores de la AFIP. Nos dijo que para poder conectarnos con un servidor de la AFIP, el sistema debe mandar un token (código que identificará de manera única a nuestra aplicación) y CUIT, si el token es correcto, el servidor responde si el CUIT está habilitado o no.
+
+Por último el empleado de rendiciones será el responsable de imprimir los listados con las minutas aprobadas, es decir, un listado con el personal contratado para poder dárselo al jefe de departamento para que lo firme.
 
 ---
 
 ## `Problema 4` Venta de bebidas
 
-Se desea modelar un sistema para el manejo de venta de bebidas alcohólicas en linea. Para poder empezar a comprar en el
-sitio, es necesario que las personas se registren ingresando nombre, apellido, mail (será utilizado como nombre de usuario
-por lo tanto debe ser único) y edad. Solo se permite que se registren al sitio personas mayores a 18 años, de lo contrario el
-sistema debe mostrar en pantalla el texto de la ley que impide la venta de bebidas alcohólicas a menores. Si el registro es
-exitoso el sistema genera una contraseña que es enviada al mail ingresado en el registro.
-Para comprar el usuario debe iniciar sesión y una vez logueado el sistema muestra una lista de bebidas, una vez que el
-usuario selecciona todos los productos que desea comprar, si el usuario es premium se le hace un descuento del 20% y se informa en pantalla el total menos el 20%. Ademas si el usuario seleccionó productos por un monto superior a los $4500
-se le hace un 10% de descuento y se informa en pantalla el total menos el 10%. Tenga en cuenta que si el usuario es
-premium y compra por un monto superior a $4500 se deben aplicar ambos descuentos
+Se desea modelar un sistema para el manejo de venta de bebidas alcohólicas en linea. Para poder empezar a comprar en el sitio, es necesario que las personas se registren ingresando nombre, apellido, mail (será utilizado como nombre de usuario por lo tanto debe ser único) y edad. Solo se permite que se registren al sitio personas mayores a 18 años, de lo contrario el sistema debe mostrar en pantalla el texto de la ley que impide la venta de bebidas alcohólicas a menores. Si el registro es exitoso el sistema genera una contraseña que es enviada al mail ingresado en el registro.
+
+Para comprar el usuario debe iniciar sesión y una vez logueado el sistema muestra una lista de bebidas, una vez que el usuario selecciona todos los productos que desea comprar, si el usuario es premium se le hace un descuento del 20% y se informa en pantalla el total menos el 20%. Ademas si el usuario seleccionó productos por un monto superior a los $4500 se le hace un 10% de descuento y se informa en pantalla el total menos el 10%. Tenga en cuenta que si el usuario es premium y compra por un monto superior a $4500 se deben aplicar ambos descuentos
 
 ---
 
 ## `Problema 5` Casa de fotografía
 
-Se desea desarrollar un sistema para la impresión de fotos para una casa fotográfica. Los clientes pueden subir sus
-fotos, pagar por internet y luego ser retiradas personalmente por el local.
-Para subir las fotos la persona debe registrarse en el sitio, ingresando sus datos personales, nombre, apellido, email,
-domicilio, nombre de usuario y contraseña.
-Una vez autenticado, el usuario puede subir un máximo de 50 fotos para ser impresas. Las fotos se ingresan de a
-una. Una vez subidas, el usuario debe abonar el monto total (el valor de cada foto es de $15). El pago se realiza con
-tarjeta de crédito, ingresando los datos de la misma (número de tarjeta, código de seguridad y nombre del titular), la
-cual debe ser validada a través del sistema del banco. Una vez que se realiza el pago se le otorga al cliente un código
-único que le servirá posteriormente para retirar las fotos.
-Un cliente debe acercarse a la sucursal para retirar las fotos enviadas previamente. Para esto debe presentar el
-código único a un empleado. Este registra el código, la fecha de retiro y entrega las fotos al cliente.
+Se desea desarrollar un sistema para la impresión de fotos para una casa fotográfica. Los clientes pueden subir sus fotos, pagar por internet y luego ser retiradas personalmente por el local.
+
+Para subir las fotos la persona debe registrarse en el sitio, ingresando sus datos personales, nombre, apellido, email, domicilio, nombre de usuario y contraseña.
+
+Una vez autenticado, el usuario puede subir un máximo de 50 fotos para ser impresas. Las fotos se ingresan de a una. Una vez subidas, el usuario debe abonar el monto total (el valor de cada foto es de $15). El pago se realiza con tarjeta de crédito, ingresando los datos de la misma (número de tarjeta, código de seguridad y nombre del titular), la cual debe ser validada a través del sistema del banco. Una vez que se realiza el pago se le otorga al cliente un código único que le servirá posteriormente para retirar las fotos.
+
+Un cliente debe acercarse a la sucursal para retirar las fotos enviadas previamente. Para esto debe presentar el código único a un empleado. Este registra el código, la fecha de retiro y entrega las fotos al cliente.
 
 ---
 
 ## `Problema 6` Biblioteca
 
-La biblioteca de una escuela primaria realiza su trabajo de forma manual y requiere un sistema informático que
-automatice su funcionamiento.
-La bibliotecaria recibe libros por donaciones de los padres de los chicos que asisten a la escuela. De un mismo libro
-se pueden tener varios ejemplares.
-Para que un alumno pueda asociarse debe presentar el DNI y certificado de alumno regular. Una vez asociado, se le
-otorga un carnet con su correspondiente número de socio.
-Los préstamos se realizan exclusivamente a socios habilitados, que no posean más de tres préstamos vigentes y no
-tengan préstamos vencidos. La bibliotecaria presta libros que se encuentren en buen estado. Cuando un libro se
-encuentra deteriorado ya no se presta.
-Cuando el socio retorna un libro se verifica si el préstamo se encuentra vencido. En este caso, la bibliotecaria
-suspende al socio, que por 15 días no podrá solicitar nuevos préstamos.
+La biblioteca de una escuela primaria realiza su trabajo de forma manual y requiere un sistema informático que automatice su funcionamiento.
+
+La bibliotecaria recibe libros por donaciones de los padres de los chicos que asisten a la escuela. De un mismo libro se pueden tener varios ejemplares.
+
+Para que un alumno pueda asociarse debe presentar el DNI y certificado de alumno regular. Una vez asociado, se le otorga un carnet con su correspondiente número de socio.
+
+Los préstamos se realizan exclusivamente a socios habilitados, que no posean más de tres préstamos vigentes y no tengan préstamos vencidos. La bibliotecaria presta libros que se encuentren en buen estado. Cuando un libro se encuentra deteriorado ya no se presta.
+
+Cuando el socio retorna un libro se verifica si el préstamo se encuentra vencido. En este caso, la bibliotecaria suspende al socio, que por 15 días no podrá solicitar nuevos préstamos.
 
 ---
 
 ## `Problema 7` Mutual
 
 Una mutual necesita automatizar el manejo de las prestaciones que ofrece a sus afiliados.
+
 Una persona puede afiliarse sólo si posee una tarjeta de crédito para que se pueda hacer el pago de la cuota mensual
 automáticamente. Una vez que la persona se ha afiliado, puede pasar a tener a cargo a su pareja e hijos (hasta 18 años,
 luego es dado de baja). A cada uno se le otorga un número de afiliado.
+
 Las prestaciones que brinda, siempre y cuando esté asentado el pago del mes anterior al que es solicitado, son:
--Ortodoncia: Se reconoce sólo una y a los afiliados menores de 15 años que estén afiliados desde al menos
-nueve meses. Debe presentarse historia clínica elaborado por el profesional.
--Plantillas: A cualquier afiliado, hasta dos por año calendario. Debe presentarse la indicación del profesional y
-factura del comercio que la confeccionó.
--Anteojos: A cualquier afiliado con fecha de afiliación superior a tres meses, un par cada 18 meses.
--Internación: A cualquier afiliado, sin límite.
--Consultas médicas: A cualquier afiliado, hasta 2 por mes.
+
+- `Ortodoncia`: Se reconoce sólo una y a los afiliados menores de 15 años que estén afiliados desde al menos nueve meses. Debe presentarse historia clínica elaborado por el profesional.
+- `Plantillas`: A cualquier afiliado, hasta dos por año calendario. Debe presentarse la indicación del profesional y factura del comercio que la confeccionó.
+- `Anteojos`: A cualquier afiliado con fecha de afiliación superior a tres meses, un par cada 18 meses.
+- `Internación`: A cualquier afiliado, sin límite.
+- `Consultas médicas`: A cualquier afiliado, hasta 2 por mes.
 
 ---
 
 ## `Problema 8` Teatro
 
-Se desea modelar un sistema de gestión de ventas de entradas para un teatro. Las personas compran sus entradas a
-través de una página web, o personalmente.
-El sistema permite, sólo de modo personal en el teatro, la reserva de entradas de forma gratuita. El empleado debe
-ingresar los datos de la obra (fecha, hora, y nombre) junto el nombre y DNI del espectador. En este caso, sólo se podrá
-reservar hasta 2 entradas. Las entradas reservadas no compradas caducarán tres horas antes del evento. Para seleccionar
-el nombre de la obra, el sistema muestra una grilla de funciones disponibles para que el usuario seleccione una.
-Para comprar una entrada vía web, el sistema muestra la grilla de funciones disponibles. El usuario selecciona una
-opción, ingresa su DNI, la cantidad de lugares solicitados y selecciona la opción “pagar”. El pago se realiza con tarjeta de
-crédito. Para esto debe ser autorizada a través del sistema del banco. Este pide el número de tarjeta, vencimiento, y
-código de seguridad. Verifica todos los campos y autoriza la compra. Autorizada la tarjeta, se emite un código de compra
-con el que el cliente podrá retirar sus entradas en la boletería del cine.
-Para comprar una entrada personalmente, el vendedor de la boletería solicita los datos de la función al cliente,
-procediendo de un modo similar a la compra web, con la diferencia que en este caso no se muestra el código de compra
-sino que se imprimen directamente la/s entrada/s. El pago es unicamente con tarjeta de crédito, igual que en el caso
-anterior.
-Para retirar las entradas reservadas previamente, el empleado solicita nombre y DNI del espectador, el sistema
-valida que la persona posea entradas reservadas, y que no estén caducas. El resto del procedimiento se realiza igual que
-la compra de entradas descriptas anteriormente.
-Cuando una persona llega con el código de compra, el vendedor debe ingresar el código para que el sistema, luego
-de verificarlo, imprima las entradas correspondientes.
-Además se desea administrar la programación de las salas. El administrador ingresa la distribución semanal de las
-obras en las salas de manera que se encuentre disponible para la realización de la venta de entradas
+Se desea modelar un sistema de gestión de ventas de entradas para un teatro. Las personas compran sus entradas a través de una página web, o personalmente.
+
+El sistema permite, sólo de modo personal en el teatro, la reserva de entradas de forma gratuita. El empleado debe ingresar los datos de la obra (fecha, hora, y nombre) junto el nombre y DNI del espectador. En este caso, sólo se podrá reservar hasta 2 entradas. Las entradas reservadas no compradas caducarán tres horas antes del evento. Para seleccionar el nombre de la obra, el sistema muestra una grilla de funciones disponibles para que el usuario seleccione una.
+
+Para comprar una entrada vía web, el sistema muestra la grilla de funciones disponibles. El usuario selecciona una opción, ingresa su DNI, la cantidad de lugares solicitados y selecciona la opción “pagar”. El pago se realiza con tarjeta de crédito. Para esto debe ser autorizada a través del sistema del banco. Este pide el número de tarjeta, vencimiento, y código de seguridad. Verifica todos los campos y autoriza la compra. Autorizada la tarjeta, se emite un código de compra con el que el cliente podrá retirar sus entradas en la boletería del cine.
+
+Para comprar una entrada personalmente, el vendedor de la boletería solicita los datos de la función al cliente, procediendo de un modo similar a la compra web, con la diferencia que en este caso no se muestra el código de compra sino que se imprimen directamente la/s entrada/s. El pago es unicamente con tarjeta de crédito, igual que en el caso anterior.
+
+Para retirar las entradas reservadas previamente, el empleado solicita nombre y DNI del espectador, el sistema valida que la persona posea entradas reservadas, y que no estén caducas. El resto del procedimiento se realiza igual que la compra de entradas descriptas anteriormente.
+
+Cuando una persona llega con el código de compra, el vendedor debe ingresar el código para que el sistema, luego de verificarlo, imprima las entradas correspondientes.
+
+Además se desea administrar la programación de las salas. El administrador ingresa la distribución semanal de las obras en las salas de manera que se encuentre disponible para la realización de la venta de entradas
 
 ---
 
