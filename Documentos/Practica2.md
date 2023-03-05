@@ -1,6 +1,6 @@
 <h1 align="center"> 👤 Practica 2</h1>
 <div align="center">
-  <img src="https://media.giphy.com/media/11ikeVaUfcXLWM/giphy.gif"/>
+  <img src="https://media.giphy.com/media/2seKKLp1n0sEeJLYTK/giphy.gif"/>
  </div>
 
 ---
@@ -179,6 +179,7 @@ Además se desea administrar la programación de las salas. El administrador ing
 ## `Problema 9` Pago Electrónico
 
 Se desea modelar un sistema de pago electrónico de impuestos y servicios en efectivo.
+
 Cuando un cliente llega para realizar un pago, el empleado o el gerente de la sucursal ingresa el código de pago
 electrónico y el sistema se conecta con la central de cobro para recuperar los datos de la factura (empresa, nro de
 cliente, 1era fecha de vencimiento, 2da fecha de vencimiento, recargo, y monto original). Una vez recuperados los datos,
@@ -186,14 +187,17 @@ el sistema debe verificar los vencimientos para determinar el monto a cobrar. Te
 vencimiento está vencido se debe informar que la factura no se puede cobrar por dicho motivo. Cuando el 1er
 vencimiento está vencido hay que aplicar el recargo al monto original. Si la factura no está vencida, se cobra el monto
 original.
+
 Una vez al día, el gerente de la sucursal debe registrar en la central de cobros los pagos que hicieron los clientes.
 Para esto el sistema requiere la clave maestra y de ser correcta, recupera las transacciones de los impuestos y servicios
 cobrados en el día, se conecta a la central de cobro y se las envía. Cuando la central confirma la recepción exitosa, el
 sistema las registra como enviadas. Este último paso es importante porque no deben enviarse dos veces las
 transacciones. Si el gerente intenta enviar una segunda vez, el sistema no debe permitirlo.
+
 Finalmente el Gerente puede ver las estadísticas de los impuestos y servicios cobrados. Para esto, se ingresa la clave
 maestra, un rango de fechas sobre las cuales debe calcularse las estadísticas y el sistema debe mostrar los montos y la
 cantidad de cobros realizados, agrupando por empresa.
+
 Tenga en cuenta que cada vez que el sistema debe conectarse a la central, debe enviarle un token (código que
 identifica al sistema). Una vez que la central valida el token, el sistema envía el requerimiento para recuperar los datos de
 la factura o el requerimiento para registrar los pagos del día según corresponda
@@ -202,105 +206,64 @@ la factura o el requerimiento para registrar los pagos del día según correspon
 
 ## `Problema 10` Un Aventón
 
-Se desea desarrollar un sistema que permita compartir un vehículo para un viaje. La idea es que cuando una persona
-tiene que realizar un viaje lo publique en la aplicación. Luego, el resto de los usuarios se postulan para acompañarla y el
-chofer podrá seleccionar quienes viajan. El objetivo es abaratar costos y evitar congestiones en el tránsito. El sistema es
-gratuito.
-Para utilizar el sistema, una persona debe registrarse y estar correctamente identificado antes de poder utilizarlo. Al
-registrarse, se pide un nombre de usuario, un correo electrónico y una contraseña. No puede haber dos correos
-electrónicos iguales en el sistema. Una vez autenticado, podrá dar de alta diferentes viajes, identificando la fecha, hora y
-el automóvil que utilizará. Los diferentes viajes que una persona publique no pueden superponerse. Un usuario que
-adeuda calificaciones tampoco podrá publicar un viaje.
-Cualquier usuario identificado podrá postularse a un viaje. Luego, el usuario dueño del viaje podrá aceptar o
-rechazar los candidatos para que realicen el viaje con él.
-En el sistema existe una política de reputaciones que permiten a los usuarios conocer la opinión del resto sobre los
-viajes realizados. Luego de terminado un viaje, tanto el piloto como los copilotos que viajaron deberán calificarse entre
-sí. El piloto califica a todos sus copilotos. Cada copiloto califica al piloto del viaje. Las calificaciones podrán ser positivas
-(suma un punto de reputación) o negativas (restan un punto de reputación)
+Se desea desarrollar un sistema que permita compartir un vehículo para un viaje. La idea es que cuando una persona tiene que realizar un viaje lo publique en la aplicación. Luego, el resto de los usuarios se postulan para acompañarla y el chofer podrá seleccionar quienes viajan. El objetivo es abaratar costos y evitar congestiones en el tránsito. El sistema es gratuito.
+
+Para utilizar el sistema, una persona debe registrarse y estar correctamente identificado antes de poder utilizarlo. Al registrarse, se pide un nombre de usuario, un correo electrónico y una contraseña. No puede haber dos correos electrónicos iguales en el sistema. Una vez autenticado, podrá dar de alta diferentes viajes, identificando la fecha, hora y el automóvil que utilizará. Los diferentes viajes que una persona publique no pueden superponerse. Un usuario que adeuda calificaciones tampoco podrá publicar un viaje.
+
+Cualquier usuario identificado podrá postularse a un viaje. Luego, el usuario dueño del viaje podrá aceptar o rechazar los candidatos para que realicen el viaje con él.
+
+En el sistema existe una política de reputaciones que permiten a los usuarios conocer la opinión del resto sobre los viajes realizados. Luego de terminado un viaje, tanto el piloto como los copilotos que viajaron deberán calificarse entre sí. El piloto califica a todos sus copilotos. Cada copiloto califica al piloto del viaje. Las calificaciones podrán ser positivas (suma un punto de reputación) o negativas (restan un punto de reputación)
 
 ---
 
 ## `Problema 11` Concursos
 
-Suponga que el área para la cual trabaja fue contactada para implementar un sistema para el manejo de concursos de los
-docentes de la Facultad de Informática.
-El docente que quiera inscribirse a un concurso deberá registrarse previamente en el sistema. Para esto deberá ingresar
-los siguientes datos: Dni, nombre, apellido y dirección de mail. Una vez completado los datos el sistema mandará a la
-casilla de correo ingresada la contraseña asignada automáticamente. El mail debe ser único y será utilizado como
-nombre de usuario. Según el estatuto de la UNLP los dni permitidos para concursar son aquellos menores a 55 millones y
-mayores a 12 millones.
-Una vez registrado el docente puede inscribirse al concurso, para lo cual, una vez que haya ingresado al sistema, deberá
-seleccionar la materia a la cual desea inscribirse. Según el reglamento interno de la Facultad de informática que nos
-facilitó el jefe del área de personal, el docente no podrá inscribirse a más de 3 concursos. Cuando el docente acepta la
-inscripción el sistema deberá imprimir un comprobante.
-Por último, para cumplir con la ordenanza número 123/19 de la UNLP, el jefe del área de concursos, el cual ya cuenta con
-un nombre de usuario y contraseña, deberá poder imprimir un listado con los inscriptos a una materia determinada para
-poder enviar dicho listado al secretario administrativo quien lo firma y eleva al decano de la Facultad. Suponga que el
-sistema Siu-Guarani realiza una tarea similar a la solicitada y que puede consultar su implementación y registros.
+Suponga que el área para la cual trabaja fue contactada para implementar un sistema para el manejo de concursos de los docentes de la Facultad de Informática.
+
+El docente que quiera inscribirse a un concurso deberá registrarse previamente en el sistema. Para esto deberá ingresar los siguientes datos: Dni, nombre, apellido y dirección de mail. Una vez completado los datos el sistema mandará a la casilla de correo ingresada la contraseña asignada automáticamente. El mail debe ser único y será utilizado como nombre de usuario. Según el estatuto de la UNLP los dni permitidos para concursar son aquellos menores a 55 millones y mayores a 12 millones.
+
+Una vez registrado el docente puede inscribirse al concurso, para lo cual, una vez que haya ingresado al sistema, deberá seleccionar la materia a la cual desea inscribirse. Según el reglamento interno de la Facultad de informática que nos facilitó el jefe del área de personal, el docente no podrá inscribirse a más de 3 concursos. Cuando el docente acepta la inscripción el sistema deberá imprimir un comprobante.
+
+Por último, para cumplir con la ordenanza número 123/19 de la UNLP, el jefe del área de concursos, el cual ya cuenta con un nombre de usuario y contraseña, deberá poder imprimir un listado con los inscriptos a una materia determinada para poder enviar dicho listado al secretario administrativo quien lo firma y eleva al decano de la Facultad. Suponga que el sistema Siu-Guarani realiza una tarea similar a la solicitada y que puede consultar su implementación y registros.
 
 ---
 
 ## `Problema 12` Créditos bancarios
 
 Se desea modelar mediante historias de usuario el manejo de créditos otorgados por un banco a sus clientes.
-Los clientes que desean pedir un crédito, deben iniciar un trámite a través de un sitio web del banco ingresando dni,
-nombre, apellido, mail, tipo de crédito (personal, vivienda, etc.) y monto solicitado. El sistema acepta el inicio de trámite
-si el dni ingresado corresponde a un cliente del banco y si el crédito solicitado no supera los $400.000. En caso de que no
-sea cliente del banco el sistema deberá enviar un correo electrónico al email ingresado con un instructivo para hacerse
-cliente del banco. Si el monto supera los $400.000 el sistema rechaza el inicio de trámite y muestra el mensaje “El monto solicitado excede el límite permitido”. Si los datos son correctos, el sistema almacena el trámite para que sea analizado
-por el área económica e imprime un número de comprobante para el cliente.
-Por otro lado, los clientes pueden consultar el estado de un trámite, para esto es necesario que se ingrese un número de
-comprobante. Si el número de comprobante es válido, el sistema retorna un informe con el estado del mismo, de lo
-contrario mostrará un mensaje “trámite inexistente”. Si el cliente ingresa tres veces un código inexistente el sistema
-bloquea la ip (dirección de red de la máquina que efectúa la consulta) del cliente por 24 horas mostrando un mensaje
-“Usted ha excedido el número de consultas inválidas”.
-Por último, el gerente del banco puede pedir un listado de créditos aprobados entre fechas. Si las fechas ingresadas son
-válidas, el sistema mostrará un listado con los créditos aprobados, de lo contrario mostrará un mensaje “las fechas
-ingresadas no son válidas”. El sistema utiliza un sistema de autenticación general del banco, por lo que no es necesario
-modelar el iniciar y cerrar sesión. Si no hay créditos aprobados para las fechas ingresadas el sistema mostrará el siguiente
-mensaje: ”No hay créditos aprobados en las fechas ingresadas”.
+
+Los clientes que desean pedir un crédito, deben iniciar un trámite a través de un sitio web del banco ingresando dni, nombre, apellido, mail, tipo de crédito (personal, vivienda, etc.) y monto solicitado. El sistema acepta el inicio de trámite si el dni ingresado corresponde a un cliente del banco y si el crédito solicitado no supera los $400.000. En caso de que no sea cliente del banco el sistema deberá enviar un correo electrónico al email ingresado con un instructivo para hacerse cliente del banco. Si el monto supera los $400.000 el sistema rechaza el inicio de trámite y muestra el mensaje “El monto solicitado excede el límite permitido”. Si los datos son correctos, el sistema almacena el trámite para que sea analizado por el área económica e imprime un número de comprobante para el cliente.
+
+Por otro lado, los clientes pueden consultar el estado de un trámite, para esto es necesario que se ingrese un número de comprobante. Si el número de comprobante es válido, el sistema retorna un informe con el estado del mismo, de lo contrario mostrará un mensaje “trámite inexistente”. Si el cliente ingresa tres veces un código inexistente el sistema bloquea la ip (dirección de red de la máquina que efectúa la consulta) del cliente por 24 horas mostrando un mensaje “Usted ha excedido el número de consultas inválidas”.
+
+Por último, el gerente del banco puede pedir un listado de créditos aprobados entre fechas. Si las fechas ingresadas son válidas, el sistema mostrará un listado con los créditos aprobados, de lo contrario mostrará un mensaje “las fechas ingresadas no son válidas”. El sistema utiliza un sistema de autenticación general del banco, por lo que no es necesario modelar el iniciar y cerrar sesión. Si no hay créditos aprobados para las fechas ingresadas el sistema mostrará el siguiente mensaje: ”No hay créditos aprobados en las fechas ingresadas”.
 
 ---
 
 ## `Problema 12` Venta de libros
 
-Una nueva empresa de venta de libros en línea está diseñando su sitio web. Cualquier visitante puede acceder a su
-catálogo de libros y navegar los distintos libros que se encuentren en él y solo los usuarios registrados pueden realizar
-compras.
-Para poder comprar los libros se necesita un usuario registrado. El proceso de registro se realiza en dos pasos. En el
-primer paso el sistema requiere Nombre, Apellido, DNI y cuenta de correo electrónico (que no exista en el sistema) y una
-clave de 6 caracteres para darlo de alta de forma parcial. En este proceso el sistema debe generar un código de 16 dígitos
-y enviarlo por correo para que luego el visitante confirme la cuenta. Como segundo paso el visitante debe entrar a la
-página de confirmación e ingresar su dirección de correo y el código de 16 dígitos. Si estos datos son correctos el sistema
-lo registra definitivamente como usuario.
+Una nueva empresa de venta de libros en línea está diseñando su sitio web. Cualquier visitante puede acceder a su catálogo de libros y navegar los distintos libros que se encuentren en él y solo los usuarios registrados pueden realizar compras.
+
+Para poder comprar los libros se necesita un usuario registrado. El proceso de registro se realiza en dos pasos. En el primer paso el sistema requiere Nombre, Apellido, DNI y cuenta de correo electrónico (que no exista en el sistema) y una clave de 6 caracteres para darlo de alta de forma parcial. En este proceso el sistema debe generar un código de 16 dígitos y enviarlo por correo para que luego el visitante confirme la cuenta. Como segundo paso el visitante debe entrar a la página de confirmación e ingresar su dirección de correo y el código de 16 dígitos. Si estos datos son correctos el sistema lo registra definitivamente como usuario.
+
 Una vez registrado, para autenticarse, el sistema requiere el correo del usuario y la clave de 6 caracteres.
-Para realizar la compra de un libro el sistema pide ingresar el ISBN del mismo y muestra al usuario la portada con una
-descripción del libro y la opción “Comprar”. Cuando el usuario selecciona “Comprar” se le pide los datos de la tarjeta:
-Apellido, Nombre, Nro de tarjeta. Es importante tener en cuenta que por disposición del Banco Central solo el titular de
-la tarjeta puede realizar la compra, por lo que el nombre y apellido registrado debe coincidir con el de la tarjeta.
-Realizada esta verificación se procede a enviar los datos al servidor de la tarjeta para realizar el cobro. Si todo es correcto
+
+Para realizar la compra de un libro el sistema pide ingresar el ISBN del mismo y muestra al usuario la portada con una descripción del libro y la opción “Comprar”. Cuando el usuario selecciona “Comprar” se le pide los datos de la tarjeta:
+
+Apellido, Nombre, Nro de tarjeta. Es importante tener en cuenta que por disposición del Banco Central solo el titular de la tarjeta puede realizar la compra, por lo que el nombre y apellido registrado debe coincidir con el de la tarjeta. Realizada esta verificación se procede a enviar los datos al servidor de la tarjeta para realizar el cobro. Si todo es correcto
 se genera un enlace de descarga al correo del usuario
 
 ---
 
 ## `Problema 13` Manejo de tarjetas de crédito
 
-La gerencia del banco donde trabajamos nos pide realizar un subsistema para el manejo de las tarjetas de crédito SIVA.
-El sistema podrá ser operado únicamente por el personal de área comercial y por el gerente de la sucursal. En ambos
-casos las funcionalidades solo serán habilitadas con autenticación previa.
-El registro del personal en el sistema no es necesario implementarlo, ya que las credenciales son obtenidas del sistema
-central del banco. Entonces, para autenticarse, el usuario debe ingresar sus credenciales (las mismas que usa para otros
-servicios del banco) y estas son corroboradas por el sistema del banco central (al cual nos comunicamos por intranet),
-enviándonos un token de autenticación válido en caso de ser correctas. Una vez autenticado, todo el personal debe poder dar de alta una nueva tarjeta y dar de baja una existente. Para dar de
-alta se requiere nombre completo, DNI y CUIT del titular. Luego, se debe seleccionar un tipo de tarjeta (Básica o Gold).
-Para dar de alta la tarjeta la persona debe ser cliente del banco y no podrá darse de alta una tarjeta si la persona es
-morosa en el sistema SIVA (externo al banco). Para esto, nuestro sistema debe comunicarse con el SIVA y verificar la
-morosidad de la persona con el DNI. En el mismo momento, el sistema SIVA nos dará un número de tarjeta nuevo.
-Para dar de baja una tarjeta, simplemente se debe ingresar el número de tarjeta y el sistema la debe eliminar de la base
-de datos del banco.
-El gerente, además, podrá pedir un listado de las operaciones realizadas entre dos fechas. Para esto el sistema le pedirá
-que ingrese ambas fechas y le mostrará un listado. No debe ser posible ingresar fechas futuras al presente, ni tampoco
-que la fecha de inicio sea mayor a la fecha de fin
+La gerencia del banco donde trabajamos nos pide realizar un subsistema para el manejo de las tarjetas de crédito SIVA. El sistema podrá ser operado únicamente por el personal de área comercial y por el gerente de la sucursal. En ambos casos las funcionalidades solo serán habilitadas con autenticación previa.
+
+El registro del personal en el sistema no es necesario implementarlo, ya que las credenciales son obtenidas del sistema central del banco. Entonces, para autenticarse, el usuario debe ingresar sus credenciales (las mismas que usa para otros servicios del banco) y estas son corroboradas por el sistema del banco central (al cual nos comunicamos por intranet), enviándonos un token de autenticación válido en caso de ser correctas. 
+
+Una vez autenticado, todo el personal debe poder dar de alta una nueva tarjeta y dar de baja una existente. Para dar de alta se requiere nombre completo, DNI y CUIT del titular. Luego, se debe seleccionar un tipo de tarjeta (Básica o Gold). Para dar de alta la tarjeta la persona debe ser cliente del banco y no podrá darse de alta una tarjeta si la persona es morosa en el sistema SIVA (externo al banco). Para esto, nuestro sistema debe comunicarse con el SIVA y verificar la morosidad de la persona con el DNI. En el mismo momento, el sistema SIVA nos dará un número de tarjeta nuevo.
+
+Para dar de baja una tarjeta, simplemente se debe ingresar el número de tarjeta y el sistema la debe eliminar de la base de datos del banco. El gerente, además, podrá pedir un listado de las operaciones realizadas entre dos fechas. Para esto el sistema le pedirá que ingrese ambas fechas y le mostrará un listado. No debe ser posible ingresar fechas futuras al presente, ni tampoco que la fecha de inicio sea mayor a la fecha de fin
 
 ---
 
@@ -309,6 +272,7 @@ que la fecha de inicio sea mayor a la fecha de fin
 
 Suponga que la consultora para la cual trabaja ha sido contactada para realizar un sistema para el manejo de turnos en
 canchas de tenis.
+
 Luego de varias reuniones con el cliente se ha concluido que es necesario la realización de un sistema web donde las
 personas interesadas puedan obtener turnos en diferentes canchas de tenis de un complejo. Para esto las personas
 deben registrarse en la plataforma indicando nombre, apellido, mail (será utilizado como nombre de usuario), edad y
@@ -316,6 +280,7 @@ domicilio. El cliente nos ha indicado que solo quiere que se registren personas 
 que la persona se registra con éxito el sistema genera una contraseña que será enviada al correo que ha sido ingresado.
 Una vez registrada la persona puede solicitar turnos en una cancha del complejo, para esto debe iniciar sesión
 previamente. El cliente desea que si un usuario falla tres veces al iniciar sesión su cuenta sea bloqueada.
+
 Para solicitar un turno, el usuario ingresa cancha, fecha y hora. Si la cancha está libre el turno se le asigna al usuario
 informando “Su turno ha sido registrado con éxito”, si la cancha está ocupada se le informará “Cancha ocupada, por favor
 seleccione otro día y horario”, dándole la posibilidad de volver a seleccionar un turno nuevo. El sistema no debe permitir
@@ -325,23 +290,14 @@ dar turno con menos de 2 días a la fecha en que se solicita.
 
 ## `Problema 14` Procesamiento de imágenes
 
-Se desea modelar un sub-sistema de procesamiento de imágenes astronómicas para un observatorio. El objetivo del
-sub-sistema será cargar una imagen, que un usuario experto la analice y recorte ciertas áreas de interés.
-Para poder usar el sistema, el operario debe autenticarse. Para esto, el sub-sistema se conecta al sistema general del
-observatorio (no administrado por nosotros) para validar las credenciales (nombre de usuario y contraseña). De ser
-correctas, el sistema de autenticación retorna un token indicando la autenticación correcta. Al terminar de usar el
-sistema, el usuario debe cerrar la sesión.
-Una vez autenticado, el operario debe poder hacer dos operaciones principales: cargar una imagen nueva y recortar
-áreas de interés. Para cargar una nueva imagen, el sistema debe mostrar una serie de archivos posibles donde el usuario
-debe seleccionar el deseado. El sistema no debe mostrar como opciones imágenes que tengan menos de 2Megapixeles
-de resolución. Una vez seleccionada la imagen, el sistema debe mostrar la opción de visualizarla en escala de grises o a
-color. El usuario puede seleccionar la opción que quiera.
-Para recortar áreas de interés, debe haber previamente cargada una imagen. No se podrán recortar más de 4 áreas. El
-sistema dejará al usuario que marque consecutivamente cada área de interés. Si algún área se superpone con otra el
-sistema debe notificarlo como un error. Una vez seleccionadas las áreas, el sistema almacena en disco los resultados.
-Por último, debe existir un usuario supervisor, que además de las funcionalidades del operario, también podrá pedir un
-listado de las últimas imágenes procesadas. El supervisor debe poder seleccionar entre qué fechas mostrar el listado.
-Luego el sistema mostrará una debajo de la otra todas las imágenes procesadas. Por cuestiones de visualización, el
-sistema no debe permitir mostrar más de 20 imágenes a la vez.
+Se desea modelar un sub-sistema de procesamiento de imágenes astronómicas para un observatorio. El objetivo del sub-sistema será cargar una imagen, que un usuario experto la analice y recorte ciertas áreas de interés.
+
+Para poder usar el sistema, el operario debe autenticarse. Para esto, el sub-sistema se conecta al sistema general del observatorio (no administrado por nosotros) para validar las credenciales (nombre de usuario y contraseña). De ser correctas, el sistema de autenticación retorna un token indicando la autenticación correcta. Al terminar de usar el sistema, el usuario debe cerrar la sesión.
+
+Una vez autenticado, el operario debe poder hacer dos operaciones principales: cargar una imagen nueva y recortar áreas de interés. Para cargar una nueva imagen, el sistema debe mostrar una serie de archivos posibles donde el usuario debe seleccionar el deseado. El sistema no debe mostrar como opciones imágenes que tengan menos de 2Megapixeles de resolución. Una vez seleccionada la imagen, el sistema debe mostrar la opción de visualizarla en escala de grises o a color. El usuario puede seleccionar la opción que quiera.
+
+Para recortar áreas de interés, debe haber previamente cargada una imagen. No se podrán recortar más de 4 áreas. El sistema dejará al usuario que marque consecutivamente cada área de interés. Si algún área se superpone con otra el sistema debe notificarlo como un error. Una vez seleccionadas las áreas, el sistema almacena en disco los resultados.
+
+Por último, debe existir un usuario supervisor, que además de las funcionalidades del operario, también podrá pedir un listado de las últimas imágenes procesadas. El supervisor debe poder seleccionar entre qué fechas mostrar el listado. Luego el sistema mostrará una debajo de la otra todas las imágenes procesadas. Por cuestiones de visualización, el sistema no debe permitir mostrar más de 20 imágenes a la vez.
 
 ---
