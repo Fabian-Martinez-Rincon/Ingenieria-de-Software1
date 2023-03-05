@@ -34,6 +34,8 @@
 
   Es una característica del sistema o una descripción de algo que el sistema es capaz de hacer con el objetivo de satisfacer el propósito del sistema.
 
+---
+
 #### `2)` Defina requerimientos funcionales y no funcionales.
 
   *Funcionales:*
@@ -54,6 +56,7 @@ Se derivan de las políticas y procedimientos existentes en la organización del
 - Requerimientos externos 
 Interoperabilidad, legales, privacidad, seguridad, éticos
 
+---
 
 #### `3)` Defina que es un **stakeholder**.
 
@@ -67,6 +70,7 @@ El termino *stakeholder* se utiliza para referirse a cualquier persona o grupo q
 - Expertos del dominio
 - Diferentes versiones....
 
+---
 
 #### `4)` Defina las fuentes más importantes para la obtención de información.
 
@@ -90,6 +94,7 @@ Utilizar diferentes métodos para acercarse a la organización es una práctica 
 
 Hay métodos interactivos que pueden usarse para obtener los requerimientos de los miembros de la organización Aunque son distintos en su implementación, estos métodos tienen muchas cosas en común. La base es hablar con las personas en la organización y escuchar para comprender.
 
+---
 
 #### `5)` Indique los puntos de vista (de manera genérica) que se pueden reconocer en un proyecto de software.
 
@@ -99,6 +104,7 @@ Existen tres tipos genéricos de puntos de vista:
 - `Indirecto:` Representan a los stakeholders que no utilizan el sistema ellos mismos pero que influyen en los requerimientos de algún modo.
 - `Dominio:` Representan las características y restricciones del dominio que influyen en los requerimientos del sistema.
 
+---
 
 #### `6)` Enumere tres problemas de comunicación que pueden existir en la elicitación de requisitos.
 
@@ -140,6 +146,9 @@ de los datos en el ámbito de la misma.
   `Fuentes de información`: Listado otorgado por la oficina de alumnos de la facultad.\
   `Puntos de vista`: Jefe de Trabajos Prácticos, reglamentación sobre privacidad de los datos.
 
+---
+
+
 - `2)` Se desea desarrollar un sistema para gestionar y administrar la atención de pacientes en una clínica privada
 especializada en tratamientos alérgicos. Cuando un paciente nuevo es ingresado a la clínica el empleado
 registra todos sus datos personales, posteriormente un enfermero registra los controles y realiza las
@@ -153,6 +162,8 @@ provincia de Bs As.
   `StakeHolders`: Empleado, Enfermero, Paciente\
   `Fuentes de información`: Datos personales registrados por un empleado.\
   `Puntos de vista`: Director, normativas impuestas por el ministerio de salud de la provincia de Bs As.
+
+---
 
 **b) Habiendo resuelto los problemas presentados, ¿por qué considera que los requerimientos de los distintos stakeholders podrían entrar en conflicto? UNLP – Facultad de Informática**
 
@@ -175,6 +186,8 @@ provincia de Bs As.
 
 Se pueden obtener opiniones, objetivos o sentimientos sobre los temas planteados
 
+---
+
 #### `2)` Enumere y describa brevemente las etapas de la preparación de una entrevista.
 
 1) Leer los antecedentes.
@@ -182,6 +195,8 @@ Se pueden obtener opiniones, objetivos o sentimientos sobre los temas planteados
 3) Seleccionar los entrevistados.
 4) Planificación de la entrevista y preparación del entrevistado.
 5) Selección del tipo de preguntas a usar y su estructura.
+
+---
 
 #### `3)` Enumere y describa brevemente qué tipos de preguntas puede contener una entrevista. Detalle ventajas y desventajas de cada una.
 
@@ -210,13 +225,19 @@ Se pueden obtener opiniones, objetivos o sentimientos sobre los temas planteados
 
 `Sondeo`: Permite obtener más detalles sobre un tema puntual.
 
+---
+
 #### `4)` Enumere y describa brevemente qué tipo de estructuras y organización existen para el armado de una entrevista.
 
   - Piramidal (Inductivo): Empezamos desde las preguntas cerradas y poco a poco, vamos hacia las preguntas abiertas.
   - Embudo (Deductivo): Lo contrario que la piramidal
   - Diamante (Comb de las anteriores): Empezamos por las preguntas cerradas, despues las abiertas y terminamos con las cerradas.
 
+---
+
 #### `5)` Analice un formato de la planilla adecuado al momento de armar una entrevista.
+
+---
 
 #### `6)` Analice un formato de la planilla adecuado al momento de terminar una entrevista.
 
@@ -238,6 +259,7 @@ Lea las preguntas y vuelva a redactarlas de una manera más apropiada. Especifiq
 - `d)` ¿No habrá una mejor manera de hacer proyecciones de sus ventas, que ese procedimiento anticuado que usted utiliza?\
    En cuanto a las proyeciones de las ventas, tengo un procedimiento que a mi parecer es mas actualizado.
 
+---
 
 ### *Situación 2*
 
@@ -248,6 +270,8 @@ Apenas ha entrado a la oficina de su entrevistado se da cuenta que él no ha dej
 - `b)` Qué opciones propone para el caso en que la entrevista no pueda reprogramarse.
     Yo propondria tener una charla telefonica.
  
+---
+
 ### *Situación 3*
 
 El siguiente es el primer informe de una entrevista realizada por uno de los miembros de su equipo de análisis de sistemas:
@@ -265,6 +289,7 @@ nuevamente para terminar la entrevista, pues, no tuvimos tiempo para analizar la
     - Que deje de hablar y escuche mas
     - Que omita datos irrelevantes
     - Y que la entrevista no dure mas de 30 minutos porque ya gente tiene cosas que hacer.
+
 ---
 
 ### Parte III Problemas Entrevistas
@@ -274,6 +299,8 @@ nuevamente para terminar la entrevista, pues, no tuvimos tiempo para analizar la
 Preparar una entrevista para obtener los requerimientos del siguiente problema:
 
 Se desea desarrollar un sistema que permita compartir un vehículo para un viaje. La idea es que cuando una persona tiene que realizar un viaje lo publique en la aplicación. Luego el resto de los usuarios se postulan para acompañarla y el chofer podrá seleccionar quienes viajan. El objetivo es abaratar costos y evitar congestiones en el tránsito.
+
+---
 
 ### *Problema 2*
 
@@ -304,10 +331,13 @@ Se busca informacion sobre sentimientos generales, problemas entre usuarios, tam
 - `Comportamiento`: Lo que realmente hacen.
 - `Características`: De las personas o cosas.
 
+---
+
 #### `2)` Describa bajo qué circunstancia considera apropiado utilizar cuestionarios.
 
 Se considera apropiado usar cuestionarios cuando las personas están dispersas geográficamente (Diferentes oficinas o ciudades), cuando tenemos a muchas personas involucradas (clientes o usuarios), cuando queremos obtener opiniones o identificar problemas generales.
 
+---
 
 #### `3)` Describa los dos tipos de cuestionarios.
 
@@ -320,6 +350,8 @@ Describa los problemas que experimenta en la actualidad con los informes de las 
 
 Limitan o cierran las opciones de respuesta disponibles. Por ejemplo:\
 ¿Es útil el reporte que utiliza actualmente? SI o NO.
+
+---
 
 ## Parte II Soluciones Cuestionarios
 
@@ -346,6 +378,8 @@ cómputo?
 
 </td>
 </table>
+
+---
 
 ### *Solución 2*
 
@@ -375,3 +409,5 @@ hacerlo?_________________________________________________
 - `b)` Realice una crítica sobre el diseño y el estilo en cuanto a espacio en blanco, espacio para las respuestas, facilidad para responder, etc.
 - `c)` Escriba el cuestionario nuevamente, teniendo en cuenta lo respondido en los puntos a y b.
 UNLP – Facultad de Informática'
+
+---
