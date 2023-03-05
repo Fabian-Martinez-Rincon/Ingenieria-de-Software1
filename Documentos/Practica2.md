@@ -1,7 +1,7 @@
 <h1 align="center"> 👤 Practica 2</h1>
 <div align="center">
-  <img src="https://media.giphy.com/media/2seKKLp1n0sEeJLYTK/giphy.gif"/>
- </div>
+<img src="https://media.giphy.com/media/26Ffiq80Yiq4FatKE/giphy.gif"/>
+</div>
 
 ---
 
