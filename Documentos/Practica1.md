@@ -18,99 +18,109 @@
 
 # `Obtención de los requerimientos`
 
----
-
 ## *Parte I Definiciones Requerimientos*
 
-- `1)` Definir brevemente que es un requerimiento
+- [Requerimiento]()
+- [Requerimientos funcionales y no funcionales]()
+- [Stakeholder]()
+- [fuentes más importantes para la obtención de información]()
+- [Puntos de vista en un proyecto de software.]()
+- [Problemas de comunicación en la elicitación de requisitos]()
+
+
+---
+
+#### `1)` Definir brevemente que es un requerimiento
 
   Es una característica del sistema o una descripción de algo que el sistema es capaz de hacer con el objetivo de satisfacer el propósito del sistema.
 
-- `2)` Defina requerimientos funcionales y no funcionales.
+#### `2)` Defina requerimientos funcionales y no funcionales.
 
   *Funcionales:*
 
-  - Describen una interacción entre el sistema y su ambiente. Cómo debe comportarse el sistema ante determinado estímulo.
-  - Describen lo que el sistema debe hacer o incluso cómo NO debe comportarse.
-  - Describen con detalle la funcionalidad del mismo
-  - Son independientes de la implementación de la solución
-  - Se pueden expresar de distintas formas
+- Describen una interacción entre el sistema y su ambiente. Cómo debe comportarse el sistema ante determinado estímulo.
+- Describen lo que el sistema debe hacer o incluso cómo NO debe comportarse.
+- Describen con detalle la funcionalidad del mismo
+- Son independientes de la implementación de la solución
+- Se pueden expresar de distintas formas
     
-  *No Funcionales:*
+*No Funcionales:*
 
-  - Describen una restricción sobre el sistema que limita nuestras elecciones en la construcción de una solución al problema
-  - Requerimientos de producto:
-    Especifican el comportamiento del producto(usabilidad, eficiencia, rendimiento, espacio, fiabilidad, portabilidad)
-  - Requerimientos organizacionales
-    Se derivan de las políticas y procedimientos existentes en la organización del cliente y en la del desarrollador (entrega, implementación, estándares)
-  - Requerimientos externos 
-    Interoperabilidad, legales, privacidad, seguridad, éticos
-
-- `3)` Defina que es un **stakeholder**.
-
-  El termino *stakeholder* se utiliza para referirse a cualquier persona o grupo que se verá afectado por el sistema, directa o indirectamente.
-
-  **Entre estos se encuentra**
-
-  - Usuarios finales
-  - Ingenieros
-  - Gerentes
-  - Expertos del dominio
-  - Diferentes versiones....
+- Describen una restricción sobre el sistema que limita nuestras elecciones en la construcción de una solución al problema
+- Requerimientos de producto:
+Especifican el comportamiento del producto(usabilidad, eficiencia, rendimiento, espacio, fiabilidad, portabilidad)
+- Requerimientos organizacionales
+Se derivan de las políticas y procedimientos existentes en la organización del cliente y en la del desarrollador (entrega, implementación, estándares)
+- Requerimientos externos 
+Interoperabilidad, legales, privacidad, seguridad, éticos
 
 
-- `4)` Defina las fuentes más importantes para la obtención de información.
+#### `3)` Defina que es un **stakeholder**.
 
-  **Métodos discretos**
+El termino *stakeholder* se utiliza para referirse a cualquier persona o grupo que se verá afectado por el sistema, directa o indirectamente.
 
-  - Muestreo de la documentación, los formularios y los datos existentes
-  - Investigación y visitas al sitio
-  - Observación del ambiente de trabajo
+**Entre estos se encuentra**
 
-  Los métodos discretos son menos perturbadores que otras formas de averiguar los requerimientos. \
-  Se consideran insuficientes para recopilar información cuando se utilizan por sí solos, por lo que deben utilizarse junto con uno o varios de los métodos.\
-  Utilizar diferentes métodos para acercarse a la organización es una práctica inteligente mediante la cual podrá formarse un panorama más completo de los requerimientos.
-
-
-  **Métodos iteractivos**
-
-  - Cuestionarios
-  - Entrevistas
-  - Planeación conjunta de Requerimientos (JRP o JAD)
-  - Lluvia de ideas
-
-  Hay métodos interactivos que pueden usarse para obtener los requerimientos de los miembros de la organización Aunque son distintos en su implementación, estos métodos tienen muchas cosas en común. La base es hablar con las personas en la organización y escuchar para comprender.
+- Usuarios finales
+- Ingenieros
+- Gerentes
+- Expertos del dominio
+- Diferentes versiones....
 
 
-- `5)` Indique los puntos de vista (de manera genérica) que se pueden reconocer en un proyecto de software.
+#### `4)` Defina las fuentes más importantes para la obtención de información.
 
-  Existen tres tipos genéricos de puntos de vista:
-  - `Interactuadores`: Representan a las personas u otros sistemas que interactúan directamente con el sistema. Pueden influir en los requerimientos del sistema de algún modo.
-  - `Indirecto:` Representan a los stakeholders que no utilizan el sistema ellos mismos pero que influyen en los requerimientos de algún modo.
-  - `Dominio:` Representan las características y restricciones del dominio que influyen en los requerimientos del sistema.
+**Métodos discretos**
+
+- Muestreo de la documentación, los formularios y los datos existentes
+- Investigación y visitas al sitio
+- Observación del ambiente de trabajo
+
+Los métodos discretos son menos perturbadores que otras formas de averiguar los requerimientos. \
+Se consideran insuficientes para recopilar información cuando se utilizan por sí solos, por lo que deben utilizarse junto con uno o varios de los métodos.\
+Utilizar diferentes métodos para acercarse a la organización es una práctica inteligente mediante la cual podrá formarse un panorama más completo de los requerimientos.
 
 
-- `6)` Enumere tres problemas de comunicación que pueden existir en la elicitación de requisitos.
+**Métodos iteractivos**
 
-  **Limitaciones cognitivas (del desarrollador)**
-  - No conocer el dominio del problema.
-  - Hacer suposiciones sobre el dominio del problema.
-  - Hacer suposiciones sobre aspectos tecnológicos.
-  - Hacer simplificaciones excesivas.
+- Cuestionarios
+- Entrevistas
+- Planeación conjunta de Requerimientos (JRP o JAD)
+- Lluvia de ideas
 
-  **Conducta humana**
+Hay métodos interactivos que pueden usarse para obtener los requerimientos de los miembros de la organización Aunque son distintos en su implementación, estos métodos tienen muchas cosas en común. La base es hablar con las personas en la organización y escuchar para comprender.
 
-  - Conflictos y ambigüedades en los roles de los participantes.
-  - Pasividad de clientes, usuarios o ingenieros de requisitos.
-  - Temor a que el nuevo sistema lo deje sin trabajo.
 
-  **Técnicos**
+#### `5)` Indique los puntos de vista (de manera genérica) que se pueden reconocer en un proyecto de software.
 
-  - Complejidad del dominio del problema.
-  - Complejidad de los requisitos.
-  - Múltiples fuentes de requisitos.
-  - Fuentes de información poco claras.
+Existen tres tipos genéricos de puntos de vista:
 
+- `Interactuadores`: Representan a las personas u otros sistemas que interactúan directamente con el sistema. Pueden influir en los requerimientos del sistema de algún modo.
+- `Indirecto:` Representan a los stakeholders que no utilizan el sistema ellos mismos pero que influyen en los requerimientos de algún modo.
+- `Dominio:` Representan las características y restricciones del dominio que influyen en los requerimientos del sistema.
+
+
+#### `6)` Enumere tres problemas de comunicación que pueden existir en la elicitación de requisitos.
+
+**Limitaciones cognitivas (del desarrollador)**
+
+- No conocer el dominio del problema.
+- Hacer suposiciones sobre el dominio del problema.
+- Hacer suposiciones sobre aspectos tecnológicos.
+- Hacer simplificaciones excesivas.
+
+**Conducta humana**
+
+- Conflictos y ambigüedades en los roles de los participantes.
+- Pasividad de clientes, usuarios o ingenieros de requisitos.
+- Temor a que el nuevo sistema lo deje sin trabajo.
+
+**Técnicos**
+
+- Complejidad del dominio del problema.
+- Complejidad de los requisitos.
+- Múltiples fuentes de requisitos.
+- Fuentes de información poco claras.
 
 ---
 
