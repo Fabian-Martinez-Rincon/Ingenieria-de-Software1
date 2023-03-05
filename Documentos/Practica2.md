@@ -60,33 +60,24 @@ Entonces <garantiza uno o más resultados>
 
 **Para cada problema planteado realice las tarjetas completas de todas las historias de usuario identificadas**
 
-
+---
 
 ## `Problema 1` Alquiler de mobiliario
 
-Suponga que trabaja en una consultora la cual ha sido recientemente contactada por una empresa de alquiler de mobiliario
-para eventos para la realización de una app.
+Suponga que trabaja en una consultora la cual ha sido recientemente contactada por una empresa de alquiler de mobiliario para eventos para la realización de una app.
+
 De las diferentes entrevistas se ha obtenido la siguiente información:
-El gerente nos dijo que resulta fundamental tener una aplicación móvil que nos permita manejar la agenda de la empresa,
-sabiendo qué disponibilidad tenemos y permitiendo que nuestros clientes alquilen a través de la app. Para esta primera
-versión de la app, el gerente nos pidió que sea posible dar de alta los diferentes mobiliarios, así como la posibilidad de que
-los usuarios puedan realizar una reserva de alquiler desde sus dispositivos. Para el detalle de cómo se realiza la carga de
-los muebles, el gerente nos sugirió hablar con el encargado del departamento de mobiliario. El encargado de mobiliario
-nos comentó que de cada mueble se debe cargar código de inventario, tipo de mueble, fecha de creación, fecha de último
-mantenimiento, estado (libre, de baja, alquilado) y el precio de alquiler. Además, no pueden existir códigos repetidos y por
-el contrato de la franquicia, el precio debe cargarse en dólares. Para que el encargado pueda dar de alta el mobiliario debe
-autenticarse en el sistema. El registro de los usuarios de carga no debe modelarse.
-El encargado del departamento de alquileres no comentó acerca de las reservas de los alquileres. Por una política
-comercial de la marca una reserva tiene que incluir como mínimo 3 muebles. La reserva debe tener una fecha, lugar del
-evento, cantidad de días y mobiliario junto a su cantidad. Para realizar una reserva se debe abonar el 20% del total del
-alquiler. El pago de la reserva se realiza únicamente con tarjeta de crédito validando número de tarjeta y fondos a través de
-un servicio del banco. Luego de efectuado el pago, se emite un número de reserva único que será luego utilizado por el
+
+El gerente nos dijo que resulta fundamental tener una aplicación móvil que nos permita manejar la agenda de la empresa, sabiendo qué disponibilidad tenemos y permitiendo que nuestros clientes alquilen a través de la app. Para esta primera versión de la app, el gerente nos pidió que sea posible dar de alta los diferentes mobiliarios, así como la posibilidad de que los usuarios puedan realizar una reserva de alquiler desde sus dispositivos. Para el detalle de cómo se realiza la carga de los muebles, el gerente nos sugirió hablar con el encargado del departamento de mobiliario. El encargado de mobiliario nos comentó que de cada mueble se debe cargar código de inventario, tipo de mueble, fecha de creación, fecha de último mantenimiento, estado (libre, de baja, alquilado) y el precio de alquiler. Además, no pueden existir códigos repetidos y por el contrato de la franquicia, el precio debe cargarse en dólares. Para que el encargado pueda dar de alta el mobiliario debe autenticarse en el sistema. El registro de los usuarios de carga no debe modelarse.
+
+El encargado del departamento de alquileres no comentó acerca de las reservas de los alquileres. Por una política comercial de la marca una reserva tiene que incluir como mínimo 3 muebles. La reserva debe tener una fecha, lugar del evento, cantidad de días y mobiliario junto a su cantidad. Para realizar una reserva se debe abonar el 20% del total del alquiler. El pago de la reserva se realiza únicamente con tarjeta de crédito validando número de tarjeta y fondos a través de un servicio del banco. Luego de efectuado el pago, se emite un número de reserva único que será luego utilizado por el
 cliente para hacer efectivo el alquiler.
+
+---
 
 ## `Problema 2` Posgrado
 
-Suponga que trabaja en el área de sistemas de la Facultad de Informática y se le solicitó la automatización del pago de
-carreras de posgrado. Inicialmente se coordinó una reunión con el director del posgrado y se obtuvo la siguiente
+Suponga que trabaja en el área de sistemas de la Facultad de Informática y se le solicitó la automatización del pago de carreras de posgrado. Inicialmente se coordinó una reunión con el director del posgrado y se obtuvo la siguiente
 información:
 Ya que no se desea seguir cobrando el dinero en la secretaría, es necesario que los alumnos puedan pagar las carreras vía
 web. Como el director de posgrado no realiza tareas administrativas nos recomendó hablar con el secretario académico.
@@ -105,6 +96,8 @@ tarjeta y, en caso de que la tarjeta sea válida y tenga fondos, se hará efecti
 se valida a través de un servicio del banco con el cual la universidad tiene convenio. Luego de efectuado el cobro, el
 sistema debe imprimir dos comprobantes, uno de inscripción y otro de pago. La única forma que tiene el alumno de pagar
 es con tarjeta de crédito
+
+---
 
 ## `Problema 3` Contratos
 
@@ -135,6 +128,8 @@ si el CUIT está habilitado o no.
 Por último el empleado de rendiciones será el responsable de imprimir los listados con las minutas aprobadas, es decir, un
 listado con el personal contratado para poder dárselo al jefe de departamento para que lo firme.
 
+---
+
 ## `Problema 4` Venta de bebidas
 
 Se desea modelar un sistema para el manejo de venta de bebidas alcohólicas en linea. Para poder empezar a comprar en el
@@ -146,6 +141,8 @@ Para comprar el usuario debe iniciar sesión y una vez logueado el sistema muest
 usuario selecciona todos los productos que desea comprar, si el usuario es premium se le hace un descuento del 20% y se informa en pantalla el total menos el 20%. Ademas si el usuario seleccionó productos por un monto superior a los $4500
 se le hace un 10% de descuento y se informa en pantalla el total menos el 10%. Tenga en cuenta que si el usuario es
 premium y compra por un monto superior a $4500 se deben aplicar ambos descuentos
+
+---
 
 ## `Problema 5` Casa de fotografía
 
@@ -161,8 +158,9 @@ cual debe ser validada a través del sistema del banco. Una vez que se realiza e
 Un cliente debe acercarse a la sucursal para retirar las fotos enviadas previamente. Para esto debe presentar el
 código único a un empleado. Este registra el código, la fecha de retiro y entrega las fotos al cliente.
 
-## `Problema 6` Biblioteca
+---
 
+## `Problema 6` Biblioteca
 
 La biblioteca de una escuela primaria realiza su trabajo de forma manual y requiere un sistema informático que
 automatice su funcionamiento.
@@ -175,6 +173,8 @@ tengan préstamos vencidos. La bibliotecaria presta libros que se encuentren en 
 encuentra deteriorado ya no se presta.
 Cuando el socio retorna un libro se verifica si el préstamo se encuentra vencido. En este caso, la bibliotecaria
 suspende al socio, que por 15 días no podrá solicitar nuevos préstamos.
+
+---
 
 ## `Problema 7` Mutual
 
@@ -190,6 +190,8 @@ factura del comercio que la confeccionó.
 -Anteojos: A cualquier afiliado con fecha de afiliación superior a tres meses, un par cada 18 meses.
 -Internación: A cualquier afiliado, sin límite.
 -Consultas médicas: A cualquier afiliado, hasta 2 por mes.
+
+---
 
 ## `Problema 8` Teatro
 
@@ -216,6 +218,8 @@ de verificarlo, imprima las entradas correspondientes.
 Además se desea administrar la programación de las salas. El administrador ingresa la distribución semanal de las
 obras en las salas de manera que se encuentre disponible para la realización de la venta de entradas
 
+---
+
 ## `Problema 9` Pago Electrónico
 
 Se desea modelar un sistema de pago electrónico de impuestos y servicios en efectivo.
@@ -238,6 +242,8 @@ Tenga en cuenta que cada vez que el sistema debe conectarse a la central, debe e
 identifica al sistema). Una vez que la central valida el token, el sistema envía el requerimiento para recuperar los datos de
 la factura o el requerimiento para registrar los pagos del día según corresponda
 
+---
+
 ## `Problema 10` Un Aventón
 
 Se desea desarrollar un sistema que permita compartir un vehículo para un viaje. La idea es que cuando una persona
@@ -256,6 +262,8 @@ viajes realizados. Luego de terminado un viaje, tanto el piloto como los copilot
 sí. El piloto califica a todos sus copilotos. Cada copiloto califica al piloto del viaje. Las calificaciones podrán ser positivas
 (suma un punto de reputación) o negativas (restan un punto de reputación)
 
+---
+
 ## `Problema 11` Concursos
 
 Suponga que el área para la cual trabaja fue contactada para implementar un sistema para el manejo de concursos de los
@@ -273,6 +281,8 @@ Por último, para cumplir con la ordenanza número 123/19 de la UNLP, el jefe de
 un nombre de usuario y contraseña, deberá poder imprimir un listado con los inscriptos a una materia determinada para
 poder enviar dicho listado al secretario administrativo quien lo firma y eleva al decano de la Facultad. Suponga que el
 sistema Siu-Guarani realiza una tarea similar a la solicitada y que puede consultar su implementación y registros.
+
+---
 
 ## `Problema 12` Créditos bancarios
 
@@ -294,6 +304,8 @@ ingresadas no son válidas”. El sistema utiliza un sistema de autenticación g
 modelar el iniciar y cerrar sesión. Si no hay créditos aprobados para las fechas ingresadas el sistema mostrará el siguiente
 mensaje: ”No hay créditos aprobados en las fechas ingresadas”.
 
+---
+
 ## `Problema 12` Venta de libros
 
 Una nueva empresa de venta de libros en línea está diseñando su sitio web. Cualquier visitante puede acceder a su
@@ -312,6 +324,8 @@ Apellido, Nombre, Nro de tarjeta. Es importante tener en cuenta que por disposic
 la tarjeta puede realizar la compra, por lo que el nombre y apellido registrado debe coincidir con el de la tarjeta.
 Realizada esta verificación se procede a enviar los datos al servidor de la tarjeta para realizar el cobro. Si todo es correcto
 se genera un enlace de descarga al correo del usuario
+
+---
 
 ## `Problema 13` Manejo de tarjetas de crédito
 
@@ -332,6 +346,8 @@ El gerente, además, podrá pedir un listado de las operaciones realizadas entre
 que ingrese ambas fechas y le mostrará un listado. No debe ser posible ingresar fechas futuras al presente, ni tampoco
 que la fecha de inicio sea mayor a la fecha de fin
 
+---
+
 ## `Problema 13` Manejo de canchas de tenis
 
 
@@ -348,6 +364,8 @@ Para solicitar un turno, el usuario ingresa cancha, fecha y hora. Si la cancha e
 informando “Su turno ha sido registrado con éxito”, si la cancha está ocupada se le informará “Cancha ocupada, por favor
 seleccione otro día y horario”, dándole la posibilidad de volver a seleccionar un turno nuevo. El sistema no debe permitir
 dar turno con menos de 2 días a la fecha en que se solicita.
+
+---
 
 ## `Problema 14` Procesamiento de imágenes
 
@@ -369,3 +387,5 @@ Por último, debe existir un usuario supervisor, que además de las funcionalida
 listado de las últimas imágenes procesadas. El supervisor debe poder seleccionar entre qué fechas mostrar el listado.
 Luego el sistema mostrará una debajo de la otra todas las imágenes procesadas. Por cuestiones de visualización, el
 sistema no debe permitir mostrar más de 20 imágenes a la vez.
+
+---
