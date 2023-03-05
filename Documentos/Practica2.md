@@ -6,7 +6,7 @@
  </div>
 <h1 align="center"> 👤 Practica 2</h1>
 <div align="center">
-<img src="https://media.giphy.com/media/26Ffiq80Yiq4FatKE/giphy.gif"/>
+<img src="https://media.giphy.com/media/RIpj8HJGVGGTUdM76b/giphy.gif"/>
 </div>
 
 ---
