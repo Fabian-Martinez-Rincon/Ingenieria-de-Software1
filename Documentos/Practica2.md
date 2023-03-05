@@ -62,7 +62,11 @@ Entonces <garantiza uno o más resultados>
 
 ---
 
+<div align = center>
+
 ## `Problema 1` Alquiler de mobiliario
+
+</div>
 
 Suponga que trabaja en una consultora la cual ha sido recientemente contactada por una empresa de alquiler de mobiliario para eventos para la realización de una app.
 
@@ -75,7 +79,11 @@ cliente para hacer efectivo el alquiler.
 
 ---
 
+<div align = center>
+
 ## `Problema 2` Posgrado
+
+</div>
 
 Suponga que trabaja en el área de sistemas de la Facultad de Informática y se le solicitó la automatización del pago de carreras de posgrado. Inicialmente se coordinó una reunión con el director del posgrado y se obtuvo la siguiente información:
 
@@ -92,7 +100,11 @@ Para inscribirse, el alumno deberá seleccionar la carrera, ingresar la cantidad
 
 ---
 
+<div align = center>
+
 ## `Problema 3` Contratos
+
+</div>
 
 Suponga que trabaja en un grupo en el área de sistemas de una organización y está por comenzar un nuevo proyecto para desarrollar un sistema que depende del departamento contable.
 
@@ -106,7 +118,11 @@ Por último el empleado de rendiciones será el responsable de imprimir los list
 
 ---
 
+<div align = center>
+
 ## `Problema 4` Venta de bebidas
+
+</div>
 
 Se desea modelar un sistema para el manejo de venta de bebidas alcohólicas en linea. Para poder empezar a comprar en el sitio, es necesario que las personas se registren ingresando nombre, apellido, mail (será utilizado como nombre de usuario por lo tanto debe ser único) y edad. Solo se permite que se registren al sitio personas mayores a 18 años, de lo contrario el sistema debe mostrar en pantalla el texto de la ley que impide la venta de bebidas alcohólicas a menores. Si el registro es exitoso el sistema genera una contraseña que es enviada al mail ingresado en el registro.
 
@@ -114,7 +130,12 @@ Para comprar el usuario debe iniciar sesión y una vez logueado el sistema muest
 
 ---
 
+<div align = center>
+
 ## `Problema 5` Casa de fotografía
+
+</div>
+
 
 Se desea desarrollar un sistema para la impresión de fotos para una casa fotográfica. Los clientes pueden subir sus fotos, pagar por internet y luego ser retiradas personalmente por el local.
 
@@ -126,7 +147,11 @@ Un cliente debe acercarse a la sucursal para retirar las fotos enviadas previame
 
 ---
 
+<div align = center>
+
 ## `Problema 6` Biblioteca
+
+</div>
 
 La biblioteca de una escuela primaria realiza su trabajo de forma manual y requiere un sistema informático que automatice su funcionamiento.
 
@@ -140,7 +165,11 @@ Cuando el socio retorna un libro se verifica si el préstamo se encuentra vencid
 
 ---
 
+<div align = center>
+
 ## `Problema 7` Mutual
+
+</div>
 
 Una mutual necesita automatizar el manejo de las prestaciones que ofrece a sus afiliados.
 
@@ -158,7 +187,11 @@ Las prestaciones que brinda, siempre y cuando esté asentado el pago del mes ant
 
 ---
 
+<div align = center>
+
 ## `Problema 8` Teatro
+
+</div>
 
 Se desea modelar un sistema de gestión de ventas de entradas para un teatro. Las personas compran sus entradas a través de una página web, o personalmente.
 
@@ -176,7 +209,11 @@ Además se desea administrar la programación de las salas. El administrador ing
 
 ---
 
+<div align = center>
+
 ## `Problema 9` Pago Electrónico
+
+</div>
 
 Se desea modelar un sistema de pago electrónico de impuestos y servicios en efectivo.
 
@@ -204,7 +241,11 @@ la factura o el requerimiento para registrar los pagos del día según correspon
 
 ---
 
+<div align = center>
+
 ## `Problema 10` Un Aventón
+
+</div>
 
 Se desea desarrollar un sistema que permita compartir un vehículo para un viaje. La idea es que cuando una persona tiene que realizar un viaje lo publique en la aplicación. Luego, el resto de los usuarios se postulan para acompañarla y el chofer podrá seleccionar quienes viajan. El objetivo es abaratar costos y evitar congestiones en el tránsito. El sistema es gratuito.
 
@@ -216,7 +257,11 @@ En el sistema existe una política de reputaciones que permiten a los usuarios c
 
 ---
 
+<div align = center>
+
 ## `Problema 11` Concursos
+
+</div>
 
 Suponga que el área para la cual trabaja fue contactada para implementar un sistema para el manejo de concursos de los docentes de la Facultad de Informática.
 
@@ -228,7 +273,11 @@ Por último, para cumplir con la ordenanza número 123/19 de la UNLP, el jefe de
 
 ---
 
+<div align = center>
+
 ## `Problema 12` Créditos bancarios
+
+</div>
 
 Se desea modelar mediante historias de usuario el manejo de créditos otorgados por un banco a sus clientes.
 
@@ -240,7 +289,11 @@ Por último, el gerente del banco puede pedir un listado de créditos aprobados 
 
 ---
 
+<div align = center>
+
 ## `Problema 12` Venta de libros
+
+</div>
 
 Una nueva empresa de venta de libros en línea está diseñando su sitio web. Cualquier visitante puede acceder a su catálogo de libros y navegar los distintos libros que se encuentren en él y solo los usuarios registrados pueden realizar compras.
 
@@ -255,7 +308,11 @@ se genera un enlace de descarga al correo del usuario
 
 ---
 
+<div align = center>
+
 ## `Problema 13` Manejo de tarjetas de crédito
+
+</div>
 
 La gerencia del banco donde trabajamos nos pide realizar un subsistema para el manejo de las tarjetas de crédito SIVA. El sistema podrá ser operado únicamente por el personal de área comercial y por el gerente de la sucursal. En ambos casos las funcionalidades solo serán habilitadas con autenticación previa.
 
@@ -267,8 +324,11 @@ Para dar de baja una tarjeta, simplemente se debe ingresar el número de tarjeta
 
 ---
 
+<div align = center>
+
 ## `Problema 13` Manejo de canchas de tenis
 
+</div>
 
 Suponga que la consultora para la cual trabaja ha sido contactada para realizar un sistema para el manejo de turnos en
 canchas de tenis.
@@ -288,7 +348,11 @@ dar turno con menos de 2 días a la fecha en que se solicita.
 
 ---
 
+<div align = center>
+
 ## `Problema 14` Procesamiento de imágenes
+
+</div>
 
 Se desea modelar un sub-sistema de procesamiento de imágenes astronómicas para un observatorio. El objetivo del sub-sistema será cargar una imagen, que un usuario experto la analice y recorte ciertas áreas de interés.
 
