@@ -20,12 +20,12 @@
 
 ## *Parte I Definiciones Requerimientos*
 
-- [Requerimiento]()
-- [Requerimientos funcionales y no funcionales]()
-- [Stakeholder]()
-- [fuentes más importantes para la obtención de información]()
-- [Puntos de vista en un proyecto de software.]()
-- [Problemas de comunicación en la elicitación de requisitos]()
+- [Requerimiento](#1-definir-brevemente-que-es-un-requerimiento)
+- [Requerimientos funcionales y no funcionales](#2-defina-requerimientos-funcionales-y-no-funcionales)
+- [Stakeholder](#3-defina-que-es-un-stakeholder)
+- [fuentes más importantes para la obtención de información](#4-defina-las-fuentes-más-importantes-para-la-obtención-de-información)
+- [Puntos de vista en un proyecto de software.](#5-indique-los-puntos-de-vista-de-manera-genérica-que-se-pueden-reconocer-en-un-proyecto-de-software)
+- [Problemas de comunicación en la elicitación de requisitos](#6-enumere-tres-problemas-de-comunicación-que-pueden-existir-en-la-elicitación-de-requisitos)
 
 
 ---
@@ -162,12 +162,12 @@ provincia de Bs As.
 
 ## Parte I Definiciones Entrevistas
 
-- [Que información puede obtenerse]()
-- [Etapas de preparación]()
-- [Tipos de preguntas]()
-- [Estructura y organización de una entrevista]()
-- [Analisis al armarla]()
-- [Analisis al terminarla]()
+- [Que información puede obtenerse](#1-describa-qué-tipo-de-información-puede-obtenerse-en-una-entrevista)
+- [Etapas de preparación](#2-enumere-y-describa-brevemente-las-etapas-de-la-preparación-de-una-entrevista)
+- [Tipos de preguntas](#3-enumere-y-describa-brevemente-qué-tipos-de-preguntas-puede-contener-una-entrevista-detalle-ventajas-y-desventajas-de-cada-una)
+- [Estructura y organización de una entrevista](#4-enumere-y-describa-brevemente-qué-tipo-de-estructuras-y-organización-existen-para-el-armado-de-una-entrevista)
+- [Analisis al armarla](#5-analice-un-formato-de-la-planilla-adecuado-al-momento-de-armar-una-entrevista)
+- [Analisis al terminarla](#6-analice-un-formato-de-la-planilla-adecuado-al-momento-de-terminar-una-entrevista)
 
 
 #### `1)` Describa qué tipo de información puede obtenerse en una entrevista.
@@ -209,14 +209,15 @@ Se pueden obtener opiniones, objetivos o sentimientos sobre los temas planteados
 
 `Sondeo`: Permite obtener más detalles sobre un tema puntual.
 
-- `4)` Enumere y describa brevemente qué tipo de estructuras y organización existen para el armado de una entrevista.
+#### `4)` Enumere y describa brevemente qué tipo de estructuras y organización existen para el armado de una entrevista.
 
   - Piramidal (Inductivo): Empezamos desde las preguntas cerradas y poco a poco, vamos hacia las preguntas abiertas.
   - Embudo (Deductivo): Lo contrario que la piramidal
   - Diamante (Comb de las anteriores): Empezamos por las preguntas cerradas, despues las abiertas y terminamos con las cerradas.
 
-- `5)` Analice un formato de la planilla adecuado al momento de armar una entrevista.
-- `6)` Analice un formato de la planilla adecuado al momento de terminar una entrevista.
+#### `5)` Analice un formato de la planilla adecuado al momento de armar una entrevista.
+
+#### `6)` Analice un formato de la planilla adecuado al momento de terminar una entrevista.
 
 ---
 
@@ -285,33 +286,37 @@ Los visitantes podrán hojear diferentes libros de cocina, pero tendrán que cre
 
 ## Parte I Definiciones Cuestionarios
 
-- `1)` Describa qué tipo de información se busca mediante la aplicación de cuestionarios.
+- [Información a obtener]()
+- [En que circunstancia se utilizan]()
+- [Tipos de Cuestionarios]()
 
-  Se busca informacion sobre sentimientos generales, problemas entre usuarios, tambien buscar hechos de un gran numero de personas y cuantificar respuestas.
+#### `1)` Describa qué tipo de información se busca mediante la aplicación de cuestionarios.
 
-  **Tipo de informacion obtenida:** \
-  Actitud: lo que las personas dicen que quieren.\
-  Creencias: Lo que las personas creen que es verdad.\
-  Comportamiento: Lo que realmente hacen.\
-  Características: De las personas o cosas.
+Se busca informacion sobre sentimientos generales, problemas entre usuarios, tambien buscar hechos de un gran numero de personas y cuantificar respuestas.
+
+**Tipo de informacion obtenida:** 
+
+- `Actitud`: lo que las personas dicen que quieren.
+- `Creencias`: Lo que las personas creen que es verdad.
+- `Comportamiento`: Lo que realmente hacen.
+- `Características`: De las personas o cosas.
+
+#### `2)` Describa bajo qué circunstancia considera apropiado utilizar cuestionarios.
+
+Se considera apropiado usar cuestionarios cuando las personas están dispersas geográficamente (Diferentes oficinas o ciudades), cuando tenemos a muchas personas involucradas (clientes o usuarios), cuando queremos obtener opiniones o identificar problemas generales.
 
 
-- `2)` Describa bajo qué circunstancia considera apropiado utilizar cuestionarios.
+#### `3)` Describa los dos tipos de cuestionarios.
 
-  Se considera apropiado usar cuestionarios cuando las personas están dispersas geográficamente (Diferentes oficinas o ciudades), cuando tenemos a muchas personas involucradas (clientes o usuarios), cuando queremos obtener opiniones o identificar problemas generales.
+**Cuestionarios con Preguntas Abiertas**
 
+Son las que dejan abiertas todas las posibles opciones de respuesta. Como por ejemplo:\
+Describa los problemas que experimenta en la actualidad con los informes de las salidas. (Es basicamente su opinion)
 
-- `3)` Describa los dos tipos de cuestionarios.
+**Cuestionarios con Preguntas Cerradas**
 
-  **Cuestionarios con Preguntas Abiertas**
-
-  Son las que dejan abiertas todas las posibles opciones de respuesta. Como por ejemplo:\
-  Describa los problemas que experimenta en la actualidad con los informes de las salidas. (Es basicamente su opinion)
-
-  **Cuestionarios con Preguntas Cerradas**
-
-  Limitan o cierran las opciones de respuesta disponibles. Por ejemplo:\
-  ¿Es útil el reporte que utiliza actualmente? SI o NO.
+Limitan o cierran las opciones de respuesta disponibles. Por ejemplo:\
+¿Es útil el reporte que utiliza actualmente? SI o NO.
 
 ## Parte II Soluciones Cuestionarios
 
