@@ -162,42 +162,52 @@ provincia de Bs As.
 
 ## Parte I Definiciones Entrevistas
 
-- `1)` Describa qué tipo de información puede obtenerse en una entrevista.
+- [Que información puede obtenerse]()
+- [Etapas de preparación]()
+- [Tipos de preguntas]()
+- [Estructura y organización de una entrevista]()
+- [Analisis al armarla]()
+- [Analisis al terminarla]()
+
+
+#### `1)` Describa qué tipo de información puede obtenerse en una entrevista.
 
 Se pueden obtener opiniones, objetivos o sentimientos sobre los temas planteados
 
-- `2)` Enumere y describa brevemente las etapas de la preparación de una entrevista.
+#### `2)` Enumere y describa brevemente las etapas de la preparación de una entrevista.
 
-  1) Leer los antecedentes.
-  2) Establecer los objetivos de la entrevista.
-  3) Seleccionar los entrevistados.
-  4) Planificación de la entrevista y preparación del entrevistado.
-  5) Selección del tipo de preguntas a usar y su estructura.
+1) Leer los antecedentes.
+2) Establecer los objetivos de la entrevista.
+3) Seleccionar los entrevistados.
+4) Planificación de la entrevista y preparación del entrevistado.
+5) Selección del tipo de preguntas a usar y su estructura.
 
-- `3)` Enumere y describa brevemente qué tipos de preguntas puede contener una entrevista. Detalle ventajas y desventajas de cada una.
+#### `3)` Enumere y describa brevemente qué tipos de preguntas puede contener una entrevista. Detalle ventajas y desventajas de cada una.
 
-  **Tipos de preguntas**
-  - `Abiertas`: Permite al encuestado responder de cualquier manera.\
-    **Ventajas**
-      - Revelan nueva línea de preguntas.
-      - Hacen más interesante la entrevista.
-      - Permiten espontaneidad.
+**Tipos de preguntas:**
 
-    **Desventajas**
-      - Pueden dar muchos detalles irrelevantes.
-      - Se puede perder el control de la entrevista.
-      - Parece que el entrevistado no tiene los objetivos claros
+`Abiertas`: Permite al encuestado responder de cualquier manera.
 
-  - `Cerradas`: Las respuestas son directas, cortas o de selección específica.\
-    **Ventajas**
-      - Ahorran tiempo.
-      - Se mantiene más fácil el control de la entrevista.
-      - Se consiguen datos relevantes.
+- **Ventajas**
+  - Revelan nueva línea de preguntas.
+  - Hacen más interesante la entrevista.
+  - Permiten espontaneidad.
+- **Desventajas**
+  - Pueden dar muchos detalles irrelevantes.
+  - Se puede perder el control de la entrevista.
+  - Parece que el entrevistado no tiene los objetivos claros
 
-    **Desventajas**
-      - Pueden abirrir al encuestado.
-      - No se obtienen detalles.
-  - `Sondeo`: Permite obtener más detalles sobre un tema puntual.
+`Cerradas`: Las respuestas son directas, cortas o de selección específica
+
+- **Ventajas**
+  - Ahorran tiempo.
+  - Se mantiene más fácil el control de la entrevista.
+  - Se consiguen datos relevantes.
+- **Desventajas**
+  - Pueden abirrir al encuestado.
+  - No se obtienen detalles.
+
+`Sondeo`: Permite obtener más detalles sobre un tema puntual.
 
 - `4)` Enumere y describa brevemente qué tipo de estructuras y organización existen para el armado de una entrevista.
 
