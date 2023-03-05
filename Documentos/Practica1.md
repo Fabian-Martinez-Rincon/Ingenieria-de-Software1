@@ -1,5 +1,7 @@
-<h1 align="center">  Practica 1</h1>
-<p><img width="270" align='right' src="https://media.giphy.com/media/ddR31ZMLGH10k/giphy.gif"></p>
+<h1 align="center"> 📋 Practica 1</h1>
+<div align = 'center'><img  src="https://media.giphy.com/media/11ikeVaUfcXLWM/giphy.gif"></div>
+
+---
 
 - [Obtención de los requerimientos](#obtención-de-los-requerimientos)
   - [Parte I Definiciones](#Parte-I-Definiciones-Requerimientos)
@@ -11,6 +13,8 @@
 - [Cuestionarios](#Cuestionarios)
   - [Parte I Definiciones](#Parte-I-Definiciones-Cuestionarios)
   - [Parte II Soluciones](#Parte-II-Soluciones-Cuestionarios)
+
+---
 
 # `Obtención de los requerimientos`
 
