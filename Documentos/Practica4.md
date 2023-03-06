@@ -40,7 +40,11 @@ Se detallan a continuación los pasos a seguir para realizar la construcción de
 
 ---
 
-## Ejercicio 1.
+<div align = 'center'>
+
+## `Ejercicio 1.`
+
+</div>
 
 Dado el siguiente diagrama que representa el funcionamiento de una Licuadora, corrija los errores existentes. La licuadora tiene 2 velocidades y sólo dos botones: uno para aumentar la velocidad y otro para disminuirla. La licuadora se apaga con el botón disminuir estando en la primera velocidad.
 
@@ -48,7 +52,11 @@ Dado el siguiente diagrama que representa el funcionamiento de una Licuadora, co
 
 ---
 
-## Ejercicio 2. Complete el siguiente diagrama DTE que ilustra el comportamiento de una máquina de gaseosas, en base al siguiente enunciado:
+<div align = 'center'>
+
+## `Ejercicio 2.` Complete el siguiente diagrama DTE que ilustra el comportamiento de una máquina de gaseosas, en base al siguiente enunciado:
+
+</div>
 
 La máquina se activa cuando el usuario ingresa una moneda. Todos los productos tienen el mismo valor. Las monedas son ingresadas de a una y cada una es validada en ese mismo momento, en base a su tamaño, peso y espesor mediante un dispositivo específico. Al mismo tiempo se valida el monto ingresado. Si alguna moneda no es válida, se retorna al usuario, y continúa el proceso normalmente. Como siguiente paso, el usuario debe seleccionar un producto. Si no hay stock de dicho producto entonces debe retornar las monedas y mostrar un mensaje informando tal situación. Si hay stock, se entrega el producto, y en caso de que se haya ingresado un monto superior, la máquina retorna el vuelto correspondiente. El usuario puede cancelar en cualquier momento, dando por finalizado todo el proceso.
 
@@ -56,7 +64,11 @@ La máquina se activa cuando el usuario ingresa una moneda. Todos los productos 
 
 ---
 
-## Ejercicio 3.
+<div align = 'center'>
+
+## `Ejercicio 3.`
+
+</div>
 
 Se desea modelar con un DTE el acceso a una caja fuerte, la cual posee un código de seguridad con una longitud desconocida. La caja presenta un teclado numérico y un botón “aceptar”. Si el código es incorrecto el sistema debe terminar indicando un error.
 
@@ -66,13 +78,21 @@ Analice las siguientes soluciones y discuta las diferencias.
 
 ---
 
-## Ejercicio 4. Realizar el DTE para modelar un turbo ventilador.
+<div align = 'center'>
+
+## `Ejercicio 4.` Realizar el DTE para modelar un turbo ventilador.
+
+</div>
 
 Considere un sistema de control de un turbo ventilador que posee tres niveles de velocidad. Para ir de un nivel a otro, ya sea anterior o posterior, se debe girar una perilla en forma secuencial. Inicialmente el ventilador se encuentra apagado. Girando la perilla en el sentido de las agujas del reloj se enciende y se aumenta la velocidad, mientras que girando la perilla en el sentido contrario se disminuye. El ventilador puede ser apagado girando hacia la izquierda en el nivel 1 o hacia la derecha en el nivel 3.
 
 ---
 
-## Ejercicio 5. Modelar mediante un DTE el ingreso del personal a una empresa.
+<div align = 'center'>
+
+## `Ejercicio 5.` Modelar mediante un DTE el ingreso del personal a una empresa.
+
+</div>
 
 Para ello existe una máquina en donde un empleado debe registrar el presente. Para iniciar el registro se selecciona la opción “Registrar Asistencia”. Luego, se habilitan dos opciones posibles para registrar su presente: mediante su tarjeta o su huella dactilar.
 
@@ -84,7 +104,11 @@ En cualquiera de los 2 casos si el ingreso es exitoso se muestra en el display l
 
 ---
 
-## Ejercicio 6. Se desea modelar el funcionamiento de un personaje para un juego electrónico.
+<div align = 'center'>
+
+## `Ejercicio 6.` Se desea modelar el funcionamiento de un personaje para un juego electrónico.
+
+</div>
 
 El personaje es un guardia medieval de un castillo. Su objetivo es vigilar el castillo y eliminar enemigos que puedan aparecer.
 
@@ -92,7 +116,11 @@ El personaje comienza su ronda de vigilancia cuando es creado por el sistema, co
 
 ---
 
-## Ejercicio 7. Modelar mediante un DTE el sistema de voto electrónico para la facultad de informática.
+<div align = 'center'>
+
+## `Ejercicio 7.` Modelar mediante un DTE el sistema de voto electrónico para la facultad de informática.
+
+</div>
 
 El sistema cuenta con 2 terminales: la mesa de autoridades y la urna electrónica.
 
@@ -110,7 +138,11 @@ Una vez emitido el voto, es decir, que seleccionó la/s agrupación/es correspon
 
 ---
 
-## Ejercicio 8. Modelar mediante DTE la búsqueda de un destino para navegación por GPS.
+<div align = 'center'>
+
+## `Ejercicio 8.` Modelar mediante DTE la búsqueda de un destino para navegación por GPS.
+
+</div>
 
 Al seleccionar la opción “ir a destino” el sistema visualiza la “pantalla inicial de búsqueda” con las opciones: “últimos encontrados” y “nuevo destino”. 
 Si el usuario selecciona “últimos encontrados” se muestra una lista con los últimos 5 lugares buscados. Luego, el usuario debe seleccionar un lugar de dicha lista para iniciar la navegación.
@@ -130,7 +162,11 @@ en cuyo caso, el sistema, retorna a la pantalla de inicio con la opción “Ir a
 
 ---
 
-## Ejercicio 9. Modelar mediante un DTE el funcionamiento de un cajero automático.
+<div align = 'center'>
+
+## `Ejercicio 9.` Modelar mediante un DTE el funcionamiento de un cajero automático.
+
+</div>
 
 El cajero posee una pantalla táctil, una ranura para la tarjeta, una ranura para expulsar el dinero y una para expulsar los comprobantes. Cuando el cajero detecta una tarjeta se habilita una pantalla en la cual espera el ingreso de la clave de 4 dígitos numéricos (a través de un teclado virtual). Una vez que se ingresan los 4 dígitos el cajero espera que se presione el botón aceptar. Si la clave es correcta, se visualiza el menú principal con dos operaciones posibles: extracción de dinero y consulta de saldo. Si la clave es incorrecta se visualiza un mensaje de error, emite un pitido y expulsa la tarjeta.
 
@@ -142,7 +178,11 @@ En cualquier momento, se puede seleccionar la opción Cancelar que aborta la ope
 
 ---
 
-## Ejercicio 10. Modelar un sistema para una cinta para correr.
+<div align = 'center'>
+
+## `Ejercicio 10.` Modelar un sistema para una cinta para correr.
+
+</div>
 
 La cinta consta de un display táctil y un botón de encendido/apagado.
 
@@ -154,7 +194,7 @@ En cualquier momento se puede apagar la cinta
 
 ---
 
-## Ejercicio 11. Modelar un sistema  el funcionamiento de una cafetera express
+## `Ejercicio 11.` Modelar un sistema  el funcionamiento de una cafetera express
 
 La cafetera es semi-automática. Posee solo 3 botones que el usuario puede presionar: uno para encender/apagar, otro para hacer café y otro para hacer cappuccino. Internamente, la máquina tiene: un calentador de agua para café, un calentador de leche, un motor para preparar café y un motor para verter la leche.
 
@@ -168,7 +208,11 @@ La cafetera puede ser apagada en cualquier momento (excepto cuando está sirvien
 
 ---
 
-## Ejercicio 12. Modelar con DTE el funcionamiento de un lavarropas automático de carga superior.
+<div align = 'center'>
+
+## `Ejercicio 12.` Modelar con DTE el funcionamiento de un lavarropas automático de carga superior.
+
+</div>
 
 El lavarropas se enciende al presionar el botón “encendido”. En ese momento, el usuario debe seleccionar un
 modo de operación: “Lavado”, “Enjuague” o “Centrifugado”. Existe además una perilla para elegir la cantidad
