@@ -8,10 +8,15 @@
 <h1 align="center"> 🖥️ Ingenieria de Software 1</h1>
 <div align="center">
   <img src="https://media.giphy.com/media/3ohze1y2AJUOHiid8I/giphy.gif"/>
- </div>
+ </div> 
 
 ---
 
 - [📋 Practica 1 Full Teoria](/Documentos/Practica1.md)
 - [👤 Practica 2 Historias de Usuario](/Documentos/Practica2.md)
-- [Casos de Uso]()
+- [👥 Practica 3 Casos de Uso]()
+- [📊 Practica 4 Diagramas de Transición de Estado]()
+- [🕸️ Practica 5 Redes de Petri]()
+- [📋 Practica 6 Tablas de Desición]()
+
+---

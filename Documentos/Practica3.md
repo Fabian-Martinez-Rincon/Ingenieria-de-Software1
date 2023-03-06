@@ -191,20 +191,11 @@ En el sistema existe una política de reputaciones que permiten a los usuarios c
 
 </div>
 
-Se desea modelar con casos de uso un sistema web para el manejo de turnos de un gimnasio. Las personas
-que desean solicitar un turno para concurrir al gimnasio primero deben registrarse. Para ello deben ingresar
-el dni, el nombre, el apellido y el mail que será utilizado como nombre de usuario (por lo tanto, no puede
-repetirse). Una vez que el usuario se registra, el sistema genera una contraseña que es enviada al correo de
-la persona.
-Para solicitar un turno, el cliente del gimnasio, previa autenticación, debe ingresar: fecha, hora y actividad.
-Si hay cupo para esa actividad en ese día y a esa hora, el sistema registra el turno, de lo contrario, muestra
-un mensaje de cupo no disponible.
-Por último cuando un cliente llega al gimnasio debe registrar su llegada, para esto la secretaria del gimnasio
-solicita el número de dni del cliente para hacer el registro. El gimnasio se maneja con un sistema externo
-que suma puntos a aquellos clientes que cumplen con las reservas realizadas. Es necesario que cuando se
-registre la asistencia del cliente al gimnasio se haga la suma correspondiente para lo cual el sistema se
-conecta con el servidor externo, envía el dni del cliente y la actividad que va a realizar y el servidor se
-encarga de sumar los puntos.
+Se desea modelar con casos de uso un sistema web para el manejo de turnos de un gimnasio. Las personas que desean solicitar un turno para concurrir al gimnasio primero deben registrarse. Para ello deben ingresar el dni, el nombre, el apellido y el mail que será utilizado como nombre de usuario (por lo tanto, no puede repetirse). Una vez que el usuario se registra, el sistema genera una contraseña que es enviada al correo de la persona.
+
+Para solicitar un turno, el cliente del gimnasio, previa autenticación, debe ingresar: fecha, hora y actividad. Si hay cupo para esa actividad en ese día y a esa hora, el sistema registra el turno, de lo contrario, muestra un mensaje de cupo no disponible.
+
+Por último cuando un cliente llega al gimnasio debe registrar su llegada, para esto la secretaria del gimnasio solicita el número de dni del cliente para hacer el registro. El gimnasio se maneja con un sistema externo que suma puntos a aquellos clientes que cumplen con las reservas realizadas. Es necesario que cuando se registre la asistencia del cliente al gimnasio se haga la suma correspondiente para lo cual el sistema se conecta con el servidor externo, envía el dni del cliente y la actividad que va a realizar y el servidor se encarga de sumar los puntos.
 
 ---
 
@@ -214,24 +205,12 @@ encarga de sumar los puntos.
 
 </div>
 
-Se desea modelar un sistema de carga de empleados de la facultad de Informática. Se ha realizado una
-reunión con el jefe de recursos humanos el cual nos detalló lo siguiente: cuando un nuevo empleado es
-contratado, debe ir a la oficina de recursos humanos y presentar a la secretaria, quien realiza la carga, su
-dni, apellido, nombre, edad y domicilio. Según el reglamento interno de la Facultad, para poder llevar a
-cabo el alta el sistema debe verificar que el nuevo agente no figure en la base de sumariados, de ser así se
-informa dicha situación y se cancela la carga. La base de sumariados es una base interna del sistema.
-Además, según la ley 1231/6 de empleo, el sistema debe permitir asociar una obra social a un agente, para
-lo cual la secretaria deberá ingresar el dni del empleado. Luego el sistema debe consultar a un servidor si el
-agente es moroso. Para poder efectuar la consulta el sistema debe conectarse con el servidor y enviar el dni
-del empleado. En caso de morosidad el sistema deberá informar dicha situación permitiendo al empleado regularizar su situación en los próximos 30 días e imprimiendo un código de inicio de trámite. Si no es
-moroso el sistema le asocia la obra social e imprime un carnet. También se ha tenido una reunión con el jefe
-del área de comunicación visual, quien nos ha dado acceso al manual de estilo de la organización para que
-lo consultemos y respetemos cuestiones estéticas.
-El sistema deberá permitir que el empleado avise la regularización de su deuda, para lo cual, existe una
-terminal electrónica, donde deberá ingresar su dni y código de inicio de trámite. Luego el sistema consultará
-al servidor de la obra social si efectivamente el agente dejó de ser moroso y de ser así le asignará la obra
-social imprimiendo un carnet. Si el empleado aún sigue siendo moroso se informará el error.
-Suponga que el equipo de desarrollo tiene acceso a un sistema llamado Sigef para consultar su
-implementación dado que algunas funcionalidades son parecidas a las solicitadas.
+Se desea modelar un sistema de carga de empleados de la facultad de Informática. Se ha realizado una reunión con el jefe de recursos humanos el cual nos detalló lo siguiente: cuando un nuevo empleado es contratado, debe ir a la oficina de recursos humanos y presentar a la secretaria, quien realiza la carga, su dni, apellido, nombre, edad y domicilio. Según el reglamento interno de la Facultad, para poder llevar a cabo el alta el sistema debe verificar que el nuevo agente no figure en la base de sumariados, de ser así se informa dicha situación y se cancela la carga. La base de sumariados es una base interna del sistema.
+
+Además, según la ley 1231/6 de empleo, el sistema debe permitir asociar una obra social a un agente, para lo cual la secretaria deberá ingresar el dni del empleado. Luego el sistema debe consultar a un servidor si el agente es moroso. Para poder efectuar la consulta el sistema debe conectarse con el servidor y enviar el dni del empleado. En caso de morosidad el sistema deberá informar dicha situación permitiendo al empleado regularizar su situación en los próximos 30 días e imprimiendo un código de inicio de trámite. Si no es moroso el sistema le asocia la obra social e imprime un carnet. También se ha tenido una reunión con el jefe del área de comunicación visual, quien nos ha dado acceso al manual de estilo de la organización para que lo consultemos y respetemos cuestiones estéticas.
+
+El sistema deberá permitir que el empleado avise la regularización de su deuda, para lo cual, existe una terminal electrónica, donde deberá ingresar su dni y código de inicio de trámite. Luego el sistema consultará al servidor de la obra social si efectivamente el agente dejó de ser moroso y de ser así le asignará la obra social imprimiendo un carnet. Si el empleado aún sigue siendo moroso se informará el error.
+
+Suponga que el equipo de desarrollo tiene acceso a un sistema llamado Sigef para consultar su implementación dado que algunas funcionalidades son parecidas a las solicitadas.
 
 ---
