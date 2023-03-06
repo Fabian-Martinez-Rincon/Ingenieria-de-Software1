@@ -12,18 +12,18 @@
 
 ---
 
-- [Ejercicio 1]()
-- [Ejercicio 2]()
-- [Ejercicio 3]()
-- [Ejercicio 4]()
-- [Ejercicio 5]()
-- [Ejercicio 6]()
-- [Ejercicio 7]()
-- [Ejercicio 8]()
-- [Ejercicio 9]()
-- [Ejercicio 10]()
-- [Ejercicio 11]()
-- [Ejercicio 12]()
+- [Ejercicio 1](#ejercicio-1)
+- [Ejercicio 2](#ejercicio-2-complete-el-siguiente-diagrama-dte-que-ilustra-el-comportamiento-de-una-máquina-de-gaseosas-en-base-al-siguiente-enunciado)
+- [Ejercicio 3](#ejercicio-3)
+- [Ejercicio 4](#ejercicio-4-realizar-el-dte-para-modelar-un-turbo-ventilador)
+- [Ejercicio 5](#ejercicio-5-modelar-mediante-un-dte-el-ingreso-del-personal-a-una-empresa)
+- [Ejercicio 6](#ejercicio-6-se-desea-modelar-el-funcionamiento-de-un-personaje-para-un-juego-electrónico)
+- [Ejercicio 7](#ejercicio-7-modelar-mediante-un-dte-el-sistema-de-voto-electrónico-para-la-facultad-de-informática)
+- [Ejercicio 8](#ejercicio-8-modelar-mediante-dte-la-búsqueda-de-un-destino-para-navegación-por-gps)
+- [Ejercicio 9](#ejercicio-9-modelar-mediante-un-dte-el-funcionamiento-de-un-cajero-automático)
+- [Ejercicio 10](#ejercicio-10-modelar-un-sistema-para-una-cinta-para-correr)
+- [Ejercicio 11](#ejercicio-11-modelar-un-sistema-el-funcionamiento-de-una-cafetera-express)
+- [Ejercicio 12](#ejercicio-12-modelar-con-dte-el-funcionamiento-de-un-lavarropas-automático-de-carga-superior)
 
 ---
 
@@ -46,11 +46,15 @@ Dado el siguiente diagrama que representa el funcionamiento de una Licuadora, co
 
 ![image](https://user-images.githubusercontent.com/55964635/223026391-d12f9f54-2c4d-4ca1-b28b-ad048ca16744.png)
 
+---
+
 ## Ejercicio 2. Complete el siguiente diagrama DTE que ilustra el comportamiento de una máquina de gaseosas, en base al siguiente enunciado:
 
 La máquina se activa cuando el usuario ingresa una moneda. Todos los productos tienen el mismo valor. Las monedas son ingresadas de a una y cada una es validada en ese mismo momento, en base a su tamaño, peso y espesor mediante un dispositivo específico. Al mismo tiempo se valida el monto ingresado. Si alguna moneda no es válida, se retorna al usuario, y continúa el proceso normalmente. Como siguiente paso, el usuario debe seleccionar un producto. Si no hay stock de dicho producto entonces debe retornar las monedas y mostrar un mensaje informando tal situación. Si hay stock, se entrega el producto, y en caso de que se haya ingresado un monto superior, la máquina retorna el vuelto correspondiente. El usuario puede cancelar en cualquier momento, dando por finalizado todo el proceso.
 
 ![image](https://user-images.githubusercontent.com/55964635/223026577-7a8c1362-22ac-4b1d-8ffc-8db59f5507ff.png)
+
+---
 
 ## Ejercicio 3.
 
@@ -60,9 +64,13 @@ Analice las siguientes soluciones y discuta las diferencias.
 
 ![image](https://user-images.githubusercontent.com/55964635/223027130-a805c235-e534-45ec-b0c2-9104a04016b5.png)
 
+---
+
 ## Ejercicio 4. Realizar el DTE para modelar un turbo ventilador.
 
 Considere un sistema de control de un turbo ventilador que posee tres niveles de velocidad. Para ir de un nivel a otro, ya sea anterior o posterior, se debe girar una perilla en forma secuencial. Inicialmente el ventilador se encuentra apagado. Girando la perilla en el sentido de las agujas del reloj se enciende y se aumenta la velocidad, mientras que girando la perilla en el sentido contrario se disminuye. El ventilador puede ser apagado girando hacia la izquierda en el nivel 1 o hacia la derecha en el nivel 3.
+
+---
 
 ## Ejercicio 5. Modelar mediante un DTE el ingreso del personal a una empresa.
 
@@ -74,12 +82,15 @@ Si opta por registrar el presente mediante la huella dactilar sólo debe apoyar 
 
 En cualquiera de los 2 casos si el ingreso es exitoso se muestra en el display la fecha y el horario de entrada y un mensaje de éxito, caso contrario, se visualiza un mensaje de error y se emite un pitido.
 
+---
 
 ## Ejercicio 6. Se desea modelar el funcionamiento de un personaje para un juego electrónico.
 
 El personaje es un guardia medieval de un castillo. Su objetivo es vigilar el castillo y eliminar enemigos que puedan aparecer.
 
 El personaje comienza su ronda de vigilancia cuando es creado por el sistema, con el 100% de energía. El modo normal del personaje es vigilar el castillo, mientras no detecte un enemigo. Al detectar uno, el personaje pasa a modo combate. Si el enemigo está fuera del castillo, el personaje saca su arco y flecha. Si el enemigo está dentro del castillo, el personaje saca su espada. Durante el combate, el personaje puede recibir “golpes”, reduciendo su energía 10% por cada uno. Si el personaje gana el combate, recupera el 50% de energía y vuelve con su ronda de vigilancia. Pero si pierde energía hasta quedarse con el 20%, entonces el personaje comienza a huir del enemigo, guardando su arma. Durante la huida el personaje puede seguir recibiendo “golpes”, hasta quedarse sin energía y morir, quedando fuera del juego. Cuando pierde de vista al enemigo, el personaje deja de huir y vuelve con su ronda de vigilancia, ganando un 30% de energía.
+
+---
 
 ## Ejercicio 7. Modelar mediante un DTE el sistema de voto electrónico para la facultad de informática.
 
@@ -96,6 +107,8 @@ Una vez iniciada la votación, se habilita la pantalla y se muestran las opcione
 Una vez elegido el tipo de votación, se pasará a elegir la agrupación a votar, para ello la máquina oculta las opciones anteriores y muestra un listado de los partidos disponibles. Si se eligió cortar boleta, el votante deberá elegir dos agrupaciones, caso contrario, elige solo una agrupación.
 
 Una vez emitido el voto, es decir, que seleccionó la/s agrupación/es correspondiente/s, se oculta el listado, se muestra en toda la pantalla la opción/es elegida/s, se muestra un botón para confirmar y se muestra otro botón para cancelar. Si confirma el voto, el mismo se envía a imprimir, se muestra un mensaje éxito, envía un mensaje a la mesa de autoridades y finaliza la sesión. Si cancela se muestra un mensaje de cancelación y finaliza la sesión
+
+---
 
 ## Ejercicio 8. Modelar mediante DTE la búsqueda de un destino para navegación por GPS.
 
@@ -115,6 +128,8 @@ Cuando termina la navegación el sistema retorna un mensaje de destino alcanzado
 El usuario puede detener la navegación en cualquier momento presionando el botón “detener navegación”,
 en cuyo caso, el sistema, retorna a la pantalla de inicio con la opción “Ir a destino”.
 
+---
+
 ## Ejercicio 9. Modelar mediante un DTE el funcionamiento de un cajero automático.
 
 El cajero posee una pantalla táctil, una ranura para la tarjeta, una ranura para expulsar el dinero y una para expulsar los comprobantes. Cuando el cajero detecta una tarjeta se habilita una pantalla en la cual espera el ingreso de la clave de 4 dígitos numéricos (a través de un teclado virtual). Una vez que se ingresan los 4 dígitos el cajero espera que se presione el botón aceptar. Si la clave es correcta, se visualiza el menú principal con dos operaciones posibles: extracción de dinero y consulta de saldo. Si la clave es incorrecta se visualiza un mensaje de error, emite un pitido y expulsa la tarjeta.
@@ -125,6 +140,8 @@ Si se selecciona la operación consulta de saldo, automáticamente se visualizan
 
 En cualquier momento, se puede seleccionar la opción Cancelar que aborta la operación actual y expulsa la tarjeta, saliendo del sistema.
 
+---
+
 ## Ejercicio 10. Modelar un sistema para una cinta para correr.
 
 La cinta consta de un display táctil y un botón de encendido/apagado.
@@ -134,6 +151,8 @@ Cuando se presiona encender, la cinta inicia en un estado de reposo, se habilita
 Una vez encendida la cinta, el usuario debe elegir uno de estos tres programas para comenzar a entrenar. Estando en cualquiera de los tres programas, el usuario, puede cambiar a algún otro programa de entrenamiento, o finalizar el mismo mediante un botón de “fin de programa” volviendo al estado de reposo. Además, puede variar la velocidad del mismo, sin salir del programa en el que se encuentra. La velocidad oscila en un rango de 0 a 9, y aumenta y disminuye en escala de 1. Si la velocidad disminuye a cero, la cinta vuelve al estado de reposo.
 
 En cualquier momento se puede apagar la cinta
+
+---
 
 ## Ejercicio 11. Modelar un sistema  el funcionamiento de una cafetera express
 
@@ -147,6 +166,8 @@ Si el usuario presiona “café”, se activa el motor de café y se espera alca
 
 La cafetera puede ser apagada en cualquier momento (excepto cuando está sirviendo café, o leche).
 
+---
+
 ## Ejercicio 12. Modelar con DTE el funcionamiento de un lavarropas automático de carga superior.
 
 El lavarropas se enciende al presionar el botón “encendido”. En ese momento, el usuario debe seleccionar un
@@ -158,3 +179,5 @@ Si se elige el modo “Lavado”: se deja ingresar el agua y se activa el motor 
 Si se elige el modo “Enjuague” (o terminó el lavado): Se deja ingresar el agua y se activa el motor en modolatente. Si el enjuague comienza luego de un lavado se “cambia el agua”. El enjuague dura un tiempo fijo y se realizan tantos enjuagues como indique la perilla de enjuague. Siempre que comienza un nuevo enjuague, se cambia el agua.
 
 Si se elige el modo “Centrifugado” (o terminaron los enjuagues): Se deja escurrir el agua, se activa el motor en modo centrifugado por un tiempo fijo. Si durante el centrifugado se abre la puerta se debe emitir un pitido y detener el motor. El centrifugado continua normalmente al cerrar la puerta.
+
+---
