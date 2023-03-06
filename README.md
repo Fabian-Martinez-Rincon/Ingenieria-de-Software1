@@ -14,9 +14,9 @@
 
 - [📋 Practica 1 Full Teoria](/Documentos/Practica1.md)
 - [👤 Practica 2 Historias de Usuario](/Documentos/Practica2.md)
-- [👥 Practica 3 Casos de Uso]()
-- [📊 Practica 4 Diagramas de Transición de Estado]()
-- [🕸️ Practica 5 Redes de Petri]()
-- [📋 Practica 6 Tablas de Desición]()
+- [👥 Practica 3 Casos de Uso](/Documentos/Practica3.md)
+- [📊 Practica 4 Diagramas de Transición de Estado](/Documentos/Practica4.md)
+- [🕸️ Practica 5 Redes de Petri](/Documentos/Practica5.md)
+- [📋 Practica 6 Tablas de Desición](/Documentos/Practica6.md)
 
 ---
