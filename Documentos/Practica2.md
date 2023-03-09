@@ -11,6 +11,18 @@
 
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
+<div align='center'>
+
+[Practica 1 | Teoria](/Documentos/Practica1.md)<br>
+[Practica 2 | Historias de Usuario](/Documentos/Practica2.md)<br>
+[Practica 3 | Casos de Uso](/Documentos/Practica3.md)<br>
+[Practica 4 | DTE](/Documentos/Practica4.md)<br>
+[Practica 5 | Redes de Petri](/Documentos/Practica5.md)<br>
+[Practica 6 | Tablas de Desición](/Documentos/Practica6.md)
+</div>
+
+<img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
+
 - [1) Alquiler de mobiliario](#problema-1-alquiler-de-mobiliario)
 - [2) Posgrado](#problema-2-posgrado)
 - [3) Contratos](#problema-3-contratos)

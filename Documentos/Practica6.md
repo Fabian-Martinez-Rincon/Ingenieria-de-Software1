@@ -10,25 +10,38 @@
 <img src="https://media.giphy.com/media/XG0tayFvL5MoSJ4OVw/giphy.gif"/>
 </div>
 
----
+<img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
-- [Ejercicio 1 ]()
-- [Ejercicio 2]()
-- [Ejercicio 3]()
-- [Ejercicio 4]()
-- [Ejercicio 5]()
-- [Ejercicio 6]()
-- [Ejercicio 7]()
-- [Ejercicio 8]()
-- [Ejercicio 9]()
-- [Ejercicio 10]()
-- [Ejercicio 11]()
-- [Ejercicio 12]()
-- [Ejercicio 13]()
-- [Ejercicio 14]()
-- [Ejercicio 15]()
-- [Ejercicio 16]()
-- [Ejercicio 17]()
+<div align='center'>
+
+[Practica 1 | Teoria](/Documentos/Practica1.md)<br>
+[Practica 2 | Historias de Usuario](/Documentos/Practica2.md)<br>
+[Practica 3 | Casos de Uso](/Documentos/Practica3.md)<br>
+[Practica 4 | DTE](/Documentos/Practica4.md)<br>
+[Practica 5 | Redes de Petri](/Documentos/Practica5.md)<br>
+[Practica 6 | Tablas de Desición](/Documentos/Practica6.md)
+</div>
+
+<img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
+
+- [Ejercicio 1](#ejercicio-1)
+- [Ejercicio 2](#ejercicio-2)
+- [Ejercicio 3](#ejercicio-3)
+- [Ejercicio 4](#ejercicio-4)
+- [Ejercicio 5](#ejercicio-5)
+- [Ejercicio 6](#ejercicio-6)
+- [Ejercicio 7](#ejercicio-7)
+- [Ejercicio 8](#ejercicio-8)
+- [Ejercicio 9](#ejercicio-9)
+- [Ejercicio 10](#ejercicio-10)
+- [Ejercicio 11](#ejercicio-11)
+- [Ejercicio 12](#ejercicio-12)
+- [Ejercicio 13](#ejercicio-13)
+- [Ejercicio 14](#ejercicio-14)
+- [Ejercicio 15](#ejercicio-15)
+- [Ejercicio 16](#ejercicio-16)
+- [Ejercicio 17](#ejercicio-17)
+
 
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
