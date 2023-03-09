@@ -7,7 +7,7 @@
 <h1 align="center"> 📋 Practica 1</h1>
 <div align = 'center'><img  src="https://media.giphy.com/media/11ikeVaUfcXLWM/giphy.gif"></div>
 
----
+<img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
 - [Obtención de los requerimientos](#obtención-de-los-requerimientos)
   - [Parte I Definiciones](#Parte-I-Definiciones-Requerimientos)
@@ -20,7 +20,7 @@
   - [Parte I Definiciones](#Parte-I-Definiciones-Cuestionarios)
   - [Parte II Soluciones](#Parte-II-Soluciones-Cuestionarios)
 
----
+<img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
 # `Obtención de los requerimientos`
 
@@ -34,13 +34,13 @@
 - [Problemas de comunicación en la elicitación de requisitos](#6-enumere-tres-problemas-de-comunicación-que-pueden-existir-en-la-elicitación-de-requisitos)
 
 
----
+<img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
 #### `1)` Definir brevemente que es un requerimiento
 
   Es una característica del sistema o una descripción de algo que el sistema es capaz de hacer con el objetivo de satisfacer el propósito del sistema.
 
----
+<img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
 #### `2)` Defina requerimientos funcionales y no funcionales.
 
@@ -62,7 +62,7 @@ Se derivan de las políticas y procedimientos existentes en la organización del
 - Requerimientos externos 
 Interoperabilidad, legales, privacidad, seguridad, éticos
 
----
+<img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
 #### `3)` Defina que es un **stakeholder**.
 
@@ -76,7 +76,7 @@ El termino *stakeholder* se utiliza para referirse a cualquier persona o grupo q
 - Expertos del dominio
 - Diferentes versiones....
 
----
+<img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
 #### `4)` Defina las fuentes más importantes para la obtención de información.
 
@@ -100,7 +100,7 @@ Utilizar diferentes métodos para acercarse a la organización es una práctica 
 
 Hay métodos interactivos que pueden usarse para obtener los requerimientos de los miembros de la organización Aunque son distintos en su implementación, estos métodos tienen muchas cosas en común. La base es hablar con las personas en la organización y escuchar para comprender.
 
----
+<img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
 #### `5)` Indique los puntos de vista (de manera genérica) que se pueden reconocer en un proyecto de software.
 
@@ -110,7 +110,7 @@ Existen tres tipos genéricos de puntos de vista:
 - `Indirecto:` Representan a los stakeholders que no utilizan el sistema ellos mismos pero que influyen en los requerimientos de algún modo.
 - `Dominio:` Representan las características y restricciones del dominio que influyen en los requerimientos del sistema.
 
----
+<img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
 #### `6)` Enumere tres problemas de comunicación que pueden existir en la elicitación de requisitos.
 
@@ -134,7 +134,7 @@ Existen tres tipos genéricos de puntos de vista:
 - Múltiples fuentes de requisitos.
 - Fuentes de información poco claras.
 
----
+<img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
 ## *Parte II Problemas Requerimientos*
 
@@ -152,7 +152,7 @@ de los datos en el ámbito de la misma.
   `Fuentes de información`: Listado otorgado por la oficina de alumnos de la facultad.\
   `Puntos de vista`: Jefe de Trabajos Prácticos, reglamentación sobre privacidad de los datos.
 
----
+<img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
 
 - `2)` Se desea desarrollar un sistema para gestionar y administrar la atención de pacientes en una clínica privada
@@ -169,11 +169,11 @@ provincia de Bs As.
   `Fuentes de información`: Datos personales registrados por un empleado.\
   `Puntos de vista`: Director, normativas impuestas por el ministerio de salud de la provincia de Bs As.
 
----
+<img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
 **b) Habiendo resuelto los problemas presentados, ¿por qué considera que los requerimientos de los distintos stakeholders podrían entrar en conflicto? UNLP – Facultad de Informática**
 
----
+<img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
 # `Entrevistas`
 
@@ -186,13 +186,13 @@ provincia de Bs As.
 - [Analisis al armarla](#5-analice-un-formato-de-la-planilla-adecuado-al-momento-de-armar-una-entrevista)
 - [Analisis al terminarla](#6-analice-un-formato-de-la-planilla-adecuado-al-momento-de-terminar-una-entrevista)
 
----
+<img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
 #### `1)` Describa qué tipo de información puede obtenerse en una entrevista.
 
 Se pueden obtener opiniones, objetivos o sentimientos sobre los temas planteados
 
----
+<img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
 #### `2)` Enumere y describa brevemente las etapas de la preparación de una entrevista.
 
@@ -202,7 +202,7 @@ Se pueden obtener opiniones, objetivos o sentimientos sobre los temas planteados
 4) Planificación de la entrevista y preparación del entrevistado.
 5) Selección del tipo de preguntas a usar y su estructura.
 
----
+<img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
 #### `3)` Enumere y describa brevemente qué tipos de preguntas puede contener una entrevista. Detalle ventajas y desventajas de cada una.
 
@@ -231,7 +231,7 @@ Se pueden obtener opiniones, objetivos o sentimientos sobre los temas planteados
 
 `Sondeo`: Permite obtener más detalles sobre un tema puntual.
 
----
+<img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
 #### `4)` Enumere y describa brevemente qué tipo de estructuras y organización existen para el armado de una entrevista.
 
@@ -239,15 +239,15 @@ Se pueden obtener opiniones, objetivos o sentimientos sobre los temas planteados
   - Embudo (Deductivo): Lo contrario que la piramidal
   - Diamante (Comb de las anteriores): Empezamos por las preguntas cerradas, despues las abiertas y terminamos con las cerradas.
 
----
+<img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
 #### `5)` Analice un formato de la planilla adecuado al momento de armar una entrevista.
 
----
+<img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
 #### `6)` Analice un formato de la planilla adecuado al momento de terminar una entrevista.
 
----
+<img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
 ## Parte II Situaciones Entrevistas
 
@@ -265,7 +265,7 @@ Lea las preguntas y vuelva a redactarlas de una manera más apropiada. Especifiq
 - `d)` ¿No habrá una mejor manera de hacer proyecciones de sus ventas, que ese procedimiento anticuado que usted utiliza?\
    En cuanto a las proyeciones de las ventas, tengo un procedimiento que a mi parecer es mas actualizado.
 
----
+<img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
 ### *Situación 2*
 
@@ -276,7 +276,7 @@ Apenas ha entrado a la oficina de su entrevistado se da cuenta que él no ha dej
 - `b)` Qué opciones propone para el caso en que la entrevista no pueda reprogramarse.
     Yo propondria tener una charla telefonica.
  
----
+<img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
 ### *Situación 3*
 
@@ -296,7 +296,7 @@ nuevamente para terminar la entrevista, pues, no tuvimos tiempo para analizar la
     - Que omita datos irrelevantes
     - Y que la entrevista no dure mas de 30 minutos porque ya gente tiene cosas que hacer.
 
----
+<img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
 ### Parte III Problemas Entrevistas
 
@@ -306,7 +306,7 @@ Preparar una entrevista para obtener los requerimientos del siguiente problema:
 
 Se desea desarrollar un sistema que permita compartir un vehículo para un viaje. La idea es que cuando una persona tiene que realizar un viaje lo publique en la aplicación. Luego el resto de los usuarios se postulan para acompañarla y el chofer podrá seleccionar quienes viajan. El objetivo es abaratar costos y evitar congestiones en el tránsito.
 
----
+<img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
 ### *Problema 2*
 
@@ -314,7 +314,7 @@ Preparar una entrevista para obtener los requerimientos del siguiente problema:\
 CookBooks es un negocio pequeño manejado por una pareja jubilada. Hasta este momento, Cookbooks ha vendido sus libros sólo a través de pedidos por correo. Los dueños ahora quieren desarrollar un sistema en línea para vender libros de cocina difíciles de conseguir y agotados a través de internet.\
 Los visitantes podrán hojear diferentes libros de cocina, pero tendrán que crear una cuenta del cliente antes de poder hacer una compra. Los pagos se aceptarán sólo en línea con una tarjeta de crédito reconocida
 
----
+<img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
 # `Cuestionarios`
 
@@ -324,7 +324,7 @@ Los visitantes podrán hojear diferentes libros de cocina, pero tendrán que cre
 - [En que circunstancia se utilizan](#2-describa-bajo-qué-circunstancia-considera-apropiado-utilizar-cuestionarios)
 - [Tipos de Cuestionarios](#3-describa-los-dos-tipos-de-cuestionarios)
 
----
+<img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
 #### `1)` Describa qué tipo de información se busca mediante la aplicación de cuestionarios.
 
@@ -337,13 +337,13 @@ Se busca informacion sobre sentimientos generales, problemas entre usuarios, tam
 - `Comportamiento`: Lo que realmente hacen.
 - `Características`: De las personas o cosas.
 
----
+<img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
 #### `2)` Describa bajo qué circunstancia considera apropiado utilizar cuestionarios.
 
 Se considera apropiado usar cuestionarios cuando las personas están dispersas geográficamente (Diferentes oficinas o ciudades), cuando tenemos a muchas personas involucradas (clientes o usuarios), cuando queremos obtener opiniones o identificar problemas generales.
 
----
+<img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
 #### `3)` Describa los dos tipos de cuestionarios.
 
@@ -357,7 +357,7 @@ Describa los problemas que experimenta en la actualidad con los informes de las 
 Limitan o cierran las opciones de respuesta disponibles. Por ejemplo:\
 ¿Es útil el reporte que utiliza actualmente? SI o NO.
 
----
+<img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
 ## Parte II Soluciones Cuestionarios
 
@@ -385,7 +385,7 @@ cómputo?
 </td>
 </table>
 
----
+<img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
 ### *Solución 2*
 
@@ -416,4 +416,4 @@ hacerlo?_________________________________________________
 - `c)` Escriba el cuestionario nuevamente, teniendo en cuenta lo respondido en los puntos a y b.
 UNLP – Facultad de Informática'
 
----
+<img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">

@@ -10,7 +10,7 @@
 <img src="https://media.giphy.com/media/Wz8BcbiANKcXF5Jy6S/giphy.gif"/>
 </div>
 
----
+<img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
 - [Ejercicio 1](#ejercicio-1)
 - [Ejercicio 2](#ejercicio-2-complete-el-siguiente-diagrama-dte-que-ilustra-el-comportamiento-de-una-máquina-de-gaseosas-en-base-al-siguiente-enunciado)
@@ -25,7 +25,7 @@
 - [Ejercicio 11](#ejercicio-11-modelar-un-sistema-el-funcionamiento-de-una-cafetera-express)
 - [Ejercicio 12](#ejercicio-12-modelar-con-dte-el-funcionamiento-de-un-lavarropas-automático-de-carga-superior)
 
----
+<img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
 Se detallan a continuación los pasos a seguir para realizar la construcción de un DTE:
 
@@ -38,7 +38,7 @@ Se detallan a continuación los pasos a seguir para realizar la construcción de
     - c. Se puede salir de todos los estados.
     - d. En cada estado, el sistema responde a todas las condiciones posibles (Normales y Anormales). No debería haber transiciones recurrentes (mismo estado origen y destino) sin acciones.
 
----
+<img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
 <div align = 'center'>
 
@@ -50,7 +50,7 @@ Dado el siguiente diagrama que representa el funcionamiento de una Licuadora, co
 
 ![image](https://user-images.githubusercontent.com/55964635/223026391-d12f9f54-2c4d-4ca1-b28b-ad048ca16744.png)
 
----
+<img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
 <div align = 'center'>
 
@@ -62,7 +62,7 @@ La máquina se activa cuando el usuario ingresa una moneda. Todos los productos 
 
 ![image](https://user-images.githubusercontent.com/55964635/223026577-7a8c1362-22ac-4b1d-8ffc-8db59f5507ff.png)
 
----
+<img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
 <div align = 'center'>
 
@@ -76,7 +76,7 @@ Analice las siguientes soluciones y discuta las diferencias.
 
 ![image](https://user-images.githubusercontent.com/55964635/223027130-a805c235-e534-45ec-b0c2-9104a04016b5.png)
 
----
+<img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
 <div align = 'center'>
 
@@ -86,7 +86,7 @@ Analice las siguientes soluciones y discuta las diferencias.
 
 Considere un sistema de control de un turbo ventilador que posee tres niveles de velocidad. Para ir de un nivel a otro, ya sea anterior o posterior, se debe girar una perilla en forma secuencial. Inicialmente el ventilador se encuentra apagado. Girando la perilla en el sentido de las agujas del reloj se enciende y se aumenta la velocidad, mientras que girando la perilla en el sentido contrario se disminuye. El ventilador puede ser apagado girando hacia la izquierda en el nivel 1 o hacia la derecha en el nivel 3.
 
----
+<img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
 <div align = 'center'>
 
@@ -102,7 +102,7 @@ Si opta por registrar el presente mediante la huella dactilar sólo debe apoyar 
 
 En cualquiera de los 2 casos si el ingreso es exitoso se muestra en el display la fecha y el horario de entrada y un mensaje de éxito, caso contrario, se visualiza un mensaje de error y se emite un pitido.
 
----
+<img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
 <div align = 'center'>
 
@@ -114,7 +114,7 @@ El personaje es un guardia medieval de un castillo. Su objetivo es vigilar el ca
 
 El personaje comienza su ronda de vigilancia cuando es creado por el sistema, con el 100% de energía. El modo normal del personaje es vigilar el castillo, mientras no detecte un enemigo. Al detectar uno, el personaje pasa a modo combate. Si el enemigo está fuera del castillo, el personaje saca su arco y flecha. Si el enemigo está dentro del castillo, el personaje saca su espada. Durante el combate, el personaje puede recibir “golpes”, reduciendo su energía 10% por cada uno. Si el personaje gana el combate, recupera el 50% de energía y vuelve con su ronda de vigilancia. Pero si pierde energía hasta quedarse con el 20%, entonces el personaje comienza a huir del enemigo, guardando su arma. Durante la huida el personaje puede seguir recibiendo “golpes”, hasta quedarse sin energía y morir, quedando fuera del juego. Cuando pierde de vista al enemigo, el personaje deja de huir y vuelve con su ronda de vigilancia, ganando un 30% de energía.
 
----
+<img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
 <div align = 'center'>
 
@@ -136,7 +136,7 @@ Una vez elegido el tipo de votación, se pasará a elegir la agrupación a votar
 
 Una vez emitido el voto, es decir, que seleccionó la/s agrupación/es correspondiente/s, se oculta el listado, se muestra en toda la pantalla la opción/es elegida/s, se muestra un botón para confirmar y se muestra otro botón para cancelar. Si confirma el voto, el mismo se envía a imprimir, se muestra un mensaje éxito, envía un mensaje a la mesa de autoridades y finaliza la sesión. Si cancela se muestra un mensaje de cancelación y finaliza la sesión
 
----
+<img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
 <div align = 'center'>
 
@@ -160,7 +160,7 @@ Cuando termina la navegación el sistema retorna un mensaje de destino alcanzado
 El usuario puede detener la navegación en cualquier momento presionando el botón “detener navegación”,
 en cuyo caso, el sistema, retorna a la pantalla de inicio con la opción “Ir a destino”.
 
----
+<img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
 <div align = 'center'>
 
@@ -176,7 +176,7 @@ Si se selecciona la operación consulta de saldo, automáticamente se visualizan
 
 En cualquier momento, se puede seleccionar la opción Cancelar que aborta la operación actual y expulsa la tarjeta, saliendo del sistema.
 
----
+<img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
 <div align = 'center'>
 
@@ -192,7 +192,7 @@ Una vez encendida la cinta, el usuario debe elegir uno de estos tres programas p
 
 En cualquier momento se puede apagar la cinta
 
----
+<img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
 ## `Ejercicio 11.` Modelar un sistema  el funcionamiento de una cafetera express
 
@@ -206,7 +206,7 @@ Si el usuario presiona “café”, se activa el motor de café y se espera alca
 
 La cafetera puede ser apagada en cualquier momento (excepto cuando está sirviendo café, o leche).
 
----
+<img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
 <div align = 'center'>
 
@@ -224,4 +224,4 @@ Si se elige el modo “Enjuague” (o terminó el lavado): Se deja ingresar el a
 
 Si se elige el modo “Centrifugado” (o terminaron los enjuagues): Se deja escurrir el agua, se activa el motor en modo centrifugado por un tiempo fijo. Si durante el centrifugado se abre la puerta se debe emitir un pitido y detener el motor. El centrifugado continua normalmente al cerrar la puerta.
 
----
+<img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">

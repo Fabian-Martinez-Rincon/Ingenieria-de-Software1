@@ -10,7 +10,7 @@
 <img src="https://media.giphy.com/media/XG0tayFvL5MoSJ4OVw/giphy.gif"/>
 </div>
 
----
+<img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
 - [Ejercicio 1 Fabrica de papas](#ejercicio-1-fabrica-de-papas)
 - [Ejercicio 2 Fabrica de vinos](#ejercicio-2-fabrica-de-vinos)
@@ -28,7 +28,7 @@
 - [Ejercicio 14 Legalización de documentos](#ejercicio-14-legalización-de-documentos)
 - [Ejercicio 15 VTV](#ejercicio-15-vtv)
 
----
+<img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
 ## Ejercicio 1 Fabrica de papas
 
@@ -43,7 +43,7 @@ Esta máquina solo puede procesar una papa a la vez. Una vez cortados, los basto
 para ser envasados. Esto lo realiza una máquina que solo procesa una bolsa por vez. Por último, las bolsas son
 depositadas en un contenedor común para ser distribuidas.
 
----
+<img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
 ## Ejercicio 2 Fabrica de vinos
 
@@ -54,7 +54,7 @@ cada tipo de vino. Luego, debe haber 3 vinos de cada tipo para poder armar una c
 cualquiera de los dos operarios disponibles, quienes trabajan de forma separada y solo pueden armar una caja a la vez.
 Una vez finalizado el empaquetado la caja es enviada al depósito para ser despachadas
 
----
+<img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
 ## Ejercicio 3 Peluquería
 
@@ -64,7 +64,7 @@ de las sillas para cortarle el cabello, liberando la silla de la sala de espera,
 que terminó de cortarle el cabello el peluquero es liberado y puede atender a otro cliente. Finalmente los clientes deben pasar por la caja en la cual se atiende a un cliente por vez. Cuando llegan clientes y las tres sillas están ocupadas deben
 formar una única fila en la puerta de la peluquería
 
----
+<img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
 ## Ejercicio 4 Estación de servicio
 
@@ -75,13 +75,13 @@ auto, se libera el surtidor y se pasa al sector de pago. En este sector cualquie
 del auto. Si no hay cobradores libres, debe esperar a que uno se libere. Cuando el cobrador termina, el auto se retira de
 la estación y el cobrador queda libre para atender a un nuevo auto.
 
----
+<img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
 ## Ejercicio 5 Voto electrónico
 
 Modelar una elección mediante voto electrónico, para ello se disponen de dos mesas y dos terminales de voto (una para cada mesa). A medida que los votantes llegan, forman una única fila y luego son derivados indistintamente a la mesa 1 o a la mesa 2. En cada mesa hay una autoridad para atender y tomar los datos del votante. Cada mesa atiende de a un votante a la vez. Una vez que la autoridad le tomó los datos, el votante pasa a votar a la terminal electrónica de la mesa correspondiente. Una vez que el votante emitió su voto, debe pasar a firmar que efectivamente votó, en ese mismo instante puede ingresar otra persona a la mesa. Luego, el votante que estaba firmando se retira
 
----
+<img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
 ## Ejercicio 6 Puente
 
@@ -89,7 +89,7 @@ Modelar una elección mediante voto electrónico, para ello se disponen de dos m
 - b) Agregar al modelo anterior una segunda mano. Los vehículos pueden ingresar al puente por cualquiera de las dos manos y en cada puede haber un máximo de 3 vehículos a la vez.
 - c) Agregar al modelo anterior la restricción de que sólo puede haber 4 vehículos en total sobre el puente
 
----
+<img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
 ## Ejercicio 7 Puesto de trabajo
 
@@ -99,7 +99,7 @@ Si el pedido es enviado a través del canal 1, se lo deposita en una cinta trans
 
 Si el pedido es enviado a través del canal 2, se lo deposita en un contenedor que tiene una capacidad máxima de 4 pedidos. Cuando el contenedor está lleno se envían los 4 pedidos al sector de logística, donde serán finalmente despachados simultáneamente.
 
----
+<img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
 ## Ejercicio 8 Alfajores
 
@@ -109,7 +109,7 @@ Cada línea de fabricación tiene un empleado que arma de a un alfajor por vez. 
 
 Finalmente se envía la caja al sector de almacenamiento
 
----
+<img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
 ## Ejercicio 9 Mobiliaria
 
@@ -119,13 +119,13 @@ Los pedidos ingresan a la distribuidora por una línea única de montaje y luego
 
 Luego, los pedidos pasan al depósito del sector de ensamblado para su armado y embalaje. Se sabe que en este sector hay un conjunto de empleados que trabajan juntos y van tomando los pedidos del depósito y pueden, como máximo, armar y embalar 3 pedidos simultáneamente. Una vez que el pedido está listo se lo pasa al sector de envíos en donde se esperan 5 pedidos para armar un lote que será cargado en el camión de reparto para su posterior entrega.
 
----
+<img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
 ## Ejercicio 10 Juego en la escuela
 
 Modelar un juego en donde participan los alumnos/as de una escuela. Para comenzar el juego, se realizan dos filas pertenecientes a dos equipos, el equipo A por un lado y el equipo B por otro. Para el inicio del juego se necesitan de 6 alumnos/as, 3 del equipo A y 3 del equipo B. Una vez finalizado el juego, participan los siguientes 6 alumnos y así sucesivamente
 
----
+<img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
 ## Ejercicio 11 Fábrica de pastas
 
@@ -135,13 +135,13 @@ Una vez estiradas las masas pasan a los sectores de corte respectivos. En el cas
 
 Luego de cortadas las masas cada unidad obtenida en el corte pasa al sector de relleno. En cada sector hay una máquina que realiza esta tarea. La máquina de sorrentinos rellena tres sorrentinos al mismo tiempo, mientras que la máquina de canelones solo rellena de a uno. Finalizado el relleno, las pastas ya están listas para ser guardarlas en cajas. En el caso de los sorrentinos se arman cajas de 6 sorrentinos y en el caso de los canelones las cajas contienen 3 unidades. Una vez armadas las cajas se despachan
 
----
+<img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
 ## Ejercicio 12 Recital
 
 Se desea modelar utilizando una Red de Petri el ingreso de personas a un recital. Las personas pueden llegar desde doscalles diferentes. En cada calle hay cuatro inspectores quienes realizan revisiones. Cada revisión la realizan dos inspectores al mismo tiempo, y sólo pueden revisar de a una persona a la vez. Una vez que las personas son revisadas pueden ingresar al recital por cualquiera de las tres puertas (existe una única cola para las tres puertas). En cada puerta hay un detector de metales por el cual puede pasar de a una persona por vez. Por último, las personas se ubican en alguno de los dos sectores disponibles para el recital
 
----
+<img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
 ## Ejercicio 13 Aserradero
 
@@ -153,7 +153,7 @@ Luego, los troncos pasan al único sector de corte del aserradero. En este secto
 
 Cada tablón debe pasar a alguno de los dos sectores de cepillado del aserradero, donde se cepilla de a un tablón por vez. Luego, pasan al sector de empaquetado donde se agrupan de a 6 tablones, para luego ser despachados
 
----
+<img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
 ## Ejercicio 14 Legalización de documentos
 
@@ -161,7 +161,7 @@ Se desea modelar el funcionamiento de un proceso de legalización de documentos.
 
 Los documentos llegan de a uno a la oficina y deben ser triplicados en una de las dos fotocopiadoras existentes. Una vez elegida la fotocopiadora, se solicita al encargado de esa fotocopiadora, las tres copias del documento. La fotocopiadora sólo imprime de a una copia por vez. Hasta no terminar las 3 copias, el empleado no puede recibir nuevos documentos. Al terminar las tres copias de un documento, deben empaquetarse juntas para ser derivadas al sector de asuntos legales. En ese momento, se libera el encargado de la fotocopiadora para recibir nuevos documentos.
 
----
+<img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
 ## Ejercicio 15 VTV
 
@@ -191,4 +191,4 @@ Para ser evaluados, el centro de verificación posee dos puestos distintos de ev
 
 <img src='https://user-images.githubusercontent.com/55964635/223319890-1c0da23a-2442-45ef-8aca-64b0396f20d6.png'>
 
----
+<img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
