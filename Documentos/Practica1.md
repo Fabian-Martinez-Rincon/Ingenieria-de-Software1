@@ -5,9 +5,9 @@
 [![GitHub repo size in bytes](https://img.shields.io/github/repo-size/Nomadiix/IS1)](https://github.com/Nomadiix/IS1)
  </div>
 <h1 align="center"> 📋 Practica 1</h1>
-<div align = 'center'><img  src="https://media.giphy.com/media/11ikeVaUfcXLWM/giphy.gif"></div>
 
-<img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
+
+
 
 <div align='center'>
 
