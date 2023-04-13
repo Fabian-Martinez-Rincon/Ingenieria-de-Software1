@@ -51,6 +51,8 @@ Pedrito está decidiendo que sistema operativo instalar en la computadora de su 
 
 En este caso deberá instalarle el paquete Anaconda
 
+![image](https://user-images.githubusercontent.com/55964635/231883814-c3543456-b41d-4a38-8971-f83a7c44f8a8.png)
+
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
 ## Ejercicio 2
@@ -59,6 +61,8 @@ Se desea modelar mediante una tabla de decisión el siguiente problema:
 
 Pedro tiene que cambiar su compu y está evaluando qué hacer. Si a Pedro le toman su máquina como parte de pago y la compu a comprar sale menos de 15 mil entonces la comprará en efectivo. Si cuesta más de 15 mil y le toman su compu, entonces la pagará en cuotas. Además, si supera los 25 mil, le pedirá plata a su mamá. En el caso que no le tomen su computadora como parte de pago pagará en cuotas y le pedirá plata a su mamá sin importar el valor de la máquina a comprar.
 
+![image](https://user-images.githubusercontent.com/55964635/231884010-628b4617-8967-4427-a9ab-955302235c5b.png)
+
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
 ## Ejercicio 3
@@ -66,6 +70,8 @@ Pedro tiene que cambiar su compu y está evaluando qué hacer. Si a Pedro le tom
 Una entidad financiera tiene como servicio a sus clientes el otorgamiento de créditos. Si el cliente tiene una antigüedad mayor o igual a dos años, se considera su valor promedio de movimientos mensuales para optar a un crédito, de la siguiente forma: si su promedio es mayor o igual a $ 60.000, puede optar por un crédito máximo de 1 millón de pesos. Si su promedio es inferior a $ 60.000 pero igual o superior a $ 40.000, puede optar a un crédito máximo de $ 70.000. Si su promedio es inferior a $ 40.000, el máximo al que puede optar es $ 50.000. En cualquiera de estos casos, el cliente elige el número de cuotas hasta un máximo de 120.
 
 Si la antigüedad del cliente es inferior a 2 años, el cliente solo puede acceder a un crédito de máximo $50.000, y además debe pagar un interés adicional. En este caso, además, debe considerarse que si el promedio mensual del cliente es inferior a $ 40.000 puede solicitar un máximo de 12 cuotas, y si es superior o igual a $ 40.000, el máximo de cuotas es 20
+
+![image](https://user-images.githubusercontent.com/55964635/231884358-a7449e47-cc1b-423e-9130-e160d73776d5.png)
 
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
@@ -90,6 +96,10 @@ Una clínica privada ubicada en la ciudad de La Plata realiza diferentes estudio
 | Paga Plus |   |   |   |   | X  | X  |   |   |
 | Estudio de fuerza | X  |   | X  |   |   |   |   |   |
 
+![image](https://user-images.githubusercontent.com/55964635/231884530-c2393fcd-82f0-40f0-9396-6bf3eb5c2a39.png)
+
+![image](https://user-images.githubusercontent.com/55964635/231884668-f260471a-a5aa-49a0-a99c-b846eca60d20.png)
+
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
 ## Ejercicio 5
@@ -111,17 +121,26 @@ Si lo que se va a pintar es una pared, entonces se deberá utilizar pintura tipo
 | Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  |
 | Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  |
 
+![image](https://user-images.githubusercontent.com/55964635/231884794-466c95c3-5911-41f0-8ef9-0c3132fda326.png)
+
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
 ## Ejercicio 6
+
+![image](https://user-images.githubusercontent.com/55964635/231884984-359b846a-dd7c-4bab-9fac-f749549e8f44.png)
 
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
 ## Ejercicio 7
 
+![image](https://user-images.githubusercontent.com/55964635/231885054-08789be6-bb34-4260-97dc-33accd896043.png)
+
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
 ## Ejercicio 8
+
+![image](https://user-images.githubusercontent.com/55964635/231885145-7c411651-0ccf-45ea-9249-a1e3b9050199.png)
+![image](https://user-images.githubusercontent.com/55964635/231885238-a0e127ea-5da7-466c-8d67-9fe43da2b123.png)
 
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
