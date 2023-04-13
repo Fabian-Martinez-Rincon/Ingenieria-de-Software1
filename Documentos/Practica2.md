@@ -39,6 +39,15 @@
 
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
+Quiero aclarar que estos colores los elegi yo porque a mi me gustaron, no es nada especifico de la catedra
+
+| Colores Para identificar      | ![Color Picker Boxes](https://draculatheme.com/static/img/color-boxes/eyedropper.png)   |
+| ------------ | --------------------------------------------------------------------------------------- |
+| Reglas de negocios         | ![Cyan Color](https://draculatheme.com/static/img/color-boxes/cyan.png)                 |
+| Historias de Usuario       | ![Orange Color](https://draculatheme.com/static/img/color-boxes/orange.png)             |
+| Datos solicitados o que debe realizar       | ![Purple Color](https://draculatheme.com/static/img/color-boxes/purple.png)             |
+| Roles       | ![Yellow Color](https://draculatheme.com/static/img/color-boxes/yellow.png)             |
+
 Para cada Historia de Usuario se deben indicar los siguientes ítems:
 
 <table><tr><td> Formato </td> </tr>
