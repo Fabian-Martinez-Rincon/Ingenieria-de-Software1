@@ -146,17 +146,27 @@ Si lo que se va a pintar es una pared, entonces se deberá utilizar pintura tipo
 
 ## Ejercicio 9
 
+![image](https://user-images.githubusercontent.com/55964635/231885498-9d406fd6-722a-48d4-bccd-b266a1a1cea3.png)
+
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
 ## Ejercicio 10
+
+![image](https://user-images.githubusercontent.com/55964635/231885574-fdf3a47c-7cf4-4b9d-a65d-c3fc190273da.png)
+![image](https://user-images.githubusercontent.com/55964635/231885659-a663a129-58c5-4df6-bc0a-7fb162e14adf.png)
 
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
 ## Ejercicio 11
 
+![image](https://user-images.githubusercontent.com/55964635/231885620-72f9eed4-05eb-4054-b38c-aa9e0bffc007.png)
+![image](https://user-images.githubusercontent.com/55964635/231885725-a83575aa-4065-48ba-a725-a9a83c5c7a3c.png)
+
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
 ## Ejercicio 12
+
+![image](https://user-images.githubusercontent.com/55964635/231885977-73fb5795-219d-4192-bf3a-b1e73ba87d30.png)
 
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
