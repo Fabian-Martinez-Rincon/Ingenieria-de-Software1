@@ -193,8 +193,14 @@ Si lo que se va a pintar es una pared, entonces se deberá utilizar pintura tipo
 
 ## Ejercicio 16
 
+![image](https://user-images.githubusercontent.com/55964635/231886772-ae71ed76-4b9c-4688-8eb2-a6407abac0aa.png)
+![image](https://user-images.githubusercontent.com/55964635/231886886-1c9ae833-5a2e-4ba9-820e-f2abccb4b92a.png)
+
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
 ## Ejercicio 17
+
+![image](https://user-images.githubusercontent.com/55964635/231886838-cb0b85f3-5bbb-44cb-94c0-542035272a2a.png)
+![image](https://user-images.githubusercontent.com/55964635/231886977-4c1e188e-2af8-4738-a915-153d4627eab3.png)
 
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
