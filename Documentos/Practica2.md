@@ -123,7 +123,7 @@ cliente para hacer efectivo el alquiler.
  
 **TÍTULO:** Como usuario quiero hacer una reserva de alquiler para poder vivir un tiempo
 
-**REGLAS DE NEGOCIO:** 
+**REGLAS DE NEGOCIO:** Reservar Alquiler
 - Incluye minimo 3 muebles
 - Se abona el 20% del total con tarjeta de credito
 
@@ -178,7 +178,7 @@ Entonces el sistema informa que la tarjeta es invalida y no registra el pago
 
 </td></tr><tr><td>
 
-**CRITERIOS DE ACEPTACIÓN:** 
+**CRITERIOS DE ACEPTACIÓN:** Dar alta inmueble
 
 **Escenario 1:** Alta Exitosa
 
@@ -229,7 +229,7 @@ Entonces el sistema informa que el precio debe cargarse en dolares y no realiza 
 
 </td></tr><tr><td>
 
-**CRITERIOS DE ACEPTACIÓN:** 
+**CRITERIOS DE ACEPTACIÓN:** Pagar con tarjeta
 
 **Escenario 1:** Pago exitoso
 
@@ -299,26 +299,79 @@ Para inscribirse, el alumno deberá seleccionar la carrera, ingresar la cantidad
 
 ### Roles
 
-- Inscribir alumno a carrera
-- Dar alta carrera
-- 
+- Alumno (Usuario no registrado)
+- Usuario
+- Empleado Administrativo
 
 ### Historias de Usuario
 
+- Inscribir a carrera
+- Dar alta carrera
+- Registrar alumno
+- Iniciar Sesión
+- Cerrar Sesión
+- Pagar con tarjeta
 
+
+
+---
+### Inscribir a carrera
+
+<table><tr><td>
+
+**ID:** Inscribir a carrera
+ 
+**TÍTULO:** Como usuario quiero inscribirme a una carrera para poder estudiar
+
+**REGLAS DE NEGOCIO:** Inscribir a carrera
+
+- Las cuotas no superan el maximo permitido
+
+Aca quiero aclarar que el usuario no ingresa las cuotas a mano, sino que le aparece un menu con las cuotas disponibles, por eso no es una regla de negocio
+
+</td> </tr><tr><td>
+
+**CRITERIOS DE ACEPTACIÓN:** 
+
+**Escenario 1:** Inscripción exitosa
+
+Dado que el usuario posee una tarjeta de credito valida
+
+Cuando el usuario selecciona la carrera Filosofia y los datos de una tarjeta de credito valida
+
+Entonces El sistema registra la inscripción del usuario e imprime dos comprobantes, uno de inscripcion y otro de pago
+
+---
+
+**Escenario 2:** Inscripción fallida por tarjeta invalida
+
+Dado que el usuario posee una tarjeta de credito invalida
+
+Cuando el usuario selecciona la carrera Biologia y los datos de una tarjeta de credito invalida
+
+Entonces El sistema registra la inscripción del usuario e imprime dos comprobantes, uno de inscripcion y otro de pago
+
+
+</td></tr></table>
+
+---
+### Alta carrera
 
 <table><tr><td> 
 
-**ID:** 
+**ID:** Alta carrera
  
-**TÍTULO:** 
+**TÍTULO:** Como empleado administrativo quiero dar de alta la carrera para que los usuarios puedas inscribirse en ella
 
 **REGLAS DE NEGOCIO:** 
+- Nombre Unico
+- Duración maxima de 5 años
+
 
  </td> </tr>
 <tr><td>
 
-**CRITERIOS DE ACEPTACIÓN:** 
+**CRITERIOS DE ACEPTACIÓN:** Alta carrera
 
 **Escenario 1:** título del criterio.
 
@@ -331,6 +384,20 @@ Entonces
 ---
 
 </td></tr></table>
+
+---
+### Registrar alumno
+
+---
+### Iniciar Sesión
+
+---
+### Cerrar Sesión
+
+---
+### Pagar con tarjeta
+
+
 
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
