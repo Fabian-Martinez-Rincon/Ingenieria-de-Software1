@@ -50,31 +50,28 @@ Quiero aclarar que estos colores los elegi yo porque a mi me gustaron, no es nad
 
 Para cada Historia de Usuario se deben indicar los siguientes ítems:
 
-<table><tr><td> Formato </td> </tr>
+<table><tr><td> 
+
+**ID:** 
+ 
+**TÍTULO:** 
+
+**REGLAS DE NEGOCIO:** 
+
+ </td> </tr>
 <tr><td>
 
-**ID:** Identificador unívoco de la historia expresado como texto generalmente de la forma \<verbo> \<sustantivo>
- 
-**TÍTULO:** Descripción de la historia de la forma: **Como** \<rol> **quiero** \<algo> **para poder** \<beneficio>
+**CRITERIOS DE ACEPTACIÓN:** 
 
-**REGLAS DE NEGOCIO:** Conjunto de reglas, normas, políticas, leyes, etc. que condicionan el modo de operación (Requisitos no funcionales)
+**Escenario 1:** título del criterio.
 
-**CRITERIOS DE ACEPTACIÓN:** Criterios por los cuales una historia cumple con las expectativas del cliente.\
-El formato es el siguiente:
+Dado 
 
-- **Escenario 1:** título del criterio.\
-    Dato \<un contexto inicial>
-Cuando \<ocurre un evento>,
-Entonces <garantiza uno o más resultados>
-- **Escenario 2:** título del criterio.\
-    Dato \<un contexto inicial>
-Cuando \<ocurre un evento>,
-Entonces <garantiza uno o más resultados>
-- **Escenario N:** título del criterio.\
-    Dato \<un contexto inicial>
-Cuando \<ocurre un evento>,
-Entonces <garantiza uno o más resultados>
-...
+Cuando 
+
+Entonces 
+
+---
 
 </td></tr></table>
 
@@ -100,6 +97,180 @@ El gerente nos dijo que resulta fundamental tener una aplicación móvil que nos
 El encargado del departamento de alquileres no comentó acerca de las reservas de los alquileres. Por una política comercial de la marca una reserva tiene que incluir como mínimo 3 muebles. La reserva debe tener una fecha, lugar del evento, cantidad de días y mobiliario junto a su cantidad. Para realizar una reserva se debe abonar el 20% del total del alquiler. El pago de la reserva se realiza únicamente con tarjeta de crédito validando número de tarjeta y fondos a través de un servicio del banco. Luego de efectuado el pago, se emite un número de reserva único que será luego utilizado por el
 cliente para hacer efectivo el alquiler.
 
+---
+
+![image](https://user-images.githubusercontent.com/55964635/232102581-8c67db96-908f-4d34-aebe-3f0d2b1f725e.png)
+
+---
+
+### Roles
+
+- Usuario
+- Encargado del departamento
+
+### Historias de Usuario
+- Reservar Alquiler
+- Dar alta inmueble
+- Pagar con tarjeta
+
+---
+
+### Reservar Alquiler
+
+<table><tr><td> 
+
+**ID:** Reservar Alquiler
+ 
+**TÍTULO:** Como usuario quiero hacer una reserva de alquiler para poder vivir un tiempo
+
+**REGLAS DE NEGOCIO:** 
+- Incluye minimo 3 muebles
+- Se abona el 20% del total con tarjeta de credito
+
+</td></tr><tr><td>
+
+**CRITERIOS DE ACEPTACIÓN:** 
+
+**Escenario 1:** Reservar Exitosa
+
+Dado que el alquiler tiene 3 muebles y se pago el 20% con una tarjeta de credito valida
+
+Cuando el usuario ingresa 10-10-2010, La Plata, 3 dias, 3 muebles y los datos de una tarjeta de credito valida
+
+Entonces el sistema emite un numero de reserva unico.
+
+---
+
+**Escenario 2:** Reservar Fallida por muebles insuficientes
+
+Dado que el alquiler tiene 1 mueble y se pago el 20% con una tarjeta de credito valida
+
+Cuando el usuario ingresa 05-05-2020, La Plata, 11 dias, 1 muebles y los datos de una tarjeta de credito valida
+
+Entonces el sistema informa que el inmueble no cumple con los requisitos minimos
+
+---
+
+**Escenario 3:** Reserva Fallida por problemas con la tarjeta de credito
+
+Dado que el alquiler tiene 5 muebles y se pago el 20% con una tarjeta invalida
+
+Cuando el usuario ingresa 20-03-2015, Buenos Aires, 30 dias, 5 muebles y los datos de una tarjeta de credito invalida
+
+Entonces el sistema informa que la tarjeta es invalida y no registra el pago
+
+
+</td></tr></table>
+
+--------------------------------------------------------------
+
+### Dar Alta Inmueble
+
+<table><tr><td> 
+
+**ID:** Dar alta inmueble
+ 
+**TÍTULO:** Como encargado de departamento quiero dar alta un inmueble para que pueda ser alquilado
+
+**REGLAS DE NEGOCIO:** 
+- Codigo Unico
+- Se cargo en dolares
+
+</td></tr><tr><td>
+
+**CRITERIOS DE ACEPTACIÓN:** 
+
+**Escenario 1:** Alta Exitosa
+
+Dado que el codigo 0202 es unico y el precio 10$ se cargo en dolares
+
+Cuando el empleado de mesa ingresa 0202, Mesa, 1-1-2000, 20-20-2020, libre, 10$
+
+Entonces el sistema registra el mueble en el sistema
+
+---
+
+**Escenario 2:** Alta Fallida por codigo ya existente
+
+Dado que el codigo 1010 no es unico y el precio 20$ se cargo en dolares
+
+Cuando el empleado de mesa ingresa 1010, Ropero, 3-3-2003, 04-04-2004, de baja, 20$
+
+Entonces el sistema informa que el codigo ya se encuentra registrado y no realiza el alta
+
+---
+
+**Escenario 3:** Alta Fallida por precio cargado en euros
+
+Dado que el codigo 4040 es unico y el precio 10$ se cargo en euros
+
+Cuando el empleado de mesa ingresa 4040, Cama, 2-2-2002, 21-21-2021, alquilado, 30$
+
+Entonces el sistema informa que el precio debe cargarse en dolares y no realiza el alta
+
+
+</td></tr></table>
+
+--------------------------------------------------------------
+
+### Pagar con tarjeta
+
+<table><tr><td> 
+
+**ID:** Pagar con tarjeta
+ 
+**TÍTULO:** Como usuario quiero pagar con tarjeta para pode reservar un alquiler
+
+**REGLAS DE NEGOCIO:** 
+
+- Numero de tarjeta valido
+- Tiene fondos suficientes
+
+
+</td></tr><tr><td>
+
+**CRITERIOS DE ACEPTACIÓN:** 
+
+**Escenario 1:** Pago exitoso
+
+Dado que se pudo establecer conexión con el servidor del banco, el nro 123 de la tarjeta es valido y posee fondos suficientes
+
+Cuando el cliente ingresa 123.
+
+Entonces el sistema registra el pago
+
+---
+
+**Escenario 2:** Pago Fallido por falla con la conexión del banco
+
+Dado que no se pudo establecer conexión con el banco
+
+Cuando el cliente quiere pagar
+
+Entonces el sistema informa que no se pudo establecer conexion con el banco
+
+---
+
+**Escenario 3:** Pago fallido por numero de tarjeta invalido
+
+Dado que se pudo establecer conexión con el servidor del banco, el nro 777 de la tarjeta es invalido
+
+Cuando el cliente ingresa 777.
+
+Entonces el sistema informa que el nro de la tarjeta es invalido y no registra el pago
+
+---
+
+**Escenario 4:** Pago fallido por saldo insuficiente
+
+Dado que se pudo establecer conexión con el servidor del banco, el nro 1010 de la terjeta es valido y no tiene fondos
+
+Cuando el cliente ingresa 1010
+
+Entonces el sistema informa que la tarjeta no tiene fondos suficientes y no registra el cobro
+
+</td></tr></table>
+
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
 <div align = center>
@@ -120,6 +291,46 @@ El requerimiento fue que el alumno ingrese a la web de posgrado y pueda registra
 funcionalidad nos otorgaron acceso al sistema SIGEF, el cual realiza funcionalidades similares para las carreras de grado. 
 
 Para inscribirse, el alumno deberá seleccionar la carrera, ingresar la cantidad de cuotas a pagar, ingresar el número de tarjeta y, en caso de que la tarjeta sea válida y tenga fondos, se hará efectivo el cobro y la inscripción. La tarjeta de crédito se valida a través de un servicio del banco con el cual la universidad tiene convenio. Luego de efectuado el cobro, el sistema debe imprimir dos comprobantes, uno de inscripción y otro de pago. La única forma que tiene el alumno de pagar es con tarjeta de crédito
+
+![image](https://user-images.githubusercontent.com/55964635/232157667-7fe023af-566c-4d5d-8d5a-03114a6aae62.png)
+![image](https://user-images.githubusercontent.com/55964635/232158030-b58db95a-76bf-400a-a703-7ff4b999d6b3.png)
+
+---
+
+### Roles
+
+- Inscribir alumno a carrera
+- Dar alta carrera
+- 
+
+### Historias de Usuario
+
+
+
+<table><tr><td> 
+
+**ID:** 
+ 
+**TÍTULO:** 
+
+**REGLAS DE NEGOCIO:** 
+
+ </td> </tr>
+<tr><td>
+
+**CRITERIOS DE ACEPTACIÓN:** 
+
+**Escenario 1:** título del criterio.
+
+Dado 
+
+Cuando 
+
+Entonces 
+
+---
+
+</td></tr></table>
 
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
