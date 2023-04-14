@@ -373,15 +373,33 @@ Entonces El sistema registra la inscripción del usuario e imprime dos comproban
 
 **CRITERIOS DE ACEPTACIÓN:** Alta carrera
 
-**Escenario 1:** título del criterio.
+**Escenario 1:** Alta de carrera exitosa.
 
-Dado 
+Dado que el nombre Informatica es unico, y la carrera dura 4 años
 
-Cuando 
+Cuando el empleado administrativo ingresa Informatica, 4 años, 100$, 20 cuotas
 
-Entonces 
+Entonces El sistema da de alta la carrera
 
 ---
+
+**Escenario 2:** Alta de carrera fallida por codigo ya existente
+
+Dado que el nombre Arte no es unico y la carrera dura 5 años
+
+Cuando el empleado administrativo ingresa Arte, 5 años, 300$, 10 cuotas
+
+Entonces el sistema informa que el nombre de la carrera ya existe y no realiza el alta
+
+---
+
+**Escenario 3:** Alta de carrera fallida por duracion supera los 5 años
+
+Dado que el nombre Astrologia es unico y la carrera dura 100 años
+
+Cuando el empleado administrativo ingresa Astrologia, 100 años, 2$ y 1000 cuotas
+
+Entonces el sistema informa que la duración ingresada supera los 5 años que son permitidos y no realiza el alta a la carrera
 
 </td></tr></table>
 
