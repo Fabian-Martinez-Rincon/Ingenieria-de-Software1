@@ -1202,8 +1202,6 @@ Cuando el usuario ingresa manolo20, contraseña123
 
 Entonces el sistema informa que la contraseña es incorrecta
 
----
-
 </td></tr></table>
 
 ---
@@ -1212,9 +1210,9 @@ Entonces el sistema informa que la contraseña es incorrecta
 
 <table><tr><td> 
 
-**ID:** 
+**ID:** Cerrar Sesión
  
-**TÍTULO:** 
+**TÍTULO:** Como usuario logueado quiero cerrar mi sesión para proteger mis datos
 
 **REGLAS DE NEGOCIO:** 
 
@@ -1222,15 +1220,14 @@ Entonces el sistema informa que la contraseña es incorrecta
 
 **CRITERIOS DE ACEPTACIÓN:** 
 
-**Escenario 1:** título del criterio.
+**Escenario 1:** Cierre exitoso
 
-Dado 
+Dado que el usuario manolo20 tiene la sesión abierta
 
-Cuando 
+Cuando el usuario presiona el boton `cerrar sesión`
 
-Entonces 
+Entonces el sistema cierra la sesión y deshabilita las opciones para subir imagenes y pagar
 
----
 
 </td></tr></table>
 
@@ -1240,11 +1237,12 @@ Entonces
 
 <table><tr><td> 
 
-**ID:** 
+**ID:** Pagar con tarjeta
  
-**TÍTULO:** 
+**TÍTULO:** Como usuario quiero pagar con tarjeta para poder retirar las fotos
 
 **REGLAS DE NEGOCIO:** 
+
 
 </td></tr><tr><td>
 
