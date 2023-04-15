@@ -75,6 +75,82 @@ Entonces
 
 </td></tr></table>
 
+## Estas son las historias que son iguales en todos los ejercicios
+
+### Pagar con Tarjeta
+
+<table><tr><td> 
+
+**ID:** Pagar con tarjeta
+ 
+**TÍTULO:** Como usuario quiero pagar con tarjeta para pode reservar un alquiler
+
+**REGLAS DE NEGOCIO:** 
+
+- Numero de tarjeta valido
+- Tiene fondos suficientes
+
+
+</td></tr><tr><td>
+
+**CRITERIOS DE ACEPTACIÓN:** Pagar con tarjeta
+
+**Escenario 1:** Pago exitoso
+
+Dado que se pudo establecer conexión con el servidor del banco, el nro 123 de la tarjeta es valido y posee fondos suficientes
+
+Cuando el cliente ingresa 123.
+
+Entonces el sistema registra el pago
+
+---
+
+**Escenario 2:** Pago Fallido por falla con la conexión del banco
+
+Dado que no se pudo establecer conexión con el banco
+
+Cuando el cliente quiere pagar
+
+Entonces el sistema informa que no se pudo establecer conexion con el banco
+
+---
+
+**Escenario 3:** Pago fallido por numero de tarjeta invalido
+
+Dado que se pudo establecer conexión con el servidor del banco, el nro 777 de la tarjeta es invalido
+
+Cuando el cliente ingresa 777.
+
+Entonces el sistema informa que el nro de la tarjeta es invalido y no registra el pago
+
+---
+
+**Escenario 4:** Pago fallido por saldo insuficiente
+
+Dado que se pudo establecer conexión con el servidor del banco, el nro 1010 de la terjeta es valido y no tiene fondos
+
+Cuando el cliente ingresa 1010
+
+Entonces el sistema informa que la tarjeta no tiene fondos suficientes y no registra el cobro
+
+</td></tr></table>
+
+---
+
+### Registrar Usuario
+
+---
+
+### Iniciar Sesión
+
+---
+
+### Cerrar Sesión
+
+
+
+
+
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
 
@@ -308,9 +384,9 @@ Para inscribirse, el alumno deberá seleccionar la carrera, ingresar la cantidad
 - Inscribir a carrera
 - Dar alta carrera
 - Registrar alumno
-- Iniciar Sesión
-- Cerrar Sesión
-- Pagar con tarjeta
+- Iniciar Sesión 
+- Cerrar Sesión 
+- Pagar con tarjeta 
 
 
 
