@@ -1625,11 +1625,11 @@ Las prestaciones que brinda, siempre y cuando esté asentado el pago del mes ant
 
 - Afiliar persona
 - Pagar con tarjeta
-- Prestar Ortodoncia
-- Prestar Plantillas
-- Prestar Anteojos
-- Prestar Internación
-- Prestar Consultas médicas
+- Solicitar Ortodoncia
+- Solicitar Plantillas
+- Solicitar Anteojos
+- Solicitar Internación
+- Solicitar Consultas médicas
 
 ---
 
@@ -1739,7 +1739,78 @@ Entonces el sistema informa que la tarjeta no tiene fondos suficientes y no real
 
 ---
 
-### Prestar Ortodoncia
+### Solicitar Ortodoncia
+
+<table><tr><td> 
+
+**ID:** Solicitar Ortodoncia
+ 
+**TÍTULO:** Como afiliado quiero solicitar ortodoncia para un chequeo
+
+**REGLAS DE NEGOCIO:** 
+- Pago asentado el mes anterior
+- El prestamo solo se puede obtener una vez
+- Para menores de 15 tienen que tener al menos 9 meses de afiliado
+- Presentar historia clinica 
+
+</td></tr><tr><td>
+
+**CRITERIOS DE ACEPTACIÓN:** 
+
+**Escenario 1:** Solicitud exitosa
+
+Dado que el afiliado Manolo pago el mes anterior, es la primera vez que recibe el prestamo, tiene 30 años y presenta la historia clinica
+
+Cuando el afiliado solicita Ortodoncia
+
+Entonces el sistema registra un turno para el afiliado
+
+---
+
+**Escenario 2:** Solicitud fallida por falta de pago en el mes anterior
+
+Dado que el afiliado Tomas no pago el mes anterior, es la primera vez que recibe el prestamo, tiene 32 años y presenta la historia clinica
+
+Cuando el afiliado solicita Ortodoncia
+
+Entonces el sistema informa que el afiliado no tiene asentado el pago del mes anterior
+
+---
+
+**Escenario 3:** Solicitud fallida porque ya recibio la prestación
+
+Dado que el afiliado Scooby pago el mes anterior, no es la primera vez que recibe el prestamo, tiene 30 años y presenta la historia clinica
+
+Cuando el afiliado solicita Ortodoncia
+
+Entonces el sistema informa que su prestamo en ortodoncia ya fue utilizado
+
+---
+
+**Escenario 4:** Solicitud fallida por no presentar historia clinica
+
+Dado que el afiliado Juan pago el mes anterior, es la primera vez que recibe el prestamo, tiene 5 años y dos meses de afiliado y presenta la historia clinica
+
+Cuando el afiliado solicita Ortodoncia
+
+Entonces el sistema informa que el afiliado menor de 15 años debe tener como minimo 9 meses de afiliado
+
+---
+
+**Escenario 5:** Solicitud fallida por no presentar historia clinica
+
+Dado que el afiliado Sergio pago el mes anterior, es la primera vez que recibe el prestamo, tiene 30 años y no presenta la historia clinica
+
+Cuando el afiliado solicita Ortodoncia
+
+Entonces el sistema informa que el afiliado debe presentar la historia clinica
+
+
+</td></tr></table>
+
+---
+
+### Solicitar Plantillas
 
 <table><tr><td> 
 
@@ -1767,7 +1838,7 @@ Entonces
 
 ---
 
-### Prestar Plantillas
+### Solicitar Anteojos
 
 <table><tr><td> 
 
@@ -1795,7 +1866,7 @@ Entonces
 
 ---
 
-### Prestar Anteojos
+### Solicitar Internación
 
 <table><tr><td> 
 
@@ -1823,35 +1894,7 @@ Entonces
 
 ---
 
-### Prestar Internación
-
-<table><tr><td> 
-
-**ID:** 
- 
-**TÍTULO:** 
-
-**REGLAS DE NEGOCIO:** 
-
-</td></tr><tr><td>
-
-**CRITERIOS DE ACEPTACIÓN:** 
-
-**Escenario 1:** título del criterio.
-
-Dado 
-
-Cuando 
-
-Entonces 
-
----
-
-</td></tr></table>
-
----
-
-### Prestar Consultas médicas
+### Solicitar Consultas médicas
 
 <table><tr><td> 
 
