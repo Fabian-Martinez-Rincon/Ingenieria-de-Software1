@@ -1244,7 +1244,7 @@ Entonces el sistema cierra la sesión y deshabilita las opciones para subir imag
 **TÍTULO:** Como usuario quiero pagar con tarjeta para poder retirar las fotos
 
 **REGLAS DE NEGOCIO:** 
-
+- Fondos para pagar $15 por foto
 
 </td></tr><tr><td>
 
@@ -1252,11 +1252,11 @@ Entonces el sistema cierra la sesión y deshabilita las opciones para subir imag
 
 **Escenario 1:** Pago exitoso
 
-Dado que se pudo establecer conexión con el servidor, el nro de tarjeta 4342 es correcto y posee fondos suficientes
+Dado que se pudo establecer conexión con el servidor, el nro de tarjeta 4342 es correcto y posee fondos suficientes para pagar $15 por foto
 
 Cuando el usuario ingresa 4342, 012, Fabian
 
-Entonces el sistema registra el pago
+Entonces el sistema registra el pago y retorna un nro para que pueda retirar las fotos
 
 ---
 
@@ -1282,7 +1282,7 @@ Entonces el sistema informa que el nro de tarjeta es invalido y no registra el p
 
 **Escenario 4:** Pago fallido por fondos insuficientes
 
-Dado que se pudo establecer conexión con el servidor, el nro de tarjeta 8414 es correcto y no posee fondos suficientes
+Dado que se pudo establecer conexión con el servidor, el nro de tarjeta 8414 es correcto y no posee fondos suficientes para pagar $15 por foto
 
 Cuando el usuario ingresa 8414, 010, Messi
 
@@ -1310,13 +1310,33 @@ Entonces el sistema informa que la tarjeta no posee fondos suficientes y no regi
 
 **CRITERIOS DE ACEPTACIÓN:** 
 
-**Escenario 1:** título del criterio.
+**Escenario 1:** Subida exitosa
 
-Dado 
+Dado que el usuario subio 20 fotos y fueron una a la vez 
 
-Cuando 
+Cuando el usuario sube perros.png
 
-Entonces 
+Entonces el sistema carga la foto 
+
+---
+
+**Escenario 2:** Subida fallida por cantidad excesiva de fotos
+
+Dado que el usuario subio 51 fotos y fueron una a la vez 
+
+Cuando el usuario sube gatos.png
+
+Entonces el sistema informa que el usuario no puede subir mas de 50 imagenes 
+
+---
+
+**Escenario 1:** Subida fallida por subir mas de una foto a la vez
+
+Dado que el usuario subio 3 fotos, fueron a la vez 
+
+Cuando el usuario sube perros.png, gatos.png, ratas.png
+
+Entonces el sistema informa que el usuario esta subiendo mas de una foto a la vez
 
 ---
 
@@ -1326,29 +1346,36 @@ Entonces
 
 ### Retirar Foto
 
-
-
 <table><tr><td> 
 
-**ID:** 
+**ID:** Retirar Foto
  
-**TÍTULO:** 
+**TÍTULO:** Como empleado quiero retirar las fotos para darselas al cliente
 
 **REGLAS DE NEGOCIO:** 
+- El codigo debe estar cargado en el sistema
 
 </td></tr><tr><td>
 
 **CRITERIOS DE ACEPTACIÓN:** 
 
-**Escenario 1:** título del criterio.
+**Escenario 1:** Retiro exitoso
 
-Dado 
+Dado que el codigo 4321 esta cargado en el sistema
 
-Cuando 
+Cuando el empleado ingresa 4321
 
-Entonces 
+Entonces el sistema imprime las fotos 
 
 ---
+
+**Escenario 1:** Retiro fallido por codigo inexistente
+
+Dado que el codigo 6353 no esta cargado en el sistema
+
+Cuando el empleado ingresa 6353
+
+Entonces el sistema informa que el codigo ingresado no existe en el sistema
 
 </td></tr></table>
 
