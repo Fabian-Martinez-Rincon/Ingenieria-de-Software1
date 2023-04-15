@@ -1106,6 +1106,8 @@ Un cliente debe acercarse a la sucursal para retirar las fotos enviadas previame
 
 ![image](https://user-images.githubusercontent.com/55964635/232247520-3ee3818c-84f9-42c4-b49c-f344f7844377.png)
 
+---
+
 ### Roles
 - Persona (No registrada)
 - Usuario
@@ -1248,15 +1250,43 @@ Entonces el sistema cierra la sesión y deshabilita las opciones para subir imag
 
 **CRITERIOS DE ACEPTACIÓN:** 
 
-**Escenario 1:** título del criterio.
+**Escenario 1:** Pago exitoso
 
-Dado 
+Dado que se pudo establecer conexión con el servidor, el nro de tarjeta 4342 es correcto y posee fondos suficientes
 
-Cuando 
+Cuando el usuario ingresa 4342, 012, Fabian
 
-Entonces 
+Entonces el sistema registra el pago
 
 ---
+
+**Escenario 2:** Pago fallido por falta de conexión con el servidor
+
+Dado que no se pudo establecer conexión con el servidor
+
+Cuando el usuario intenta pagar
+
+Entonces el sistema informa que no hay conexión con el banco y no realiza el pago
+
+---
+
+**Escenario 3:** Pago fallido por nro de tarjeta invalido
+
+Dado que se pudo establecer conexión con el servidor, el nro de tarjeta 9578 no es correcto
+
+Cuando el usuario ingresa 9578, 23, Jordan
+
+Entonces el sistema informa que el nro de tarjeta es invalido y no registra el pago
+
+---
+
+**Escenario 4:** Pago fallido por fondos insuficientes
+
+Dado que se pudo establecer conexión con el servidor, el nro de tarjeta 8414 es correcto y no posee fondos suficientes
+
+Cuando el usuario ingresa 8414, 010, Messi
+
+Entonces el sistema informa que la tarjeta no posee fondos suficientes y no registra el pago
 
 </td></tr></table>
 
@@ -1266,11 +1296,15 @@ Entonces
 
 <table><tr><td> 
 
-**ID:** 
+**ID:** Subir Foto
  
-**TÍTULO:** 
+**TÍTULO:** Como usuario quiero subir foto para luego retirarla
 
 **REGLAS DE NEGOCIO:** 
+- Un maximo de 50 fotos
+- Se suben de a una
+- El pago debe realizarse con tarjeta de credito
+
 
 </td></tr><tr><td>
 
