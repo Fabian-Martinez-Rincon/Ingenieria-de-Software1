@@ -58,8 +58,7 @@ Para cada Historia de Usuario se deben indicar los siguientes ítems:
 
 **REGLAS DE NEGOCIO:** 
 
- </td> </tr>
-<tr><td>
+</td></tr><tr><td>
 
 **CRITERIOS DE ACEPTACIÓN:** 
 
@@ -730,6 +729,151 @@ Para obtener más información generamos una reunión con el empleado de mesa de
 Una vez confeccionada la minuta por parte del empleado de mesa de entradas, la misma queda pendiente de aprobación. El que puede aprobar una minuta es el empleado de rendiciones. Realizamos una reunión con él y nos contó que su tarea consiste en evaluar las minutas para determinar su aprobación. También nos dijo que en otro trabajo que tiene usan un sistema llamado MiMiNuTa al que nos puede dar acceso para ver como hacen esa tarea. Después del análisis de este sistema, se concluyó que para aprobar una minuta necesitaría ingresar un número de minuta y que el sistema muestre los datos de la misma para poder aprobarla. Nos dijo que no puede aprobar la minuta si la persona a contratar tiene 3 contratos vigentes (minutas aprobadas) ni tampoco si el CUIT de la persona a contratar está inhabilitado por la AFIP. Actualmente se comunica telefónicamente con la AFIP para realizar esta verificación, pero sabe que ésta provee un servicio para aplicaciones que permite hacer la verificación en línea. Esto último nos obligó a generar una reunión con el administrador de servidores de la AFIP. Nos dijo que para poder conectarnos con un servidor de la AFIP, el sistema debe mandar un token (código que identificará de manera única a nuestra aplicación) y CUIT, si el token es correcto, el servidor responde si el CUIT está habilitado o no.
 
 Por último el empleado de rendiciones será el responsable de imprimir los listados con las minutas aprobadas, es decir, un listado con el personal contratado para poder dárselo al jefe de departamento para que lo firme.
+
+![image](https://user-images.githubusercontent.com/55964635/232234621-77ecdb9f-55f2-4dab-8055-571bbdf9f69f.png)
+
+### Roles
+- Empleado de mesa de entrada
+- Empleado de rendiciones
+
+### Historias de Usuario
+- Confeccionar minuta
+- Aprobar minuta
+- Imprimir Listado
+
+### Confeccionar minuta
+
+<table><tr><td> 
+
+**ID:** Confeccionar minuta
+ 
+**TÍTULO:** Como empleado de mesa quiero confeccionar una minuta para que pueda ser aprobada
+
+**REGLAS DE NEGOCIO:**
+- El monto no puede superar los $25000
+- Duración maxima de 6 meses
+
+</td></tr><tr><td>
+
+**CRITERIOS DE ACEPTACIÓN:** 
+
+**Escenario 1:** Confección exitosa
+
+Dado que el monto $1000 no supera los $25000 y la duración de 3 meses es valida
+
+Cuando el empleado de mesa ingresa Fabian, 777, temporal, 01-01-2001, 3 meses, $1000
+
+Entonces el sistema confecciona la minuta
+
+---
+
+**Escenario 2:** Confección fallida por monto superior a $25000
+
+Dado que el monto $50000 supera los $25000 y duración 1 mes es valida
+
+Cuando el empleado de mesa ingresa Tomas, 666, fijo, 10-10-2010, 1 mes, $50000
+
+Entonces el sistema informa que el monto ingresado supera los $25000 y no confecciona la minuta
+
+---
+
+**Escenario 3:** Confección fallida porque la duración excede los 6 meses 
+
+Dado que el monto $500 no supera los $25000 y duración 10 meses es valida
+
+Cuando el empleado de mesa ingresa Franco, 1010, temporal, 11-11-2011, 10 meses, $500
+
+Entonces el sistema informa que el la duración ingresada supera los 6 meses
+
+</td></tr></table>
+
+### Aprobar minuta
+
+<table><tr><td> 
+
+**ID:** Aprobar minuta
+ 
+**TÍTULO:** Como empleado de rendiciones quiero aprobar la minuta par poder hacer un contrato en un futuro
+
+**REGLAS DE NEGOCIO:** 
+- Nro de minuta existente
+- No se apruba si tiene 3 contratos vigentes
+- Cuit habilitado por el AFIP (esta habilitado si el servidor responde ante el token)
+
+Para la regla de minuta existente, podria darse el caso de que la minuta ya se haya usado o tambien podria ser el caso de que se ingreso algun nro incorreco o que directamente no exista, bueno, todos estos casos lo pongo como regla de negocio, no lo especifica en ningun lado asique queda a criterio de cada uno.
+
+En este ejercicio tambien esta la posibilidad de `conectarnos con el servidor` para que mandemos el token y nos apruebe, pero como eso lo hace el servidor, nosotros lo vemos en segundo plano o no lo vemos directamente, por lo que no lo considero una HU (para mi)
+
+</td></tr><tr><td>
+
+**CRITERIOS DE ACEPTACIÓN:** 
+
+**Escenario 1:** Aprobación de minuta exitosa
+
+Dado que el nro de minuta 123 es valida, tiene dos contratos vigentes y el cuit esta habilitado por el AFIP
+
+Cuando el empleado de rendiciones ingresa 123
+
+Entonces el sistema aprueba la minuta y la agrega a un listado
+
+---
+
+**Escenario 2:** Aprobación fallida por minuta invalida
+
+Dado que el nro de minuta 777 es invalido, tiene dos contratos vigentes y el cuit esta habilitado por el AFIP
+
+Cuando el empleado de rendiciones ingresa 777
+
+Entonces el sistema informa que la minuta ingresada es invalida y no agrega la minuta al listado
+
+---
+
+**Escenario 3:** Aprobación fallida por tener tres contratos vigentes
+
+Dado que el nro de minuta 666 es valido, tiene tres contratos vigentes y el cuit esta habilitado por el AFIP
+
+Cuando el empleado de rendiciones ingresa 666
+
+Entonces el sistema informa que el usuario ya tiene tres contratos vigentes y no agrega la minuta al listado
+
+---
+
+**Escenario 4:** Aprobación fallida por cuit inhabilidato por el AFIP
+
+Dado que el nro de minuta 404 es valido, tiene un contrato vigente y el cuit esta inhabilitado por el AFIP
+
+Cuando el empleado de rendiciones ingresa 404
+
+Entonces el sistema informa que el usuario tiene el CUIT inhabilitado por el AFIP
+
+</td></tr></table>
+
+### Imprimir Listado
+
+<table><tr><td> 
+
+**ID:** 
+ 
+**TÍTULO:** 
+
+**REGLAS DE NEGOCIO:** 
+
+ </td> </tr>
+<tr><td>
+
+**CRITERIOS DE ACEPTACIÓN:** 
+
+**Escenario 1:** título del criterio.
+
+Dado 
+
+Cuando 
+
+Entonces 
+
+---
+
+</td></tr></table>
 
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
