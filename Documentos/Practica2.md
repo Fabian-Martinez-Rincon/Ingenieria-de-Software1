@@ -1558,25 +1558,35 @@ Entonces el sistema informa que el libro solicitado esta en mal estado y no regi
 
 <table><tr><td> 
 
-**ID:** 
+**ID:** Devolver Libro
  
-**TÍTULO:** 
+**TÍTULO:** Como socio quiero devolver un libro para poder recibir otros prestamos
 
 **REGLAS DE NEGOCIO:** 
+- Prestamo no vencido
+
 
 </td></tr><tr><td>
 
 **CRITERIOS DE ACEPTACIÓN:** 
 
-**Escenario 1:** título del criterio.
+**Escenario 1:** Retorno exitoso
 
-Dado 
+Dado que el prestamo no esta vencido
 
-Cuando 
+Cuando el socio devuelve el libro "Dragon Ball"
 
-Entonces 
+Entonces el sistema registra el retorno del libro
 
 ---
+
+**Escenario 1:** Retorno exitoso con suspencion
+
+Dado que el prestamo esta vencido
+
+Cuando el socio devuelve el libro "Blanca nieves"
+
+Entonces el sistema registra el retorno del libro y suspende al socio por 15 dias
 
 </td></tr></table>
 
