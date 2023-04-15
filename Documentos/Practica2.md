@@ -958,13 +958,85 @@ Entonces el sistema muestra en pantalla la ley que impidee la venta de bebidas a
 
 ### Iniciar sesión
 
+<table><tr><td> 
+
+**ID:** 
+ 
+**TÍTULO:** 
+
+**REGLAS DE NEGOCIO:** 
+
+</td></tr><tr><td>
+
+**CRITERIOS DE ACEPTACIÓN:** 
+
+**Escenario 1:** título del criterio.
+
+Dado 
+
+Cuando 
+
+Entonces 
+
+---
+
+</td></tr></table>
+
 ---
 
 ### Cerrar sesión
 
+<table><tr><td> 
+
+**ID:** 
+ 
+**TÍTULO:** 
+
+**REGLAS DE NEGOCIO:** 
+
+</td></tr><tr><td>
+
+**CRITERIOS DE ACEPTACIÓN:** 
+
+**Escenario 1:** título del criterio.
+
+Dado 
+
+Cuando 
+
+Entonces 
+
+---
+
+</td></tr></table>
+
 ---
 
 ### Comprar Bebidas
+
+<table><tr><td> 
+
+**ID:** 
+ 
+**TÍTULO:** 
+
+**REGLAS DE NEGOCIO:** 
+
+</td></tr><tr><td>
+
+**CRITERIOS DE ACEPTACIÓN:** 
+
+**Escenario 1:** título del criterio.
+
+Dado 
+
+Cuando 
+
+Entonces 
+
+---
+
+</td></tr></table>
 
 ---
 
