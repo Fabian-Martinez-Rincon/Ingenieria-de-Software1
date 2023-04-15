@@ -852,26 +852,36 @@ Entonces el sistema informa que el usuario tiene el CUIT inhabilitado por el AFI
 
 <table><tr><td> 
 
-**ID:** 
+**ID:** Imprimir listado
  
-**TÍTULO:** 
+**TÍTULO:** Como empleado de rendiciones quiero imprimir el listado para poder darselo al jefe de departamento 
 
 **REGLAS DE NEGOCIO:** 
+- Existe al menos una minuta
 
- </td> </tr>
-<tr><td>
+Esta regla de negocio podria estar en duda pero bueno
+
+</td></tr><tr><td>
 
 **CRITERIOS DE ACEPTACIÓN:** 
 
-**Escenario 1:** título del criterio.
+**Escenario 1:** Impresión exitosa
 
-Dado 
+Dado que el litado tiene 15 minutas
 
-Cuando 
+Cuando el empleado de rendiciones le da al boton `imprimir minutas`
 
-Entonces 
+Entonces el sistema imprime (o el empleado no se bien) imprime el listado 
 
 ---
+
+**Escenario 2:** Impresión fallida por lista vacia
+
+Dado que el listado tiene 0 minutas
+
+Cuaando el empleado de rendiciones le da al boton `imprimir minutas`
+
+Entonces el sistema informa que el listado se encuentra vacio
 
 </td></tr></table>
 
