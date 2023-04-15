@@ -1718,7 +1718,7 @@ Entonces el sistema informa que no se pudo establecer conexión con el banco y n
 
 **Escenario 3:** Pago fallido por numero de tarjeta invalido
 
-Dado Dado que se pudo establecer conexión con el servidor del banco, el nro de tarjeta 6565 es invalido
+Dado que se pudo establecer conexión con el servidor del banco, el nro de tarjeta 6565 es invalido
 
 Cuando la persona ingresa 6565
 
@@ -1728,13 +1728,12 @@ Entonces el sistema informa que el nro de tarjeta es invalido y no realiza el pa
 
 **Escenario 4:** Pago fallido por fondos insuficientes
 
-Dado 
+Dado que se pudo establecer conexión con el servidor del banco, el nro de tarjeta 8788 es valido y no posee fondos suficientes 
 
-Cuando 
+Cuando la persona ingresa 8788
 
 Entonces el sistema informa que la tarjeta no tiene fondos suficientes y no realiza el pago
 
----
 
 </td></tr></table>
 
