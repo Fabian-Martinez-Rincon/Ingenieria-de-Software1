@@ -1402,6 +1402,7 @@ Cuando el socio retorna un libro se verifica si el préstamo se encuentra vencid
 ---
 
 ### Roles
+
 - Alumno (No asociado)
 - Socio
 - Bibliotecario
@@ -1453,25 +1454,58 @@ Entonces el sistema informa que no es alumno regular y no entrega el carnet
 
 <table><tr><td> 
 
-**ID:** 
+**ID:** Prestar Libro
  
-**TÍTULO:** 
+**TÍTULO:** Como bibliotecaria quiero prestar un libro para que el socio lo pueda leer
 
 **REGLAS DE NEGOCIO:** 
+- No posee mas de tres prestamos vigentes
+- No tener prestamos vencidos
+- Libro en buen estado
+
+
 
 </td></tr><tr><td>
 
 **CRITERIOS DE ACEPTACIÓN:** 
 
-**Escenario 1:** título del criterio.
+**Escenario 1:** Prestamo exitoso
 
-Dado 
+Dado que le socio 1 posee dos prestamos vigentes, no tiene prestamos vencidos y el libro "Harry Potter" esta en buen estado
 
-Cuando 
+Cuando el socio presenta carnet y solicita el libro "Harry Potter"
 
-Entonces 
+Entonces el sistema registra el prestamo en el sistema
 
 ---
+
+**Escenario 1:** Prestamo Fallido por poseer tres prestamos vigentes
+
+Dado que le socio 1 posee dos prestamos vigentes, no tiene prestamos vencidos y el libro "Harry Potter" esta en buen estado
+
+Cuando el socio presenta carnet y solicita el libro "Harry Potter"
+
+Entonces el sistema registra el prestamo en el sistema
+
+---
+
+**Escenario 1:** Prestamos fallido por tener prestamos vendidos
+
+Dado que le socio 1 posee dos prestamos vigentes, no tiene prestamos vencidos y el libro "Harry Potter" esta en buen estado
+
+Cuando el socio presenta carnet y solicita el libro "Harry Potter"
+
+Entonces el sistema registra el prestamo en el sistema
+
+---
+
+**Escenario 1:** Prestamo fallido por libro en mal estado
+
+Dado que le socio 1 posee dos prestamos vigentes, no tiene prestamos vencidos y el libro "Harry Potter" esta en buen estado
+
+Cuando el socio presenta carnet y solicita el libro "Harry Potter"
+
+Entonces el sistema registra el prestamo en el sistema
 
 </td></tr></table>
 
