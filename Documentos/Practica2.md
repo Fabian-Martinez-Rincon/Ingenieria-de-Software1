@@ -1397,6 +1397,100 @@ Los préstamos se realizan exclusivamente a socios habilitados, que no posean m�
 
 Cuando el socio retorna un libro se verifica si el préstamo se encuentra vencido. En este caso, la bibliotecaria suspende al socio, que por 15 días no podrá solicitar nuevos préstamos.
 
+![image](https://user-images.githubusercontent.com/55964635/232251137-9bbf9a21-f02d-4908-a670-8512253fcd11.png)
+
+---
+
+### Roles
+- Alumno (No asociado)
+- Socio
+- Bibliotecario
+
+### Historias de Usuario
+
+- Asociar alumno
+- Prestar libro
+- Devolver libro
+
+---
+
+### Asociar alumno
+<table><tr><td> 
+
+**ID:** 
+ 
+**TÍTULO:** 
+
+**REGLAS DE NEGOCIO:** 
+
+</td></tr><tr><td>
+
+**CRITERIOS DE ACEPTACIÓN:** 
+
+**Escenario 1:** título del criterio.
+
+Dado 
+
+Cuando 
+
+Entonces 
+
+---
+
+</td></tr></table>
+
+### Prestar Libro
+
+<table><tr><td> 
+
+**ID:** 
+ 
+**TÍTULO:** 
+
+**REGLAS DE NEGOCIO:** 
+
+</td></tr><tr><td>
+
+**CRITERIOS DE ACEPTACIÓN:** 
+
+**Escenario 1:** título del criterio.
+
+Dado 
+
+Cuando 
+
+Entonces 
+
+---
+
+</td></tr></table>
+
+### Devolver Libro
+
+<table><tr><td> 
+
+**ID:** 
+ 
+**TÍTULO:** 
+
+**REGLAS DE NEGOCIO:** 
+
+</td></tr><tr><td>
+
+**CRITERIOS DE ACEPTACIÓN:** 
+
+**Escenario 1:** título del criterio.
+
+Dado 
+
+Cuando 
+
+Entonces 
+
+---
+
+</td></tr></table>
+
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
 <div align = center>
