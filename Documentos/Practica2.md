@@ -1698,41 +1698,41 @@ Entonces el sistema informa que la tarjeta ingresada no es valida
 
 **Escenario 1:** Pago exitoso
 
-Dado 
+Dado que se pudo establecer conexión con el servidor del banco, el nro de tarjeta 314 es valido y posee fondos suficientes 
 
-Cuando 
+Cuando la persona ingresa 314
 
-Entonces 
-
----
-
-**Escenario 1:** Pago fallido por falta de conexión con el servidor
-
-Dado 
-
-Cuando 
-
-Entonces 
+Entonces El sistema registra el pago
 
 ---
 
-**Escenario 1:** Pago fallido por numero de tarjeta invalido
+**Escenario 2:** Pago fallido por falta de conexión con el servidor
 
-Dado 
+Dado que no se pudo establecer conexión con el servidor del banco
 
-Cuando 
+Cuando la persona quiere pagar
 
-Entonces 
+Entonces el sistema informa que no se pudo establecer conexión con el banco y no realiza el pago
 
 ---
 
-**Escenario 1:** Pago fallido por fondos insuficientes
+**Escenario 3:** Pago fallido por numero de tarjeta invalido
+
+Dado Dado que se pudo establecer conexión con el servidor del banco, el nro de tarjeta 6565 es invalido
+
+Cuando la persona ingresa 6565
+
+Entonces el sistema informa que el nro de tarjeta es invalido y no realiza el pago
+
+---
+
+**Escenario 4:** Pago fallido por fondos insuficientes
 
 Dado 
 
 Cuando 
 
-Entonces 
+Entonces el sistema informa que la tarjeta no tiene fondos suficientes y no realiza el pago
 
 ---
 
