@@ -699,7 +699,7 @@ Entonces el sistema informa que la contraseña es incorrecta y no realiza el ini
 
 **CRITERIOS DE ACEPTACIÓN:** 
 
-**Escenario 1:** Cierre exitoso
+**Escenario 3:** Cierre exitoso
 
 Dado que el usuario tiene una sesión abierta
 
@@ -885,6 +885,8 @@ Entonces el sistema informa que el listado se encuentra vacio
 
 </td></tr></table>
 
+
+
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
 <div align = center>
@@ -953,6 +955,19 @@ Entonces el sistema muestra en pantalla la ley que impidee la venta de bebidas a
 
 
 </td></tr></table>
+
+### Iniciar sesión
+
+---
+
+### Cerrar sesión
+
+---
+
+### Comprar Bebidas
+
+---
+
 
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
