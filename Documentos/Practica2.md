@@ -1417,25 +1417,35 @@ Cuando el socio retorna un libro se verifica si el préstamo se encuentra vencid
 ### Asociar alumno
 <table><tr><td> 
 
-**ID:** 
+**ID:** Asociar alumno
  
-**TÍTULO:** 
+**TÍTULO:** Como alumno me quiero asociar para poder retirar libros
 
 **REGLAS DE NEGOCIO:** 
+- Ser alumno regular
 
 </td></tr><tr><td>
 
 **CRITERIOS DE ACEPTACIÓN:** 
 
-**Escenario 1:** título del criterio.
+**Escenario 1:** Asociación exitosa
 
-Dado 
+Dado que es un alumno regular
 
-Cuando 
+Cuando el alumno ingresa 203200 y entrega el certificado de alumno regular
 
-Entonces 
+Entonces el sistema asocia al alumno y le otorga un carnet con un nro de socio
 
 ---
+
+**Escenario 1:** Asociación fallida por ser alumno irregular
+
+Dado que es un alumno irregular
+
+Cuando el alumno ingresa 12340 y no entrega el certificado de alumno regular
+
+Entonces el sistema informa que no es alumno regular y no entrega el carnet
+
 
 </td></tr></table>
 
