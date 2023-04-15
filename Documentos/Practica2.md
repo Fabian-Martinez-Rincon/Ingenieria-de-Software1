@@ -1088,15 +1088,11 @@ Entonces el sistema no aplica un descuento sobre el total y registra la compra
 
 </td></tr></table>
 
----
-
-
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
 <div align = center>
 
 ## `Problema 5` Casa de fotografía
-
 </div>
 
 
@@ -1107,6 +1103,191 @@ Para subir las fotos la persona debe registrarse en el sitio, ingresando sus dat
 Una vez autenticado, el usuario puede subir un máximo de 50 fotos para ser impresas. Las fotos se ingresan de a una. Una vez subidas, el usuario debe abonar el monto total (el valor de cada foto es de $15). El pago se realiza con tarjeta de crédito, ingresando los datos de la misma (número de tarjeta, código de seguridad y nombre del titular), la cual debe ser validada a través del sistema del banco. Una vez que se realiza el pago se le otorga al cliente un código único que le servirá posteriormente para retirar las fotos.
 
 Un cliente debe acercarse a la sucursal para retirar las fotos enviadas previamente. Para esto debe presentar el código único a un empleado. Este registra el código, la fecha de retiro y entrega las fotos al cliente.
+
+![image](https://user-images.githubusercontent.com/55964635/232247520-3ee3818c-84f9-42c4-b49c-f344f7844377.png)
+
+### Roles
+- Persona (No registrada)
+- Usuario
+- Empleado
+
+### Historias de Usuario
+- Registrar Persona
+- Iniciar Sesión
+- Cerrar Sesión
+- Pagar con tarjeta
+- Subir Foto
+- Retirar Foto
+
+---
+
+### Registrar Persona
+
+<table><tr><td> 
+
+**ID:** 
+ 
+**TÍTULO:** 
+
+**REGLAS DE NEGOCIO:** 
+
+</td></tr><tr><td>
+
+**CRITERIOS DE ACEPTACIÓN:** 
+
+**Escenario 1:** título del criterio.
+
+Dado 
+
+Cuando 
+
+Entonces 
+
+---
+
+</td></tr></table>
+
+---
+
+### Iniciar Sesión
+
+<table><tr><td> 
+
+**ID:** 
+ 
+**TÍTULO:** 
+
+**REGLAS DE NEGOCIO:** 
+
+</td></tr><tr><td>
+
+**CRITERIOS DE ACEPTACIÓN:** 
+
+**Escenario 1:** título del criterio.
+
+Dado 
+
+Cuando 
+
+Entonces 
+
+---
+
+</td></tr></table>
+
+---
+
+### Cerrar Sesión
+
+<table><tr><td> 
+
+**ID:** 
+ 
+**TÍTULO:** 
+
+**REGLAS DE NEGOCIO:** 
+
+</td></tr><tr><td>
+
+**CRITERIOS DE ACEPTACIÓN:** 
+
+**Escenario 1:** título del criterio.
+
+Dado 
+
+Cuando 
+
+Entonces 
+
+---
+
+</td></tr></table>
+
+---
+
+### Pagar con tarjeta
+
+<table><tr><td> 
+
+**ID:** 
+ 
+**TÍTULO:** 
+
+**REGLAS DE NEGOCIO:** 
+
+</td></tr><tr><td>
+
+**CRITERIOS DE ACEPTACIÓN:** 
+
+**Escenario 1:** título del criterio.
+
+Dado 
+
+Cuando 
+
+Entonces 
+
+---
+
+</td></tr></table>
+
+---
+
+### Subir Foto
+
+<table><tr><td> 
+
+**ID:** 
+ 
+**TÍTULO:** 
+
+**REGLAS DE NEGOCIO:** 
+
+</td></tr><tr><td>
+
+**CRITERIOS DE ACEPTACIÓN:** 
+
+**Escenario 1:** título del criterio.
+
+Dado 
+
+Cuando 
+
+Entonces 
+
+---
+
+</td></tr></table>
+
+---
+
+### Retirar Foto
+
+
+
+<table><tr><td> 
+
+**ID:** 
+ 
+**TÍTULO:** 
+
+**REGLAS DE NEGOCIO:** 
+
+</td></tr><tr><td>
+
+**CRITERIOS DE ACEPTACIÓN:** 
+
+**Escenario 1:** título del criterio.
+
+Dado 
+
+Cuando 
+
+Entonces 
+
+---
+
+</td></tr></table>
 
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
