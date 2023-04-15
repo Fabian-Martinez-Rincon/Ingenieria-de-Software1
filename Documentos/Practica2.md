@@ -139,15 +139,126 @@ Entonces el sistema informa que la tarjeta no tiene fondos suficientes y no regi
 
 ### Registrar Usuario
 
+<table><tr><td> 
+
+**ID:** Registrar Alumno
+ 
+**TÍTULO:** Como alumno quiero registrarme para tener una cuenta
+
+**REGLAS DE NEGOCIO:** 
+- Nombre de usuario unico
+- Contaseña con mas de 6 digitos (Esta puede variar)
+
+ </td> </tr>
+<tr><td>
+
+**CRITERIOS DE ACEPTACIÓN:** 
+
+**Escenario 1:** Registrar Alumno
+
+Dado que el usuario fabo es unico y la contraseña kapo013 tiene mas de 6 digitos
+
+Cuando el alumno ingresa fabo, kapo013
+
+Entonces el sistema registra al usuario
+
+---
+
+**Escenario 2:** Registro fallido por usuario ya existente
+
+Dado que el usuario tomo no es unico y la contraseña pepe555 tiene mas de 6 digitos
+
+Cuando el alumno ingresa tomo, pepe555
+
+Entonces el sistema Informa que el usuario ingresado ya existe, y no realiza el registro
+
+---
+
+**Escenario 3:** Registro fallido por contraseña con menos de 6 digitos
+
+Dado que el usuario messi es unico y la contraseña 2023 tiene menos de 6 digitos
+
+Cuando el alumno ingresa messi, 2023
+
+Entonces el sistema informa que la contraseña ingresada tiene menos de 6 digitos y no realiza el registro
+
+</td></tr></table>
+
 ---
 
 ### Iniciar Sesión
+
+<table><tr><td> 
+
+**ID:** Iniciar Sesión
+ 
+**TÍTULO:** Como usuario quiero iniciar sesión para poder entrar en mi cuenta
+
+**REGLAS DE NEGOCIO:** 
+
+ </td> </tr>
+<tr><td>
+
+**CRITERIOS DE ACEPTACIÓN:** Iniciar Sesión
+
+**Escenario 1:** Inicio exitoso
+
+Dado que el usuario fabo se encuentra registrado y la contraseña kapo013 es correcta
+
+Cuando el usuario ingresa fabo, kapo013
+
+Entonces el sistema realiza el inicio de sesión y habilita sus respectivas opciones
+
+---
+
+**Escenario 2:** Inicio fallido por usuario no registrado
+
+Dado que el usuario maradona no se encuentra registrado
+
+Cuando el usuario ingresa maradona, cocacola21
+
+Entonces el sistema informa que el usuario no se encuentra registrado y no realiza el inicio de sesión
+
+---
+
+**Escenario 3:** Inicio fallido por contraseña incorrecta
+
+Dado que el usuario stalin se encuentra registrado y la contraseña presi19 es incorrecta
+
+Cuando el usuario ingresa stalin, presi19
+
+Entonces el sistema informa que la contraseña es incorrecta y no realiza el inicio de sesión
+
+</td></tr></table>
 
 ---
 
 ### Cerrar Sesión
 
+<table><tr><td> 
 
+**ID:** Cerrar Sesión
+ 
+**TÍTULO:** 
+
+**REGLAS DE NEGOCIO:** Cerrar Sesión
+
+ </td> </tr>
+<tr><td>
+
+**CRITERIOS DE ACEPTACIÓN:** 
+
+**Escenario 1:** Cierre exitoso
+
+Dado que el usuario tiene una sesión abierta
+
+Cuando el usuario aprieta el boton de cerrar su sesión
+
+Entonces el sistema cierra la sesión y deshabilita sus respectivas opciones 
+
+---
+
+</td></tr></table>
 
 
 
