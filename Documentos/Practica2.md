@@ -497,9 +497,8 @@ Para inscribirse, el alumno deberá seleccionar la carrera, ingresar la cantidad
 - Cerrar Sesión 
 - Pagar con tarjeta 
 
-
-
 ---
+
 ### Inscribir a carrera
 
 <table><tr><td>
@@ -540,6 +539,7 @@ Entonces El sistema registra la inscripción del usuario e imprime dos comproban
 </td></tr></table>
 
 ---
+
 ### Alta carrera
 
 <table><tr><td> 
@@ -553,8 +553,7 @@ Entonces El sistema registra la inscripción del usuario e imprime dos comproban
 - Duración maxima de 5 años
 
 
- </td> </tr>
-<tr><td>
+</td></tr><tr><td>
 
 **CRITERIOS DE ACEPTACIÓN:** Alta carrera
 
@@ -588,6 +587,8 @@ Entonces el sistema informa que la duración ingresada supera los 5 años que so
 
 </td></tr></table>
 
+---
+
 ### Registrar Usuario
 
 <table><tr><td> 
@@ -600,8 +601,7 @@ Entonces el sistema informa que la duración ingresada supera los 5 años que so
 - Nombre de usuario unico
 - Contaseña con mas de 6 digitos 
 
- </td> </tr>
-<tr><td>
+</td></tr><tr><td>
 
 **CRITERIOS DE ACEPTACIÓN:** 
 
@@ -710,8 +710,6 @@ Entonces el sistema cierra la sesión y deshabilita sus respectivas opciones
 
 </td></tr></table>
 
-
-
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
 <div align = center>
@@ -732,6 +730,8 @@ Por último el empleado de rendiciones será el responsable de imprimir los list
 
 ![image](https://user-images.githubusercontent.com/55964635/232234621-77ecdb9f-55f2-4dab-8055-571bbdf9f69f.png)
 
+---
+
 ### Roles
 - Empleado de mesa de entrada
 - Empleado de rendiciones
@@ -740,6 +740,8 @@ Por último el empleado de rendiciones será el responsable de imprimir los list
 - Confeccionar minuta
 - Aprobar minuta
 - Imprimir Listado
+
+---
 
 ### Confeccionar minuta
 
@@ -786,6 +788,8 @@ Cuando el empleado de mesa ingresa Franco, 1010, temporal, 11-11-2011, 10 meses,
 Entonces el sistema informa que el la duración ingresada supera los 6 meses
 
 </td></tr></table>
+
+---
 
 ### Aprobar minuta
 
@@ -848,6 +852,8 @@ Entonces el sistema informa que el usuario tiene el CUIT inhabilitado por el AFI
 
 </td></tr></table>
 
+---
+
 ### Imprimir Listado
 
 <table><tr><td> 
@@ -902,6 +908,8 @@ Para comprar el usuario debe iniciar sesión y una vez logueado el sistema muest
 ![image](https://user-images.githubusercontent.com/55964635/232245201-80c3a9e9-1f85-4f5c-b3fb-02f6b06a0f46.png)
 ![image](https://user-images.githubusercontent.com/55964635/232245230-8f12ad19-a8dd-4c31-a99f-2de5db4ce65d.png)
 
+---
+
 ### Roles
 - Persona (no registrada)
 - Usuario
@@ -911,6 +919,8 @@ Para comprar el usuario debe iniciar sesión y una vez logueado el sistema muest
 - Iniciar sesión
 - Cerrar sesión
 - Comprar Bebidas
+
+---
 
 <table><tr><td> 
 
@@ -955,6 +965,8 @@ Entonces el sistema muestra en pantalla la ley que impidee la venta de bebidas a
 
 
 </td></tr></table>
+
+---
 
 ### Iniciar sesión
 
@@ -1409,9 +1421,37 @@ Cuando el socio retorna un libro se verifica si el préstamo se encuentra vencid
 
 ### Historias de Usuario
 
+- Registrar libro
 - Asociar alumno
 - Prestar libro
 - Devolver libro
+
+---
+
+### Registrar libro
+
+<table><tr><td> 
+
+**ID:** Registrar Libro
+ 
+**TÍTULO:** Como bibliotecaria quiero registrar un libro para que pueda ser prestado
+
+**REGLAS DE NEGOCIO:** 
+
+
+</td></tr><tr><td>
+
+**CRITERIOS DE ACEPTACIÓN:** 
+
+**Escenario 1:** Donación exitosa
+
+Dado que el padre/madre dona un libro
+
+Cuando la bibliotecaria ingresa los datos del ibro
+
+Entonces el sistema registra el libro en el sistema
+
+</td></tr></table>
 
 ---
 
@@ -1450,6 +1490,8 @@ Entonces el sistema informa que no es alumno regular y no entrega el carnet
 
 </td></tr></table>
 
+---
+
 ### Prestar Libro
 
 <table><tr><td> 
@@ -1479,35 +1521,38 @@ Entonces el sistema registra el prestamo en el sistema
 
 ---
 
-**Escenario 1:** Prestamo Fallido por poseer tres prestamos vigentes
+**Escenario 2:** Prestamo Fallido por poseer tres prestamos vigentes
 
-Dado que le socio 1 posee dos prestamos vigentes, no tiene prestamos vencidos y el libro "Harry Potter" esta en buen estado
+Dado que le socio 2 posee tres prestamos vigentes, no tiene prestamos vencidos y el libro "Pinocho" esta en buen estado
 
-Cuando el socio presenta carnet y solicita el libro "Harry Potter"
+Cuando el socio presenta carnet y solicita el libro "Pinocho"
 
-Entonces el sistema registra el prestamo en el sistema
-
----
-
-**Escenario 1:** Prestamos fallido por tener prestamos vendidos
-
-Dado que le socio 1 posee dos prestamos vigentes, no tiene prestamos vencidos y el libro "Harry Potter" esta en buen estado
-
-Cuando el socio presenta carnet y solicita el libro "Harry Potter"
-
-Entonces el sistema registra el prestamo en el sistema
+Entonces el sistema informa que el socio ya posee tres prestamos vigentes y no registra el prestamo
 
 ---
 
-**Escenario 1:** Prestamo fallido por libro en mal estado
+**Escenario 3:** Prestamos fallido por tener prestamos vendidos
+
+Dado que le socio 3 posee dos prestamos vigentes, tiene prestamos vencidos y el libro "Blanca nieves" esta en buen estado
+
+Cuando el socio presenta carnet y solicita el libro "Blanca nieves"
+
+Entonces el sistema informa que el socio tiene prestamos vencidos y no registra el prestamo
+
+
+---
+
+**Escenario 4:** Prestamo fallido por libro en mal estado
 
 Dado que le socio 1 posee dos prestamos vigentes, no tiene prestamos vencidos y el libro "Harry Potter" esta en buen estado
 
 Cuando el socio presenta carnet y solicita el libro "Harry Potter"
 
-Entonces el sistema registra el prestamo en el sistema
+Entonces el sistema informa que el libro solicitado esta en mal estado y no registra el prestamo
 
 </td></tr></table>
+
+---
 
 ### Devolver Libro
 
