@@ -897,6 +897,63 @@ Se desea modelar un sistema para el manejo de venta de bebidas alcohólicas en l
 
 Para comprar el usuario debe iniciar sesión y una vez logueado el sistema muestra una lista de bebidas, una vez que el usuario selecciona todos los productos que desea comprar, si el usuario es premium se le hace un descuento del 20% y se informa en pantalla el total menos el 20%. Ademas si el usuario seleccionó productos por un monto superior a los $4500 se le hace un 10% de descuento y se informa en pantalla el total menos el 10%. Tenga en cuenta que si el usuario es premium y compra por un monto superior a $4500 se deben aplicar ambos descuentos
 
+![image](https://user-images.githubusercontent.com/55964635/232245201-80c3a9e9-1f85-4f5c-b3fb-02f6b06a0f46.png)
+![image](https://user-images.githubusercontent.com/55964635/232245230-8f12ad19-a8dd-4c31-a99f-2de5db4ce65d.png)
+
+### Roles
+- Persona (no registrada)
+- Usuario
+
+### Historias de Usuario
+- Registrar Persona
+- Iniciar sesión
+- Cerrar sesión
+- Comprar Bebidas
+
+<table><tr><td> 
+
+**ID:** Registra Persona
+ 
+**TÍTULO:** Como persona quiero registrarme para comprar bebidas
+
+**REGLAS DE NEGOCIO:** 
+- Mail unico
+- Persona mayor de 18 años
+
+</td></tr><tr><td>
+
+**CRITERIOS DE ACEPTACIÓN:** 
+
+**Escenario 1:** Registro exitoso
+
+Dado que el mail menem@gmail.com es unico y la persona tiene 90 años
+
+Cuando la persona ingresa Calos, Menem, menem@gmail.com, 90 años
+
+Entonces el sistema registra a la persona, genera una contraseña y la manda al mail menem@gmail.com
+
+---
+
+**Escenario 2:** Registro fallido por mail ya registrado
+
+Dado que el mail pepe@gmail.com no es unico y la persona tiene 30 años
+
+Cuando la persona ingresa Pepe, ElSapo, pepe@gmail.com, 30 años
+
+Entonces el sistema informa que el mail ya se encuentra registrado y no realiza el registro
+
+---
+**Escenario 1:** Registro fallido por persona menor de 18 años
+
+Dado que el mail juansito@gmail.com es unico y la persona tiene 10 años
+
+Cuando la persona ingresa Juan, Carosella, juansito@gmail.com, 10 años
+
+Entonces el sistema muestra en pantalla la ley que impidee la venta de bebidas alcoholicas a menores
+
+
+</td></tr></table>
+
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
 <div align = center>
