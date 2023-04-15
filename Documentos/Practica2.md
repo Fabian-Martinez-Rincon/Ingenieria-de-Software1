@@ -1125,25 +1125,36 @@ Un cliente debe acercarse a la sucursal para retirar las fotos enviadas previame
 
 <table><tr><td> 
 
-**ID:** 
+**ID:** Registrar Persona
  
-**TÍTULO:** 
+**TÍTULO:** Como persona quiero registrame para poder subir fotos
 
 **REGLAS DE NEGOCIO:** 
+- nombre de usuario no registrado 
+
+Aunque el enuncado no lo especifica, despues le pregunto al ayudante si va
 
 </td></tr><tr><td>
 
 **CRITERIOS DE ACEPTACIÓN:** 
 
-**Escenario 1:** título del criterio.
+**Escenario 1:** Registro exitoso
 
-Dado 
+Dado que el nombre de usuario manolo20 no esta registrado
 
-Cuando 
+Cuando la persona ingresa Manolo, Cuevas, manolo@gmail.com, 24 entre 51 y 50, manolo20, contraseña123
 
-Entonces 
+Entonces sistema realiza el registro del usuario y lo informa en pantalla
 
 ---
+
+**Escenario 2:** Registro Fallido por usuario ya existente
+
+Dado que el nombre de usuario vegeta666 esta registrado
+
+Cuando la persona ingresa Vegeta, Sayan, vegeta@gmail.com, 1 entre 22 y 23, vegeta666, nameku1000
+
+Entonces sistema informa que el usuario ya se encuentra registrado en el sistema
 
 </td></tr></table>
 
@@ -1153,23 +1164,43 @@ Entonces
 
 <table><tr><td> 
 
-**ID:** 
+**ID:** Iniciar Sesión
  
-**TÍTULO:** 
+**TÍTULO:** Como usuario quiero iniciar sesión para poder comprar las fotos
 
 **REGLAS DE NEGOCIO:** 
 
 </td></tr><tr><td>
 
-**CRITERIOS DE ACEPTACIÓN:** 
+**CRITERIOS DE ACEPTACIÓN:** Iniciar Sesión
 
-**Escenario 1:** título del criterio.
+**Escenario 1:** Inicio Exitoso
 
-Dado 
+Dado que el manolo20 se encuentra registrado y la contraseña contraseña123 es correcta
 
-Cuando 
+Cuando el usuario ingresa manolo20, contraseña123
 
-Entonces 
+Entonces el sistema realiza el inicio de sesión y habilita la opcion para subir imagenes y pagar
+
+---
+
+**Escenario 2:** Inicio Fallido por usuario no registrado
+
+Dado que el goku50 no se encuentra registrado
+
+Cuando el usuario ingresa goku50
+
+Entonces el sistema informa que el usuario no se encuentra registrado
+
+---
+
+**Escenario 3:** Inicio Fallido por contraseña incorrecta
+
+Dado que el manolo20 se encuentra registrado y la contraseña contraseña123 es correcta
+
+Cuando el usuario ingresa manolo20, contraseña123
+
+Entonces el sistema informa que la contraseña es incorrecta
 
 ---
 
