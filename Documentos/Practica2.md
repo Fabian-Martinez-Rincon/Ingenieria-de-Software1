@@ -1612,6 +1612,275 @@ Las prestaciones que brinda, siempre y cuando esté asentado el pago del mes ant
 - `Internación`: A cualquier afiliado, sin límite.
 - `Consultas médicas`: A cualquier afiliado, hasta 2 por mes.
 
+![image](https://user-images.githubusercontent.com/55964635/232254765-3caf2e2a-6204-4a5a-810b-913a45103127.png)
+
+---
+
+### Roles
+
+- Persona (No afiliado)
+- Afiliado
+
+### Historias de Usuarios
+
+- Afiliar persona
+- Pagar con tarjeta
+- Prestar Ortodoncia
+- Prestar Plantillas
+- Prestar Anteojos
+- Prestar Internación
+- Prestar Consultas médicas
+
+---
+
+### Afiliar persona
+
+<table><tr><td> 
+
+**ID:** Persona
+ 
+**TÍTULO:** Como persona quiero afiliarme para poder recibir prestaciones
+
+**REGLAS DE NEGOCIO:** 
+- El pago debe realizarse con tarjeta de credito
+
+</td></tr><tr><td>
+
+**CRITERIOS DE ACEPTACIÓN:** 
+
+**Escenario 1:** Afiliación exitosa 
+
+Dado que la persona Fabian Martinez no es afiliado y pago con una tarjeta de credito valida
+
+Cuando la persona ingresa los datos de una tarjeta de credito valida
+
+Entonces el sistema registra al afiliado y pasa a tener a cargo a su pareja e hijos(hasta que cumplan 18 años) y a cada uno se le otorga un numero de afiliado
+
+---
+
+**Escenario 2:** Afiliación fallida por persona ya afiliada 
+
+Dado que la persona Tomas Martinez es afiliado y pago con una tarjeta de credito valida
+
+Cuando la persona ingresa los datos de una tarjeta de credito valida
+
+Entonces el sistema informa que la persona ya se encuentra registrada como afiliada
+
+---
+
+**Escenario 1:** Afiliación fallida por problemas con la tarjeta 
+
+Dado que la persona Camila Martinez no es afiliado y pago con una tarjeta de credito invalida
+
+Cuando la persona ingresa los datos de una tarjeta de credito invalida
+
+Entonces el sistema informa que la tarjeta ingresada no es valida
+
+---
+
+</td></tr></table>
+
+---
+
+### Pagar con tarjeta
+
+<table><tr><td> 
+
+**ID:** Pagar con tarjeta
+ 
+**TÍTULO:** Como persona quiero pagar con tarjeta para poder afiliarme
+
+**REGLAS DE NEGOCIO:** 
+
+</td></tr><tr><td>
+
+**CRITERIOS DE ACEPTACIÓN:** 
+
+**Escenario 1:** Pago exitoso
+
+Dado 
+
+Cuando 
+
+Entonces 
+
+---
+
+**Escenario 1:** Pago fallido por falta de conexión con el servidor
+
+Dado 
+
+Cuando 
+
+Entonces 
+
+---
+
+**Escenario 1:** Pago fallido por numero de tarjeta invalido
+
+Dado 
+
+Cuando 
+
+Entonces 
+
+---
+
+**Escenario 1:** Pago fallido por fondos insuficientes
+
+Dado 
+
+Cuando 
+
+Entonces 
+
+---
+
+</td></tr></table>
+
+---
+
+### Prestar Ortodoncia
+
+<table><tr><td> 
+
+**ID:** 
+ 
+**TÍTULO:** 
+
+**REGLAS DE NEGOCIO:** 
+
+</td></tr><tr><td>
+
+**CRITERIOS DE ACEPTACIÓN:** 
+
+**Escenario 1:** título del criterio.
+
+Dado 
+
+Cuando 
+
+Entonces 
+
+---
+
+</td></tr></table>
+
+---
+
+### Prestar Plantillas
+
+<table><tr><td> 
+
+**ID:** 
+ 
+**TÍTULO:** 
+
+**REGLAS DE NEGOCIO:** 
+
+</td></tr><tr><td>
+
+**CRITERIOS DE ACEPTACIÓN:** 
+
+**Escenario 1:** título del criterio.
+
+Dado 
+
+Cuando 
+
+Entonces 
+
+---
+
+</td></tr></table>
+
+---
+
+### Prestar Anteojos
+
+<table><tr><td> 
+
+**ID:** 
+ 
+**TÍTULO:** 
+
+**REGLAS DE NEGOCIO:** 
+
+</td></tr><tr><td>
+
+**CRITERIOS DE ACEPTACIÓN:** 
+
+**Escenario 1:** título del criterio.
+
+Dado 
+
+Cuando 
+
+Entonces 
+
+---
+
+</td></tr></table>
+
+---
+
+### Prestar Internación
+
+<table><tr><td> 
+
+**ID:** 
+ 
+**TÍTULO:** 
+
+**REGLAS DE NEGOCIO:** 
+
+</td></tr><tr><td>
+
+**CRITERIOS DE ACEPTACIÓN:** 
+
+**Escenario 1:** título del criterio.
+
+Dado 
+
+Cuando 
+
+Entonces 
+
+---
+
+</td></tr></table>
+
+---
+
+### Prestar Consultas médicas
+
+<table><tr><td> 
+
+**ID:** 
+ 
+**TÍTULO:** 
+
+**REGLAS DE NEGOCIO:** 
+
+</td></tr><tr><td>
+
+**CRITERIOS DE ACEPTACIÓN:** 
+
+**Escenario 1:** título del criterio.
+
+Dado 
+
+Cuando 
+
+Entonces 
+
+---
+
+</td></tr></table>
+
+---
+
+
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
 <div align = center>
