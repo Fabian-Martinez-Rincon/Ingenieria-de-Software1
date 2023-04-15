@@ -960,25 +960,43 @@ Entonces el sistema muestra en pantalla la ley que impidee la venta de bebidas a
 
 <table><tr><td> 
 
-**ID:** 
+**ID:** Iniciar Sesión
  
-**TÍTULO:** 
+**TÍTULO:** Como usuario quiero iniciar sesión para poder comprar bebidas
 
 **REGLAS DE NEGOCIO:** 
 
 </td></tr><tr><td>
 
-**CRITERIOS DE ACEPTACIÓN:** 
+**CRITERIOS DE ACEPTACIÓN:** Iniciar Sesión
 
-**Escenario 1:** título del criterio.
+**Escenario 1:** Inicio exitoso
 
-Dado 
+Dado que el usuario menem@gmail.com esta registrado y la contraseña xxxx es correcta
 
-Cuando 
+Cuando el usuario ingresa menem@gmail.com, xxxx
 
-Entonces 
+Entonces el sistema muestra un listado de bebidas para que el usuario seleccione
 
 ---
+
+**Escenario 2:** Inicio fallido por mail no registrado
+
+Dado que el usuario manolo@gmail.com no esta registrado
+
+Cuando el usuario ingresa manolo@gmail.com
+
+Entonces el sistema informa que el mail no se encuentra registrado
+
+---
+
+**Escenario 3:** Inicio fallido por contraseña incorrecta
+
+Dado que el usuario diego@gmail.com esta registrado y la contraseña 20203 es correcta
+
+Cuando el usuario ingresa diego@gmail.com, 20203
+
+Entonces el sistema informa que la contraseña ingresada es incorrecta
 
 </td></tr></table>
 
@@ -988,9 +1006,9 @@ Entonces
 
 <table><tr><td> 
 
-**ID:** 
+**ID:** Cerrar Sesión
  
-**TÍTULO:** 
+**TÍTULO:** Como usuario logueado quiero cerrar mi sesión para proteger mis datos
 
 **REGLAS DE NEGOCIO:** 
 
@@ -998,13 +1016,13 @@ Entonces
 
 **CRITERIOS DE ACEPTACIÓN:** 
 
-**Escenario 1:** título del criterio.
+**Escenario 1:** Cierre exitoso
 
-Dado 
+Dado que el usuario tiene una sesión abierta
 
-Cuando 
+Cuando el usuario presiona el boton `cerrar sesión`
 
-Entonces 
+Entonces el sistema cierra la sesión y deshabilita las opciones de selección y compra de bebidas
 
 ---
 
@@ -1016,25 +1034,57 @@ Entonces
 
 <table><tr><td> 
 
-**ID:** 
+**ID:** Comprar Bebidas
  
-**TÍTULO:** 
+**TÍTULO:** Como usuario logueado quiero comprar bebidas para ir a una fiesta
 
 **REGLAS DE NEGOCIO:** 
+- Es premium
+- Monto superior a $4500
+
+Aca puede darse el caso de que el usuario le diera al boton comprar sin haber seleccionado ninguna bebida, creo que lo podria agregar como otro escenario.
 
 </td></tr><tr><td>
 
 **CRITERIOS DE ACEPTACIÓN:** 
 
-**Escenario 1:** título del criterio.
+**Escenario 1:** Compra exitosa con 30% de decuento
 
-Dado 
+Dado que el usuario messi@gmail.com es premium y su compra es de $50000
 
-Cuando 
+Cuando el usuario selecciona las bebidas y le da al boton `comprar`
 
-Entonces 
+Entonces el sistema aplica un descuento del 30% sobre el total y registra la compra
 
 ---
+
+**Escenario 2:** Compra exitosa con 20% de decuento
+
+Dado que el usuario benzema@gmail.com es premium y su compra es de $50
+
+Cuando el usuario selecciona las bebidas y le da al boton `comprar`
+
+Entonces el sistema aplica un descuento del 20% sobre el total y registra la compra
+
+---
+
+**Escenario 3:** Compra exitosa con 10% de decuento
+
+Dado que el usuario guardiola@gmail.com no es premium y su compra es de $20000
+
+Cuando el usuario selecciona las bebidas y le da al boton `comprar`
+
+Entonces el sistema aplica un descuento del 10% sobre el total y registra la compra
+
+---
+
+**Escenario 4:** Compra exitosa sin descuentos
+
+Dado que el usuario messi@gmail.com no es premium y su compra es de $2
+
+Cuando el usuario selecciona las bebidas y le da al boton `comprar`
+
+Entonces el sistema no aplica un descuento sobre el total y registra la compra
 
 </td></tr></table>
 
