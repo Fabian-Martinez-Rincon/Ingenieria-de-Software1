@@ -1944,25 +1944,36 @@ Entonces el sistema informa que el afiliado ya solicito un prestamo de anteojos 
 
 <table><tr><td> 
 
-**ID:** 
+**ID:** Solicitar Internación
  
-**TÍTULO:** 
+**TÍTULO:** Como afiliado quiero solicitar internación para un familiar
 
 **REGLAS DE NEGOCIO:** 
+- Tener pago el mes anterior
 
 </td></tr><tr><td>
 
 **CRITERIOS DE ACEPTACIÓN:** 
 
-**Escenario 1:** título del criterio.
+**Escenario 1:** Solicitud exitosa
 
-Dado 
+Dado que el afiliado Cristian tiene pago el mes anterior
 
-Cuando 
+Cuando el afiliado solicita el prestamo
 
-Entonces 
+Entonces el sistema reserva un turno para el afiliado
 
 ---
+
+**Escenario 2:** Solicitud fallida por no tener pago el mes anterior
+
+Dado que el afiliado Koki no tiene pago el mes anterior
+
+Cuando el afiliado solicita el prestamo
+
+Entonces el sistema informa que no tiene pago el mes anterior
+
+
 
 </td></tr></table>
 
