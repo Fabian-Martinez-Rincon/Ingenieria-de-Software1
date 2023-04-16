@@ -64,11 +64,11 @@ Para cada Historia de Usuario se deben indicar los siguientes ítems:
 
 **Escenario 1:** título del criterio.
 
-Dado 
+`Dado` 
 
-Cuando 
+`Cuando` 
 
-Entonces 
+`Entonces` 
 
 ---
 
@@ -96,41 +96,41 @@ Entonces
 
 **Escenario 1:** Pago exitoso
 
-Dado que se pudo establecer conexión con el servidor del banco, el nro 123 de la tarjeta es valido y posee fondos suficientes
+`Dado` que se pudo establecer conexión con el servidor del banco, el nro 123 de la tarjeta es valido y posee fondos suficientes
 
-Cuando el cliente ingresa 123.
+`Cuando` el cliente ingresa 123.
 
-Entonces el sistema registra el pago
+`Entonces` el sistema registra el pago
 
 ---
 
 **Escenario 2:** Pago Fallido por falla con la conexión del banco
 
-Dado que no se pudo establecer conexión con el banco
+`Dado` que no se pudo establecer conexión con el banco
 
-Cuando el cliente quiere pagar
+`Cuando` el cliente quiere pagar
 
-Entonces el sistema informa que no se pudo establecer conexion con el banco
+`Entonces` el sistema informa que no se pudo establecer conexion con el banco
 
 ---
 
 **Escenario 3:** Pago fallido por numero de tarjeta invalido
 
-Dado que se pudo establecer conexión con el servidor del banco, el nro 777 de la tarjeta es invalido
+`Dado` que se pudo establecer conexión con el servidor del banco, el nro 777 de la tarjeta es invalido
 
-Cuando el cliente ingresa 777.
+`Cuando` el cliente ingresa 777.
 
-Entonces el sistema informa que el nro de la tarjeta es invalido y no registra el pago
+`Entonces` el sistema informa que el nro de la tarjeta es invalido y no registra el pago
 
 ---
 
 **Escenario 4:** Pago fallido por saldo insuficiente
 
-Dado que se pudo establecer conexión con el servidor del banco, el nro 1010 de la terjeta es valido y no tiene fondos
+`Dado` que se pudo establecer conexión con el servidor del banco, el nro 1010 de la terjeta es valido y no tiene fondos
 
-Cuando el cliente ingresa 1010
+`Cuando` el cliente ingresa 1010
 
-Entonces el sistema informa que la tarjeta no tiene fondos suficientes y no registra el cobro
+`Entonces` el sistema informa que la tarjeta no tiene fondos suficientes y no registra el cobro
 
 </td></tr></table>
 
@@ -155,31 +155,31 @@ Entonces el sistema informa que la tarjeta no tiene fondos suficientes y no regi
 
 **Escenario 1:** Registrar Alumno
 
-Dado que el usuario fabo es unico y la contraseña kapo013 tiene mas de 6 digitos
+`Dado` que el usuario fabo es unico y la contraseña kapo013 tiene mas de 6 digitos
 
-Cuando el alumno ingresa fabo, kapo013
+`Cuando` el alumno ingresa fabo, kapo013
 
-Entonces el sistema registra al usuario
+`Entonces` el sistema registra al usuario
 
 ---
 
 **Escenario 2:** Registro fallido por usuario ya existente
 
-Dado que el usuario tomo no es unico y la contraseña pepe555 tiene mas de 6 digitos
+`Dado` que el usuario tomo no es unico y la contraseña pepe555 tiene mas de 6 digitos
 
-Cuando el alumno ingresa tomo, pepe555
+`Cuando` el alumno ingresa tomo, pepe555
 
-Entonces el sistema Informa que el usuario ingresado ya existe, y no realiza el registro
+`Entonces` el sistema Informa que el usuario ingresado ya existe, y no realiza el registro
 
 ---
 
 **Escenario 3:** Registro fallido por contraseña con menos de 6 digitos
 
-Dado que el usuario messi es unico y la contraseña 2023 tiene menos de 6 digitos
+`Dado` que el usuario messi es unico y la contraseña 2023 tiene menos de 6 digitos
 
-Cuando el alumno ingresa messi, 2023
+`Cuando` el alumno ingresa messi, 2023
 
-Entonces el sistema informa que la contraseña ingresada tiene menos de 6 digitos y no realiza el registro
+`Entonces` el sistema informa que la contraseña ingresada tiene menos de 6 digitos y no realiza el registro
 
 </td></tr></table>
 
@@ -202,31 +202,31 @@ Entonces el sistema informa que la contraseña ingresada tiene menos de 6 digito
 
 **Escenario 1:** Inicio exitoso
 
-Dado que el usuario fabo se encuentra registrado y la contraseña kapo013 es correcta
+`Dado` que el usuario fabo se encuentra registrado y la contraseña kapo013 es correcta
 
-Cuando el usuario ingresa fabo, kapo013
+`Cuando` el usuario ingresa fabo, kapo013
 
-Entonces el sistema realiza el inicio de sesión y habilita sus respectivas opciones
+`Entonces` el sistema realiza el inicio de sesión y habilita sus respectivas opciones
 
 ---
 
 **Escenario 2:** Inicio fallido por usuario no registrado
 
-Dado que el usuario maradona no se encuentra registrado
+`Dado` que el usuario maradona no se encuentra registrado
 
-Cuando el usuario ingresa maradona, cocacola21
+`Cuando` el usuario ingresa maradona, cocacola21
 
-Entonces el sistema informa que el usuario no se encuentra registrado y no realiza el inicio de sesión
+`Entonces` el sistema informa que el usuario no se encuentra registrado y no realiza el inicio de sesión
 
 ---
 
 **Escenario 3:** Inicio fallido por contraseña incorrecta
 
-Dado que el usuario stalin se encuentra registrado y la contraseña presi19 es incorrecta
+`Dado` que el usuario stalin se encuentra registrado y la contraseña presi19 es incorrecta
 
-Cuando el usuario ingresa stalin, presi19
+`Cuando` el usuario ingresa stalin, presi19
 
-Entonces el sistema informa que la contraseña es incorrecta y no realiza el inicio de sesión
+`Entonces` el sistema informa que la contraseña es incorrecta y no realiza el inicio de sesión
 
 </td></tr></table>
 
@@ -249,11 +249,11 @@ Entonces el sistema informa que la contraseña es incorrecta y no realiza el ini
 
 **Escenario 1:** Cierre exitoso
 
-Dado que el usuario tiene una sesión abierta
+`Dado` que el usuario tiene una sesión abierta
 
-Cuando el usuario aprieta el boton de cerrar su sesión
+`Cuando` el usuario aprieta el boton de cerrar su sesión
 
-Entonces el sistema cierra la sesión y deshabilita sus respectivas opciones 
+`Entonces` el sistema cierra la sesión y deshabilita sus respectivas opciones 
 
 
 </td></tr></table>
@@ -318,31 +318,31 @@ cliente para hacer efectivo el alquiler.
 
 **Escenario 1:** Reservar Exitosa
 
-Dado que el alquiler tiene 3 muebles y se pago el 20% con una tarjeta de credito valida
+`Dado` que el alquiler tiene 3 muebles y se pago el 20% con una tarjeta de credito valida
 
-Cuando el usuario ingresa 10-10-2010, La Plata, 3 dias, 3 muebles y los datos de una tarjeta de credito valida
+`Cuando` el usuario ingresa 10-10-2010, La Plata, 3 dias, 3 muebles y los datos de una tarjeta de credito valida
 
-Entonces el sistema emite un numero de reserva unico.
+`Entonces` el sistema emite un numero de reserva unico.
 
 ---
 
 **Escenario 2:** Reservar Fallida por muebles insuficientes
 
-Dado que el alquiler tiene 1 mueble y se pago el 20% con una tarjeta de credito valida
+`Dado` que el alquiler tiene 1 mueble y se pago el 20% con una tarjeta de credito valida
 
-Cuando el usuario ingresa 05-05-2020, La Plata, 11 dias, 1 muebles y los datos de una tarjeta de credito valida
+`Cuando` el usuario ingresa 05-05-2020, La Plata, 11 dias, 1 muebles y los datos de una tarjeta de credito valida
 
-Entonces el sistema informa que el inmueble no cumple con los requisitos minimos
+`Entonces` el sistema informa que el inmueble no cumple con los requisitos minimos
 
 ---
 
 **Escenario 3:** Reserva Fallida por problemas con la tarjeta de credito
 
-Dado que el alquiler tiene 5 muebles y se pago el 20% con una tarjeta invalida
+`Dado` que el alquiler tiene 5 muebles y se pago el 20% con una tarjeta invalida
 
-Cuando el usuario ingresa 20-03-2015, Buenos Aires, 30 dias, 5 muebles y los datos de una tarjeta de credito invalida
+`Cuando` el usuario ingresa 20-03-2015, Buenos Aires, 30 dias, 5 muebles y los datos de una tarjeta de credito invalida
 
-Entonces el sistema informa que la tarjeta es invalida y no registra el pago
+`Entonces` el sistema informa que la tarjeta es invalida y no registra el pago
 
 
 </td></tr></table>
@@ -367,31 +367,31 @@ Entonces el sistema informa que la tarjeta es invalida y no registra el pago
 
 **Escenario 1:** Alta Exitosa
 
-Dado que el codigo 0202 es unico y el precio 10$ se cargo en dolares
+`Dado` que el codigo 0202 es unico y el precio 10$ se cargo en dolares
 
-Cuando el empleado de mesa ingresa 0202, Mesa, 1-1-2000, 20-20-2020, libre, 10$
+`Cuando` el empleado de mesa ingresa 0202, Mesa, 1-1-2000, 20-20-2020, libre, 10$
 
-Entonces el sistema registra el mueble en el sistema
+`Entonces` el sistema registra el mueble en el sistema
 
 ---
 
 **Escenario 2:** Alta Fallida por codigo ya existente
 
-Dado que el codigo 1010 no es unico y el precio 20$ se cargo en dolares
+`Dado` que el codigo 1010 no es unico y el precio 20$ se cargo en dolares
 
-Cuando el empleado de mesa ingresa 1010, Ropero, 3-3-2003, 04-04-2004, de baja, 20$
+`Cuando` el empleado de mesa ingresa 1010, Ropero, 3-3-2003, 04-04-2004, de baja, 20$
 
-Entonces el sistema informa que el codigo ya se encuentra registrado y no realiza el alta
+`Entonces` el sistema informa que el codigo ya se encuentra registrado y no realiza el alta
 
 ---
 
 **Escenario 3:** Alta Fallida por precio cargado en euros
 
-Dado que el codigo 4040 es unico y el precio 10$ se cargo en euros
+`Dado` que el codigo 4040 es unico y el precio 10$ se cargo en euros
 
-Cuando el empleado de mesa ingresa 4040, Cama, 2-2-2002, 21-21-2021, alquilado, 30$
+`Cuando` el empleado de mesa ingresa 4040, Cama, 2-2-2002, 21-21-2021, alquilado, 30$
 
-Entonces el sistema informa que el precio debe cargarse en dolares y no realiza el alta
+`Entonces` el sistema informa que el precio debe cargarse en dolares y no realiza el alta
 
 
 </td></tr></table>
@@ -418,41 +418,41 @@ Entonces el sistema informa que el precio debe cargarse en dolares y no realiza 
 
 **Escenario 1:** Pago exitoso
 
-Dado que se pudo establecer conexión con el servidor del banco, el nro 123 de la tarjeta es valido y posee fondos suficientes
+`Dado` que se pudo establecer conexión con el servidor del banco, el nro 123 de la tarjeta es valido y posee fondos suficientes
 
-Cuando el cliente ingresa 123.
+`Cuando` el cliente ingresa 123.
 
-Entonces el sistema registra el pago
+`Entonces` el sistema registra el pago
 
 ---
 
 **Escenario 2:** Pago Fallido por falla con la conexión del banco
 
-Dado que no se pudo establecer conexión con el banco
+`Dado` que no se pudo establecer conexión con el banco
 
-Cuando el cliente quiere pagar
+`Cuando` el cliente quiere pagar
 
-Entonces el sistema informa que no se pudo establecer conexion con el banco
+`Entonces` el sistema informa que no se pudo establecer conexion con el banco
 
 ---
 
 **Escenario 3:** Pago fallido por numero de tarjeta invalido
 
-Dado que se pudo establecer conexión con el servidor del banco, el nro 777 de la tarjeta es invalido
+`Dado` que se pudo establecer conexión con el servidor del banco, el nro 777 de la tarjeta es invalido
 
-Cuando el cliente ingresa 777.
+`Cuando` el cliente ingresa 777.
 
-Entonces el sistema informa que el nro de la tarjeta es invalido y no registra el pago
+`Entonces` el sistema informa que el nro de la tarjeta es invalido y no registra el pago
 
 ---
 
 **Escenario 4:** Pago fallido por saldo insuficiente
 
-Dado que se pudo establecer conexión con el servidor del banco, el nro 1010 de la terjeta es valido y no tiene fondos
+`Dado` que se pudo establecer conexión con el servidor del banco, el nro 1010 de la terjeta es valido y no tiene fondos
 
-Cuando el cliente ingresa 1010
+`Cuando` el cliente ingresa 1010
 
-Entonces el sistema informa que la tarjeta no tiene fondos suficientes y no registra el cobro
+`Entonces` el sistema informa que la tarjeta no tiene fondos suficientes y no registra el cobro
 
 </td></tr></table>
 
@@ -519,21 +519,21 @@ Aca quiero aclarar que el usuario no ingresa las cuotas a mano, sino que le apar
 
 **Escenario 1:** Inscripción exitosa
 
-Dado que el usuario posee una tarjeta de credito valida
+`Dado` que el usuario posee una tarjeta de credito valida
 
-Cuando el usuario selecciona la carrera Filosofia y los datos de una tarjeta de credito valida
+`Cuando` el usuario selecciona la carrera Filosofia y los datos de una tarjeta de credito valida
 
-Entonces El sistema registra la inscripción del usuario e imprime dos comprobantes, uno de inscripcion y otro de pago
+`Entonces` El sistema registra la inscripción del usuario e imprime dos comprobantes, uno de inscripcion y otro de pago
 
 ---
 
 **Escenario 2:** Inscripción fallida por tarjeta invalida
 
-Dado que el usuario posee una tarjeta de credito invalida
+`Dado` que el usuario posee una tarjeta de credito invalida
 
-Cuando el usuario selecciona la carrera Biologia y los datos de una tarjeta de credito invalida
+`Cuando` el usuario selecciona la carrera Biologia y los datos de una tarjeta de credito invalida
 
-Entonces El sistema registra la inscripción del usuario e imprime dos comprobantes, uno de inscripcion y otro de pago
+`Entonces` El sistema registra la inscripción del usuario e imprime dos comprobantes, uno de inscripcion y otro de pago
 
 
 </td></tr></table>
@@ -559,31 +559,31 @@ Entonces El sistema registra la inscripción del usuario e imprime dos comproban
 
 **Escenario 1:** Alta de carrera exitosa.
 
-Dado que el nombre Informatica es unico, y la carrera dura 4 años
+`Dado` que el nombre Informatica es unico, y la carrera dura 4 años
 
-Cuando el empleado administrativo ingresa Informatica, 4 años, 100$, 20 cuotas
+`Cuando` el empleado administrativo ingresa Informatica, 4 años, 100$, 20 cuotas
 
-Entonces El sistema da de alta la carrera
+`Entonces` El sistema da de alta la carrera
 
 ---
 
 **Escenario 2:** Alta de carrera fallida por codigo ya existente
 
-Dado que el nombre Arte no es unico y la carrera dura 5 años
+`Dado` que el nombre Arte no es unico y la carrera dura 5 años
 
-Cuando el empleado administrativo ingresa Arte, 5 años, 300$, 10 cuotas
+`Cuando` el empleado administrativo ingresa Arte, 5 años, 300$, 10 cuotas
 
-Entonces el sistema informa que el nombre de la carrera ya existe y no realiza el alta
+`Entonces` el sistema informa que el nombre de la carrera ya existe y no realiza el alta
 
 ---
 
 **Escenario 3:** Alta de carrera fallida por duracion supera los 5 años
 
-Dado que el nombre Astrologia es unico y la carrera dura 100 años
+`Dado` que el nombre Astrologia es unico y la carrera dura 100 años
 
-Cuando el empleado administrativo ingresa Astrologia, 100 años, 2$ y 1000 cuotas
+`Cuando` el empleado administrativo ingresa Astrologia, 100 años, 2$ y 1000 cuotas
 
-Entonces el sistema informa que la duración ingresada supera los 5 años que son permitidos y no realiza el alta a la carrera
+`Entonces` el sistema informa que la duración ingresada supera los 5 años que son permitidos y no realiza el alta a la carrera
 
 </td></tr></table>
 
@@ -607,31 +607,31 @@ Entonces el sistema informa que la duración ingresada supera los 5 años que so
 
 **Escenario 1:** Registrar Alumno
 
-Dado que el usuario fabo es unico y la contraseña kapo013 tiene mas de 6 digitos
+`Dado` que el usuario fabo es unico y la contraseña kapo013 tiene mas de 6 digitos
 
-Cuando el alumno ingresa Fabian, Martinez ,fabo, kapo013
+`Cuando` el alumno ingresa Fabian, Martinez ,fabo, kapo013
 
-Entonces el sistema registra al usuario
+`Entonces` el sistema registra al usuario
 
 ---
 
 **Escenario 2:** Registro fallido por usuario ya existente
 
-Dado que el usuario tomo no es unico y la contraseña pepe555 tiene mas de 6 digitos
+`Dado` que el usuario tomo no es unico y la contraseña pepe555 tiene mas de 6 digitos
 
-Cuando el alumno ingresa Tomas, Gomez, tomo, pepe555
+`Cuando` el alumno ingresa Tomas, Gomez, tomo, pepe555
 
-Entonces el sistema Informa que el usuario ingresado ya existe, y no realiza el registro
+`Entonces` el sistema Informa que el usuario ingresado ya existe, y no realiza el registro
 
 ---
 
 **Escenario 3:** Registro fallido por contraseña con menos de 6 digitos
 
-Dado que el usuario messi es unico y la contraseña 2023 tiene menos de 6 digitos
+`Dado` que el usuario messi es unico y la contraseña 2023 tiene menos de 6 digitos
 
-Cuando el alumno ingresa Lionel, Messi, messi, 2023
+`Cuando` el alumno ingresa Lionel, Messi, messi, 2023
 
-Entonces el sistema informa que la contraseña ingresada tiene menos de 6 digitos y no realiza el registro
+`Entonces` el sistema informa que la contraseña ingresada tiene menos de 6 digitos y no realiza el registro
 
 </td></tr></table>
 
@@ -654,31 +654,31 @@ Entonces el sistema informa que la contraseña ingresada tiene menos de 6 digito
 
 **Escenario 1:** Inicio exitoso
 
-Dado que el usuario fabo se encuentra registrado y la contraseña kapo013 es correcta
+`Dado` que el usuario fabo se encuentra registrado y la contraseña kapo013 es correcta
 
-Cuando el usuario ingresa fabo, kapo013
+`Cuando` el usuario ingresa fabo, kapo013
 
-Entonces el sistema realiza el inicio de sesión y habilita la inscripción a algunas carreras
+`Entonces` el sistema realiza el inicio de sesión y habilita la inscripción a algunas carreras
 
 ---
 
 **Escenario 2:** Inicio fallido por usuario no registrado
 
-Dado que el usuario maradona no se encuentra registrado
+`Dado` que el usuario maradona no se encuentra registrado
 
-Cuando el usuario ingresa maradona, cocacola21
+`Cuando` el usuario ingresa maradona, cocacola21
 
-Entonces el sistema informa que el usuario no se encuentra registrado y no realiza el inicio de sesión
+`Entonces` el sistema informa que el usuario no se encuentra registrado y no realiza el inicio de sesión
 
 ---
 
 **Escenario 3:** Inicio fallido por contraseña incorrecta
 
-Dado que el usuario stalin se encuentra registrado y la contraseña presi19 es incorrecta
+`Dado` que el usuario stalin se encuentra registrado y la contraseña presi19 es incorrecta
 
-Cuando el usuario ingresa stalin, presi19
+`Cuando` el usuario ingresa stalin, presi19
 
-Entonces el sistema informa que la contraseña es incorrecta y no realiza el inicio de sesión
+`Entonces` el sistema informa que la contraseña es incorrecta y no realiza el inicio de sesión
 
 </td></tr></table>
 
@@ -701,11 +701,11 @@ Entonces el sistema informa que la contraseña es incorrecta y no realiza el ini
 
 **Escenario 3:** Cierre exitoso
 
-Dado que el usuario tiene una sesión abierta
+`Dado` que el usuario tiene una sesión abierta
 
-Cuando el usuario aprieta el boton de cerrar su sesión
+`Cuando` el usuario aprieta el boton de cerrar su sesión
 
-Entonces el sistema cierra la sesión y deshabilita sus respectivas opciones 
+`Entonces` el sistema cierra la sesión y deshabilita sus respectivas opciones 
 
 
 </td></tr></table>
@@ -761,31 +761,31 @@ Por último el empleado de rendiciones será el responsable de imprimir los list
 
 **Escenario 1:** Confección exitosa
 
-Dado que el monto $1000 no supera los $25000 y la duración de 3 meses es valida
+`Dado` que el monto $1000 no supera los $25000 y la duración de 3 meses es valida
 
-Cuando el empleado de mesa ingresa Fabian, 777, temporal, 01-01-2001, 3 meses, $1000
+`Cuando` el empleado de mesa ingresa Fabian, 777, temporal, 01-01-2001, 3 meses, $1000
 
-Entonces el sistema confecciona la minuta
+`Entonces` el sistema confecciona la minuta
 
 ---
 
 **Escenario 2:** Confección fallida por monto superior a $25000
 
-Dado que el monto $50000 supera los $25000 y duración 1 mes es valida
+`Dado` que el monto $50000 supera los $25000 y duración 1 mes es valida
 
-Cuando el empleado de mesa ingresa Tomas, 666, fijo, 10-10-2010, 1 mes, $50000
+`Cuando` el empleado de mesa ingresa Tomas, 666, fijo, 10-10-2010, 1 mes, $50000
 
-Entonces el sistema informa que el monto ingresado supera los $25000 y no confecciona la minuta
+`Entonces` el sistema informa que el monto ingresado supera los $25000 y no confecciona la minuta
 
 ---
 
 **Escenario 3:** Confección fallida porque la duración excede los 6 meses 
 
-Dado que el monto $500 no supera los $25000 y duración 10 meses es valida
+`Dado` que el monto $500 no supera los $25000 y duración 10 meses es valida
 
-Cuando el empleado de mesa ingresa Franco, 1010, temporal, 11-11-2011, 10 meses, $500
+`Cuando` el empleado de mesa ingresa Franco, 1010, temporal, 11-11-2011, 10 meses, $500
 
-Entonces el sistema informa que el la duración ingresada supera los 6 meses
+`Entonces` el sistema informa que el la duración ingresada supera los 6 meses
 
 </td></tr></table>
 
@@ -814,41 +814,41 @@ En este ejercicio tambien esta la posibilidad de `conectarnos con el servidor` p
 
 **Escenario 1:** Aprobación de minuta exitosa
 
-Dado que el nro de minuta 123 es valida, tiene dos contratos vigentes y el cuit esta habilitado por el AFIP
+`Dado` que el nro de minuta 123 es valida, tiene dos contratos vigentes y el cuit esta habilitado por el AFIP
 
-Cuando el empleado de rendiciones ingresa 123
+`Cuando` el empleado de rendiciones ingresa 123
 
-Entonces el sistema aprueba la minuta y la agrega a un listado
+`Entonces` el sistema aprueba la minuta y la agrega a un listado
 
 ---
 
 **Escenario 2:** Aprobación fallida por minuta invalida
 
-Dado que el nro de minuta 777 es invalido, tiene dos contratos vigentes y el cuit esta habilitado por el AFIP
+`Dado` que el nro de minuta 777 es invalido, tiene dos contratos vigentes y el cuit esta habilitado por el AFIP
 
-Cuando el empleado de rendiciones ingresa 777
+`Cuando` el empleado de rendiciones ingresa 777
 
-Entonces el sistema informa que la minuta ingresada es invalida y no agrega la minuta al listado
+`Entonces` el sistema informa que la minuta ingresada es invalida y no agrega la minuta al listado
 
 ---
 
 **Escenario 3:** Aprobación fallida por tener tres contratos vigentes
 
-Dado que el nro de minuta 666 es valido, tiene tres contratos vigentes y el cuit esta habilitado por el AFIP
+`Dado` que el nro de minuta 666 es valido, tiene tres contratos vigentes y el cuit esta habilitado por el AFIP
 
-Cuando el empleado de rendiciones ingresa 666
+`Cuando` el empleado de rendiciones ingresa 666
 
-Entonces el sistema informa que el usuario ya tiene tres contratos vigentes y no agrega la minuta al listado
+`Entonces` el sistema informa que el usuario ya tiene tres contratos vigentes y no agrega la minuta al listado
 
 ---
 
 **Escenario 4:** Aprobación fallida por cuit inhabilidato por el AFIP
 
-Dado que el nro de minuta 404 es valido, tiene un contrato vigente y el cuit esta inhabilitado por el AFIP
+`Dado` que el nro de minuta 404 es valido, tiene un contrato vigente y el cuit esta inhabilitado por el AFIP
 
-Cuando el empleado de rendiciones ingresa 404
+`Cuando` el empleado de rendiciones ingresa 404
 
-Entonces el sistema informa que el usuario tiene el CUIT inhabilitado por el AFIP
+`Entonces` el sistema informa que el usuario tiene el CUIT inhabilitado por el AFIP
 
 </td></tr></table>
 
@@ -873,21 +873,21 @@ Esta regla de negocio podria estar en duda pero bueno
 
 **Escenario 1:** Impresión exitosa
 
-Dado que el litado tiene 15 minutas
+`Dado` que el litado tiene 15 minutas
 
-Cuando el empleado de rendiciones le da al boton `imprimir minutas`
+`Cuando` el empleado de rendiciones le da al boton `imprimir minutas`
 
-Entonces el sistema imprime (o el empleado no se bien) imprime el listado 
+`Entonces` el sistema imprime (o el empleado no se bien) imprime el listado 
 
 ---
 
 **Escenario 2:** Impresión fallida por lista vacia
 
-Dado que el listado tiene 0 minutas
+`Dado` que el listado tiene 0 minutas
 
-Cuaando el empleado de rendiciones le da al boton `imprimir minutas`
+`Cuando` el empleado de rendiciones le da al boton `imprimir minutas`
 
-Entonces el sistema informa que el listado se encuentra vacio
+`Entonces` el sistema informa que el listado se encuentra vacio
 
 </td></tr></table>
 
@@ -938,30 +938,30 @@ Para comprar el usuario debe iniciar sesión y una vez logueado el sistema muest
 
 **Escenario 1:** Registro exitoso
 
-Dado que el mail menem@gmail.com es unico y la persona tiene 90 años
+`Dado` que el mail menem@gmail.com es unico y la persona tiene 90 años
 
-Cuando la persona ingresa Calos, Menem, menem@gmail.com, 90 años
+`Cuando` la persona ingresa Calos, Menem, menem@gmail.com, 90 años
 
-Entonces el sistema registra a la persona, genera una contraseña y la manda al mail menem@gmail.com
+`Entonces` el sistema registra a la persona, genera una contraseña y la manda al mail menem@gmail.com
 
 ---
 
 **Escenario 2:** Registro fallido por mail ya registrado
 
-Dado que el mail pepe@gmail.com no es unico y la persona tiene 30 años
+`Dado` que el mail pepe@gmail.com no es unico y la persona tiene 30 años
 
-Cuando la persona ingresa Pepe, ElSapo, pepe@gmail.com, 30 años
+`Cuando` la persona ingresa Pepe, ElSapo, pepe@gmail.com, 30 años
 
-Entonces el sistema informa que el mail ya se encuentra registrado y no realiza el registro
+`Entonces` el sistema informa que el mail ya se encuentra registrado y no realiza el registro
 
 ---
 **Escenario 1:** Registro fallido por persona menor de 18 años
 
-Dado que el mail juansito@gmail.com es unico y la persona tiene 10 años
+`Dado` que el mail juansito@gmail.com es unico y la persona tiene 10 años
 
-Cuando la persona ingresa Juan, Carosella, juansito@gmail.com, 10 años
+`Cuando` la persona ingresa Juan, Carosella, juansito@gmail.com, 10 años
 
-Entonces el sistema muestra en pantalla la ley que impidee la venta de bebidas alcoholicas a menores
+`Entonces` el sistema muestra en pantalla la ley que impidee la venta de bebidas alcoholicas a menores
 
 
 </td></tr></table>
@@ -984,31 +984,31 @@ Entonces el sistema muestra en pantalla la ley que impidee la venta de bebidas a
 
 **Escenario 1:** Inicio exitoso
 
-Dado que el usuario menem@gmail.com esta registrado y la contraseña xxxx es correcta
+`Dado` que el usuario menem@gmail.com esta registrado y la contraseña xxxx es correcta
 
-Cuando el usuario ingresa menem@gmail.com, xxxx
+`Cuando` el usuario ingresa menem@gmail.com, xxxx
 
-Entonces el sistema muestra un listado de bebidas para que el usuario seleccione
+`Entonces` el sistema muestra un listado de bebidas para que el usuario seleccione
 
 ---
 
 **Escenario 2:** Inicio fallido por mail no registrado
 
-Dado que el usuario manolo@gmail.com no esta registrado
+`Dado` que el usuario manolo@gmail.com no esta registrado
 
-Cuando el usuario ingresa manolo@gmail.com
+`Cuando` el usuario ingresa manolo@gmail.com
 
-Entonces el sistema informa que el mail no se encuentra registrado
+`Entonces` el sistema informa que el mail no se encuentra registrado
 
 ---
 
 **Escenario 3:** Inicio fallido por contraseña incorrecta
 
-Dado que el usuario diego@gmail.com esta registrado y la contraseña 20203 es correcta
+`Dado` que el usuario diego@gmail.com esta registrado y la contraseña 20203 es correcta
 
-Cuando el usuario ingresa diego@gmail.com, 20203
+`Cuando` el usuario ingresa diego@gmail.com, 20203
 
-Entonces el sistema informa que la contraseña ingresada es incorrecta
+`Entonces` el sistema informa que la contraseña ingresada es incorrecta
 
 </td></tr></table>
 
@@ -1030,11 +1030,11 @@ Entonces el sistema informa que la contraseña ingresada es incorrecta
 
 **Escenario 1:** Cierre exitoso
 
-Dado que el usuario tiene una sesión abierta
+`Dado` que el usuario tiene una sesión abierta
 
-Cuando el usuario presiona el boton `cerrar sesión`
+`Cuando` el usuario presiona el boton `cerrar sesión`
 
-Entonces el sistema cierra la sesión y deshabilita las opciones de selección y compra de bebidas
+`Entonces` el sistema cierra la sesión y deshabilita las opciones de selección y compra de bebidas
 
 ---
 
@@ -1062,41 +1062,41 @@ Aca puede darse el caso de que el usuario le diera al boton comprar sin haber se
 
 **Escenario 1:** Compra exitosa con 30% de decuento
 
-Dado que el usuario messi@gmail.com es premium y su compra es de $50000
+`Dado` que el usuario messi@gmail.com es premium y su compra es de $50000
 
-Cuando el usuario selecciona las bebidas y le da al boton `comprar`
+`Cuando` el usuario selecciona las bebidas y le da al boton `comprar`
 
-Entonces el sistema aplica un descuento del 30% sobre el total y registra la compra
+`Entonces` el sistema aplica un descuento del 30% sobre el total y registra la compra
 
 ---
 
 **Escenario 2:** Compra exitosa con 20% de decuento
 
-Dado que el usuario benzema@gmail.com es premium y su compra es de $50
+`Dado` que el usuario benzema@gmail.com es premium y su compra es de $50
 
-Cuando el usuario selecciona las bebidas y le da al boton `comprar`
+`Cuando` el usuario selecciona las bebidas y le da al boton `comprar`
 
-Entonces el sistema aplica un descuento del 20% sobre el total y registra la compra
+`Entonces` el sistema aplica un descuento del 20% sobre el total y registra la compra
 
 ---
 
 **Escenario 3:** Compra exitosa con 10% de decuento
 
-Dado que el usuario guardiola@gmail.com no es premium y su compra es de $20000
+`Dado` que el usuario guardiola@gmail.com no es premium y su compra es de $20000
 
-Cuando el usuario selecciona las bebidas y le da al boton `comprar`
+`Cuando` el usuario selecciona las bebidas y le da al boton `comprar`
 
-Entonces el sistema aplica un descuento del 10% sobre el total y registra la compra
+`Entonces` el sistema aplica un descuento del 10% sobre el total y registra la compra
 
 ---
 
 **Escenario 4:** Compra exitosa sin descuentos
 
-Dado que el usuario messi@gmail.com no es premium y su compra es de $2
+`Dado` que el usuario messi@gmail.com no es premium y su compra es de $2
 
-Cuando el usuario selecciona las bebidas y le da al boton `comprar`
+`Cuando` el usuario selecciona las bebidas y le da al boton `comprar`
 
-Entonces el sistema no aplica un descuento sobre el total y registra la compra
+`Entonces` el sistema no aplica un descuento sobre el total y registra la compra
 
 </td></tr></table>
 
@@ -1154,21 +1154,21 @@ Aunque el enuncado no lo especifica, despues le pregunto al ayudante si va
 
 **Escenario 1:** Registro exitoso
 
-Dado que el nombre de usuario manolo20 no esta registrado
+`Dado` que el nombre de usuario manolo20 no esta registrado
 
-Cuando la persona ingresa Manolo, Cuevas, manolo@gmail.com, 24 entre 51 y 50, manolo20, contraseña123
+`Cuando` la persona ingresa Manolo, Cuevas, manolo@gmail.com, 24 entre 51 y 50, manolo20, contraseña123
 
-Entonces sistema realiza el registro del usuario y lo informa en pantalla
+`Entonces` sistema realiza el registro del usuario y lo informa en pantalla
 
 ---
 
 **Escenario 2:** Registro Fallido por usuario ya existente
 
-Dado que el nombre de usuario vegeta666 esta registrado
+`Dado` que el nombre de usuario vegeta666 esta registrado
 
-Cuando la persona ingresa Vegeta, Sayan, vegeta@gmail.com, 1 entre 22 y 23, vegeta666, nameku1000
+`Cuando` la persona ingresa Vegeta, Sayan, vegeta@gmail.com, 1 entre 22 y 23, vegeta666, nameku1000
 
-Entonces sistema informa que el usuario ya se encuentra registrado en el sistema
+`Entonces` sistema informa que el usuario ya se encuentra registrado en el sistema
 
 </td></tr></table>
 
@@ -1190,31 +1190,31 @@ Entonces sistema informa que el usuario ya se encuentra registrado en el sistema
 
 **Escenario 1:** Inicio Exitoso
 
-Dado que el manolo20 se encuentra registrado y la contraseña contraseña123 es correcta
+`Dado` que el manolo20 se encuentra registrado y la contraseña contraseña123 es correcta
 
-Cuando el usuario ingresa manolo20, contraseña123
+`Cuando` el usuario ingresa manolo20, contraseña123
 
-Entonces el sistema realiza el inicio de sesión y habilita la opcion para subir imagenes y pagar
+`Entonces` el sistema realiza el inicio de sesión y habilita la opcion para subir imagenes y pagar
 
 ---
 
 **Escenario 2:** Inicio Fallido por usuario no registrado
 
-Dado que el goku50 no se encuentra registrado
+`Dado` que el goku50 no se encuentra registrado
 
-Cuando el usuario ingresa goku50
+`Cuando` el usuario ingresa goku50
 
-Entonces el sistema informa que el usuario no se encuentra registrado
+`Entonces` el sistema informa que el usuario no se encuentra registrado
 
 ---
 
 **Escenario 3:** Inicio Fallido por contraseña incorrecta
 
-Dado que el manolo20 se encuentra registrado y la contraseña contraseña123 es correcta
+`Dado` que el manolo20 se encuentra registrado y la contraseña contraseña123 es correcta
 
-Cuando el usuario ingresa manolo20, contraseña123
+`Cuando` el usuario ingresa manolo20, contraseña123
 
-Entonces el sistema informa que la contraseña es incorrecta
+`Entonces` el sistema informa que la contraseña es incorrecta
 
 </td></tr></table>
 
@@ -1236,11 +1236,11 @@ Entonces el sistema informa que la contraseña es incorrecta
 
 **Escenario 1:** Cierre exitoso
 
-Dado que el usuario manolo20 tiene la sesión abierta
+`Dado` que el usuario manolo20 tiene la sesión abierta
 
-Cuando el usuario presiona el boton `cerrar sesión`
+`Cuando` el usuario presiona el boton `cerrar sesión`
 
-Entonces el sistema cierra la sesión y deshabilita las opciones para subir imagenes y pagar
+`Entonces` el sistema cierra la sesión y deshabilita las opciones para subir imagenes y pagar
 
 
 </td></tr></table>
@@ -1264,41 +1264,41 @@ Entonces el sistema cierra la sesión y deshabilita las opciones para subir imag
 
 **Escenario 1:** Pago exitoso
 
-Dado que se pudo establecer conexión con el servidor, el nro de tarjeta 4342 es correcto y posee fondos suficientes para pagar $15 por foto
+`Dado` que se pudo establecer conexión con el servidor, el nro de tarjeta 4342 es correcto y posee fondos suficientes para pagar $15 por foto
 
-Cuando el usuario ingresa 4342, 012, Fabian
+`Cuando` el usuario ingresa 4342, 012, Fabian
 
-Entonces el sistema registra el pago y retorna un nro para que pueda retirar las fotos
+`Entonces` el sistema registra el pago y retorna un nro para que pueda retirar las fotos
 
 ---
 
 **Escenario 2:** Pago fallido por falta de conexión con el servidor
 
-Dado que no se pudo establecer conexión con el servidor
+`Dado` que no se pudo establecer conexión con el servidor
 
-Cuando el usuario intenta pagar
+`Cuando` el usuario intenta pagar
 
-Entonces el sistema informa que no hay conexión con el banco y no realiza el pago
+`Entonces` el sistema informa que no hay conexión con el banco y no realiza el pago
 
 ---
 
 **Escenario 3:** Pago fallido por nro de tarjeta invalido
 
-Dado que se pudo establecer conexión con el servidor, el nro de tarjeta 9578 no es correcto
+`Dado` que se pudo establecer conexión con el servidor, el nro de tarjeta 9578 no es correcto
 
-Cuando el usuario ingresa 9578, 23, Jordan
+`Cuando` el usuario ingresa 9578, 23, Jordan
 
-Entonces el sistema informa que el nro de tarjeta es invalido y no registra el pago
+`Entonces` el sistema informa que el nro de tarjeta es invalido y no registra el pago
 
 ---
 
 **Escenario 4:** Pago fallido por fondos insuficientes
 
-Dado que se pudo establecer conexión con el servidor, el nro de tarjeta 8414 es correcto y no posee fondos suficientes para pagar $15 por foto
+`Dado` que se pudo establecer conexión con el servidor, el nro de tarjeta 8414 es correcto y no posee fondos suficientes para pagar $15 por foto
 
-Cuando el usuario ingresa 8414, 010, Messi
+`Cuando` el usuario ingresa 8414, 010, Messi
 
-Entonces el sistema informa que la tarjeta no posee fondos suficientes y no registra el pago
+`Entonces` el sistema informa que la tarjeta no posee fondos suficientes y no registra el pago
 
 </td></tr></table>
 
@@ -1324,31 +1324,31 @@ Entonces el sistema informa que la tarjeta no posee fondos suficientes y no regi
 
 **Escenario 1:** Subida exitosa
 
-Dado que el usuario subio 20 fotos y fueron una a la vez 
+`Dado` que el usuario subio 20 fotos y fueron una a la vez 
 
-Cuando el usuario sube perros.png
+`Cuando` el usuario sube perros.png
 
-Entonces el sistema carga la foto 
+`Entonces` el sistema carga la foto 
 
 ---
 
 **Escenario 2:** Subida fallida por cantidad excesiva de fotos
 
-Dado que el usuario subio 51 fotos y fueron una a la vez 
+`Dado` que el usuario subio 51 fotos y fueron una a la vez 
 
-Cuando el usuario sube gatos.png
+`Cuando` el usuario sube gatos.png
 
-Entonces el sistema informa que el usuario no puede subir mas de 50 imagenes 
+`Entonces` el sistema informa que el usuario no puede subir mas de 50 imagenes 
 
 ---
 
 **Escenario 1:** Subida fallida por subir mas de una foto a la vez
 
-Dado que el usuario subio 3 fotos, fueron a la vez 
+`Dado` que el usuario subio 3 fotos, fueron a la vez 
 
-Cuando el usuario sube perros.png, gatos.png, ratas.png
+`Cuando` el usuario sube perros.png, gatos.png, ratas.png
 
-Entonces el sistema informa que el usuario esta subiendo mas de una foto a la vez
+`Entonces` el sistema informa que el usuario esta subiendo mas de una foto a la vez
 
 ---
 
@@ -1373,21 +1373,21 @@ Entonces el sistema informa que el usuario esta subiendo mas de una foto a la ve
 
 **Escenario 1:** Retiro exitoso
 
-Dado que el codigo 4321 esta cargado en el sistema
+`Dado` que el codigo 4321 esta cargado en el sistema
 
-Cuando el empleado ingresa 4321
+`Cuando` el empleado ingresa 4321
 
-Entonces el sistema imprime las fotos 
+`Entonces` el sistema imprime las fotos 
 
 ---
 
 **Escenario 1:** Retiro fallido por codigo inexistente
 
-Dado que el codigo 6353 no esta cargado en el sistema
+`Dado` que el codigo 6353 no esta cargado en el sistema
 
-Cuando el empleado ingresa 6353
+`Cuando` el empleado ingresa 6353
 
-Entonces el sistema informa que el codigo ingresado no existe en el sistema
+`Entonces` el sistema informa que el codigo ingresado no existe en el sistema
 
 </td></tr></table>
 
@@ -1405,9 +1405,9 @@ La bibliotecaria recibe libros por donaciones de los padres de los chicos que as
 
 Para que un alumno pueda asociarse debe presentar el DNI y certificado de alumno regular. Una vez asociado, se le otorga un carnet con su correspondiente número de socio.
 
-Los préstamos se realizan exclusivamente a socios habilitados, que no posean más de tres préstamos vigentes y no tengan préstamos vencidos. La bibliotecaria presta libros que se encuentren en buen estado. Cuando un libro se encuentra deteriorado ya no se presta.
+Los préstamos se realizan exclusivamente a socios habilitados, que no posean más de tres préstamos vigentes y no tengan préstamos vencidos. La bibliotecaria presta libros que se encuentren en buen estado. `Cuando` un libro se encuentra deteriorado ya no se presta.
 
-Cuando el socio retorna un libro se verifica si el préstamo se encuentra vencido. En este caso, la bibliotecaria suspende al socio, que por 15 días no podrá solicitar nuevos préstamos.
+`Cuando` el socio retorna un libro se verifica si el préstamo se encuentra vencido. En este caso, la bibliotecaria suspende al socio, que por 15 días no podrá solicitar nuevos préstamos.
 
 ![image](https://user-images.githubusercontent.com/55964635/232251137-9bbf9a21-f02d-4908-a670-8512253fcd11.png)
 
@@ -1445,11 +1445,11 @@ Cuando el socio retorna un libro se verifica si el préstamo se encuentra vencid
 
 **Escenario 1:** Donación exitosa
 
-Dado que el padre/madre dona un libro
+`Dado` que el padre/madre dona un libro
 
-Cuando la bibliotecaria ingresa los datos del ibro
+`Cuando` la bibliotecaria ingresa los datos del ibro
 
-Entonces el sistema registra el libro en el sistema
+`Entonces` el sistema registra el libro en el sistema
 
 </td></tr></table>
 
@@ -1471,21 +1471,21 @@ Entonces el sistema registra el libro en el sistema
 
 **Escenario 1:** Asociación exitosa
 
-Dado que es un alumno regular
+`Dado` que es un alumno regular
 
-Cuando el alumno ingresa 203200 y entrega el certificado de alumno regular
+`Cuando` el alumno ingresa 203200 y entrega el certificado de alumno regular
 
-Entonces el sistema asocia al alumno y le otorga un carnet con un nro de socio
+`Entonces` el sistema asocia al alumno y le otorga un carnet con un nro de socio
 
 ---
 
 **Escenario 1:** Asociación fallida por ser alumno irregular
 
-Dado que es un alumno irregular
+`Dado` que es un alumno irregular
 
-Cuando el alumno ingresa 12340 y no entrega el certificado de alumno regular
+`Cuando` el alumno ingresa 12340 y no entrega el certificado de alumno regular
 
-Entonces el sistema informa que no es alumno regular y no entrega el carnet
+`Entonces` el sistema informa que no es alumno regular y no entrega el carnet
 
 
 </td></tr></table>
@@ -1513,42 +1513,42 @@ Entonces el sistema informa que no es alumno regular y no entrega el carnet
 
 **Escenario 1:** Prestamo exitoso
 
-Dado que le socio 1 posee dos prestamos vigentes, no tiene prestamos vencidos y el libro "Harry Potter" esta en buen estado
+`Dado` que le socio 1 posee dos prestamos vigentes, no tiene prestamos vencidos y el libro "Harry Potter" esta en buen estado
 
-Cuando el socio presenta carnet y solicita el libro "Harry Potter"
+`Cuando` el socio presenta carnet y solicita el libro "Harry Potter"
 
-Entonces el sistema registra el prestamo en el sistema
+`Entonces` el sistema registra el prestamo en el sistema
 
 ---
 
 **Escenario 2:** Prestamo Fallido por poseer tres prestamos vigentes
 
-Dado que le socio 2 posee tres prestamos vigentes, no tiene prestamos vencidos y el libro "Pinocho" esta en buen estado
+`Dado` que le socio 2 posee tres prestamos vigentes, no tiene prestamos vencidos y el libro "Pinocho" esta en buen estado
 
-Cuando el socio presenta carnet y solicita el libro "Pinocho"
+`Cuando` el socio presenta carnet y solicita el libro "Pinocho"
 
-Entonces el sistema informa que el socio ya posee tres prestamos vigentes y no registra el prestamo
+`Entonces` el sistema informa que el socio ya posee tres prestamos vigentes y no registra el prestamo
 
 ---
 
 **Escenario 3:** Prestamos fallido por tener prestamos vendidos
 
-Dado que le socio 3 posee dos prestamos vigentes, tiene prestamos vencidos y el libro "Blanca nieves" esta en buen estado
+`Dado` que le socio 3 posee dos prestamos vigentes, tiene prestamos vencidos y el libro "Blanca nieves" esta en buen estado
 
-Cuando el socio presenta carnet y solicita el libro "Blanca nieves"
+`Cuando` el socio presenta carnet y solicita el libro "Blanca nieves"
 
-Entonces el sistema informa que el socio tiene prestamos vencidos y no registra el prestamo
+`Entonces` el sistema informa que el socio tiene prestamos vencidos y no registra el prestamo
 
 
 ---
 
 **Escenario 4:** Prestamo fallido por libro en mal estado
 
-Dado que le socio 1 posee dos prestamos vigentes, no tiene prestamos vencidos y el libro "Harry Potter" esta en buen estado
+`Dado` que le socio 1 posee dos prestamos vigentes, no tiene prestamos vencidos y el libro "Harry Potter" esta en buen estado
 
-Cuando el socio presenta carnet y solicita el libro "Harry Potter"
+`Cuando` el socio presenta carnet y solicita el libro "Harry Potter"
 
-Entonces el sistema informa que el libro solicitado esta en mal estado y no registra el prestamo
+`Entonces` el sistema informa que el libro solicitado esta en mal estado y no registra el prestamo
 
 </td></tr></table>
 
@@ -1572,21 +1572,21 @@ Entonces el sistema informa que el libro solicitado esta en mal estado y no regi
 
 **Escenario 1:** Retorno exitoso
 
-Dado que el prestamo no esta vencido
+`Dado` que el prestamo no esta vencido
 
-Cuando el socio devuelve el libro "Dragon Ball"
+`Cuando` el socio devuelve el libro "Dragon Ball"
 
-Entonces el sistema registra el retorno del libro
+`Entonces` el sistema registra el retorno del libro
 
 ---
 
 **Escenario 1:** Retorno exitoso con suspencion
 
-Dado que el prestamo esta vencido
+`Dado` que el prestamo esta vencido
 
-Cuando el socio devuelve el libro "Blanca nieves"
+`Cuando` el socio devuelve el libro "Blanca nieves"
 
-Entonces el sistema registra el retorno del libro y suspende al socio por 15 dias
+`Entonces` el sistema registra el retorno del libro y suspende al socio por 15 dias
 
 </td></tr></table>
 
@@ -1602,7 +1602,7 @@ Una mutual necesita automatizar el manejo de las prestaciones que ofrece a sus a
 
 Una persona puede afiliarse sólo si posee una tarjeta de crédito para que se pueda hacer el pago de la cuota mensual
 automáticamente. Una vez que la persona se ha afiliado, puede pasar a tener a cargo a su pareja e hijos (hasta 18 años,
-luego es dado de baja). A cada uno se le otorga un número de afiliado.
+luego es `dado` de baja). A cada uno se le otorga un número de afiliado.
 
 Las prestaciones que brinda, siempre y cuando esté asentado el pago del mes anterior al que es solicitado, son:
 
@@ -1650,31 +1650,31 @@ Las prestaciones que brinda, siempre y cuando esté asentado el pago del mes ant
 
 **Escenario 1:** Afiliación exitosa 
 
-Dado que la persona Fabian Martinez no es afiliado y pago con una tarjeta de credito valida
+`Dado` que la persona Fabian Martinez no es afiliado y pago con una tarjeta de credito valida
 
-Cuando la persona ingresa los datos de una tarjeta de credito valida
+`Cuando` la persona ingresa los datos de una tarjeta de credito valida
 
-Entonces el sistema registra al afiliado y pasa a tener a cargo a su pareja e hijos(hasta que cumplan 18 años) y a cada uno se le otorga un numero de afiliado
+`Entonces` el sistema registra al afiliado y pasa a tener a cargo a su pareja e hijos(hasta que cumplan 18 años) y a cada uno se le otorga un numero de afiliado
 
 ---
 
 **Escenario 2:** Afiliación fallida por persona ya afiliada 
 
-Dado que la persona Tomas Martinez es afiliado y pago con una tarjeta de credito valida
+`Dado` que la persona Tomas Martinez es afiliado y pago con una tarjeta de credito valida
 
-Cuando la persona ingresa los datos de una tarjeta de credito valida
+`Cuando` la persona ingresa los datos de una tarjeta de credito valida
 
-Entonces el sistema informa que la persona ya se encuentra registrada como afiliada
+`Entonces` el sistema informa que la persona ya se encuentra registrada como afiliada
 
 ---
 
 **Escenario 1:** Afiliación fallida por problemas con la tarjeta 
 
-Dado que la persona Camila Martinez no es afiliado y pago con una tarjeta de credito invalida
+`Dado` que la persona Camila Martinez no es afiliado y pago con una tarjeta de credito invalida
 
-Cuando la persona ingresa los datos de una tarjeta de credito invalida
+`Cuando` la persona ingresa los datos de una tarjeta de credito invalida
 
-Entonces el sistema informa que la tarjeta ingresada no es valida
+`Entonces` el sistema informa que la tarjeta ingresada no es valida
 
 ---
 
@@ -1698,41 +1698,41 @@ Entonces el sistema informa que la tarjeta ingresada no es valida
 
 **Escenario 1:** Pago exitoso
 
-Dado que se pudo establecer conexión con el servidor del banco, el nro de tarjeta 314 es valido y posee fondos suficientes 
+`Dado` que se pudo establecer conexión con el servidor del banco, el nro de tarjeta 314 es valido y posee fondos suficientes 
 
-Cuando la persona ingresa 314
+`Cuando` la persona ingresa 314
 
-Entonces El sistema registra el pago
+`Entonces` El sistema registra el pago
 
 ---
 
 **Escenario 2:** Pago fallido por falta de conexión con el servidor
 
-Dado que no se pudo establecer conexión con el servidor del banco
+`Dado` que no se pudo establecer conexión con el servidor del banco
 
-Cuando la persona quiere pagar
+`Cuando` la persona quiere pagar
 
-Entonces el sistema informa que no se pudo establecer conexión con el banco y no realiza el pago
+`Entonces` el sistema informa que no se pudo establecer conexión con el banco y no realiza el pago
 
 ---
 
 **Escenario 3:** Pago fallido por numero de tarjeta invalido
 
-Dado que se pudo establecer conexión con el servidor del banco, el nro de tarjeta 6565 es invalido
+`Dado` que se pudo establecer conexión con el servidor del banco, el nro de tarjeta 6565 es invalido
 
-Cuando la persona ingresa 6565
+`Cuando` la persona ingresa 6565
 
-Entonces el sistema informa que el nro de tarjeta es invalido y no realiza el pago
+`Entonces` el sistema informa que el nro de tarjeta es invalido y no realiza el pago
 
 ---
 
 **Escenario 4:** Pago fallido por fondos insuficientes
 
-Dado que se pudo establecer conexión con el servidor del banco, el nro de tarjeta 8788 es valido y no posee fondos suficientes 
+`Dado` que se pudo establecer conexión con el servidor del banco, el nro de tarjeta 8788 es valido y no posee fondos suficientes 
 
-Cuando la persona ingresa 8788
+`Cuando` la persona ingresa 8788
 
-Entonces el sistema informa que la tarjeta no tiene fondos suficientes y no realiza el pago
+`Entonces` el sistema informa que la tarjeta no tiene fondos suficientes y no realiza el pago
 
 
 </td></tr></table>
@@ -1759,51 +1759,51 @@ Entonces el sistema informa que la tarjeta no tiene fondos suficientes y no real
 
 **Escenario 1:** Solicitud exitosa
 
-Dado que el afiliado Manolo pago el mes anterior, es la primera vez que recibe el prestamo, tiene 30 años y presenta la historia clinica
+`Dado` que el afiliado Manolo pago el mes anterior, es la primera vez que recibe el prestamo, tiene 30 años y presenta la historia clinica
 
-Cuando el afiliado solicita Ortodoncia
+`Cuando` el afiliado solicita Ortodoncia
 
-Entonces el sistema registra un turno para el afiliado
+`Entonces` el sistema registra un turno para el afiliado
 
 ---
 
 **Escenario 2:** Solicitud fallida por falta de pago en el mes anterior
 
-Dado que el afiliado Tomas no pago el mes anterior, es la primera vez que recibe el prestamo, tiene 32 años y presenta la historia clinica
+`Dado` que el afiliado Tomas no pago el mes anterior, es la primera vez que recibe el prestamo, tiene 32 años y presenta la historia clinica
 
-Cuando el afiliado solicita Ortodoncia
+`Cuando` el afiliado solicita Ortodoncia
 
-Entonces el sistema informa que el afiliado no tiene asentado el pago del mes anterior
+`Entonces` el sistema informa que el afiliado no tiene asentado el pago del mes anterior
 
 ---
 
 **Escenario 3:** Solicitud fallida porque ya recibio la prestación
 
-Dado que el afiliado Scooby pago el mes anterior, no es la primera vez que recibe el prestamo, tiene 30 años y presenta la historia clinica
+`Dado` que el afiliado Scooby pago el mes anterior, no es la primera vez que recibe el prestamo, tiene 30 años y presenta la historia clinica
 
-Cuando el afiliado solicita Ortodoncia
+`Cuando` el afiliado solicita Ortodoncia
 
-Entonces el sistema informa que su prestamo en ortodoncia ya fue utilizado
+`Entonces` el sistema informa que su prestamo en ortodoncia ya fue utilizado
 
 ---
 
 **Escenario 4:** Solicitud fallida por no presentar historia clinica
 
-Dado que el afiliado Juan pago el mes anterior, es la primera vez que recibe el prestamo, tiene 5 años y dos meses de afiliado y presenta la historia clinica
+`Dado` que el afiliado Juan pago el mes anterior, es la primera vez que recibe el prestamo, tiene 5 años y dos meses de afiliado y presenta la historia clinica
 
-Cuando el afiliado solicita Ortodoncia
+`Cuando` el afiliado solicita Ortodoncia
 
-Entonces el sistema informa que el afiliado menor de 15 años debe tener como minimo 9 meses de afiliado
+`Entonces` el sistema informa que el afiliado menor de 15 años debe tener como minimo 9 meses de afiliado
 
 ---
 
 **Escenario 5:** Solicitud fallida por no presentar historia clinica
 
-Dado que el afiliado Sergio pago el mes anterior, es la primera vez que recibe el prestamo, tiene 30 años y no presenta la historia clinica
+`Dado` que el afiliado Sergio pago el mes anterior, es la primera vez que recibe el prestamo, tiene 30 años y no presenta la historia clinica
 
-Cuando el afiliado solicita Ortodoncia
+`Cuando` el afiliado solicita Ortodoncia
 
-Entonces el sistema informa que el afiliado debe presentar la historia clinica
+`Entonces` el sistema informa que el afiliado debe presentar la historia clinica
 
 
 </td></tr></table>
@@ -1831,51 +1831,51 @@ Entonces el sistema informa que el afiliado debe presentar la historia clinica
 
 **Escenario 1:** Solicitud exitosa
 
-Dado que el afiliado Juan tiene pago el mes anterior, lo solicito una vez en el año, presenta la indicación profecional y la facura del comercio
+`Dado` que el afiliado Juan tiene pago el mes anterior, lo solicito una vez en el año, presenta la indicación profecional y la facura del comercio
 
-Cuando el afiliado solicita Plantillas
+`Cuando` el afiliado solicita Plantillas
 
-Entonces el sistema registra un turno para el afiliado
+`Entonces` el sistema registra un turno para el afiliado
 
 ---
 
 **Escenario 2:** Solicitud fallida por falta de pago
 
-Dado que el afiliado Felipe no tiene pago el mes anterior, lo solicito una vez en el año, presenta la indicación profecional y la facura del comercio
+`Dado` que el afiliado Felipe no tiene pago el mes anterior, lo solicito una vez en el año, presenta la indicación profecional y la facura del comercio
 
-Cuando el afiliado solicita Plantillas
+`Cuando` el afiliado solicita Plantillas
 
-Entonces el sistema informa que no se efectuo el pago del mes anterior
+`Entonces` el sistema informa que no se efectuo el pago del mes anterior
 
 ---
 
 **Escenario 3:** Solicitud fallida por exceso de pedidos
 
-Dado que el afiliado Nicolas tiene pago el mes anterior, lo solicito dos veces en el año, presenta la indicación profecional y la facura del comercio
+`Dado` que el afiliado Nicolas tiene pago el mes anterior, lo solicito dos veces en el año, presenta la indicación profecional y la facura del comercio
 
-Cuando el afiliado solicita Plantillas
+`Cuando` el afiliado solicita Plantillas
 
-Entonces el sistema informa que el afiliado ya solicito Plantillas dos veces en el año
+`Entonces` el sistema informa que el afiliado ya solicito Plantillas dos veces en el año
 
 ---
 
 **Escenario 4:** Solicitud fallida por no presentar la indicación
 
-Dado que el afiliado Homero tiene pago el mes anterior, lo solicito una vez en el año, no presenta la indicación profecional y presento la facura del comercio
+`Dado` que el afiliado Homero tiene pago el mes anterior, lo solicito una vez en el año, no presenta la indicación profecional y presento la facura del comercio
 
-Cuando el afiliado solicita Plantillas
+`Cuando` el afiliado solicita Plantillas
 
-Entonces el sistema informa que el afiliado no presento la indicación profecional
+`Entonces` el sistema informa que el afiliado no presento la indicación profecional
 
 ---
 
 **Escenario 5:** Solicitud fallida por no tener la factura del comercio
 
-Dado que el afiliado Neimar tiene pago el mes anterior, lo solicito una vez en el año, presenta la indicación profecional y no tiene la facura del comercio
+`Dado` que el afiliado Neimar tiene pago el mes anterior, lo solicito una vez en el año, presenta la indicación profecional y no tiene la facura del comercio
 
-Cuando el afiliado solicita Plantillas
+`Cuando` el afiliado solicita Plantillas
 
-Entonces el sistema informa que el afiliado no tiene la factura del comercio
+`Entonces` el sistema informa que el afiliado no tiene la factura del comercio
 
 
 
@@ -1902,38 +1902,38 @@ Entonces el sistema informa que el afiliado no tiene la factura del comercio
 
 **Escenario 1:** Solicitud exitosa
 
-Dado que el afiliado Pepe tiene pago el mes anterior, tiene fecha de afiliacion de 4 meses y no solicito un par en los ultimo 18 meses
+`Dado` que el afiliado Pepe tiene pago el mes anterior, tiene fecha de afiliacion de 4 meses y no solicito un par en los ultimo 18 meses
 
-Cuando el afiliado solicita anteojos
+`Cuando` el afiliado solicita anteojos
 
-Entonces el sistema reserva un turno para el afiliado
+`Entonces` el sistema reserva un turno para el afiliado
 
 ---
 **Escenario 2:** Solicitud fallida por no tener pago el mes anterior
 
-Dado que el afiliado Manuel no tiene pago el mes anterior, tiene fecha de afiliacion de 4 meses y no solicito un par en los ultimo 18 meses
+`Dado` que el afiliado Manuel no tiene pago el mes anterior, tiene fecha de afiliacion de 4 meses y no solicito un par en los ultimo 18 meses
 
-Cuando el afiliado solicita anteojos
+`Cuando` el afiliado solicita anteojos
 
-Entonces el sistema informa que el afiliado no tiene pago el mes anterior
+`Entonces` el sistema informa que el afiliado no tiene pago el mes anterior
 
 ---
 **Escenario 3:** Solicitud fallida por tener fecha de afiliación menor a 3 meses
 
-Dado que el afiliado Roberto tiene pago el mes anterior, tiene fecha de afiliacion de 2 meses y no solicito un par en los ultimo 18 meses
+`Dado` que el afiliado Roberto tiene pago el mes anterior, tiene fecha de afiliacion de 2 meses y no solicito un par en los ultimo 18 meses
 
-Cuando el afiliado solicita anteojos
+`Cuando` el afiliado solicita anteojos
 
-Entonces el sistema informa que necesita minimo 3 meses de afiliacion para poder recibir el prestamo
+`Entonces` el sistema informa que necesita minimo 3 meses de afiliacion para poder recibir el prestamo
 
 ---
 **Escenario 3:** Solicitud fallida porque ya solicito un par en los ultimos 18 meses
 
-Dado que el afiliado Pepe tiene pago el mes anterior, tiene fecha de afiliacion de 4 meses y solicito un par en los ultimo 18 meses
+`Dado` que el afiliado Pepe tiene pago el mes anterior, tiene fecha de afiliacion de 4 meses y solicito un par en los ultimo 18 meses
 
-Cuando el afiliado solicita anteojos
+`Cuando` el afiliado solicita anteojos
 
-Entonces el sistema informa que el afiliado ya solicito un prestamo de anteojos en los ultimos 18 meses
+`Entonces` el sistema informa que el afiliado ya solicito un prestamo de anteojos en los ultimos 18 meses
 
 
 </td></tr></table>
@@ -1957,21 +1957,21 @@ Entonces el sistema informa que el afiliado ya solicito un prestamo de anteojos 
 
 **Escenario 1:** Solicitud exitosa
 
-Dado que el afiliado Cristian tiene pago el mes anterior
+`Dado` que el afiliado Cristian tiene pago el mes anterior
 
-Cuando el afiliado solicita el prestamo
+`Cuando` el afiliado solicita el prestamo
 
-Entonces el sistema reserva un turno para el afiliado
+`Entonces` el sistema reserva un turno para el afiliado
 
 ---
 
 **Escenario 2:** Solicitud fallida por no tener pago el mes anterior
 
-Dado que el afiliado Koki no tiene pago el mes anterior
+`Dado` que el afiliado Koki no tiene pago el mes anterior
 
-Cuando el afiliado solicita el prestamo
+`Cuando` el afiliado solicita el prestamo
 
-Entonces el sistema informa que no tiene pago el mes anterior
+`Entonces` el sistema informa que no tiene pago el mes anterior
 
 
 
@@ -1997,37 +1997,37 @@ Entonces el sistema informa que no tiene pago el mes anterior
 
 **Escenario 1:** Solicitud exitosa
 
-Dado que el afiliado Maradona tiene pago el mes anterior y solicito un par en el mes
+`Dado` que el afiliado Maradona tiene pago el mes anterior y solicito un par en el mes
 
-Cuando el afiliado solicita prestamo
+`Cuando` el afiliado solicita prestamo
 
-Entonces el sistema registra un turno para el afiliado
+`Entonces` el sistema registra un turno para el afiliado
 
 ---
 
 **Escenario 2:** Solicitud fallida por no tener pago el mes anterior
 
-Dado que el afiliado Jorge no tiene pago el mes anterior y solicito un par en el mes
+`Dado` que el afiliado Jorge no tiene pago el mes anterior y solicito un par en el mes
 
-Cuando el afiliado solicita prestamo
+``Cuando`` el afiliado solicita prestamo
 
-Entonces el sistema informa que el afiliado no tiene asentado el pago del mes anterior
-
----
-
-**Escenario 1:** Solicitud fallida por haber solicitado 2 pares en el ultimo mes
-
-Dado que el afiliado Luis tiene pago el mes anterior y solicito dos pares en el mes
-
-Cuando el afiliado solicita prestamo
-
-Entonces el sistema informa que el afiliado ya tiene dos pares solicitados en el ultimo mes
+``Entonces`` el sistema informa que el afiliado no tiene asentado el pago del mes anterior
 
 ---
+
+**Escenario 3:** Solicitud fallida por haber solicitado 2 pares en el ultimo mes
+
+``Dado`` que el afiliado Luis tiene pago el mes anterior y solicito dos pares en el mes
+
+``Cuando`` el afiliado solicita prestamo
+
+``Entonces`` el sistema informa que el afiliado ya tiene dos pares solicitados en el ultimo mes
+
+
 
 </td></tr></table>
 
----
+
 
 
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
@@ -2048,9 +2048,192 @@ Para comprar una entrada personalmente, el vendedor de la boletería solicita lo
 
 Para retirar las entradas reservadas previamente, el empleado solicita nombre y DNI del espectador, el sistema valida que la persona posea entradas reservadas, y que no estén caducas. El resto del procedimiento se realiza igual que la compra de entradas descriptas anteriormente.
 
-Cuando una persona llega con el código de compra, el vendedor debe ingresar el código para que el sistema, luego de verificarlo, imprima las entradas correspondientes.
+`Cuando` una persona llega con el código de compra, el vendedor debe ingresar el código para que el sistema, luego de verificarlo, imprima las entradas correspondientes.
 
 Además se desea administrar la programación de las salas. El administrador ingresa la distribución semanal de las obras en las salas de manera que se encuentre disponible para la realización de la venta de entradas
+
+---
+
+### Roles
+
+- Empleado
+- Espectador
+- Vendedor de boleteria
+- Administrador
+
+### Historia de usuarios
+- Reservar entrada Presencial
+- Pagar con tarjeta
+- Comprar entrada Online
+- Comprar entrada Presencial
+- Retirar entrada
+- Administrar Programación de la sala
+
+
+---
+
+### Reservar entrada Presencial
+
+<table><tr><td> 
+
+**ID:** Reservar entrada Presencial
+ 
+**TÍTULO:** 
+
+**REGLAS DE NEGOCIO:** Reservar entrada Presencial
+
+</td></tr><tr><td>
+
+**CRITERIOS DE ACEPTACIÓN:** 
+
+**Escenario 1:** título del criterio.
+
+``Dado`` 
+
+``Cuando`` 
+
+``Entonces`` 
+
+---
+
+</td></tr></table>
+
+---
+
+### Pagar con tarjeta
+<table><tr><td> 
+
+**ID:** Pagar con tarjeta
+ 
+**TÍTULO:** 
+
+**REGLAS DE NEGOCIO:** 
+
+</td></tr><tr><td>
+
+**CRITERIOS DE ACEPTACIÓN:** Pagar con tarjeta
+
+**Escenario 1:** título del criterio.
+
+``Dado`` 
+
+``Cuando`` 
+
+``Entonces`` 
+
+---
+
+</td></tr></table>
+
+---
+
+
+### Comprar entrada Online
+<table><tr><td> 
+
+**ID:** Comprar entrada Online
+ 
+**TÍTULO:** 
+
+**REGLAS DE NEGOCIO:** 
+
+</td></tr><tr><td>
+
+**CRITERIOS DE ACEPTACIÓN:** Comprar entrada Online
+
+**Escenario 1:** título del criterio.
+
+`Dado` 
+
+`Cuando` 
+
+`Entonces` 
+
+---
+
+</td></tr></table>
+
+---
+
+### Comprar entrada Presencial
+<table><tr><td> 
+
+**ID:** Comprar entrada Presencial
+ 
+**TÍTULO:** 
+
+**REGLAS DE NEGOCIO:** 
+
+</td></tr><tr><td>
+
+**CRITERIOS DE ACEPTACIÓN:** Comprar entrada Presencial
+
+**Escenario 1:** título del criterio.
+
+`Dado` 
+
+`Cuando` 
+
+`Entonces` 
+
+---
+
+</td></tr></table>
+
+---
+
+### Retirar entrada
+<table><tr><td> 
+
+**ID:** Retirar entrada
+
+**TÍTULO:** 
+
+**REGLAS DE NEGOCIO:** 
+
+</td></tr><tr><td>
+
+**CRITERIOS DE ACEPTACIÓN:** Retirar entrada
+
+**Escenario 1:** título del criterio.
+
+`Dado` 
+
+`Cuando` 
+
+`Entonces` 
+
+---
+
+</td></tr></table>
+
+---
+
+### Administrar Programación de la sala
+<table><tr><td> 
+
+**ID:** Administrar Programación de la sala
+ 
+**TÍTULO:** 
+
+**REGLAS DE NEGOCIO:** 
+
+</td></tr><tr><td>
+
+**CRITERIOS DE ACEPTACIÓN:** Administrar Programación de la sala
+
+**Escenario 1:** título del criterio.
+
+`Dado` 
+
+`Cuando` 
+
+`Entonces` 
+
+---
+
+</td></tr></table>
+
 
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
@@ -2062,17 +2245,17 @@ Además se desea administrar la programación de las salas. El administrador ing
 
 Se desea modelar un sistema de pago electrónico de impuestos y servicios en efectivo.
 
-Cuando un cliente llega para realizar un pago, el empleado o el gerente de la sucursal ingresa el código de pago
+`Cuando` un cliente llega para realizar un pago, el empleado o el gerente de la sucursal ingresa el código de pago
 electrónico y el sistema se conecta con la central de cobro para recuperar los datos de la factura (empresa, nro de
 cliente, 1era fecha de vencimiento, 2da fecha de vencimiento, recargo, y monto original). Una vez recuperados los datos,
 el sistema debe verificar los vencimientos para determinar el monto a cobrar. Teniendo esto en cuenta, cuando el 2do
-vencimiento está vencido se debe informar que la factura no se puede cobrar por dicho motivo. Cuando el 1er
+vencimiento está vencido se debe informar que la factura no se puede cobrar por dicho motivo. `Cuando` el 1er
 vencimiento está vencido hay que aplicar el recargo al monto original. Si la factura no está vencida, se cobra el monto
 original.
 
 Una vez al día, el gerente de la sucursal debe registrar en la central de cobros los pagos que hicieron los clientes.
 Para esto el sistema requiere la clave maestra y de ser correcta, recupera las transacciones de los impuestos y servicios
-cobrados en el día, se conecta a la central de cobro y se las envía. Cuando la central confirma la recepción exitosa, el
+cobrados en el día, se conecta a la central de cobro y se las envía. `Cuando` la central confirma la recepción exitosa, el
 sistema las registra como enviadas. Este último paso es importante porque no deben enviarse dos veces las
 transacciones. Si el gerente intenta enviar una segunda vez, el sistema no debe permitirlo.
 
@@ -2112,7 +2295,7 @@ Suponga que el área para la cual trabaja fue contactada para implementar un sis
 
 El docente que quiera inscribirse a un concurso deberá registrarse previamente en el sistema. Para esto deberá ingresar los siguientes datos: Dni, nombre, apellido y dirección de mail. Una vez completado los datos el sistema mandará a la casilla de correo ingresada la contraseña asignada automáticamente. El mail debe ser único y será utilizado como nombre de usuario. Según el estatuto de la UNLP los dni permitidos para concursar son aquellos menores a 55 millones y mayores a 12 millones.
 
-Una vez registrado el docente puede inscribirse al concurso, para lo cual, una vez que haya ingresado al sistema, deberá seleccionar la materia a la cual desea inscribirse. Según el reglamento interno de la Facultad de informática que nos facilitó el jefe del área de personal, el docente no podrá inscribirse a más de 3 concursos. Cuando el docente acepta la inscripción el sistema deberá imprimir un comprobante.
+Una vez registrado el docente puede inscribirse al concurso, para lo cual, una vez que haya ingresado al sistema, deberá seleccionar la materia a la cual desea inscribirse. Según el reglamento interno de la Facultad de informática que nos facilitó el jefe del área de personal, el docente no podrá inscribirse a más de 3 concursos. `Cuando` el docente acepta la inscripción el sistema deberá imprimir un comprobante.
 
 Por último, para cumplir con la ordenanza número 123/19 de la UNLP, el jefe del área de concursos, el cual ya cuenta con un nombre de usuario y contraseña, deberá poder imprimir un listado con los inscriptos a una materia determinada para poder enviar dicho listado al secretario administrativo quien lo firma y eleva al decano de la Facultad. Suponga que el sistema Siu-Guarani realiza una tarea similar a la solicitada y que puede consultar su implementación y registros.
 
@@ -2146,7 +2329,7 @@ Para poder comprar los libros se necesita un usuario registrado. El proceso de r
 
 Una vez registrado, para autenticarse, el sistema requiere el correo del usuario y la clave de 6 caracteres.
 
-Para realizar la compra de un libro el sistema pide ingresar el ISBN del mismo y muestra al usuario la portada con una descripción del libro y la opción “Comprar”. Cuando el usuario selecciona “Comprar” se le pide los datos de la tarjeta:
+Para realizar la compra de un libro el sistema pide ingresar el ISBN del mismo y muestra al usuario la portada con una descripción del libro y la opción “Comprar”. `Cuando` el usuario selecciona “Comprar” se le pide los datos de la tarjeta:
 
 Apellido, Nombre, Nro de tarjeta. Es importante tener en cuenta que por disposición del Banco Central solo el titular de la tarjeta puede realizar la compra, por lo que el nombre y apellido registrado debe coincidir con el de la tarjeta. Realizada esta verificación se procede a enviar los datos al servidor de la tarjeta para realizar el cobro. Si todo es correcto
 se genera un enlace de descarga al correo del usuario
@@ -2161,7 +2344,7 @@ se genera un enlace de descarga al correo del usuario
 
 La gerencia del banco donde trabajamos nos pide realizar un subsistema para el manejo de las tarjetas de crédito SIVA. El sistema podrá ser operado únicamente por el personal de área comercial y por el gerente de la sucursal. En ambos casos las funcionalidades solo serán habilitadas con autenticación previa.
 
-El registro del personal en el sistema no es necesario implementarlo, ya que las credenciales son obtenidas del sistema central del banco. Entonces, para autenticarse, el usuario debe ingresar sus credenciales (las mismas que usa para otros servicios del banco) y estas son corroboradas por el sistema del banco central (al cual nos comunicamos por intranet), enviándonos un token de autenticación válido en caso de ser correctas. 
+El registro del personal en el sistema no es necesario implementarlo, ya que las credenciales son obtenidas del sistema central del banco. `Entonces`, para autenticarse, el usuario debe ingresar sus credenciales (las mismas que usa para otros servicios del banco) y estas son corroboradas por el sistema del banco central (al cual nos comunicamos por intranet), enviándonos un token de autenticación válido en caso de ser correctas. 
 
 Una vez autenticado, todo el personal debe poder dar de alta una nueva tarjeta y dar de baja una existente. Para dar de alta se requiere nombre completo, DNI y CUIT del titular. Luego, se debe seleccionar un tipo de tarjeta (Básica o Gold). Para dar de alta la tarjeta la persona debe ser cliente del banco y no podrá darse de alta una tarjeta si la persona es morosa en el sistema SIVA (externo al banco). Para esto, nuestro sistema debe comunicarse con el SIVA y verificar la morosidad de la persona con el DNI. En el mismo momento, el sistema SIVA nos dará un número de tarjeta nuevo.
 
