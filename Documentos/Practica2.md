@@ -2048,7 +2048,7 @@ Para comprar una entrada personalmente, el vendedor de la boletería solicita lo
 
 Para retirar las entradas reservadas previamente, el empleado solicita nombre y DNI del espectador, el sistema valida que la persona posea entradas reservadas, y que no estén caducas. El resto del procedimiento se realiza igual que la compra de entradas descriptas anteriormente.
 
-`Cuando` una persona llega con el código de compra, el vendedor debe ingresar el código para que el sistema, luego de verificarlo, imprima las entradas correspondientes.
+Cuando una persona llega con el código de compra, el vendedor debe ingresar el código para que el sistema, luego de verificarlo, imprima las entradas correspondientes.
 
 Además se desea administrar la programación de las salas. El administrador ingresa la distribución semanal de las obras en las salas de manera que se encuentre disponible para la realización de la venta de entradas
 
@@ -2056,12 +2056,12 @@ Además se desea administrar la programación de las salas. El administrador ing
 
 ### Roles
 
-- Empleado
-- Espectador
+- Empleado/Espectador/usuario
 - Vendedor de boleteria
 - Administrador
 
 ### Historia de usuarios
+- Seleccionar obra
 - Reservar entrada Presencial
 - Pagar con tarjeta
 - Comprar entrada Online
@@ -2069,6 +2069,43 @@ Además se desea administrar la programación de las salas. El administrador ing
 - Retirar entrada
 - Administrar Programación de la sala
 
+No se en donde meter que `las entradas caducan 3 horas antes del evento`
+
+---
+
+### Seleccionar Obra
+<table><tr><td> 
+
+**ID:** Seleccionar Obra
+ 
+**TÍTULO:** Como persona quiero seleccionar una obra para que el empleado me pueda reservar una entrada
+
+**REGLAS DE NEGOCIO:** 
+
+</td></tr><tr><td>
+
+**CRITERIOS DE ACEPTACIÓN:** Seleccionar Obra
+
+**Escenario 1:** Seleccion Exitosa
+
+`Dado` que la persona selecciona la pelicula "King Kong" y hay funciones disponibles
+
+`Cuando` el empleado ingresa "King Kong"
+
+`Entonces` el sistema muestra una lista de funciones disponibles 
+
+---
+
+**Escenario 2:** Seleccion fallida por falta de funciones
+
+`Dado` que la persona selecciona la pelicula "Duro de Matar" y no hay funciones disponibles
+
+`Cuando` el empleado ingresa "Duro de Matar"
+
+`Entonces` el sistema informa que hay funciones disponibles para esa pelicula
+
+
+</td></tr></table>
 
 ---
 
@@ -2078,23 +2115,79 @@ Además se desea administrar la programación de las salas. El administrador ing
 
 **ID:** Reservar entrada Presencial
  
-**TÍTULO:** 
+**TÍTULO:** como empleado quiero reservarle una entrada al espectador para que pueda ver la pelicula
 
-**REGLAS DE NEGOCIO:** Reservar entrada Presencial
+**REGLAS DE NEGOCIO:** 
+- Solo se reservan dos entradas por persona
+- No se reservan las entradas 3 horas antes del evento
 
 </td></tr><tr><td>
 
-**CRITERIOS DE ACEPTACIÓN:** 
+**CRITERIOS DE ACEPTACIÓN:** Reservar entrada Presencial
 
-**Escenario 1:** título del criterio.
+**Escenario 1:** Reserva exitosa
 
-``Dado`` 
+`Dado` que la persona Manolo tiene una entrada reservada y la reserva es dos dias antes del evento
 
-``Cuando`` 
+`Cuando` el empleado ingresa 1-1-2001, 14:00, King Kong, Manolo, 12345
 
-``Entonces`` 
+`Entonces` El sistema realiza la reserva de la entrada
 
 ---
+**Escenario 2:** Reserva fallida porque el usuario ya reservo dos entradas
+
+`Dado` que la persona Quico tiene dos entradas reservadas y la reserva es dos dias antes del evento
+
+`Cuando` el empleado ingresa 12-12-2012, 11:00, Harry Potter, Quico, 312312
+
+`Entonces` el sistema informa que la persona ya tiene 2 entradas reservadas
+
+---
+
+**Escenario 3:** Reserva fallida porque el usuario reserva la entrada 1 hora antes del evento
+
+`Dado` que la persona Bils no tiene entradas reservadas y la reserva es 1 (una) hora antes del evento
+
+`Cuando` el empleado ingresa 31-11-2021, 16:00, Dragon Ball, Bils, 66666
+
+`Entonces` el sistema informa que no se pueden reservar entradas 3 horas antes del evento.
+
+</td></tr></table>
+
+---
+
+### Comprar entrada Online
+<table><tr><td> 
+
+**ID:** Comprar entrada Online
+ 
+**TÍTULO:** Como usuario quiero comprar una entrada online para ver una pelicula
+
+**REGLAS DE NEGOCIO:** 
+- El pago se realiza con tarjeta de credito
+
+</td></tr><tr><td>
+
+**CRITERIOS DE ACEPTACIÓN:** Comprar entrada Online
+
+**Escenario 1:** Compra de entrada exitosa
+
+`Dado` que el usuario Fabian posee una tarjeta de credito valida
+
+`Cuando` el usuario selecciona una opcion, 10101, 20 , ingresa los datos de una tarjeta de credito valida y selecciona la opcion pagar
+
+`Entonces` el sistema registra el pago y emite un codigo de compra para retirar las entradas en el cine
+
+---
+
+**Escenario 2:** Compra de entrada fallida por tarjeta invalida
+
+`Dado` que el usuario Tomas no posee una tarjeta de credito valida
+
+`Cuando` el usuario selecciona una opcion, 22222, 40, ingresa los datos de una tarjeta de credito invalida y selecciona la opcion pagar
+
+`Entonces` el sistema informa que la tarjeta ingresada es invalida
+
 
 </td></tr></table>
 
@@ -2105,7 +2198,7 @@ Además se desea administrar la programación de las salas. El administrador ing
 
 **ID:** Pagar con tarjeta
  
-**TÍTULO:** 
+**TÍTULO:** como persona quiero pagar con tarjeta para poder retirar mi entrada
 
 **REGLAS DE NEGOCIO:** 
 
@@ -2113,45 +2206,59 @@ Además se desea administrar la programación de las salas. El administrador ing
 
 **CRITERIOS DE ACEPTACIÓN:** Pagar con tarjeta
 
-**Escenario 1:** título del criterio.
+**Escenario 1:** Paga exitosa
 
-``Dado`` 
+`Dado` que la conexión con el banco es exitosa, el nro de tarjeta 312 es valida , la tarjeta posee fondos suficientes y vencimiento el 20-2-2060
 
-``Cuando`` 
+`Cuando` la persona ingresa 312, 20-2-2060, 1
 
-``Entonces`` 
+`Entonces` Re registra el pago
+
+---
+
+**Escenario 2:** Paga fallida por falta de conexión con el servidor del banco
+
+`Dado` que la conexión con el banco es exitosa, el nro de tarjeta 312 es valida , la tarjeta posee fondos suficientes y vencimiento el 20-2-2060
+
+`Cuando` la persona ingresa 312, 20-2-2060, 1
+
+`Entonces` Re registra el pago
+
+---
+
+**Escenario 3:** Paga fallida por nro de tarjeta invalido
+
+`Dado` que la conexión con el banco es exitosa, el nro de tarjeta 312 es valida , la tarjeta posee fondos suficientes y vencimiento el 20-2-2060
+
+`Cuando` la persona ingresa 312, 20-2-2060, 1
+
+`Entonces` Re registra el pago
+
+---
+
+**Escenario 4:** Paga fallida por no poseer fondos suficientes
+
+`Dado` que la conexión con el banco es exitosa, el nro de tarjeta 312 es valida , la tarjeta posee fondos suficientes y vencimiento el 20-2-2060
+
+`Cuando` la persona ingresa 312, 20-2-2060, 1
+
+`Entonces` Re registra el pago
+
+---
+
+**Escenario 5:** Paga fallida por tarjeta vencida
+
+`Dado` que la conexión con el banco es exitosa, el nro de tarjeta 312 es valida , la tarjeta posee fondos suficientes y vencimiento el 20-2-2060
+
+`Cuando` la persona ingresa 312, 20-2-2060, 1
+
+`Entonces` Re registra el pago
 
 ---
 
 </td></tr></table>
 
----
 
-
-### Comprar entrada Online
-<table><tr><td> 
-
-**ID:** Comprar entrada Online
- 
-**TÍTULO:** 
-
-**REGLAS DE NEGOCIO:** 
-
-</td></tr><tr><td>
-
-**CRITERIOS DE ACEPTACIÓN:** Comprar entrada Online
-
-**Escenario 1:** título del criterio.
-
-`Dado` 
-
-`Cuando` 
-
-`Entonces` 
-
----
-
-</td></tr></table>
 
 ---
 
