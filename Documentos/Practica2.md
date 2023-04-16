@@ -1983,23 +1983,45 @@ Entonces el sistema informa que no tiene pago el mes anterior
 
 <table><tr><td> 
 
-**ID:** 
+**ID:** Solicitar Consultas medicas
  
-**TÍTULO:** 
+**TÍTULO:** Como afiliado quiero solicitar consultas medicas para poder hacerme un chequeo
 
 **REGLAS DE NEGOCIO:** 
+- Tener pago el mes anterior
+- Hasta 2 por mes
 
 </td></tr><tr><td>
 
 **CRITERIOS DE ACEPTACIÓN:** 
 
-**Escenario 1:** título del criterio.
+**Escenario 1:** Solicitud exitosa
 
-Dado 
+Dado que el afiliado Maradona tiene pago el mes anterior y solicito un par en el mes
 
-Cuando 
+Cuando el afiliado solicita prestamo
 
-Entonces 
+Entonces el sistema registra un turno para el afiliado
+
+---
+
+**Escenario 2:** Solicitud fallida por no tener pago el mes anterior
+
+Dado que el afiliado Jorge no tiene pago el mes anterior y solicito un par en el mes
+
+Cuando el afiliado solicita prestamo
+
+Entonces el sistema informa que el afiliado no tiene asentado el pago del mes anterior
+
+---
+
+**Escenario 1:** Solicitud fallida por haber solicitado 2 pares en el ultimo mes
+
+Dado que el afiliado Luis tiene pago el mes anterior y solicito dos pares en el mes
+
+Cuando el afiliado solicita prestamo
+
+Entonces el sistema informa que el afiliado ya tiene dos pares solicitados en el ultimo mes
 
 ---
 
