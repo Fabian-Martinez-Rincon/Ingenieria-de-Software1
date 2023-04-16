@@ -2208,51 +2208,51 @@ No se en donde meter que `las entradas caducan 3 horas antes del evento`
 
 **Escenario 1:** Paga exitosa
 
-`Dado` que la conexión con el banco es exitosa, el nro de tarjeta 312 es valida , la tarjeta posee fondos suficientes y vencimiento el 20-2-2060
+`Dado` que la conexión con el banco es exitosa, el nro de tarjeta 312 es valida , la tarjeta posee fondos suficientes y fecha de vencimiento el el 20-2-2060
 
 `Cuando` la persona ingresa 312, 20-2-2060, 1
 
-`Entonces` Re registra el pago
+`Entonces` El sistema registra el pago
 
 ---
 
 **Escenario 2:** Paga fallida por falta de conexión con el servidor del banco
 
-`Dado` que la conexión con el banco es exitosa, el nro de tarjeta 312 es valida , la tarjeta posee fondos suficientes y vencimiento el 20-2-2060
+`Dado` que la conexión con el banco no es exitosa
 
-`Cuando` la persona ingresa 312, 20-2-2060, 1
+`Cuando` la persona intenta pagar
 
-`Entonces` Re registra el pago
+`Entonces` El sistema informa que no se pudo establecer conexión con el servidor del banco
 
 ---
 
 **Escenario 3:** Paga fallida por nro de tarjeta invalido
 
-`Dado` que la conexión con el banco es exitosa, el nro de tarjeta 312 es valida , la tarjeta posee fondos suficientes y vencimiento el 20-2-2060
+`Dado` que la conexión con el banco es exitosa, el nro de tarjeta 222 es invalida
 
-`Cuando` la persona ingresa 312, 20-2-2060, 1
+`Cuando` la persona ingresa 222, 25-12-2060, 4
 
-`Entonces` Re registra el pago
+`Entonces` El sistema informa que el nro de tarjeta es invalido y no registra el pago
 
 ---
 
 **Escenario 4:** Paga fallida por no poseer fondos suficientes
 
-`Dado` que la conexión con el banco es exitosa, el nro de tarjeta 312 es valida , la tarjeta posee fondos suficientes y vencimiento el 20-2-2060
+`Dado` que la conexión con el banco es exitosa, el nro de tarjeta 444 es valida , la tarjeta no posee fondos suficientes y fecha de vencimiento el 20-2-2160
 
-`Cuando` la persona ingresa 312, 20-2-2060, 1
+`Cuando` la persona ingresa 444, 20-2-2160, 7
 
-`Entonces` Re registra el pago
+`Entonces` El sistema informa que la tarjeta no posee fondos suficientes y no registra el pago
 
 ---
 
 **Escenario 5:** Paga fallida por tarjeta vencida
 
-`Dado` que la conexión con el banco es exitosa, el nro de tarjeta 312 es valida , la tarjeta posee fondos suficientes y vencimiento el 20-2-2060
+`Dado` que la conexión con el banco es exitosa, el nro de tarjeta 555 es valida , la tarjeta posee fondos suficientes y vencimiento el 06-4-2065
 
-`Cuando` la persona ingresa 312, 20-2-2060, 1
+`Cuando` la persona ingresa 555, 06-4-2065, 9
 
-`Entonces` Re registra el pago
+`Entonces` El sistema informa que la tarjeta se encuentra vencida y no registra el pago
 
 ---
 
