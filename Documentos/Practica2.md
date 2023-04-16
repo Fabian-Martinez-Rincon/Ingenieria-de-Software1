@@ -2267,9 +2267,10 @@ No se en donde meter que `las entradas caducan 3 horas antes del evento`
 
 **ID:** Comprar entrada Presencial
  
-**TÍTULO:** 
+**TÍTULO:** Como persona quiero comprar una entrada presencial para poder ver una pelicula
 
 **REGLAS DE NEGOCIO:** 
+- El pago se realiza con una tarjeta de credito
 
 </td></tr><tr><td>
 
@@ -2277,13 +2278,21 @@ No se en donde meter que `las entradas caducan 3 horas antes del evento`
 
 **Escenario 1:** Compra de entrada exitosa
 
-`Dado` 
+`Dado` que el usuario Riquelme posee una tarjeta de credito valida
 
-`Cuando` 
+`Cuando` el usuario selecciona una opcion, 99919, 11 e ingresa los datos de una tarjeta de credito valida
 
-`Entonces` 
+`Entonces` el sistema registra el pago e imprime las entradas
 
 ---
+
+**Escenario 2:** Compra de entrada fallida por tarjeta invalida
+
+`Dado` que el usuario Pele no posee una tarjeta de credito valida
+
+`Cuando` el usuario selecciona una opcion, 5432, 4 e ingresa los datos de una tarjeta de credito invalida
+`Entonces` el sistema informa que la tarjeta ingresada es invalida
+
 
 </td></tr></table>
 
