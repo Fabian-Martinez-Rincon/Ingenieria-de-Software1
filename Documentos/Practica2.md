@@ -2275,7 +2275,7 @@ No se en donde meter que `las entradas caducan 3 horas antes del evento`
 
 **CRITERIOS DE ACEPTACIÓN:** Comprar entrada Presencial
 
-**Escenario 1:** título del criterio.
+**Escenario 1:** Compra de entrada exitosa
 
 `Dado` 
 
