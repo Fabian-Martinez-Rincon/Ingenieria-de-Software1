@@ -1814,25 +1814,70 @@ Entonces el sistema informa que el afiliado debe presentar la historia clinica
 
 <table><tr><td> 
 
-**ID:** 
+**ID:** Solicitar Plantillas
  
-**TÍTULO:** 
+**TÍTULO:** Como afiliado quiero solicitar plantillas para un chequeo
 
 **REGLAS DE NEGOCIO:** 
+- Tener pago el mes anterior
+- Reciben como maximo 2 por año
+- Presentar indicación profecional
+- Presentar factura del comercio
+
 
 </td></tr><tr><td>
 
-**CRITERIOS DE ACEPTACIÓN:** 
+**CRITERIOS DE ACEPTACIÓN:** Solicitar Plantillas
 
-**Escenario 1:** título del criterio.
+**Escenario 1:** Solicitud exitosa
 
-Dado 
+Dado que el afiliado Juan tiene pago el mes anterior, lo solicito una vez en el año, presenta la indicación profecional y la facura del comercio
 
-Cuando 
+Cuando el afiliado solicita Plantillas
 
-Entonces 
+Entonces el sistema registra un turno para el afiliado
 
 ---
+
+**Escenario 2:** Solicitud fallida por falta de pago
+
+Dado que el afiliado Felipe no tiene pago el mes anterior, lo solicito una vez en el año, presenta la indicación profecional y la facura del comercio
+
+Cuando el afiliado solicita Plantillas
+
+Entonces el sistema informa que no se efectuo el pago del mes anterior
+
+---
+
+**Escenario 3:** Solicitud fallida por exceso de pedidos
+
+Dado que el afiliado Nicolas tiene pago el mes anterior, lo solicito dos veces en el año, presenta la indicación profecional y la facura del comercio
+
+Cuando el afiliado solicita Plantillas
+
+Entonces el sistema informa que el afiliado ya solicito Plantillas dos veces en el año
+
+---
+
+**Escenario 4:** Solicitud fallida por no presentar la indicación
+
+Dado que el afiliado Homero tiene pago el mes anterior, lo solicito una vez en el año, no presenta la indicación profecional y presento la facura del comercio
+
+Cuando el afiliado solicita Plantillas
+
+Entonces el sistema informa que el afiliado no presento la indicación profecional
+
+---
+
+**Escenario 5:** Solicitud fallida por no tener la factura del comercio
+
+Dado que el afiliado Neimar tiene pago el mes anterior, lo solicito una vez en el año, presenta la indicación profecional y no tiene la facura del comercio
+
+Cuando el afiliado solicita Plantillas
+
+Entonces el sistema informa que el afiliado no tiene la factura del comercio
+
+
 
 </td></tr></table>
 
@@ -1842,25 +1887,54 @@ Entonces
 
 <table><tr><td> 
 
-**ID:** 
+**ID:** Solicitar Anteojos
  
-**TÍTULO:** 
+**TÍTULO:** Como afiliado quiero solicitar anteojos para poder ver mejor
 
-**REGLAS DE NEGOCIO:** 
+**REGLAS DE NEGOCIO:**
+- Tener pago el mes anterior
+- Fecha de afiliación superior a 3 meses
+- Un par cada 18 meses
 
 </td></tr><tr><td>
 
 **CRITERIOS DE ACEPTACIÓN:** 
 
-**Escenario 1:** título del criterio.
+**Escenario 1:** Solicitud exitosa
 
-Dado 
+Dado que el afiliado Pepe tiene pago el mes anterior, tiene fecha de afiliacion de 4 meses y no solicito un par en los ultimo 18 meses
 
-Cuando 
+Cuando el afiliado solicita anteojos
 
-Entonces 
+Entonces el sistema reserva un turno para el afiliado
 
 ---
+**Escenario 2:** Solicitud fallida por no tener pago el mes anterior
+
+Dado que el afiliado Manuel no tiene pago el mes anterior, tiene fecha de afiliacion de 4 meses y no solicito un par en los ultimo 18 meses
+
+Cuando el afiliado solicita anteojos
+
+Entonces el sistema informa que el afiliado no tiene pago el mes anterior
+
+---
+**Escenario 3:** Solicitud fallida por tener fecha de afiliación menor a 3 meses
+
+Dado que el afiliado Roberto tiene pago el mes anterior, tiene fecha de afiliacion de 2 meses y no solicito un par en los ultimo 18 meses
+
+Cuando el afiliado solicita anteojos
+
+Entonces el sistema informa que necesita minimo 3 meses de afiliacion para poder recibir el prestamo
+
+---
+**Escenario 3:** Solicitud fallida porque ya solicito un par en los ultimos 18 meses
+
+Dado que el afiliado Pepe tiene pago el mes anterior, tiene fecha de afiliacion de 4 meses y solicito un par en los ultimo 18 meses
+
+Cuando el afiliado solicita anteojos
+
+Entonces el sistema informa que el afiliado ya solicito un prestamo de anteojos en los ultimos 18 meses
+
 
 </td></tr></table>
 
