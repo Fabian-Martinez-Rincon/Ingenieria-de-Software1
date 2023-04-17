@@ -2066,7 +2066,8 @@ Además se desea administrar la programación de las salas. El administrador ing
 - Pagar con tarjeta
 - Comprar entrada Online
 - Comprar entrada Presencial
-- Retirar entrada
+- Retirar entrada reservada
+- Retirar entrada con codigo
 - Administrar Programación de la sala
 
 No se en donde meter que `las entradas caducan 3 horas antes del evento`
@@ -2291,6 +2292,7 @@ No se en donde meter que `las entradas caducan 3 horas antes del evento`
 `Dado` que el usuario Pele no posee una tarjeta de credito valida
 
 `Cuando` el usuario selecciona una opcion, 5432, 4 e ingresa los datos de una tarjeta de credito invalida
+
 `Entonces` el sistema informa que la tarjeta ingresada es invalida
 
 
@@ -2298,26 +2300,68 @@ No se en donde meter que `las entradas caducan 3 horas antes del evento`
 
 ---
 
-### Retirar entrada
+### Retirar entrada 
 <table><tr><td> 
 
-**ID:** Retirar entrada
+**ID:** Retirar entrada 
 
-**TÍTULO:** 
+**TÍTULO:** como persona quiero retirar mi entrada para poder ir a mirar la pelicula
 
 **REGLAS DE NEGOCIO:** 
+- Posee al menos una entrada
+- Entrada no caducada
 
 </td></tr><tr><td>
 
-**CRITERIOS DE ACEPTACIÓN:** Retirar entrada
+**CRITERIOS DE ACEPTACIÓN:** Retirar entrada 
 
-**Escenario 1:** título del criterio.
+**Escenario 1:** Retiro de entrada reservada exitosa
 
-`Dado` 
+`Dado` que la persona Giorgio tiene 3 entradas de las cuales ninguna esta caducada y presenta el codigo 7777 valido
 
-`Cuando` 
+`Cuando` la persona ingresa Giorgio, 29139, 7777
 
-`Entonces` 
+`Entonces` El sistema imprime las entradas correspondientes
+
+---
+
+**Escenario 2:** Retiro de entrada sin codigo exitosa
+
+`Dado` que la persona Vegeta tiene 3 entradas de las cuales ninguna esta caducada y no presenta el codigo
+
+`Cuando` la persona ingresa Vegeta, 99885
+
+`Entonces` El sistema imprime las entradas correspondientes
+
+---
+
+**Escenario 3:** Retiro fallido por no tener entradas
+
+`Dado` que la persona ElRubius no tiene entradas
+
+`Cuando` la persona ingresa ElRubius, 019192
+
+`Entonces` El sistema informa que la persona no tiene entradas reservadas
+
+---
+
+**Escenario 4:** Retiro de entrada reservada exitosa
+
+`Dado` que la persona Leo tiene 2 entradas de las cuales todas estan caducadas y presenta el codigo 6666 valido
+
+`Cuando` la persona ingresa Leo, 12341, 6666
+
+`Entonces` El sistema informa que las entradas se encuentran caducadas
+
+---
+
+**Escenario 5:** Retiro por codigo invalido
+
+`Dado` que la persona Auron tiene 3 entradas de las cuales ninguna esta caducada y presenta el codigo 123111 invalido
+
+`Cuando` la persona ingresa Auron, 3919239, 123111
+
+`Entonces` El sistema informa que el codigo ingresado es invalido
 
 ---
 
@@ -2326,27 +2370,39 @@ No se en donde meter que `las entradas caducan 3 horas antes del evento`
 ---
 
 ### Administrar Programación de la sala
+
 <table><tr><td> 
 
 **ID:** Administrar Programación de la sala
  
-**TÍTULO:** 
+**TÍTULO:** Como administrador quiero administrar la programación de la sala para cumplir con mi trabajo
 
 **REGLAS DE NEGOCIO:** 
+
+En la fallida, se me ocurrio que el administrador no tenga la distribución (porque no se vendieron entradas, etc)
 
 </td></tr><tr><td>
 
 **CRITERIOS DE ACEPTACIÓN:** Administrar Programación de la sala
 
-**Escenario 1:** título del criterio.
+**Escenario 1:** Administración exitosa
 
-`Dado` 
+`Dado` que el administrador tiene una distribución semanal
 
-`Cuando` 
+`Cuando` el administrador ingresa la distribución semanal
 
-`Entonces` 
+`Entonces` El sistema carga la administración semanal de las salas para la venta de entradas
 
 ---
+
+**Escenario 2:** Administración fallida por falta de distribución
+
+`Dado` que el administrador no tiene una distribución semanal
+
+`Cuando` el administrador quiere actualizar la distribución semanal
+
+`Entonces` El sistema no actualiza la distribución semanal
+
 
 </td></tr></table>
 
@@ -2361,11 +2417,11 @@ No se en donde meter que `las entradas caducan 3 horas antes del evento`
 
 Se desea modelar un sistema de pago electrónico de impuestos y servicios en efectivo.
 
-`Cuando` un cliente llega para realizar un pago, el empleado o el gerente de la sucursal ingresa el código de pago
+Cuando un cliente llega para realizar un pago, el empleado o el gerente de la sucursal ingresa el código de pago
 electrónico y el sistema se conecta con la central de cobro para recuperar los datos de la factura (empresa, nro de
 cliente, 1era fecha de vencimiento, 2da fecha de vencimiento, recargo, y monto original). Una vez recuperados los datos,
 el sistema debe verificar los vencimientos para determinar el monto a cobrar. Teniendo esto en cuenta, cuando el 2do
-vencimiento está vencido se debe informar que la factura no se puede cobrar por dicho motivo. `Cuando` el 1er
+vencimiento está vencido se debe informar que la factura no se puede cobrar por dicho motivo. Cuando el 1er
 vencimiento está vencido hay que aplicar el recargo al monto original. Si la factura no está vencida, se cobra el monto
 original.
 
@@ -2382,6 +2438,10 @@ cantidad de cobros realizados, agrupando por empresa.
 Tenga en cuenta que cada vez que el sistema debe conectarse a la central, debe enviarle un token (código que
 identifica al sistema). Una vez que la central valida el token, el sistema envía el requerimiento para recuperar los datos de
 la factura o el requerimiento para registrar los pagos del día según corresponda
+
+`La verdad es que este enunciado es horrible, de momento no lo pienso hacer`
+
+
 
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
