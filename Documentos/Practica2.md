@@ -2474,6 +2474,8 @@ En el sistema existe una política de reputaciones que permiten a los usuarios c
 - Alta viaje
 - Postularse a un viaje
 
+De este ejercicio tengo bastantes dudas la verdad
+
 ---
 
 ### Registrar Persona
@@ -2529,15 +2531,33 @@ En el sistema existe una política de reputaciones que permiten a los usuarios c
 
 **CRITERIOS DE ACEPTACIÓN:** Alta viaje
 
-**Escenario 1:** Alta de viaje exitosa
+**Escenario 1:** Alta de viaje exitoso
 
-`Dado` 
+`Dado` que el usuario fabo19 con un viaje el 01-01-2001 a las 19:00 no se superpone y no adeuda clasificaciones
 
-`Cuando` 
+`Cuando` el usuario ingresa 01-01-2001, 19:00, Camioneta
 
-`Entonces` 
+`Entonces` el sistema da de alta el viaje
 
 ---
+
+**Escenario 2:** Alta de viaje fallida por superposición
+
+`Dado` que el usuario giorgio69 con un viaje el 11-11-2011 a las 11:00 se superpone y no adeuda clasificaciones
+
+`Cuando` el usuario ingresa 11-11-2011, 11:00, Remis
+
+`Entonces` el sistema informa que el viaje se superpone con otra fecha
+
+---
+
+**Escenario 3:** Alta de viaje fallida por adeudar clasificaciones
+
+`Dado` que el usuario rubiusOMG con un viaje el 07-07-2007 a las 17:00 no se superpone y adeuda clasificaciones
+
+`Cuando` el usuario ingresa 07-07-2007, 17:00, Avion
+
+`Entonces` el sistema informa que el usuario adeuda clasificaciones 
 
 </td></tr></table>
 
@@ -2547,9 +2567,9 @@ En el sistema existe una política de reputaciones que permiten a los usuarios c
 
 <table><tr><td> 
 
-**ID:** 
+**ID:** Postularse a un viaje
  
-**TÍTULO:** 
+**TÍTULO:** Como usuario identificado quiero postularme a un viaje para hacer compañia 
 
 **REGLAS DE NEGOCIO:** 
 
@@ -2557,13 +2577,13 @@ En el sistema existe una política de reputaciones que permiten a los usuarios c
 
 **CRITERIOS DE ACEPTACIÓN:** 
 
-**Escenario 1:** título del criterio.
+**Escenario 1:** Postulación exitosa
 
-`Dado` 
+`Dado` que el usuario tiene una sesión abierta
 
-`Cuando` 
+`Cuando` se postula a un viaje
 
-`Entonces` 
+`Entonces` el sistema registra al postulado y lo notifica
 
 ---
 
