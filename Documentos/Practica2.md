@@ -2052,6 +2052,8 @@ Cuando una persona llega con el código de compra, el vendedor debe ingresar el 
 
 Además se desea administrar la programación de las salas. El administrador ingresa la distribución semanal de las obras en las salas de manera que se encuentre disponible para la realización de la venta de entradas
 
+![image](https://user-images.githubusercontent.com/55964635/232352219-2261f020-e05f-4ab6-9c10-570f306113c1.png)
+
 ---
 
 ### Roles
@@ -2458,6 +2460,115 @@ Para utilizar el sistema, una persona debe registrarse y estar correctamente ide
 Cualquier usuario identificado podrá postularse a un viaje. Luego, el usuario dueño del viaje podrá aceptar o rechazar los candidatos para que realicen el viaje con él.
 
 En el sistema existe una política de reputaciones que permiten a los usuarios conocer la opinión del resto sobre los viajes realizados. Luego de terminado un viaje, tanto el piloto como los copilotos que viajaron deberán calificarse entre sí. El piloto califica a todos sus copilotos. Cada copiloto califica al piloto del viaje. Las calificaciones podrán ser positivas (suma un punto de reputación) o negativas (restan un punto de reputación)
+
+---
+
+### Roles
+- Persona (Usuario no registrado)
+- Usuario
+- Chofer
+
+
+### Historias de Usuario
+- Registrar persona
+- Alta viaje
+- Postularse a un viaje
+
+---
+
+### Registrar Persona
+
+<table><tr><td> 
+
+**ID:** Registrar persona
+ 
+**TÍTULO:** Como persona quiero registrarme para poder subir viajes
+
+**REGLAS DE NEGOCIO:** 
+- Correo electronico unico
+
+</td></tr><tr><td>
+
+**CRITERIOS DE ACEPTACIÓN:** Registrar persona
+
+**Escenario 1:** Registro exitoso
+
+`Dado` que el mail fabo@gmail.com es unico
+
+`Cuando` la persona ingresa fabo19, fabo@gmail.com, cocacola10
+
+`Entonces` el sistema registra a la persona 
+
+---
+
+**Escenario 2:** Registro fallido
+
+`Dado` que el mail messi@gmail.com no es unico
+
+`Cuando` la persona ingresa messi, messi@gmail.com, messi10
+
+`Entonces` el sistema informa que la persona ya se encuentra registrada
+
+</td></tr></table>
+
+---
+
+### Alta viaje
+
+<table><tr><td> 
+
+**ID:** Alta viaje
+ 
+**TÍTULO:** Como usuario autenticado quiero dar alta un viaje para salir con mis amigos
+
+**REGLAS DE NEGOCIO:** 
+- No se superpone con otro viaje
+- Adeuda clasificaciones
+
+</td></tr><tr><td>
+
+**CRITERIOS DE ACEPTACIÓN:** Alta viaje
+
+**Escenario 1:** Alta de viaje exitosa
+
+`Dado` 
+
+`Cuando` 
+
+`Entonces` 
+
+---
+
+</td></tr></table>
+
+---
+
+### Postularse a un viaje
+
+<table><tr><td> 
+
+**ID:** 
+ 
+**TÍTULO:** 
+
+**REGLAS DE NEGOCIO:** 
+
+</td></tr><tr><td>
+
+**CRITERIOS DE ACEPTACIÓN:** 
+
+**Escenario 1:** título del criterio.
+
+`Dado` 
+
+`Cuando` 
+
+`Entonces` 
+
+---
+
+</td></tr></table>
+
 
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
