@@ -422,3 +422,105 @@ El analista se convierte en observador de las personas y actividades con el obje
 ---
 
 ### Entrevistas
+
+- Técnica de exploración mediante la cual el analista de sistemas recolecta información de las personas a través de la interacción cara a cara
+- Es una conversación con un propósito especifico, que se basa en un formato de preguntas y respuestas en general
+- Conocer opiniones y sentimientos del entrevistado
+- **Ventajas**
+    - El entrevistado se siente incluido en el proyecto
+    - Es posible obtener una retroalimentación del encuestado
+    - Es posible adaptar las preguntas de acuerdo al entrevistado
+    - Información no verbal
+        - Observando las acciones y expresiones del entrevistado
+- **Desventaja**
+    - Costosas
+        - Tiempo y recursos humanos
+    - Las entrevistas dependen en gran parte de las habilidades del entrevistador
+    - No aplicable a distancia
+---
+
+#### Tipos de Entrevistas
+
+- **Estructuradas (Cerradas)**
+    - El encuestador tiene un conjunto específico de preguntas para hacérselas al entrevistado
+    - Se dirige al usuario sobre un requerimiento puntual
+    - No permite adquirir un amplio conocimiento del dominio
+- **No estructuradas (Abiertas)**
+    - El encuestador lleva a un tema en general
+    - Sin preparación de preguntas específicas
+    - Iniciar con preguntas que no dependen del contexto, para conocer el problema, la gente involucrada, etc
+
+![](2023-04-19-13-30-34.png)
+
+---
+
+#### Tipos de Preguntas
+
+#### `Abiertas`
+- Permite al encuestado responder de cualquier manera
+- ¿Qué opinión tiene del sistema actual?
+- ¿Cómo describe su trabajo?
+- `Ventajas`
+    - Revelan nueva línea de preguntas
+    - Hacen más interesante la entrevista
+    - Permiten espontaneidad
+- `Desventajas`
+    - Pueden dar muchos detalles irrelevantes
+    - Se puede perder el control de la entrevista
+    - Parece que el entrevistador no tiene los objetivos claros
+
+#### `Cerradas`
+- Las respuestas son directas, cortas o de selección específica
+- ¿Quién recibe este informe?
+- ¿Cuántas personas utilizan el sistema?
+- `Ventajas`
+    - Ahorran tiempo
+    - Se mantiene más fácil el control de la entrevista
+    - Se consiguen datos relevantes
+- `Desventajas`
+    - Pueden aburrir al encuestado
+    - No se obtienen detalles
+
+#### `Sondeo`
+- Permite obtener más detalle sobre un tema puntual
+- ¿Podría dar detalles sobre…?
+- ¿Podría dar un ejemplo de…?
+
+---
+
+### Cómo conducir una entrevista
+
+- Selección del entrevistado
+    - Según el requerimiento a analizar
+    - Conocer sus fortalezas, prejuicios y motivaciones
+        - Armar la entrevista en base a las características de la persona
+    - Hacer una cita (no llegar sin avisar)
+    - Respetar el horario de trabajo
+    - Establecer la duración de la entrevista
+        - Cuanto mayor es el cargo del entrevistado menor tiempo se debe utilizar
+    - Obtener el permiso del supervisor o jefe
+    - La entrevista es personal y debe realizarse en un lugar privado
+- Preparación de la entrevista
+    - Informar al entrevistado el tema a tratar antes de la reunión
+    - Definir un “Guión de Entrevista”
+    - Se deben evitar preguntas sesgadas o con intención, amenazantes o críticas
+    - Usar lenguaje claro y conciso
+    - No incluir opinión como parte de la pregunta
+    - Evitar realizar preguntas largas y complejas 
+
+---
+
+### Prepraración Previa
+
+- `1)` Leer los antecedentes. Poner atención en el lenguaje.
+    - Buscar un vocabulario en común. Imprescindible para poder entender al entrevistado.
+- `2)` Establecer los objetivos de la entrevista.
+- Usando los antecedentes. Los directivos suelen proporcionar una visión general, mientras que los futuros usuarios una mas detallada.
+- `3)` Seleccionar los entrevistados.
+    - Se debe minimizar el numero de entrevistas
+    - Los entrevistados deben conocer con antelación el objetivo de la entrevista y las preguntas que se le van a hacer.
+- `4)` Planificación de la entrevista y preparación del entrevistado.
+    - Establecer fecha, hora, lugar y duración de cada entrevista de acuerdo con el entrevistado.
+- `5)` Selección del tipo de preguntas a usar y su estructura
+
+---
