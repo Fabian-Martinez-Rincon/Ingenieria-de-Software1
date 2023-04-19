@@ -38,8 +38,8 @@ Es el conjunto de los programas de cómputo, procedimientos, reglas, documentaci
 ---
 
 #### Tipos de Productos de Software
-- `Genericos`: Sistemas aislados producidos por organizaciones desarrolladoras de software y que se venden en un mercado abierto.
-- `Personalizados`: Sistemas requeridos por un cliente en particular. Desarrollados por la propia organización interesada o un contratista.
+- `Genericos` Sistemas aislados producidos por organizaciones desarrolladoras de software y que se venden en un mercado abierto.
+- `Personalizados` Sistemas requeridos por un cliente en particular. Desarrollados por la propia organización interesada o un contratista.
 
 ---
 
@@ -79,21 +79,27 @@ Es el conjunto de los programas de cómputo, procedimientos, reglas, documentaci
 
 Disciplina de la ingeniería que comprende todos los aspectos de la producción de software desde las etapas iniciales de la especificación del sistema incluyendo la evolución de éste luego que se comienza a ejecutar.
 
-Disciplina de la ingeniería
-- Hace que las cosas funcionen.
-- Se aplican teorías, métodos y herramientas.
-
-Todos los aspectos de la producción de software
+- `Disciplina de la ingeniería`
+    - Hace que las cosas funcionen.
+    - Se aplican teorías, métodos y herramientas.
+- `Todos los aspectos de la producción de software`
 - No sólo comprende los procesos técnicos del desarrollo de software, sino también se realizan actividades como la gestión de proyectos y el desarrollo de herramientas, métodos y teorías de apoyo a la producción de software
+- `La IEEE define a la Ingeniería de Software como`
+    - El uso de métodos sistemáticos, disciplinados y cuantificables para el desarrollo, operación y mantenimiento de software
+    - El estudio de técnicas relacionadas con lo anterior
+- `Richard Fairley propone`
+    - La Ingeniería de Software es la disciplina tecnológica y de administración que se ocupa de la producción y evolución sistemática de productos de software que son desarrollados y modificados dentro de los tiempos y costos estimados
+- `Usa métodos sistemáticos “Cuantificables”`
+    - La cuantificación rigurosa de recursos, procesos y productos es una precondición para optimizar productividad y calidad. La “metrificación” y el control estadístico de procesos son claves en Ingeniería de Software
+- `“Dentro de tiempos y costos estimados”`
+    - Un Ingeniero de Software debe cumplir contratos en tiempo y costos como es normal en obras de Ingeniería. Ello presupone la capacidad de medir, estimar, planificar y administrar proyectos
+- `Para el “Desarrollo, operación y mantenimiento”`
+    - La Ingeniería de Software se ocupa de todo el ciclo de vida de un producto, desde su etapa inicial de planificación y análisis de requerimientos hasta la estrategia para determinar cuándo y cómo debe ser retirado de servicio
+- La Ingeniería de Software surgió como reacción a las dificultades de desarrollar software sobre la base de habilidad, experiencia o intuición individuales
+- La aplicación de “métodos sistemáticos” y repetibles permite la producción y evolución de software por organizaciones distribuidas geográficamente y en el tiempo.
+- La aplicación de estándares facilita la integración, reusabilidad mantenimiento de los productos
+- Es una “Disciplina tecnológica y de administración” 
 
-La IEEE define a la Ingeniería de Software como
-
-- El uso de métodos sistemáticos, disciplinados y cuantificables para el desarrollo, operación y mantenimiento de software
-- El estudio de técnicas relacionadas con lo anterior
-
-Richard Fairley propone
-
-- La Ingeniería de Software es la disciplina tecnológica y de administración que se ocupa de la producción y evolución sistemática de productos de software que son desarrollados y modificados dentro de los tiempos y costos estimados
 
 ---
 
