@@ -31,6 +31,16 @@
     - [Puntos de Vista](#puntos-de-vista)
 - [Elicitación de Requerimientos](#elicitación-de-requerimientos)
     - [Técnicas de elicitación](#técnicas-de-elicitación)
+    - [Muestreo de la documentación, las formas y los datos existentes](#muestreo-de-la-documentación-las-formas-y-los-datos-existentes)
+    - [Investigación y visitas al sitio](#investigación-y-visitas-al-sitio)
+    - [Observación del ambiente de trabajo](#observación-del-ambiente-de-trabajo)
+    - [Cuestionarios](#cuestionarios)
+        - [Tipos de Cuestionario](#tipos-de-cuestionario)
+        - [Tipo de información obtenida](#tipo-de-información-obtenida)
+        - [Cuándo usar Cuestionarios](#cuándo-usar-cuestionarios)
+        - [Diseño de un Cuestionario](#diseño-de-un-cuestionario)
+        - [Procedimiento para el desarrollo](#procedimiento-para-el-desarrollo)
+        - [Redacción de un Cuestionario](#redacción-de-un-cuestionario)
 
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
@@ -341,72 +351,81 @@ El analista se convierte en observador de las personas y actividades con el obje
     - No se pueden aclarar respuestas incompletas
     - Difíciles de preparar
 
-Tipos de Cuestionario
-- Formato libre (Abiertos)
-    - Diseñado para ofrecer al encuestado más flexibilidad en la respuesta
-    - ¿Qué reportes recibe actualmente?
-    - ¿Hay problemas con los reportes?
-- Formato fijo (Cerrados)
-    - Requieren la selección de una respuesta entre respuestas posibles predefinidas
-    - ¿Es útil el reporte que utiliza actualmente? SI NO
+---
+
+#### Tipos de Cuestionario
+**Formato libre (Abiertos)**
+- Diseñado para ofrecer al encuestado más flexibilidad en la respuesta
+- ¿Qué reportes recibe actualmente?
+- ¿Hay problemas con los reportes?
+
+**Formato fijo (Cerrados)**
+- Requieren la selección de una respuesta entre respuestas posibles predefinidas
+- ¿Es útil el reporte que utiliza actualmente? SI NO
 
 ![](2023-04-19-12-47-00.png)
 
-- Tipo de información obtenida
-    - `Actitud`
-        - Lo que las personas dicen que quieren
-    - `Creencias`
-        - Lo que las personas creen que es verdad
-    - `Comportamiento`
-        - Lo que realmente hacen
-    - `Características`
-        - De las personas o cosas
-- Cuándo usar Cuestionarios
-    - Las personas están dispersas
-        - Diferentes oficinas o ciudades
-    - Muchas de personas involucradas
-        - Clientes o usuarios
-    - Queremos obtener opiniones generales
-    - Queremos identificar problemas generales
-- Diseño de un Cuestionario
-    - Los buenos cuestionarios son difíciles de desarrollar
-- Procedimiento para el desarrollo
-    - `1)` Determinar qué hechos, opiniones y de quién, quieren recolectarse
-    - `2)` Determinar qué tipo de preguntas dan mejores resultados a los hechos buscados
-    - `3)` Escribir las preguntas y examinarlas en cuanto a errores o malas interpretaciones. No proveer un sesgo personal en la pregunta.
-    - `4)` Ensayar en una pequeña muestra de encuestados
-    - `5)` Duplicar y distribuir el cuestionario
-- Redacción de un Cuestionario
-    - Claridad
-        - La redacción del cuestionario debe ser autocontenida y precisa
-    - Flujo
-        - Debe haber un hilo conductor entre las preguntas
-    - Vocabulario
-        - Usar el lenguaje de los encuestados
-    - Redacción sencilla
-        - Evitar preguntas muy específicas
-    - Preguntas breves
-        - No subestimar a las personas a realizar el cuestionario. Tenemos que asumir que el empleado sabe lo que hace
-    - Evitar la parcialidad
-        - No incluir tendencias a una respuesta
-    - Evitar preguntas ofensivas
-        - Si el encuestado se siente ofendido, posiblemente no responda de forma correcta
-    - Dirigir las preguntas a los encuestados que las pueden responder
-        - El cuestionario debe ser preparado para el grupo de personas que lo van a responder
-        - No usar un Cuestionario genérico para todos
-- Diseño de un Cuestionario
-    - Deje espacio en blanco
-        - El cuestionario debe estar bien distribuido
-    - Espacio suficiente para responder
-        - No es lo mismo el espacio para responder los años de antigüedad, que para la descripción de su tarea
-    - Facilitar el marcado de las respuestas
-        - Cuando se trata de opciones se debe poder indicar de forma clara la opción seleccionada
-        - Utilizar escalas Nominales (Selección de opciones) o Intervalos (1…5)
-    - Mantener el estilo
-        - Es importante la apariencia del cuestionario
-    - Orden de las preguntas
-        - Primero las pregunta importantes para los encuestados
-    - Agrupar por contenido similar
-        - Uso de tendencias asociativas
-    - Plantear primero temas menos controvertidos
+---
 
+#### Tipo de información obtenida
+
+- `Actitud`
+    - Lo que las personas dicen que quieren
+- `Creencias`
+    - Lo que las personas creen que es verdad
+- `Comportamiento`
+    - Lo que realmente hacen
+- `Características`
+    - De las personas o cosas
+
+---
+
+#### Cuándo usar Cuestionarios
+- Las personas están dispersas
+    - Diferentes oficinas o ciudades
+- Muchas de personas involucradas
+    - Clientes o usuarios
+- Queremos obtener opiniones generales
+- Queremos identificar problemas generales
+
+---
+
+#### Diseño de un Cuestionario
+- Los buenos cuestionarios son difíciles de desarrollar
+- Deje espacio en blanco
+    - El cuestionario debe estar bien distribuido
+- Espacio suficiente para responder
+    - No es lo mismo el espacio para responder los años de antigüedad, que para la descripción de su tarea
+- Facilitar el marcado de las respuestas
+    - Cuando se trata de opciones se debe poder indicar de forma clara la opción seleccionada
+    - Utilizar escalas Nominales (Selección de opciones) o Intervalos (1…5)
+- Mantener el estilo
+    - Es importante la apariencia del cuestionario
+- Orden de las preguntas
+    - Primero las pregunta importantes para los encuestados
+- Agrupar por contenido similar
+    - Uso de tendencias asociativas
+- Plantear primero temas menos controvertidos
+
+---
+
+#### Procedimiento para el desarrollo
+- `1)` Determinar qué hechos, opiniones y de quién, quieren recolectarse
+- `2)` Determinar qué tipo de preguntas dan mejores resultados a los hechos buscados
+- `3)` Escribir las preguntas y examinarlas en cuanto a errores o malas interpretaciones. No proveer un sesgo personal en la pregunta.
+- `4)` Ensayar en una pequeña muestra de encuestados
+- `5)` Duplicar y distribuir el cuestionario
+
+---
+
+#### Redacción de un Cuestionario
+- `Claridad` La redacción del cuestionario debe ser autocontenida y precisa
+- `Flujo` Debe haber un hilo conductor entre las preguntas
+- `Vocabulario` Usar el lenguaje de los encuestados
+- `Redacción sencilla` Evitar preguntas muy específicas
+- `Preguntas breves` No subestimar a las personas a realizar el cuestionario. Tenemos que asumir que el empleado sabe lo que hace
+- `Evitar la parcialidad` No incluir tendencias a una respuesta
+- `Evitar preguntas ofensivas` Si el encuestado se siente ofendido, posiblemente no responda de forma correcta
+- `Dirigir las preguntas a los encuestados que las pueden responder`
+    - El cuestionario debe ser preparado para el grupo de personas que lo van a responder
+    - No usar un Cuestionario genérico para todos
