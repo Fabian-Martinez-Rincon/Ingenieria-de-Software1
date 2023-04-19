@@ -42,6 +42,14 @@
         - [Procedimiento para el desarrollo](#procedimiento-para-el-desarrollo)
         - [Redacción de un Cuestionario](#redacción-de-un-cuestionario)
     - [Entrevistas](#entrevistas)
+        - [Tipos de Entrevistas](#tipos-de-preguntas)
+        - [Tipos de Preguntas](#tipos-de-preguntas)
+        - [Como conducir una entrevista](#cómo-conducir-una-entrevista)
+        - [Preparación Previa](#prepraración-previa)
+        - [Conducción de la entrevista](#conducción-de-la-entrevista)
+    - [Planeación conjunta de requerimiento](#planeación-conjunta-de-requerimiento-jrp)
+    - [Lluvia de Ideas](#lluvia-de-ideas)
+
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
 <div align='center'>
@@ -488,7 +496,7 @@ El analista se convierte en observador de las personas y actividades con el obje
 
 ---
 
-### Cómo conducir una entrevista
+#### Cómo conducir una entrevista
 
 - Selección del entrevistado
     - Según el requerimiento a analizar
@@ -510,7 +518,7 @@ El analista se convierte en observador de las personas y actividades con el obje
 
 ---
 
-### Prepraración Previa
+#### Prepraración Previa
 
 - `1)` Leer los antecedentes. Poner atención en el lenguaje.
     - Buscar un vocabulario en común. Imprescindible para poder entender al entrevistado.
@@ -522,5 +530,109 @@ El analista se convierte en observador de las personas y actividades con el obje
 - `4)` Planificación de la entrevista y preparación del entrevistado.
     - Establecer fecha, hora, lugar y duración de cada entrevista de acuerdo con el entrevistado.
 - `5)` Selección del tipo de preguntas a usar y su estructura
+
+---
+
+### Conducción de la entrevista
+- Respete el horario y los tiempos definidos
+- Si es en una sala de reunión llegue antes para asegurar las condiciones de la misma
+- Inicie la entrevista saludando, presentándose y agradeciendo la atención
+- Mencione el propósito de la misma y la duración
+- Escuche con atención y observe al entrevistado, tome nota de las respuestas verbales y no verbales
+- Concluya la entrevista expresando su agradecimiento
+- Haga una breve conclusión de la entrevista para ganar la confianza del entrevistado
+- `Debe`
+    - Vestirse adecuadamente
+    - Ser cortés
+    - Escuchar cuidadosamente
+    - Mantener el control
+    - Observar los gestos
+    - Ser paciente
+    - Mantener al entrevistado en calma
+    - Mantener el autocontrol
+    - Terminar a tiempo
+- `Evite`
+    - Suponer que una respuesta no lleva a ningún lado
+    - Revelar pistas
+    - Usar jerga
+    - Revelar sesgos personales
+    - Hablar en lugar de escuchar
+    - Suponer cualquier cosa acerca del tema o del entrevistado
+    - Uso de grabadores (señal de debilidad de escuchar)
+- `Seguimiento de la entrevista`
+    - Enviar al entrevistado un resumen de la entrevista, permitiendo aclarar cualquier cosa que no se haya entendido durante la entrevista
+- `Cómo escuchar`
+    - Saber escuchar es la parte más importante del proceso de una entrevista
+    - Se debe diferenciar entre oír y escuchar 
+    - Llegue con actitud positiva
+        - Mejora el canal de comunicación
+    - Haga que la otra persona se tranquilice
+        - Romper el hielo con cuestiones cotidianas
+    - Haga ver que esta escuchado lo que dice
+        - Mantener el contacto visual, asentir con la cabeza, emitir comentarios
+    - Haga preguntas sobre lo que dice
+        - El entrevistado siente que le presta atención y puede ampliar su respuesta
+    - No haga suposiciones
+        - Escuche todo lo que el entrevistado tiene que explicar
+    - Tome nota
+        - El entrevistado percibe que está siendo escuchado
+- `El lenguaje corporal`
+    - Información no verbal que comunicamos
+        - La mayor parte de la información se expresa a través de las expresiones corporales
+        - Las más importantes son:
+            - Expresiones faciales
+            - Contacto visual
+            - Postura
+
+---
+
+#### Planeación conjunta de requerimiento (JRP)
+
+Proceso mediante el cual se conducen reuniones de grupo altamente estructurados con el propósito de analizar problemas y definir requerimientos
+- Requiere de extenso entrenamiento
+- Reduce el tiempo de exploración de requisitos
+- Amplia participación de los integrantes
+- Se trabaja sobre lo que se va generando
+- Alguna bibliografía la menciona como JAD (Joint Application Design)
+- **Ventajas**
+    - Ahorro de tiempo
+    - Usuarios involucrados
+    - Desarrollos creativos
+- **Desventajas**
+    - Es difícil organizar los horarios de los involucrados
+    - Es complejo encontrar un grupo de participantes integrados y organizados
+- `Participantes de JRP`
+    - `Patrocinador` Miembro de la dirección con autoridad sobre los departamentos que participan, es el responsable del proyecto, toma las decisiones finales
+    - `Facilitador` Dirige las sesiones y tiene amplias habilidades de comunicación y negociación
+    - `Usuarios y Gerentes` Los usuarios comunican los requerimientos y los gerentes los aprueban
+    - `Secretarios` Llevan el registro de la sesión y van publicando los resultados realizados con herramientas CASE
+    - `Equipos de TI` Escuchan y toman nota de los requerimientos
+- Cómo planear las sesiones de JRP
+    - `1)` Selección de una ubicación para las sesiones de JRP
+    - `2)` Selección de los participantes
+    - `3)` Preparar la agenda
+- Beneficios del JRP
+    - `1)` JRP involucra activamente a los usuarios y la gerencia en el proyecto de desarrollo
+    - `2)` JRP reduce el tiempo de la etapa de requerimientos
+    - `3)` Si se incorporan prototipos, los mismos ya confirman el diseño del sistema
+---
+
+#### Lluvia de Ideas
+- Técnica para generar ideas al alentar a los participantes para que ofrezcan tantas ideas como sea posible en un corto tiempo sin ningún análisis hasta que se hayan agotado las ideas.
+- Se promueve el desarrollo de ideas creativas para obtener soluciones.
+- Se realizan reuniones del equipo involucrado en la resolución del problema, conducidas por un director.
+- Los principios en que se basa esta técnica son:
+    - “Cuantas más ideas se sugieren, mejores resultados se conseguirán”.
+    - La producción de ideas en grupos puede ser más efectiva que la individual.
+    - Las ideas de una persona pueden hacer que aparezcan otras por “contagio”.
+    - A veces las mejores ideas aparecen tarde.
+    - Es mejor elegir sobre una variedad de soluciones.
+- Incluye una serie de fases de aplicación:
+    - Descubrir hechos, Producir ideas, Descubrir soluciones
+- Clave para resolver la falta de consenso entre usuarios
+- Es útil combinarlo con la toma de decisiones
+- Ayuda a entender el dominio del problema
+- Encara la dificultad del usuario para transmitir
+- Ayuda a entender: al usuario y al analista
 
 ---
