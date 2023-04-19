@@ -369,22 +369,16 @@ El analista se convierte en observador de las personas y actividades con el obje
 
 #### Tipo de información obtenida
 
-- `Actitud`
-    - Lo que las personas dicen que quieren
-- `Creencias`
-    - Lo que las personas creen que es verdad
-- `Comportamiento`
-    - Lo que realmente hacen
-- `Características`
-    - De las personas o cosas
+- `Actitud` Lo que las personas dicen que quieren
+- `Creencias` Lo que las personas creen que es verdad
+- `Comportamiento` Lo que realmente hacen
+- `Características` De las personas o cosas
 
 ---
 
 #### Cuándo usar Cuestionarios
-- Las personas están dispersas
-    - Diferentes oficinas o ciudades
-- Muchas de personas involucradas
-    - Clientes o usuarios
+- `Las personas están dispersas` Diferentes oficinas o ciudades
+- `Muchas de personas involucradas` Clientes o usuarios
 - Queremos obtener opiniones generales
 - Queremos identificar problemas generales
 
@@ -392,19 +386,14 @@ El analista se convierte en observador de las personas y actividades con el obje
 
 #### Diseño de un Cuestionario
 - Los buenos cuestionarios son difíciles de desarrollar
-- Deje espacio en blanco
-    - El cuestionario debe estar bien distribuido
-- Espacio suficiente para responder
-    - No es lo mismo el espacio para responder los años de antigüedad, que para la descripción de su tarea
-- Facilitar el marcado de las respuestas
+- `Deje espacio en blanco` El cuestionario debe estar bien distribuido
+- `Espacio suficiente para responder` No es lo mismo el espacio para responder los años de antigüedad, que para la descripción de su tarea
+- `Facilitar el marcado de las respuestas`
     - Cuando se trata de opciones se debe poder indicar de forma clara la opción seleccionada
     - Utilizar escalas Nominales (Selección de opciones) o Intervalos (1…5)
-- Mantener el estilo
-    - Es importante la apariencia del cuestionario
-- Orden de las preguntas
-    - Primero las pregunta importantes para los encuestados
-- Agrupar por contenido similar
-    - Uso de tendencias asociativas
+- `Mantener el estilo` Es importante la apariencia del cuestionario
+- `Orden de las preguntas` Primero las pregunta importantes para los encuestados
+- `Agrupar por contenido similar` Uso de tendencias asociativas
 - Plantear primero temas menos controvertidos
 
 ---
