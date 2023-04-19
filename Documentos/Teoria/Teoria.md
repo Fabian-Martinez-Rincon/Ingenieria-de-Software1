@@ -29,7 +29,8 @@
     - [La comunicación](#la-comunicación)
     - [Requerimientos](#requerimientos)
     - [Puntos de Vista](#puntos-de-vista)
-- [Elicitación de Requerimientos]()
+- [Elicitación de Requerimientos](#elicitación-de-requerimientos)
+    - [Técnicas de elicitación](#técnicas-de-elicitación)
 
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
@@ -243,9 +244,9 @@ que técnicos.
 
 ---
 
-#### Técnicas de elicitación
+### Técnicas de elicitación
 
-Recopilación de información:
+Recopilación de información
 
 **Métodos discretos**
 - `1)` Muestreo de la documentación, los formularios y los datos existentes.
@@ -260,7 +261,7 @@ Recopilación de información:
 
 ---
 
-#### Muestreo de la documentación, las formas y los datos existentes
+### Muestreo de la documentación, las formas y los datos existentes
 
 **Recolección de hechos a partir de la documentación existente**
 - ¿Qué tipo de documentos pueden enseñar algo acerca del sistema?
@@ -284,7 +285,7 @@ Recopilación de información:
 
 ---
 
-#### Investigación y visitas al sitio
+### Investigación y visitas al sitio
 
 - Investigar el dominio
 - Patrones de soluciones (mismo problema en otra organización)
@@ -294,7 +295,7 @@ Recopilación de información:
 
 ---
 
-#### Observación del ambiente de trabajo
+### Observación del ambiente de trabajo
 
 El analista se convierte en observador de las personas y actividades con el objeto de aprender acerca del sistema
 
@@ -320,7 +321,7 @@ El analista se convierte en observador de las personas y actividades con el obje
 
 ---
 
-#### Cuestionarios
+### Cuestionarios
 
 - Documento que permite al analista recabar información y opiniones de los encuestados
     - Recolectar hechos de un gran número de personas
