@@ -194,3 +194,121 @@ características del sistema
 # Elicitación de Requerimientos
 
 </div>
+
+Es el proceso de adquirir (“eliciting”) [sonsacar] todo el conocimiento relevante necesario para producir un modelo de los requerimientos de un dominio de problema
+
+`Objetivos`
+- Conocer el dominio del problema para poder comunicarse con clientes y usuarios y entender sus necesidades.
+- Conocer el sistema actual (manual o informatizado).
+- Identificar las necesidades, tanto explícitas como implícitas, de clientes y usuarios y sus expectativas sobre el sistema a desarrollar.
+
+`Conceptos`
+
+- La elicitación de requisitos es una actividad principalmente de carácter social, mucho más que tecnológico.
+- Los problemas que se plantean son por tanto de naturaleza psicológica y social, más
+que técnicos.
+- **Problemas de comunicación (Del cliente)**
+    - Dificultad para expresar claramente las necesidades.
+    - No ser conscientes de sus propias necesidades.
+    - No entender cómo la tecnología puede ayudar.
+    - Miedo a parecer incompetentes por ignorancia tecnológica.
+    - No tomar decisiones por no poder prever las consecuencias, no entender las alternativas o no tener una visión global.
+- **Problemas de comunicación (Del desarrollador)**
+    - Cultura y vocabulario diferentes.
+    - Intereses distintos en el sistema a desarrollar.
+    - Medios de comunicación inadecuados (diagramas
+    - que no entienden los clientes y usuarios).
+    - Conflictos personales o políticos.
+- **Limitaciones cognitivas (Del desarrollador)**
+    - No conocer el dominio del problema.
+    - Hacer suposiciones sobre el dominio del problema.
+    - Hacer suposiciones sobre aspectos tecnológicos.
+    - Hacer simplificaciones excesivas.
+- **Conducta humana**
+    - Conflictos y ambigüedades en los roles de los participantes.
+    - Pasividad de clientes, usuarios o ingenieros de requisitos.
+    - Temor a que el nuevo sistema lo deje sin trabajo.
+- **Técnicos**
+    - Complejidad del dominio del problema.
+    - Complejidad de los requisitos.
+    - Múltiples fuentes de requisitos.
+    - Fuentes de información poco claras.
+
+---
+
+#### Técnicas de elicitación
+
+Recopilación de información:
+
+**Métodos discretos**
+- `1)` Muestreo de la documentación, los formularios y los datos existentes.
+- `2)` Investigación y visitas al lugar.
+- `3)` Observación del ambiente de trabajo.
+
+**Métodos interactivos**
+- `1)` Cuestionarios.
+- `2)` Entrevistas.
+- `3)` Planeación conjunta de Requerimientos (JRP o JAD).
+- `4)` Lluvia de Ideas - Brainstorming
+
+---
+
+#### Muestreo de la documentación, las formas y los datos existentes
+
+**Recolección de hechos a partir de la documentación existente**
+- ¿Qué tipo de documentos pueden enseñar algo acerca del sistema?
+    - Organigrama (identificar el propietario, usuarios claves)
+    - Memos, notas internas, minutas, registros contables
+    - Solicitudes de proyectos de sistemas de información anteriores
+- Permiten conocer el historial que origina el proyecto
+- Documentos que describen la funcionalidad del negocio que esta siendo analizada
+    - Declaración de la misión y plan estratégico de la organización
+    - Objetivos formales del departamento en cuestión
+    - Políticas, restricciones, procedimientos operativos
+    - Formularios de operaciones realizadas
+    - Bases de Datos
+    - Sistemas en funcionamiento
+- Documentación de sistemas anteriores
+    - Diagramas
+    - Diccionario o Repositorios de proyecto
+    - Documentos de diseño
+    - Manuales de operación y/o entrenamiento
+- Técnicas de muestreo de documentos y archivos
+
+---
+
+#### Investigación y visitas al sitio
+
+- Investigar el dominio
+- Patrones de soluciones (mismo problema en otra organización)
+- Revistas especializadas
+- Buscar problemas similares en internet
+- Consultar otras organizaciones
+
+---
+
+#### Observación del ambiente de trabajo
+
+El analista se convierte en observador de las personas y actividades con el objeto de aprender acerca del sistema
+
+**Lineamientos de la observación:**
+- Determinar quién y cuándo será observado
+- Obtener el permiso de la persona y explicar el porqué será observado
+- Mantener bajo perfil
+- Tomar nota de lo observado
+- Revisar las notas con la persona apropiada
+- No interrumpir a la persona en su trabajo
+
+Ventajas
+- Datos confiables
+- El analista puede ver exactamente lo que se hace (tareas difíciles de explicar con palabras)
+- Análisis de disposiciones físicas, tránsito, iluminación, ruido
+- Económica en comparación con otras técnicas
+
+Desventajas
+- La gente se siente incómoda siendo observada
+- Algunas actividades del sistema pueden ser realizadas en horarios incómodos
+- Las tareas están sujetas a interrupciones
+- Tener en cuenta que la persona observada puede estar realizando las tareas de la forma “correcta” y no como lo hace habitualmente
+
+---
