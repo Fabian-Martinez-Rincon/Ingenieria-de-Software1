@@ -5,10 +5,6 @@
 [![GitHub repo size in bytes](https://img.shields.io/github/repo-size/Nomadiix/IS1)](https://github.com/Nomadiix/IS1)
  </div>
 <h1 align="center"> 📋 Teoria</h1>
-
-
-
-
 <div align='center'>
 
 [Practica 1 | Teoria](/Documentos/Practica1.md)<br>
@@ -22,6 +18,12 @@
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
 - [Software](#software)
+    - [Qué es Software?](#qué-es-software)
+    - [Tipos de Productos de Software](#tipos-de-productos-de-software)
+    - [Clasificación de Software](#clasificación-de-software)
+    - [Características del Software](#características-del-software)
+    - [Evolución del software](#evolución-del-software)
+    - [¿Qué es la ingeniería de software?](#¿qué-es-la-ingeniería-de-software)
 - [Elicitación de Requerimientos]()
 
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
@@ -32,19 +34,19 @@
 
 </div>
 
-#### Qué es Software?
+### Qué es Software?
 
 Es el conjunto de los programas de cómputo, procedimientos, reglas, documentación y datos asociados que forman parte de las operaciones de un sistema de computación
 
 ---
 
-#### Tipos de Productos de Software
+### Tipos de Productos de Software
 - `Genericos` Sistemas aislados producidos por organizaciones desarrolladoras de software y que se venden en un mercado abierto.
 - `Personalizados` Sistemas requeridos por un cliente en particular. Desarrollados por la propia organización interesada o un contratista.
 
 ---
 
-#### Clasificación de Software
+### Clasificación de Software
 
 - `De sistemas` (sirve a otros programas)
 - `De gestión` (proceso de información comercial)
@@ -55,7 +57,7 @@ Es el conjunto de los programas de cómputo, procedimientos, reglas, documentaci
 - `De Inteligencia artificial` (uso de algoritmos no numéricos para resolver problemas complejos)
 
 ---
-#### Características del Software
+### Características del Software
 
 - Es un elemento lógico
 - El software se desarrolla, no se fabrica como otros productos
@@ -64,7 +66,7 @@ Es el conjunto de los programas de cómputo, procedimientos, reglas, documentaci
 
 --- 
 
-#### Evolución del software 
+### Evolución del software 
 
 - El software no se desgasta.
 - No sigue una curva clásica de envejecimiento.
@@ -314,3 +316,91 @@ El analista se convierte en observador de las personas y actividades con el obje
 ---
 
 #### Cuestionarios
+
+- Documento que permite al analista recabar información y opiniones de los encuestados
+    - Recolectar hechos de un gran número de personas
+    - Detectar un seguimiento generalizado
+    - Detectar problemas entre usuarios
+    - Cuantificar respuestas
+- `Ventajas`
+    - Respuesta rápida
+    - Económicos
+    - Anónimos
+    - Estructurados de fácil análisis
+- `Desventajas`
+    - Número bajo de respuestas
+    - No responde a todas las preguntas
+    - Preguntas rígidas
+    - No se puede analizar el análisis corporal
+    - No se pueden aclarar respuestas incompletas
+    - Difíciles de preparar
+
+Tipos de Cuestionario
+- Formato libre (Abiertos)
+    - Diseñado para ofrecer al encuestado más flexibilidad en la respuesta
+    - ¿Qué reportes recibe actualmente?
+    - ¿Hay problemas con los reportes?
+- Formato fijo (Cerrados)
+    - Requieren la selección de una respuesta entre respuestas posibles predefinidas
+    - ¿Es útil el reporte que utiliza actualmente? SI NO
+
+![](2023-04-19-12-47-00.png)
+
+- Tipo de información obtenida
+    - `Actitud`
+        - Lo que las personas dicen que quieren
+    - `Creencias`
+        - Lo que las personas creen que es verdad
+    - `Comportamiento`
+        - Lo que realmente hacen
+    - `Características`
+        - De las personas o cosas
+- Cuándo usar Cuestionarios
+    - Las personas están dispersas
+        - Diferentes oficinas o ciudades
+    - Muchas de personas involucradas
+        - Clientes o usuarios
+    - Queremos obtener opiniones generales
+    - Queremos identificar problemas generales
+- Diseño de un Cuestionario
+    - Los buenos cuestionarios son difíciles de desarrollar
+- Procedimiento para el desarrollo
+    - `1)` Determinar qué hechos, opiniones y de quién, quieren recolectarse
+    - `2)` Determinar qué tipo de preguntas dan mejores resultados a los hechos buscados
+    - `3)` Escribir las preguntas y examinarlas en cuanto a errores o malas interpretaciones. No proveer un sesgo personal en la pregunta.
+    - `4)` Ensayar en una pequeña muestra de encuestados
+    - `5)` Duplicar y distribuir el cuestionario
+- Redacción de un Cuestionario
+    - Claridad
+        - La redacción del cuestionario debe ser autocontenida y precisa
+    - Flujo
+        - Debe haber un hilo conductor entre las preguntas
+    - Vocabulario
+        - Usar el lenguaje de los encuestados
+    - Redacción sencilla
+        - Evitar preguntas muy específicas
+    - Preguntas breves
+        - No subestimar a las personas a realizar el cuestionario. Tenemos que asumir que el empleado sabe lo que hace
+    - Evitar la parcialidad
+        - No incluir tendencias a una respuesta
+    - Evitar preguntas ofensivas
+        - Si el encuestado se siente ofendido, posiblemente no responda de forma correcta
+    - Dirigir las preguntas a los encuestados que las pueden responder
+        - El cuestionario debe ser preparado para el grupo de personas que lo van a responder
+        - No usar un Cuestionario genérico para todos
+- Diseño de un Cuestionario
+    - Deje espacio en blanco
+        - El cuestionario debe estar bien distribuido
+    - Espacio suficiente para responder
+        - No es lo mismo el espacio para responder los años de antigüedad, que para la descripción de su tarea
+    - Facilitar el marcado de las respuestas
+        - Cuando se trata de opciones se debe poder indicar de forma clara la opción seleccionada
+        - Utilizar escalas Nominales (Selección de opciones) o Intervalos (1…5)
+    - Mantener el estilo
+        - Es importante la apariencia del cuestionario
+    - Orden de las preguntas
+        - Primero las pregunta importantes para los encuestados
+    - Agrupar por contenido similar
+        - Uso de tendencias asociativas
+    - Plantear primero temas menos controvertidos
+
