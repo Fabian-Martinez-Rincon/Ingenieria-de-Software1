@@ -41,7 +41,7 @@
         - [Diseño de un Cuestionario](#diseño-de-un-cuestionario)
         - [Procedimiento para el desarrollo](#procedimiento-para-el-desarrollo)
         - [Redacción de un Cuestionario](#redacción-de-un-cuestionario)
-
+    - [Entrevistas](#entrevistas)
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
 <div align='center'>
@@ -418,3 +418,7 @@ El analista se convierte en observador de las personas y actividades con el obje
 - `Dirigir las preguntas a los encuestados que las pueden responder`
     - El cuestionario debe ser preparado para el grupo de personas que lo van a responder
     - No usar un Cuestionario genérico para todos
+
+---
+
+### Entrevistas
