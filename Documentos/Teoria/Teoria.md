@@ -299,16 +299,18 @@ El analista se convierte en observador de las personas y actividades con el obje
 - Revisar las notas con la persona apropiada
 - No interrumpir a la persona en su trabajo
 
-Ventajas
+**Ventajas**
 - Datos confiables
 - El analista puede ver exactamente lo que se hace (tareas difíciles de explicar con palabras)
 - Análisis de disposiciones físicas, tránsito, iluminación, ruido
 - Económica en comparación con otras técnicas
 
-Desventajas
+**Desventajas**
 - La gente se siente incómoda siendo observada
 - Algunas actividades del sistema pueden ser realizadas en horarios incómodos
 - Las tareas están sujetas a interrupciones
 - Tener en cuenta que la persona observada puede estar realizando las tareas de la forma “correcta” y no como lo hace habitualmente
 
 ---
+
+#### Cuestionarios
