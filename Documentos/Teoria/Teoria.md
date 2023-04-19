@@ -25,7 +25,11 @@
 
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
-### Software
+<div align='center'>
+
+# Software
+
+</div>
 
 #### Qué es Software?
 
@@ -37,7 +41,7 @@ Es el conjunto de los programas de cómputo, procedimientos, reglas, documentaci
 - `Genericos`: Sistemas aislados producidos por organizaciones desarrolladoras de software y que se venden en un mercado abierto.
 - `Personalizados`: Sistemas requeridos por un cliente en particular. Desarrollados por la propia organización interesada o un contratista.
 
---
+---
 
 #### Clasificación de Software
 
