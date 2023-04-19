@@ -24,6 +24,11 @@
     - [Características del Software](#características-del-software)
     - [Evolución del software](#evolución-del-software)
     - [¿Qué es la ingeniería de software?](#¿qué-es-la-ingeniería-de-software)
+    - [¿Qué conocimientos debe tener un IS?](#qué-conocimientos-debe-tener-un-is)
+    - [Responsabilidad Profesional y Ética](#responsabilidad-profesional-y-ética)
+    - [La comunicación](#la-comunicación)
+    - [Requerimientos](#requerimientos)
+    - [Puntos de Vista](#puntos-de-vista)
 - [Elicitación de Requerimientos]()
 
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
@@ -118,18 +123,18 @@ La Ingeniería de Software es una disciplina de “producción y evolución” d
 
 ---
 
-#### Qué conocimientos debe tener un IS?
+### Qué conocimientos debe tener un IS?
 
-- Tener una combinación de conocimientos científicos, metodológicos, tecnológicos y administrativos.
-- Estar familiarizado con la aplicación de métodos formales: lógica, estadística, simulación y con el uso de notaciones de modelización, especificación, diseño, programación
-- Poder aplicar metodologías de documentación, análisis, especificación, diseño, implementación y prueba. Debe conocer las ventajas y limitaciones de cada notación y cada técnica. Debe saber cómo y cuándo aplicarlas.
-- Conocer las tecnologías y productos: sistemas operativos, lenguajes, herramientas CASE, bases de datos, sistemas generadores de interfaces, bibliotecas de código.
-- Conocer técnicas de administración de proyectos: planificación, análisis de riesgos, control de calidad, seguimiento de proyectos, control de subcontratistas, etc.
-- En los últimos años se observa una especialización de los ingenieros de software por dominio de aplicación o por actividad
+- `1)` Tener una combinación de conocimientos científicos, metodológicos, tecnológicos y administrativos.
+- `2)` Estar familiarizado con la aplicación de métodos formales: lógica, estadística, simulación y con el uso de notaciones de modelización, especificación, diseño, programación
+- `3)` Poder aplicar metodologías de documentación, análisis, especificación, diseño, implementación y prueba. Debe conocer las ventajas y limitaciones de cada notación y cada técnica. Debe saber cómo y cuándo aplicarlas.
+- `4)` Conocer las tecnologías y productos: sistemas operativos, lenguajes, herramientas CASE, bases de datos, sistemas generadores de interfaces, bibliotecas de código.
+- `5)` Conocer técnicas de administración de proyectos: planificación, análisis de riesgos, control de calidad, seguimiento de proyectos, control de subcontratistas, etc.
+- `6)` En los últimos años se observa una especialización de los ingenieros de software por dominio de aplicación o por actividad
 
 ---
 
-#### Responsabilidad Profesional y Ética
+### Responsabilidad Profesional y Ética
 
 - La Ingeniería de Software se desarrolla en un marco económico, social y legal.
     - Los IS deben aceptar responsabilidades más amplias que las responsabilidades técnicas
@@ -143,7 +148,7 @@ Existen diferentes organización cono ACM o IEEE que sugieren diferentes código
 
 ---
 
-#### La comunicación
+### La comunicación
 
 - La comunicación es la base para la obtención de las necesidades del cliente
 - Es la principal fuente de error
@@ -155,7 +160,7 @@ Existen diferentes organización cono ACM o IEEE que sugieren diferentes código
 
 ---
 
-#### Requerimientos
+### Requerimientos
 
 - Un Requerimiento (o requisito) es una característica del sistema o una descripción de algo que el sistema es capaz de hacer con el objeto de satisfacer el propósito del sistema
 - Definición IEEE-Std-610
@@ -172,7 +177,7 @@ Existen diferentes organización cono ACM o IEEE que sugieren diferentes código
 
 ---
 
-#### Puntos de Vista
+### Puntos de Vista
 
 Clasificar los stakeholders según los punto de vista:
 - Punto de vista de los interactuadores: representan a las personas u otros sistemas que interactúan directamente con el sistema. Pueden influir en los requerimientos del sistema de algún modo.
