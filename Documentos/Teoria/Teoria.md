@@ -21,7 +21,7 @@
 
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
-- [Software]()
+- [Software](#software)
 
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
@@ -64,3 +64,36 @@ Es el conjunto de los programas de cómputo, procedimientos, reglas, documentaci
 --- 
 
 #### Evolución del software 
+
+- El software no se desgasta.
+- No sigue una curva clásica de envejecimiento.
+- Es inmune a los males que desgastan al hardware.
+- El problema no está en el tiempo de operación, sino en los cambios. 
+
+
+![](2023-04-19-11-53-16.png)
+
+---
+
+#### ¿Qué es la ingeniería de software?
+
+Disciplina de la ingeniería que comprende todos los aspectos de la producción de software desde las etapas iniciales de la especificación del sistema incluyendo la evolución de éste luego que se comienza a ejecutar.
+
+Disciplina de la ingeniería
+- Hace que las cosas funcionen.
+- Se aplican teorías, métodos y herramientas.
+
+Todos los aspectos de la producción de software
+- No sólo comprende los procesos técnicos del desarrollo de software, sino también se realizan actividades como la gestión de proyectos y el desarrollo de herramientas, métodos y teorías de apoyo a la producción de software
+
+La IEEE define a la Ingeniería de Software como
+
+- El uso de métodos sistemáticos, disciplinados y cuantificables para el desarrollo, operación y mantenimiento de software
+- El estudio de técnicas relacionadas con lo anterior
+
+Richard Fairley propone
+
+- La Ingeniería de Software es la disciplina tecnológica y de administración que se ocupa de la producción y evolución sistemática de productos de software que son desarrollados y modificados dentro de los tiempos y costos estimados
+
+---
+
