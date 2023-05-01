@@ -48,7 +48,7 @@ Quiero aclarar que estos colores los elegi yo porque a mi me gustaron, no es nad
 
 Para cada Historia de Usuario se deben indicar los siguientes ítems:
 
-<table ><tr><td width="660"> 
+<table ><tr><td width="600"> 
 
 **Nombre:** 
  
@@ -61,11 +61,11 @@ Para cada Historia de Usuario se deben indicar los siguientes ítems:
 ---
 
 CURSO NORMAL<table> <tr><td>Acciones del actor</td> <td>Acciones del Sistema</td></tr>
-<td width="400">  
+<td width="300">  
 
 Paso x:
 
-</td><td width="400">
+</td><td width="300">
 
 Paso x: 
 
@@ -109,13 +109,13 @@ El encargado del departamento de alquileres no comentó acerca de las reservas d
 ---
 
 CURSO NORMAL<table> <tr><td>Acciones del actor</td> <td>Acciones del Sistema</td></tr>
-<td width="300">  
+<td width="320">  
 
 Paso 1: El usuario selecciona la opcion `Reservar alquiler`
 
 Paso 3: El usuario ingresa los datos solicitados
 
-</td><td width="300">
+</td><td width="320">
 
 Paso 2: El Sistema solicita al fecha, lugar del evento, cantidad de dias y mobiliario junto a su cantidad
 
