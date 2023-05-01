@@ -48,15 +48,15 @@ Quiero aclarar que estos colores los elegi yo porque a mi me gustaron, no es nad
 
 Para cada Historia de Usuario se deben indicar los siguientes ítems:
 
-<table ><tr><td width="500"> 
+<table ><tr><td width="660"> 
 
-**Nombre:** Reservar Alquiler
+**Nombre:** 
  
-**Descripción:** Este cu describe la forma en la que un usuario realiza la reserva de un alquiler
+**Descripción:** 
 
-**Actores:** Usuario
+**Actores:** 
 
-**Precondiciones:** ---
+**Precondiciones:** 
 
 ---
 
@@ -96,7 +96,7 @@ El encargado del departamento de alquileres no comentó acerca de las reservas d
 ---
 
 
-<table ><tr><td width="600"> 
+<table ><tr><td width="660"> 
 
 **Nombre:** Reservar Alquiler
  
@@ -138,71 +138,6 @@ Paso 6: El sistema registra la reserva del alquiler y emite un codigo de reserva
 
 ---
 
-<table><tr><td> 
-
-**Nombre:** Cargar Mueble
- 
-**Descripción:** 
-
-**Actores:** 
-
-**Precondiciones:**
-
----
-
-<p align='center'><b>CURSO NORMAL</b></p><table>
-<td> <p align='center'><b> Acciones del actor</b></p>
-
-Paso x:
-
-</td><td><p align='center'><b>Acciones del Sistema</b></p>
-
-Paso x:
-
-</td></table>
-
----
-
-**Curso alterno:**
-
-**Postcondición:**
-
-</table>
-
----
-
-
-
-<table><tr><td> 
-
-**Nombre:** 
- 
-**Descripción:** 
-
-**Actores:** 
-
-**Precondiciones:**
-
----
-
-<p align='center'><b>CURSO NORMAL</b></p><table>
-<td> <p align='center'><b> Acciones del actor</b></p>
-
-Paso x:
-
-</td><td><p align='center'><b>Acciones del Sistema</b></p>
-
-Paso x:
-
-</td></table>
-
----
-
-**Curso alterno:**
-
-**Postcondición:**
-
-</table>
 
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
@@ -226,38 +161,8 @@ El requerimiento fue que el alumno ingrese a la web de posgrado y pueda registra
 
 Para inscribirse, el alumno deberá seleccionar la carrera, ingresar la cantidad de cuotas a pagar, ingresar el número de tarjeta y, en caso de que la tarjeta sea válida y tenga fondos, se hará efectivo el cobro y la inscripción. La tarjeta de crédito se valida a través de un servicio del banco con el cual la universidad tiene convenio. Luego de efectuado el cobro, el sistema debe imprimir dos comprobantes, uno de inscripción y otro de pago. La única forma que tiene el alumno de pagar es con tarjeta de crédito.
 
----
 
-<table><tr><td> 
 
-**Nombre:** 
- 
-**Descripción:** 
-
-**Actores:** 
-
-**Precondiciones:**
-
----
-
-<p align='center'><b>CURSO NORMAL</b></p><table>
-<td> <p align='center'><b> Acciones del actor</b></p>
-
-Paso x:
-
-</td><td><p align='center'><b>Acciones del Sistema</b></p>
-
-Paso x:
-
-</td></table>
-
----
-
-**Curso alterno:**
-
-**Postcondición:**
-
-</table>
 
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
@@ -278,38 +183,6 @@ Una vez confeccionada la minuta por parte del empleado de mesa de entradas, la m
 
 Por último el empleado de rendiciones será el responsable de imprimir los listados con las minutas aprobadas, es decir, un listado con el personal contratado para poder dárselo al jefe de departamento para que lo firme.
 
----
-
-<table><tr><td> 
-
-**Nombre:** 
- 
-**Descripción:** 
-
-**Actores:** 
-
-**Precondiciones:**
-
----
-
-<p align='center'><b>CURSO NORMAL</b></p><table>
-<td> <p align='center'><b> Acciones del actor</b></p>
-
-Paso x:
-
-</td><td><p align='center'><b>Acciones del Sistema</b></p>
-
-Paso x:
-
-</td></table>
-
----
-
-**Curso alterno:**
-
-**Postcondición:**
-
-</table>
 
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
@@ -323,39 +196,6 @@ Se desea modelar un sistema que controle una máquina de reciclado. La máquina 
 retornando el producto.
 
 El sistema también es utilizado por un operador a través de una consola que se encuentra bajo llave. El operador puede solicitar un listado con los tipos de materiales reciclados en un periodo de fechas determinado, detallando además el total abonado por dicho material. También, el operador puede actualizar los montos a pagar por kilo de cada tipo de material que la máquina puede reciclar. Para esto, el sistema primero solicita el tipo de material a actualizar. Luego se pide el nuevo monto. Si el operador acepta, se actualiza el material seleccionado.
-
----
-
-<table><tr><td> 
-
-**Nombre:** 
- 
-**Descripción:** 
-
-**Actores:** 
-
-**Precondiciones:**
-
----
-
-<p align='center'><b>CURSO NORMAL</b></p><table>
-<td> <p align='center'><b> Acciones del actor</b></p>
-
-Paso x:
-
-</td><td><p align='center'><b>Acciones del Sistema</b></p>
-
-Paso x:
-
-</td></table>
-
----
-
-**Curso alterno:**
-
-**Postcondición:**
-
-</table>
 
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
@@ -374,38 +214,6 @@ Una vez autenticado, el usuario puede subir un máximo de 50 fotos para ser impr
 Un cliente debe acercarse a la sucursal para retirar las fotos enviadas previamente. Para esto debe presentar el código único a un empleado. Este registra el código, la fecha de retiro y entrega las fotos al
 cliente.
 
----
-
-<table><tr><td> 
-
-**Nombre:** 
- 
-**Descripción:** 
-
-**Actores:** 
-
-**Precondiciones:**
-
----
-
-<p align='center'><b>CURSO NORMAL</b></p><table>
-<td> <p align='center'><b> Acciones del actor</b></p>
-
-Paso x:
-
-</td><td><p align='center'><b>Acciones del Sistema</b></p>
-
-Paso x:
-
-</td></table>
-
----
-
-**Curso alterno:**
-
-**Postcondición:**
-
-</table>
 
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
@@ -429,38 +237,6 @@ Cuando una persona llega con el código de compra, el vendedor debe ingresar el 
 
 Además se desea administrar la programación de las salas. El administrador ingresa la distribución semanal de las obras en las salas de manera que se encuentre disponible para la realización de la venta de entradas.
 
----
-
-<table><tr><td> 
-
-**Nombre:** 
- 
-**Descripción:** 
-
-**Actores:** 
-
-**Precondiciones:**
-
----
-
-<p align='center'><b>CURSO NORMAL</b></p><table>
-<td> <p align='center'><b> Acciones del actor</b></p>
-
-Paso x:
-
-</td><td><p align='center'><b>Acciones del Sistema</b></p>
-
-Paso x:
-
-</td></table>
-
----
-
-**Curso alterno:**
-
-**Postcondición:**
-
-</table>
 
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
@@ -480,39 +256,6 @@ El cliente podrá adelantar cuotas a partir del sexto mes de otorgado el présta
 
 El cliente podrá realizar la cancelación total del préstamo a partir del noveno mes. Para ello, se debe presentar personalmente en el banco con su DNI para acreditar su identidad. Cuando se introduce el DNI, el sistema lista los préstamos para que se seleccione cual desea pagar. Luego se verifica que la cuenta asociada originalmente posea saldo suficiente para alcanzar el monto total adeudado. De ser así se registrará dicha cancelación y emitirá un comprobante con los datos de la operación.
 
----
-
-<table><tr><td> 
-
-**Nombre:** 
- 
-**Descripción:** 
-
-**Actores:** 
-
-**Precondiciones:**
-
----
-
-<p align='center'><b>CURSO NORMAL</b></p><table>
-<td> <p align='center'><b> Acciones del actor</b></p>
-
-Paso x:
-
-</td><td><p align='center'><b>Acciones del Sistema</b></p>
-
-Paso x:
-
-</td></table>
-
----
-
-**Curso alterno:**
-
-**Postcondición:**
-
-</table>
-
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
 <div align = 'center'>
@@ -531,39 +274,6 @@ Finalmente el Gerente puede ver las estadísticas de los impuestos y servicios c
 
 Tenga en cuenta que cada vez que el sistema debe conectarse a la central, debe enviarle un token (código que identifica al sistema). Una vez que la central valida el token, el sistema envía el requerimiento para recuperar los datos de la factura o el requerimiento para registrar los pagos del día según corresponda.
 
----
-
-<table><tr><td> 
-
-**Nombre:** 
- 
-**Descripción:** 
-
-**Actores:** 
-
-**Precondiciones:**
-
----
-
-<p align='center'><b>CURSO NORMAL</b></p><table>
-<td> <p align='center'><b> Acciones del actor</b></p>
-
-Paso x:
-
-</td><td><p align='center'><b>Acciones del Sistema</b></p>
-
-Paso x:
-
-</td></table>
-
----
-
-**Curso alterno:**
-
-**Postcondición:**
-
-</table>
-
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
 <div align = 'center'>
@@ -578,38 +288,6 @@ Para utilizar el sistema, una persona debe registrarse y estar correctamente ide
 
 En el sistema existe una política de reputaciones que permiten a los usuarios conocer la opinión del resto sobre los viajes realizados. Luego de terminado un viaje, tanto el piloto como los copilotos que viajaron deberán calificarse entre sí. El piloto califica a todos sus copilotos. Cada copiloto califica al piloto del viaje. Las calificaciones podrán ser positivas (suma un punto de reputación) o negativas (restan un punto de reputación).
 
----
-
-<table><tr><td> 
-
-**Nombre:** 
- 
-**Descripción:** 
-
-**Actores:** 
-
-**Precondiciones:**
-
----
-
-<p align='center'><b>CURSO NORMAL</b></p><table>
-<td> <p align='center'><b> Acciones del actor</b></p>
-
-Paso x:
-
-</td><td><p align='center'><b>Acciones del Sistema</b></p>
-
-Paso x:
-
-</td></table>
-
----
-
-**Curso alterno:**
-
-**Postcondición:**
-
-</table>
 
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
@@ -625,38 +303,6 @@ Para solicitar un turno, el cliente del gimnasio, previa autenticación, debe in
 
 Por último cuando un cliente llega al gimnasio debe registrar su llegada, para esto la secretaria del gimnasio solicita el número de dni del cliente para hacer el registro. El gimnasio se maneja con un sistema externo que suma puntos a aquellos clientes que cumplen con las reservas realizadas. Es necesario que cuando se registre la asistencia del cliente al gimnasio se haga la suma correspondiente para lo cual el sistema se conecta con el servidor externo, envía el dni del cliente y la actividad que va a realizar y el servidor se encarga de sumar los puntos.
 
----
-
-<table><tr><td> 
-
-**Nombre:** 
- 
-**Descripción:** 
-
-**Actores:** 
-
-**Precondiciones:**
-
----
-
-<p align='center'><b>CURSO NORMAL</b></p><table>
-<td> <p align='center'><b> Acciones del actor</b></p>
-
-Paso x:
-
-</td><td><p align='center'><b>Acciones del Sistema</b></p>
-
-Paso x:
-
-</td></table>
-
----
-
-**Curso alterno:**
-
-**Postcondición:**
-
-</table>
 
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
@@ -674,37 +320,5 @@ El sistema deberá permitir que el empleado avise la regularización de su deuda
 
 Suponga que el equipo de desarrollo tiene acceso a un sistema llamado Sigef para consultar su implementación dado que algunas funcionalidades son parecidas a las solicitadas.
 
----
-
-<table><tr><td> 
-
-**Nombre:** 
- 
-**Descripción:** 
-
-**Actores:** 
-
-**Precondiciones:**
-
----
-
-<p align='center'><b>CURSO NORMAL</b></p><table>
-<td> <p align='center'><b> Acciones del actor</b></p>
-
-Paso x:
-
-</td><td><p align='center'><b>Acciones del Sistema</b></p>
-
-Paso x:
-
-</td></table>
-
----
-
-**Curso alterno:**
-
-**Postcondición:**
-
-</table>
 
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
