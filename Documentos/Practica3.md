@@ -60,7 +60,8 @@ Para cada Historia de Usuario se deben indicar los siguientes ítems:
 
 ---
 
-<p align='center'><b>CURSO NORMAL</b></p><table><td> <div p='center'><b> Acciones del actor</b></p>
+<p align='center'><b>CURSO NORMAL</b></p><table>
+<td> <p align='center'><b> Acciones del actor</b></p>
 
 Paso x:
 
@@ -106,7 +107,8 @@ El encargado del departamento de alquileres no comentó acerca de las reservas d
 
 ---
 
-<p align='center'><b>CURSO NORMAL</b></p><table><td> <div p='center'><b> Acciones del actor</b></p>
+<p align='center'><b>CURSO NORMAL</b></p><table>
+<td> <p align='center'><b> Acciones del actor</b></p>
 
 Paso x:
 
@@ -160,7 +162,8 @@ Para inscribirse, el alumno deberá seleccionar la carrera, ingresar la cantidad
 
 ---
 
-<p align='center'><b>CURSO NORMAL</b></p><table><td> <div p='center'><b> Acciones del actor</b></p>
+<p align='center'><b>CURSO NORMAL</b></p><table>
+<td> <p align='center'><b> Acciones del actor</b></p>
 
 Paso x:
 
@@ -211,7 +214,8 @@ Por último el empleado de rendiciones será el responsable de imprimir los list
 
 ---
 
-<p align='center'><b>CURSO NORMAL</b></p><table><td> <div p='center'><b> Acciones del actor</b></p>
+<p align='center'><b>CURSO NORMAL</b></p><table>
+<td> <p align='center'><b> Acciones del actor</b></p>
 
 Paso x:
 
@@ -256,7 +260,8 @@ El sistema también es utilizado por un operador a través de una consola que se
 
 ---
 
-<p align='center'><b>CURSO NORMAL</b></p><table><td> <div p='center'><b> Acciones del actor</b></p>
+<p align='center'><b>CURSO NORMAL</b></p><table>
+<td> <p align='center'><b> Acciones del actor</b></p>
 
 Paso x:
 
@@ -305,7 +310,8 @@ cliente.
 
 ---
 
-<p align='center'><b>CURSO NORMAL</b></p><table><td> <div p='center'><b> Acciones del actor</b></p>
+<p align='center'><b>CURSO NORMAL</b></p><table>
+<td> <p align='center'><b> Acciones del actor</b></p>
 
 Paso x:
 
@@ -359,7 +365,8 @@ Además se desea administrar la programación de las salas. El administrador ing
 
 ---
 
-<p align='center'><b>CURSO NORMAL</b></p><table><td> <div p='center'><b> Acciones del actor</b></p>
+<p align='center'><b>CURSO NORMAL</b></p><table>
+<td> <p align='center'><b> Acciones del actor</b></p>
 
 Paso x:
 
@@ -409,7 +416,8 @@ El cliente podrá realizar la cancelación total del préstamo a partir del nove
 
 ---
 
-<p align='center'><b>CURSO NORMAL</b></p><table><td> <div p='center'><b> Acciones del actor</b></p>
+<p align='center'><b>CURSO NORMAL</b></p><table>
+<td> <p align='center'><b> Acciones del actor</b></p>
 
 Paso x:
 
@@ -459,7 +467,8 @@ Tenga en cuenta que cada vez que el sistema debe conectarse a la central, debe e
 
 ---
 
-<p align='center'><b>CURSO NORMAL</b></p><table><td> <div p='center'><b> Acciones del actor</b></p>
+<p align='center'><b>CURSO NORMAL</b></p><table>
+<td> <p align='center'><b> Acciones del actor</b></p>
 
 Paso x:
 
@@ -505,7 +514,8 @@ En el sistema existe una política de reputaciones que permiten a los usuarios c
 
 ---
 
-<p align='center'><b>CURSO NORMAL</b></p><table><td> <div p='center'><b> Acciones del actor</b></p>
+<p align='center'><b>CURSO NORMAL</b></p><table>
+<td> <p align='center'><b> Acciones del actor</b></p>
 
 Paso x:
 
@@ -551,7 +561,8 @@ Por último cuando un cliente llega al gimnasio debe registrar su llegada, para 
 
 ---
 
-<p align='center'><b>CURSO NORMAL</b></p><table><td> <div p='center'><b> Acciones del actor</b></p>
+<p align='center'><b>CURSO NORMAL</b></p><table>
+<td> <p align='center'><b> Acciones del actor</b></p>
 
 Paso x:
 
@@ -599,7 +610,8 @@ Suponga que el equipo de desarrollo tiene acceso a un sistema llamado Sigef para
 
 ---
 
-<p align='center'><b>CURSO NORMAL</b></p><table><td> <div p='center'><b> Acciones del actor</b></p>
+<p align='center'><b>CURSO NORMAL</b></p><table>
+<td> <p align='center'><b> Acciones del actor</b></p>
 
 Paso x:
 
