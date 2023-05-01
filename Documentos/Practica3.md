@@ -107,14 +107,14 @@ El encargado del departamento de alquileres no comentó acerca de las reservas d
 
 ---
 
-<p align='center'><b>CURSO NORMAL</b></p><table>
-<td> <p align='center'><b> Acciones del actor</b></p>
+CURSO NORMAL<table> <tr><td>Acciones del actor</td> <td>Acciones del Sistema</td></tr>
+<td>  
 
 Paso 1: El usuario selecciona la opcion `Reservar alquiler`
 
 Paso 3: El usuario ingresa los datos solicitados
 
-</td><td><p align='center'><b>Acciones del Sistema</b></p>
+</td><td>
 
 Paso 2: El Sistema solicita al fecha, lugar del evento, cantidad de dias y mobiliario junto a su cantidad
 
