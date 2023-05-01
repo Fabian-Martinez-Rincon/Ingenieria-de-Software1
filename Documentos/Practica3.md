@@ -61,11 +61,11 @@ Para cada Historia de Usuario se deben indicar los siguientes ítems:
 ---
 
 CURSO NORMAL<table> <tr><td>Acciones del actor</td> <td>Acciones del Sistema</td></tr>
-<td width="340">  
+<td width="400">  
 
 Paso x:
 
-</td><td width="340">
+</td><td width="400">
 
 Paso x: 
 
