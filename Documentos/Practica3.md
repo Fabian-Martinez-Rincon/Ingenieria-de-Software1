@@ -95,7 +95,7 @@ El encargado del departamento de alquileres no comentó acerca de las reservas d
 
 ---
 
-<table><tr><td> 
+<table width="5px"><tr><td> 
 
 **Nombre:** Reservar Alquiler
  
