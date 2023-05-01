@@ -48,7 +48,7 @@ Quiero aclarar que estos colores los elegi yo porque a mi me gustaron, no es nad
 
 Para cada Historia de Usuario se deben indicar los siguientes ítems:
 
-<table ><tr><td width="600"> 
+<table ><tr><td width="660"> 
 
 **Nombre:** 
  
@@ -61,11 +61,11 @@ Para cada Historia de Usuario se deben indicar los siguientes ítems:
 ---
 
 CURSO NORMAL<table> <tr><td>Acciones del actor</td> <td>Acciones del Sistema</td></tr>
-<td width="300">  
+<td width="320">  
 
 Paso x:
 
-</td><td width="300">
+</td><td width="320">
 
 Paso x: 
 
@@ -129,9 +129,11 @@ Paso 6: El sistema registra la reserva del alquiler y emite un codigo de reserva
 
 ---
 
-**Curso alterno:**
+**Curso alterno:** 
+- Paso alternativo 4:La cantidad ingresada es menor a 3. Se informa que minimo se incluyen 3. Retoma al paso 2
+- Paso alternativo 5: El pago no se realiza. Se notifica al usuario. Fin de CU
 
-**Postcondición:**
+**Postcondición:** Se registro una reserva y se emitió un nro de reserva único
 
 </table>
 </p>
