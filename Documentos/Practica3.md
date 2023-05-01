@@ -58,15 +58,11 @@ Para cada Historia de Usuario se deben indicar los siguientes ítems:
 
 **Precondiciones:**
 
-</td></tr><tr><td>
-
-**CURSO NORMAL** 
-
-<table><td> <div align='center'>Acciones del actor</div>
+</td></tr><tr><td><b>CURSO NORMAL</b><table><td> <div align='center'><b> Acciones del actor</b></div>
 
 Paso x:
 
-</td><td><div align='center'>Acciones del servidor</div>
+</td><td><div align='center'><b>Acciones del servidor</b></div>
 
 Paso x:
 
