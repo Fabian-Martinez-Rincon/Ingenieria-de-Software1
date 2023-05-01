@@ -65,7 +65,7 @@ Para cada Historia de Usuario se deben indicar los siguientes ítems:
 
 Paso x:
 
-</td><td><p align='center'><b>Acciones del servidor</b></p>
+</td><td><p align='center'><b>Acciones del Sistema</b></p>
 
 Paso x:
 
@@ -97,6 +97,82 @@ El encargado del departamento de alquileres no comentó acerca de las reservas d
 
 <table><tr><td> 
 
+**Nombre:** Reservar Alquiler
+ 
+**Descripción:** Este cu describe la forma en la que un usuario realiza la reserva de un alquiler
+
+**Actores:** Usuario
+
+**Precondiciones:** ---
+
+---
+
+<p align='center'><b>CURSO NORMAL</b></p><table>
+<td> <p align='center'><b> Acciones del actor</b></p>
+
+Paso 1: El usuario selecciona la opcion `Reservar alquiler`
+
+Paso 3: El usuario ingresa los datos solicitados
+
+</td><td><p align='center'><b>Acciones del Sistema</b></p>
+
+Paso 2: El Sistema solicita al fecha, lugar del evento, cantidad de dias y mobiliario junto a su cantidad
+
+Paso 4: El sistema verifica que la cantidad ingresada no sea menor a 3
+
+Paso 5: El sistema ejecuta el caso de uso `pagar con tarjeta `
+
+Paso 6: El sistema registra la reserva del alquiler y emite un codigo de reserva unico
+
+</td></table>
+
+---
+
+**Curso alterno:**
+
+**Postcondición:**
+
+</table>
+
+---
+
+<table><tr><td> 
+
+**Nombre:** Cargar Mueble
+ 
+**Descripción:** 
+
+**Actores:** 
+
+**Precondiciones:**
+
+---
+
+<p align='center'><b>CURSO NORMAL</b></p><table>
+<td> <p align='center'><b> Acciones del actor</b></p>
+
+Paso x:
+
+</td><td><p align='center'><b>Acciones del Sistema</b></p>
+
+Paso x:
+
+</td></table>
+
+---
+
+**Curso alterno:**
+
+**Postcondición:**
+
+</table>
+
+---
+
+
+
+<table><tr><td> 
+
 **Nombre:** 
  
 **Descripción:** 
@@ -112,7 +188,7 @@ El encargado del departamento de alquileres no comentó acerca de las reservas d
 
 Paso x:
 
-</td><td><p align='center'><b>Acciones del servidor</b></p>
+</td><td><p align='center'><b>Acciones del Sistema</b></p>
 
 Paso x:
 
@@ -167,7 +243,7 @@ Para inscribirse, el alumno deberá seleccionar la carrera, ingresar la cantidad
 
 Paso x:
 
-</td><td><p align='center'><b>Acciones del servidor</b></p>
+</td><td><p align='center'><b>Acciones del Sistema</b></p>
 
 Paso x:
 
@@ -219,7 +295,7 @@ Por último el empleado de rendiciones será el responsable de imprimir los list
 
 Paso x:
 
-</td><td><p align='center'><b>Acciones del servidor</b></p>
+</td><td><p align='center'><b>Acciones del Sistema</b></p>
 
 Paso x:
 
@@ -265,7 +341,7 @@ El sistema también es utilizado por un operador a través de una consola que se
 
 Paso x:
 
-</td><td><p align='center'><b>Acciones del servidor</b></p>
+</td><td><p align='center'><b>Acciones del Sistema</b></p>
 
 Paso x:
 
@@ -315,7 +391,7 @@ cliente.
 
 Paso x:
 
-</td><td><p align='center'><b>Acciones del servidor</b></p>
+</td><td><p align='center'><b>Acciones del Sistema</b></p>
 
 Paso x:
 
@@ -370,7 +446,7 @@ Además se desea administrar la programación de las salas. El administrador ing
 
 Paso x:
 
-</td><td><p align='center'><b>Acciones del servidor</b></p>
+</td><td><p align='center'><b>Acciones del Sistema</b></p>
 
 Paso x:
 
@@ -421,7 +497,7 @@ El cliente podrá realizar la cancelación total del préstamo a partir del nove
 
 Paso x:
 
-</td><td><p align='center'><b>Acciones del servidor</b></p>
+</td><td><p align='center'><b>Acciones del Sistema</b></p>
 
 Paso x:
 
@@ -472,7 +548,7 @@ Tenga en cuenta que cada vez que el sistema debe conectarse a la central, debe e
 
 Paso x:
 
-</td><td><p align='center'><b>Acciones del servidor</b></p>
+</td><td><p align='center'><b>Acciones del Sistema</b></p>
 
 Paso x:
 
@@ -519,7 +595,7 @@ En el sistema existe una política de reputaciones que permiten a los usuarios c
 
 Paso x:
 
-</td><td><p align='center'><b>Acciones del servidor</b></p>
+</td><td><p align='center'><b>Acciones del Sistema</b></p>
 
 Paso x:
 
@@ -566,7 +642,7 @@ Por último cuando un cliente llega al gimnasio debe registrar su llegada, para 
 
 Paso x:
 
-</td><td><p align='center'><b>Acciones del servidor</b></p>
+</td><td><p align='center'><b>Acciones del Sistema</b></p>
 
 Paso x:
 
@@ -615,7 +691,7 @@ Suponga que el equipo de desarrollo tiene acceso a un sistema llamado Sigef para
 
 Paso x:
 
-</td><td><p align='center'><b>Acciones del servidor</b></p>
+</td><td><p align='center'><b>Acciones del Sistema</b></p>
 
 Paso x:
 
