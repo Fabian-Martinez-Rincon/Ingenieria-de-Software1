@@ -48,26 +48,26 @@ Quiero aclarar que estos colores los elegi yo porque a mi me gustaron, no es nad
 
 Para cada Historia de Usuario se deben indicar los siguientes ítems:
 
-<table><tr><td> 
+<table ><tr><td width="500"> 
 
-**Nombre:** 
+**Nombre:** Reservar Alquiler
  
-**Descripción:** 
+**Descripción:** Este cu describe la forma en la que un usuario realiza la reserva de un alquiler
 
-**Actores:** 
+**Actores:** Usuario
 
-**Precondiciones:**
+**Precondiciones:** ---
 
 ---
 
-<p align='center'><b>CURSO NORMAL</b></p><table>
-<td> <p align='center'><b> Acciones del actor</b></p>
+CURSO NORMAL<table> <tr><td>Acciones del actor</td> <td>Acciones del Sistema</td></tr>
+<td width="300">  
 
 Paso x:
 
-</td><td><p align='center'><b>Acciones del Sistema</b></p>
+</td><td width="300">
 
-Paso x:
+Paso x: 
 
 </td></table>
 
@@ -95,8 +95,8 @@ El encargado del departamento de alquileres no comentó acerca de las reservas d
 
 ---
 
-<p width="5px">
-<table ><tr><td> 
+
+<table ><tr><td width="auto"> 
 
 **Nombre:** Reservar Alquiler
  
