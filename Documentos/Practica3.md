@@ -95,7 +95,8 @@ El encargado del departamento de alquileres no comentó acerca de las reservas d
 
 ---
 
-<table width="5px"><tr><td> 
+<p width="5px">
+<table ><tr><td> 
 
 **Nombre:** Reservar Alquiler
  
@@ -108,13 +109,13 @@ El encargado del departamento de alquileres no comentó acerca de las reservas d
 ---
 
 CURSO NORMAL<table> <tr><td>Acciones del actor</td> <td>Acciones del Sistema</td></tr>
-<td>  
+<td width="300">  
 
 Paso 1: El usuario selecciona la opcion `Reservar alquiler`
 
 Paso 3: El usuario ingresa los datos solicitados
 
-</td><td>
+</td><td width="300">
 
 Paso 2: El Sistema solicita al fecha, lugar del evento, cantidad de dias y mobiliario junto a su cantidad
 
@@ -133,6 +134,7 @@ Paso 6: El sistema registra la reserva del alquiler y emite un codigo de reserva
 **Postcondición:**
 
 </table>
+</p>
 
 ---
 
