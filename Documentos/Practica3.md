@@ -41,10 +41,10 @@ Quiero aclarar que estos colores los elegi yo porque a mi me gustaron, no es nad
 
 | Colores Para identificar      | ![Color Picker Boxes](https://draculatheme.com/static/img/color-boxes/eyedropper.png)   |
 | ------------ | --------------------------------------------------------------------------------------- |
-| Reglas de negocios         | ![Cyan Color](https://draculatheme.com/static/img/color-boxes/cyan.png)                 |
-| Historias de Usuario       | ![Orange Color](https://draculatheme.com/static/img/color-boxes/orange.png)             |
+| Verifica el sistema         | ![Cyan Color](https://draculatheme.com/static/img/color-boxes/cyan.png)                 |
+| Casos de uso       | ![Orange Color](https://draculatheme.com/static/img/color-boxes/orange.png)             |
 | Datos solicitados o que debe realizar       | ![Purple Color](https://draculatheme.com/static/img/color-boxes/purple.png)             |
-| Roles       | ![Yellow Color](https://draculatheme.com/static/img/color-boxes/yellow.png)             |
+| Actores       | ![Yellow Color](https://draculatheme.com/static/img/color-boxes/yellow.png)             |
 
 Para cada Historia de Usuario se deben indicar los siguientes ítems:
 
@@ -278,6 +278,22 @@ El requerimiento fue que el alumno ingrese a la web de posgrado y pueda registra
 
 Para inscribirse, el alumno deberá seleccionar la carrera, ingresar la cantidad de cuotas a pagar, ingresar el número de tarjeta y, en caso de que la tarjeta sea válida y tenga fondos, se hará efectivo el cobro y la inscripción. La tarjeta de crédito se valida a través de un servicio del banco con el cual la universidad tiene convenio. Luego de efectuado el cobro, el sistema debe imprimir dos comprobantes, uno de inscripción y otro de pago. La única forma que tiene el alumno de pagar es con tarjeta de crédito.
 
+---
+
+### Roles
+
+- Alumno registrado
+- Alumno no registrado
+- Empleado administrativo
+- Servidor del banco
+
+### Casos de Uso
+
+- Cargar carrera
+- Cerrar sesión
+- Iniciar sesión
+- Registrar alumno
+- Pagar con tarjeta
 
 ---
 
@@ -291,28 +307,38 @@ Para inscribirse, el alumno deberá seleccionar la carrera, ingresar la cantidad
 
 **Nombre:** Cargar Carrera
  
-**Descripción:** 
+**Descripción:** Este cu describe como un empleado administrativo realiza la carga de una carrera
 
-**Actores:** 
+**Actores:** Empleado administrativo
 
-**Precondiciones:** 
+**Precondiciones:** ---
 
 ---
 
 CURSO NORMAL<table> <tr><td>Acciones del actor</td> <td>Acciones del Sistema</td></tr>
 <td width="320">  
 
-Paso x:
+Paso 1: El empleado administrativo selecciona la opción "Cargar carrera"
+
+Paso 3: El empleado administrativo ingresa datos solicitados
 
 </td><td width="320">
 
-Paso x: 
+Paso 2: El sistema solicita nombre de la carrera, duración en años, costo y cantidad maxima de cuotas para el pago
+
+Paso 4: El sistema valida que el nombre no se repita
+
+Paso 5: El sistema valida que la duración sea menor o igual a 5 años
+
+Paso 6: El sistema registra la carrera
 
 </td></table>
 
 ---
 
 **Curso alterno:**
+- Curso alterno 4: El nombre se repite. Se informa el error. Retoma desde el paso 2
+- Curso alterno 5: La duración supera los 5 años. Se informa el error. Retoma desde el paso 2
 
 **Postcondición:**
 
@@ -326,31 +352,40 @@ Paso x:
 
 **Nombre:** Inscribirse a carrera
  
-**Descripción:** 
+**Descripción:** Este cu describe como un alumno registrado se inscribe a una carrera
 
-**Actores:** 
+**Actores:** Alumno Registrado
 
-**Precondiciones:** 
+**Precondiciones:** El usuario debe tener una sesión iniciada
 
 ---
 
 CURSO NORMAL<table> <tr><td>Acciones del actor</td> <td>Acciones del Sistema</td></tr>
 <td width="320">  
 
-Paso x:
+Paso 1: El usuario registrado selecciona la opción "Inscribirse a carrera"
+
+Paso 3: El usuario registrado selecciona una de las carreras e ingresa datos solicitados
 
 </td><td width="320">
 
-Paso x: 
+Paso 2: El sistema muestra un listado de carreras y solicita cantidad de cuotas a pagar
+
+Paso 4: El sistema valida que las cuotas no superen el maximo disponible
+
+Paso 5: El sistema ejecuta el CU "Pagar con tarjeta"
+
+Paso 6: El sistema imprime dos comprobantes, uno de inscripción y otro de pago
 
 </td></table>
 
 ---
 
 **Curso alterno:**
+- Paso alterno 4: Las cuotas superan el maximo. Se notifica. Volver al paso 2
+- Paso alterno 5: El pago no se realiza. Se notifica al usuario registrado. Fin del CU.
 
-**Postcondición:**
-
+**Postcondición:** Se realizo la inscripcion a una carrera
 </table>
 
 ---
@@ -361,30 +396,38 @@ Paso x:
 
 **Nombre:** Iniciar Sesión
  
-**Descripción:** 
+**Descripción:** Este cu describe como un usuario registrado inicia sesión
 
-**Actores:** 
+**Actores:** Usuario Registrado
 
-**Precondiciones:** 
+**Precondiciones:** ---
 
 ---
 
 CURSO NORMAL<table> <tr><td>Acciones del actor</td> <td>Acciones del Sistema</td></tr>
 <td width="320">  
 
-Paso x:
+Paso 1: El usuario registrado selecciona la opcion "Iniciar Sesión"
+
+Paso 3: El usuario registrado ingresa datos solicitados
+
 
 </td><td width="320">
 
-Paso x: 
+Paso 2: El sistema solicita nombre de usuario y contraseña
+
+Paso 4: El sistema verifica datos ingresados
+
+Paso 5: El sistema registra la sesión iniciada y habilida las acciones del usuario registrado
 
 </td></table>
 
 ---
 
 **Curso alterno:**
+- Paso alternativo 4: El nombre de usuario o la contraseña no son validos. Se notifica el error. Volver al paso 2
 
-**Postcondición:**
+**Postcondición:** La sesión ha sido habilitada y las opciones para usuarios registrados aparecen habilitadas
 
 </table>
 
@@ -396,30 +439,35 @@ Paso x:
 
 **Nombre:** Cerrar Sesión
  
-**Descripción:** 
+**Descripción:** Este cu describe como un alumno registrado realiza el cierre de sesión
 
-**Actores:** 
+**Actores:** Usuario Registrado
 
-**Precondiciones:** 
+**Precondiciones:** Tener una sesión abierta
 
 ---
 
 CURSO NORMAL<table> <tr><td>Acciones del actor</td> <td>Acciones del Sistema</td></tr>
 <td width="320">  
 
-Paso x:
+Paso 1: El usuario registrado selecciona la opción "Cerrar Sesión"
+
+Paso 3: El usuario registrado acepta confirmación
 
 </td><td width="320">
 
-Paso x: 
+Paso 2: El sistema solicita confirmación del usuario
+
+Paso 4: El sistema cierra la sesión y deshabilita las acciones del usuario
 
 </td></table>
 
 ---
 
 **Curso alterno:**
+- El usuario registrado cancela la operación. Fin del CU
 
-**Postcondición:**
+**Postcondición:** La sesión ha sido cerrada, las operaciones para usuarios registrados son deshabilitadas y se eliminan los datos de la sesión.
 
 </table>
 
@@ -431,30 +479,40 @@ Paso x:
 
 **Nombre:** Registrar alumno
  
-**Descripción:** 
+**Descripción:** Este cu describe como un alumno no registrado realiza el registro
 
-**Actores:** 
+**Actores:** Alumno no registrado
 
-**Precondiciones:** 
+**Precondiciones:** ---
 
 ---
 
 CURSO NORMAL<table> <tr><td>Acciones del actor</td> <td>Acciones del Sistema</td></tr>
 <td width="320">  
 
-Paso x:
+Paso 1: El Alumno no registrado selecciona la opción "Registrar Alumno"
+
+Paso 3: El alumno no registrado ingresa datos solicitados
 
 </td><td width="320">
 
-Paso x: 
+Paso 2: El sistema solicita nombre, apellido, nombre de usuario y contraseña
+
+Paso 4: El sistema valida que el nombre sea unico
+
+Paso 5: El sistema valida que la contraseña tenga mas de 6 digitos
+
+Paso 6: El sistema registra al usuario y habilita la inscripción a alguna de las carreras
 
 </td></table>
 
 ---
 
 **Curso alterno:**
+- Paso alternativo 4: El nombre no se unico. Se informa el error. Volver al paso 2.
+- Paso alternativo 5: La contraseña tiene menos de 6 digitos. Se informa el error. Volver al paso 2.
 
-**Postcondición:**
+**Postcondición:** Se registro al usuario de manera existosa habilitanse las incripciones a las carreras
 
 </table>
 
@@ -468,28 +526,47 @@ Paso x:
  
 **Descripción:** 
 
-**Actores:** 
+**Actores:** Servidor del banco, Alumno Registrado
 
-**Precondiciones:** 
+**Precondiciones:** Se debe haber ejecutado el cu "Inscribirse a carrera"
 
 ---
 
 CURSO NORMAL<table> <tr><td>Acciones del actor</td> <td>Acciones del Sistema</td></tr>
 <td width="320">  
 
-Paso x:
+Paso 2: El usuario registrado ingresa datos solicitados
+
+Paso 4: El servidor del banco acepta la conexión y solicita numero de la tarjeta
+
+Paso 6: El servidor del banco valida numero de tarjeta y fondos suficientes
+
+Paso 7: El servidor del banco retorna resultado
 
 </td><td width="320">
 
-Paso x: 
+Paso 1: El sistema solicita numero de tarjeta 
+
+Paso 3: El sistema solicita conexión con el servidor del banco
+
+Paso 5: El sistema envia el numero de la tarjeta al servidor del banco
+
+Paso 8: El sistema recibe que el numero de la tarjeta es valido
+
+Paso 9: El sistema recibe el posee fondos suficientes
+
+Paso 10: El sistema registra el pago
 
 </td></table>
 
 ---
 
 **Curso alterno:**
+- Curso alternativo 2: No se establecio conexión con el servidor del banco. Se informa. Fin del CU
+- Curso alternativo 8: El nro de la tarjeta es invalido. Se notifica. Volver al paso 1.
+- Curso alternativo 9: No posee fondos suficientes. Se notifica. Fin del CU.
 
-**Postcondición:**
+**Postcondición:** Se efectuo y registro el pago a traves de la tarjeta
 
 </table>
 
