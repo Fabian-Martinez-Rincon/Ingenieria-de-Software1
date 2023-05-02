@@ -95,11 +95,7 @@ El encargado del departamento de alquileres no comentó acerca de las reservas d
 
 ---
 
-![](/Practicas/Practica%203/Imagenes/1.jpg)
-
----
-
-### Roles
+### Actores
 - Usuario
 - Servidor del banco
 - Engargado del departamento
@@ -110,7 +106,15 @@ El encargado del departamento de alquileres no comentó acerca de las reservas d
 - Carga mueble
 - Pagar con tarjeta
 
+
+
 ---
+
+![](/Practicas/Practica%203/Imagenes/1.jpg)
+
+---
+
+
 
 ### Reservar Alquiler
 
@@ -280,7 +284,7 @@ Para inscribirse, el alumno deberá seleccionar la carrera, ingresar la cantidad
 
 ---
 
-### Roles
+### Actores
 
 - Alumno registrado
 - Alumno no registrado
@@ -591,6 +595,12 @@ Por último el empleado de rendiciones será el responsable de imprimir los list
 
 ---
 
+### Actores
+
+### Casos de Uso
+
+---
+
 ![](/Practicas/Practica%203/Imagenes/3.jpg)
 
 ---
@@ -602,9 +612,9 @@ Por último el empleado de rendiciones será el responsable de imprimir los list
 
 **Nombre:** Confeccionar Minuta
  
-**Descripción:** 
+**Descripción:** Este cu describe como como un empleado de mesa realiza la confecció de una minuta
 
-**Actores:** 
+**Actores:** Empleado de mesa
 
 **Precondiciones:** 
 
@@ -613,17 +623,26 @@ Por último el empleado de rendiciones será el responsable de imprimir los list
 CURSO NORMAL<table> <tr><td>Acciones del actor</td> <td>Acciones del Sistema</td></tr>
 <td width="320">  
 
-Paso x:
+Paso 1: El empleado de mesa selecciona la opción "Confeccionar minuta"
+Paso 3: El empleado de mesa ingresa datos solicitados
 
 </td><td width="320">
 
-Paso x: 
+Paso 2: El sistema solicita nombre, CUIT, tipo de contrato, fecha de comienzo, duración y monto
+
+Paso 4: El sistema valida que el monto no supera los $25.000
+
+Paso 5: El sistema valida que la duración no supera los 6 meses
+
+Paso 6: El sistema confecciona y asocia un numero de minuta automaticamente
 
 </td></table>
 
 ---
 
 **Curso alterno:**
+- Paso alternativo 4: 
+- Paso alternativo 5: 
 
 **Postcondición:**
 
