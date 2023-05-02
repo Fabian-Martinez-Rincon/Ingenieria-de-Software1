@@ -821,6 +821,264 @@ Una vez autenticado, el usuario puede subir un máximo de 50 fotos para ser impr
 Un cliente debe acercarse a la sucursal para retirar las fotos enviadas previamente. Para esto debe presentar el código único a un empleado. Este registra el código, la fecha de retiro y entrega las fotos al
 cliente.
 
+---
+
+### Actores
+- Persona (Usuario no registrado)
+- Usuario
+- Empleado
+- Servidor del banco
+
+### Casos de uso
+- Subir Fotos
+- Registrar Persona
+- Iniciar Sesión
+- Cerrar Sesión
+- Pagar con tarjeta
+- Registrar Codigo
+
+---
+
+### Subir Fotos
+
+<table ><tr><td width="660"> 
+
+**Nombre:** Subir Fotos
+ 
+**Descripción:** Este cu describe como un usuario sube fotos para abonarlas
+
+**Actores:** Usuario
+
+**Precondiciones:** El usuario debe tener una sesión iniciada
+
+---
+
+CURSO NORMAL<table> <tr><td>Acciones del actor</td> <td>Acciones del Sistema</td></tr>
+<td width="320">  
+
+Paso 1: El usuario selecciona la opción "Subir Foto"
+
+Paso 3: El usuario ingresa una foto
+
+Paso 6: El usuario acepta la confirmación para pagar
+
+</td><td width="320">
+
+Paso 2: El sistema solicita que ingrese una foto
+
+Paso 4: El sistema valida si se ingresaron menos de 50 fotos
+
+Paso 5: El sistema solicita la confirmación del usuario para pagar
+
+Paso 7: El sistema multiplica cada foto por $15 y guarda el total
+
+Paso 8: El sistema ejecuta el cu "Pagar con Tarjeta"
+
+Paso 9: El sistema imprime un codigo unico para retirar las fotos
+
+
+</td></table>
+
+---
+
+**Curso alterno:**
+- Paso alternativo 4: Se ingresaron 50 fotos. Se Informa que se alcanzo el limite. Se adelanta al Paso 8 (Si no paga muere :D)
+- Paso alternativo 5: El usuario cancelo la confirmación. Informo. Vuelvo al paso 2.
+- Paso alternativo 8: El pago no se realiza. Se notifica. Fin del CU.
+
+
+**Postcondición:**
+
+</table>
+
+---
+
+### Registrar Persona
+
+<table ><tr><td width="660"> 
+
+**Nombre:** Registrar Persona
+ 
+**Descripción:** Este cu describe como una persona se registra
+
+**Actores:** Persona
+
+**Precondiciones:** 
+
+---
+
+CURSO NORMAL<table> <tr><td>Acciones del actor</td> <td>Acciones del Sistema</td></tr>
+<td width="320">  
+
+Paso 1: La Persona selecciona la opción "Registrar Persona"
+
+Paso 3: La Persona ingresa datos solicitados
+
+</td><td width="320">
+
+Paso 2: El sistema solicita datos personales, nombre, apellido, mail, domicilio nombre de usuario y contraseña
+
+Paso 4: El sistema valida nombre de usuario unico
+
+Paso 5: El sistema da de alta al nuevo usuario
+
+</td></table>
+
+---
+
+**Curso alterno:**
+- Paso alternativo 4: El nombre del usuario ya existe. Se informa. Vuele al Paso 2.
+
+**Postcondición:** Se da de alta un nuevo usuario
+
+</table>
+
+---
+
+### Iniciar Sesión
+
+<table ><tr><td width="660"> 
+
+**Nombre:** Iniciar Sesión
+ 
+**Descripción:** Este cu describe como un usuario inicia su sesión
+
+**Actores:** Usuario
+
+**Precondiciones:** 
+
+---
+
+CURSO NORMAL<table> <tr><td>Acciones del actor</td> <td>Acciones del Sistema</td></tr>
+<td width="320">  
+
+Paso 1: El usuario selecciona la opción "Iniciar Sesión"
+
+Paso 3: El usuario ingresa datos solicitados
+
+</td><td width="320">
+
+Paso 2: El sistema solicita nombre de usuario y contraseña
+
+Paso 4: El sistema valida los datos ingresados
+
+Paso 5: El sistema registra la sesión iniciada y lo habilita para subir fotos 
+
+</td></table>
+
+---
+
+**Curso alterno:** El usuario o la contraseña no son validos. Se notifica la discrepancia. Vuelve al paso 2
+
+**Postcondición:** La sesión ha sido iniciada y se habilita la opción para subir fotos
+
+</table>
+
+---
+
+### Cerrar Sesión
+
+<table ><tr><td width="660"> 
+
+**Nombre:** Cerrar Sesión
+ 
+**Descripción:** 
+
+**Actores:** 
+
+**Precondiciones:** 
+
+---
+
+CURSO NORMAL<table> <tr><td>Acciones del actor</td> <td>Acciones del Sistema</td></tr>
+<td width="320">  
+
+Paso x:
+
+</td><td width="320">
+
+Paso x: 
+
+</td></table>
+
+---
+
+**Curso alterno:**
+
+**Postcondición:**
+
+</table>
+
+---
+
+### Pagar con tarjeta
+
+<table ><tr><td width="660"> 
+
+**Nombre:** Pagar con tarjeta
+ 
+**Descripción:** 
+
+**Actores:** 
+
+**Precondiciones:** 
+
+---
+
+CURSO NORMAL<table> <tr><td>Acciones del actor</td> <td>Acciones del Sistema</td></tr>
+<td width="320">  
+
+Paso x:
+
+</td><td width="320">
+
+Paso x: 
+
+</td></table>
+
+---
+
+**Curso alterno:**
+
+**Postcondición:**
+
+</table>
+
+---
+
+### Registrar Codigo
+
+<table ><tr><td width="660"> 
+
+**Nombre:** Registrar Codigo
+ 
+**Descripción:** 
+
+**Actores:** 
+
+**Precondiciones:** 
+
+---
+
+CURSO NORMAL<table> <tr><td>Acciones del actor</td> <td>Acciones del Sistema</td></tr>
+<td width="320">  
+
+Paso x:
+
+</td><td width="320">
+
+Paso x: 
+
+</td></table>
+
+---
+
+**Curso alterno:**
+
+**Postcondición:**
+
+</table>
+
 
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
