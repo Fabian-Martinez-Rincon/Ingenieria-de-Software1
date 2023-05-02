@@ -340,7 +340,7 @@ Paso 6: El sistema registra la carrera
 - Curso alterno 4: El nombre se repite. Se informa el error. Retoma desde el paso 2
 - Curso alterno 5: La duración supera los 5 años. Se informa el error. Retoma desde el paso 2
 
-**Postcondición:**
+**Postcondición:** Se cargo una nueva carrera en el sistema
 
 </table>
 
@@ -356,16 +356,16 @@ Paso 6: El sistema registra la carrera
 
 **Actores:** Alumno Registrado
 
-**Precondiciones:** El usuario debe tener una sesión iniciada
+**Precondiciones:** El Alumno debe tener una sesión iniciada
 
 ---
 
 CURSO NORMAL<table> <tr><td>Acciones del actor</td> <td>Acciones del Sistema</td></tr>
 <td width="320">  
 
-Paso 1: El usuario registrado selecciona la opción "Inscribirse a carrera"
+Paso 1: El Alumno registrado selecciona la opción "Inscribirse a carrera"
 
-Paso 3: El usuario registrado selecciona una de las carreras e ingresa datos solicitados
+Paso 3: El Alumno registrado selecciona una de las carreras e ingresa datos solicitados
 
 </td><td width="320">
 
@@ -383,7 +383,7 @@ Paso 6: El sistema imprime dos comprobantes, uno de inscripción y otro de pago
 
 **Curso alterno:**
 - Paso alterno 4: Las cuotas superan el maximo. Se notifica. Volver al paso 2
-- Paso alterno 5: El pago no se realiza. Se notifica al usuario registrado. Fin del CU.
+- Paso alterno 5: El pago no se realiza. Se notifica al Alumno registrado. Fin del CU.
 
 **Postcondición:** Se realizo la inscripcion a una carrera
 </table>
@@ -396,9 +396,9 @@ Paso 6: El sistema imprime dos comprobantes, uno de inscripción y otro de pago
 
 **Nombre:** Iniciar Sesión
  
-**Descripción:** Este cu describe como un usuario registrado inicia sesión
+**Descripción:** Este cu describe como un Alumno registrado inicia sesión
 
-**Actores:** Usuario Registrado
+**Actores:** Alumno Registrado
 
 **Precondiciones:** ---
 
@@ -407,9 +407,9 @@ Paso 6: El sistema imprime dos comprobantes, uno de inscripción y otro de pago
 CURSO NORMAL<table> <tr><td>Acciones del actor</td> <td>Acciones del Sistema</td></tr>
 <td width="320">  
 
-Paso 1: El usuario registrado selecciona la opcion "Iniciar Sesión"
+Paso 1: El Alumno registrado selecciona la opcion "Iniciar Sesión"
 
-Paso 3: El usuario registrado ingresa datos solicitados
+Paso 3: El Alumno registrado ingresa datos solicitados
 
 
 </td><td width="320">
@@ -441,24 +441,24 @@ Paso 5: El sistema registra la sesión iniciada y habilida las acciones del usua
  
 **Descripción:** Este cu describe como un alumno registrado realiza el cierre de sesión
 
-**Actores:** Usuario Registrado
+**Actores:** Alumno Registrado
 
-**Precondiciones:** Tener una sesión abierta
+**Precondiciones:** El alumno registrado debe tener una sesión abierta
 
 ---
 
 CURSO NORMAL<table> <tr><td>Acciones del actor</td> <td>Acciones del Sistema</td></tr>
 <td width="320">  
 
-Paso 1: El usuario registrado selecciona la opción "Cerrar Sesión"
+Paso 1: El Alumno registrado selecciona la opción "Cerrar Sesión"
 
-Paso 3: El usuario registrado acepta confirmación
+Paso 3: El Alumno registrado acepta confirmación
 
 </td><td width="320">
 
-Paso 2: El sistema solicita confirmación del usuario
+Paso 2: El sistema solicita confirmación del Alumno
 
-Paso 4: El sistema cierra la sesión y deshabilita las acciones del usuario
+Paso 4: El sistema cierra la sesión y deshabilita las acciones del Alumno
 
 </td></table>
 
@@ -535,7 +535,7 @@ Paso 6: El sistema registra al usuario y habilita la inscripción a alguna de la
 CURSO NORMAL<table> <tr><td>Acciones del actor</td> <td>Acciones del Sistema</td></tr>
 <td width="320">  
 
-Paso 2: El usuario registrado ingresa datos solicitados
+Paso 2: El Alumno registrado ingresa datos solicitados
 
 Paso 4: El servidor del banco acepta la conexión y solicita numero de la tarjeta
 
