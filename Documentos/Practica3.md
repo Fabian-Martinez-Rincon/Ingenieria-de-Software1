@@ -289,7 +289,7 @@ Para inscribirse, el alumno deberá seleccionar la carrera, ingresar la cantidad
 
 <table ><tr><td width="660"> 
 
-**Nombre:** 
+**Nombre:** Cargar Carrera
  
 **Descripción:** 
 
@@ -324,7 +324,7 @@ Paso x:
 
 <table ><tr><td width="660"> 
 
-**Nombre:** 
+**Nombre:** Inscribirse a carrera
  
 **Descripción:** 
 
@@ -359,7 +359,7 @@ Paso x:
 
 <table ><tr><td width="660"> 
 
-**Nombre:** 
+**Nombre:** Iniciar Sesión
  
 **Descripción:** 
 
@@ -394,7 +394,7 @@ Paso x:
 
 <table ><tr><td width="660"> 
 
-**Nombre:** 
+**Nombre:** Cerrar Sesión
  
 **Descripción:** 
 
@@ -429,7 +429,7 @@ Paso x:
 
 <table ><tr><td width="660"> 
 
-**Nombre:** 
+**Nombre:** Registrar alumno
  
 **Descripción:** 
 
@@ -464,7 +464,7 @@ Paso x:
 
 <table ><tr><td width="660"> 
 
-**Nombre:** 
+**Nombre:** Pagar con tarjeta
  
 **Descripción:** 
 
