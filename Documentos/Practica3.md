@@ -95,6 +95,24 @@ El encargado del departamento de alquileres no comentó acerca de las reservas d
 
 ---
 
+![](/Practicas/Practica%203/Imagenes/1.jpg)
+
+---
+
+### Roles
+- Usuario
+- Servidor del banco
+- Engargado del departamento
+
+### Casos de Uso
+- Reservar alquiler
+- Autenticarse en el sistema (No hay que modelar)
+- Carga mueble
+- Pagar con tarjeta
+
+---
+
+### Reservar Alquiler
 
 <table ><tr><td width="660"> 
 
@@ -139,6 +157,103 @@ Paso 6: El sistema registra la reserva del alquiler y emite un codigo de reserva
 </p>
 
 ---
+
+### Pagar con tarjeta
+
+<table ><tr><td width="660"> 
+
+**Nombre:** Pagar con tarjeta
+ 
+**Descripción:** Este cu describe el cobro de una reserva de alquiler mediante una tarjeta
+
+**Actores:** Usuario, Servidor del banco
+
+**Precondiciones:** Se debe haber ejecutado el CU `Reservar Alquiler`
+
+---
+
+CURSO NORMAL<table> <tr><td>Acciones del actor</td> <td>Acciones del Sistema</td></tr>
+<td width="320">  
+
+Paso 2: El usuario ingresa datos solicitados 
+
+Paso 4: El servidor del banco acepta la conexión y solicita nro de tarjeta y codigo de seguridad
+
+Paso 6: El servidor del banco valida los datos de la tarjeta y fondos suficientes para abonar el 20% total del alquiler
+
+Paso 7: El servidor del banco retorna el resultado
+
+</td><td width="320">
+
+Paso 1: El sistema solicita nro de tarjeta y codigo de seguridad 
+
+Paso 3: El sistema solicita conexión con el servidor del banco
+
+Paso 5: El sistema envia los datos de la tarjeta al servidor del banco
+
+Paso 8: El sistema recibe que los datos de la tarjeta son correctos
+
+Paso 9: El sistema recibe que los fondos son suficientes para abonar el 20% del total
+
+Paso 10: El sistema registra el pago y cierra la conexión con el servidor del banco
+
+</td></table>
+
+---
+
+**Curso alterno:**
+- Paso alternativo 3: Falla la conexión con el servidor del banco. Se informa el error. Fin del CU
+- Paso alternativo 8: La validación de los datos es incorrecta. Se informa error en los datos de la tarjeta. Fin de CU
+- Paso alternativo 9: Los fondos son insuficientes para abonar el 20% total del alquiler. Se informa fondos insuficientes. Fin de CU
+
+**Postcondición:** Se realizo y se registro el pago a traves de la tarjeta
+
+</table>
+
+---
+
+### Cargar mueble
+
+<table ><tr><td width="660"> 
+
+**Nombre:** Cargar Mueble
+ 
+**Descripción:** Este cu describe la forma en la que un encargado del departamento carga muebles
+
+**Actores:** Encargado del departamento
+
+**Precondiciones:** El encargado del departamento debe tener una sesión iniciada
+
+---
+
+CURSO NORMAL<table> <tr><td>Acciones del actor</td> <td>Acciones del Sistema</td></tr>
+<td width="320">  
+
+Paso 1 : el encargado del departamento selecciona la opción 'Cargar mueble'
+
+Paso 3: el encargado del departamento ingresa los datos solicitados 
+
+</td><td width="320">
+
+Paso 2: El sistema solicita codigo de inventario, tipo de mueble, fecha de creación, fecha de ultimo mantenimiento, estado y el precio de alquiler
+
+Paso 4: El sistema valida que el codigo sea unico
+
+Paso 5: El sistema valida que el precio se cargo en dolares
+
+Paso 6: El sistemas registra la carga del mueble 
+
+</td></table>
+
+---
+
+**Curso alterno:**
+- Paso alterno 4: El codigo ingresado no es unico. Se informa el error. Fin del CU
+- Paso alterno 5: El precio no se cargo en dolares. Se informa el error. Regresa al paso 2
+
+**Postcondición:** Se registro un mueble
+
+</table>
 
 
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
