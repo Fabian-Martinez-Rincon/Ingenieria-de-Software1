@@ -589,6 +589,151 @@ Una vez confeccionada la minuta por parte del empleado de mesa de entradas, la m
 
 Por último el empleado de rendiciones será el responsable de imprimir los listados con las minutas aprobadas, es decir, un listado con el personal contratado para poder dárselo al jefe de departamento para que lo firme.
 
+---
+
+![](/Practicas/Practica%203/Imagenes/3.jpg)
+
+---
+
+
+### Confeccionar Minuta
+
+<table ><tr><td width="660"> 
+
+**Nombre:** Confeccionar Minuta
+ 
+**Descripción:** 
+
+**Actores:** 
+
+**Precondiciones:** 
+
+---
+
+CURSO NORMAL<table> <tr><td>Acciones del actor</td> <td>Acciones del Sistema</td></tr>
+<td width="320">  
+
+Paso x:
+
+</td><td width="320">
+
+Paso x: 
+
+</td></table>
+
+---
+
+**Curso alterno:**
+
+**Postcondición:**
+
+</table>
+
+---
+
+### Aprobar Minuta
+
+<table ><tr><td width="660"> 
+
+**Nombre:** Aprobar Minuta
+ 
+**Descripción:** 
+
+**Actores:** 
+
+**Precondiciones:** 
+
+---
+
+CURSO NORMAL<table> <tr><td>Acciones del actor</td> <td>Acciones del Sistema</td></tr>
+<td width="320">  
+
+Paso x:
+
+</td><td width="320">
+
+Paso x: 
+
+</td></table>
+
+---
+
+**Curso alterno:**
+
+**Postcondición:**
+
+</table>
+
+---
+
+### Imprimir Listado
+
+<table ><tr><td width="660"> 
+
+**Nombre:** Imprimir Listado
+ 
+**Descripción:** 
+
+**Actores:** 
+
+**Precondiciones:** 
+
+---
+
+CURSO NORMAL<table> <tr><td>Acciones del actor</td> <td>Acciones del Sistema</td></tr>
+<td width="320">  
+
+Paso x:
+
+</td><td width="320">
+
+Paso x: 
+
+</td></table>
+
+---
+
+**Curso alterno:**
+
+**Postcondición:**
+
+</table>
+
+---
+
+### Validar Cuit
+
+<table ><tr><td width="660"> 
+
+**Nombre:** Validar Cuit
+ 
+**Descripción:** 
+
+**Actores:** 
+
+**Precondiciones:** 
+
+---
+
+CURSO NORMAL<table> <tr><td>Acciones del actor</td> <td>Acciones del Sistema</td></tr>
+<td width="320">  
+
+Paso x:
+
+</td><td width="320">
+
+Paso x: 
+
+</td></table>
+
+---
+
+**Curso alterno:**
+
+**Postcondición:**
+
+</table>
+
 
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
