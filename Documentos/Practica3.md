@@ -283,6 +283,216 @@ Para inscribirse, el alumno deberá seleccionar la carrera, ingresar la cantidad
 
 ![](/Practicas/Practica%203/Imagenes/2.jpg)
 
+---
+
+## Cargar Carrera
+
+<table ><tr><td width="660"> 
+
+**Nombre:** 
+ 
+**Descripción:** 
+
+**Actores:** 
+
+**Precondiciones:** 
+
+---
+
+CURSO NORMAL<table> <tr><td>Acciones del actor</td> <td>Acciones del Sistema</td></tr>
+<td width="320">  
+
+Paso x:
+
+</td><td width="320">
+
+Paso x: 
+
+</td></table>
+
+---
+
+**Curso alterno:**
+
+**Postcondición:**
+
+</table>
+
+---
+
+## Inscribirse a carrera
+
+<table ><tr><td width="660"> 
+
+**Nombre:** 
+ 
+**Descripción:** 
+
+**Actores:** 
+
+**Precondiciones:** 
+
+---
+
+CURSO NORMAL<table> <tr><td>Acciones del actor</td> <td>Acciones del Sistema</td></tr>
+<td width="320">  
+
+Paso x:
+
+</td><td width="320">
+
+Paso x: 
+
+</td></table>
+
+---
+
+**Curso alterno:**
+
+**Postcondición:**
+
+</table>
+
+---
+
+## Iniciar Sesión
+
+<table ><tr><td width="660"> 
+
+**Nombre:** 
+ 
+**Descripción:** 
+
+**Actores:** 
+
+**Precondiciones:** 
+
+---
+
+CURSO NORMAL<table> <tr><td>Acciones del actor</td> <td>Acciones del Sistema</td></tr>
+<td width="320">  
+
+Paso x:
+
+</td><td width="320">
+
+Paso x: 
+
+</td></table>
+
+---
+
+**Curso alterno:**
+
+**Postcondición:**
+
+</table>
+
+---
+
+## Cerrar Sesión
+
+<table ><tr><td width="660"> 
+
+**Nombre:** 
+ 
+**Descripción:** 
+
+**Actores:** 
+
+**Precondiciones:** 
+
+---
+
+CURSO NORMAL<table> <tr><td>Acciones del actor</td> <td>Acciones del Sistema</td></tr>
+<td width="320">  
+
+Paso x:
+
+</td><td width="320">
+
+Paso x: 
+
+</td></table>
+
+---
+
+**Curso alterno:**
+
+**Postcondición:**
+
+</table>
+
+---
+
+## Registrar alumno
+
+<table ><tr><td width="660"> 
+
+**Nombre:** 
+ 
+**Descripción:** 
+
+**Actores:** 
+
+**Precondiciones:** 
+
+---
+
+CURSO NORMAL<table> <tr><td>Acciones del actor</td> <td>Acciones del Sistema</td></tr>
+<td width="320">  
+
+Paso x:
+
+</td><td width="320">
+
+Paso x: 
+
+</td></table>
+
+---
+
+**Curso alterno:**
+
+**Postcondición:**
+
+</table>
+
+---
+
+## Pagar con tarjeta
+
+<table ><tr><td width="660"> 
+
+**Nombre:** 
+ 
+**Descripción:** 
+
+**Actores:** 
+
+**Precondiciones:** 
+
+---
+
+CURSO NORMAL<table> <tr><td>Acciones del actor</td> <td>Acciones del Sistema</td></tr>
+<td width="320">  
+
+Paso x:
+
+</td><td width="320">
+
+Paso x: 
+
+</td></table>
+
+---
+
+**Curso alterno:**
+
+**Postcondición:**
+
+</table>
+
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
 <div align = 'center'>
