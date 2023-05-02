@@ -596,8 +596,15 @@ Por último el empleado de rendiciones será el responsable de imprimir los list
 ---
 
 ### Actores
+- Empleado de Mesa
+- Empleado de Rendiciones
+- Servidor AFIP
 
 ### Casos de Uso
+- Confeccionar minuta
+- Aprobar minuta
+- Imprimir Listado
+- Validar Cuit
 
 ---
 
@@ -644,7 +651,7 @@ Paso 6: El sistema confecciona y asocia un numero de minuta automaticamente
 - Paso alternativo 4: 
 - Paso alternativo 5: 
 
-**Postcondición:**
+**Postcondición:** Se confecciona la minuta y se le asocia un numero automaticamente
 
 </table>
 
@@ -656,30 +663,43 @@ Paso 6: El sistema confecciona y asocia un numero de minuta automaticamente
 
 **Nombre:** Aprobar Minuta
  
-**Descripción:** 
+**Descripción:** Este cu describe como un empleado de rendiciones realiza la aprobación de una minuta
 
-**Actores:** 
+**Actores:** Empleado de rendiciones
 
-**Precondiciones:** 
+**Precondiciones:** ---
 
 ---
 
 CURSO NORMAL<table> <tr><td>Acciones del actor</td> <td>Acciones del Sistema</td></tr>
 <td width="320">  
 
-Paso x:
+Paso 1: El Empleado de rendiciones seleciona la opción "Aprobar Minuta"
+
+Paso 3: El Empleado de rendiciones ingresa datos solicitados
 
 </td><td width="320">
 
-Paso x: 
+Paso 2: El sistema solicita numero de minuta
+
+Paso 4: El sistema muestra los datos de la misma
+
+Paso 5: El sistema valida que la persona no tenga 3 contratos vigentes
+
+Paso 6: El sistema ejecuta el cu Validar Cuit
+
+Paso 7: El sistema aprueba la minuta y se agrega al listado
 
 </td></table>
 
 ---
 
 **Curso alterno:**
+- Paso alternativo 4: No se muestran los datos. Se informa que ya fue usada. Fin del CU
+- Paso alternativo 5: La persona tiene 3 contratos vigentes. Se notifica. Fin de CU
+- Paso alternativo 6: Cuit Invalido. Se notifica. Fin del CU
 
-**Postcondición:**
+**Postcondición:** La minuta fue aprobada
 
 </table>
 
@@ -691,30 +711,30 @@ Paso x:
 
 **Nombre:** Imprimir Listado
  
-**Descripción:** 
+**Descripción:** Este cu describe como un Empleado de rendiciones imprime un listado de las minutas
 
-**Actores:** 
+**Actores:** Empleado de rendiciones
 
-**Precondiciones:** 
+**Precondiciones:** ---
 
 ---
 
 CURSO NORMAL<table> <tr><td>Acciones del actor</td> <td>Acciones del Sistema</td></tr>
 <td width="320">  
 
-Paso x:
+Paso 1: el Empleado de rendiciones selecciona la opcion "Imprimir listado"
 
 </td><td width="320">
 
-Paso x: 
+Paso 2: El sistema imprime un listado de minutas
 
 </td></table>
 
 ---
 
-**Curso alterno:**
+**Curso alterno:** ---
 
-**Postcondición:**
+**Postcondición:** Se imprimio un listado de minutas aprobadas
 
 </table>
 
@@ -726,22 +746,28 @@ Paso x:
 
 **Nombre:** Validar Cuit
  
-**Descripción:** 
+**Descripción:** Este cu describe la validación de un CUIT
 
-**Actores:** 
+**Actores:** Servidor AFIP
 
-**Precondiciones:** 
+**Precondiciones:** Se debe haber ejecutado el cu "Aprobar minuta"
 
 ---
 
 CURSO NORMAL<table> <tr><td>Acciones del actor</td> <td>Acciones del Sistema</td></tr>
 <td width="320">  
 
-Paso x:
+Paso 2: El servidor AFIP acepta la conexión y solicita Token
+
+Paso 4: El servidor AFIP valida el token
+
+Paso 
 
 </td><td width="320">
 
-Paso x: 
+Paso 1: El sistema solicita conexión con el servidor AFIP
+
+Paso 3: El sistema envia token
 
 </td></table>
 
