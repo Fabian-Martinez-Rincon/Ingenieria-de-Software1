@@ -757,25 +757,36 @@ Paso 2: El sistema imprime un listado de minutas
 CURSO NORMAL<table> <tr><td>Acciones del actor</td> <td>Acciones del Sistema</td></tr>
 <td width="320">  
 
-Paso 2: El servidor AFIP acepta la conexión y solicita Token
+Paso 2: El servidor AFIP acepta la conexión y solicita Token y CUIT
 
-Paso 4: El servidor AFIP valida el token
+Paso 4: El servidor AFIP valida el token y CUIT
 
-Paso 
+Paso 5: El servidor AFIP retorna el resultado
 
 </td><td width="320">
 
 Paso 1: El sistema solicita conexión con el servidor AFIP
 
-Paso 3: El sistema envia token
+Paso 3: El sistema envia token y CUIT
+
+Paso 6: El sistema recibe que el Token es correcto
+
+Paso 7: El sistema recibe que el CUIT esta habilitado
+
+Paso 8: El sistema valida el Cuit y cierra la conexión con el servidor externo
+
+
 
 </td></table>
 
 ---
 
 **Curso alterno:**
+- Paso Alternativo 1: No se establecio conexión con el servidor. Se notifica. Fin del CU
+- Paso Alternativo 4: El Token es incorrecto. Se notifica. Fin del CU
+- Paso Alternativo 5: El CUIT esta inhabilitado por el AFIP. Se notifica. Fin del CU
 
-**Postcondición:**
+**Postcondición:** El cuit fue validado
 
 </table>
 
