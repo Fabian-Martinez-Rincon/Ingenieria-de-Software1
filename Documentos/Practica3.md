@@ -110,6 +110,8 @@ El encargado del departamento de alquileres no comentó acerca de las reservas d
 
 ---
 
+- [Imagen Completa](/Practicas/Practica%203/Imagenes/1.jpg)
+
 ### Diagrama
 
 ![](2023-05-04-13-36-00.png)
@@ -302,6 +304,8 @@ Para inscribirse, el alumno deberá seleccionar la carrera, ingresar la cantidad
 - Pagar con tarjeta
 
 ---
+
+- [Imagen Completa](/Practicas/Practica%203/Imagenes/2.jpg)
 
 ### Diagrama
 
@@ -614,6 +618,8 @@ Por último el empleado de rendiciones será el responsable de imprimir los list
 
 ### Diagrama
 
+- [Imagen Completa](/Practicas/Practica%203/Imagenes/3.jpg)
+
 ![](2023-05-04-13-37-58.png)
 
 ---
@@ -815,6 +821,8 @@ El sistema también es utilizado por un operador a través de una consola que se
 
 ### Diagrama
 
+- [Imagen Completa](/Practicas/Practica%203/Imagenes/4.jpg)
+
 ![](2023-05-04-13-38-46.png)
 
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
@@ -853,6 +861,8 @@ cliente.
 ---
 
 ### Diagrama
+
+- [Imagen Completa](/Practicas/Practica%203/Imagenes/5.jpg)
 
 ![](2023-05-04-13-39-14.png)
 
@@ -1125,6 +1135,8 @@ Además se desea administrar la programación de las salas. El administrador ing
 
 ### Diagrama
 
+- [Imagen Completa](/Practicas/Practica%203/Imagenes/6.jpg)
+
 ![](2023-05-04-13-40-29.png)
 
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
@@ -1148,6 +1160,8 @@ El cliente podrá realizar la cancelación total del préstamo a partir del nove
 ---
 
 ### Diagrama
+
+- [Imagen Completa](/Practicas/Practica%203/Imagenes/7.jpg)
 
 ![](2023-05-04-13-40-58.png)
 
@@ -1173,6 +1187,8 @@ Tenga en cuenta que cada vez que el sistema debe conectarse a la central, debe e
 
 ### Diagrama
 
+- [Imagen Completa](/Practicas/Practica%203/Imagenes/8.jpg)
+
 ![](2023-05-04-13-41-43.png)
 
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
@@ -1193,6 +1209,8 @@ En el sistema existe una política de reputaciones que permiten a los usuarios c
 
 ### Diagrama
 
+- [Imagen Completa](/Practicas/Practica%203/Imagenes/9.jpg)
+
 ![](2023-05-04-13-43-25.png)
 
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
@@ -1212,6 +1230,8 @@ Por último cuando un cliente llega al gimnasio debe registrar su llegada, para 
 ---
 
 ### Diagrama
+
+- [Imagen Completa](/Practicas/Practica%203/Imagenes/10.jpg)
 
 ![](2023-05-04-13-44-09.png)
 
@@ -1234,6 +1254,8 @@ Suponga que el equipo de desarrollo tiene acceso a un sistema llamado Sigef para
 ---
 
 ### Diagrama
+
+- [Imagen Completa](/Practicas/Practica%203/Imagenes/11.jpg)
 
 ![](2023-05-04-13-45-19.png)
 
