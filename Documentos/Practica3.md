@@ -120,10 +120,9 @@ El encargado del departamento de alquileres no comentó acerca de las reservas d
 
 
 
-### Reservar Alquiler y Pagar con tarjeta
+### Reservar Alquiler
 
-<table> <td>
-<table ><tr><td width="500"> 
+<table ><tr><td width="660"> 
 
 **Nombre:** Reservar Alquiler
  
@@ -136,13 +135,13 @@ El encargado del departamento de alquileres no comentó acerca de las reservas d
 ---
 
 CURSO NORMAL<table> <tr><td>Acciones del actor</td> <td>Acciones del Sistema</td></tr>
-<td width="200">  
+<td width="320">  
 
 Paso 1: El usuario selecciona la opcion `Reservar alquiler`
 
 Paso 3: El usuario ingresa los datos solicitados
 
-</td><td width="200">
+</td><td width="320">
 
 Paso 2: El Sistema solicita al fecha, lugar del evento, cantidad de dias y mobiliario junto a su cantidad
 
@@ -165,8 +164,12 @@ Paso 6: El sistema registra la reserva del alquiler y emite un codigo de reserva
 </table>
 </div>
 
-</td><td>
-<table ><tr><td width="500"> 
+---
+
+### Pagar con tarjeta
+
+
+<table ><tr><td width="660"> 
 
 **Nombre:** Pagar con tarjeta
  
@@ -179,7 +182,7 @@ Paso 6: El sistema registra la reserva del alquiler y emite un codigo de reserva
 ---
 
 CURSO NORMAL<table> <tr><td>Acciones del actor</td> <td>Acciones del Sistema</td></tr>
-<td width="200">  
+<td width="320">  
 
 Paso 2: El usuario ingresa datos solicitados 
 
@@ -189,7 +192,7 @@ Paso 6: El servidor del banco valida los datos de la tarjeta y fondos suficiente
 
 Paso 7: El servidor del banco retorna el resultado
 
-</td><td width="200">
+</td><td width="320">
 
 Paso 1: El sistema solicita nro de tarjeta y codigo de seguridad 
 
@@ -216,7 +219,7 @@ Paso 10: El sistema registra el pago y cierra la conexión con el servidor del b
 
 </table>
 
-</td>
+
 
 
 ---
