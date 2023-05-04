@@ -122,7 +122,7 @@ El encargado del departamento de alquileres no comentó acerca de las reservas d
 
 ### Reservar Alquiler y Pagar con tarjeta
 
-<div style="width:50%; float:left;">
+<table> <td>
 <table ><tr><td width="660"> 
 
 **Nombre:** Reservar Alquiler
@@ -164,7 +164,8 @@ Paso 6: El sistema registra la reserva del alquiler y emite un codigo de reserva
 
 </table>
 </div>
-<div style="width:50%; float:left;">
+
+</td><td>
 <table ><tr><td width="660"> 
 
 **Nombre:** Pagar con tarjeta
@@ -214,8 +215,8 @@ Paso 10: El sistema registra el pago y cierra la conexión con el servidor del b
 **Postcondición:** Se realizo y se registro el pago a traves de la tarjeta
 
 </table>
-</div>
 
+</td>
 
 
 ---
