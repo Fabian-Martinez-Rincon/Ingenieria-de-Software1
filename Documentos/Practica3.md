@@ -48,6 +48,8 @@ Quiero aclarar que estos colores los elegi yo porque a mi me gustaron, no es nad
 
 Para cada Historia de Usuario se deben indicar los siguientes ítems:
 
+---
+
 <table ><tr><td width="660"> 
 
 **Nombre:** 
@@ -78,6 +80,9 @@ Paso x:
 **Postcondición:**
 
 </table>
+
+
+---
 
 <div align = 'center'>
 
@@ -313,6 +318,8 @@ Para inscribirse, el alumno deberá seleccionar la carrera, ingresar la cantidad
 ![](2023-05-04-13-37-17.png)
 
 ---
+
+<div align="center">
 
 ## Cargar Carrera
 
@@ -583,6 +590,8 @@ Paso 10: El sistema registra el pago
 
 </table>
 
+</div>
+
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
 <div align = 'center'>
@@ -836,6 +845,115 @@ El sistema también es utilizado por un operador a través de una consola que se
 - [Imagen Completa](/Practicas/Practica%203/Imagenes/4.jpg)
 
 ![](2023-05-04-13-38-46.png)
+
+---
+
+<div align='center'>
+
+### Reciclar
+
+<table ><tr><td width="660"> 
+
+**Nombre:** 
+ 
+**Descripción:** 
+
+**Actores:** 
+
+**Precondiciones:** 
+
+---
+
+CURSO NORMAL<table> <tr><td>Acciones del actor</td> <td>Acciones del Sistema</td></tr>
+<td width="320">  
+
+Paso x:
+
+</td><td width="320">
+
+Paso x: 
+
+</td></table>
+
+---
+
+**Curso alterno:**
+
+**Postcondición:**
+
+</table>
+
+---
+
+### Solicitar Listado
+
+<table ><tr><td width="660"> 
+
+**Nombre:** 
+ 
+**Descripción:** 
+
+**Actores:** 
+
+**Precondiciones:** 
+
+---
+
+CURSO NORMAL<table> <tr><td>Acciones del actor</td> <td>Acciones del Sistema</td></tr>
+<td width="320">  
+
+Paso x:
+
+</td><td width="320">
+
+Paso x: 
+
+</td></table>
+
+---
+
+**Curso alterno:**
+
+**Postcondición:**
+
+</table>
+
+---
+
+### Actualizar Monto
+
+<table ><tr><td width="660"> 
+
+**Nombre:** 
+ 
+**Descripción:** 
+
+**Actores:** 
+
+**Precondiciones:** 
+
+---
+
+CURSO NORMAL<table> <tr><td>Acciones del actor</td> <td>Acciones del Sistema</td></tr>
+<td width="320">  
+
+Paso x:
+
+</td><td width="320">
+
+Paso x: 
+
+</td></table>
+
+---
+
+**Curso alterno:**
+
+**Postcondición:**
+
+</table>
+
+</div>
 
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
