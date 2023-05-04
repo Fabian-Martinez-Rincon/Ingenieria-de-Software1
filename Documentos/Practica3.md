@@ -1544,31 +1544,176 @@ El cliente podrá realizar la cancelación total del préstamo a partir del nove
 
 ### Solicitar Prestamo
 
+<table ><tr><td width="660"> 
 
+**Nombre:** 
+ 
+**Descripción:** 
+
+**Actores:** 
+
+**Precondiciones:** 
+
+---
+
+CURSO NORMAL<table> <tr><td>Acciones del actor</td> <td>Acciones del Sistema</td></tr>
+<td width="320">  
+
+Paso x:
+
+</td><td width="320">
+
+Paso x: 
+
+</td></table>
+
+---
+
+**Curso alterno:**
+
+**Postcondición:**
+
+</table>
 
 ---
 
 ### Adelantar Cuotas
 
+<table ><tr><td width="660"> 
 
+**Nombre:** 
+ 
+**Descripción:** 
+
+**Actores:** 
+
+**Precondiciones:** 
+
+---
+
+CURSO NORMAL<table> <tr><td>Acciones del actor</td> <td>Acciones del Sistema</td></tr>
+<td width="320">  
+
+Paso x:
+
+</td><td width="320">
+
+Paso x: 
+
+</td></table>
+
+---
+
+**Curso alterno:**
+
+**Postcondición:**
+
+</table>
 
 ---
 
 ### Cancelar Prestamo
 
+<table ><tr><td width="660"> 
 
+**Nombre:** 
+ 
+**Descripción:** 
+
+**Actores:** 
+
+**Precondiciones:** 
+
+---
+
+CURSO NORMAL<table> <tr><td>Acciones del actor</td> <td>Acciones del Sistema</td></tr>
+<td width="320">  
+
+Paso x:
+
+</td><td width="320">
+
+Paso x: 
+
+</td></table>
+
+---
+
+**Curso alterno:**
+
+**Postcondición:**
+
+</table>
 
 ---
 
 ### Iniciar Sesión
 
+<table ><tr><td width="660"> 
 
+**Nombre:** 
+ 
+**Descripción:** 
+
+**Actores:** 
+
+**Precondiciones:** 
+
+---
+
+CURSO NORMAL<table> <tr><td>Acciones del actor</td> <td>Acciones del Sistema</td></tr>
+<td width="320">  
+
+Paso x:
+
+</td><td width="320">
+
+Paso x: 
+
+</td></table>
+
+---
+
+**Curso alterno:**
+
+**Postcondición:**
+
+</table>
 
 ---
 
 ### Cerrar Sesión
 
+<table ><tr><td width="660"> 
 
+**Nombre:** 
+ 
+**Descripción:** 
+
+**Actores:** 
+
+**Precondiciones:** 
+
+---
+
+CURSO NORMAL<table> <tr><td>Acciones del actor</td> <td>Acciones del Sistema</td></tr>
+<td width="320">  
+
+Paso x:
+
+</td><td width="320">
+
+Paso x: 
+
+</td></table>
+
+---
+
+**Curso alterno:**
+
+**Postcondición:**
+
+</table>
 
 </div>
 
@@ -1613,6 +1758,180 @@ Tenga en cuenta que cada vez que el sistema debe conectarse a la central, debe e
 
 ![](2023-05-04-13-41-43.png)
 
+---
+
+<div align="center">
+
+### Realizar Pago
+
+<table ><tr><td width="660"> 
+
+**Nombre:** 
+ 
+**Descripción:** 
+
+**Actores:** 
+
+**Precondiciones:** 
+
+---
+
+CURSO NORMAL<table> <tr><td>Acciones del actor</td> <td>Acciones del Sistema</td></tr>
+<td width="320">  
+
+Paso x:
+
+</td><td width="320">
+
+Paso x: 
+
+</td></table>
+
+---
+
+**Curso alterno:**
+
+**Postcondición:**
+
+</table>
+
+---
+### Recuperar Pago
+
+<table ><tr><td width="660"> 
+
+**Nombre:** 
+ 
+**Descripción:** 
+
+**Actores:** 
+
+**Precondiciones:** 
+
+---
+
+CURSO NORMAL<table> <tr><td>Acciones del actor</td> <td>Acciones del Sistema</td></tr>
+<td width="320">  
+
+Paso x:
+
+</td><td width="320">
+
+Paso x: 
+
+</td></table>
+
+---
+
+**Curso alterno:**
+
+**Postcondición:**
+
+</table>
+
+---
+### Ver Estadisticas
+
+<table ><tr><td width="660"> 
+
+**Nombre:** 
+ 
+**Descripción:** 
+
+**Actores:** 
+
+**Precondiciones:** 
+
+---
+
+CURSO NORMAL<table> <tr><td>Acciones del actor</td> <td>Acciones del Sistema</td></tr>
+<td width="320">  
+
+Paso x:
+
+</td><td width="320">
+
+Paso x: 
+
+</td></table>
+
+---
+
+**Curso alterno:**
+
+**Postcondición:**
+
+</table>
+
+---
+### Enviar Pago
+
+<table ><tr><td width="660"> 
+
+**Nombre:** 
+ 
+**Descripción:** 
+
+**Actores:** 
+
+**Precondiciones:** 
+
+---
+
+CURSO NORMAL<table> <tr><td>Acciones del actor</td> <td>Acciones del Sistema</td></tr>
+<td width="320">  
+
+Paso x:
+
+</td><td width="320">
+
+Paso x: 
+
+</td></table>
+
+---
+
+**Curso alterno:**
+
+**Postcondición:**
+
+</table>
+
+---
+### Registrar Pago
+
+<table ><tr><td width="660"> 
+
+**Nombre:** 
+ 
+**Descripción:** 
+
+**Actores:** 
+
+**Precondiciones:** 
+
+---
+
+CURSO NORMAL<table> <tr><td>Acciones del actor</td> <td>Acciones del Sistema</td></tr>
+<td width="320">  
+
+Paso x:
+
+</td><td width="320">
+
+Paso x: 
+
+</td></table>
+
+---
+
+**Curso alterno:**
+
+**Postcondición:**
+
+</table>
+
+</div>
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
 <div align = 'center'>
@@ -1653,6 +1972,252 @@ En el sistema existe una política de reputaciones que permiten a los usuarios c
 
 ![](2023-05-04-13-43-25.png)
 
+---
+<div align="center">
+
+### Registrar Persona
+
+<table ><tr><td width="660"> 
+
+**Nombre:** 
+ 
+**Descripción:** 
+
+**Actores:** 
+
+**Precondiciones:** 
+
+---
+
+CURSO NORMAL<table> <tr><td>Acciones del actor</td> <td>Acciones del Sistema</td></tr>
+<td width="320">  
+
+Paso x:
+
+</td><td width="320">
+
+Paso x: 
+
+</td></table>
+
+---
+
+**Curso alterno:**
+
+**Postcondición:**
+
+</table>
+
+---
+### Iniciar Sesión
+
+<table ><tr><td width="660"> 
+
+**Nombre:** 
+ 
+**Descripción:** 
+
+**Actores:** 
+
+**Precondiciones:** 
+
+---
+
+CURSO NORMAL<table> <tr><td>Acciones del actor</td> <td>Acciones del Sistema</td></tr>
+<td width="320">  
+
+Paso x:
+
+</td><td width="320">
+
+Paso x: 
+
+</td></table>
+
+---
+
+**Curso alterno:**
+
+**Postcondición:**
+
+</table>
+
+---
+### Cerrar Sesión
+
+
+
+---
+### Alta Viaje
+
+<table ><tr><td width="660"> 
+
+**Nombre:** 
+ 
+**Descripción:** 
+
+**Actores:** 
+
+**Precondiciones:** 
+
+---
+
+CURSO NORMAL<table> <tr><td>Acciones del actor</td> <td>Acciones del Sistema</td></tr>
+<td width="320">  
+
+Paso x:
+
+</td><td width="320">
+
+Paso x: 
+
+</td></table>
+
+---
+
+**Curso alterno:**
+
+**Postcondición:**
+
+</table>
+
+---
+### Postularse a un Viaje
+
+<table ><tr><td width="660"> 
+
+**Nombre:** 
+ 
+**Descripción:** 
+
+**Actores:** 
+
+**Precondiciones:** 
+
+---
+
+CURSO NORMAL<table> <tr><td>Acciones del actor</td> <td>Acciones del Sistema</td></tr>
+<td width="320">  
+
+Paso x:
+
+</td><td width="320">
+
+Paso x: 
+
+</td></table>
+
+---
+
+**Curso alterno:**
+
+**Postcondición:**
+
+</table>
+
+---
+### Evaluar Candidato
+
+<table ><tr><td width="660"> 
+
+**Nombre:** 
+ 
+**Descripción:** 
+
+**Actores:** 
+
+**Precondiciones:** 
+
+---
+
+CURSO NORMAL<table> <tr><td>Acciones del actor</td> <td>Acciones del Sistema</td></tr>
+<td width="320">  
+
+Paso x:
+
+</td><td width="320">
+
+Paso x: 
+
+</td></table>
+
+---
+
+**Curso alterno:**
+
+**Postcondición:**
+
+</table>
+
+---
+### Clasificar Copilotos
+
+<table ><tr><td width="660"> 
+
+**Nombre:** 
+ 
+**Descripción:** 
+
+**Actores:** 
+
+**Precondiciones:** 
+
+---
+
+CURSO NORMAL<table> <tr><td>Acciones del actor</td> <td>Acciones del Sistema</td></tr>
+<td width="320">  
+
+Paso x:
+
+</td><td width="320">
+
+Paso x: 
+
+</td></table>
+
+---
+
+**Curso alterno:**
+
+**Postcondición:**
+
+</table>
+
+---
+### Clasificar Piloto
+
+<table ><tr><td width="660"> 
+
+**Nombre:** 
+ 
+**Descripción:** 
+
+**Actores:** 
+
+**Precondiciones:** 
+
+---
+
+CURSO NORMAL<table> <tr><td>Acciones del actor</td> <td>Acciones del Sistema</td></tr>
+<td width="320">  
+
+Paso x:
+
+</td><td width="320">
+
+Paso x: 
+
+</td></table>
+
+---
+
+**Curso alterno:**
+
+**Postcondición:**
+
+</table>
+
+</div>
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
 <div align = 'center'>
@@ -1691,6 +2256,220 @@ Por último cuando un cliente llega al gimnasio debe registrar su llegada, para 
 
 ![](2023-05-04-13-44-09.png)
 
+---
+
+<div align="center">
+
+### Registrar Persona
+
+<table ><tr><td width="660"> 
+
+**Nombre:** 
+ 
+**Descripción:** 
+
+**Actores:** 
+
+**Precondiciones:** 
+
+---
+
+CURSO NORMAL<table> <tr><td>Acciones del actor</td> <td>Acciones del Sistema</td></tr>
+<td width="320">  
+
+Paso x:
+
+</td><td width="320">
+
+Paso x: 
+
+</td></table>
+
+---
+
+**Curso alterno:**
+
+**Postcondición:**
+
+</table>
+
+---
+
+### Iniciar Sesión
+
+<table ><tr><td width="660"> 
+
+**Nombre:** 
+ 
+**Descripción:** 
+
+**Actores:** 
+
+**Precondiciones:** 
+
+---
+
+CURSO NORMAL<table> <tr><td>Acciones del actor</td> <td>Acciones del Sistema</td></tr>
+<td width="320">  
+
+Paso x:
+
+</td><td width="320">
+
+Paso x: 
+
+</td></table>
+
+---
+
+**Curso alterno:**
+
+**Postcondición:**
+
+</table>
+
+---
+
+### Cerrar Sesión
+
+<table ><tr><td width="660"> 
+
+**Nombre:** 
+ 
+**Descripción:** 
+
+**Actores:** 
+
+**Precondiciones:** 
+
+---
+
+CURSO NORMAL<table> <tr><td>Acciones del actor</td> <td>Acciones del Sistema</td></tr>
+<td width="320">  
+
+Paso x:
+
+</td><td width="320">
+
+Paso x: 
+
+</td></table>
+
+---
+
+**Curso alterno:**
+
+**Postcondición:**
+
+</table>
+
+---
+
+### Solicitar Turno
+
+<table ><tr><td width="660"> 
+
+**Nombre:** 
+ 
+**Descripción:** 
+
+**Actores:** 
+
+**Precondiciones:** 
+
+---
+
+CURSO NORMAL<table> <tr><td>Acciones del actor</td> <td>Acciones del Sistema</td></tr>
+<td width="320">  
+
+Paso x:
+
+</td><td width="320">
+
+Paso x: 
+
+</td></table>
+
+---
+
+**Curso alterno:**
+
+**Postcondición:**
+
+</table>
+
+---
+
+### Registrar Llegada
+
+<table ><tr><td width="660"> 
+
+**Nombre:** 
+ 
+**Descripción:** 
+
+**Actores:** 
+
+**Precondiciones:** 
+
+---
+
+CURSO NORMAL<table> <tr><td>Acciones del actor</td> <td>Acciones del Sistema</td></tr>
+<td width="320">  
+
+Paso x:
+
+</td><td width="320">
+
+Paso x: 
+
+</td></table>
+
+---
+
+**Curso alterno:**
+
+**Postcondición:**
+
+</table>
+
+---
+
+### Sumar Puntos
+
+<table ><tr><td width="660"> 
+
+**Nombre:** 
+ 
+**Descripción:** 
+
+**Actores:** 
+
+**Precondiciones:** 
+
+---
+
+CURSO NORMAL<table> <tr><td>Acciones del actor</td> <td>Acciones del Sistema</td></tr>
+<td width="320">  
+
+Paso x:
+
+</td><td width="320">
+
+Paso x: 
+
+</td></table>
+
+---
+
+**Curso alterno:**
+
+**Postcondición:**
+
+</table>
+
+</div>
+
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
 <div align = 'center'>
@@ -1728,4 +2507,145 @@ Suponga que el equipo de desarrollo tiene acceso a un sistema llamado Sigef para
 
 ![](2023-05-04-13-45-19.png)
 
+---
+
+<div align="center">
+
+### Alta Empleado
+
+<table ><tr><td width="660"> 
+
+**Nombre:** 
+ 
+**Descripción:** 
+
+**Actores:** 
+
+**Precondiciones:** 
+
+---
+
+CURSO NORMAL<table> <tr><td>Acciones del actor</td> <td>Acciones del Sistema</td></tr>
+<td width="320">  
+
+Paso x:
+
+</td><td width="320">
+
+Paso x: 
+
+</td></table>
+
+---
+
+**Curso alterno:**
+
+**Postcondición:**
+
+</table>
+
+---
+### Asociar Obra Social
+
+<table ><tr><td width="660"> 
+
+**Nombre:** 
+ 
+**Descripción:** 
+
+**Actores:** 
+
+**Precondiciones:** 
+
+---
+
+CURSO NORMAL<table> <tr><td>Acciones del actor</td> <td>Acciones del Sistema</td></tr>
+<td width="320">  
+
+Paso x:
+
+</td><td width="320">
+
+Paso x: 
+
+</td></table>
+
+---
+
+**Curso alterno:**
+
+**Postcondición:**
+
+</table>
+
+---
+### Validar Cliente
+
+<table ><tr><td width="660"> 
+
+**Nombre:** 
+ 
+**Descripción:** 
+
+**Actores:** 
+
+**Precondiciones:** 
+
+---
+
+CURSO NORMAL<table> <tr><td>Acciones del actor</td> <td>Acciones del Sistema</td></tr>
+<td width="320">  
+
+Paso x:
+
+</td><td width="320">
+
+Paso x: 
+
+</td></table>
+
+---
+
+**Curso alterno:**
+
+**Postcondición:**
+
+</table>
+
+---
+### Enviar Regulación
+
+<table ><tr><td width="660"> 
+
+**Nombre:** 
+ 
+**Descripción:** 
+
+**Actores:** 
+
+**Precondiciones:** 
+
+---
+
+CURSO NORMAL<table> <tr><td>Acciones del actor</td> <td>Acciones del Sistema</td></tr>
+<td width="320">  
+
+Paso x:
+
+</td><td width="320">
+
+Paso x: 
+
+</td></table>
+
+---
+
+**Curso alterno:**
+
+**Postcondición:**
+
+</table>
+
+
+</div>
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
