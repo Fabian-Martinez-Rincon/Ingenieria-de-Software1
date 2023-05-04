@@ -160,12 +160,11 @@ Paso 6: El sistema registra la reserva del alquiler y emite un codigo de reserva
 **Postcondición:** Se registro una reserva y se emitió un nro de reserva único
 
 </table>
-</div>
+
 
 ---
 
 ### Pagar con tarjeta
-
 
 <table ><tr><td width="660"> 
 
@@ -216,8 +215,6 @@ Paso 10: El sistema registra el pago y cierra la conexión con el servidor del b
 **Postcondición:** Se realizo y se registro el pago a traves de la tarjeta
 
 </table>
-
-
 
 
 ---
