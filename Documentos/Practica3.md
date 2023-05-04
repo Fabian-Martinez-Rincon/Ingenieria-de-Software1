@@ -98,15 +98,13 @@ El encargado del departamento de alquileres no comentó acerca de las reservas d
 ### Actores
 - Usuario
 - Servidor del banco
-- Engargado del departamento
+- Encargado mobiliario
 
 ### Casos de Uso
 - Reservar alquiler
 - Autenticarse en el sistema (No hay que modelar)
 - Carga mueble
 - Pagar con tarjeta
-
-
 
 ---
 
@@ -823,6 +821,17 @@ El sistema también es utilizado por un operador a través de una consola que se
 
 ---
 
+### Actores
+- Persona
+- Operador
+
+### Casos de Uso
+- Reciclar
+- Solicitar Listado
+- Actualizar Monto
+
+---
+
 ### Diagrama
 
 - [Imagen Completa](/Practicas/Practica%203/Imagenes/4.jpg)
@@ -1137,6 +1146,22 @@ Además se desea administrar la programación de las salas. El administrador ing
 
 ---
 
+### Actores
+- Empleado
+- Persona
+- Usuario
+- Servidor del Banco
+
+### Casos de Uso
+- Registrar Codigo
+- Reservar Entrada Gratuita
+- Registrar Reserva
+- Pagar Con Tarjeta
+- Comprar Entrada Presencial
+- Comprar Entrada Online
+
+---
+
 ### Diagrama
 
 - [Imagen Completa](/Practicas/Practica%203/Imagenes/6.jpg)
@@ -1160,6 +1185,19 @@ Un cliente del banco puede solicitar un préstamo personal vía web. Cada client
 El cliente podrá adelantar cuotas a partir del sexto mes de otorgado el préstamo. Para esto, el sistema muestra un listado de préstamos vigentes donde se debe seleccionar el que se desea pagar. A continuación el sistema solicita ingresar la cantidad de cuotas a abonar. Luego, el sistema muestra un listado de cuentas del cliente, donde se deberá seleccionar una de ellas para realizar el pago. Si hay saldo suficiente, el monto se deberá descontar de la cuenta del cliente. En caso de no poseer saldo se le informa al cliente.
 
 El cliente podrá realizar la cancelación total del préstamo a partir del noveno mes. Para ello, se debe presentar personalmente en el banco con su DNI para acreditar su identidad. Cuando se introduce el DNI, el sistema lista los préstamos para que se seleccione cual desea pagar. Luego se verifica que la cuenta asociada originalmente posea saldo suficiente para alcanzar el monto total adeudado. De ser así se registrará dicha cancelación y emitirá un comprobante con los datos de la operación.
+
+---
+
+### Actores
+- Cliente
+- Veraz
+
+### Casos de Uso
+- Solicitar Prestamo
+- Adelantar Cuotas
+- Cancelar Prestamo
+- Iniciar Sesión
+- Cerrar Sesión
 
 ---
 
@@ -1189,6 +1227,21 @@ Tenga en cuenta que cada vez que el sistema debe conectarse a la central, debe e
 
 ---
 
+### Actores
+- Empleado
+- Persona
+- Jerente
+- Central de Combros
+
+### Casos de Uso
+- Realizar Pago
+- Recuperar Pago
+- Ver Estadisticas
+- Enviar Pago
+- Registrar Pago
+
+---
+
 ### Diagrama
 
 - [Imagen Completa](/Practicas/Practica%203/Imagenes/8.jpg)
@@ -1208,6 +1261,24 @@ Se desea desarrollar un sistema que permita compartir un vehículo para un viaje
 Para utilizar el sistema, una persona debe registrarse y estar correctamente identificado antes de poder utilizarlo. Al registrarse, se pide un nombre de usuario, un correo electrónico y una contraseña. No puede haber dos correos electrónicos iguales en el sistema. Una vez autenticado, podrá dar de alta diferentes viajes, identificando la fecha, hora y el automóvil que utilizará. Los diferentes viajes que una persona publique no pueden superponerse. Un usuario que adeuda calificaciones tampoco podrá publicar un viaje. Cualquier usuario identificado podrá postularse a un viaje. Luego, el usuario dueño del viaje podrá aceptar o rechazar los candidatos para que realicen el viaje con él.
 
 En el sistema existe una política de reputaciones que permiten a los usuarios conocer la opinión del resto sobre los viajes realizados. Luego de terminado un viaje, tanto el piloto como los copilotos que viajaron deberán calificarse entre sí. El piloto califica a todos sus copilotos. Cada copiloto califica al piloto del viaje. Las calificaciones podrán ser positivas (suma un punto de reputación) o negativas (restan un punto de reputación).
+
+---
+
+### Actores
+- Persona
+- Usuario
+- Piloto
+- Copiloto
+
+### Casos de Uso
+- Registrar Persona
+- Iniciar Sesión
+- Cerrar Sesión
+- Alta Viaje
+- Postularse a un Viaje
+- Evaluar Candidato
+- Clasificar Copilotos
+- Clasificar Piloto
 
 ---
 
@@ -1233,6 +1304,22 @@ Por último cuando un cliente llega al gimnasio debe registrar su llegada, para 
 
 ---
 
+### Actores
+- Persona
+- Cliente
+- Secretaria
+- Servidor Externo
+
+### Casos de Uso
+- Registrar Persona
+- Iniciar Sesión
+- Cerrar Sesión
+- Solicitar Turno
+- Registrar Llegada
+- Sumar Puntos
+
+---
+
 ### Diagrama
 
 - [Imagen Completa](/Practicas/Practica%203/Imagenes/10.jpg)
@@ -1254,6 +1341,19 @@ Además, según la ley 1231/6 de empleo, el sistema debe permitir asociar una ob
 El sistema deberá permitir que el empleado avise la regularización de su deuda, para lo cual, existe una terminal electrónica, donde deberá ingresar su dni y código de inicio de trámite. Luego el sistema consultará al servidor de la obra social si efectivamente el agente dejó de ser moroso y de ser así le asignará la obra social imprimiendo un carnet. Si el empleado aún sigue siendo moroso se informará el error.
 
 Suponga que el equipo de desarrollo tiene acceso a un sistema llamado Sigef para consultar su implementación dado que algunas funcionalidades son parecidas a las solicitadas.
+
+---
+
+### Actores
+- Secretaria
+- Empleado
+- Servidor de la Obra Social
+
+### Casos de Uso
+- Alta Empleado
+- Asociar Obra Social
+- Validar Cliente
+- Enviar Regulación
 
 ---
 
