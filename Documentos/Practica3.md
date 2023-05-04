@@ -116,7 +116,7 @@ El encargado del departamento de alquileres no comentó acerca de las reservas d
 
 ---
 
-
+<div align="center">
 
 ### Reservar Alquiler
 
@@ -265,6 +265,7 @@ Paso 6: El sistemas registra la carga del mueble
 
 </table>
 
+</div>
 
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
@@ -304,6 +305,7 @@ Para inscribirse, el alumno deberá seleccionar la carrera, ingresar la cantidad
 - Iniciar sesión
 - Registrar alumno
 - Pagar con tarjeta
+- Inscribirse a Carrera
 
 ---
 
