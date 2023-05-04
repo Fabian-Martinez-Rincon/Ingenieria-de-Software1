@@ -1285,6 +1285,220 @@ Además se desea administrar la programación de las salas. El administrador ing
 
 ![](2023-05-04-13-40-29.png)
 
+---
+
+<div align="center">
+
+### Registrar Codigo
+
+<table ><tr><td width="660"> 
+
+**Nombre:** 
+ 
+**Descripción:** 
+
+**Actores:** 
+
+**Precondiciones:** 
+
+---
+
+CURSO NORMAL<table> <tr><td>Acciones del actor</td> <td>Acciones del Sistema</td></tr>
+<td width="320">  
+
+Paso x:
+
+</td><td width="320">
+
+Paso x: 
+
+</td></table>
+
+---
+
+**Curso alterno:**
+
+**Postcondición:**
+
+</table>
+
+---
+
+### Reservar Entrada Gratuita
+
+<table ><tr><td width="660"> 
+
+**Nombre:** 
+ 
+**Descripción:** 
+
+**Actores:** 
+
+**Precondiciones:** 
+
+---
+
+CURSO NORMAL<table> <tr><td>Acciones del actor</td> <td>Acciones del Sistema</td></tr>
+<td width="320">  
+
+Paso x:
+
+</td><td width="320">
+
+Paso x: 
+
+</td></table>
+
+---
+
+**Curso alterno:**
+
+**Postcondición:**
+
+</table>
+
+---
+
+### Registrar Reserva
+
+<table ><tr><td width="660"> 
+
+**Nombre:** 
+ 
+**Descripción:** 
+
+**Actores:** 
+
+**Precondiciones:** 
+
+---
+
+CURSO NORMAL<table> <tr><td>Acciones del actor</td> <td>Acciones del Sistema</td></tr>
+<td width="320">  
+
+Paso x:
+
+</td><td width="320">
+
+Paso x: 
+
+</td></table>
+
+---
+
+**Curso alterno:**
+
+**Postcondición:**
+
+</table>
+
+---
+
+### Pagar Con Tarjeta
+
+<table ><tr><td width="660"> 
+
+**Nombre:** 
+ 
+**Descripción:** 
+
+**Actores:** 
+
+**Precondiciones:** 
+
+---
+
+CURSO NORMAL<table> <tr><td>Acciones del actor</td> <td>Acciones del Sistema</td></tr>
+<td width="320">  
+
+Paso x:
+
+</td><td width="320">
+
+Paso x: 
+
+</td></table>
+
+---
+
+**Curso alterno:**
+
+**Postcondición:**
+
+</table>
+
+---
+
+### Comprar Entrada Presencial
+
+<table ><tr><td width="660"> 
+
+**Nombre:** 
+ 
+**Descripción:** 
+
+**Actores:** 
+
+**Precondiciones:** 
+
+---
+
+CURSO NORMAL<table> <tr><td>Acciones del actor</td> <td>Acciones del Sistema</td></tr>
+<td width="320">  
+
+Paso x:
+
+</td><td width="320">
+
+Paso x: 
+
+</td></table>
+
+---
+
+**Curso alterno:**
+
+**Postcondición:**
+
+</table>
+
+---
+
+### Comprar Entrada Online
+
+<table ><tr><td width="660"> 
+
+**Nombre:** 
+ 
+**Descripción:** 
+
+**Actores:** 
+
+**Precondiciones:** 
+
+---
+
+CURSO NORMAL<table> <tr><td>Acciones del actor</td> <td>Acciones del Sistema</td></tr>
+<td width="320">  
+
+Paso x:
+
+</td><td width="320">
+
+Paso x: 
+
+</td></table>
+
+---
+
+**Curso alterno:**
+
+**Postcondición:**
+
+</table>
+
+</div>
+
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
 <div align = 'center'>
@@ -1323,6 +1537,37 @@ El cliente podrá realizar la cancelación total del préstamo a partir del nove
 - [Imagen Completa](/Practicas/Practica%203/Imagenes/7.jpg)
 
 ![](2023-05-04-13-40-58.png)
+
+---
+
+### Solicitar Prestamo
+
+
+
+---
+
+### Adelantar Cuotas
+
+
+
+---
+
+### Cancelar Prestamo
+
+
+
+---
+
+### Iniciar Sesión
+
+
+
+---
+
+### Cerrar Sesión
+
+
+
 
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
