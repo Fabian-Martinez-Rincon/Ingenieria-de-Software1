@@ -634,6 +634,7 @@ Por último el empleado de rendiciones será el responsable de imprimir los list
 
 ---
 
+<div align="center">
 
 ### Confeccionar Minuta
 
@@ -813,6 +814,7 @@ Paso 8: El sistema valida el Cuit y cierra la conexión con el servidor externo
 
 </table>
 
+</div>
 
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
