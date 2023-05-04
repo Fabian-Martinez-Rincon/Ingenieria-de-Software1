@@ -110,7 +110,9 @@ El encargado del departamento de alquileres no comentó acerca de las reservas d
 
 ---
 
-![](/Practicas/Practica%203/Imagenes/1.jpg)
+### Diagrama
+
+![](2023-05-04-13-36-00.png)
 
 ---
 
@@ -301,7 +303,9 @@ Para inscribirse, el alumno deberá seleccionar la carrera, ingresar la cantidad
 
 ---
 
-![](/Practicas/Practica%203/Imagenes/2.jpg)
+### Diagrama
+
+![](2023-05-04-13-37-17.png)
 
 ---
 
@@ -608,7 +612,9 @@ Por último el empleado de rendiciones será el responsable de imprimir los list
 
 ---
 
-![](/Practicas/Practica%203/Imagenes/3.jpg)
+### Diagrama
+
+![](2023-05-04-13-37-58.png)
 
 ---
 
@@ -631,6 +637,7 @@ CURSO NORMAL<table> <tr><td>Acciones del actor</td> <td>Acciones del Sistema</td
 <td width="320">  
 
 Paso 1: El empleado de mesa selecciona la opción "Confeccionar minuta"
+
 Paso 3: El empleado de mesa ingresa datos solicitados
 
 </td><td width="320">
@@ -804,6 +811,12 @@ retornando el producto.
 
 El sistema también es utilizado por un operador a través de una consola que se encuentra bajo llave. El operador puede solicitar un listado con los tipos de materiales reciclados en un periodo de fechas determinado, detallando además el total abonado por dicho material. También, el operador puede actualizar los montos a pagar por kilo de cada tipo de material que la máquina puede reciclar. Para esto, el sistema primero solicita el tipo de material a actualizar. Luego se pide el nuevo monto. Si el operador acepta, se actualiza el material seleccionado.
 
+---
+
+### Diagrama
+
+![](2023-05-04-13-38-46.png)
+
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
 <div align = 'center'>
@@ -836,6 +849,12 @@ cliente.
 - Cerrar Sesión
 - Pagar con tarjeta
 - Registrar Codigo
+
+---
+
+### Diagrama
+
+![](2023-05-04-13-39-14.png)
 
 ---
 
@@ -1102,6 +1121,11 @@ Cuando una persona llega con el código de compra, el vendedor debe ingresar el 
 
 Además se desea administrar la programación de las salas. El administrador ingresa la distribución semanal de las obras en las salas de manera que se encuentre disponible para la realización de la venta de entradas.
 
+---
+
+### Diagrama
+
+![](2023-05-04-13-40-29.png)
 
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
@@ -1121,6 +1145,12 @@ El cliente podrá adelantar cuotas a partir del sexto mes de otorgado el présta
 
 El cliente podrá realizar la cancelación total del préstamo a partir del noveno mes. Para ello, se debe presentar personalmente en el banco con su DNI para acreditar su identidad. Cuando se introduce el DNI, el sistema lista los préstamos para que se seleccione cual desea pagar. Luego se verifica que la cuenta asociada originalmente posea saldo suficiente para alcanzar el monto total adeudado. De ser así se registrará dicha cancelación y emitirá un comprobante con los datos de la operación.
 
+---
+
+### Diagrama
+
+![](2023-05-04-13-40-58.png)
+
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
 <div align = 'center'>
@@ -1139,6 +1169,12 @@ Finalmente el Gerente puede ver las estadísticas de los impuestos y servicios c
 
 Tenga en cuenta que cada vez que el sistema debe conectarse a la central, debe enviarle un token (código que identifica al sistema). Una vez que la central valida el token, el sistema envía el requerimiento para recuperar los datos de la factura o el requerimiento para registrar los pagos del día según corresponda.
 
+---
+
+### Diagrama
+
+![](2023-05-04-13-41-43.png)
+
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
 <div align = 'center'>
@@ -1153,6 +1189,11 @@ Para utilizar el sistema, una persona debe registrarse y estar correctamente ide
 
 En el sistema existe una política de reputaciones que permiten a los usuarios conocer la opinión del resto sobre los viajes realizados. Luego de terminado un viaje, tanto el piloto como los copilotos que viajaron deberán calificarse entre sí. El piloto califica a todos sus copilotos. Cada copiloto califica al piloto del viaje. Las calificaciones podrán ser positivas (suma un punto de reputación) o negativas (restan un punto de reputación).
 
+---
+
+### Diagrama
+
+![](2023-05-04-13-43-25.png)
 
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
@@ -1168,6 +1209,11 @@ Para solicitar un turno, el cliente del gimnasio, previa autenticación, debe in
 
 Por último cuando un cliente llega al gimnasio debe registrar su llegada, para esto la secretaria del gimnasio solicita el número de dni del cliente para hacer el registro. El gimnasio se maneja con un sistema externo que suma puntos a aquellos clientes que cumplen con las reservas realizadas. Es necesario que cuando se registre la asistencia del cliente al gimnasio se haga la suma correspondiente para lo cual el sistema se conecta con el servidor externo, envía el dni del cliente y la actividad que va a realizar y el servidor se encarga de sumar los puntos.
 
+---
+
+### Diagrama
+
+![](2023-05-04-13-44-09.png)
 
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
@@ -1185,5 +1231,10 @@ El sistema deberá permitir que el empleado avise la regularización de su deuda
 
 Suponga que el equipo de desarrollo tiene acceso a un sistema llamado Sigef para consultar su implementación dado que algunas funcionalidades son parecidas a las solicitadas.
 
+---
+
+### Diagrama
+
+![](2023-05-04-13-45-19.png)
 
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
