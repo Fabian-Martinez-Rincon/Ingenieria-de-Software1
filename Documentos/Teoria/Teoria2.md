@@ -109,3 +109,75 @@ La ingeniería de requerimientos es la disciplina para desarrollar una especific
 
 
 > **Ingeniería de requerimientos** es el proceso por el cual se transforman los requerimientos declarados por los clientes, ya sean hablados o escritos, a especificaciones precisas, no ambiguas, consistentes y completas del comportamiento del sistema, incluyendo funciones, interfaces, rendimiento y limitaciones
+
+También es el proceso mediante el cual se intercambian diferentes puntos de vista para recopilar y modelar lo que el sistema va a realizar. Este proceso utiliza una combinación de métodos, herramientas y actores, cuyo producto es un modelo del cual se genera un documento de requerimientos.”
+
+“Ingeniería de requerimientos” es un enfoque sistémico para recolectar, organizar y documentar los requerimientos del sistema; es también el proceso que establece y mantiene acuerdos sobre los cambios de requerimientos, entre los clientes y el equipo del proyecto”
+
+Importancia
+- Permite gestionar las necesidades del proyecto en forma estructurada
+- Mejora la capacidad de predecir cronogramas de proyectos
+- Disminuye los costos y retrasos del proyecto
+- Mejora la calidad del software
+- Mejora la comunicación entre equipos
+- Evita rechazos de usuarios finales.
+
+---
+
+### Estudio de Viabilidad
+
+Principalmente para sistemas nuevos
+
+A partir de una descripción resumida del sistema se elabora un informe que recomienda la conveniencia o no de realizar el proceso de desarrollo
+
+Responde a las siguientes preguntas:
+- ¿El sistema contribuye a los objetivos generales de la organización?( Si no contribuye, entonces no tiene un valor real en el negocio )
+- ¿El sistema se puede implementar con la tecnología actual?
+- ¿El sistema se puede implementar con las restricciones de costo y tiempo?
+- ¿El sistema puede integrarse a otros que existen en la organización?
+
+Una vez que se ha recopilado toda la información necesaria para contestar las preguntas anteriores se debería hablar con las fuentes de información para responder nuevas preguntas y luego se redacta el informe, donde debería hacerse una recomendación sobre si debe continuar o no el desarrollo.
+
+---
+
+### Obtención y Análisis de Requerimientos
+
+Propiedades de los Requerimientos
+- **Necesario**: Su omisión provoca una deficiencia.
+- **Conciso**: Fácil de leer y entender
+- **Completo**: No necesita ampliarse
+- **Consistente**: No contradictorio con otro
+- **No ambiguo**: Tiene una sola implementación
+- **Verificable**: Puede testearse a través de inspecciones, pruebas, etc.
+
+---
+
+### Especificación de Requerimientos
+
+Objetivos
+- Permitir que los desarrolladores expliquen cómo han entendido lo que el cliente pretende del sistema
+- Indicar a los diseñadores qué funcionalidad y características va a tener el sistema resultante
+- Indicar al equipo de pruebas qué demostraciones llevar a cabo para convencer al cliente de que el sistema que se le entrega es lo que había pedido.
+
+Mas caracteristicas
+
+- Rastreable
+- Independiente del diseño
+- Anotada
+- Concisa
+- Organizada
+- Utilizable en operación y mantenimiento
+- Correcta
+- No ambigua
+- Completa
+- Verificable
+- Consistente
+- Comprensible por los consumidores
+- Modificable
+
+Tipos de Documentos
+
+- **`Documento de definición de requerimientos`** Listado completo de todas las cosas que el cliente espera que haga el sistema propuesto
+- **`Documento de especificación de requerimientos`** Definición en términos técnicos
+- **`Documento de especificación de requerimientos de Software IEEE Std. 830-1998 (SRS)`**
+  - **Objetivo** Brindar una colección de buenas prácticas para escribir especificaciones de requerimientos de software (SRS). Se describen los contenidos y las cualidades de una buena especificación de requerimientos.
