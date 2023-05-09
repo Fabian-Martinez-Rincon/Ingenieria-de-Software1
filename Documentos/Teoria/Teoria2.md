@@ -65,9 +65,47 @@ Impacto de los errores en la etapa de requerimientos
 
 El software resultante puede no satisfacer a los usuarios. Las interpretaciones múltiples de los requerimientos pueden causar desacuerdos entre clientes y desarrolladores. Puede gastarse tiempo y dinero construyendo el sistema erróneo
 
-- Requerimientos 0.1
-- Diseño 0.5
-- Codificación 1
-- Pruebas de Unidad 2
-- Pruebas ded Aceptación 5
-- Mantenimiento 20
+- **0.1** Requerimientos 
+- **0.5** Diseño 
+- **1.0** Codificación 
+- **2.0** Pruebas de Unidad
+- **5.0** Pruebas ded Aceptación
+- **20.0** Mantenimiento
+
+---
+
+### Tipos de Requerimientos
+#### Requerimientos Funcionales
+
+- Describen una interacción entre el sistema y su ambiente. Cómo debe comportarse el sistema ante determinado estímulo.
+- Describen lo que el sistema debe hacer, o incluso cómo NO debe comportarse.
+- Describen con detalle la funcionalidad del mismo.
+- Son independientes de la implementación de la solución.
+- Se pueden expresar de distintas formas
+
+#### Requerimientos no funcionales
+
+Describen una restricción sobre el sistema que limita nuestras elecciones en la construcción de una solución al problema
+- **Del Producto** Especifican el comportamiento del producto (usabilidad, eficiencia, rendimiento, espacio, fiabilidad, portabilidad).
+- **Organizacionales** Se derivan de las políticas y procedimientos existentes en la organización del cliente y en la del desarrollador (entrega, implementación, estándares).
+- **Externos** Interoperabilidad, legales, privacidad, seguridad, éticos
+- **Del dominio** Reflejan las características y restricciones del dominio de la aplicación del sistema. Pueden ser funcionales o no funcionales y pueden restringir a los anteriores. Como se especializan en el dominio son complicados de interpretar.
+- **Por Prioridad**
+  - Que deben ser absolutamente satisfechos
+  - Que son deseables pero no indispensables
+  - Que son posibles, pero que podrían eliminarse
+- **Del Usuario**
+  - Son declaraciones en lenguaje natural y en diagramas de los servicios que se espera que el sistema provea y de las restricciones bajo las cuales debe operar.
+  - Pueden surgir problemas por falta de claridad, confusión de requerimientos, conjunción de requerimientos.
+  - **Del Sistema**
+    - Establecen con detalle los servicios y restricciones del sistema.
+    - Es difícil excluir toda la información de diseño (arquitectura inicial, interoperabilidad con sistemas existentes, etc.)
+
+---
+
+## Ingeniería de Requerimientos
+
+La ingeniería de requerimientos es la disciplina para desarrollar una especificación completa, consistente y no ambigua, la cual servirá como base para acuerdos comunes entre todas las partes involucradas y en donde se describen las funciones que realizará el sistema
+
+
+> Ingeniería de requerimientos es el proceso por el cual se transforman los requerimientos declarados por los clientes, ya sean hablados o escritos, a especificaciones precisas, no ambiguas, consistentes y completas del comportamiento del sistema, incluyendo funciones, interfaces, rendimiento y limitaciones
