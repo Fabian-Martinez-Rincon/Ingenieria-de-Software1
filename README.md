@@ -12,7 +12,8 @@
 
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
-- [📖 Resumen Teorico](/Documentos/Teoria/Teoria.md)
+- [📖 Resumen Teorico 1er Parcial](/Documentos/Teoria/Teoria.md)
+- [📖 Resumen Teorico 2do Parcial](/Documentos/Teoria/Teoria2.md)
 - [📋 Practica 1 Full Teoria](/Documentos/Practica1.md)
 - [👤 Practica 2 Historias de Usuario](/Documentos/Practica2.md)
 - [👥 Practica 3 Casos de Uso](/Documentos/Practica3.md)

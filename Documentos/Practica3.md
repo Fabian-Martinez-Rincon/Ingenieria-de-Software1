@@ -856,11 +856,11 @@ El sistema también es utilizado por un operador a través de una consola que se
 
 <table ><tr><td width="660"> 
 
-**Nombre:** 
+**Nombre:** Reciclar 
  
-**Descripción:** 
+**Descripción:** Este cu describe como una persona recicla 
 
-**Actores:** 
+**Actores:** Persona
 
 **Precondiciones:** 
 
