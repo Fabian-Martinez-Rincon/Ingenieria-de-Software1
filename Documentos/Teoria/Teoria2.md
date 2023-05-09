@@ -15,6 +15,8 @@
 [Practica 6 | Tablas de Desición](/Documentos/Practica6.md)
 </div>
 
+---
+
 ## Qué es un proceso de software?
 
 Es un conjunto de actividades y resultados asociados que producen un producto de software
@@ -27,6 +29,8 @@ Actividades fundamentales de los procesos
 
 Los IS son los responsables de realizar estas actividades
 
+---
+
 ### Qué es un modelo de proceso de software
 
 Es una descripción simplificada de un proceso de software que presenta una visión de ese proceso. Estos modelos pueden incluir actividades que son partes de los procesos y productos de software, y el papel de las personas involucradas.
@@ -37,6 +41,7 @@ La mayoría de los modelos de proceso de software se basan en uno de los siguien
 - **Desarrollo iterativo**: Un sistema inicial se desarrolla rápidamente a partir de una especificación abstracta. Éste se refina basándose en las peticiones del cliente.
 - **IS basada en componentes**: Esta técnica supone que las partes ya existen. El proceso se enfoca en la integración de las partes.
 
+---
 
 ### Cuáles son los atributos de un buen software?
 
@@ -50,4 +55,19 @@ Los atributos básicos son
 - **Eficiencia** Hacer un uso apropiado de los recursos
 - **Usabilidad** Fácil de usar sin esfuerzo adicional
 
+---
+
 ## Requerimientos
+
+Un requerimiento (o requisito) es una característica del sistema o una descripción de algo que el sistema es capaz de hacer con el objeto de satisfacer el propósito del sistema
+
+Impacto de los errores en la etapa de requerimientos
+
+El software resultante puede no satisfacer a los usuarios. Las interpretaciones múltiples de los requerimientos pueden causar desacuerdos entre clientes y desarrolladores. Puede gastarse tiempo y dinero construyendo el sistema erróneo
+
+- Requerimientos 0.1
+- Diseño 0.5
+- Codificación 1
+- Pruebas de Unidad 2
+- Pruebas ded Aceptación 5
+- Mantenimiento 20
