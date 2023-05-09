@@ -267,3 +267,50 @@ Generación de casos de prueba
 
 ---
 
+## Técnicas de Especificación de Requerimientos
+
+### Estáticas
+Se describe el sistema a través de las entidades u objetos, sus atributos y sus relaciones con otros. No describe como las relaciones cambian con el tiempo.
+
+Cuando el tiempo no es un factor mayor en la operación del sistema, es una descripción útil y adecuada.
+  - Referencia indirecta
+  - Relaciones de recurrencia
+  - Definición axiomática
+  - Expresiones regulares
+  - Abstracciones de datos
+  - Otras…
+
+---
+
+### Dinámicas
+
+- Se considera un sistema en función de los cambios que ocurren a lo largo del tiempo.
+- Se considera que el sistema está en un estado particular hasta que un estímulo lo obliga a cambiar su estado.
+  - Tablas de decisión
+  - Diagramas de transición de estados
+  - Tablas de transición de estados
+  - Diagramas de persianas
+  - Diagramas de transición extendidos
+  - Redes de Petri
+  - Casos de Uso
+  - Historias de Usuario
+  - DFD/DFC
+  - Otras…
+
+---
+
+### Referencia indirecta (ecuaciones implícitas)
+
+- Descripción del sistema con una referencia indirecta al problema y su solución.
+- Se define **`QUÉ`** se hace, no **`CÓMO`**.
+- Ejemplo: sistema que resuelva `k` ecuaciones con `n` incógnitas => NO se declara el método de resolución, puede NO existir la solución.
+
+---
+
+### Relaciones de recurrencia
+
+- Descripción del sistema mediante una función que define su valor en función de términos anteriores.
+- Ejemplo: Expresar la serie de Fibonacci
+- F(0) = 1
+- F(1) = 1
+- F(n+1) = F(n) + F(n-1)
