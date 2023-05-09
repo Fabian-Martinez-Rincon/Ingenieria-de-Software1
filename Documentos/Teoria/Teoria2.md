@@ -40,7 +40,7 @@
     - [Historias de Usuario]()
     - [Casos de Uso]()
     - [Maquinas de Estado Finito]()
-      - [Diagramas de Transición y Estado (DTE)]()
+    - [Diagramas de Transición y Estado (DTE)]()
     - [Redes de Petri]()
 
 
