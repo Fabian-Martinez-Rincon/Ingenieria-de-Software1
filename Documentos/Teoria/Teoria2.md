@@ -15,7 +15,16 @@
 [Practica 6 | Tablas de Desición](/Documentos/Practica6.md)
 </div>
 
----
+<img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
+
+- [Qué es un proceso de software?](#qué-es-un-proceso-de-software)
+- [Qué es un modelo de proceso de Software?](#qué-es-un-modelo-de-proceso-de-software)
+- [Cuáles son los atributos de un buen software?](#cuáles-son-los-atributos-de-un-buen-software)
+- [Requerimientos](#requerimientos)
+  - [Funcionales](#requerimientos-funcionales)
+  - [No Funcionales](#requerimientos-no-funcionales)
+
+<img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
 ## Qué es un proceso de software?
 
