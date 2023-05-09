@@ -209,3 +209,13 @@ Tipos de Documentos
 - **`Documento de especificación de requerimientos`** Definición en términos técnicos
 - **`Documento de especificación de requerimientos de Software IEEE Std. 830-1998 (SRS)`**
   - **Objetivo** Brindar una colección de buenas prácticas para escribir especificaciones de requerimientos de software (SRS). Se describen los contenidos y las cualidades de una buena especificación de requerimientos.
+
+Aspectos básicos de una especificación de requerimientos
+
+- **`Funcionalidad`** ¿Qué debe hacer el software?
+- **`Interfaces Externas`** ¿Cómo interactuará el software con el medio externo (gente, hardware, otro software)?
+- **`Rendimiento`** Velocidad, disponibilidad, tiempo de respuesta, etc.
+- **`Atributos`** Portabilidad, seguridad, mantenibilidad, eficiencia
+- **`Restricciones de Diseño`** Estándares requeridos, lenguaje, límite de recursos, etc.
+
+### Validación de Requerimientos
