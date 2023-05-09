@@ -30,18 +30,19 @@
   - [Validación de Requerimientos]()
 - [Técnicas de especificación de Requerimientos]()
   - [Estaticas]()
-  - [Dinamicas]()
+    - [Referencia indirecta](#referencia-indirecta-ecuaciones-implícitas)
+    - [Relaciones de recurrencia](#relaciones-de-recurrencia)
+    - [Definición axiomática](#definición-axiomática)
+    - [Expresiones regulares](#expresiones-regulares)
+    - [Abstracciones de datos](#abstracciones-de-datos)
+  - [Dinamicas](#dinámicas)
     - [Tablas de Desición]()
     - [Historias de Usuario]()
     - [Casos de Uso]()
     - [Maquinas de Estado Finito]()
       - [Diagramas de Transición y Estado (DTE)]()
     - [Redes de Petri]()
-  - [Referencia indirecta]()
-  - [Relaciones de recurrencia]()
-  - [Definición axiomática]()
-  - [Expresiones regulares]()
-  - [Abstracciones de datos]()
+
 
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
@@ -267,9 +268,9 @@ Generación de casos de prueba
 
 ---
 
-## Técnicas de Especificación de Requerimientos
+# Técnicas de Especificación de Requerimientos
 
-### Estáticas
+## Estáticas
 Se describe el sistema a través de las entidades u objetos, sus atributos y sus relaciones con otros. No describe como las relaciones cambian con el tiempo.
 
 Cuando el tiempo no es un factor mayor en la operación del sistema, es una descripción útil y adecuada.
@@ -278,23 +279,6 @@ Cuando el tiempo no es un factor mayor en la operación del sistema, es una desc
   - Definición axiomática
   - Expresiones regulares
   - Abstracciones de datos
-  - Otras…
-
----
-
-### Dinámicas
-
-- Se considera un sistema en función de los cambios que ocurren a lo largo del tiempo.
-- Se considera que el sistema está en un estado particular hasta que un estímulo lo obliga a cambiar su estado.
-  - Tablas de decisión
-  - Diagramas de transición de estados
-  - Tablas de transición de estados
-  - Diagramas de persianas
-  - Diagramas de transición extendidos
-  - Redes de Petri
-  - Casos de Uso
-  - Historias de Usuario
-  - DFD/DFC
   - Otras…
 
 ---
@@ -314,3 +298,55 @@ Cuando el tiempo no es un factor mayor en la operación del sistema, es una desc
 - F(0) = 1
 - F(1) = 1
 - F(n+1) = F(n) + F(n-1)
+
+---
+
+### Definición axiomática
+- Se definen las propiedades básica de un sistema a través de operadores y axiomas (debe ser un conjunto completo y consistente)
+- Se generan teoremas a través del comportamiento del sistema y se demuestran
+- Ejemplos: Sistemas expertos, Definición de TADs, etc.
+
+---
+
+### Expresiones regulares
+
+Se define un alfabeto y las combinaciones permitidas. Cuando un sistema procesa un conjunto de cadenas de datos, permite definir las cadenas de datos aceptables
+
+Alfabeto
+- ÁTOMOS: (símbolos básicos) a,b,c.
+- ALTERNACIÓN: (a|b) = {a,b}
+- COMPOSICIÓN: (ab) = {ab}
+- ITERACIÓN: (a)*={e,a,aa..} (a)+= {a,aa,...}
+
+Se definen las combinaciones válidas
+- (a(b|c)) = {ab,ac}
+- (a(b|c))+ = {ab,ac,abac,acab...}
+
+---
+
+### Abstracciones de datos
+
+- Para aquellos sistemas en los que los datos determinan las clases de acciones que se realizan (importa para qué son).
+- Se categorizan los datos y se agrupan los semejantes.
+- El diccionario contiene los TIPOS DE DATOS (clases) y los DATOS (objetos).
+- Se organizan de tal manera de aprovechar las características compartidas.
+
+---
+
+## Dinámicas
+
+- Se considera un sistema en función de los cambios que ocurren a lo largo del tiempo.
+- Se considera que el sistema está en un estado particular hasta que un estímulo lo obliga a cambiar su estado.
+  - Tablas de decisión
+  - Diagramas de transición de estados
+  - Tablas de transición de estados
+  - Diagramas de persianas
+  - Diagramas de transición extendidos
+  - Redes de Petri
+  - Casos de Uso
+  - Historias de Usuario
+  - DFD/DFC
+  - Otras…
+
+---
+
