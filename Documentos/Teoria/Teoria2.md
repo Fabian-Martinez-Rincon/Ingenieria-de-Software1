@@ -4,7 +4,7 @@
 [![GitHub stars](https://img.shields.io/github/stars/Nomadiix/IS1)](https://github.com/FabianMartinez1234567/IS1/stargazers/)
 [![GitHub repo size in bytes](https://img.shields.io/github/repo-size/Nomadiix/IS1)](https://github.com/Nomadiix/IS1)
  </div>
-<h1 align="center"> 📋 Teoria 2do Parcial</h1>
+<h1 align="center"> 📋 Teoria 2da AE</h1>
 <div align='center'>
 
 [Practica 1 | Teoria](/Documentos/Practica1.md)<br>
