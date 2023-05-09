@@ -218,4 +218,52 @@ Aspectos básicos de una especificación de requerimientos
 - **`Atributos`** Portabilidad, seguridad, mantenibilidad, eficiencia
 - **`Restricciones de Diseño`** Estándares requeridos, lenguaje, límite de recursos, etc.
 
+---
+
 ### Validación de Requerimientos
+
+Es el proceso de certificar la corrección del modelo de requerimientos contra las intenciones del usuario.
+
+Trata de mostrar que los requerimientos definidos son los que estipula el sistema. Se describe el ambiente en el que debe operar el sistema.
+
+Es importante, porque los errores en los requerimientos pueden conducir a grandes costos si se descubren más tarde
+
+Definición de la IEEE
+- **`Validación`** Al final del desarrollo evaluar el software para asegurar que el software cumple los requerimientos
+- **`Verificación`** Determinar si un producto de software de una fase cumple los requerimientos de la fase anterior
+
+Sobre estas definiciones:
+- la validación sólo se puede hacer con la activa participación del usuario
+- **`Validación`** hacer el software correcto
+- **`Verificación`** hacer el software correctamente
+
+¿Es suficiente validar después del desarrollo del software?
+- La evidencia estadística dice que NO
+- Cuanto más tarde se detecta, más cuesta corregir (Boehm)
+- Bola de nieve de defectos
+- Validar en la fase de especificación de requerimientos puede ayudar a evitar costosas correcciones después del desarrollo
+
+¿Contra qué se verifican los requerimientos?
+- No existen **los requerimientos de los requerimientos**
+- No puede probarse formalmente que un Modelo de Requerimientos es correcto. Puede alcanzarse una convicción de que la solución especificada en el modelo de requerimientos es el correcto para el usuario.
+
+Comprenden
+- Verificaciones de validez (para todos los usuarios)
+- Verificaciones de consistencia (sin contradicciones)
+- Verificaciones de completitud (todos los requerimientos)
+- Verificaciones de realismo (se pueden implementar)
+- Verificabilidad (se puede diseñar conjunto de pruebas)
+
+Técnicas de validación
+- Pueden ser manuales o automatizadas
+- Revisiones de requerimientos (formales o informales)
+  - **`Informales`** Los desarrolladores deben tratar los requerimientos con tantos stakeholders como sea posible.
+  - **`Formal`** El equipo de desarrollo debe conducir al cliente, explicándole las implicaciones de cada requerimiento
+- Antes de una revisión formal, es conveniente realizar una revisión informal.
+
+Construcción de prototipos
+
+Generación de casos de prueba
+
+---
+
