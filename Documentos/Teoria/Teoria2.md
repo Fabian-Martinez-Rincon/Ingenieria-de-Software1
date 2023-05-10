@@ -557,3 +557,160 @@ Describe al sistema como un conjunto de estados donde el sistema reacciona a cie
 Al estar en el estado Si, la ocurrencia de la condición Cj hace que el sistema cambie al estado Sk
 
 ![](2023-05-10-14-10-58.png)
+
+#### Definición formal
+- Formalmente, un autómata finito (AF) puede ser descrito como una **`5-tupla (S,Σ,T,s,A)`** donde:
+- **`Σ`** es un alfabeto;
+- **`S`** un conjunto de estados;
+- **`T`** es la función de transición;
+- **`s`** es el estado inicial;
+- **`A`** es un conjunto de estados de aceptación o finales. 
+
+---
+
+## DTE
+
+### Construcción de un DTE
+#### **`1)`** Identificar los estados
+- Visualizando hora
+- Visualizando fecha
+- Visualizando funciones cronometro
+- Cronometrando
+- Configurando hora y fecha
+
+#### **`2)`** Si hay un estado complejo se puede explotar
+
+No es necesario
+
+#### **`3)`** Desde el estado inicial, se identifican los cambios de estado con flechas
+
+En este caso, el sistema inicia al colocarse la pila y pasaría al estado visualizando hora
+
+#### **`4)`** Se analizan las condiciones y las acciones para pasar de un estado a otro
+
+**Visualizando Hora**
+
+- Se presiona B1 Visualiza la fecha
+- Se presiona B2 Modificar la hora y fecha
+- Se presiona B3 Visualiza el cronometro
+- Se presiona B4 Enciende la luz
+
+**Visualizando Fecha**
+
+- Para visualizar la fecha se debe presionar el botón B1 y luego presionando B1 o B2 o B3 vuelve a visualizar la hora
+- En Cualquier Momento se puede encender la luz con el botón B4
+
+**Configurando Hora y Fecha**
+
+- Se presiona B1 modifico el digito
+- Se presiona B2 vuelve a visualizar la hora
+- Se presiona B3 Modifico el digito a modificar: Hora, minuto, segundo, día, mes
+- Se presiona B4 enciende la luz
+
+Continuar con todos los estados
+
+..
+
+#### **`5)`** Se verifica la consistencia:
+  - Se han definido todos los estados
+  - Se pueden alcanzar todos los estados
+  - Se pueden salir de todos los estados
+  - En cada estado, el sistema responde a todas las condiciones posibles (normales y anormales)
+
+--- 
+
+#### Funciones
+- Inicialmente (al colocar la pila) visualiza la hora prefijada
+- Visualizar la hora
+- Visualizar la fecha
+- Modificar Hora y Fecha
+- Encender la Luz por 5 seg.
+- Iniciar / Detener / Resetear Cronometro
+- Deja de funcionar al finalizarse la pila
+
+---
+
+## Redes de Petri
+
+- Fueron inventadas por Carl Petri en la Universidad de Bonn, Alemania Occidental.
+- Utilizadas para especificar sistemas de tiempo real en los que son necesarios representar aspectos de concurrencia.
+- Los sistemas concurrentes se diseñan para permitir la ejecución simultánea de componentes de programación, llamadas tareas o procesos, en varios procesadores o intercalados en un solo procesador.
+- Las tareas concurrentes deben estar sincronizadas para permitir la comunicación entre ellas (pueden operar a distintas velocidades, deben prevenir la modificación de datos compartidos o condiciones de bloqueo).
+- Pueden realizarse varias tareas en paralelo, pero son ejecutados en un orden impredecible.
+- Éstas NO son secuenciales.
+- **`Sincronización`** Orquesta sinfónica
+- Las tareas que ocurren en paralelo y se necesita alguna forma de controlar los eventos para cambiar de estado (**`Estación de servicios`**)
+
+### EVENTOS o ACCIONES y ESTADOS o CONDICIONES
+
+- Los eventos se representan como transiciones (T).
+- Los estados se representan como lugares o sitios (P).
+
+Caso más simple:
+- f(EstadoA, Evento) -> EstadoS
+
+Se requieren varios eventos para pasar de un estado a otro. Los eventos NO ocurren en un orden determinado.
+-  f(EstadoA, Even1,Even2...EvenN)->EstadoS
+
+Se requieren varios eventos para habilitar el paso del estado a otros varios estados que se ejecutan en paralelo.
+- f(EstadoA, Even1,Even2...EvenN)-> Estado1, Estado2…, EstadoN
+
+**`Definición Formal`** Una estructura de Red de Petri es una 4-upla
+- C=(P, T, I, O)
+  - **`P`** Lugares
+  - **`T`** Transiciones
+  - **`I`** Función de entrada, se representa con una I
+  - **`O`** Función de salida, se representa con una O
+
+Multigrafo (de un nodo puede partir más de un arco), bipartito, dirigido
+
+**Definiciones**
+
+- Los arcos indican a través de una flecha la relación entre sitios y transiciones y viceversa.
+- A los lugares se les asignan tokens (fichas) que se representan mediante un número o puntos dentro del sitio. Esta asignación de tokens a lugares constituye la marcación.
+- Luego de una marcación inicial se puede simular la ejecución de la red. El número de tokens asignados a un sitio es ilimitado.
+
+![](2023-05-10-14-37-37.png)
+
+Otro ejemplo
+
+![](2023-05-10-14-39-15.png)
+
+Explicación del ejemplo
+
+- El conjunto de tokens asociado a cada estado sirve para manejar la coordinación de eventos y estados.
+- Una vez que ocurre un evento, un token puede `“viajar”` de uno de los estados a otro.
+- Las reglas de disparo provocan que los tokens `“viajen”` de un lugar a otro cuando se cumplen las condiciones adecuadas.
+- La ejecución es controlada por el número y distribución de los tokens.
+- La ejecución de una Red de Petri se realiza disparando transiciones habilitadas.
+- Una transición está habilitada cuando cada lugar de entrada tiene al menos tantos tokens como arcos hacia la transición.
+- Disparar una transición habilitada implica remover tokens de los lugares de entrada y distribuir tokens en los lugares de salida (teniendo en cuenta la cantidad de arcos que llegan y la cantidad de arcos que salen de la transición).
+
+#### Transiciones
+
+![](2023-05-10-14-41-54.png) 
+
+- La ocurrencia de los eventos (transiciones) depende del estado del sistema.
+- Una condición puede ser V (con token) o F (sin token)
+- La ocurrencia de un evento está sujeta a que se den ciertas condiciones (pre) y al ocurrir el evento causa que se hagan verdaderas las post-condiciones.
+- Las RP son asincrónicas y el orden en que ocurren los eventos es uno de los permitidos (La ejecución es NO DETERMINÍSTICA)
+- Se acepta que el disparo de una transición es instantáneo
+
+#### Paralelismo
+
+![](2023-05-10-14-43-54.png)
+
+#### Sincronización
+Para que varios procesos colaboren en la solución de un problema es necesario que compartan información y recursos pero esto debe ser controlado para asegurar la integridad y correcta operación del sistema.
+
+#### Expresión de exclusión mutua
+
+![](2023-05-10-14-44-47.png)
+
+#### Productor - Consumidor
+
+![](2023-05-10-14-49-57.png)
+
+#### Condición de bloqueo
+
+![](2023-05-10-14-50-42.png)
