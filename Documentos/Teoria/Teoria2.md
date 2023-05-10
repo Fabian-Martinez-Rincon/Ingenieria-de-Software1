@@ -350,3 +350,43 @@ Se definen las combinaciones válidas
 
 ---
 
+### Tablas de Decisión
+
+Es una herramienta que permite presentar de forma concisa las reglas lógicas que hay que utilizar para decidir acciones a ejecutar en función de las condiciones y la lógica de decisión de un problema específico
+
+Describe el sistema como un conjunto de:
+
+- Posibles **`CONDICIONES`** satisfechas por el sistema en un momento dado
+- **`REGLAS`** para reaccionar ante los estímulos que ocurren cuando se reúnen determinados conjuntos de condiciones y
+- **`ACCIONES`** a ser tomadas como un resultado.
+
+Construiremos las tablas con:
+- condiciones simples y acciones simples
+- Las condiciones toman sólo valores Verdadero o Falso
+- Hay **`2N`** Reglas donde N es la cantidad de condiciones
+
+![](2023-05-09-13-06-12.png)
+
+¿Cómo se llena la tabla?
+- A partir de un enunciado se debe:
+- Identificar las condiciones y las acciones.
+- Completar la tabla teniendo en cuenta:
+  - Si hay condiciones que son opuestas, debe colocarse una de ellas porque por la negativa se “obtendrá” la otra. (Si son n condiciones excluyentes, colocar n-1 en la tabla).
+  - Las condiciones deben ser atómicas.
+- Se construyen las reglas
+
+Modelizar el problema de remisión de mercadería con las siguientes consideraciones
+
+> Si el comprador no es cliente se imprime un mensaje de aviso y no se remite.
+> Si no hay stock y el comprador es cliente no se remite.
+> Si hay stock y el comprador es cliente se remite
+
+Identificar las condiciones y las acciones
+
+- Especificaciones completas
+- Aquellas que determinan acciones (una o varias) para todas las reglas posibles.
+- Especificaciones redundantes
+- Aquellas que marcan para reglas que determinan las mismas condiciones acciones iguales.
+- Especificaciones contradictorias
+- Aquellas que especifican para reglas que determinan las mismas condiciones acciones
+distintas
