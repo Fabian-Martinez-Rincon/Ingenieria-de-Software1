@@ -37,9 +37,9 @@
     - [Abstracciones de datos](#abstracciones-de-datos)
   - [Dinamicas](#dinámicas)
     - [Tablas de Desición](#tablas-de-decisión)
-    - [Historias de Usuario]()
-    - [Casos de Uso]()
-    - [Maquinas de Estado Finito]()
+    - [Historias de Usuario](#historias-de-usuario)
+    - [Casos de Uso](#casos-de-uso)
+    - [Maquinas de Estado Finito](#maquinas-de-estado-finito)
     - [Diagramas de Transición y Estado (DTE)]()
     - [Redes de Petri]()
 
@@ -405,6 +405,8 @@ Reducción de Complejidad (Redundancia)
 
 ![](2023-05-10-13-08-53.png)
 
+---
+
 ## Historias de Usuario
 
 - Una historia de usuario es una representación de un requisito de software escrito en una o dos frases utilizando el lenguaje común del usuario.
@@ -447,3 +449,104 @@ Ejemplos
   - Se requiere un contacto permanente con el cliente durante el proyecto lo cual puede ser difícil o costoso
   - Podría resultar difícil escalar a proyectos grandes
   - Requiere desarrolladores muy competentes
+
+---
+
+## Casos de Uso
+
+- Proceso de modelado de las “funcionalidades” del sistema en término de los evento que interactúan entre los usuarios y el sistema.
+- Tiene sus orígenes en el modelado orientado a objetos (Jacobson 1992) pero su eficiencia en modelado de requerimientos hizo que se independice de la técnica de diseño utilizada, siendo aplicable a cualquier metodología de desarrollo.
+- El uso de CU facilita y alienta la participación de los usuarios
+
+### **`Beneficios`**
+- Herramienta para capturar requerimientos funcionales
+- Descompone el alcance del sistema en piezas mas manejables
+- Medio de comunicación con los usuarios
+- Utiliza lenguaje común y fácil de entender por las partes
+- Permite estimar le alcance del proyecto y el esfuerzo a realizar
+- Define una línea base para la definición de los planes de prueba
+- Define una línea base para toda la documentación del sistema
+- Proporciona una herramienta para el seguimiento de los requisitos
+
+---
+
+### **`Elementos del Modelo de Casos de Uso`**
+
+#### **`Diagrama de Casos de Uso`** 
+
+Ilustra las interacciones entre el sistema y los actores
+
+#### **`Escenarios (narración del CU)`** 
+
+Descripción de la interacción entre el actor y el sistema para realizar la funcionalidad
+
+#### **`Elementos del Diagrama de Casos de Uso`**
+
+- **Caso de Uso** Representa un objetivo (funcionalidad) individual del sistema y describe la secuencia de actividades y de interacciones para alcanzarlo. Para que el CU sea considerado un requerimiento debe estar acompañando de su respectivo escenario
+- **Actores**
+  - Un actor inicia una actividad (CU) en el sistema
+  - Representa un papel desempeñado por un usuario que interactúa (rol)
+  - Puede ser una persona, sistema externo o dispositivo externo que emita un evento (sensor, reloj)
+- **Relaciones**
+  - **`Asociaciones`** Relación entre un actor y un CU en el que interactúan entre sí 
+  - **`Extensiones`** (Extends)
+    - Un CU extiende la funcionalidad de otro CU
+    - Un CU puede tener muchos CU extensiones
+    - Los CU extensiones solo son iniciados por un CU
+  - **`Uso o Inclusión`** (Uses) Reduce la redundancia entres dos o más CU al combinar los pasos comunes de los CU
+  - **`Dependencia`** (Depends) Relación entre CU que indica que un CU no puede realizarse hasta que se haya realizado otro CU
+  - **`Herencia`** Relación entre actores donde un actor hereda las funcionalidades de uno o varios actores
+
+#### **Escenarios** (narración del CU)
+- Conceptos Generales
+- Descripción de la interacción del escenario
+- Descripción de eventos alternativos
+
+---
+
+### Proceso de modelado
+- Identificar a los actores
+- Identificar los CU para los requerimientos
+- Construir el diagrama
+- Realizar los escenarios
+
+---
+
+#### Identificar a los actores
+
+Dónde buscar actores potenciales
+- Diagrama de contexto que identifique el alcance del sistema
+- Documentación o manuales existentes
+- Minutas de reunión
+- Documentos de requerimientos
+
+**Responder a**
+- ¿Quién o qué proporciona las entradas al sistema?
+- ¿Quién o qué recibe las salidas del sistema?
+- ¿Se requieren interfaces con otros sistemas?
+- ¿Quien mantendrá la información en el sistema?
+
+Deberán nombrase con un sustantivo o frase sustantiva
+
+---
+
+#### Identificar los CU para los requerimientos
+Responder a
+- ¿Cuáles son las principales tareas del actor?
+- ¿Qué información necesita el actor del sistema?
+- ¿Qué información proporciona el actor al sistema?
+- Necesita el sistema informar al actor de eventos o cambios ocurridos
+- Necesita el actor informar al sistema de eventos o cambios ocurridos
+
+---
+
+#### Conceptos importantes
+- Un CU debe representar una funcionalidad concreta
+- La descripción de los pasos en los escenarios debe contener más de un paso, para representar la interacción entre los componentes
+- El uso de condicionales en el curso normal, es limitado a la invocación de extenciones, ya que este flujo representa la ejecución del caso sin alteraciones
+- Las pre condiciones no deben representarse el los cursos alternativos, ya que al ser una pre-condición no va a ocurrir
+- Los “uses” deben ser accedidos por lo menos desde dos CU
+
+---
+
+## Maquinas de estado finito
