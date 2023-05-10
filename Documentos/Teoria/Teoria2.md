@@ -550,3 +550,10 @@ Responder a
 ---
 
 ## Maquinas de estado finito
+
+Describe al sistema como un conjunto de estados donde el sistema reacciona a ciertos eventos posibles (externos o internos).
+- f(Si, Cj) = Sk
+
+Al estar en el estado Si, la ocurrencia de la condición Cj hace que el sistema cambie al estado Sk
+
+![](2023-05-10-14-10-58.png)
