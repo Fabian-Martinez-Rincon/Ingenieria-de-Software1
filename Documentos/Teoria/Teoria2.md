@@ -435,4 +435,15 @@ Ejemplos
 ▪ **`Estimables`** Un resultado de la discusión de una historia de usuario es la estimación del tiempo que tomará completarla. Esto permite estimar el tiempo total del proyecto.
 - **`Pequeñas`** Las historias muy largas son difíciles de estimar e imponen restricciones sobre la planificación de un desarrollo iterativo. Generalmente se recomienda la consolidación de historias muy cortas en una sola historia.
 - **`Verificables`** Las historias de usuario cubren requerimientos funcionales, por lo que generalmente son verificables. Cuando sea posible, la verificación debe automatizarse, de manera que pueda ser verificada en cada entrega del proyecto.
-
+- **``Beneficios``**
+  - Al ser muy corta, ésta representa requisitos del modelo de negocio que pueden  implementarse rápidamente (días o semanas)
+  - Necesitan poco mantenimiento
+  - Mantienen una relación cercana con el cliente
+  - Permite dividir los proyectos en pequeñas entregas
+  - Permite estimar fácilmente el esfuerzo de desarrollo
+  - Es ideal para proyectos con requisitos volátiles o no muy claros
+- **`Limitaciones`**
+  - Sin pruebas de validación pueden quedar abiertas a distintas interpretaciones haciendo difícil utilizarlas como base para un contrato
+  - Se requiere un contacto permanente con el cliente durante el proyecto lo cual puede ser difícil o costoso
+  - Podría resultar difícil escalar a proyectos grandes
+  - Requiere desarrolladores muy competentes
