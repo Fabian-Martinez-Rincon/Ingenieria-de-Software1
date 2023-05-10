@@ -36,7 +36,7 @@
     - [Expresiones regulares](#expresiones-regulares)
     - [Abstracciones de datos](#abstracciones-de-datos)
   - [Dinamicas](#dinámicas)
-    - [Tablas de Desición]()
+    - [Tablas de Desición](#tablas-de-decisión)
     - [Historias de Usuario]()
     - [Casos de Uso]()
     - [Maquinas de Estado Finito]()
@@ -350,7 +350,7 @@ Se definen las combinaciones válidas
 
 ---
 
-### Tablas de Decisión
+## Tablas de Decisión
 
 Es una herramienta que permite presentar de forma concisa las reglas lógicas que hay que utilizar para decidir acciones a ejecutar en función de las condiciones y la lógica de decisión de un problema específico
 
@@ -390,3 +390,49 @@ Identificar las condiciones y las acciones
 - Especificaciones contradictorias
 - Aquellas que especifican para reglas que determinan las mismas condiciones acciones
 distintas
+
+![](2023-05-10-13-05-19.png)
+
+Redundancia y Contradicción
+
+![](2023-05-10-13-06-35.png)
+
+Reducción de Complejidad (Redundancia)
+- Combine las reglas en donde sea evidente que una alternativa no representa una diferencia en el resultado.
+- El guión [—] significa que la condición 2 puede ser S o N, y que aún así se realizará la acción.
+
+![](2023-05-10-13-08-14.png)
+
+![](2023-05-10-13-08-53.png)
+
+## Historias de Usuario
+
+- Una historia de usuario es una representación de un requisito de software escrito en una o dos frases utilizando el lenguaje común del usuario.
+- Son utilizadas en las metodologías de desarrollo ágiles para la especificación de requisitos
+- Acompañadas de las discusiones con los usuarios y las pruebas de validación
+- Debe ser limitada, esta debería poderse escribir sobre una nota adhesiva pequeña.
+- Son una forma rápida de administrar los requisitos de los usuarios sin tener que elaborar gran cantidad de documentos formales y sin requerir de mucho tiempo para administrarlos.
+- Permiten responder rápidamente a los requisitos cambiantes
+
+Generalmente se espera que la estimación de tiempo de cada historia de usuario se sitúe entre unas 10 horas y un par de semanas
+- Estimaciones mayores a dos semanas son indicativo de que la historia es muy compleja y debe ser dividida en varias historias.
+
+Al momento de implementar las historias, los desarrolladores deben tener la posibilidad de discutirlas con los clientes.
+Si bien el estilo puede ser libre, la historia de usuario debe responder a tres preguntas: 
+- **¿Quién se beneficia?** El Rol
+- **¿qué se quiere?** La Historia
+- **¿cuál es el beneficio?** Esto es parte del cliente
+
+Ejemplos
+
+- Como (rol) quiero (algo) para poder (beneficio).
+- Como usuario registrado deseo loguearme para poder poder empezar a utilizar la aplicación.
+
+### Características
+- **`Independientes unas de otras`** De ser necesario, combinar las historias dependientes o buscar otra forma de dividir las historias de manera que resulten independientes.
+- **`Negociables`** La historia en si misma no es lo suficientemente explícita como para considerarse un contrato, la discusión con los usuarios debe permitir esclarecer su alcance y éste debe dejarse explícito bajo la forma de pruebas de validación.
+- **`Valoradas por los clientes o usuarios`** Los intereses de los clientes y de los usuarios no siempre coinciden, pero en todo caso, cada historia debe ser importante para alguno de ellos más que para el desarrollador.
+▪ **`Estimables`** Un resultado de la discusión de una historia de usuario es la estimación del tiempo que tomará completarla. Esto permite estimar el tiempo total del proyecto.
+- **`Pequeñas`** Las historias muy largas son difíciles de estimar e imponen restricciones sobre la planificación de un desarrollo iterativo. Generalmente se recomienda la consolidación de historias muy cortas en una sola historia.
+- **`Verificables`** Las historias de usuario cubren requerimientos funcionales, por lo que generalmente son verificables. Cuando sea posible, la verificación debe automatizarse, de manera que pueda ser verificada en cada entrega del proyecto.
+
