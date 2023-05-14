@@ -79,14 +79,26 @@
 ### Solicitar Turno
 
 - `ID` Solicitar Turno
-- `Titulo` Como usuario quiero solicitar un turno para 
+- `Titulo` Como usuario loguead quiero solicitar un turno para 
 - `Reglas de negocio`
+  - La cancha debe estar disponible
+  - La fecha con dos dias de anticipación
 
-`Criterios de aceptación` : 
-- `Escenario 1` 
-  - `Dado` 
-  - `Cuando` 
-  - `Entonces` 
+`Criterios de aceptación`: 
+- `Escenario 1` Solicitud exitosa
+  - `Dado` que la cancha Roja esta disponible y la fecha 1/1/2024 se hizo con dos dias de anticipación
+  - `Cuando` el usuario ingresa Roja, 1/1/2024, 14:00
+  - `Entonces` El sistema asigna un turno al usuario e informa "Su turno ha sido registrado con exito"
+- `Escenario 2` Solicitud fallida por cancha no disponible
+  - `Dado` que la cancha Azul no esta disponible y la fecha 3/3/2025 se hizo con dos dias de anticipación
+  - `Cuando` el usuario ingresa Azul, 3/3/2025, 11:00
+  - `Entonces` El sistema asigna un turno al usuario e informa "Su turno ha sido registrado con exito"
+- `Escenario 3` Solicitud fallida por fecha no reservada con dos dias de anticipación
+  - `Dado` que la cancha Verde esta disponible y la fecha 1/12/2023 se hizo con un dia de anticipación
+  - `Cuando` el usuario ingresa Verde, 1/12/2023, 19:00
+  - `Entonces` El sistema informa que el turno debe solicitarse con dos dias de anticipación
+
+
 ---
 
 ### Iniciar Sesión
@@ -95,7 +107,7 @@
 - `Reglas de negocio`
   - Tiene 3 intentos antes de ser bloqueada
 
-#### `Criterios de aceptación` : Iniciar Sesión
+`Criterios de aceptación` : Iniciar Sesión
 
 - `Escenario 1` Inicio exitoso
   - `Dado` dado que el mail juan@gmail.com esta registrado, esta en el intento 1, y la contraseña 123456 es correcta
@@ -122,8 +134,14 @@
 
 ### Cerrar Sesión
 - `ID` Cerrar Sesión
-- `Titulo`
+- `Titulo` Como usuario logueado quiero iniciar sesión para poder guardar mis datos
 - `Reglas de negocio`
+
+`Criterios de aceptación`: Cerrar Sesión
+- `Escenario 1` Cierre exitoso
+  - `Dado` que el usuario felix@gmail.com tiene una sesión abierta
+  - `Cuando` el usuario presiona el boton "cerrar sesión"
+  - `Entonces` El sistema cierra la sesión y bloquea las opciones para solicitar turnos
 
 ---
 
