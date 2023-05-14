@@ -97,30 +97,26 @@
 
 #### `Criterios de aceptación` : Iniciar Sesión
 
-`Escenario 1` Inicio exitoso
-- `Dado` dado que el mail juan@gmail.com esta registrado, esta en el intento 1, y la contraseña 123456 es correcta
-- `Cuando` el usuario ingresa juan@gmail.com, 123456
-- `Entonces` El sistema inicia la sesión y habilita la solicitud de turnos
-
-`Escenario 2` Inicio fallido mail no registrado
-- `Dado` dado que el mail martin@gmail.com no esta registrado
-- `Cuando` el usuario ingresa martin@gmail.com
-- `Entonces` El sistema informa que el usuario no se encuentra registrado
-
-`Escenario 3` Inicio fallido por contraseña incorrecta
-- `Dado` dado que el mail carlos@gmail.com esta registrado, esta en el intento 1, y la contraseña 7777777 es incorrecta
-- `Cuando` el usuario ingresa carlos@gmail.com, 7777777
-- `Entonces` el sistema incrementa en un intento e informa que la contraseña es incorrecta
-
-`Escenario 4` Inicio fallido por contraseña incorrecta
-- `Dado` dado que el mail pedro@gmail.com esta registrado, esta en el intento 3, y la contraseña 666666 es incorrecta
-- `Cuando` el usuario ingresa pedro@gmail.com, 666666
-- `Entonces` el sistema bloquea la cuenta
-
-`Escenario 5` Inicio fallido por cuenta bloqueada
-- `Dado` dado que el mail manolo@gmail.com esta registrado y tiene la cuenta bloqueada
-- `Cuando` el usuario ingresa manolo@gmail.com
-- `Entonces` el sistema informa que la cuenta fue bloqueada
+- `Escenario 1` Inicio exitoso
+  - `Dado` dado que el mail juan@gmail.com esta registrado, esta en el intento 1, y la contraseña 123456 es correcta
+  - `Cuando` el usuario ingresa juan@gmail.com, 123456
+  - `Entonces` El sistema inicia la sesión y habilita la solicitud de turnos
+- `Escenario 2` Inicio fallido mail no registrado
+  - `Dado` dado que el mail martin@gmail.com no esta registrado
+  - `Cuando` el usuario ingresa martin@gmail.com
+  - `Entonces` El sistema informa que el usuario no se encuentra registrado
+- `Escenario 3` Inicio fallido por contraseña incorrecta
+  - `Dado` dado que el mail carlos@gmail.com esta registrado, esta en el intento 1, y la contraseña 7777777 es incorrecta
+  - `Cuando` el usuario ingresa carlos@gmail.com, 7777777
+  - `Entonces` el sistema incrementa en un intento e informa que la contraseña es incorrecta
+- `Escenario 4` Inicio fallido por contraseña incorrecta
+  - `Dado` dado que el mail pedro@gmail.com esta registrado, esta en el intento 3, y la contraseña 666666 es incorrecta
+  - `Cuando` el usuario ingresa pedro@gmail.com, 666666
+  - `Entonces` el sistema bloquea la cuenta e informa que la contraseña es incorrecta
+- `Escenario 5` Inicio fallido por cuenta bloqueada
+  - `Dado` dado que el mail manolo@gmail.com esta registrado y tiene la cuenta bloqueada
+  - `Cuando` el usuario ingresa manolo@gmail.com
+  - `Entonces` el sistema informa que la cuenta fue bloqueada
 
 ---
 
