@@ -577,16 +577,6 @@ Para cada Historia de Usuario se deben indicar los siguientes ítems:
 
 </div>
 
-Suponga que trabaja en un grupo en el área de sistemas de una organización y está por comenzar un nuevo proyecto para desarrollar un sistema que depende del departamento contable.
-
-El sistema deberá administrar los contratos realizado con terceros. En una de las reuniones con el jefe de departamento nos dijo que él no usará el sistema pero que recibirá listados del personal contratado ya que deberá firmarlos para elevarlos a las autoridades.
-
-Para obtener más información generamos una reunión con el empleado de mesa de entradas. Nos contó que el problema que tienen actualmente es que realizan todas las minutas a mano por lo cual desean automatizar esta tarea. Las minutas son el paso previo a un contrato. Para confeccionar una minuta, el empleado de mesa de entradas debe ingresar nombre y número de CUIT de una persona a contratar, tipo de contrato, fecha de comienzo, duración y monto, a lo que el sistema le asociará un número de minuta automáticamente. Nos recomendó leer la reglamentación vigente acerca de contratos de la que obtuvimos que los montos de los mismos no pueden superar los $25.000 y que la duración debe ser como máximo de 6 meses.
-
-Una vez confeccionada la minuta por parte del empleado de mesa de entradas, la misma queda pendiente de aprobación. El que puede aprobar una minuta es el empleado de rendiciones. Realizamos una reunión con él y nos contó que su tarea consiste en evaluar las minutas para determinar su aprobación. También nos dijo que en otro trabajo que tiene usan un sistema llamado MiMiNuTa al que nos puede dar acceso para ver como hacen esa tarea. Después del análisis de este sistema, se concluyó que para aprobar una minuta necesitaría ingresar un número de minuta y que el sistema muestre los datos de la misma para poder aprobarla. Nos dijo que no puede aprobar la minuta si la persona a contratar tiene 3 contratos vigentes (minutas aprobadas) ni tampoco si el CUIT de la persona a contratar está inhabilitado por la AFIP. Actualmente se comunica telefónicamente con la AFIP para realizar esta verificación, pero sabe que ésta provee un servicio para aplicaciones que permite hacer la verificación en línea. Esto último nos obligó a generar una reunión con el administrador de servidores de la AFIP. Nos dijo que para poder conectarnos con un servidor de la AFIP, el sistema debe mandar un token (código que identificará de manera única a nuestra aplicación) y CUIT, si el token es correcto, el servidor responde si el CUIT está habilitado o no.
-
-Por último el empleado de rendiciones será el responsable de imprimir los listados con las minutas aprobadas, es decir, un listado con el personal contratado para poder dárselo al jefe de departamento para que lo firme.
-
 ![image](https://user-images.githubusercontent.com/55964635/232234621-77ecdb9f-55f2-4dab-8055-571bbdf9f69f.png)
 
 ---
@@ -602,9 +592,7 @@ Por último el empleado de rendiciones será el responsable de imprimir los list
 
 ---
 
-### Confeccionar minuta
-
-<table><tr><td> 
+## Confeccionar minuta
 
 **ID:** Confeccionar minuta
  
@@ -614,141 +602,109 @@ Por último el empleado de rendiciones será el responsable de imprimir los list
 - El monto no puede superar los $25000
 - Duración maxima de 6 meses
 
-</td></tr><tr><td>
 
 **CRITERIOS DE ACEPTACIÓN:** 
 
-**Escenario 1:** Confección exitosa
+#### **Escenario 1:** Confección exitosa
 
-`Dado` que el monto $1000 no supera los $25000 y la duración de 3 meses es valida
+`Dado` que el monto $1000 no supera los $25000 y la duración de 3 meses no supera el maximo de 6 meses
 
 `Cuando` el empleado de mesa ingresa Fabian, 777, temporal, 01-01-2001, 3 meses, $1000
 
-`Entonces` el sistema confecciona la minuta
+`Entonces` el sistema confecciona la minuta y le asocia un numero automaticamente
 
----
+#### **Escenario 2:** Confección fallida por monto superior a $25000
 
-**Escenario 2:** Confección fallida por monto superior a $25000
-
-`Dado` que el monto $50000 supera los $25000 y duración 1 mes es valida
+`Dado` que el monto $50000 supera los $25000 y duración 1 mes no supera el maximo de 6 meses
 
 `Cuando` el empleado de mesa ingresa Tomas, 666, fijo, 10-10-2010, 1 mes, $50000
 
-`Entonces` el sistema informa que el monto ingresado supera los $25000 y no confecciona la minuta
+`Entonces` el sistema informa que el monto ingresado supera los $25000
 
----
+#### **Escenario 3:** Confección fallida porque la duración excede los 6 meses 
 
-**Escenario 3:** Confección fallida porque la duración excede los 6 meses 
-
-`Dado` que el monto $500 no supera los $25000 y duración 10 meses es valida
+`Dado` que el monto $500 no supera los $25000 y duración 10 meses supera el maximo de 6 meses
 
 `Cuando` el empleado de mesa ingresa Franco, 1010, temporal, 11-11-2011, 10 meses, $500
 
 `Entonces` el sistema informa que el la duración ingresada supera los 6 meses
 
-</td></tr></table>
-
 ---
 
-### Aprobar minuta
-
-<table><tr><td> 
+## Aprobar minuta
 
 **ID:** Aprobar minuta
  
 **TÍTULO:** Como empleado de rendiciones quiero aprobar la minuta par poder hacer un contrato en un futuro
 
 **REGLAS DE NEGOCIO:** 
-- Nro de minuta existente
-- No se apruba si tiene 3 contratos vigentes
+
+- No se aprueba si tiene 3 contratos vigentes
 - Cuit habilitado por el AFIP (esta habilitado si el servidor responde ante el token)
-
-Para la regla de minuta existente, podria darse el caso de que la minuta ya se haya usado o tambien podria ser el caso de que se ingreso algun nro incorreco o que directamente no exista, bueno, todos estos casos lo pongo como regla de negocio, no lo especifica en ningun lado asique queda a criterio de cada uno.
-
-En este ejercicio tambien esta la posibilidad de `conectarnos con el servidor` para que mandemos el token y nos apruebe, pero como eso lo hace el servidor, nosotros lo vemos en segundo plano o no lo vemos directamente, por lo que no lo considero una HU (para mi)
-
-</td></tr><tr><td>
 
 **CRITERIOS DE ACEPTACIÓN:** 
 
-**Escenario 1:** Aprobación de minuta exitosa
+#### **Escenario 1:** Aprobación de minuta exitosa
 
-`Dado` que el nro de minuta 123 es valida, tiene dos contratos vigentes y el cuit esta habilitado por el AFIP
+`Dado` que la minuta 123 tiene 2 contratos vigentes que es menor a 3 contratos, se establecio conexión con el servidor y el cuit esta habilitado por el AFIP
 
 `Cuando` el empleado de rendiciones ingresa 123
 
-`Entonces` el sistema aprueba la minuta y la agrega a un listado
+`Entonces` el sistema aprueba la minuta
 
----
+#### **Escenario 2:** Aprobación fallida por tener 3 contratos vigentes
 
-**Escenario 2:** Aprobación fallida por minuta invalida
-
-`Dado` que el nro de minuta 777 es invalido, tiene dos contratos vigentes y el cuit esta habilitado por el AFIP
-
-`Cuando` el empleado de rendiciones ingresa 777
-
-`Entonces` el sistema informa que la minuta ingresada es invalida y no agrega la minuta al listado
-
----
-
-**Escenario 3:** Aprobación fallida por tener tres contratos vigentes
-
-`Dado` que el nro de minuta 666 es valido, tiene tres contratos vigentes y el cuit esta habilitado por el AFIP
+`Dado` que la minuta 666 tiene 3 contratos vigentes que es igual a 3 contratos, se establecio conexión con el servidor y el cuit esta habilitado por el AFIP
 
 `Cuando` el empleado de rendiciones ingresa 666
 
-`Entonces` el sistema informa que el usuario ya tiene tres contratos vigentes y no agrega la minuta al listado
+`Entonces` el sistema informa que el usuario ya tiene tres contratos vigentes
+
+#### **Escenario 3:** Aprobación fallida por falta de conexión
+
+`Dado` que la minuta 4949 tiene 1 contrato vigentes que es menor a 3 contratos, no se establecio conexión con el servidor
+
+`Cuando` el empleado de rendiciones ingresa 4949
+
+`Entonces` el sistema informa que no se pudo establecer conexión
+
+
+#### **Escenario 4:** Aprobación fallida por CUIT inhabilitado por el AFIP
+
+`Dado` que la minuta 3131 tiene 1 contrato vigentes que es menor a 3 contratos, se establecio conexión con el servidor y el cuit esta inhabilitado por el AFIP
+
+`Cuando` el empleado de rendiciones ingresa 3131
+
+`Entonces` el sistema informa que el cuit se encuentra inhabilitado por el AFIP
 
 ---
 
-**Escenario 4:** Aprobación fallida por cuit inhabilidato por el AFIP
-
-`Dado` que el nro de minuta 404 es valido, tiene un contrato vigente y el cuit esta inhabilitado por el AFIP
-
-`Cuando` el empleado de rendiciones ingresa 404
-
-`Entonces` el sistema informa que el usuario tiene el CUIT inhabilitado por el AFIP
-
-</td></tr></table>
-
----
-
-### Imprimir Listado
-
-<table><tr><td> 
+## Imprimir Listado
 
 **ID:** Imprimir listado
  
 **TÍTULO:** Como empleado de rendiciones quiero imprimir el listado para poder darselo al jefe de departamento 
 
 **REGLAS DE NEGOCIO:** 
-- Existe al menos una minuta
 
-Esta regla de negocio podria estar en duda pero bueno
-
-</td></tr><tr><td>
-
-**CRITERIOS DE ACEPTACIÓN:** 
+**CRITERIOS DE ACEPTACIÓN:** Imprimir listado
 
 **Escenario 1:** Impresión exitosa
 
-`Dado` que el litado tiene 15 minutas
+`Dado` que el litado tiene minutas para mostrar
 
-`Cuando` el empleado de rendiciones le da al boton `imprimir minutas`
+`Cuando` el empleado de rendiciones le da al boton "imprimir minutas"
 
-`Entonces` el sistema imprime (o el empleado no se bien) imprime el listado 
+`Entonces` el sistema imprime el listado 
 
----
+#### **Escenario 2:** Impresión fallida por lista vacia
 
-**Escenario 2:** Impresión fallida por lista vacia
+`Dado` que el listado no tiene minutas para mostrar
 
-`Dado` que el listado tiene 0 minutas
-
-`Cuando` el empleado de rendiciones le da al boton `imprimir minutas`
+`Cuando` el empleado de rendiciones le da al boton "imprimir minutas"
 
 `Entonces` el sistema informa que el listado se encuentra vacio
 
-</td></tr></table>
 
 
 
