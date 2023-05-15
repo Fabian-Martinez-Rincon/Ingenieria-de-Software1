@@ -558,9 +558,6 @@ Para cada Historia de Usuario se deben indicar los siguientes ítems:
 
 `Entonces` el sistema informa que el listado se encuentra vacio
 
-
-
-
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
 <div align = center>
@@ -1157,7 +1154,7 @@ Para cada Historia de Usuario se deben indicar los siguientes ítems:
 
 <div align = center>
 
-## `Problema 7` Mutual
+## `Problema 7` Mutual (Este enunciadado lo pase por arriba)
 
 </div>
 
@@ -1185,8 +1182,6 @@ Para cada Historia de Usuario se deben indicar los siguientes ítems:
 
 ## Afiliar persona
 
-<table><tr><td> 
-
 **ID:** Persona
  
 **TÍTULO:** Como persona quiero afiliarme para poder recibir prestaciones
@@ -1194,11 +1189,10 @@ Para cada Historia de Usuario se deben indicar los siguientes ítems:
 **REGLAS DE NEGOCIO:** 
 - El pago debe realizarse con tarjeta de credito
 
-</td></tr><tr><td>
 
 **CRITERIOS DE ACEPTACIÓN:** 
 
-**Escenario 1:** Afiliación exitosa 
+#### **Escenario 1:** Afiliación exitosa 
 
 `Dado` que la persona Fabian Martinez no es afiliado y pago con una tarjeta de credito valida
 
@@ -1206,9 +1200,7 @@ Para cada Historia de Usuario se deben indicar los siguientes ítems:
 
 `Entonces` el sistema registra al afiliado y pasa a tener a cargo a su pareja e hijos(hasta que cumplan 18 años) y a cada uno se le otorga un numero de afiliado
 
----
-
-**Escenario 2:** Afiliación fallida por persona ya afiliada 
+#### **Escenario 2:** Afiliación fallida por persona ya afiliada 
 
 `Dado` que la persona Tomas Martinez es afiliado y pago con una tarjeta de credito valida
 
@@ -1216,9 +1208,7 @@ Para cada Historia de Usuario se deben indicar los siguientes ítems:
 
 `Entonces` el sistema informa que la persona ya se encuentra registrada como afiliada
 
----
-
-**Escenario 1:** Afiliación fallida por problemas con la tarjeta 
+#### **Escenario 3:** Afiliación fallida por problemas con la tarjeta 
 
 `Dado` que la persona Camila Martinez no es afiliado y pago con una tarjeta de credito invalida
 
@@ -1228,13 +1218,7 @@ Para cada Historia de Usuario se deben indicar los siguientes ítems:
 
 ---
 
-</td></tr></table>
-
----
-
-### Pagar con tarjeta
-
-<table><tr><td> 
+## Pagar con tarjeta
 
 **ID:** Pagar con tarjeta
  
@@ -1242,11 +1226,9 @@ Para cada Historia de Usuario se deben indicar los siguientes ítems:
 
 **REGLAS DE NEGOCIO:** 
 
-</td></tr><tr><td>
-
 **CRITERIOS DE ACEPTACIÓN:** 
 
-**Escenario 1:** Pago exitoso
+#### **Escenario 1:** Pago exitoso
 
 `Dado` que se pudo establecer conexión con el servidor del banco, el nro de tarjeta 314 es valido y posee fondos suficientes 
 
@@ -1254,9 +1236,7 @@ Para cada Historia de Usuario se deben indicar los siguientes ítems:
 
 `Entonces` El sistema registra el pago
 
----
-
-**Escenario 2:** Pago fallido por falta de conexión con el servidor
+#### **Escenario 2:** Pago fallido por falta de conexión con el servidor
 
 `Dado` que no se pudo establecer conexión con el servidor del banco
 
@@ -1264,9 +1244,7 @@ Para cada Historia de Usuario se deben indicar los siguientes ítems:
 
 `Entonces` el sistema informa que no se pudo establecer conexión con el banco y no realiza el pago
 
----
-
-**Escenario 3:** Pago fallido por numero de tarjeta invalido
+#### **Escenario 3:** Pago fallido por numero de tarjeta invalido
 
 `Dado` que se pudo establecer conexión con el servidor del banco, el nro de tarjeta 6565 es invalido
 
@@ -1274,9 +1252,7 @@ Para cada Historia de Usuario se deben indicar los siguientes ítems:
 
 `Entonces` el sistema informa que el nro de tarjeta es invalido y no realiza el pago
 
----
-
-**Escenario 4:** Pago fallido por fondos insuficientes
+#### **Escenario 4:** Pago fallido por fondos insuficientes
 
 `Dado` que se pudo establecer conexión con el servidor del banco, el nro de tarjeta 8788 es valido y no posee fondos suficientes 
 
@@ -1284,85 +1260,66 @@ Para cada Historia de Usuario se deben indicar los siguientes ítems:
 
 `Entonces` el sistema informa que la tarjeta no tiene fondos suficientes y no realiza el pago
 
-
-</td></tr></table>
-
 ---
 
-### Solicitar Ortodoncia
+## Solicitar Ortodoncia
 
-<table><tr><td> 
-
-**ID:** Solicitar Ortodoncia
+**ID:** Solicitar Ortodsoncia
  
 **TÍTULO:** Como afiliado quiero solicitar ortodoncia para un chequeo
 
 **REGLAS DE NEGOCIO:** 
-- Pago asentado el mes anterior
+- debe tener Pago asentado el mes anterior
 - El prestamo solo se puede obtener una vez
-- Para menores de 15 tienen que tener al menos 9 meses de afiliado
+- si es menor de 15 tienen necesita 9 meses de afiliado
 - Presentar historia clinica 
-
-</td></tr><tr><td>
 
 **CRITERIOS DE ACEPTACIÓN:** 
 
-**Escenario 1:** Solicitud exitosa
+#### **Escenario 1:** Solicitud exitosa
 
-`Dado` que el afiliado Manolo pago el mes anterior, es la primera vez que recibe el prestamo, tiene 30 años y presenta la historia clinica
+`Dado` que el afiliado Manolo pago el mes anterior, es la primera vez que recibe el prestamo, tiene 30 años que es mayor de 15 años y presenta la historia clinica
 
 `Cuando` el afiliado solicita Ortodoncia
 
-`Entonces` el sistema registra un turno para el afiliado
+`Entonces` el sistema registra un turno para el afiliado y aumenta en uno los prestamos
 
----
+#### **Escenario 2:** Solicitud fallida por falta de pago en el mes anterior
 
-**Escenario 2:** Solicitud fallida por falta de pago en el mes anterior
-
-`Dado` que el afiliado Tomas no pago el mes anterior, es la primera vez que recibe el prestamo, tiene 32 años y presenta la historia clinica
+`Dado` que el afiliado Tomas no pago el mes anterior, es la primera vez que recibe el prestamo, tiene 32 años que es mayor de 15 años y presenta la historia clinica
 
 `Cuando` el afiliado solicita Ortodoncia
 
 `Entonces` el sistema informa que el afiliado no tiene asentado el pago del mes anterior
 
----
+#### **Escenario 3:** Solicitud fallida porque ya recibio la prestación
 
-**Escenario 3:** Solicitud fallida porque ya recibio la prestación
-
-`Dado` que el afiliado Scooby pago el mes anterior, no es la primera vez que recibe el prestamo, tiene 30 años y presenta la historia clinica
+`Dado` que el afiliado Scooby pago el mes anterior, no es la primera vez que recibe el prestamo, tiene 30 años que es mayor de 15 años y presenta la historia clinica
 
 `Cuando` el afiliado solicita Ortodoncia
 
 `Entonces` el sistema informa que su prestamo en ortodoncia ya fue utilizado
 
----
+#### **Escenario 4:** Solicitud fallida por no presentar historia clinica
 
-**Escenario 4:** Solicitud fallida por no presentar historia clinica
-
-`Dado` que el afiliado Juan pago el mes anterior, es la primera vez que recibe el prestamo, tiene 5 años y dos meses de afiliado y presenta la historia clinica
+`Dado` que el afiliado Juan pago el mes anterior, es la primera vez que recibe el prestamo, tiene 5 años, 2 meses de afiliado y presenta la historia clinica
 
 `Cuando` el afiliado solicita Ortodoncia
 
 `Entonces` el sistema informa que el afiliado menor de 15 años debe tener como minimo 9 meses de afiliado
 
----
 
 **Escenario 5:** Solicitud fallida por no presentar historia clinica
 
-`Dado` que el afiliado Sergio pago el mes anterior, es la primera vez que recibe el prestamo, tiene 30 años y no presenta la historia clinica
+`Dado` que el afiliado Sergio pago el mes anterior, es la primera vez que recibe el prestamo, tiene 30 años que es mayor de 15 años y no presenta la historia clinica
 
 `Cuando` el afiliado solicita Ortodoncia
 
 `Entonces` el sistema informa que el afiliado debe presentar la historia clinica
 
-
-</td></tr></table>
-
 ---
 
-### Solicitar Plantillas
-
-<table><tr><td> 
+## Solicitar Plantillas
 
 **ID:** Solicitar Plantillas
  
@@ -1374,12 +1331,9 @@ Para cada Historia de Usuario se deben indicar los siguientes ítems:
 - Presentar indicación profecional
 - Presentar factura del comercio
 
-
-</td></tr><tr><td>
-
 **CRITERIOS DE ACEPTACIÓN:** Solicitar Plantillas
 
-**Escenario 1:** Solicitud exitosa
+#### **Escenario 1:** Solicitud exitosa
 
 `Dado` que el afiliado Juan tiene pago el mes anterior, lo solicito una vez en el año, presenta la indicación profecional y la facura del comercio
 
@@ -1387,9 +1341,7 @@ Para cada Historia de Usuario se deben indicar los siguientes ítems:
 
 `Entonces` el sistema registra un turno para el afiliado
 
----
-
-**Escenario 2:** Solicitud fallida por falta de pago
+#### **Escenario 2:** Solicitud fallida por falta de pago
 
 `Dado` que el afiliado Felipe no tiene pago el mes anterior, lo solicito una vez en el año, presenta la indicación profecional y la facura del comercio
 
@@ -1397,9 +1349,7 @@ Para cada Historia de Usuario se deben indicar los siguientes ítems:
 
 `Entonces` el sistema informa que no se efectuo el pago del mes anterior
 
----
-
-**Escenario 3:** Solicitud fallida por exceso de pedidos
+#### **Escenario 3:** Solicitud fallida por exceso de pedidos
 
 `Dado` que el afiliado Nicolas tiene pago el mes anterior, lo solicito dos veces en el año, presenta la indicación profecional y la facura del comercio
 
@@ -1407,9 +1357,7 @@ Para cada Historia de Usuario se deben indicar los siguientes ítems:
 
 `Entonces` el sistema informa que el afiliado ya solicito Plantillas dos veces en el año
 
----
-
-**Escenario 4:** Solicitud fallida por no presentar la indicación
+#### **Escenario 4:** Solicitud fallida por no presentar la indicación
 
 `Dado` que el afiliado Homero tiene pago el mes anterior, lo solicito una vez en el año, no presenta la indicación profecional y presento la facura del comercio
 
@@ -1417,9 +1365,7 @@ Para cada Historia de Usuario se deben indicar los siguientes ítems:
 
 `Entonces` el sistema informa que el afiliado no presento la indicación profecional
 
----
-
-**Escenario 5:** Solicitud fallida por no tener la factura del comercio
+#### **Escenario 5:** Solicitud fallida por no tener la factura del comercio
 
 `Dado` que el afiliado Neimar tiene pago el mes anterior, lo solicito una vez en el año, presenta la indicación profecional y no tiene la facura del comercio
 
@@ -1427,9 +1373,6 @@ Para cada Historia de Usuario se deben indicar los siguientes ítems:
 
 `Entonces` el sistema informa que el afiliado no tiene la factura del comercio
 
-
-
-</td></tr></table>
 
 ---
 
