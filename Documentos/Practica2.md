@@ -67,7 +67,7 @@ Para cada Historia de Usuario se deben indicar los siguientes ítems:
 
 ## Estas son las historias que son iguales en todos los ejercicios
 
-### Pagar con Tarjeta
+## Pagar con Tarjeta
 
 
 **ID:** Pagar con tarjeta
@@ -79,35 +79,40 @@ Para cada Historia de Usuario se deben indicar los siguientes ítems:
 - Numero de tarjeta valido
 - Tiene fondos suficientes
 
-
-
-
 **CRITERIOS DE ACEPTACIÓN:** Pagar con tarjeta
-- **Escenario 1:** Pago exitoso
-- `Dado` que se pudo establecer conexión con el servidor del banco, el nro 123 de la tarjeta es valido y posee fondos suficientes
-- `Cuando` el cliente ingresa 123.
-- `Entonces` el sistema registra el pago
 
----
+### **Escenario 1:** Pago exitoso
 
-- **Escenario 2:** Pago Fallido por falla con la conexión del banco
-- `Dado` que no se pudo establecer conexión con el banco
-- `Cuando` el cliente quiere pagar
-- `Entonces` el sistema informa que no se pudo establecer conexion con el banco
+`Dado` que se pudo establecer conexión con el servidor del banco, el nro 123 de la tarjeta es valido y posee fondos suficientes
 
----
+`Cuando` el cliente ingresa 123.
 
-- **Escenario 3:** Pago fallido por numero de tarjeta invalido
-- `Dado` que se pudo establecer conexión con el servidor del banco, el nro 777 de la tarjeta es invalido
-- `Cuando` el cliente ingresa 777.
-- `Entonces` el sistema informa que el nro de la tarjeta es invalido y no registra el pago
+`Entonces` el sistema registra el pago
 
----
+### **Escenario 2:** Pago Fallido por falla con la conexión del banco
 
-- **Escenario 4:** Pago fallido por saldo insuficiente
-- `Dado` que se pudo establecer conexión con el servidor del banco, el nro 1010 de la terjeta es valido y no tiene fondos
-- `Cuando` el cliente ingresa 1010
-- `Entonces` el sistema informa que la tarjeta no tiene fondos suficientes y no registra el cobro
+`Dado` que no se pudo establecer conexión con el banco
+
+`Cuando` el cliente quiere pagar
+
+`Entonces` el sistema informa que no se pudo establecer conexion con el banco
+
+### **Escenario 3:** Pago fallido por numero de tarjeta invalido
+
+`Dado` que se pudo establecer conexión con el servidor del banco, el nro 777 de la tarjeta es invalido
+
+`Cuando` el cliente ingresa 777.
+
+`Entonces` el sistema informa que el nro de la tarjeta es invalido y no registra el pago
+
+
+### **Escenario 4:** Pago fallido por saldo insuficiente
+
+`Dado` que se pudo establecer conexión con el servidor del banco, el nro 1010 de la terjeta es valido y no tiene fondos
+
+`Cuando` el cliente ingresa 1010
+
+`Entonces` el sistema informa que la tarjeta no tiene fondos suficientes y no registra el cobro
 
 </td></tr></table>
 
