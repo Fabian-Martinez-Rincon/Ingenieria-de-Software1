@@ -50,35 +50,25 @@ Quiero aclarar que estos colores los elegi yo porque a mi me gustaron, no es nad
 
 Para cada Historia de Usuario se deben indicar los siguientes ítems:
 
-<table><tr><td> 
 
-**ID:** 
- 
-**TÍTULO:** 
-
-**REGLAS DE NEGOCIO:** 
-
-</td></tr><tr><td>
+- **ID:** 
+- **TÍTULO:** 
+- **REGLAS DE NEGOCIO:** 
 
 **CRITERIOS DE ACEPTACIÓN:** 
-
-**Escenario 1:** título del criterio.
-
-`Dado` 
-
-`Cuando` 
-
-`Entonces` 
+- **Escenario 1:** título del criterio.
+- `Dado` 
+- `Cuando` 
+- `Entonces` 
 
 ---
 
-</td></tr></table>
+
 
 ## Estas son las historias que son iguales en todos los ejercicios
 
 ### Pagar con Tarjeta
 
-<table><tr><td> 
 
 **ID:** Pagar con tarjeta
  
@@ -90,39 +80,29 @@ Para cada Historia de Usuario se deben indicar los siguientes ítems:
 - Tiene fondos suficientes
 
 
-</td></tr><tr><td>
+
 
 **CRITERIOS DE ACEPTACIÓN:** Pagar con tarjeta
-
-**Escenario 1:** Pago exitoso
-
-`Dado` que se pudo establecer conexión con el servidor del banco, el nro 123 de la tarjeta es valido y posee fondos suficientes
-
-`Cuando` el cliente ingresa 123.
-
-`Entonces` el sistema registra el pago
+- **Escenario 1:** Pago exitoso
+  - `Dado` que se pudo establecer conexión con el servidor del banco, el nro 123 de la tarjeta es valido y posee fondos suficientes
+  - `Cuando` el cliente ingresa 123.
+  - `Entonces` el sistema registra el pago
 
 ---
 
 **Escenario 2:** Pago Fallido por falla con la conexión del banco
-
 `Dado` que no se pudo establecer conexión con el banco
 
 `Cuando` el cliente quiere pagar
 
 `Entonces` el sistema informa que no se pudo establecer conexion con el banco
 
----
-
 **Escenario 3:** Pago fallido por numero de tarjeta invalido
-
 `Dado` que se pudo establecer conexión con el servidor del banco, el nro 777 de la tarjeta es invalido
 
 `Cuando` el cliente ingresa 777.
 
 `Entonces` el sistema informa que el nro de la tarjeta es invalido y no registra el pago
-
----
 
 **Escenario 4:** Pago fallido por saldo insuficiente
 
