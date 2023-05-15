@@ -852,13 +852,12 @@ Para cada Historia de Usuario se deben indicar los siguientes ítems:
 **TÍTULO:** Como usuario quiero pagar con tarjeta para poder retirar las fotos
 
 **REGLAS DE NEGOCIO:** 
-- Fondos para pagar $15 por foto
 
 **CRITERIOS DE ACEPTACIÓN:** 
 
 #### **Escenario 1:** Pago exitoso
 
-`Dado` que se pudo establecer conexión con el servidor, el nro de tarjeta 4342 es correcto y posee fondos suficientes para pagar $15 por foto
+`Dado` que se pudo establecer conexión con el servidor, el nro de tarjeta 4342 es correcto y posee fondos suficientes 
 
 `Cuando` el usuario ingresa 4342, 012, Fabian
 
@@ -882,7 +881,7 @@ Para cada Historia de Usuario se deben indicar los siguientes ítems:
 
 #### **Escenario 4:** Pago fallido por fondos insuficientes
 
-`Dado` que se pudo establecer conexión con el servidor, el nro de tarjeta 8414 es correcto y no posee fondos suficientes para pagar $15 por foto
+`Dado` que se pudo establecer conexión con el servidor, el nro de tarjeta 8414 es correcto y no posee fondos suficientes 
 
 `Cuando` el usuario ingresa 8414, 010, Messi
 
@@ -940,7 +939,7 @@ Para cada Historia de Usuario se deben indicar los siguientes ítems:
 
 **CRITERIOS DE ACEPTACIÓN:** 
 
-### **Escenario 1:** Retiro exitoso
+#### **Escenario 1:** Retiro exitoso
 
 `Dado` que el codigo 4321 esta cargado en el sistema
 
@@ -948,7 +947,7 @@ Para cada Historia de Usuario se deben indicar los siguientes ítems:
 
 `Entonces` el sistema imprime las fotos 
 
-### **Escenario 2:** Retiro fallido por codigo inexistente
+#### **Escenario 2:** Retiro fallido por codigo inexistente
 
 `Dado` que el codigo 6353 no esta cargado en el sistema
 
@@ -958,25 +957,46 @@ Para cada Historia de Usuario se deben indicar los siguientes ítems:
 
 ---
 
+
 ## Pagar Fotos
+**ID:** Pagar Fotos
+
+**TÍTULO:** Como usuario quier pagar fotos para poder retirarlas
+
+**REGLAS DE NEGOCIO:** 
+- Pagar 15$ por foto con tarjeta de credito 
+
+**CRITERIOS DE ACEPTACIÓN:** 
+
+#### **Escenario 1:** Pago exitoso
+`Dado` que el usuario pepe tiene fotos previamente cargadas y posee una tarjeta de credito valida para pagar 15$ por foto
+
+`Cuando` el usuario pepe presiona el boton "Pagar Fotos" e ingresa los datos de una tarjeta valida
+
+`Entonces` El sistema registra el pago y le otorga al cliente un codigo para retirar las fotos
+
+#### **Escenario 2:** Pago fallido por no tener fotos
+`Dado` que el usuario manolo no tiene fotos previamente cargadas y posee una tarjeta de credito valida para pagar 15$ por foto
+
+`Cuando` el usuario manolo presiona el boton "Pagar Fotos" e ingresa los datos de una tarjeta valida
+
+`Entonces` El sistema informa que el usuario no tiene fotos cargadas
+
+#### **Escenario 3:** Pago fallido por problemas con la tarjeta
+`Dado` que el usuario juan tiene fotos previamente cargadas y posee una tarjeta de credito invalida para pagar 15$ por foto
+
+`Cuando` el usuario juan presiona el boton "Pagar Fotos" e ingresa los datos de una tarjeta invalida
+
+`Entonces` El sistema informa que hay problemas con el pago
+
 
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
 <div align = center>
 
-## `Problema 6` Biblioteca
+## `Problema 6` Biblioteca 
 
 </div>
-
-La biblioteca de una escuela primaria realiza su trabajo de forma manual y requiere un sistema informático que automatice su funcionamiento.
-
-La bibliotecaria recibe libros por donaciones de los padres de los chicos que asisten a la escuela. De un mismo libro se pueden tener varios ejemplares.
-
-Para que un alumno pueda asociarse debe presentar el DNI y certificado de alumno regular. Una vez asociado, se le otorga un carnet con su correspondiente número de socio.
-
-Los préstamos se realizan exclusivamente a socios habilitados, que no posean más de tres préstamos vigentes y no tengan préstamos vencidos. La bibliotecaria presta libros que se encuentren en buen estado. `Cuando` un libro se encuentra deteriorado ya no se presta.
-
-`Cuando` el socio retorna un libro se verifica si el préstamo se encuentra vencido. En este caso, la bibliotecaria suspende al socio, que por 15 días no podrá solicitar nuevos préstamos.
 
 ![image](https://user-images.githubusercontent.com/55964635/232251137-9bbf9a21-f02d-4908-a670-8512253fcd11.png)
 
@@ -997,9 +1017,8 @@ Los préstamos se realizan exclusivamente a socios habilitados, que no posean m�
 
 ---
 
-### Registrar libro
+## Registrar libro
 
-<table><tr><td> 
 
 **ID:** Registrar Libro
  
@@ -1008,11 +1027,9 @@ Los préstamos se realizan exclusivamente a socios habilitados, que no posean m�
 **REGLAS DE NEGOCIO:** 
 
 
-</td></tr><tr><td>
-
 **CRITERIOS DE ACEPTACIÓN:** 
 
-**Escenario 1:** Donación exitosa
+#### **Escenario 1:** Donación exitosa
 
 `Dado` que el padre/madre dona un libro
 
@@ -1020,50 +1037,47 @@ Los préstamos se realizan exclusivamente a socios habilitados, que no posean m�
 
 `Entonces` el sistema registra el libro en el sistema
 
-</td></tr></table>
-
 ---
 
 ### Asociar alumno
-<table><tr><td> 
 
 **ID:** Asociar alumno
  
 **TÍTULO:** Como alumno me quiero asociar para poder retirar libros
 
 **REGLAS DE NEGOCIO:** 
-- Ser alumno regular
-
-</td></tr><tr><td>
 
 **CRITERIOS DE ACEPTACIÓN:** 
+- El alumno no debe estar registrado
 
-**Escenario 1:** Asociación exitosa
+#### **Escenario 1:** Asociación exitosa
 
-`Dado` que es un alumno regular
+`Dado` que es un alumno con dni 203200 entrega certificado de alumno regular y no esta registrado
 
-`Cuando` el alumno ingresa 203200 y entrega el certificado de alumno regular
+`Cuando` la bibliotecaria ingresa 203200 
 
 `Entonces` el sistema asocia al alumno y le otorga un carnet con un nro de socio
 
+#### **Escenario 2:** Asociación fallida por alumno ya afiliado
+
+`Dado` que es un alumno con dni 554234 entrega certificado de alumno regular y esta registrado
+
+`Cuando` la bibliotecaria ingresa 203200 
+
+`Entonces` el sistema informa que el alumno ingresado ya se encuentra registrado
+
+#### **Escenario 3:** Asociación fallida por no entregar certificado
+
+`Dado` que es un alumno con dni 12340 no entrega certificado de alumno regular
+
+`Cuando` la bibliotecaria quiere asociar al alumno
+
+`Entonces` la bibliotecaria le dice al niño que ya no joda
+
 ---
 
-**Escenario 1:** Asociación fallida por ser alumno irregular
+## Prestar Libro
 
-`Dado` que es un alumno irregular
-
-`Cuando` el alumno ingresa 12340 y no entrega el certificado de alumno regular
-
-`Entonces` el sistema informa que no es alumno regular y no entrega el carnet
-
-
-</td></tr></table>
-
----
-
-### Prestar Libro
-
-<table><tr><td> 
 
 **ID:** Prestar Libro
  
@@ -1071,93 +1085,73 @@ Los préstamos se realizan exclusivamente a socios habilitados, que no posean m�
 
 **REGLAS DE NEGOCIO:** 
 - No posee mas de tres prestamos vigentes
-- No tener prestamos vencidos
+- No debe tener prestamos vencidos
 - Libro en buen estado
-
-
-
-</td></tr><tr><td>
 
 **CRITERIOS DE ACEPTACIÓN:** 
 
-**Escenario 1:** Prestamo exitoso
+#### **Escenario 1:** Prestamo exitoso
 
-`Dado` que le socio 1 posee dos prestamos vigentes, no tiene prestamos vencidos y el libro "Harry Potter" esta en buen estado
+`Dado` que posee 2 prestamos vigentes que es menor a 3 prestamos, no tiene prestamos vencidos y el libro "Harry Potter" esta en buen estado
 
-`Cuando` el socio presenta carnet y solicita el libro "Harry Potter"
+`Cuando` la bibliotecaria ingresa el carnet 3123 y libro "Harry Potter"
 
-`Entonces` el sistema registra el prestamo en el sistema
+`Entonces` el sistema registra el prestamo e incrementa los prestamos vigentes en uno
 
----
+#### **Escenario 2:** Prestamo Fallido por poseer tres prestamos vigentes
 
-**Escenario 2:** Prestamo Fallido por poseer tres prestamos vigentes
+`Dado` que posee 3 prestamos vigentes que es igual a 3 prestamos, no tiene prestamos vencidos y el libro "Pinocho" esta en buen estado
 
-`Dado` que le socio 2 posee tres prestamos vigentes, no tiene prestamos vencidos y el libro "Pinocho" esta en buen estado
-
-`Cuando` el socio presenta carnet y solicita el libro "Pinocho"
+`Cuando` la bibliotecaria ingresa el carnet 3123 y libro "Pinocho"
 
 `Entonces` el sistema informa que el socio ya posee tres prestamos vigentes y no registra el prestamo
 
----
+#### **Escenario 3:** Prestamos fallido por tener prestamos vencidos
 
-**Escenario 3:** Prestamos fallido por tener prestamos vendidos
+`Dado` que posee 1 prestamos vigentes que es menor a 3 prestamos, tiene prestamos vencidos y el libro "Blanca nieves" esta en buen estado
 
-`Dado` que le socio 3 posee dos prestamos vigentes, tiene prestamos vencidos y el libro "Blanca nieves" esta en buen estado
+`Cuando` la bibliotecaria ingresa el carnet 3123 y libro "Blanca nieves"
 
-`Cuando` el socio presenta carnet y solicita el libro "Blanca nieves"
+`Entonces` el sistema informa que el socio tiene prestamos vencidos
 
-`Entonces` el sistema informa que el socio tiene prestamos vencidos y no registra el prestamo
+#### **Escenario 4:** Prestamo fallido por libro en mal estado
 
+`Dado` que posee 2 prestamos vigentes que es menor a 3 prestamos, no tiene prestamos vencidos y el libro "Harry Potter" esta en mal estado
 
----
+`Cuando` la bibliotecaria ingresa el carnet 3123 y libroo "Harry Potter"
 
-**Escenario 4:** Prestamo fallido por libro en mal estado
-
-`Dado` que le socio 1 posee dos prestamos vigentes, no tiene prestamos vencidos y el libro "Harry Potter" esta en buen estado
-
-`Cuando` el socio presenta carnet y solicita el libro "Harry Potter"
-
-`Entonces` el sistema informa que el libro solicitado esta en mal estado y no registra el prestamo
-
-</td></tr></table>
+`Entonces` el sistema informa que el libro solicitado esta en mal estado
 
 ---
 
 ### Devolver Libro
 
-<table><tr><td> 
 
 **ID:** Devolver Libro
  
 **TÍTULO:** Como socio quiero devolver un libro para poder recibir otros prestamos
 
 **REGLAS DE NEGOCIO:** 
-- Prestamo no vencido
-
-
-</td></tr><tr><td>
+- Si el prestamo esta vencido, suspención por 15 dias
 
 **CRITERIOS DE ACEPTACIÓN:** 
 
-**Escenario 1:** Retorno exitoso
+#### **Escenario 1:** Retorno exitoso
 
 `Dado` que el prestamo no esta vencido
 
-`Cuando` el socio devuelve el libro "Dragon Ball"
+`Cuando` la bibliotecaria ingresa "Dragon Ball"
 
 `Entonces` el sistema registra el retorno del libro
 
----
-
-**Escenario 1:** Retorno exitoso con suspencion
+#### **Escenario 2:** Retorno exitoso con suspencion
 
 `Dado` que el prestamo esta vencido
 
-`Cuando` el socio devuelve el libro "Blanca nieves"
+`Cuando` la bibliotecaria ingresa "Blanca nieves"
 
-`Entonces` el sistema registra el retorno del libro y suspende al socio por 15 dias
+`Entonces` el sistema registra el retorno del libro, aumenta en uno los prestamos vencidos y suspende al socio por 15 dias
 
-</td></tr></table>
 
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
