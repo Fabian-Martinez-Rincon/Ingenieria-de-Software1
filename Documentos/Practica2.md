@@ -81,7 +81,7 @@ Para cada Historia de Usuario se deben indicar los siguientes ítems:
 
 **CRITERIOS DE ACEPTACIÓN:** Pagar con tarjeta
 
-### **Escenario 1:** Pago exitoso
+#### **Escenario 1:** Pago exitoso
 
 `Dado` que se pudo establecer conexión con el servidor del banco, el nro 123 de la tarjeta es valido y posee fondos suficientes
 
@@ -89,7 +89,7 @@ Para cada Historia de Usuario se deben indicar los siguientes ítems:
 
 `Entonces` el sistema registra el pago
 
-### **Escenario 2:** Pago Fallido por falla con la conexión del banco
+#### **Escenario 2:** Pago Fallido por falla con la conexión del banco
 
 `Dado` que no se pudo establecer conexión con el banco
 
@@ -97,7 +97,7 @@ Para cada Historia de Usuario se deben indicar los siguientes ítems:
 
 `Entonces` el sistema informa que no se pudo establecer conexion con el banco
 
-### **Escenario 3:** Pago fallido por numero de tarjeta invalido
+#### **Escenario 3:** Pago fallido por numero de tarjeta invalido
 
 `Dado` que se pudo establecer conexión con el servidor del banco, el nro 777 de la tarjeta es invalido
 
@@ -106,7 +106,7 @@ Para cada Historia de Usuario se deben indicar los siguientes ítems:
 `Entonces` el sistema informa que el nro de la tarjeta es invalido y no registra el pago
 
 
-### **Escenario 4:** Pago fallido por saldo insuficiente
+#### **Escenario 4:** Pago fallido por saldo insuficiente
 
 `Dado` que se pudo establecer conexión con el servidor del banco, el nro 1010 de la terjeta es valido y no tiene fondos
 
@@ -120,8 +120,6 @@ Para cada Historia de Usuario se deben indicar los siguientes ítems:
 
 ### Registrar Usuario
 
-<table><tr><td> 
-
 **ID:** Registrar Alumno
  
 **TÍTULO:** Como alumno quiero registrarme para tener una cuenta
@@ -130,12 +128,10 @@ Para cada Historia de Usuario se deben indicar los siguientes ítems:
 - Nombre de usuario unico
 - Contaseña con mas de 6 digitos (Esta puede variar)
 
- </td> </tr>
-<tr><td>
 
 **CRITERIOS DE ACEPTACIÓN:** 
 
-**Escenario 1:** Registrar Alumno
+#### **Escenario 1:** Registrar Alumno
 
 `Dado` que el usuario fabo es unico y la contraseña kapo013 tiene mas de 6 digitos
 
