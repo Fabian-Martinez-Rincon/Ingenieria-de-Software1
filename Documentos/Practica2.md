@@ -230,17 +230,6 @@ Para cada Historia de Usuario se deben indicar los siguientes ítems:
 
 </div>
 
-Suponga que trabaja en una consultora la cual ha sido recientemente contactada por una empresa de alquiler de mobiliario para eventos para la realización de una app.
-
-De las diferentes entrevistas se ha obtenido la siguiente información:
-
-El gerente nos dijo que resulta fundamental tener una aplicación móvil que nos permita manejar la agenda de la empresa, sabiendo qué disponibilidad tenemos y permitiendo que nuestros clientes alquilen a través de la app. Para esta primera versión de la app, el gerente nos pidió que sea posible dar de alta los diferentes mobiliarios, así como la posibilidad de que los usuarios puedan realizar una reserva de alquiler desde sus dispositivos. Para el detalle de cómo se realiza la carga de los muebles, el gerente nos sugirió hablar con el encargado del departamento de mobiliario. El encargado de mobiliario nos comentó que de cada mueble se debe cargar código de inventario, tipo de mueble, fecha de creación, fecha de último mantenimiento, estado (libre, de baja, alquilado) y el precio de alquiler. Además, no pueden existir códigos repetidos y por el contrato de la franquicia, el precio debe cargarse en dólares. Para que el encargado pueda dar de alta el mobiliario debe autenticarse en el sistema. El registro de los usuarios de carga no debe modelarse.
-
-El encargado del departamento de alquileres no comentó acerca de las reservas de los alquileres. Por una política comercial de la marca una reserva tiene que incluir como mínimo 3 muebles. La reserva debe tener una fecha, lugar del evento, cantidad de días y mobiliario junto a su cantidad. Para realizar una reserva se debe abonar el 20% del total del alquiler. El pago de la reserva se realiza únicamente con tarjeta de crédito validando número de tarjeta y fondos a través de un servicio del banco. Luego de efectuado el pago, se emite un número de reserva único que será luego utilizado por el
-cliente para hacer efectivo el alquiler.
-
----
-
 ![image](https://user-images.githubusercontent.com/55964635/232102581-8c67db96-908f-4d34-aebe-3f0d2b1f725e.png)
 
 ---
@@ -302,14 +291,14 @@ cliente para hacer efectivo el alquiler.
 **TÍTULO:** Como encargado de departamento quiero dar alta un inmueble para que pueda ser alquilado
 
 **REGLAS DE NEGOCIO:** 
-- Codigo Unico
+- Codigo no registrado
 - Se cargo en dolares
 
 **CRITERIOS DE ACEPTACIÓN:** Dar alta inmueble
 
 #### **Escenario 1:** Alta Exitosa
 
-`Dado` que el codigo 0202 es unico y el precio 10$ se cargo en dolares
+`Dado` que el codigo 0202 no esta registrado y el precio 10$ se cargo en dolares
 
 `Cuando` el empleado de mesa ingresa 0202, Mesa, 1-1-2000, 20-20-2020, libre, 10$
 
@@ -317,7 +306,7 @@ cliente para hacer efectivo el alquiler.
 
 #### **Escenario 2:** Alta Fallida por codigo ya existente
 
-`Dado` que el codigo 1010 no es unico y el precio 20$ se cargo en dolares
+`Dado` que el codigo 1010 esta registrado y el precio 20$ se cargo en dolares
 
 `Cuando` el empleado de mesa ingresa 1010, Ropero, 3-3-2003, 04-04-2004, de baja, 20$
 
@@ -325,7 +314,7 @@ cliente para hacer efectivo el alquiler.
 
 #### **Escenario 3:** Alta Fallida por precio cargado en euros
 
-`Dado` que el codigo 4040 es unico y el precio 10$ se cargo en euros
+`Dado` que el codigo 4040 no esta registrado y el precio 10$ se cargo en euros
 
 `Cuando` el empleado de mesa ingresa 4040, Cama, 2-2-2002, 21-21-2021, alquilado, 30$
 
@@ -340,9 +329,6 @@ cliente para hacer efectivo el alquiler.
 **TÍTULO:** Como usuario quiero pagar con tarjeta para pode reservar un alquiler
 
 **REGLAS DE NEGOCIO:** 
-
-- Numero de tarjeta valido
-- Tiene fondos suficientes
 
 **CRITERIOS DE ACEPTACIÓN:** Pagar con tarjeta
 
@@ -388,18 +374,7 @@ cliente para hacer efectivo el alquiler.
 
 </div>
 
-Suponga que trabaja en el área de sistemas de la Facultad de Informática y se le solicitó la automatización del pago de carreras de posgrado. Inicialmente se coordinó una reunión con el director del posgrado y se obtuvo la siguiente información:
 
-Ya que no se desea seguir cobrando el dinero en la secretaría, es necesario que los alumnos puedan pagar las carreras vía web. Como el director de posgrado no realiza tareas administrativas nos recomendó hablar con el secretario académico. De la entrevista con el secretario académico se obtuvo la siguiente información:
-
-Es necesario cargar las carreras a un sistema. En esta primera versión del sistema sólo se nos pidió esta funcionalidad, sin la modificación ni eliminación. De cada carrera se conoce: nombre de la carrera (no puede repetirse), duración en años (a partir de la consulta del estatuto de posgrado se obtuvo que como máximo son 5 años), costo y cantidad máxima de cuotas para el pago. La carga de las carreras no la realiza el secretario académico sino un empleado administrativo.
-
-Al preguntarle por la dinámica del sistema, el secretario académico nos derivó con el jefe del área administrativa, con el cual hicimos otra entrevista y pudimos obtener la siguiente información:
-
-El requerimiento fue que el alumno ingrese a la web de posgrado y pueda registrarse ingresando: nombre, apellido, nombre de usuario (único) y contraseña (más de 6 dígitos). Cualquier alumno previamente registrado, puede iniciar sesión con su nombre de usuario y contraseña, habilitándose la inscripción a alguna de las carreras. Para ejemplificar esta
-funcionalidad nos otorgaron acceso al sistema SIGEF, el cual realiza funcionalidades similares para las carreras de grado. 
-
-Para inscribirse, el alumno deberá seleccionar la carrera, ingresar la cantidad de cuotas a pagar, ingresar el número de tarjeta y, en caso de que la tarjeta sea válida y tenga fondos, se hará efectivo el cobro y la inscripción. La tarjeta de crédito se valida a través de un servicio del banco con el cual la universidad tiene convenio. Luego de efectuado el cobro, el sistema debe imprimir dos comprobantes, uno de inscripción y otro de pago. La única forma que tiene el alumno de pagar es con tarjeta de crédito
 
 ![image](https://user-images.githubusercontent.com/55964635/232157667-7fe023af-566c-4d5d-8d5a-03114a6aae62.png)
 ![image](https://user-images.githubusercontent.com/55964635/232158030-b58db95a-76bf-400a-a703-7ff4b999d6b3.png)
@@ -423,147 +398,122 @@ Para inscribirse, el alumno deberá seleccionar la carrera, ingresar la cantidad
 
 ---
 
-### Inscribir a carrera
+## Inscribir a carrera
 
-<table><tr><td>
 
 **ID:** Inscribir a carrera
  
 **TÍTULO:** Como usuario quiero inscribirme a una carrera para poder estudiar
 
 **REGLAS DE NEGOCIO:** Inscribir a carrera
+- Pago con tarjeta de credito
 
-- Las cuotas no superan el maximo permitido
+**CRITERIOS DE ACEPTACIÓN:** Inscribir a carrera
 
-Aca quiero aclarar que el usuario no ingresa las cuotas a mano, sino que le aparece un menu con las cuotas disponibles, por eso no es una regla de negocio
+#### **Escenario 1:** Inscripción exitosa
 
-</td> </tr><tr><td>
+`Dado` que las 10 cuotas no superan el maximo permitido y posee una tarjeta de credito valida
 
-**CRITERIOS DE ACEPTACIÓN:** 
-
-**Escenario 1:** Inscripción exitosa
-
-`Dado` que el usuario posee una tarjeta de credito valida
-
-`Cuando` el usuario selecciona la carrera Filosofia y los datos de una tarjeta de credito valida
+`Cuando` el usuario selecciona la carrera Filosofia, 10 y los datos de una tarjeta de credito valida
 
 `Entonces` El sistema registra la inscripción del usuario e imprime dos comprobantes, uno de inscripcion y otro de pago
 
+#### **Escenario 2:** Inscripción fallida por cuotas que superan el maximo
+
+`Dado` que las 100 cuotas superan el maximo permitido y posee una tarjeta de credito valida
+
+`Cuando` el usuario selecciona la carrera Ingenieria, 100 y los datos de una tarjeta de credito valida
+
+`Entonces` El sistema informa que la cantidad de cuotas ingresadas es invalida
+
+#### **Escenario 3:** Inscripción por problemas con la tarjeta
+
+`Dado` que las 4 cuotas no superan el maximo permitido y posee una tarjeta de credito invalida
+
+`Cuando` el usuario selecciona la carrera Aeronautica, 4 y los datos de una tarjeta de credito invalida
+
+`Entonces` El sistema informa que hay problemas con el pago
+
 ---
 
-**Escenario 2:** Inscripción fallida por tarjeta invalida
-
-`Dado` que el usuario posee una tarjeta de credito invalida
-
-`Cuando` el usuario selecciona la carrera Biologia y los datos de una tarjeta de credito invalida
-
-`Entonces` El sistema registra la inscripción del usuario e imprime dos comprobantes, uno de inscripcion y otro de pago
-
-
-</td></tr></table>
-
----
-
-### Alta carrera
-
-<table><tr><td> 
+## Alta carrera
 
 **ID:** Alta carrera
  
 **TÍTULO:** Como empleado administrativo quiero dar de alta la carrera para que los usuarios puedas inscribirse en ella
 
 **REGLAS DE NEGOCIO:** 
-- Nombre Unico
-- Duración maxima de 5 años
-
-
-</td></tr><tr><td>
+- Nombre de la carrera no registrado
+- La duración debe ser de no mas de 5 años
 
 **CRITERIOS DE ACEPTACIÓN:** Alta carrera
 
-**Escenario 1:** Alta de carrera exitosa.
+#### **Escenario 1:** Alta de carrera exitosa.
 
-`Dado` que el nombre Informatica es unico, y la carrera dura 4 años
+`Dado` que el nombre Informatica no esta registrado, y la carrera dura 4 años que es menor de 5 años
 
 `Cuando` el empleado administrativo ingresa Informatica, 4 años, 100$, 20 cuotas
 
 `Entonces` El sistema da de alta la carrera
 
----
+#### **Escenario 2:** Alta de carrera fallida por nombre ya registrado
 
-**Escenario 2:** Alta de carrera fallida por codigo ya existente
+`Dado` que el nombre Fisica esta registrado, y la carrera dura 3 años que es menor de 5 años
 
-`Dado` que el nombre Arte no es unico y la carrera dura 5 años
+`Cuando` el empleado administrativo ingresa Fisica, 3 años, 1000$, 10 cuotas
 
-`Cuando` el empleado administrativo ingresa Arte, 5 años, 300$, 10 cuotas
+`Entonces` El sistema informa que el nombre de la carrera ya se encuentra registrado
 
-`Entonces` el sistema informa que el nombre de la carrera ya existe y no realiza el alta
+#### **Escenario 3:** Alta de carrera fallida por duración mayor a 5 años
 
----
+`Dado` que el nombre Abogacia no esta registrado, y la carrera dura 40 años que es mayor de 5 años
 
-**Escenario 3:** Alta de carrera fallida por duracion supera los 5 años
+`Cuando` el empleado administrativo ingresa Abogacia, 40 años, 1$, 2 cuotas
 
-`Dado` que el nombre Astrologia es unico y la carrera dura 100 años
-
-`Cuando` el empleado administrativo ingresa Astrologia, 100 años, 2$ y 1000 cuotas
-
-`Entonces` el sistema informa que la duración ingresada supera los 5 años que son permitidos y no realiza el alta a la carrera
-
-</td></tr></table>
+`Entonces` El sistema informa que la duración ingresada supera los 5 años
 
 ---
 
-### Registrar Usuario
-
-<table><tr><td> 
+## Registrar Usuario
 
 **ID:** Registrar Alumno
  
 **TÍTULO:** Como alumno quiero registrarme para anotarme a una carrera
 
 **REGLAS DE NEGOCIO:** 
-- Nombre de usuario unico
+- Nombre de usuario no registrado
 - Contaseña con mas de 6 digitos 
 
-</td></tr><tr><td>
 
 **CRITERIOS DE ACEPTACIÓN:** 
 
-**Escenario 1:** Registrar Alumno
+#### **Escenario 1:** Registro exitoso
 
-`Dado` que el usuario fabo es unico y la contraseña kapo013 tiene mas de 6 digitos
+`Dado` que el usuario fabo no esta registrado y la contraseña kapo013 tiene mas de 6 digitos
 
 `Cuando` el alumno ingresa Fabian, Martinez ,fabo, kapo013
 
-`Entonces` el sistema registra al usuario
+`Entonces` el sistema registra al nuevo usuario
 
----
+#### **Escenario 2:** Registro fallido por usuario ya existente
 
-**Escenario 2:** Registro fallido por usuario ya existente
-
-`Dado` que el usuario tomo no es unico y la contraseña pepe555 tiene mas de 6 digitos
+`Dado` que el usuario tomo esta registrado y la contraseña pepe555 tiene mas de 6 digitos
 
 `Cuando` el alumno ingresa Tomas, Gomez, tomo, pepe555
 
-`Entonces` el sistema Informa que el usuario ingresado ya existe, y no realiza el registro
+`Entonces` el sistema Informa que el usuario ingresado ya existe
 
----
+#### **Escenario 3:** Registro fallido por contraseña con menos de 6 digitos
 
-**Escenario 3:** Registro fallido por contraseña con menos de 6 digitos
-
-`Dado` que el usuario messi es unico y la contraseña 2023 tiene menos de 6 digitos
+`Dado` que el usuario messi no esta registrado y la contraseña 2023 tiene menos de 6 digitos
 
 `Cuando` el alumno ingresa Lionel, Messi, messi, 2023
 
-`Entonces` el sistema informa que la contraseña ingresada tiene menos de 6 digitos y no realiza el registro
-
-</td></tr></table>
+`Entonces` el sistema informa que la contraseña ingresada tiene menos de 6 digitos
 
 ---
 
-### Iniciar Sesión
-
-<table><tr><td> 
+## Iniciar Sesión
 
 **ID:** Iniciar Sesión
  
@@ -571,12 +521,9 @@ Aca quiero aclarar que el usuario no ingresa las cuotas a mano, sino que le apar
 
 **REGLAS DE NEGOCIO:** 
 
- </td> </tr>
-<tr><td>
-
 **CRITERIOS DE ACEPTACIÓN:** Iniciar Sesión
 
-**Escenario 1:** Inicio exitoso
+#### **Escenario 1:** Inicio exitoso
 
 `Dado` que el usuario fabo se encuentra registrado y la contraseña kapo013 es correcta
 
@@ -584,9 +531,7 @@ Aca quiero aclarar que el usuario no ingresa las cuotas a mano, sino que le apar
 
 `Entonces` el sistema realiza el inicio de sesión y habilita la inscripción a algunas carreras
 
----
-
-**Escenario 2:** Inicio fallido por usuario no registrado
+#### **Escenario 2:** Inicio fallido por usuario no registrado
 
 `Dado` que el usuario maradona no se encuentra registrado
 
@@ -594,45 +539,35 @@ Aca quiero aclarar que el usuario no ingresa las cuotas a mano, sino que le apar
 
 `Entonces` el sistema informa que el usuario no se encuentra registrado y no realiza el inicio de sesión
 
----
-
-**Escenario 3:** Inicio fallido por contraseña incorrecta
+#### **Escenario 3:** Inicio fallido por contraseña incorrecta
 
 `Dado` que el usuario stalin se encuentra registrado y la contraseña presi19 es incorrecta
 
 `Cuando` el usuario ingresa stalin, presi19
 
-`Entonces` el sistema informa que la contraseña es incorrecta y no realiza el inicio de sesión
+`Entonces` el sistema informa que la contraseña es incorrecta
 
-</td></tr></table>
 
 ---
 
-### Cerrar Sesión
-
-<table><tr><td> 
+## Cerrar Sesión
 
 **ID:** Cerrar Sesión
  
 **TÍTULO:** 
 
-**REGLAS DE NEGOCIO:** Cerrar Sesión
+**REGLAS DE NEGOCIO:** 
 
- </td> </tr>
-<tr><td>
+**CRITERIOS DE ACEPTACIÓN:** Cerrar Sesión
 
-**CRITERIOS DE ACEPTACIÓN:** 
-
-**Escenario 3:** Cierre exitoso
+#### **Escenario 3:** Cierre exitoso
 
 `Dado` que el usuario tiene una sesión abierta
 
-`Cuando` el usuario aprieta el boton de cerrar su sesión
+`Cuando` el usuario presiona el boton de cerrar sesión
 
-`Entonces` el sistema cierra la sesión y deshabilita sus respectivas opciones 
+`Entonces` el sistema cierra la sesión y deshabilita la inscripción a las carreras 
 
-
-</td></tr></table>
 
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
