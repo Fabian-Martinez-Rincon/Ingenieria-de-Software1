@@ -50,170 +50,23 @@ Quiero aclarar que estos colores los elegi yo porque a mi me gustaron, no es nad
 
 Para cada Historia de Usuario se deben indicar los siguientes ítems:
 
-
-- **ID:** 
-- **TÍTULO:** 
-- **REGLAS DE NEGOCIO:** 
-
-**CRITERIOS DE ACEPTACIÓN:** 
-- **Escenario 1:** título del criterio.
-- `Dado` 
-- `Cuando` 
-- `Entonces` 
-
 ---
 
+## Nombre
+**ID:** 
 
-
-## Estas son las historias que son iguales en todos los ejercicios
-
----
-
-## Pagar con Tarjeta
-
-
-**ID:** Pagar con tarjeta
- 
-**TÍTULO:** Como usuario quiero pagar con tarjeta para pode reservar un alquiler
-
-**REGLAS DE NEGOCIO:** 
-
-- Numero de tarjeta valido
-- Tiene fondos suficientes
-
-**CRITERIOS DE ACEPTACIÓN:** Pagar con tarjeta
-
-#### **Escenario 1:** Pago exitoso
-
-`Dado` que se pudo establecer conexión con el servidor del banco, el nro 123 de la tarjeta es valido y posee fondos suficientes
-
-`Cuando` el cliente ingresa 123.
-
-`Entonces` el sistema registra el pago
-
-#### **Escenario 2:** Pago Fallido por falla con la conexión del banco
-
-`Dado` que no se pudo establecer conexión con el banco
-
-`Cuando` el cliente quiere pagar
-
-`Entonces` el sistema informa que no se pudo establecer conexion con el banco
-
-#### **Escenario 3:** Pago fallido por numero de tarjeta invalido
-
-`Dado` que se pudo establecer conexión con el servidor del banco, el nro 777 de la tarjeta es invalido
-
-`Cuando` el cliente ingresa 777.
-
-`Entonces` el sistema informa que el nro de la tarjeta es invalido y no registra el pago
-
-
-#### **Escenario 4:** Pago fallido por saldo insuficiente
-
-`Dado` que se pudo establecer conexión con el servidor del banco, el nro 1010 de la terjeta es valido y no tiene fondos
-
-`Cuando` el cliente ingresa 1010
-
-`Entonces` el sistema informa que la tarjeta no tiene fondos suficientes y no registra el cobro
-
-
----
-
-### Registrar Usuario
-
-**ID:** Registrar Alumno
- 
-**TÍTULO:** Como alumno quiero registrarme para tener una cuenta
-
-**REGLAS DE NEGOCIO:** 
-- Nombre de usuario unico
-- Contaseña con mas de 6 digitos (Esta puede variar)
-
-
-**CRITERIOS DE ACEPTACIÓN:** 
-
-#### **Escenario 1:** Registrar Alumno
-
-`Dado` que el usuario fabo es unico y la contraseña kapo013 tiene mas de 6 digitos
-
-`Cuando` el alumno ingresa fabo, kapo013
-
-`Entonces` el sistema registra al usuario
-
-#### **Escenario 2:** Registro fallido por usuario ya existente
-
-`Dado` que el usuario tomo no es unico y la contraseña pepe555 tiene mas de 6 digitos
-
-`Cuando` el alumno ingresa tomo, pepe555
-
-`Entonces` el sistema Informa que el usuario ingresado ya existe, y no realiza el registro
-
-#### **Escenario 3:** Registro fallido por contraseña con menos de 6 digitos
-
-`Dado` que el usuario messi es unico y la contraseña 2023 tiene menos de 6 digitos
-
-`Cuando` el alumno ingresa messi, 2023
-
-`Entonces` el sistema informa que la contraseña ingresada tiene menos de 6 digitos y no realiza el registro
-
----
-
-### Iniciar Sesión
-
-**ID:** Iniciar Sesión
- 
-**TÍTULO:** Como usuario quiero iniciar sesión para poder entrar en mi cuenta
-
-**REGLAS DE NEGOCIO:** 
-
-**CRITERIOS DE ACEPTACIÓN:** Iniciar Sesión
-
-#### **Escenario 1:** Inicio exitoso
-
-`Dado` que el usuario fabo se encuentra registrado y la contraseña kapo013 es correcta
-
-`Cuando` el usuario ingresa fabo, kapo013
-
-`Entonces` el sistema realiza el inicio de sesión y habilita sus respectivas opciones
-
-
-#### **Escenario 2:** Inicio fallido por usuario no registrado
-
-`Dado` que el usuario maradona no se encuentra registrado
-
-`Cuando` el usuario ingresa maradona, cocacola21
-
-`Entonces` el sistema informa que el usuario no se encuentra registrado y no realiza el inicio de sesión
-
-#### **Escenario 3:** Inicio fallido por contraseña incorrecta
-
-`Dado` que el usuario stalin se encuentra registrado y la contraseña presi19 es incorrecta
-
-`Cuando` el usuario ingresa stalin, presi19
-
-`Entonces` el sistema informa que la contraseña es incorrecta y no realiza el inicio de sesión
-
----
-
-### Cerrar Sesión
-
-**ID:** Cerrar Sesión
- 
 **TÍTULO:** 
 
-**REGLAS DE NEGOCIO:** Cerrar Sesión
+**REGLAS DE NEGOCIO:** 
 
 **CRITERIOS DE ACEPTACIÓN:** 
 
-**Escenario 1:** Cierre exitoso
+#### **Escenario 1:** título del criterio.
+`Dado`
 
-`Dado` que el usuario tiene una sesión abierta
+`Cuando` 
 
-`Cuando` el usuario aprieta el boton de cerrar su sesión
-
-`Entonces` el sistema cierra la sesión y deshabilita sus respectivas opciones 
-
----
+`Entonces` 
 
 
 
@@ -716,10 +569,6 @@ Para cada Historia de Usuario se deben indicar los siguientes ítems:
 
 </div>
 
-Se desea modelar un sistema para el manejo de venta de bebidas alcohólicas en linea. Para poder empezar a comprar en el sitio, es necesario que las personas se registren ingresando nombre, apellido, mail (será utilizado como nombre de usuario por lo tanto debe ser único) y edad. Solo se permite que se registren al sitio personas mayores a 18 años, de lo contrario el sistema debe mostrar en pantalla el texto de la ley que impide la venta de bebidas alcohólicas a menores. Si el registro es exitoso el sistema genera una contraseña que es enviada al mail ingresado en el registro.
-
-Para comprar el usuario debe iniciar sesión y una vez logueado el sistema muestra una lista de bebidas, una vez que el usuario selecciona todos los productos que desea comprar, si el usuario es premium se le hace un descuento del 20% y se informa en pantalla el total menos el 20%. Ademas si el usuario seleccionó productos por un monto superior a los $4500 se le hace un 10% de descuento y se informa en pantalla el total menos el 10%. Tenga en cuenta que si el usuario es premium y compra por un monto superior a $4500 se deben aplicar ambos descuentos
-
 ![image](https://user-images.githubusercontent.com/55964635/232245201-80c3a9e9-1f85-4f5c-b3fb-02f6b06a0f46.png)
 ![image](https://user-images.githubusercontent.com/55964635/232245230-8f12ad19-a8dd-4c31-a99f-2de5db4ce65d.png)
 
@@ -737,55 +586,46 @@ Para comprar el usuario debe iniciar sesión y una vez logueado el sistema muest
 
 ---
 
-<table><tr><td> 
+## Registra Persona
 
 **ID:** Registra Persona
  
 **TÍTULO:** Como persona quiero registrarme para comprar bebidas
 
 **REGLAS DE NEGOCIO:** 
-- Mail unico
-- Persona mayor de 18 años
+- Mail no registrado
+- Solo personas mayores de 18 años
 
-</td></tr><tr><td>
 
 **CRITERIOS DE ACEPTACIÓN:** 
 
-**Escenario 1:** Registro exitoso
+#### **Escenario 1:** Registro exitoso
 
-`Dado` que el mail menem@gmail.com es unico y la persona tiene 90 años
+`Dado` que el mail menem@gmail.com no esta registrado y la persona tiene 90 años que es mayor de 18 años
 
 `Cuando` la persona ingresa Calos, Menem, menem@gmail.com, 90 años
 
-`Entonces` el sistema registra a la persona, genera una contraseña y la manda al mail menem@gmail.com
+`Entonces` el sistema registra a la persona, genera una contraseña y la manda al mail ingresado
 
----
+#### **Escenario 2:** Registro fallido por mail ya registrado
 
-**Escenario 2:** Registro fallido por mail ya registrado
-
-`Dado` que el mail pepe@gmail.com no es unico y la persona tiene 30 años
+`Dado` que el mail pepe@gmail.com ya esta registrado y la persona tiene 30 años que es mayor de 18 años
 
 `Cuando` la persona ingresa Pepe, ElSapo, pepe@gmail.com, 30 años
 
-`Entonces` el sistema informa que el mail ya se encuentra registrado y no realiza el registro
+`Entonces` el sistema informa que el mail ya se encuentra registrado
 
----
-**Escenario 1:** Registro fallido por persona menor de 18 años
+#### **Escenario 3:** Registro fallido por persona menor de 18 años
 
-`Dado` que el mail juansito@gmail.com es unico y la persona tiene 10 años
+`Dado` que el mail juansito@gmail.com no esta registrado y la persona tiene 10 años que es menor de 18 años
 
 `Cuando` la persona ingresa Juan, Carosella, juansito@gmail.com, 10 años
 
-`Entonces` el sistema muestra en pantalla la ley que impidee la venta de bebidas alcoholicas a menores
-
-
-</td></tr></table>
+`Entonces` el sistema muestra en pantalla la ley que impide la venta de bebidas alcoholicas a menores
 
 ---
 
-### Iniciar sesión
-
-<table><tr><td> 
+## Iniciar sesión
 
 **ID:** Iniciar Sesión
  
@@ -793,21 +633,17 @@ Para comprar el usuario debe iniciar sesión y una vez logueado el sistema muest
 
 **REGLAS DE NEGOCIO:** 
 
-</td></tr><tr><td>
-
 **CRITERIOS DE ACEPTACIÓN:** Iniciar Sesión
 
-**Escenario 1:** Inicio exitoso
+#### **Escenario 1:** Inicio exitoso
 
 `Dado` que el usuario menem@gmail.com esta registrado y la contraseña xxxx es correcta
 
 `Cuando` el usuario ingresa menem@gmail.com, xxxx
 
-`Entonces` el sistema muestra un listado de bebidas para que el usuario seleccione
+`Entonces` el sistema muestra un listado de bebidas
 
----
-
-**Escenario 2:** Inicio fallido por mail no registrado
+#### **Escenario 2:** Inicio fallido por mail no registrado
 
 `Dado` que el usuario manolo@gmail.com no esta registrado
 
@@ -815,23 +651,17 @@ Para comprar el usuario debe iniciar sesión y una vez logueado el sistema muest
 
 `Entonces` el sistema informa que el mail no se encuentra registrado
 
----
+#### **Escenario 3:** Inicio fallido por contraseña incorrecta
 
-**Escenario 3:** Inicio fallido por contraseña incorrecta
-
-`Dado` que el usuario diego@gmail.com esta registrado y la contraseña 20203 es correcta
+`Dado` que el usuario diego@gmail.com esta registrado y la contraseña 20203 es incorrecta
 
 `Cuando` el usuario ingresa diego@gmail.com, 20203
 
 `Entonces` el sistema informa que la contraseña ingresada es incorrecta
 
-</td></tr></table>
-
 ---
 
-### Cerrar sesión
-
-<table><tr><td> 
+## Cerrar sesión
 
 **ID:** Cerrar Sesión
  
@@ -839,81 +669,69 @@ Para comprar el usuario debe iniciar sesión y una vez logueado el sistema muest
 
 **REGLAS DE NEGOCIO:** 
 
-</td></tr><tr><td>
-
 **CRITERIOS DE ACEPTACIÓN:** 
 
 **Escenario 1:** Cierre exitoso
 
 `Dado` que el usuario tiene una sesión abierta
 
-`Cuando` el usuario presiona el boton `cerrar sesión`
+`Cuando` el usuario presiona el boton cerrar sesión
 
 `Entonces` el sistema cierra la sesión y deshabilita las opciones de selección y compra de bebidas
 
 ---
 
-</td></tr></table>
-
----
-
-### Comprar Bebidas
-
-<table><tr><td> 
+## Comprar Bebidas 
 
 **ID:** Comprar Bebidas
  
 **TÍTULO:** Como usuario logueado quiero comprar bebidas para ir a una fiesta
 
 **REGLAS DE NEGOCIO:** 
-- Es premium
-- Monto superior a $4500
-
-Aca puede darse el caso de que el usuario le diera al boton comprar sin haber seleccionado ninguna bebida, creo que lo podria agregar como otro escenario.
-
-</td></tr><tr><td>
+- Si es premium se le hace un descuento del 20%
+- Si el monto es superior a $4500 se le hace un descuento del 10%
 
 **CRITERIOS DE ACEPTACIÓN:** 
 
-**Escenario 1:** Compra exitosa con 30% de decuento
+#### **Escenario 1:** Compra exitosa con 30% de decuento
 
-`Dado` que el usuario messi@gmail.com es premium y su compra es de $50000
+`Dado` que el usuario messi@gmail.com es premium con 20% de descuento y su compra es de $50000 con 10% de descuento y hay stock de bebidas
 
-`Cuando` el usuario selecciona las bebidas y le da al boton `comprar`
+`Cuando` el usuario selecciona las bebidas y le da al boton "comprar"
 
 `Entonces` el sistema aplica un descuento del 30% sobre el total y registra la compra
 
----
+#### **Escenario 2:** Compra exitosa con 20% de decuento
 
-**Escenario 2:** Compra exitosa con 20% de decuento
+`Dado` que el usuario benzema@gmail.com es premium con 20% de descuento y su compra es de $50 sin 10% de descuento y hay stock de bebidas
 
-`Dado` que el usuario benzema@gmail.com es premium y su compra es de $50
-
-`Cuando` el usuario selecciona las bebidas y le da al boton `comprar`
+`Cuando` el usuario selecciona las bebidas y le da al boton "comprar"
 
 `Entonces` el sistema aplica un descuento del 20% sobre el total y registra la compra
 
----
+#### **Escenario 3:** Compra exitosa con 10% de decuento
 
-**Escenario 3:** Compra exitosa con 10% de decuento
+`Dado` que el usuario guardiola@gmail.com no es premium con 20% de descuento y su compra es de $20000 con 10% de descuento y hay stock de bebidas
 
-`Dado` que el usuario guardiola@gmail.com no es premium y su compra es de $20000
-
-`Cuando` el usuario selecciona las bebidas y le da al boton `comprar`
+`Cuando` el usuario selecciona las bebidas y le da al boton "comprar"
 
 `Entonces` el sistema aplica un descuento del 10% sobre el total y registra la compra
 
----
+#### **Escenario 4:** Compra exitosa sin descuentos
 
-**Escenario 4:** Compra exitosa sin descuentos
+`Dado` que el usuario messi@gmail.com no es premium con 20% de descuento y su compra es de $2 sin 10% de descuento y hay stock de bebidas
 
-`Dado` que el usuario messi@gmail.com no es premium y su compra es de $2
-
-`Cuando` el usuario selecciona las bebidas y le da al boton `comprar`
+`Cuando` el usuario selecciona las bebidas y le da al boton "comprar"
 
 `Entonces` el sistema no aplica un descuento sobre el total y registra la compra
 
-</td></tr></table>
+#### **Escenario 5:** Compra fallida por falta de stock
+
+`Dado` que el usuario macalister@gmail.com es premium con 20% de descuento y su compra es de $50000 con 10% de descuento y no hay stock de bebidas
+
+`Cuando` el usuario selecciona las bebidas y le da al boton "comprar"
+
+`Entonces` el sistema informa que no hay stock de bebidas
 
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
