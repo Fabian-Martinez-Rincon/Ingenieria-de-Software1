@@ -23,16 +23,49 @@
 
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
-## Parciales
+# Parciales
 
-### Primera Fecha
+## Primera Fecha
 ![primera Fecha](https://github.com/Fabian-Martinez-Rincon/Fabian-Martinez-Rincon/assets/55964635/6c0c0493-3d85-492f-89e6-c59e37372872)
 
+![Parcial Colores](https://github.com/Fabian-Martinez-Rincon/IS1/assets/55964635/8e1ee15d-40ee-4e31-9592-3418bf4009a9)
 
+
+### Roles
+- Persona (Usuario no registrado)
+- Visitante
+- Usuario
+
+### Casos de Uso
+
+- `Nombre` Registro primer paso
+- `Descripción` Este cu describe como una persona realiza el primer paso en su registro
+- `Actores` Persona
+- `Precondición` -
+- `Curso Normal`
+
+<table> <tr><td>Acciones del actor</td> <td>Acciones del Sistema</td></tr>
+<td width="320">  
+
+Paso 1: La persona selecciona la opción "Registro Primer Paso"
+
+Paso 3: La persona ingresa datos solicitados 
+
+</td><td width="320">
+
+Paso 2: El sistema solicita nombre, apellido, dni, correo electronico y contraseña
+
+Paso 4: El sistema verifica que el correo no este registrado
+
+Paso 5: El sistema valida que la contraseña tenga al menos 6 caracteres
+
+Paso 6: El sistema da de alta al usuario de forma parcial, genera un codigo de 16 digitos y lo envia al correo
+
+</td></table>
 
 ---
 
-### Segunda Fecha
+## Segunda Fecha
   ![2](https://github.com/Fabian-Martinez-Rincon/Fabian-Martinez-Rincon/assets/55964635/a3c06772-cd17-4beb-8f19-b4d44f2df60a)
 
 
