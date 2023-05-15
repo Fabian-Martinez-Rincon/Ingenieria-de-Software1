@@ -737,17 +737,8 @@ Para cada Historia de Usuario se deben indicar los siguientes ítems:
 
 <div align = center>
 
-## `Problema 5` Casa de fotografía
+#### `Problema 5` Casa de fotografía
 </div>
-
-
-Se desea desarrollar un sistema para la impresión de fotos para una casa fotográfica. Los clientes pueden subir sus fotos, pagar por internet y luego ser retiradas personalmente por el local.
-
-Para subir las fotos la persona debe registrarse en el sitio, ingresando sus datos personales, nombre, apellido, email, domicilio, nombre de usuario y contraseña.
-
-Una vez autenticado, el usuario puede subir un máximo de 50 fotos para ser impresas. Las fotos se ingresan de a una. Una vez subidas, el usuario debe abonar el monto total (el valor de cada foto es de $15). El pago se realiza con tarjeta de crédito, ingresando los datos de la misma (número de tarjeta, código de seguridad y nombre del titular), la cual debe ser validada a través del sistema del banco. Una vez que se realiza el pago se le otorga al cliente un código único que le servirá posteriormente para retirar las fotos.
-
-Un cliente debe acercarse a la sucursal para retirar las fotos enviadas previamente. Para esto debe presentar el código único a un empleado. Este registra el código, la fecha de retiro y entrega las fotos al cliente.
 
 ![image](https://user-images.githubusercontent.com/55964635/232247520-3ee3818c-84f9-42c4-b49c-f344f7844377.png)
 
@@ -768,9 +759,7 @@ Un cliente debe acercarse a la sucursal para retirar las fotos enviadas previame
 
 ---
 
-### Registrar Persona
-
-<table><tr><td> 
+## Registrar Persona
 
 **ID:** Registrar Persona
  
@@ -779,13 +768,9 @@ Un cliente debe acercarse a la sucursal para retirar las fotos enviadas previame
 **REGLAS DE NEGOCIO:** 
 - nombre de usuario no registrado 
 
-Aunque el enuncado no lo especifica, despues le pregunto al ayudante si va
-
-</td></tr><tr><td>
-
 **CRITERIOS DE ACEPTACIÓN:** 
 
-**Escenario 1:** Registro exitoso
+#### **Escenario 1:** Registro exitoso
 
 `Dado` que el nombre de usuario manolo20 no esta registrado
 
@@ -793,9 +778,7 @@ Aunque el enuncado no lo especifica, despues le pregunto al ayudante si va
 
 `Entonces` sistema realiza el registro del usuario y lo informa en pantalla
 
----
-
-**Escenario 2:** Registro Fallido por usuario ya existente
+#### **Escenario 2:** Registro Fallido por usuario ya existente
 
 `Dado` que el nombre de usuario vegeta666 esta registrado
 
@@ -803,13 +786,9 @@ Aunque el enuncado no lo especifica, despues le pregunto al ayudante si va
 
 `Entonces` sistema informa que el usuario ya se encuentra registrado en el sistema
 
-</td></tr></table>
-
 ---
 
-### Iniciar Sesión
-
-<table><tr><td> 
+## Iniciar Sesión
 
 **ID:** Iniciar Sesión
  
@@ -817,11 +796,9 @@ Aunque el enuncado no lo especifica, despues le pregunto al ayudante si va
 
 **REGLAS DE NEGOCIO:** 
 
-</td></tr><tr><td>
-
 **CRITERIOS DE ACEPTACIÓN:** Iniciar Sesión
 
-**Escenario 1:** Inicio Exitoso
+#### **Escenario 1:** Inicio Exitoso
 
 `Dado` que el manolo20 se encuentra registrado y la contraseña contraseña123 es correcta
 
@@ -829,9 +806,7 @@ Aunque el enuncado no lo especifica, despues le pregunto al ayudante si va
 
 `Entonces` el sistema realiza el inicio de sesión y habilita la opcion para subir imagenes y pagar
 
----
-
-**Escenario 2:** Inicio Fallido por usuario no registrado
+#### **Escenario 2:** Inicio Fallido por usuario no registrado
 
 `Dado` que el goku50 no se encuentra registrado
 
@@ -839,23 +814,17 @@ Aunque el enuncado no lo especifica, despues le pregunto al ayudante si va
 
 `Entonces` el sistema informa que el usuario no se encuentra registrado
 
----
+#### **Escenario 3:** Inicio Fallido por contraseña incorrecta
 
-**Escenario 3:** Inicio Fallido por contraseña incorrecta
-
-`Dado` que el manolo20 se encuentra registrado y la contraseña contraseña123 es correcta
+`Dado` que el manolo20 se encuentra registrado y la contraseña contraseña123 es in correcta
 
 `Cuando` el usuario ingresa manolo20, contraseña123
 
 `Entonces` el sistema informa que la contraseña es incorrecta
 
-</td></tr></table>
-
 ---
 
-### Cerrar Sesión
-
-<table><tr><td> 
+## Cerrar Sesión
 
 **ID:** Cerrar Sesión
  
@@ -863,26 +832,20 @@ Aunque el enuncado no lo especifica, despues le pregunto al ayudante si va
 
 **REGLAS DE NEGOCIO:** 
 
-</td></tr><tr><td>
-
 **CRITERIOS DE ACEPTACIÓN:** 
 
-**Escenario 1:** Cierre exitoso
+#### **Escenario 1:** Cierre exitoso
 
-`Dado` que el usuario manolo20 tiene la sesión abierta
+`Dado` que el usuario tiene la sesión abierta
 
 `Cuando` el usuario presiona el boton `cerrar sesión`
 
 `Entonces` el sistema cierra la sesión y deshabilita las opciones para subir imagenes y pagar
 
-
-</td></tr></table>
-
 ---
 
-### Pagar con tarjeta
+## Pagar con tarjeta
 
-<table><tr><td> 
 
 **ID:** Pagar con tarjeta
  
@@ -891,11 +854,9 @@ Aunque el enuncado no lo especifica, despues le pregunto al ayudante si va
 **REGLAS DE NEGOCIO:** 
 - Fondos para pagar $15 por foto
 
-</td></tr><tr><td>
-
 **CRITERIOS DE ACEPTACIÓN:** 
 
-**Escenario 1:** Pago exitoso
+#### **Escenario 1:** Pago exitoso
 
 `Dado` que se pudo establecer conexión con el servidor, el nro de tarjeta 4342 es correcto y posee fondos suficientes para pagar $15 por foto
 
@@ -903,43 +864,34 @@ Aunque el enuncado no lo especifica, despues le pregunto al ayudante si va
 
 `Entonces` el sistema registra el pago y retorna un nro para que pueda retirar las fotos
 
----
-
-**Escenario 2:** Pago fallido por falta de conexión con el servidor
+#### **Escenario 2:** Pago fallido por falta de conexión con el servidor
 
 `Dado` que no se pudo establecer conexión con el servidor
 
 `Cuando` el usuario intenta pagar
 
-`Entonces` el sistema informa que no hay conexión con el banco y no realiza el pago
+`Entonces` el sistema informa que no hay conexión con el banco
 
----
-
-**Escenario 3:** Pago fallido por nro de tarjeta invalido
+#### **Escenario 3:** Pago fallido por nro de tarjeta invalido
 
 `Dado` que se pudo establecer conexión con el servidor, el nro de tarjeta 9578 no es correcto
 
 `Cuando` el usuario ingresa 9578, 23, Jordan
 
-`Entonces` el sistema informa que el nro de tarjeta es invalido y no registra el pago
+`Entonces` el sistema informa que el nro de tarjeta es invalido
 
----
-
-**Escenario 4:** Pago fallido por fondos insuficientes
+#### **Escenario 4:** Pago fallido por fondos insuficientes
 
 `Dado` que se pudo establecer conexión con el servidor, el nro de tarjeta 8414 es correcto y no posee fondos suficientes para pagar $15 por foto
 
 `Cuando` el usuario ingresa 8414, 010, Messi
 
-`Entonces` el sistema informa que la tarjeta no posee fondos suficientes y no registra el pago
-
-</td></tr></table>
+`Entonces` el sistema informa que la tarjeta no posee fondos suficientes
 
 ---
 
-### Subir Foto
+## Subir Foto
 
-<table><tr><td> 
 
 **ID:** Subir Foto
  
@@ -948,36 +900,29 @@ Aunque el enuncado no lo especifica, despues le pregunto al ayudante si va
 **REGLAS DE NEGOCIO:** 
 - Un maximo de 50 fotos
 - Se suben de a una
-- El pago debe realizarse con tarjeta de credito
-
-
-</td></tr><tr><td>
+- Se paga 15$ por foto con tarjeta de credito
 
 **CRITERIOS DE ACEPTACIÓN:** 
 
-**Escenario 1:** Subida exitosa
+#### **Escenario 1:** Subida exitosa
 
-`Dado` que el usuario subio 20 fotos y fueron una a la vez 
+`Dado` que esta en la foto nro 20 que es menor al maximo de 50 y fueron una a la vez
 
 `Cuando` el usuario sube perros.png
 
 `Entonces` el sistema carga la foto 
 
----
+#### **Escenario 2:** Subida fallida por cantidad excesiva de fotos
 
-**Escenario 2:** Subida fallida por cantidad excesiva de fotos
-
-`Dado` que el usuario subio 51 fotos y fueron una a la vez 
+`Dado` que esta en la foto nro 50 que es igual al maximo de 50 y fueron una a la vez
 
 `Cuando` el usuario sube gatos.png
 
 `Entonces` el sistema informa que el usuario no puede subir mas de 50 imagenes 
 
----
+#### **Escenario 3:** Subida fallida por subir mas de una foto a la vez
 
-**Escenario 1:** Subida fallida por subir mas de una foto a la vez
-
-`Dado` que el usuario subio 3 fotos, fueron a la vez 
+`Dado` que esta en la foto nro 20 que es menor al maximo de 50 y fueron dos a la vez
 
 `Cuando` el usuario sube perros.png, gatos.png, ratas.png
 
@@ -985,26 +930,17 @@ Aunque el enuncado no lo especifica, despues le pregunto al ayudante si va
 
 ---
 
-</td></tr></table>
-
----
-
-### Retirar Foto
-
-<table><tr><td> 
+## Retirar Foto
 
 **ID:** Retirar Foto
  
 **TÍTULO:** Como empleado quiero retirar las fotos para darselas al cliente
 
 **REGLAS DE NEGOCIO:** 
-- El codigo debe estar cargado en el sistema
-
-</td></tr><tr><td>
 
 **CRITERIOS DE ACEPTACIÓN:** 
 
-**Escenario 1:** Retiro exitoso
+### **Escenario 1:** Retiro exitoso
 
 `Dado` que el codigo 4321 esta cargado en el sistema
 
@@ -1012,9 +948,7 @@ Aunque el enuncado no lo especifica, despues le pregunto al ayudante si va
 
 `Entonces` el sistema imprime las fotos 
 
----
-
-**Escenario 1:** Retiro fallido por codigo inexistente
+### **Escenario 2:** Retiro fallido por codigo inexistente
 
 `Dado` que el codigo 6353 no esta cargado en el sistema
 
@@ -1022,7 +956,9 @@ Aunque el enuncado no lo especifica, despues le pregunto al ayudante si va
 
 `Entonces` el sistema informa que el codigo ingresado no existe en el sistema
 
-</td></tr></table>
+---
+
+## Pagar Fotos
 
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
