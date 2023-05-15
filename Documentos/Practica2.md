@@ -67,6 +67,8 @@ Para cada Historia de Usuario se deben indicar los siguientes ítems:
 
 ## Estas son las historias que son iguales en todos los ejercicios
 
+---
+
 ## Pagar con Tarjeta
 
 
@@ -114,7 +116,6 @@ Para cada Historia de Usuario se deben indicar los siguientes ítems:
 
 `Entonces` el sistema informa que la tarjeta no tiene fondos suficientes y no registra el cobro
 
-</td></tr></table>
 
 ---
 
@@ -139,9 +140,7 @@ Para cada Historia de Usuario se deben indicar los siguientes ítems:
 
 `Entonces` el sistema registra al usuario
 
----
-
-**Escenario 2:** Registro fallido por usuario ya existente
+#### **Escenario 2:** Registro fallido por usuario ya existente
 
 `Dado` que el usuario tomo no es unico y la contraseña pepe555 tiene mas de 6 digitos
 
@@ -149,9 +148,7 @@ Para cada Historia de Usuario se deben indicar los siguientes ítems:
 
 `Entonces` el sistema Informa que el usuario ingresado ya existe, y no realiza el registro
 
----
-
-**Escenario 3:** Registro fallido por contraseña con menos de 6 digitos
+#### **Escenario 3:** Registro fallido por contraseña con menos de 6 digitos
 
 `Dado` que el usuario messi es unico y la contraseña 2023 tiene menos de 6 digitos
 
@@ -159,13 +156,9 @@ Para cada Historia de Usuario se deben indicar los siguientes ítems:
 
 `Entonces` el sistema informa que la contraseña ingresada tiene menos de 6 digitos y no realiza el registro
 
-</td></tr></table>
-
 ---
 
 ### Iniciar Sesión
-
-<table><tr><td> 
 
 **ID:** Iniciar Sesión
  
@@ -173,12 +166,9 @@ Para cada Historia de Usuario se deben indicar los siguientes ítems:
 
 **REGLAS DE NEGOCIO:** 
 
- </td> </tr>
-<tr><td>
-
 **CRITERIOS DE ACEPTACIÓN:** Iniciar Sesión
 
-**Escenario 1:** Inicio exitoso
+#### **Escenario 1:** Inicio exitoso
 
 `Dado` que el usuario fabo se encuentra registrado y la contraseña kapo013 es correcta
 
@@ -186,9 +176,8 @@ Para cada Historia de Usuario se deben indicar los siguientes ítems:
 
 `Entonces` el sistema realiza el inicio de sesión y habilita sus respectivas opciones
 
----
 
-**Escenario 2:** Inicio fallido por usuario no registrado
+#### **Escenario 2:** Inicio fallido por usuario no registrado
 
 `Dado` que el usuario maradona no se encuentra registrado
 
@@ -196,9 +185,7 @@ Para cada Historia de Usuario se deben indicar los siguientes ítems:
 
 `Entonces` el sistema informa que el usuario no se encuentra registrado y no realiza el inicio de sesión
 
----
-
-**Escenario 3:** Inicio fallido por contraseña incorrecta
+#### **Escenario 3:** Inicio fallido por contraseña incorrecta
 
 `Dado` que el usuario stalin se encuentra registrado y la contraseña presi19 es incorrecta
 
@@ -206,22 +193,15 @@ Para cada Historia de Usuario se deben indicar los siguientes ítems:
 
 `Entonces` el sistema informa que la contraseña es incorrecta y no realiza el inicio de sesión
 
-</td></tr></table>
-
 ---
 
 ### Cerrar Sesión
-
-<table><tr><td> 
 
 **ID:** Cerrar Sesión
  
 **TÍTULO:** 
 
 **REGLAS DE NEGOCIO:** Cerrar Sesión
-
- </td> </tr>
-<tr><td>
 
 **CRITERIOS DE ACEPTACIÓN:** 
 
@@ -233,8 +213,7 @@ Para cada Historia de Usuario se deben indicar los siguientes ítems:
 
 `Entonces` el sistema cierra la sesión y deshabilita sus respectivas opciones 
 
-
-</td></tr></table>
+---
 
 
 
@@ -278,9 +257,7 @@ cliente para hacer efectivo el alquiler.
 
 ---
 
-### Reservar Alquiler
-
-<table><tr><td> 
+## Reservar Alquiler
 
 **ID:** Reservar Alquiler
  
@@ -290,11 +267,9 @@ cliente para hacer efectivo el alquiler.
 - Incluye minimo 3 muebles
 - Se abona el 20% del total con tarjeta de credito
 
-</td></tr><tr><td>
-
 **CRITERIOS DE ACEPTACIÓN:** 
 
-**Escenario 1:** Reservar Exitosa
+#### **Escenario 1:** Reservar Exitosa
 
 `Dado` que el alquiler tiene 3 muebles y se pago el 20% con una tarjeta de credito valida
 
@@ -302,9 +277,7 @@ cliente para hacer efectivo el alquiler.
 
 `Entonces` el sistema emite un numero de reserva unico.
 
----
-
-**Escenario 2:** Reservar Fallida por muebles insuficientes
+#### **Escenario 2:** Reservar Fallida por muebles insuficientes
 
 `Dado` que el alquiler tiene 1 mueble y se pago el 20% con una tarjeta de credito valida
 
@@ -312,9 +285,7 @@ cliente para hacer efectivo el alquiler.
 
 `Entonces` el sistema informa que el inmueble no cumple con los requisitos minimos
 
----
-
-**Escenario 3:** Reserva Fallida por problemas con la tarjeta de credito
+#### **Escenario 3:** Reserva Fallida por problemas con la tarjeta de credito
 
 `Dado` que el alquiler tiene 5 muebles y se pago el 20% con una tarjeta invalida
 
@@ -322,14 +293,9 @@ cliente para hacer efectivo el alquiler.
 
 `Entonces` el sistema informa que la tarjeta es invalida y no registra el pago
 
+---
 
-</td></tr></table>
-
---------------------------------------------------------------
-
-### Dar Alta Inmueble
-
-<table><tr><td> 
+## Dar Alta Inmueble
 
 **ID:** Dar alta inmueble
  
@@ -339,11 +305,9 @@ cliente para hacer efectivo el alquiler.
 - Codigo Unico
 - Se cargo en dolares
 
-</td></tr><tr><td>
-
 **CRITERIOS DE ACEPTACIÓN:** Dar alta inmueble
 
-**Escenario 1:** Alta Exitosa
+#### **Escenario 1:** Alta Exitosa
 
 `Dado` que el codigo 0202 es unico y el precio 10$ se cargo en dolares
 
@@ -351,9 +315,7 @@ cliente para hacer efectivo el alquiler.
 
 `Entonces` el sistema registra el mueble en el sistema
 
----
-
-**Escenario 2:** Alta Fallida por codigo ya existente
+#### **Escenario 2:** Alta Fallida por codigo ya existente
 
 `Dado` que el codigo 1010 no es unico y el precio 20$ se cargo en dolares
 
@@ -361,9 +323,7 @@ cliente para hacer efectivo el alquiler.
 
 `Entonces` el sistema informa que el codigo ya se encuentra registrado y no realiza el alta
 
----
-
-**Escenario 3:** Alta Fallida por precio cargado en euros
+#### **Escenario 3:** Alta Fallida por precio cargado en euros
 
 `Dado` que el codigo 4040 es unico y el precio 10$ se cargo en euros
 
@@ -371,14 +331,9 @@ cliente para hacer efectivo el alquiler.
 
 `Entonces` el sistema informa que el precio debe cargarse en dolares y no realiza el alta
 
+---
 
-</td></tr></table>
-
---------------------------------------------------------------
-
-### Pagar con tarjeta
-
-<table><tr><td> 
+## Pagar con tarjeta
 
 **ID:** Pagar con tarjeta
  
@@ -389,12 +344,9 @@ cliente para hacer efectivo el alquiler.
 - Numero de tarjeta valido
 - Tiene fondos suficientes
 
-
-</td></tr><tr><td>
-
 **CRITERIOS DE ACEPTACIÓN:** Pagar con tarjeta
 
-**Escenario 1:** Pago exitoso
+#### **Escenario 1:** Pago exitoso
 
 `Dado` que se pudo establecer conexión con el servidor del banco, el nro 123 de la tarjeta es valido y posee fondos suficientes
 
@@ -402,9 +354,7 @@ cliente para hacer efectivo el alquiler.
 
 `Entonces` el sistema registra el pago
 
----
-
-**Escenario 2:** Pago Fallido por falla con la conexión del banco
+#### **Escenario 2:** Pago Fallido por falla con la conexión del banco
 
 `Dado` que no se pudo establecer conexión con el banco
 
@@ -412,9 +362,7 @@ cliente para hacer efectivo el alquiler.
 
 `Entonces` el sistema informa que no se pudo establecer conexion con el banco
 
----
-
-**Escenario 3:** Pago fallido por numero de tarjeta invalido
+#### **Escenario 3:** Pago fallido por numero de tarjeta invalido
 
 `Dado` que se pudo establecer conexión con el servidor del banco, el nro 777 de la tarjeta es invalido
 
@@ -422,9 +370,7 @@ cliente para hacer efectivo el alquiler.
 
 `Entonces` el sistema informa que el nro de la tarjeta es invalido y no registra el pago
 
----
-
-**Escenario 4:** Pago fallido por saldo insuficiente
+#### **Escenario 4:** Pago fallido por saldo insuficiente
 
 `Dado` que se pudo establecer conexión con el servidor del banco, el nro 1010 de la terjeta es valido y no tiene fondos
 
@@ -432,7 +378,7 @@ cliente para hacer efectivo el alquiler.
 
 `Entonces` el sistema informa que la tarjeta no tiene fondos suficientes y no registra el cobro
 
-</td></tr></table>
+
 
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
