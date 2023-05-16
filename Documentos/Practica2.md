@@ -2053,6 +2053,25 @@ De este ejercicio tengo bastantes dudas la verdad
 ---
 
 
+## Imprimir Listado
+
+**ID:** Imprimir Listado
+ 
+**TÍTULO:** 
+
+**REGLAS DE NEGOCIO:** 
+- No se puede inscribir a mas de 3 concursos
+
+**CRITERIOS DE ACEPTACIÓN:** 
+
+#### **Escenario 1:** Inscripción exitosa
+
+`Dado` que la materia Informatica tiene inscriptos para imprimir
+
+`Cuando` el jefe de area administrativa selecciona informatica y presiona el boton imprimir inscriptos
+
+`Entonces` El sistema imprime un listado con los inscriptos a esa materia
+
 
 
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
