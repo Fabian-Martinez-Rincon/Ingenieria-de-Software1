@@ -2057,7 +2057,7 @@ De este ejercicio tengo bastantes dudas la verdad
 
 **ID:** Imprimir Listado
  
-**TÍTULO:** 
+**TÍTULO:** como jefe de area administrativa quiero imprimir el listado de los inscriptos a una materia para poder llevarlo al secretario administrativo
 
 **REGLAS DE NEGOCIO:** 
 - No se puede inscribir a mas de 3 concursos
@@ -2084,6 +2084,126 @@ De este ejercicio tengo bastantes dudas la verdad
 
 ![](2023-05-15-14-25-19.png)
 ![](2023-05-16-09-59-06.png)
+
+
+## Solicitar un credito
+
+**ID:** Solicitar un credito
+ 
+**TÍTULO:** como cliente quiero solicitar un credito para solicitar un prestamo
+
+**REGLAS DE NEGOCIO:** 
+- El dni debe ser cliente del banco
+- El monto no debe superar los 400.000$
+
+**CRITERIOS DE ACEPTACIÓN:** 
+
+#### **Escenario 1:** Solicitud exitosa
+
+`Dado` que el dni 20321 es cliente del banco y el monto 20$ no supera los 400.000$
+
+`Cuando` el cliente ingresa 20321, Fabian, Martinez, fabian@gmail.com, Personal, 20$
+
+`Entonces` El sistema almacena el tramite e imprime un numero de comprobante para el cliente
+
+#### **Escenario 2:** Solicitud fallida porque el dni no es cliente
+
+`Dado` que el dni 54321 no es cliente del banco y el monto 200$ no supera los 400.000$
+
+`Cuando` el cliente ingresa 54321, Tomas, Pompile, tomas@gmail.com,Personal, 200$
+
+`Entonces` El sistema envia un correo un instructivo para hacerse cliente del banco
+
+#### **Escenario 3:** Solicitud fallida porque el monto excede lo permitido
+
+`Dado` que el dni 12345 es cliente del banco y el monto 2000.000$ no supera los 400.000$
+
+`Cuando` el cliente ingresa 12345, Josue, Suarez, josu@gmail.com, Personal, 2000.000$
+
+`Entonces` El sistema rechaza el inicio de tramite y muestra el mensaje "el monto solicitado excede el limite permitido"
+
+
+---
+
+## Consultar el estado
+
+**ID:** Consultar el estado
+ 
+**TÍTULO:** como usuario quiero consultar el estado para estar informado
+
+**REGLAS DE NEGOCIO:** 
+- tiene 3 intentos antes del bloqueo de ip
+
+**CRITERIOS DE ACEPTACIÓN:** 
+
+#### **Escenario 1:** Consulta exitosa
+
+`Dado` que la ip no esta bloqueada, esta en el intento 0, el nro de comprobante 398129 es valido
+
+`Cuando` el cliente ingresa 398129
+
+`Entonces` El sistema retorna un informa con el estado del mismo
+
+#### **Escenario 2:** Consulta fallida con nro invalido
+
+`Dado` que la ip no esta bloqueada, esta en el intento 0 y el nro de comprobante 423789 es invalido
+
+`Cuando` el cliente ingresa 423789
+
+`Entonces` El sistema muestra "el tramite es inexistente" y aumenta los intentos en uno
+
+#### **Escenario 3:** Consulta fallida por nro invalido
+
+`Dado` que la ip no esta bloqueada, esta en el intento 2 y el nro de comprobante 123451 es invalido
+
+`Cuando` el cliente ingresa 123451
+
+`Entonces` El sistema muestra "el tramite es inexistente" y bloquea la ip
+
+#### **Escenario 4:** Consulta fallida por bloqueo de IP
+
+`Dado` que la ip esta bloqueada
+
+`Cuando` el cliente quiere ingresar un nro de comprobante
+
+`Entonces` El sistema informa "usted a excedido el numero de consultas inválida"
+
+## Imprimir Listado
+
+**ID:** Imprimir Listado
+ 
+**TÍTULO:** como gerente quiero imprimir un listado de los creditos aprobados para estar informado
+
+**REGLAS DE NEGOCIO:** 
+- Las fechas deben ser validas
+
+**CRITERIOS DE ACEPTACIÓN:** 
+
+#### **Escenario 1:** Impresion exitosa
+
+`Dado` que la fecha 12/3/2020 es valida y hay creditos aprobados para imprimir
+
+`Cuando` el gerente ingresa 12/3/2020 y presiona el boton imprimir listado
+
+`Entonces` El sistema muestra un listado con los creditos aprobados
+
+#### **Escenario 2:** Impresion fallida por fecha invalida
+
+`Dado` que la fecha 12/3/220 es invalida
+
+`Cuando` el gerente ingresa 12/3/220 y presiona el boton imprimir listado
+
+`Entonces` El sistema informa, las fehcas ingresadas no son validas
+
+#### **Escenario 3:** Impresion fallida por lista vacia
+
+`Dado` que la fecha 30/3/2020 es valida y no hay creditos aprobados para imprimir
+
+`Cuando` el gerente ingresa 30/3/2020 y presiona el boton imprimir listado
+
+`Entonces` El sistema informa que no hay creditos aprobados para mostrar
+
+## Falta el iniciar sesión y cerrar sesión alta paja
 
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 

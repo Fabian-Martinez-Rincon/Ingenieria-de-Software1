@@ -23,161 +23,192 @@
 
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
-# Parciales
-
 ## Primera Fecha
-![primera Fecha](https://github.com/Fabian-Martinez-Rincon/Fabian-Martinez-Rincon/assets/55964635/6c0c0493-3d85-492f-89e6-c59e37372872)
 
-![Parcial Colores](https://github.com/Fabian-Martinez-Rincon/IS1/assets/55964635/8e1ee15d-40ee-4e31-9592-3418bf4009a9)
+<img src="https://github.com/Fabian-Martinez-Rincon/Fabian-Martinez-Rincon/assets/55964635/e584be28-12fb-4f8f-9811-a3bc7cb31559" alt="Parcial1">
 
+## Listar Noticias
 
-### Roles
-- Persona (Usuario no registrado)
-- Visitante
-- Usuario
+**ID:** Listar Noticias
 
-### Casos de Uso
+**TÍTULO:** Usuario o persona quiero ver las noticias para estar informado
 
-- `Nombre` Registro primer paso
-- `Descripción` Este cu describe como una persona realiza el primer paso en su registro
-- `Actores` Persona
-- `Precondición` -
-- `Curso Normal`
+**REGLAS DE NEGOCIO:** 
+- El token es valido
 
-<table> <tr><td>Acciones del actor</td> <td>Acciones del Sistema</td></tr>
-<td width="320">  
+**CRITERIOS DE ACEPTACIÓN:** 
 
-Paso 1: La persona selecciona la opción "Registro Primer Paso"
+#### **Escenario 1:** Listado exitoso
 
-Paso 3: La persona ingresa datos solicitados 
+`Dado` que se establecio conexión con el servidor, el token en valido y hay noticias para mostrar
 
-</td><td width="320">
+`Cuandod` el usuario o la persona le dan al boton "listar noticias"
 
-Paso 2: El sistema solicita nombre, apellido, dni, correo electronico y contraseña
+`Entonces` el sistema informa el listado de noticias en pantalla
 
-Paso 4: El sistema verifica que el correo no este registrado
+#### **Escenario 2:** Listado fallido por fallas en la conexión
 
-Paso 5: El sistema valida que la contraseña tenga al menos 6 caracteres
+`Dado` que no se establecio conexión con el servidor
 
-Paso 6: El sistema da de alta al usuario de forma parcial, genera un codigo de 16 digitos y lo envia al correo
+`Cuandod` el usuario o la persona quiere "listar noticias"
 
-</td></table>
+`Entonces` el sistema informa que no se pudo establecer la conexión
 
----
+#### **Escenario 3:** Listado fallido por token invalido
 
-## Segunda Fecha
-  ![2](https://github.com/Fabian-Martinez-Rincon/Fabian-Martinez-Rincon/assets/55964635/a3c06772-cd17-4beb-8f19-b4d44f2df60a)
+`Dado` que se establecio conexión con el servidor, el token en invalido
+
+`Cuandod` el usuario o la persona le dan al boton "listar noticias"
+
+`Entonces` el sistema informa que el token es invalido
 
 
-![Parcial 1Colores](https://github.com/Fabian-Martinez-Rincon/Fabian-Martinez-Rincon/assets/55964635/b61a35eb-39c5-448d-b06c-08434e5dfd08)
+#### **Escenario 4:** Listado fallido por falta de noticias
 
+`Dado` que se establecio conexión con el servidor, el token en valido y no hay noticias para mostrar
 
-### Actores
+`Cuandod` el usuario o la persona le dan al boton "listar noticias"
 
-- Persona(Usuario no registrado)
-- Usuario
-
-### Historias de Usuario
-- Registrar persona
-- Solicitar Turno
-- Iniciar Sesión
-- Cerrar Sesión
+`Entonces` el sistema informa que no hay noticias para listar
 
 ---
 
-### Regitrar persona
+## Acceder detalle
 
-- `ID` Registrar Persona
-- `Titulo` Como persona quiero registrarme para poder solicitar turnos
-- `Reglas de negocio`
-  - Mail no registrado
-  - Solo personas mayores de edad (18 años)
+**ID:** Acceder detalle
 
-`Criterios de aceptación` : Registrar Persona
-- `Escenario 1` Registro exitoso
-  - `Dado` que el mail juan@gmail.com no esta registrada y tiene edad 20 años que es mayor de edad
-  - `Cuando` la persona ingresa Juan, Carosella, juan@gmail.com, 20 años, 1 y 60.
-  - `Entonces` El sistema registra al nuevo usuario, genera una contraseña y la manda al mail ingresado
-- `Escenario 2` Registro fallido por mail ya registrado
-  - `Dado` que el mail martin@gmail.com esta registrada y tiene edad 20 años que es mayor de edad
-  - `Cuando` la persona ingresa Martin, Suarez, martin@gmail.com, 20 años, 1 y 44.
-  - `Entonces` El sistema informa que la persona ya se encuentra registrada
-- `Escenario 3` Registro fallido por ser menor de edad
-  - `Dado` que el mail messi@gmail.com no esta registrada y tiene edad 10 años que es menor de edad
-  - `Cuando` la persona ingresa Messi, Messi, messi@gmail.com, 10 años, 10 y 60.
-  - `Entonces` El sistema informa que la persona es menor de edad
+**TÍTULO:** Como usuario logueado quiero acceder al detalle de una noticias para estar informado
 
----
+**REGLAS DE NEGOCIO:**
+- Solo se permite el acceso a 5 noticias por dia
 
-### Solicitar Turno
+**CRITERIOS DE ACEPTACIÓN:** 
 
-- `ID` Solicitar Turno
-- `Titulo` Como usuario loguead quiero solicitar un turno para 
-- `Reglas de negocio`
-  - La cancha debe estar disponible
-  - La fecha con dos dias de anticipación
+#### **Escenario 1:** Listado exitoso
 
-`Criterios de aceptación`: 
-- `Escenario 1` Solicitud exitosa
-  - `Dado` que la cancha Roja esta disponible y la fecha 1/1/2024 se hizo con dos dias de anticipación
-  - `Cuando` el usuario ingresa Roja, 1/1/2024, 14:00
-  - `Entonces` El sistema asigna un turno al usuario e informa "Su turno ha sido registrado con exito"
-- `Escenario 2` Solicitud fallida por cancha no disponible
-  - `Dado` que la cancha Azul no esta disponible y la fecha 3/3/2025 se hizo con dos dias de anticipación
-  - `Cuando` el usuario ingresa Azul, 3/3/2025, 11:00
-  - `Entonces` El sistema asigna un turno al usuario e informa "Su turno ha sido registrado con exito"
-- `Escenario 3` Solicitud fallida por fecha no reservada con dos dias de anticipación
-  - `Dado` que la cancha Verde esta disponible y la fecha 1/12/2023 se hizo con un dia de anticipación
-  - `Cuando` el usuario ingresa Verde, 1/12/2023, 19:00
-  - `Entonces` El sistema informa que el turno debe solicitarse con dos dias de anticipación
+`Dado` que el usuario fabo@gmail.com tiene 0 accesos a detalles que es menor al 5 a los 5 permitidos
+
+`Cuandod` el usuario preciona el boton "ver detalles"
+
+`Entonces` el sistema muestra el detalle de la noticia y aumenta en 1 los detalles visos
+
+#### **Escenario 2:** Acceso fallido
+
+`Dado` que el usuario fabo@gmail.com tiene 5 accesos a detalles que es igual al 5 a los 5 permitidos
+
+`Cuandod` el usuario preciona el boton "ver detalles"
+
+`Entonces` el sistema informa que que ya no puede ver los detalles de las noticias por el resto del dia
 
 
----
+## Iniciar Sesión
 
-### Iniciar Sesión
-- `ID` Iniciar Sesión
-- `Titulo` Como persona quiero iniciar sesión para poder solicitar turnos
-- `Reglas de negocio`
-  - Tiene 3 intentos antes de ser bloqueada
+**ID:** Iniciar Sesión
 
-`Criterios de aceptación` : Iniciar Sesión
+**TÍTULO:** Como usuario quiero iniciar sesión para poder acceder a los detalles
 
-- `Escenario 1` Inicio exitoso
-  - `Dado` dado que el mail juan@gmail.com esta registrado, esta en el intento 1, y la contraseña 123456 es correcta
-  - `Cuando` el usuario ingresa juan@gmail.com, 123456
-  - `Entonces` El sistema inicia la sesión y habilita la solicitud de turnos
-- `Escenario 2` Inicio fallido mail no registrado
-  - `Dado` dado que el mail martin@gmail.com no esta registrado
-  - `Cuando` el usuario ingresa martin@gmail.com
-  - `Entonces` El sistema informa que el usuario no se encuentra registrado
-- `Escenario 3` Inicio fallido por contraseña incorrecta
-  - `Dado` dado que el mail carlos@gmail.com esta registrado, esta en el intento 1, y la contraseña 7777777 es incorrecta
-  - `Cuando` el usuario ingresa carlos@gmail.com, 7777777
-  - `Entonces` el sistema incrementa en un intento e informa que la contraseña es incorrecta
-- `Escenario 4` Inicio fallido por contraseña incorrecta
-  - `Dado` dado que el mail pedro@gmail.com esta registrado, esta en el intento 3, y la contraseña 666666 es incorrecta
-  - `Cuando` el usuario ingresa pedro@gmail.com, 666666
-  - `Entonces` el sistema bloquea la cuenta e informa que la contraseña es incorrecta
-- `Escenario 5` Inicio fallido por cuenta bloqueada
-  - `Dado` dado que el mail manolo@gmail.com esta registrado y tiene la cuenta bloqueada
-  - `Cuando` el usuario ingresa manolo@gmail.com
-  - `Entonces` el sistema informa que la cuenta fue bloqueada
+**REGLAS DE NEGOCIO:**
+- Tiene 3 intentos de autentificación antes de ser bloqueado
 
----
+**CRITERIOS DE ACEPTACIÓN:** 
 
-### Cerrar Sesión
-- `ID` Cerrar Sesión
-- `Titulo` Como usuario logueado quiero iniciar sesión para poder guardar mis datos
-- `Reglas de negocio`
+#### **Escenario 1:** Inicio exitoso
 
-`Criterios de aceptación`: Cerrar Sesión
-- `Escenario 1` Cierre exitoso
-  - `Dado` que el usuario felix@gmail.com tiene una sesión abierta
-  - `Cuando` el usuario presiona el boton "cerrar sesión"
-  - `Entonces` El sistema cierra la sesión y bloquea las opciones para solicitar turnos
+`Dado` que el usuario fabo@gmail.com esta registrado, no esta bloqueado, esta en el intento 1, y la contraseña pepe30 es correcta
+
+`Cuandod` el usuario ingresa fabo@gmail.com, pepe30
+
+`Entonces` el sistema inicia la sesión del usuario y habilita las opciones para el acceso a los detalles
+
+#### **Escenario 2:** Inicio fallido por usuario no registrado
+
+`Dado` que el usuario leo@gmail.com no esta registrado
+
+`Cuandod` el usuario ingresa leo@gmail.com, mundial10
+
+`Entonces` el sistema informa que el usuario no se encuentra registrado
+
+#### **Escenario 3:** Inicio fallido por usuario bloqueado
+
+`Dado` que el usuario hitler@gmail.com esta registrado y esta bloqueado
+
+`Cuandod` el usuario ingresa hitler@gmail.com, horno666
+
+`Entonces` el sistema informa que el usuario se encuentra bloqueado
+
+#### **Escenario 4:** Inicio fallido por contraseña incorrecta
+
+`Dado` que el usuario maradona@gmail.com esta registrado, no esta bloqueado, esta en el intento 1, y la contraseña mundial86 es incorrecta
+
+`Cuandod` el usuario ingresa maradona@gmail.com, mundial86
+
+`Entonces` el sistema informa que la contraseña es incorrecta y aumenta en 1 los intentos
+
+#### **Escenario 5:** Inicio fallido por contraseña incorrecta
+
+`Dado` que el usuario diego@gmail.com esta registrado, no esta bloqueado, esta en el intento 3, y la contraseña rosa10 es incorrecta
+
+`Cuandod` el usuario ingresa fabo@gmail.com, rosa10
+
+`Entonces` el sistema informa que la contraseña es incorrecta y bloquea la cuenta
 
 ---
 
-### Tercera Fecha
-![tercera Fecha](https://github.com/Fabian-Martinez-Rincon/Fabian-Martinez-Rincon/assets/55964635/13dd77c6-cece-4afc-bdc5-2d159e461742)
+## Cerrar sesión
+
+**ID:** Cerrar Sesión
+
+**TÍTULO:** Como usuario con una sesión abierta cerrar mi sesión para proteger mis datos
+
+**REGLAS DE NEGOCIO:**
+
+**CRITERIOS DE ACEPTACIÓN:** 
+
+#### **Escenario 1:** Cierre exitoso
+
+`Dado` que el usuario tiene una sesión abierta
+
+`Cuandod` el usuario presiona el boton "cerrar sesión"
+
+`Entonces` el sistema cierra la sesión y deshabilita las opciones para el acceso a las noticias
+
+---
+
+## Registrar Persona
+
+**ID:** Registrar Persona
+
+**TÍTULO:** Como usuario quiero registrarme para poder acceder a los detalles
+
+**REGLAS DE NEGOCIO:**
+- Mail no registrado
+- Solo personas mayores de edad (18 años)
+
+**CRITERIOS DE ACEPTACIÓN:** 
+
+#### **Escenario 1:** Registra exitoso
+
+`Dado` que el usuario fabian@gmail.com no esta registrado, tiene 20 años que es mayor de edad
+
+`Cuandod` la persona ingresa Fabian, Martinez, 20 años, fabian@gmail.com
+
+`Entonces` el sistema registra al usuario y manda una contraseña aleatoria al mail
+
+#### **Escenario 2:** Registro fallido mail ya registrado
+
+`Dado` que el usuario lucas@gmail.com esta registrado, tiene 22 años que es mayor de edad
+
+`Cuandod` la persona ingresa Lucas, Benitez, 22 años, lucas@gmail.com
+
+`Entonces` el sistema informa que el mail ya se encuentra registrado
+
+#### **Escenario 3:** Registro fallido por ser menor de edad 
+
+`Dado` que el usuario julian@gmail.com no esta registrado, tiene 10 años que es menor de edad
+
+`Cuandod` la persona ingresa Julian, Lopez, 10 años, julian@gmail.com
+
+`Entonces` el sistema informa que la persona es menor de edad
+
+
 
