@@ -1309,7 +1309,7 @@ Para cada Historia de Usuario se deben indicar los siguientes ítems:
 `Entonces` el sistema informa que el afiliado menor de 15 años debe tener como minimo 9 meses de afiliado
 
 
-**Escenario 5:** Solicitud fallida por no presentar historia clinica
+#### **Escenario 5:** Solicitud fallida por no presentar historia clinica
 
 `Dado` que el afiliado Sergio pago el mes anterior, es la primera vez que recibe el prestamo, tiene 30 años que es mayor de 15 años y no presenta la historia clinica
 
@@ -1376,9 +1376,7 @@ Para cada Historia de Usuario se deben indicar los siguientes ítems:
 
 ---
 
-### Solicitar Anteojos
-
-<table><tr><td> 
+## Solicitar Anteojos
 
 **ID:** Solicitar Anteojos
  
@@ -1389,11 +1387,9 @@ Para cada Historia de Usuario se deben indicar los siguientes ítems:
 - Fecha de afiliación superior a 3 meses
 - Un par cada 18 meses
 
-</td></tr><tr><td>
-
 **CRITERIOS DE ACEPTACIÓN:** 
 
-**Escenario 1:** Solicitud exitosa
+#### **Escenario 1:** Solicitud exitosa
 
 `Dado` que el afiliado Pepe tiene pago el mes anterior, tiene fecha de afiliacion de 4 meses y no solicito un par en los ultimo 18 meses
 
@@ -1401,8 +1397,7 @@ Para cada Historia de Usuario se deben indicar los siguientes ítems:
 
 `Entonces` el sistema reserva un turno para el afiliado
 
----
-**Escenario 2:** Solicitud fallida por no tener pago el mes anterior
+#### **Escenario 2:** Solicitud fallida por no tener pago el mes anterior
 
 `Dado` que el afiliado Manuel no tiene pago el mes anterior, tiene fecha de afiliacion de 4 meses y no solicito un par en los ultimo 18 meses
 
@@ -1410,8 +1405,7 @@ Para cada Historia de Usuario se deben indicar los siguientes ítems:
 
 `Entonces` el sistema informa que el afiliado no tiene pago el mes anterior
 
----
-**Escenario 3:** Solicitud fallida por tener fecha de afiliación menor a 3 meses
+#### **Escenario 3:** Solicitud fallida por tener fecha de afiliación menor a 3 meses
 
 `Dado` que el afiliado Roberto tiene pago el mes anterior, tiene fecha de afiliacion de 2 meses y no solicito un par en los ultimo 18 meses
 
@@ -1419,8 +1413,7 @@ Para cada Historia de Usuario se deben indicar los siguientes ítems:
 
 `Entonces` el sistema informa que necesita minimo 3 meses de afiliacion para poder recibir el prestamo
 
----
-**Escenario 3:** Solicitud fallida porque ya solicito un par en los ultimos 18 meses
+#### **Escenario 3:** Solicitud fallida porque ya solicito un par en los ultimos 18 meses
 
 `Dado` que el afiliado Pepe tiene pago el mes anterior, tiene fecha de afiliacion de 4 meses y solicito un par en los ultimo 18 meses
 
@@ -1428,14 +1421,9 @@ Para cada Historia de Usuario se deben indicar los siguientes ítems:
 
 `Entonces` el sistema informa que el afiliado ya solicito un prestamo de anteojos en los ultimos 18 meses
 
-
-</td></tr></table>
-
 ---
 
-### Solicitar Internación
-
-<table><tr><td> 
+## Solicitar Internación
 
 **ID:** Solicitar Internación
  
@@ -1444,11 +1432,9 @@ Para cada Historia de Usuario se deben indicar los siguientes ítems:
 **REGLAS DE NEGOCIO:** 
 - Tener pago el mes anterior
 
-</td></tr><tr><td>
-
 **CRITERIOS DE ACEPTACIÓN:** 
 
-**Escenario 1:** Solicitud exitosa
+#### **Escenario 1:** Solicitud exitosa
 
 `Dado` que el afiliado Cristian tiene pago el mes anterior
 
@@ -1456,9 +1442,7 @@ Para cada Historia de Usuario se deben indicar los siguientes ítems:
 
 `Entonces` el sistema reserva un turno para el afiliado
 
----
-
-**Escenario 2:** Solicitud fallida por no tener pago el mes anterior
+#### **Escenario 2:** Solicitud fallida por no tener pago el mes anterior
 
 `Dado` que el afiliado Koki no tiene pago el mes anterior
 
@@ -1467,14 +1451,9 @@ Para cada Historia de Usuario se deben indicar los siguientes ítems:
 `Entonces` el sistema informa que no tiene pago el mes anterior
 
 
-
-</td></tr></table>
-
 ---
 
-### Solicitar Consultas médicas
-
-<table><tr><td> 
+## Solicitar Consultas médicas
 
 **ID:** Solicitar Consultas medicas
  
@@ -1484,11 +1463,9 @@ Para cada Historia de Usuario se deben indicar los siguientes ítems:
 - Tener pago el mes anterior
 - Hasta 2 por mes
 
-</td></tr><tr><td>
-
 **CRITERIOS DE ACEPTACIÓN:** 
 
-**Escenario 1:** Solicitud exitosa
+#### **Escenario 1:** Solicitud exitosa
 
 `Dado` que el afiliado Maradona tiene pago el mes anterior y solicito un par en el mes
 
@@ -1496,9 +1473,7 @@ Para cada Historia de Usuario se deben indicar los siguientes ítems:
 
 `Entonces` el sistema registra un turno para el afiliado
 
----
-
-**Escenario 2:** Solicitud fallida por no tener pago el mes anterior
+#### **Escenario 2:** Solicitud fallida por no tener pago el mes anterior
 
 `Dado` que el afiliado Jorge no tiene pago el mes anterior y solicito un par en el mes
 
@@ -1506,22 +1481,13 @@ Para cada Historia de Usuario se deben indicar los siguientes ítems:
 
 ``Entonces`` el sistema informa que el afiliado no tiene asentado el pago del mes anterior
 
----
-
-**Escenario 3:** Solicitud fallida por haber solicitado 2 pares en el ultimo mes
+#### **Escenario 3:** Solicitud fallida por haber solicitado 2 pares en el ultimo mes
 
 ``Dado`` que el afiliado Luis tiene pago el mes anterior y solicito dos pares en el mes
 
 ``Cuando`` el afiliado solicita prestamo
 
 ``Entonces`` el sistema informa que el afiliado ya tiene dos pares solicitados en el ultimo mes
-
-
-
-</td></tr></table>
-
-
-
 
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
@@ -1530,20 +1496,6 @@ Para cada Historia de Usuario se deben indicar los siguientes ítems:
 ## `Problema 8` Teatro
 
 </div>
-
-Se desea modelar un sistema de gestión de ventas de entradas para un teatro. Las personas compran sus entradas a través de una página web, o personalmente.
-
-El sistema permite, sólo de modo personal en el teatro, la reserva de entradas de forma gratuita. El empleado debe ingresar los datos de la obra (fecha, hora, y nombre) junto el nombre y DNI del espectador. En este caso, sólo se podrá reservar hasta 2 entradas. Las entradas reservadas no compradas caducarán tres horas antes del evento. Para seleccionar el nombre de la obra, el sistema muestra una grilla de funciones disponibles para que el usuario seleccione una.
-
-Para comprar una entrada vía web, el sistema muestra la grilla de funciones disponibles. El usuario selecciona una opción, ingresa su DNI, la cantidad de lugares solicitados y selecciona la opción “pagar”. El pago se realiza con tarjeta de crédito. Para esto debe ser autorizada a través del sistema del banco. Este pide el número de tarjeta, vencimiento, y código de seguridad. Verifica todos los campos y autoriza la compra. Autorizada la tarjeta, se emite un código de compra con el que el cliente podrá retirar sus entradas en la boletería del cine.
-
-Para comprar una entrada personalmente, el vendedor de la boletería solicita los datos de la función al cliente, procediendo de un modo similar a la compra web, con la diferencia que en este caso no se muestra el código de compra sino que se imprimen directamente la/s entrada/s. El pago es unicamente con tarjeta de crédito, igual que en el caso anterior.
-
-Para retirar las entradas reservadas previamente, el empleado solicita nombre y DNI del espectador, el sistema valida que la persona posea entradas reservadas, y que no estén caducas. El resto del procedimiento se realiza igual que la compra de entradas descriptas anteriormente.
-
-Cuando una persona llega con el código de compra, el vendedor debe ingresar el código para que el sistema, luego de verificarlo, imprima las entradas correspondientes.
-
-Además se desea administrar la programación de las salas. El administrador ingresa la distribución semanal de las obras en las salas de manera que se encuentre disponible para la realización de la venta de entradas
 
 ![image](https://user-images.githubusercontent.com/55964635/232352219-2261f020-e05f-4ab6-9c10-570f306113c1.png)
 
@@ -1570,29 +1522,24 @@ No se en donde meter que `las entradas caducan 3 horas antes del evento`
 ---
 
 ### Seleccionar Obra
-<table><tr><td> 
 
-**ID:** Seleccionar Obra
+**ID:** Mostrar Funciones
  
-**TÍTULO:** Como persona quiero seleccionar una obra para que el empleado me pueda reservar una entrada
+**TÍTULO:** Como empleado quiero mostrar las funciones para que el cliente pueda elegir
 
 **REGLAS DE NEGOCIO:** 
 
-</td></tr><tr><td>
-
 **CRITERIOS DE ACEPTACIÓN:** Seleccionar Obra
 
-**Escenario 1:** Seleccion Exitosa
+#### **Escenario 1:** Muestra Exitosa
 
-`Dado` que la persona selecciona la pelicula "King Kong" y hay funciones disponibles
+`Dado` que la pelicula "King Kong" tiene funciones disponibles
 
 `Cuando` el empleado ingresa "King Kong"
 
 `Entonces` el sistema muestra una lista de funciones disponibles 
 
----
-
-**Escenario 2:** Seleccion fallida por falta de funciones
+#### **Escenario 2:** Muestra fallida por falta de funciones
 
 `Dado` que la persona selecciona la pelicula "Duro de Matar" y no hay funciones disponibles
 
@@ -1600,37 +1547,30 @@ No se en donde meter que `las entradas caducan 3 horas antes del evento`
 
 `Entonces` el sistema informa que hay funciones disponibles para esa pelicula
 
-
-</td></tr></table>
-
 ---
 
-### Reservar entrada Presencial
+## Reservar entrada Presencial
 
-<table><tr><td> 
 
 **ID:** Reservar entrada Presencial
  
 **TÍTULO:** como empleado quiero reservarle una entrada al espectador para que pueda ver la pelicula
 
 **REGLAS DE NEGOCIO:** 
-- Solo se reservan dos entradas por persona
-- No se reservan las entradas 3 horas antes del evento
-
-</td></tr><tr><td>
+- Maximo 2 entradas
+- Las entradas se reservan con 3 horas de anticipación como minimo
 
 **CRITERIOS DE ACEPTACIÓN:** Reservar entrada Presencial
 
-**Escenario 1:** Reserva exitosa
+#### **Escenario 1:** Reserva exitosa
 
 `Dado` que la persona Manolo tiene una entrada reservada y la reserva es dos dias antes del evento
 
 `Cuando` el empleado ingresa 1-1-2001, 14:00, King Kong, Manolo, 12345
 
-`Entonces` El sistema realiza la reserva de la entrada
+`Entonces` El sistema realiza la reserva de la entrada y aumenta en uno la cantidad de entradas del usuario
 
----
-**Escenario 2:** Reserva fallida porque el usuario ya reservo dos entradas
+#### **Escenario 2:** Reserva fallida porque el usuario ya reservo dos entradas
 
 `Dado` que la persona Quico tiene dos entradas reservadas y la reserva es dos dias antes del evento
 
@@ -1638,9 +1578,7 @@ No se en donde meter que `las entradas caducan 3 horas antes del evento`
 
 `Entonces` el sistema informa que la persona ya tiene 2 entradas reservadas
 
----
-
-**Escenario 3:** Reserva fallida porque el usuario reserva la entrada 1 hora antes del evento
+#### **Escenario 3:** Reserva fallida porque el usuario reserva la entrada 1 hora antes del evento
 
 `Dado` que la persona Bils no tiene entradas reservadas y la reserva es 1 (una) hora antes del evento
 
@@ -1648,12 +1586,9 @@ No se en donde meter que `las entradas caducan 3 horas antes del evento`
 
 `Entonces` el sistema informa que no se pueden reservar entradas 3 horas antes del evento.
 
-</td></tr></table>
-
 ---
 
-### Comprar entrada Online
-<table><tr><td> 
+## Comprar entrada Online
 
 **ID:** Comprar entrada Online
  
@@ -1662,11 +1597,9 @@ No se en donde meter que `las entradas caducan 3 horas antes del evento`
 **REGLAS DE NEGOCIO:** 
 - El pago se realiza con tarjeta de credito
 
-</td></tr><tr><td>
-
 **CRITERIOS DE ACEPTACIÓN:** Comprar entrada Online
 
-**Escenario 1:** Compra de entrada exitosa
+#### **Escenario 1:** Compra de entrada exitosa
 
 `Dado` que el usuario Fabian posee una tarjeta de credito valida
 
@@ -1674,9 +1607,7 @@ No se en donde meter que `las entradas caducan 3 horas antes del evento`
 
 `Entonces` el sistema registra el pago y emite un codigo de compra para retirar las entradas en el cine
 
----
-
-**Escenario 2:** Compra de entrada fallida por tarjeta invalida
+#### **Escenario 2:** Compra de entrada fallida por tarjeta invalida
 
 `Dado` que el usuario Tomas no posee una tarjeta de credito valida
 
@@ -1684,13 +1615,9 @@ No se en donde meter que `las entradas caducan 3 horas antes del evento`
 
 `Entonces` el sistema informa que la tarjeta ingresada es invalida
 
-
-</td></tr></table>
-
 ---
 
-### Pagar con tarjeta
-<table><tr><td> 
+## Pagar con tarjeta
 
 **ID:** Pagar con tarjeta
  
@@ -1698,11 +1625,9 @@ No se en donde meter que `las entradas caducan 3 horas antes del evento`
 
 **REGLAS DE NEGOCIO:** 
 
-</td></tr><tr><td>
-
 **CRITERIOS DE ACEPTACIÓN:** Pagar con tarjeta
 
-**Escenario 1:** Paga exitosa
+#### **Escenario 1:** Paga exitosa
 
 `Dado` que la conexión con el banco es exitosa, el nro de tarjeta 312 es valida , la tarjeta posee fondos suficientes y fecha de vencimiento el el 20-2-2060
 
@@ -1710,9 +1635,7 @@ No se en donde meter que `las entradas caducan 3 horas antes del evento`
 
 `Entonces` El sistema registra el pago
 
----
-
-**Escenario 2:** Paga fallida por falta de conexión con el servidor del banco
+#### **Escenario 2:** Paga fallida por falta de conexión con el servidor del banco
 
 `Dado` que la conexión con el banco no es exitosa
 
@@ -1720,9 +1643,7 @@ No se en donde meter que `las entradas caducan 3 horas antes del evento`
 
 `Entonces` El sistema informa que no se pudo establecer conexión con el servidor del banco
 
----
-
-**Escenario 3:** Paga fallida por nro de tarjeta invalido
+#### **Escenario 3:** Paga fallida por nro de tarjeta invalido
 
 `Dado` que la conexión con el banco es exitosa, el nro de tarjeta 222 es invalida
 
@@ -1730,9 +1651,7 @@ No se en donde meter que `las entradas caducan 3 horas antes del evento`
 
 `Entonces` El sistema informa que el nro de tarjeta es invalido y no registra el pago
 
----
-
-**Escenario 4:** Paga fallida por no poseer fondos suficientes
+#### **Escenario 4:** Paga fallida por no poseer fondos suficientes
 
 `Dado` que la conexión con el banco es exitosa, el nro de tarjeta 444 es valida , la tarjeta no posee fondos suficientes y fecha de vencimiento el 20-2-2160
 
@@ -1740,9 +1659,7 @@ No se en donde meter que `las entradas caducan 3 horas antes del evento`
 
 `Entonces` El sistema informa que la tarjeta no posee fondos suficientes y no registra el pago
 
----
-
-**Escenario 5:** Paga fallida por tarjeta vencida
+#### **Escenario 5:** Paga fallida por tarjeta vencida
 
 `Dado` que la conexión con el banco es exitosa, el nro de tarjeta 555 es valida , la tarjeta posee fondos suficientes y vencimiento el 06-4-2065
 
@@ -1752,14 +1669,7 @@ No se en donde meter que `las entradas caducan 3 horas antes del evento`
 
 ---
 
-</td></tr></table>
-
-
-
----
-
-### Comprar entrada Presencial
-<table><tr><td> 
+## Comprar entrada Presencial
 
 **ID:** Comprar entrada Presencial
  
@@ -1768,11 +1678,9 @@ No se en donde meter que `las entradas caducan 3 horas antes del evento`
 **REGLAS DE NEGOCIO:** 
 - El pago se realiza con una tarjeta de credito
 
-</td></tr><tr><td>
-
 **CRITERIOS DE ACEPTACIÓN:** Comprar entrada Presencial
 
-**Escenario 1:** Compra de entrada exitosa
+#### **Escenario 1:** Compra de entrada exitosa
 
 `Dado` que el usuario Riquelme posee una tarjeta de credito valida
 
@@ -1780,9 +1688,7 @@ No se en donde meter que `las entradas caducan 3 horas antes del evento`
 
 `Entonces` el sistema registra el pago e imprime las entradas
 
----
-
-**Escenario 2:** Compra de entrada fallida por tarjeta invalida
+#### **Escenario 2:** Compra de entrada fallida por tarjeta invalida
 
 `Dado` que el usuario Pele no posee una tarjeta de credito valida
 
@@ -1790,13 +1696,9 @@ No se en donde meter que `las entradas caducan 3 horas antes del evento`
 
 `Entonces` el sistema informa que la tarjeta ingresada es invalida
 
-
-</td></tr></table>
-
 ---
 
-### Retirar entrada 
-<table><tr><td> 
+## Retirar entrada
 
 **ID:** Retirar entrada 
 
@@ -1806,21 +1708,17 @@ No se en donde meter que `las entradas caducan 3 horas antes del evento`
 - Posee al menos una entrada
 - Entrada no caducada
 
-</td></tr><tr><td>
-
 **CRITERIOS DE ACEPTACIÓN:** Retirar entrada 
 
-**Escenario 1:** Retiro de entrada reservada exitosa
+#### **Escenario 1:** Retiro de entrada reservada exitosa
 
 `Dado` que la persona Giorgio tiene 3 entradas de las cuales ninguna esta caducada y presenta el codigo 7777 valido
 
 `Cuando` la persona ingresa Giorgio, 29139, 7777
 
-`Entonces` El sistema imprime las entradas correspondientes
+`Entonces` El sistema imprime las entradas correspondientes y las libera
 
----
-
-**Escenario 2:** Retiro de entrada sin codigo exitosa
+#### **Escenario 2:** Retiro de entrada sin codigo exitosa
 
 `Dado` que la persona Vegeta tiene 3 entradas de las cuales ninguna esta caducada y no presenta el codigo
 
@@ -1828,9 +1726,7 @@ No se en donde meter que `las entradas caducan 3 horas antes del evento`
 
 `Entonces` El sistema imprime las entradas correspondientes
 
----
-
-**Escenario 3:** Retiro fallido por no tener entradas
+#### **Escenario 3:** Retiro fallido por no tener entradas
 
 `Dado` que la persona ElRubius no tiene entradas
 
@@ -1838,9 +1734,7 @@ No se en donde meter que `las entradas caducan 3 horas antes del evento`
 
 `Entonces` El sistema informa que la persona no tiene entradas reservadas
 
----
-
-**Escenario 4:** Retiro de entrada reservada exitosa
+#### **Escenario 4:** Retiro fallido por entradas caducadas
 
 `Dado` que la persona Leo tiene 2 entradas de las cuales todas estan caducadas y presenta el codigo 6666 valido
 
@@ -1848,9 +1742,7 @@ No se en donde meter que `las entradas caducan 3 horas antes del evento`
 
 `Entonces` El sistema informa que las entradas se encuentran caducadas
 
----
-
-**Escenario 5:** Retiro por codigo invalido
+#### **Escenario 5:** Retiro por codigo invalido
 
 `Dado` que la persona Auron tiene 3 entradas de las cuales ninguna esta caducada y presenta el codigo 123111 invalido
 
@@ -1860,13 +1752,7 @@ No se en donde meter que `las entradas caducan 3 horas antes del evento`
 
 ---
 
-</td></tr></table>
-
----
-
-### Administrar Programación de la sala
-
-<table><tr><td> 
+## Administrar Programación de la sala
 
 **ID:** Administrar Programación de la sala
  
@@ -1874,13 +1760,9 @@ No se en donde meter que `las entradas caducan 3 horas antes del evento`
 
 **REGLAS DE NEGOCIO:** 
 
-En la fallida, se me ocurrio que el administrador no tenga la distribución (porque no se vendieron entradas, etc)
-
-</td></tr><tr><td>
-
 **CRITERIOS DE ACEPTACIÓN:** Administrar Programación de la sala
 
-**Escenario 1:** Administración exitosa
+#### **Escenario 1:** Administración exitosa
 
 `Dado` que el administrador tiene una distribución semanal
 
@@ -1888,19 +1770,13 @@ En la fallida, se me ocurrio que el administrador no tenga la distribución (por
 
 `Entonces` El sistema carga la administración semanal de las salas para la venta de entradas
 
----
-
-**Escenario 2:** Administración fallida por falta de distribución
+#### **Escenario 2:** Administración fallida por falta de distribución
 
 `Dado` que el administrador no tiene una distribución semanal
 
 `Cuando` el administrador quiere actualizar la distribución semanal
 
 `Entonces` El sistema no actualiza la distribución semanal
-
-
-</td></tr></table>
-
 
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
@@ -1910,29 +1786,6 @@ En la fallida, se me ocurrio que el administrador no tenga la distribución (por
 
 </div>
 
-Se desea modelar un sistema de pago electrónico de impuestos y servicios en efectivo.
-
-Cuando un cliente llega para realizar un pago, el empleado o el gerente de la sucursal ingresa el código de pago
-electrónico y el sistema se conecta con la central de cobro para recuperar los datos de la factura (empresa, nro de
-cliente, 1era fecha de vencimiento, 2da fecha de vencimiento, recargo, y monto original). Una vez recuperados los datos,
-el sistema debe verificar los vencimientos para determinar el monto a cobrar. Teniendo esto en cuenta, cuando el 2do
-vencimiento está vencido se debe informar que la factura no se puede cobrar por dicho motivo. Cuando el 1er
-vencimiento está vencido hay que aplicar el recargo al monto original. Si la factura no está vencida, se cobra el monto
-original.
-
-Una vez al día, el gerente de la sucursal debe registrar en la central de cobros los pagos que hicieron los clientes.
-Para esto el sistema requiere la clave maestra y de ser correcta, recupera las transacciones de los impuestos y servicios
-cobrados en el día, se conecta a la central de cobro y se las envía. `Cuando` la central confirma la recepción exitosa, el
-sistema las registra como enviadas. Este último paso es importante porque no deben enviarse dos veces las
-transacciones. Si el gerente intenta enviar una segunda vez, el sistema no debe permitirlo.
-
-Finalmente el Gerente puede ver las estadísticas de los impuestos y servicios cobrados. Para esto, se ingresa la clave
-maestra, un rango de fechas sobre las cuales debe calcularse las estadísticas y el sistema debe mostrar los montos y la
-cantidad de cobros realizados, agrupando por empresa.
-
-Tenga en cuenta que cada vez que el sistema debe conectarse a la central, debe enviarle un token (código que
-identifica al sistema). Una vez que la central valida el token, el sistema envía el requerimiento para recuperar los datos de
-la factura o el requerimiento para registrar los pagos del día según corresponda
 
 `La verdad es que este enunciado es horrible, de momento no lo pienso hacer`
 
@@ -1942,17 +1795,11 @@ la factura o el requerimiento para registrar los pagos del día según correspon
 
 <div align = center>
 
-## `Problema 10` Un Aventón
+## `Problema 10` Un Aventón (Este esta mal)
 
 </div>
 
-Se desea desarrollar un sistema que permita compartir un vehículo para un viaje. La idea es que cuando una persona tiene que realizar un viaje lo publique en la aplicación. Luego, el resto de los usuarios se postulan para acompañarla y el chofer podrá seleccionar quienes viajan. El objetivo es abaratar costos y evitar congestiones en el tránsito. El sistema es gratuito.
-
-Para utilizar el sistema, una persona debe registrarse y estar correctamente identificado antes de poder utilizarlo. Al registrarse, se pide un nombre de usuario, un correo electrónico y una contraseña. No puede haber dos correos electrónicos iguales en el sistema. Una vez autenticado, podrá dar de alta diferentes viajes, identificando la fecha, hora y el automóvil que utilizará. Los diferentes viajes que una persona publique no pueden superponerse. Un usuario que adeuda calificaciones tampoco podrá publicar un viaje.
-
-Cualquier usuario identificado podrá postularse a un viaje. Luego, el usuario dueño del viaje podrá aceptar o rechazar los candidatos para que realicen el viaje con él.
-
-En el sistema existe una política de reputaciones que permiten a los usuarios conocer la opinión del resto sobre los viajes realizados. Luego de terminado un viaje, tanto el piloto como los copilotos que viajaron deberán calificarse entre sí. El piloto califica a todos sus copilotos. Cada copiloto califica al piloto del viaje. Las calificaciones podrán ser positivas (suma un punto de reputación) o negativas (restan un punto de reputación)
+![](2023-05-15-14-23-37.png)
 
 ---
 
@@ -1971,10 +1818,8 @@ De este ejercicio tengo bastantes dudas la verdad
 
 ---
 
-### Registrar Persona
-
-<table><tr><td> 
-
+## Registrar Persona
+ 
 **ID:** Registrar persona
  
 **TÍTULO:** Como persona quiero registrarme para poder subir viajes
@@ -1982,11 +1827,9 @@ De este ejercicio tengo bastantes dudas la verdad
 **REGLAS DE NEGOCIO:** 
 - Correo electronico unico
 
-</td></tr><tr><td>
-
 **CRITERIOS DE ACEPTACIÓN:** Registrar persona
 
-**Escenario 1:** Registro exitoso
+#### **Escenario 1:** Registro exitoso
 
 `Dado` que el mail fabo@gmail.com es unico
 
@@ -1994,9 +1837,7 @@ De este ejercicio tengo bastantes dudas la verdad
 
 `Entonces` el sistema registra a la persona 
 
----
-
-**Escenario 2:** Registro fallido
+#### **Escenario 2:** Registro fallido
 
 `Dado` que el mail messi@gmail.com no es unico
 
@@ -2004,13 +1845,9 @@ De este ejercicio tengo bastantes dudas la verdad
 
 `Entonces` el sistema informa que la persona ya se encuentra registrada
 
-</td></tr></table>
-
 ---
 
-### Alta viaje
-
-<table><tr><td> 
+## Alta viaje
 
 **ID:** Alta viaje
  
@@ -2020,11 +1857,9 @@ De este ejercicio tengo bastantes dudas la verdad
 - No se superpone con otro viaje
 - Adeuda clasificaciones
 
-</td></tr><tr><td>
-
 **CRITERIOS DE ACEPTACIÓN:** Alta viaje
 
-**Escenario 1:** Alta de viaje exitoso
+#### **Escenario 1:** Alta de viaje exitoso
 
 `Dado` que el usuario fabo19 con un viaje el 01-01-2001 a las 19:00 no se superpone y no adeuda clasificaciones
 
@@ -2032,9 +1867,7 @@ De este ejercicio tengo bastantes dudas la verdad
 
 `Entonces` el sistema da de alta el viaje
 
----
-
-**Escenario 2:** Alta de viaje fallida por superposición
+#### **Escenario 2:** Alta de viaje fallida por superposición
 
 `Dado` que el usuario giorgio69 con un viaje el 11-11-2011 a las 11:00 se superpone y no adeuda clasificaciones
 
@@ -2042,9 +1875,7 @@ De este ejercicio tengo bastantes dudas la verdad
 
 `Entonces` el sistema informa que el viaje se superpone con otra fecha
 
----
-
-**Escenario 3:** Alta de viaje fallida por adeudar clasificaciones
+#### **Escenario 3:** Alta de viaje fallida por adeudar clasificaciones
 
 `Dado` que el usuario rubiusOMG con un viaje el 07-07-2007 a las 17:00 no se superpone y adeuda clasificaciones
 
@@ -2052,13 +1883,9 @@ De este ejercicio tengo bastantes dudas la verdad
 
 `Entonces` el sistema informa que el usuario adeuda clasificaciones 
 
-</td></tr></table>
-
 ---
 
-### Postularse a un viaje
-
-<table><tr><td> 
+## Postularse a un viaje
 
 **ID:** Postularse a un viaje
  
@@ -2066,22 +1893,15 @@ De este ejercicio tengo bastantes dudas la verdad
 
 **REGLAS DE NEGOCIO:** 
 
-</td></tr><tr><td>
-
 **CRITERIOS DE ACEPTACIÓN:** 
 
-**Escenario 1:** Postulación exitosa
+#### **Escenario 1:** Postulación exitosa
 
 `Dado` que el usuario tiene una sesión abierta
 
 `Cuando` se postula a un viaje
 
 `Entonces` el sistema registra al postulado y lo notifica
-
----
-
-</td></tr></table>
-
 
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
@@ -2091,13 +1911,149 @@ De este ejercicio tengo bastantes dudas la verdad
 
 </div>
 
-Suponga que el área para la cual trabaja fue contactada para implementar un sistema para el manejo de concursos de los docentes de la Facultad de Informática.
+---
 
-El docente que quiera inscribirse a un concurso deberá registrarse previamente en el sistema. Para esto deberá ingresar los siguientes datos: Dni, nombre, apellido y dirección de mail. Una vez completado los datos el sistema mandará a la casilla de correo ingresada la contraseña asignada automáticamente. El mail debe ser único y será utilizado como nombre de usuario. Según el estatuto de la UNLP los dni permitidos para concursar son aquellos menores a 55 millones y mayores a 12 millones.
+![](2023-05-15-14-24-38.png)
 
-Una vez registrado el docente puede inscribirse al concurso, para lo cual, una vez que haya ingresado al sistema, deberá seleccionar la materia a la cual desea inscribirse. Según el reglamento interno de la Facultad de informática que nos facilitó el jefe del área de personal, el docente no podrá inscribirse a más de 3 concursos. `Cuando` el docente acepta la inscripción el sistema deberá imprimir un comprobante.
 
-Por último, para cumplir con la ordenanza número 123/19 de la UNLP, el jefe del área de concursos, el cual ya cuenta con un nombre de usuario y contraseña, deberá poder imprimir un listado con los inscriptos a una materia determinada para poder enviar dicho listado al secretario administrativo quien lo firma y eleva al decano de la Facultad. Suponga que el sistema Siu-Guarani realiza una tarea similar a la solicitada y que puede consultar su implementación y registros.
+---
+
+## Registrar Persona
+
+**ID:** Registrar Persona
+ 
+**TÍTULO:** Como persona quiero registrarme para poder inscribirme a un curso
+
+**REGLAS DE NEGOCIO:** 
+- Mail no registrado
+- El dni no tiene que ser mayor de 55M
+- El dni no tiene que ser menor de 12M
+
+
+**CRITERIOS DE ACEPTACIÓN:** 
+
+#### **Escenario 1:** Registro Exitoso
+
+`Dado` que el usuario fabian@gmail.com no esta registrado, el dni 40M es mayor a 12M y menor a 55M
+
+`Cuando` la persona ingresa 44M, Fabian, Martinez, fabian@gmail.com
+
+`Entonces` El sistema manda un correo una contraseña asignada automaticamente
+
+#### **Escenario 2:** Registro Fallido por mail registrado
+
+`Dado` que el usuario juan@gmail.com esta registrado, el dni 45M es mayor a 12M y menor a 55M
+
+`Cuando` la persona ingresa 45M, Juan, Carosella, juan@gmail.com
+
+`Entonces` El sistema informa que el mail ya se encuentra registrado
+
+#### **Escenario 3:** Registro Fallido por dni menor a 12M
+
+`Dado` que el usuario messi@gmail.com no esta registrado, el dni 10M es menor a 12M y menor a 55M
+
+`Cuando` la persona ingresa 10M, Lionel, Messi, messi@gmail.com
+
+`Entonces` El sistema informa que el dni es menor de 12M
+
+#### **Escenario 4:** Registro Fallido por dni mayor a 55M
+
+`Dado` que el usuario pepe@gmail.com no esta registrado, el dni 400M es mayor a 12M y mayor a 55M
+
+`Cuando` la persona ingresa 440M, Pepe, Zapo, pepe@gmail.com
+
+`Entonces` El sistema informa que el dni es mayor de 55M
+
+
+---
+
+## Iniciar Sesión
+
+**ID:** Iniciar Sesión
+ 
+**TÍTULO:** Como Usuario quiero iniciar sesión para inscribirme a un concurso
+
+**REGLAS DE NEGOCIO:** 
+
+**CRITERIOS DE ACEPTACIÓN:** 
+
+#### **Escenario 1:** Inicio Exitoso
+
+`Dado` que el usuario fabian@gmail.com esta registrado y la contraseña omgCosa30 es correcta
+
+`Cuando` el usuario ingresa fabian@gmail.com, omgCosa30 
+
+`Entonces` El sistema inicia sesión y habilita las opciones para inscribirse a un concurso
+
+#### **Escenario 2:** Inicio Fallido por usuario no registrado
+
+`Dado` que el usuario carlos@gmail.com no esta registrado
+
+`Cuando` el usuario ingresa carlos@gmail.com, casaRosada
+
+`Entonces` El sistema informa que el usuario no se encuentra registrado
+
+#### **Escenario 3:** Inicio Fallido por contraseña incorrecta
+
+`Dado` que el usuario dios@gmail.com esta registrado y la contraseña "testigos" es incorrecta
+
+`Cuando` el usuario ingresa dios@gmail.com, "testigos" 
+
+`Entonces` El sistema informa que la contraseña es incorrecta.
+
+---
+
+## Cerrar Sesión
+
+**ID:** Cerrar Sesión
+ 
+**TÍTULO:** Como usuario logueado quiero cerrar sesión para conservar mis datos
+
+**REGLAS DE NEGOCIO:** 
+
+**CRITERIOS DE ACEPTACIÓN:** 
+
+#### **Escenario 1:** Inicio Exitoso
+
+`Dado` que el usuario fabian@gmail.com tiene una sesión abierta
+
+`Cuando` el usuario presiona el boton "cerrar sesión"
+
+`Entonces` El sistema cierra la sesión y deshabilita las opciones para la inscripción a los concursos
+
+---
+
+## Inscribirse a un concurso
+
+**ID:** Inscribirse a un concurso
+ 
+**TÍTULO:** Como usuario quiero inscribirme a un conscurso para participar
+
+**REGLAS DE NEGOCIO:** 
+- No se puede inscribir a mas de 3 concursos
+
+**CRITERIOS DE ACEPTACIÓN:** 
+
+#### **Escenario 1:** Inscripción exitosa
+
+`Dado` que tiene 1 inscripción a un concurso que es menor al maximo de 3 concursos
+
+`Cuando` el usuario selecciona el conscurso "Informatica"
+
+`Entonces` El sistema acepta la inscripción, imprime comprobante y aumenta en uno la cantidad de inscripciones del usuario
+
+#### **Escenario 2:** Inscripción fallida por tener 3 concursos
+
+`Dado` que tiene 3 inscripciones a concursos que es igual al maximo de 3 concursos
+
+`Cuando` el usuario selecciona el concurso "Gastronomia"
+
+`Entonces` El sistema informa que esta inscripto al maximo de concursos permitido
+
+---
+
+
+
 
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
@@ -2107,13 +2063,8 @@ Por último, para cumplir con la ordenanza número 123/19 de la UNLP, el jefe de
 
 </div>
 
-Se desea modelar mediante historias de usuario el manejo de créditos otorgados por un banco a sus clientes.
-
-Los clientes que desean pedir un crédito, deben iniciar un trámite a través de un sitio web del banco ingresando dni, nombre, apellido, mail, tipo de crédito (personal, vivienda, etc.) y monto solicitado. El sistema acepta el inicio de trámite si el dni ingresado corresponde a un cliente del banco y si el crédito solicitado no supera los $400.000. En caso de que no sea cliente del banco el sistema deberá enviar un correo electrónico al email ingresado con un instructivo para hacerse cliente del banco. Si el monto supera los $400.000 el sistema rechaza el inicio de trámite y muestra el mensaje “El monto solicitado excede el límite permitido”. Si los datos son correctos, el sistema almacena el trámite para que sea analizado por el área económica e imprime un número de comprobante para el cliente.
-
-Por otro lado, los clientes pueden consultar el estado de un trámite, para esto es necesario que se ingrese un número de comprobante. Si el número de comprobante es válido, el sistema retorna un informe con el estado del mismo, de lo contrario mostrará un mensaje “trámite inexistente”. Si el cliente ingresa tres veces un código inexistente el sistema bloquea la ip (dirección de red de la máquina que efectúa la consulta) del cliente por 24 horas mostrando un mensaje “Usted ha excedido el número de consultas inválidas”.
-
-Por último, el gerente del banco puede pedir un listado de créditos aprobados entre fechas. Si las fechas ingresadas son válidas, el sistema mostrará un listado con los créditos aprobados, de lo contrario mostrará un mensaje “las fechas ingresadas no son válidas”. El sistema utiliza un sistema de autenticación general del banco, por lo que no es necesario modelar el iniciar y cerrar sesión. Si no hay créditos aprobados para las fechas ingresadas el sistema mostrará el siguiente mensaje: ”No hay créditos aprobados en las fechas ingresadas”.
+![](2023-05-15-14-25-19.png)
+![](2023-05-16-09-59-06.png)
 
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
@@ -2123,16 +2074,7 @@ Por último, el gerente del banco puede pedir un listado de créditos aprobados 
 
 </div>
 
-Una nueva empresa de venta de libros en línea está diseñando su sitio web. Cualquier visitante puede acceder a su catálogo de libros y navegar los distintos libros que se encuentren en él y solo los usuarios registrados pueden realizar compras.
-
-Para poder comprar los libros se necesita un usuario registrado. El proceso de registro se realiza en dos pasos. En el primer paso el sistema requiere Nombre, Apellido, DNI y cuenta de correo electrónico (que no exista en el sistema) y una clave de 6 caracteres para darlo de alta de forma parcial. En este proceso el sistema debe generar un código de 16 dígitos y enviarlo por correo para que luego el visitante confirme la cuenta. Como segundo paso el visitante debe entrar a la página de confirmación e ingresar su dirección de correo y el código de 16 dígitos. Si estos datos son correctos el sistema lo registra definitivamente como usuario.
-
-Una vez registrado, para autenticarse, el sistema requiere el correo del usuario y la clave de 6 caracteres.
-
-Para realizar la compra de un libro el sistema pide ingresar el ISBN del mismo y muestra al usuario la portada con una descripción del libro y la opción “Comprar”. `Cuando` el usuario selecciona “Comprar” se le pide los datos de la tarjeta:
-
-Apellido, Nombre, Nro de tarjeta. Es importante tener en cuenta que por disposición del Banco Central solo el titular de la tarjeta puede realizar la compra, por lo que el nombre y apellido registrado debe coincidir con el de la tarjeta. Realizada esta verificación se procede a enviar los datos al servidor de la tarjeta para realizar el cobro. Si todo es correcto
-se genera un enlace de descarga al correo del usuario
+![](2023-05-16-09-59-36.png)
 
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
@@ -2142,13 +2084,8 @@ se genera un enlace de descarga al correo del usuario
 
 </div>
 
-La gerencia del banco donde trabajamos nos pide realizar un subsistema para el manejo de las tarjetas de crédito SIVA. El sistema podrá ser operado únicamente por el personal de área comercial y por el gerente de la sucursal. En ambos casos las funcionalidades solo serán habilitadas con autenticación previa.
-
-El registro del personal en el sistema no es necesario implementarlo, ya que las credenciales son obtenidas del sistema central del banco. `Entonces`, para autenticarse, el usuario debe ingresar sus credenciales (las mismas que usa para otros servicios del banco) y estas son corroboradas por el sistema del banco central (al cual nos comunicamos por intranet), enviándonos un token de autenticación válido en caso de ser correctas. 
-
-Una vez autenticado, todo el personal debe poder dar de alta una nueva tarjeta y dar de baja una existente. Para dar de alta se requiere nombre completo, DNI y CUIT del titular. Luego, se debe seleccionar un tipo de tarjeta (Básica o Gold). Para dar de alta la tarjeta la persona debe ser cliente del banco y no podrá darse de alta una tarjeta si la persona es morosa en el sistema SIVA (externo al banco). Para esto, nuestro sistema debe comunicarse con el SIVA y verificar la morosidad de la persona con el DNI. En el mismo momento, el sistema SIVA nos dará un número de tarjeta nuevo.
-
-Para dar de baja una tarjeta, simplemente se debe ingresar el número de tarjeta y el sistema la debe eliminar de la base de datos del banco. El gerente, además, podrá pedir un listado de las operaciones realizadas entre dos fechas. Para esto el sistema le pedirá que ingrese ambas fechas y le mostrará un listado. No debe ser posible ingresar fechas futuras al presente, ni tampoco que la fecha de inicio sea mayor a la fecha de fin
+![](2023-05-16-10-00-37.png)
+Falta la otra pagina
 
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
