@@ -20,18 +20,18 @@
 
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
-- [Ejercicio 1](#ejercicio-1)
-- [Ejercicio 2](#ejercicio-2-complete-el-siguiente-diagrama-dte-que-ilustra-el-comportamiento-de-una-máquina-de-gaseosas-en-base-al-siguiente-enunciado)
-- [Ejercicio 3](#ejercicio-3)
-- [Ejercicio 4](#ejercicio-4-realizar-el-dte-para-modelar-un-turbo-ventilador)
-- [Ejercicio 5](#ejercicio-5-modelar-mediante-un-dte-el-ingreso-del-personal-a-una-empresa)
-- [Ejercicio 6](#ejercicio-6-se-desea-modelar-el-funcionamiento-de-un-personaje-para-un-juego-electrónico)
-- [Ejercicio 7](#ejercicio-7-modelar-mediante-un-dte-el-sistema-de-voto-electrónico-para-la-facultad-de-informática)
-- [Ejercicio 8](#ejercicio-8-modelar-mediante-dte-la-búsqueda-de-un-destino-para-navegación-por-gps)
-- [Ejercicio 9](#ejercicio-9-modelar-mediante-un-dte-el-funcionamiento-de-un-cajero-automático)
-- [Ejercicio 10](#ejercicio-10-modelar-un-sistema-para-una-cinta-para-correr)
-- [Ejercicio 11](#ejercicio-11-modelar-un-sistema-el-funcionamiento-de-una-cafetera-express)
-- [Ejercicio 12](#ejercicio-12-modelar-con-dte-el-funcionamiento-de-un-lavarropas-automático-de-carga-superior)
+- [Ejercicio 1 Dado el siguiente diagrama que representa el funcionamiento de una Licuadora](#ejercicio-1)
+- [Ejercicio 2 Complete el siguiente diagrama DTE que ilustra el comportamiento de una máquina de gaseosas, en base al siguiente enunciado](#ejercicio-2-complete-el-siguiente-diagrama-dte-que-ilustra-el-comportamiento-de-una-máquina-de-gaseosas-en-base-al-siguiente-enunciado)
+- [Ejercicio 3 Se desea modelar con un DTE el acceso a una caja fuerte, la cual posee un código de seguridad con una longitud desconocida.](#ejercicio-3)
+- [Ejercicio 4 Realizar el DTE para modelar un turbo ventilador](#ejercicio-4-realizar-el-dte-para-modelar-un-turbo-ventilador)
+- [Ejercicio 5 Modelar mediante un DTE el ingreso del personal a una empresa.](#ejercicio-5-modelar-mediante-un-dte-el-ingreso-del-personal-a-una-empresa)
+- [Ejercicio 6 Se desea modelar el funcionamiento de un personaje para un juego electrónico.](#ejercicio-6-se-desea-modelar-el-funcionamiento-de-un-personaje-para-un-juego-electrónico)
+- [Ejercicio 7 Modelar mediante un DTE el sistema de voto electrónico para la facultad de informática.](#ejercicio-7-modelar-mediante-un-dte-el-sistema-de-voto-electrónico-para-la-facultad-de-informática)
+- [Ejercicio 8 Modelar mediante DTE la búsqueda de un destino para navegación por GPS.](#ejercicio-8-modelar-mediante-dte-la-búsqueda-de-un-destino-para-navegación-por-gps)
+- [Ejercicio 9 Modelar mediante un DTE el funcionamiento de un cajero automático.](#ejercicio-9-modelar-mediante-un-dte-el-funcionamiento-de-un-cajero-automático)
+- [Ejercicio 10 Modelar un sistema para una cinta para correr.](#ejercicio-10-modelar-un-sistema-para-una-cinta-para-correr)
+- [Ejercicio 11 Modelar un sistema el funcionamiento de una cafetera express](#ejercicio-11-modelar-un-sistema-el-funcionamiento-de-una-cafetera-express)
+- [Ejercicio 12 Modelar con DTE el funcionamiento de un lavarropas automático de carga superior.](#ejercicio-12-modelar-con-dte-el-funcionamiento-de-un-lavarropas-automático-de-carga-superior)
 
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
