@@ -14,6 +14,7 @@
 
 - [📖 Resumen Teorico 1ra AE](/Documentos/Teoria/Teoria.md)
 - [📖 Resumen Teorico 2da AE](/Documentos/Teoria/Teoria2.md)
+- [📖 Resumen Teorico 3da AE](/Documentos/Teoria/Teoria3.md)
 - [📋 Practica 1 Full Teoria](/Documentos/Practica1.md)
 - [👤 Practica 2 Historias de Usuario](/Documentos/Practica2.md)
 - [👥 Practica 3 Casos de Uso](/Documentos/Practica3.md)

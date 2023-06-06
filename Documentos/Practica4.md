@@ -21,7 +21,7 @@
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
 - [Ejercicio 1 Dado el siguiente diagrama que representa el funcionamiento de una Licuadora](#ejercicio-1)
-- [Ejercicio 2 Complete el siguiente diagrama DTE que ilustra el comportamiento de una máquina de gaseosas, en base al siguiente enunciado](#ejercicio-2-complete-el-siguiente-diagrama-dte-que-ilustra-el-comportamiento-de-una-máquina-de-gaseosas-en-base-al-siguiente-enunciado)
+- [Ejercicio 2 Complete el siguiente diagrama DTE que ilustra el comportamiento de una máquina de gaseosas](#ejercicio-2-complete-el-siguiente-diagrama-dte-que-ilustra-el-comportamiento-de-una-máquina-de-gaseosas-en-base-al-siguiente-enunciado)
 - [Ejercicio 3 Se desea modelar con un DTE el acceso a una caja fuerte, la cual posee un código de seguridad con una longitud desconocida.](#ejercicio-3)
 - [Ejercicio 4 Realizar el DTE para modelar un turbo ventilador](#ejercicio-4-realizar-el-dte-para-modelar-un-turbo-ventilador)
 - [Ejercicio 5 Modelar mediante un DTE el ingreso del personal a una empresa.](#ejercicio-5-modelar-mediante-un-dte-el-ingreso-del-personal-a-una-empresa)
