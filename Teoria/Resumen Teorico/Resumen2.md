@@ -295,9 +295,9 @@ Es una herramienta que permite presentar de forma concisa las reglas lógicas qu
 - Construiremos las tablas con:
   - condiciones simples y acciones simples
   - Las condiciones toman sólo valores Verdadero o Falso
-  - Hay **`2N`** Reglas donde N es la cantidad de condiciones
+  - Hay **2N** Reglas donde N es la cantidad de condiciones
 
-![](2023-05-09-13-06-12.png)
+![image](https://github.com/Fabian-Martinez-Rincon/Fabian-Martinez-Rincon/assets/55964635/5c7dc86e-9103-404e-98a8-622d48ac1acb)
 
 - **¿Cómo se llena la tabla?**
   - A partir de un enunciado se debe:
@@ -323,23 +323,22 @@ Identificar las condiciones y las acciones
 - Aquellas que especifican para reglas que determinan las mismas condiciones acciones
 distintas
 
-![](2023-05-10-13-05-19.png)
+![image](https://github.com/Fabian-Martinez-Rincon/Fabian-Martinez-Rincon/assets/55964635/3bbf4ceb-e013-4b25-a6e5-e9414b5fef39)
 
 Redundancia y Contradicción
 
-![](2023-05-10-13-06-35.png)
+![image](https://github.com/Fabian-Martinez-Rincon/Fabian-Martinez-Rincon/assets/55964635/841cc1a9-02f9-4b9d-935f-ffe3529f3aa0)
+
 
 Reducción de Complejidad (Redundancia)
 - Combine las reglas en donde sea evidente que una alternativa no representa una diferencia en el resultado.
 - El guión [—] significa que la condición 2 puede ser S o N, y que aún así se realizará la acción.
 
-![](2023-05-10-13-08-14.png)
+![image](https://github.com/Fabian-Martinez-Rincon/Fabian-Martinez-Rincon/assets/55964635/4578231b-c135-45b9-81ca-c94e9a47a387)
+![image](https://github.com/Fabian-Martinez-Rincon/Fabian-Martinez-Rincon/assets/55964635/269cb1b7-61ad-4344-b98d-b40c091df793)
 
-![](2023-05-10-13-08-53.png)
 
----
-
-## Historias de Usuario
+### Historias de Usuario
 
 - Una historia de usuario es una representación de un requisito de software escrito en una o dos frases utilizando el lenguaje común del usuario.
 - Son utilizadas en las metodologías de desarrollo ágiles para la especificación de requisitos
@@ -362,35 +361,33 @@ Ejemplos
 - Como (rol) quiero (algo) para poder (beneficio).
 - Como usuario registrado deseo loguearme para poder poder empezar a utilizar la aplicación.
 
-### Características
-- **`Independientes unas de otras`** De ser necesario, combinar las historias dependientes o buscar otra forma de dividir las historias de manera que resulten independientes.
-- **`Negociables`** La historia en si misma no es lo suficientemente explícita como para considerarse un contrato, la discusión con los usuarios debe permitir esclarecer su alcance y éste debe dejarse explícito bajo la forma de pruebas de validación.
-- **`Valoradas por los clientes o usuarios`** Los intereses de los clientes y de los usuarios no siempre coinciden, pero en todo caso, cada historia debe ser importante para alguno de ellos más que para el desarrollador.
-▪ **`Estimables`** Un resultado de la discusión de una historia de usuario es la estimación del tiempo que tomará completarla. Esto permite estimar el tiempo total del proyecto.
-- **`Pequeñas`** Las historias muy largas son difíciles de estimar e imponen restricciones sobre la planificación de un desarrollo iterativo. Generalmente se recomienda la consolidación de historias muy cortas en una sola historia.
-- **`Verificables`** Las historias de usuario cubren requerimientos funcionales, por lo que generalmente son verificables. Cuando sea posible, la verificación debe automatizarse, de manera que pueda ser verificada en cada entrega del proyecto.
-- **``Beneficios``**
+#### Características
+- **Independientes unas de otras** De ser necesario, combinar las historias dependientes o buscar otra forma de dividir las historias de manera que resulten independientes.
+- **Negociables** La historia en si misma no es lo suficientemente explícita como para considerarse un contrato, la discusión con los usuarios debe permitir esclarecer su alcance y éste debe dejarse explícito bajo la forma de pruebas de validación.
+- **Valoradas por los clientes o usuarios** Los intereses de los clientes y de los usuarios no siempre coinciden, pero en todo caso, cada historia debe ser importante para alguno de ellos más que para el desarrollador.
+▪ **Estimables** Un resultado de la discusión de una historia de usuario es la estimación del tiempo que tomará completarla. Esto permite estimar el tiempo total del proyecto.
+- **Pequeñas** Las historias muy largas son difíciles de estimar e imponen restricciones sobre la planificación de un desarrollo iterativo. Generalmente se recomienda la consolidación de historias muy cortas en una sola historia.
+- **Verificables** Las historias de usuario cubren requerimientos funcionales, por lo que generalmente son verificables. Cuando sea posible, la verificación debe automatizarse, de manera que pueda ser verificada en cada entrega del proyecto.
+- **Beneficios**
   - Al ser muy corta, ésta representa requisitos del modelo de negocio que pueden  implementarse rápidamente (días o semanas)
   - Necesitan poco mantenimiento
   - Mantienen una relación cercana con el cliente
   - Permite dividir los proyectos en pequeñas entregas
   - Permite estimar fácilmente el esfuerzo de desarrollo
   - Es ideal para proyectos con requisitos volátiles o no muy claros
-- **`Limitaciones`**
+- **Limitaciones**
   - Sin pruebas de validación pueden quedar abiertas a distintas interpretaciones haciendo difícil utilizarlas como base para un contrato
   - Se requiere un contacto permanente con el cliente durante el proyecto lo cual puede ser difícil o costoso
   - Podría resultar difícil escalar a proyectos grandes
   - Requiere desarrolladores muy competentes
 
----
-
-## Casos de Uso
+### Casos de Uso
 
 - Proceso de modelado de las “funcionalidades” del sistema en término de los evento que interactúan entre los usuarios y el sistema.
 - Tiene sus orígenes en el modelado orientado a objetos (Jacobson 1992) pero su eficiencia en modelado de requerimientos hizo que se independice de la técnica de diseño utilizada, siendo aplicable a cualquier metodología de desarrollo.
 - El uso de CU facilita y alienta la participación de los usuarios
 
-### **`Beneficios`**
+#### **Beneficios**
 - Herramienta para capturar requerimientos funcionales
 - Descompone el alcance del sistema en piezas mas manejables
 - Medio de comunicación con los usuarios
@@ -400,19 +397,17 @@ Ejemplos
 - Define una línea base para toda la documentación del sistema
 - Proporciona una herramienta para el seguimiento de los requisitos
 
----
+#### **Elementos del Modelo de Casos de Uso**
 
-### **`Elementos del Modelo de Casos de Uso`**
-
-#### **`Diagrama de Casos de Uso`** 
+#### **Diagrama de Casos de Uso** 
 
 Ilustra las interacciones entre el sistema y los actores
 
-#### **`Escenarios (narración del CU)`** 
+#### **Escenarios (narración del CU)** 
 
 Descripción de la interacción entre el actor y el sistema para realizar la funcionalidad
 
-#### **`Elementos del Diagrama de Casos de Uso`**
+#### **Elementos del Diagrama de Casos de Uso**
 
 - **Caso de Uso** Representa un objetivo (funcionalidad) individual del sistema y describe la secuencia de actividades y de interacciones para alcanzarlo. Para que el CU sea considerado un requerimiento debe estar acompañando de su respectivo escenario
 - **Actores**
@@ -420,29 +415,25 @@ Descripción de la interacción entre el actor y el sistema para realizar la fun
   - Representa un papel desempeñado por un usuario que interactúa (rol)
   - Puede ser una persona, sistema externo o dispositivo externo que emita un evento (sensor, reloj)
 - **Relaciones**
-  - **`Asociaciones`** Relación entre un actor y un CU en el que interactúan entre sí 
-  - **`Extensiones`** (Extends)
+  - **Asociaciones** Relación entre un actor y un CU en el que interactúan entre sí 
+  - **Extensiones** (Extends)
     - Un CU extiende la funcionalidad de otro CU
     - Un CU puede tener muchos CU extensiones
     - Los CU extensiones solo son iniciados por un CU
-  - **`Uso o Inclusión`** (Uses) Reduce la redundancia entres dos o más CU al combinar los pasos comunes de los CU
-  - **`Dependencia`** (Depends) Relación entre CU que indica que un CU no puede realizarse hasta que se haya realizado otro CU
-  - **`Herencia`** Relación entre actores donde un actor hereda las funcionalidades de uno o varios actores
+  - **Uso o Inclusión** (Uses) Reduce la redundancia entres dos o más CU al combinar los pasos comunes de los CU
+  - **Dependencia** (Depends) Relación entre CU que indica que un CU no puede realizarse hasta que se haya realizado otro CU
+  - **Herencia** Relación entre actores donde un actor hereda las funcionalidades de uno o varios actores
 
 #### **Escenarios** (narración del CU)
 - Conceptos Generales
 - Descripción de la interacción del escenario
 - Descripción de eventos alternativos
 
----
-
-### Proceso de modelado
+#### Proceso de modelado
 - Identificar a los actores
 - Identificar los CU para los requerimientos
 - Construir el diagrama
 - Realizar los escenarios
-
----
 
 #### Identificar a los actores
 
@@ -460,8 +451,6 @@ Dónde buscar actores potenciales
 
 Deberán nombrase con un sustantivo o frase sustantiva
 
----
-
 #### Identificar los CU para los requerimientos
 Responder a
 - ¿Cuáles son las principales tareas del actor?
@@ -470,8 +459,6 @@ Responder a
 - Necesita el sistema informar al actor de eventos o cambios ocurridos
 - Necesita el actor informar al sistema de eventos o cambios ocurridos
 
----
-
 #### Conceptos importantes
 - Un CU debe representar una funcionalidad concreta
 - La descripción de los pasos en los escenarios debe contener más de un paso, para representar la interacción entre los componentes
@@ -479,77 +466,64 @@ Responder a
 - Las pre condiciones no deben representarse el los cursos alternativos, ya que al ser una pre-condición no va a ocurrir
 - Los “uses” deben ser accedidos por lo menos desde dos CU
 
----
-
-## Maquinas de estado finito
+### Maquinas de estado finito
 
 Describe al sistema como un conjunto de estados donde el sistema reacciona a ciertos eventos posibles (externos o internos).
 - f(Si, Cj) = Sk
 
 Al estar en el estado Si, la ocurrencia de la condición Cj hace que el sistema cambie al estado Sk
 
-![](2023-05-10-14-10-58.png)
+![image](https://github.com/Fabian-Martinez-Rincon/Fabian-Martinez-Rincon/assets/55964635/80ea8c28-a8f0-45d1-9bf9-97b11e337f58)
 
 #### Definición formal
 - Formalmente, un autómata finito (AF) puede ser descrito como una **`5-tupla (S,Σ,T,s,A)`** donde:
-- **`Σ`** es un alfabeto;
-- **`S`** un conjunto de estados;
-- **`T`** es la función de transición;
-- **`s`** es el estado inicial;
-- **`A`** es un conjunto de estados de aceptación o finales. 
+- **Σ** es un alfabeto;
+- **S** un conjunto de estados;
+- **T** es la función de transición;
+- **s** es el estado inicial;
+- **A** es un conjunto de estados de aceptación o finales. 
 
----
-
-## DTE
+#### DTE
 
 ### Construcción de un DTE
-#### **`1)`** Identificar los estados
+#### **1)** Identificar los estados
 - Visualizando hora
 - Visualizando fecha
 - Visualizando funciones cronometro
 - Cronometrando
 - Configurando hora y fecha
 
-#### **`2)`** Si hay un estado complejo se puede explotar
+#### **2)** Si hay un estado complejo se puede explotar
 
 No es necesario
 
-#### **`3)`** Desde el estado inicial, se identifican los cambios de estado con flechas
+#### **3)** Desde el estado inicial, se identifican los cambios de estado con flechas
 
 En este caso, el sistema inicia al colocarse la pila y pasaría al estado visualizando hora
 
-#### **`4)`** Se analizan las condiciones y las acciones para pasar de un estado a otro
+#### **4)** Se analizan las condiciones y las acciones para pasar de un estado a otro
 
-**Visualizando Hora**
+- **Visualizando Hora**
+  - Se presiona B1 Visualiza la fecha
+  - Se presiona B2 Modificar la hora y fecha
+  - Se presiona B3 Visualiza el cronometro
+  - Se presiona B4 Enciende la luz
+- **Visualizando Fecha**
+  - Para visualizar la fecha se debe presionar el botón B1 y luego presionando B1 o B2 o B3 vuelve a visualizar la hora
+  - En Cualquier Momento se puede encender la luz con el botón B4
+- **Configurando Hora y Fecha**
+  - Se presiona B1 modifico el digito
+  - Se presiona B2 vuelve a visualizar la hora
+  - Se presiona B3 Modifico el digito a modificar: Hora, minuto, segundo, día, mes
+  - Se presiona B4 enciende la luz
+- **Continuar con todos los estados**
 
-- Se presiona B1 Visualiza la fecha
-- Se presiona B2 Modificar la hora y fecha
-- Se presiona B3 Visualiza el cronometro
-- Se presiona B4 Enciende la luz
-
-**Visualizando Fecha**
-
-- Para visualizar la fecha se debe presionar el botón B1 y luego presionando B1 o B2 o B3 vuelve a visualizar la hora
-- En Cualquier Momento se puede encender la luz con el botón B4
-
-**Configurando Hora y Fecha**
-
-- Se presiona B1 modifico el digito
-- Se presiona B2 vuelve a visualizar la hora
-- Se presiona B3 Modifico el digito a modificar: Hora, minuto, segundo, día, mes
-- Se presiona B4 enciende la luz
-
-Continuar con todos los estados
-
-..
-
-#### **`5)`** Se verifica la consistencia:
+#### **5)** Se verifica la consistencia:
   - Se han definido todos los estados
   - Se pueden alcanzar todos los estados
   - Se pueden salir de todos los estados
   - En cada estado, el sistema responde a todas las condiciones posibles (normales y anormales)
 
---- 
 
 #### Funciones
 - Inicialmente (al colocar la pila) visualiza la hora prefijada
@@ -560,9 +534,7 @@ Continuar con todos los estados
 - Iniciar / Detener / Resetear Cronometro
 - Deja de funcionar al finalizarse la pila
 
----
-
-## Redes de Petri
+### Redes de Petri
 
 - Fueron inventadas por Carl Petri en la Universidad de Bonn, Alemania Occidental.
 - Utilizadas para especificar sistemas de tiempo real en los que son necesarios representar aspectos de concurrencia.
@@ -570,29 +542,26 @@ Continuar con todos los estados
 - Las tareas concurrentes deben estar sincronizadas para permitir la comunicación entre ellas (pueden operar a distintas velocidades, deben prevenir la modificación de datos compartidos o condiciones de bloqueo).
 - Pueden realizarse varias tareas en paralelo, pero son ejecutados en un orden impredecible.
 - Éstas NO son secuenciales.
-- **`Sincronización`** Orquesta sinfónica
-- Las tareas que ocurren en paralelo y se necesita alguna forma de controlar los eventos para cambiar de estado (**`Estación de servicios`**)
+- **Sincronización** Orquesta sinfónica
+- Las tareas que ocurren en paralelo y se necesita alguna forma de controlar los eventos para cambiar de estado (**Estación de servicios**)
 
-### EVENTOS o ACCIONES y ESTADOS o CONDICIONES
+#### EVENTOS o ACCIONES y ESTADOS o CONDICIONES
 
 - Los eventos se representan como transiciones (T).
 - Los estados se representan como lugares o sitios (P).
 
-Caso más simple:
-- f(EstadoA, Evento) -> EstadoS
-
-Se requieren varios eventos para pasar de un estado a otro. Los eventos NO ocurren en un orden determinado.
--  f(EstadoA, Even1,Even2...EvenN)->EstadoS
-
-Se requieren varios eventos para habilitar el paso del estado a otros varios estados que se ejecutan en paralelo.
-- f(EstadoA, Even1,Even2...EvenN)-> Estado1, Estado2…, EstadoN
-
-**`Definición Formal`** Una estructura de Red de Petri es una 4-upla
-- C=(P, T, I, O)
-  - **`P`** Lugares
-  - **`T`** Transiciones
-  - **`I`** Función de entrada, se representa con una I
-  - **`O`** Función de salida, se representa con una O
+- Caso más simple:
+  - f(EstadoA, Evento) -> EstadoS
+- Se requieren varios eventos para pasar de un estado a otro. Los eventos NO ocurren en un orden determinado.
+  - f(EstadoA, Even1,Even2...EvenN)->EstadoS
+- Se requieren varios eventos para habilitar el paso del estado a otros varios estados que se ejecutan en paralelo.
+  - f(EstadoA, Even1,Even2...EvenN)-> Estado1, Estado2…, EstadoN
+- **Definición Formal** Una estructura de Red de Petri es una 4-upla
+  - C=(P, T, I, O)
+    - **P** Lugares
+    - **T** Transiciones
+    - **I** Función de entrada, se representa con una I
+    - **O** Función de salida, se representa con una O
 
 Multigrafo (de un nodo puede partir más de un arco), bipartito, dirigido
 
@@ -602,17 +571,25 @@ Multigrafo (de un nodo puede partir más de un arco), bipartito, dirigido
 - A los lugares se les asignan tokens (fichas) que se representan mediante un número o puntos dentro del sitio. Esta asignación de tokens a lugares constituye la marcación.
 - Luego de una marcación inicial se puede simular la ejecución de la red. El número de tokens asignados a un sitio es ilimitado.
 
-![](2023-05-10-14-37-37.png)
+<table><td>
 
-Otro ejemplo
+![image](https://github.com/Fabian-Martinez-Rincon/Fabian-Martinez-Rincon/assets/55964635/f871ad96-c644-41cf-806f-d69faf2bd07c)
 
-![](2023-05-10-14-39-15.png)
+</td><td>
+
+
+![image](https://github.com/Fabian-Martinez-Rincon/Fabian-Martinez-Rincon/assets/55964635/595b1a15-2b31-426f-93f6-e70f4edda74b)
+</td></table>
+
+
+
+
 
 Explicación del ejemplo
 
 - El conjunto de tokens asociado a cada estado sirve para manejar la coordinación de eventos y estados.
-- Una vez que ocurre un evento, un token puede `“viajar”` de uno de los estados a otro.
-- Las reglas de disparo provocan que los tokens `“viajen”` de un lugar a otro cuando se cumplen las condiciones adecuadas.
+- Una vez que ocurre un evento, un token puede **“viajar”** de uno de los estados a otro.
+- Las reglas de disparo provocan que los tokens **“viajen”** de un lugar a otro cuando se cumplen las condiciones adecuadas.
 - La ejecución es controlada por el número y distribución de los tokens.
 - La ejecución de una Red de Petri se realiza disparando transiciones habilitadas.
 - Una transición está habilitada cuando cada lugar de entrada tiene al menos tantos tokens como arcos hacia la transición.
@@ -620,7 +597,7 @@ Explicación del ejemplo
 
 #### Transiciones
 
-![](2023-05-10-14-41-54.png) 
+![image](https://github.com/Fabian-Martinez-Rincon/Fabian-Martinez-Rincon/assets/55964635/e14fa83b-1cdb-4091-8882-6834a6e3e980)
 
 - La ocurrencia de los eventos (transiciones) depende del estado del sistema.
 - Una condición puede ser V (con token) o F (sin token)
@@ -630,19 +607,25 @@ Explicación del ejemplo
 
 #### Paralelismo
 
-![](2023-05-10-14-43-54.png)
+
+
+![image](https://github.com/Fabian-Martinez-Rincon/Fabian-Martinez-Rincon/assets/55964635/7410ae02-e770-4fc7-b904-1705e8da5c57)
 
 #### Sincronización
 Para que varios procesos colaboren en la solución de un problema es necesario que compartan información y recursos pero esto debe ser controlado para asegurar la integridad y correcta operación del sistema.
 
-#### Expresión de exclusión mutua
+<table>
+<tr><td>Expresión de exclusión mutua</td><td>Productor - Consumidor</td></tr>
+<tr><td>
 
-![](2023-05-10-14-44-47.png)
+![image](https://github.com/Fabian-Martinez-Rincon/Fabian-Martinez-Rincon/assets/55964635/878421a9-7bca-45d3-a8e8-291155c3bf5d)
+</td><td>
 
-#### Productor - Consumidor
+![image](https://github.com/Fabian-Martinez-Rincon/Fabian-Martinez-Rincon/assets/55964635/27389f01-447f-4bae-b53e-5f751cab2b62)
+</td></tr>
+</table>
 
-![](2023-05-10-14-49-57.png)
 
 #### Condición de bloqueo
 
-![](2023-05-10-14-50-42.png)
+![image](https://github.com/Fabian-Martinez-Rincon/Fabian-Martinez-Rincon/assets/55964635/01a02419-9e62-4e33-b2f9-0c90639c3ec6)

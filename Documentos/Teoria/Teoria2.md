@@ -377,13 +377,12 @@ Reducción de Complejidad (Redundancia)
 - Combine las reglas en donde sea evidente que una alternativa no representa una diferencia en el resultado.
 - El guión [—] significa que la condición 2 puede ser S o N, y que aún así se realizará la acción.
 
-![](2023-05-10-13-08-14.png)
 
-![](2023-05-10-13-08-53.png)
+![image](https://github.com/Fabian-Martinez-Rincon/Fabian-Martinez-Rincon/assets/55964635/4578231b-c135-45b9-81ca-c94e9a47a387)
 
----
+![image](https://github.com/Fabian-Martinez-Rincon/Fabian-Martinez-Rincon/assets/55964635/269cb1b7-61ad-4344-b98d-b40c091df793)
 
-## Historias de Usuario
+### Historias de Usuario
 
 - Una historia de usuario es una representación de un requisito de software escrito en una o dos frases utilizando el lenguaje común del usuario.
 - Son utilizadas en las metodologías de desarrollo ágiles para la especificación de requisitos
@@ -647,6 +646,7 @@ Multigrafo (de un nodo puede partir más de un arco), bipartito, dirigido
 - Luego de una marcación inicial se puede simular la ejecución de la red. El número de tokens asignados a un sitio es ilimitado.
 
 ![](2023-05-10-14-37-37.png)
+![image](https://github.com/Fabian-Martinez-Rincon/Fabian-Martinez-Rincon/assets/55964635/f871ad96-c644-41cf-806f-d69faf2bd07c)
 
 Otro ejemplo
 
@@ -664,7 +664,7 @@ Explicación del ejemplo
 
 #### Transiciones
 
-![](2023-05-10-14-41-54.png) 
+
 
 - La ocurrencia de los eventos (transiciones) depende del estado del sistema.
 - Una condición puede ser V (con token) o F (sin token)
