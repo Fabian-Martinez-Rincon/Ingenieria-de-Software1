@@ -371,3 +371,75 @@ Reconocimiento del mercado - Autos (Nivel de confianza)
   - Aunque el software tiene aspectos intangibles, un producto software es sin embargo un bien en sí mismo e incluye sus documentos asociados.
   - La estandarización del producto define las propiedades que debe satisfacer el producto software resultante.
 - **Proceso** La estandarización del proceso define la manera de desarrollar el producto software
+> Sin un buen proceso de desarrollo es casi imposible obtener un buen producto.
+
+![image](https://github.com/Fabian-Martinez-Rincon/Fabian-Martinez-Rincon/assets/55964635/2263494d-5f27-4c0f-9883-0f474a0acf89)
+
+#### Clasificación de normas y modelos de calidad
+
+![image](https://github.com/Fabian-Martinez-Rincon/Fabian-Martinez-Rincon/assets/55964635/e534d43c-ea35-4530-acbd-d57ea2730ae5)
+![image](https://github.com/Fabian-Martinez-Rincon/Fabian-Martinez-Rincon/assets/55964635/77f498d8-c0ec-4d9f-a9f7-39479c90dc16)
+
+
+#### Modelo de calidad Square ISO/IEC 25000
+
+- **ISO/IEC 2500n – División gestión de la calidad**
+  - ISO/IEC 25000:2005 - Guide to SQuaRE:
+  - ISO/IEC 25001:2007 - Planning and Management.
+- **ISO/IEC 2501n – División modelos de calidad**
+  - ISO/IEC 25010 - System and software quality models
+  - ISO/IEC 25012 - Data Quality model
+- **ISO/IEC 2502n – División de medición de calidad**
+  - ISO/IEC 25020 - Measurement reference model and guide
+  - ISO/IEC 25021 - Quality measure elements
+  - ISO/IEC 25022 - Measurement of quality in use
+  - ISO/IEC 25023 - Measurement of system and software product quality. 
+  - ISO/IEC 25024 - Measurement of data quality
+- **ISO/IEC 2503n – División Requerimientos de calidad**
+  - ISO/IEC 25030 - Quality requirements
+- **ISO/IEC 2504n – División Evaluación de la calidad**
+  - ISO/IEC 25040 - Evaluation reference model and guide
+  - ISO/IEC 25041 - Evaluation guide for developers, acquirers and independent evaluators
+  - ISO/IEC 25042 - Evaluation modules.
+  - ISO/IEC 25045 - Evaluation module for recoverability
+
+![image](https://github.com/Fabian-Martinez-Rincon/Fabian-Martinez-Rincon/assets/55964635/c2602c75-a4b2-431d-9a60-2e82f11988f5)
+
+#### Modelo de calidad Square ISO/IEC 25010
+
+![image](https://github.com/Fabian-Martinez-Rincon/Fabian-Martinez-Rincon/assets/55964635/6f85cad5-894a-478c-93df-aa71cc57ddce)
+
+![image](https://github.com/Fabian-Martinez-Rincon/Fabian-Martinez-Rincon/assets/55964635/702e15ac-ec59-4160-8138-70b93952b2bb)
+
+#### Calidad de los Datos ISO/IEC 25012
+
+- **La norma entiende por calidad de datos:** La capacidad de las características de los datos de satisfacer necesidades explícitas e implícitas bajo determinadas condiciones de uso.
+- Los clasifica estas características de calidad considerando dos puntos de vista:
+- **Inherente**
+  - Capacidad de las características de los datos de tener el potencial intrínseco para satisfacer las necesidades explícitas e implícitas
+  - Este punto de vista está más relacionado con los aspectos del dominio gestionados por los expertos del negocio.
+- **Dependiente del sistema:**
+  - Capacidad del sistema informático de alcanzar y preservar la calidad de los datos cuando los datos se utilizan en determinadas condiciones
+  - Este punto de vista suele ser responsabilidad de los técnicos del sistema.
+
+#### Square - Proceso de Evaluación - ISO/IEC 25040
+- **1)** Establecer los requisitos de la evaluación
+  - **1)** Establecer el propósito de la evaluación
+  - **2)** Obtener los requisitos de calidad del producto
+  - **3)** Identificar las partes del producto que se deben evaluar
+  - **4)** Definir el rigor de la evaluación
+- **2)** Especificar la evaluación
+  - **1)** Seleccionar los módulos de evaluación
+  - **2)** Definir los criterios de decisión para las métricas
+  - **3)** Definir los criterios de decisión de la evaluación
+- **3)** Diseñar la evaluación
+  - **1)** Planificar las actividades de la evaluación
+- **4)** Ejecutar la evaluación
+  - **1)** Realizar las mediciones
+  - **2)** Aplicar los criterios de decisión para las métricas
+  - **3)** Aplicar los criterios de decisión de la evaluación
+- **5)** Finalizar la evaluación
+  - **1)** Revisar los resultados de la evaluación
+  - **2)** Crear el informe de evaluación
+  - **3)** Revisar la calidad de la evaluación y obtener feedback
+  - **4)** Tratar los datos de la evaluación
