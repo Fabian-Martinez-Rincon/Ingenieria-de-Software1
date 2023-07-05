@@ -443,3 +443,80 @@ Reconocimiento del mercado - Autos (Nivel de confianza)
   - **2)** Crear el informe de evaluación
   - **3)** Revisar la calidad de la evaluación y obtener feedback
   - **4)** Tratar los datos de la evaluación
+
+
+#### Modelo de Calidad de Proceso de Software ISO 12207/ ISO15504
+
+![image](https://github.com/Fabian-Martinez-Rincon/Fabian-Martinez-Rincon/assets/55964635/d961897d-a0bc-4b9e-99a6-b71d7c4e50ab)
+
+#### Modelo de Calidad de Proceso de Software CMM-CMMI
+
+- En diciembre de 2000, el SEI publicó un nuevo modelo, el CMMI o "Modelo de Capacidad y Madurez - Integración", con el objetivo de realizar algunas mejoras respecto al SW-CMM (e integrarlo con el SE-CMM y el IPD-CMM, que pasaron a ser considerados como "obsoletos").
+- Incluye cuatro disciplinas, Software, Ingeniería de sistemas , Desarrollo integrado de procesos y productos y Gestión de proveedores .
+- A su vez incorpora una nueva representación, "Continua", la que permite evaluar el nivel en cada área independientemente.
+- El SEI ha desarrollado también un nuevo método de evaluación de las organizaciones según CMMI denominado SCAMPI.
+
+![image](https://github.com/Fabian-Martinez-Rincon/Fabian-Martinez-Rincon/assets/55964635/6e45764a-dd1a-4d47-9bc3-a05454030b67)
+![image](https://github.com/Fabian-Martinez-Rincon/Fabian-Martinez-Rincon/assets/55964635/7a8f0a42-2dca-4096-af8e-fc33875e395c)
+
+Sistema de Gestión de la Calidad – ISO/IEC 9001
+
+![image](https://github.com/Fabian-Martinez-Rincon/Fabian-Martinez-Rincon/assets/55964635/b6093bb4-1947-4da4-afeb-f96dec326fed)
+
+#### SGC - IRAM - ISO 9001
+
+SGC – Mejora Continua
+
+![image](https://github.com/Fabian-Martinez-Rincon/Fabian-Martinez-Rincon/assets/55964635/ff8ee9dc-9936-42fb-b50b-80a5bcf908cc)'
+
+#### ISO 9000 y el Desarrollo de Software
+
+- **IRAM – ISO 9001:2015** Aplicación genérica
+- **ISO 90003:2018**
+  - Directrices para la interpretación en el proceso de software
+  - Proporciona una guía para identificar la evidencias dentro del proceso de software para satisfacer los requisitos de la ISO 9001
+![image](https://github.com/Fabian-Martinez-Rincon/Fabian-Martinez-Rincon/assets/55964635/70961238-ee90-4816-988b-5db9a502280b)
+
+#### Resumen General
+
+- **Conceptos generales**
+  - Definición de software. / Características del software. / Historia
+  - Definiciones de Ingeniería de software y conocimientos que debe tener un ingeniero de software.
+  - Responsabilidad profesional y ética
+  - Participantes en el desarrollo de software.
+- **Problemas de Comunicación**
+  - Desarrollador
+  - Cliente
+  - Puntos de vista
+- **Elicitacion de requerimientos**
+- **Técnicas de elicitacion de requerimientos**
+  - Entrevistas
+  - Cuestionarios
+  - Muestreo de la documentación, las formas y los datos existentes
+  - Investigación y visitas al lugar
+  - Observación del ambiente de Trabajo
+  - Planeación conjunta de Requerimientos (JRP o JAD)
+  - Lluvia de Ideas - Brainstorming
+- **Definición de Requerimientos**
+- **Ingeniería de Requerimientos**
+  - Viabilidad
+  - Obtención
+  - Especificación
+  - Validación
+- **Clasificación de requerimientos**
+  - Funcionales
+  - No Funcionales
+- Técnicas de especificación de requerimientos
+  - **Estáticas**
+    - Referencia indirecta / Relaciones de recurrencia / Definición axiomática / Expresiones regulares
+  - **Dinámicas**
+    - Tablas de decisión / Diagramas de transición de estados / Redes de Petri / Casos de Uso/ Historias de Usuarios
+- **Modelos proceso**
+  - Definición de procesos - Prescriptivos/Descriptivos
+  - Modelo en Cascada / Modelo en V / Modelo de Prototipos / Desarrollo por fases / El modelo espiral
+- **Metodologías agiles**
+  - Valores / Principios / XP / Scrum
+- **Desarrollo de Software Dirigido por Modelos**
+  - PIM/PSM/Transformaciones
+- **Calidad de Software**
+  - Definiciones/ Modelos holístico de la calidad Calidad de Producto / Calidad de Procesos /Estándares 
