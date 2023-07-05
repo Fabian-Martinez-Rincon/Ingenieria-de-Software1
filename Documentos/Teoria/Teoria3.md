@@ -1,10 +1,5 @@
-<div align="center">
 
-[![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/Nomadiix/IS1)
-[![GitHub stars](https://img.shields.io/github/stars/Nomadiix/IS1)](https://github.com/FabianMartinez1234567/IS1/stargazers/)
-[![GitHub repo size in bytes](https://img.shields.io/github/repo-size/Nomadiix/IS1)](https://github.com/Nomadiix/IS1)
- </div>
-<h1 align="center"> 📋 Teoria 3da AE</h1>
+## Resumen Teorico
 
 - [Modelo de Procesos Tradicionales]()
   - [Modelo en Cascada]()
@@ -17,13 +12,11 @@
   - [Extreme Programming]()
   - [Scrum]()
 
----
+#### Modelo de Procesos Tradicionales
 
-# Modelo de Procesos Tradicionales
-
-- Proceso
+- **Proceso**
   Actividades que involucran, restricciones y recursos que producen una determinada salida
-- Características
+- **Características**
   - Establece todas las actividades
   - Utiliza recursos, está sujeto a restricciones y genera productos intermedios y finales
   - Puede estar compuesto por subprocesos
@@ -31,25 +24,20 @@
   - Las actividades se organizan en una secuencia
   - Existen principios que orientan sobre las metas de cada actividad
   - Las restricciones pueden aplicarse a una actividad, recurso o producto.
-- Ciclo de vida 
-  - Proceso que implica la construcción de un producto
-- Ciclo de vida del Software
-  Describe la vida del producto de software desde su concepción hasta su  implementación, entrega utilización y mantenimiento
-- Modelos de proceso de software
-  - Es una representación abstracta de un proceso del software.
-    -  Modelo de proceso 
-    -  Paradigma de software
-    -  Ciclo de vida del software
-    - Todos son Términos Equivalentes 
-- Modelos Prescriptivos
+- **Ciclo de vida:** Proceso que implica la construcción de un producto
+- **Ciclo de vida del Software:** Describe la vida del producto de software desde su concepción hasta su  implementación, entrega utilización y mantenimiento
+- **Modelos de proceso de software:** Es una representación abstracta de un proceso del software.
+  -  Modelo de proceso 
+  -  Paradigma de software
+  -  Ciclo de vida del software
+  - Todos son Términos Equivalentes 
+- **Modelos Prescriptivos:**
   - Prescriben un conjunto de elementos del proceso: actividades del marco de trabajo, acciones de la ingeniería del software, tareas, aseguramiento de la calidad y mecanismos de control.
   - Cada modelo de proceso prescribe también un “flujo de trabajo”, es decir de que forma los elementos del proceso se interrelacionan entre sí.
-- Modelos descriptivos
-  - Descripción en la forma en que se realizan en la realidad
+- **Modelos descriptivos:** Descripción en la forma en que se realizan en la realidad
 - Ambos modelos deberían ser iguales
 
----
-## Modelo en Cascada
+#### Modelo en Cascada
 
 - Las etapas se representan cayendo en cascada
 - Cada etapa de desarrollo se debe completar antes que comience la siguiente 
