@@ -1,16 +1,25 @@
-<div align="center">
+<div align="center"> 
 
-[![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/Nomadiix/IS1)
-[![GitHub stars](https://img.shields.io/github/stars/Nomadiix/IS1)](https://github.com/FabianMartinez1234567/IS1/stargazers/)
-[![GitHub repo size in bytes](https://img.shields.io/github/repo-size/Nomadiix/IS1)](https://github.com/Nomadiix/IS1)
+[![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/Fabian-Martinez-Rincon/Ingenieria-de-Software1)
+[![GitHub stars](https://img.shields.io/github/stars/Fabian-Martinez-Rincon/Ingenieria-de-Software1)](https://github.com/Fabian-Martinez-Rincon/Ingenieria-de-Software1/stargazers/)
+[![GitHub repo size in bytes](https://img.shields.io/github/repo-size/Fabian-Martinez-Rincon/Ingenieria-de-Software1)](https://github.com/Fabian-Martinez-Rincon/Ingenieria-de-Software1)
+
+
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=34&duration=1700&pause=800&color=28CDF7&center=true&width=863&lines=🖥️ Ingenieria de Software 1"/>
+ </div>
+
 </div>
 
-<h1 align="center"> 🖥️ Ingenieria de Software 1</h1>
-<div align="center">
-<img src="https://media.giphy.com/media/3ohze1y2AJUOHiid8I/giphy.gif"/>
-</div>
+<a title="" href="https://cafecito.app/ei-materias"><img src="/Documentos/Cafecito.png" alt="" /></a>
+
 
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
+
+
+
+<p><img width="250" align='right' src="https://media.giphy.com/media/BMu2SwuXflOlQP8jTC/giphy.gif"></p>
+
+
 
 - [📖 Resumen Teorico 1ra AE](/Documentos/Teoria/Teoria.md)
 - [📖 Resumen Teorico 2da AE](/Documentos/Teoria/Teoria2.md)
@@ -211,5 +220,26 @@
 
 `Entonces` el sistema informa que la persona es menor de edad
 
+---
 
+<h1 align="center"> 📖 Resumen Promoción</h1>
+
+- **Proceso de Software**: Conjunto de actividades y resultados asociados (Especificación, desarrollo, Validez, Mantenimiento)
+- **Modelo de Proceso de Software**: Resumen de lo de arriba con una visión (Incluyen actividades, productos, roles, etc)
+  - Cascada
+  - Iterativo
+  - Basada en Componentes
+- **Requerimientos** (IEEE-Std-610)
+  - **1)** Condición o capacidad que necesita el usuario para resolver un problema o alcanzar un objetivo
+  - **2)** Condición o capacidad que debe satisfacer o poseer un sistema o una componente de un sistema para satisfacer un contrato, un estándar, una especificación u otro documento formalmente impuesto.
+  - **3)** Representación documentada de una condición o capacidad como en 1 o 2.
+- **Documento de especificación de requerimientos de Software IEEE Std. 830-1998 (SRS)**
+  - Brindar una colección de buenas prácticas para escribir especificaciones de requerimientos de software (SRS). 
+  - Se describen los contenidos y las cualidades de una buena especificación de requerimientos
+- **Validación de Requerimientos** IEEE
+  - **Validación**: Al final del desarrollo evaluar el software para asegurar que el software cumple los  requerimientos (Hace lo que te pedi)
+  - **Verificación**: Determinar si un producto de software de una fase cumple los requerimientos de la fase anterior (Esta bien hecho)
+- **Calidad**
+  - El grado en el que un conjunto de características inherentes cumple con los requisitos (ISO 9000)
+  - Conjunto de propiedades o características de un producto o servicio que le confieren aptitud para satisfacer unas necesidades expresadas o implicitas” (ISO 8402)
 
