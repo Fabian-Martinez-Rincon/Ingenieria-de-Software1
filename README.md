@@ -6,11 +6,14 @@
 
 
 <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=34&duration=1700&pause=800&color=28CDF7&center=true&width=863&lines=🖥️ Ingenieria de Software 1"/>
+
+ ---
+
+<a title="" href="https://youtu.be/I3NdXarfmiU?si=RrV9zGTAONCkoCTV"><img src="/Documentos/image.png" width="550px"  alt="" /></a>
+ 
  </div>
 
----
 
-<a title="" href="https://youtu.be/I3NdXarfmiU?si=RrV9zGTAONCkoCTV"><img src="/Documentos/image.png" alt="" /></a>
 
 
 
