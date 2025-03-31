@@ -10,7 +10,7 @@
 
 ---
 
-<a title="" href="https://youtu.be/I3NdXarfmiU?si=RrV9zGTAONCkoCTV"><img src="/Documentos/Image.png" alt="" /></a>
+<a title="" href="https://youtu.be/I3NdXarfmiU?si=RrV9zGTAONCkoCTV"><img src="/Documentos/image.png" alt="" /></a>
 
 
 
