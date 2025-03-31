@@ -8,13 +8,16 @@
 <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=34&duration=1700&pause=800&color=28CDF7&center=true&width=863&lines=🖥️ Ingenieria de Software 1"/>
  </div>
 
-</div>
+---
 
-<a title="" href="https://cafecito.app/ei-materias"><img src="/Documentos/Cafecito.png" alt="" /></a>
+<a title="" href="https://youtu.be/I3NdXarfmiU?si=RrV9zGTAONCkoCTV"><img src="/Documentos/Image.png" alt="" /></a>
+
 
 
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
+> [!IMPORTANT]  
+> Si encuentran algun link roto o tienen alguna duda, no duden en decirme por mail fabianmartinezrincon.123@gmail.com
 
 
 <p><img width="250" align='right' src="https://media.giphy.com/media/BMu2SwuXflOlQP8jTC/giphy.gif"></p>
